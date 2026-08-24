@@ -1,0 +1,1 @@
+const t={ā:1,ē:1,ī:1,ō:1,ū:1,ǖ:1,á:2,é:2,í:2,ó:2,ú:2,ǘ:2,ǎ:3,ě:3,ǐ:3,ǒ:3,ǔ:3,ǚ:3,à:4,è:4,ì:4,ò:4,ù:4,ǜ:4},o=/([bpmfdtnlgkhjqxzcsryw]|[zcs]h)?([iuüv]?[aeiouüvāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]+)(ng|n|r)?/gi;function e(n){for(const r of n)if(t[r])return t[r];return 0}function s(n){return n?n.replace(/\S+/g,r=>r.replace(o,c=>c&&`<span class="t${e(c)}">${c}</span>`)):""}export{s as c};
