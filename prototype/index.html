@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HSK 单词闪卡 · 原型 Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --primary:#ff6b6b; --primary-active:#ff5252; --primary-strong:#f0453f;
+  --primary-soft:#ffe3dd; --grad-a:#ff6b6b; --grad-b:#ff8e53;
+  --accent:#4ecdc4; --accent-active:#38b2ac; --accent-soft:#d7f5f2;
+  --success:#22c55e; --success-soft:#dcfce7; --review:#f59e0b; --review-soft:#fef3c7;
+  --star:#fbbf24; --star-soft:#fef9c3;
+  --ink:#2b2b33; --body:#4b4b55; --muted:#7c7c88; --muted-soft:#a8a8b3;
+  --hairline:#eee7e2; --hairline-soft:#f5f0ec; --border-strong:#d9cfc8;
+  --canvas:#fffaf6; --card:#ffffff; --soft:#fff3ec; --strong:#ffe9df;
+  --tone1:#e53935; --tone2:#43a047; --tone3:#1e88e5; --tone4:#8e24aa; --tone0:#9e9e9e;
+  --r-sm:10px; --r-md:16px; --r-lg:22px; --r-xl:28px; --r-pill:9999px;
+  --sh-card:0 4px 16px rgba(43,43,51,.06);
+  --sh-hover:0 10px 28px rgba(255,107,107,.18);
+  --sh-front:0 8px 24px rgba(255,107,107,.30);
+  --sh-pop:0 8px 30px rgba(43,43,51,.12);
+  --ui:'Nunito',-apple-system,system-ui,'Segoe UI',Roboto,sans-serif;
+  --han:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--ui);background:var(--canvas);color:var(--ink);-webkit-font-smoothing:antialiased}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.han{font-family:var(--han)}
+.muted{color:var(--muted)}
+
+/* ─── prototype top bar (review nav) ─── */
+.protobar{position:sticky;top:0;z-index:50;background:rgba(255,250,246,.9);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--hairline);display:flex;align-items:center;gap:14px;padding:10px 20px}
+.protobar .logo{font-weight:800;font-size:16px;color:var(--primary-strong);letter-spacing:.3px}
+.protobar .logo span{color:var(--ink)}
+.protobar nav{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap}
+.protobar nav button{font-size:13px;font-weight:700;color:var(--body);padding:6px 12px;border-radius:var(--r-pill)}
+.protobar nav button.on{background:var(--primary);color:#fff}
+.protobar .note{font-size:11px;color:var(--muted-soft);width:100%;margin-top:2px}
+
+.wrap{max-width:1120px;margin:0 auto;padding:28px 20px 80px}
+.view{display:none;animation:fade .3s ease}
+.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* labels bilingual */
+.bi{display:inline-flex;flex-direction:column;line-height:1.1}
+.bi .en{font-size:11px;font-weight:600;opacity:.8}
+
+/* ─── hero ─── */
+.hero{text-align:center;padding:22px 0 30px}
+.hero h1{font-size:34px;font-weight:800;letter-spacing:-.3px}
+.hero .zh{background:linear-gradient(135deg,var(--grad-a),var(--grad-b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin-top:8px;color:var(--muted);font-size:15px}
+
+/* ─── level grid ─── */
+.grid-levels{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.level{background:var(--card);border-radius:var(--r-xl);padding:22px;box-shadow:var(--sh-card);
+  transition:transform .2s,box-shadow .2s;cursor:pointer;position:relative;overflow:hidden}
+.level:hover{transform:translateY(-4px);box-shadow:var(--sh-hover)}
+.level .badge{display:inline-block;background:linear-gradient(135deg,var(--grad-a),var(--grad-b));
+  color:#fff;font-weight:800;font-size:12px;letter-spacing:.5px;padding:5px 13px;border-radius:var(--r-pill);text-transform:uppercase}
+.level h3{margin:14px 0 4px;font-size:19px}
+.level .meta{color:var(--muted);font-size:13px;font-weight:600}
+.level .ringrow{display:flex;align-items:center;justify-content:space-between;margin-top:16px}
+.level .start{color:var(--primary);font-weight:800;font-size:14px}
+.level.locked{background:var(--soft);cursor:not-allowed;box-shadow:none}
+.level.locked .badge{background:var(--muted-soft)}
+.level.locked h3,.level.locked .meta{color:var(--muted)}
+.level.locked:hover{transform:none;box-shadow:none}
+.lockchip{position:absolute;top:16px;right:16px;background:var(--strong);color:var(--muted);
+  font-size:11px;font-weight:700;padding:4px 10px;border-radius:var(--r-pill)}
+
+/* progress ring */
+.ring{--p:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  background:conic-gradient(var(--primary) calc(var(--p)*1%),var(--hairline) 0)}
+.ring::before{content:'';position:absolute;width:40px;height:40px;border-radius:50%;background:var(--card)}
+.ring b{position:relative;font-size:12px;font-weight:800;color:var(--ink)}
+.ring.small{width:44px;height:44px}
+.ring.small::before{width:33px;height:33px}
+
+/* ─── breadcrumb ─── */
+.crumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);font-weight:600;margin-bottom:14px;flex-wrap:wrap}
+.crumb a{color:var(--muted);cursor:pointer}
+.crumb a:hover{color:var(--primary)}
+.crumb .sep{color:var(--muted-soft)}
+.crumb .cur{color:var(--ink)}
+
+/* ─── lesson list ─── */
+.grid-lessons{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.lesson{background:var(--card);border-radius:var(--r-lg);padding:18px;box-shadow:var(--sh-card);
+  cursor:pointer;transition:transform .2s,box-shadow .2s}
+.lesson:hover{transform:translateY(-3px);box-shadow:var(--sh-hover)}
+.lesson .no{font-size:12px;font-weight:800;color:var(--primary);letter-spacing:.3px}
+.lesson .t{font-size:18px;font-weight:700;margin:6px 0 2px}
+.lesson .te{font-size:13px;color:var(--muted);font-weight:600}
+.lesson .bar{height:8px;border-radius:var(--r-pill);background:var(--strong);margin-top:14px;overflow:hidden}
+.lesson .bar i{display:block;height:100%;border-radius:var(--r-pill);background:linear-gradient(90deg,var(--grad-a),var(--grad-b))}
+.lesson .cnt{font-size:12px;color:var(--muted);font-weight:700;margin-top:8px;display:flex;justify-content:space-between}
+
+/* ─── study toolbar ─── */
+.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.search{flex:1;min-width:200px;display:flex;align-items:center;gap:8px;background:var(--card);
+  border:1.5px solid var(--hairline);border-radius:var(--r-pill);padding:10px 16px}
+.search input{border:none;outline:none;flex:1;font-family:var(--ui);font-size:15px;background:transparent;color:var(--ink)}
+.search input::placeholder{color:var(--muted-soft)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:var(--soft);color:var(--body);font-weight:700;font-size:13px;padding:7px 14px;border-radius:var(--r-pill)}
+.chip.on{background:var(--primary);color:#fff}
+.toggle{display:flex;background:var(--soft);border-radius:var(--r-pill);padding:4px}
+.toggle button{font-weight:700;font-size:13px;padding:7px 14px;border-radius:var(--r-pill);color:var(--body)}
+.toggle button.on{background:#fff;color:var(--primary);box-shadow:var(--sh-card)}
+.btn{border-radius:var(--r-pill);font-weight:800;font-size:14px;padding:10px 18px}
+.btn.primary{background:linear-gradient(135deg,var(--grad-a),var(--grad-b));color:#fff;box-shadow:var(--sh-hover)}
+.btn.secondary{background:var(--card);color:var(--primary);border:1.5px solid var(--primary-soft)}
+
+/* ─── flashcard ─── */
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.fc{height:288px;perspective:1000px;cursor:pointer}
+.fc-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .45s cubic-bezier(.4,0,.2,1)}
+.fc.flip .fc-inner{transform:rotateY(180deg)}
+.fc-face{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:var(--r-xl);
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  display:flex;flex-direction:column;padding:14px}
+.fc-front{background:linear-gradient(135deg,var(--grad-a),var(--grad-b));color:#fff;box-shadow:var(--sh-front);
+  align-items:center;justify-content:center;text-align:center;opacity:1;transition:opacity 0s .22s}
+.fc.flip .fc-front{opacity:0}
+.fc.flip .fc-back{opacity:1}
+.fc-front .char{font-family:var(--han);font-weight:700;font-size:66px;line-height:1}
+.fc-front .peek{margin-top:10px;font-weight:700;font-size:18px;color:#fff;opacity:0;transition:opacity .2s;height:22px}
+.fc-front.peeking .peek{opacity:.95}
+.fc-front .hint{position:absolute;bottom:10px;font-size:11px;color:rgba(255,255,255,.75);font-weight:600}
+.fc-front .toprow{position:absolute;top:10px;left:10px;right:10px;display:flex;justify-content:space-between;align-items:center}
+.iconbtn{width:34px;height:34px;border-radius:var(--r-pill);display:grid;place-items:center;font-size:15px}
+.fc-front .iconbtn{background:rgba(255,255,255,.22);color:#fff}
+.fc-front .lvl{font-size:10px;font-weight:800;letter-spacing:.4px;opacity:.85;text-transform:uppercase}
+.fc-back{background:var(--card);color:var(--ink);transform:rotateY(180deg);box-shadow:var(--sh-card);
+  border-top:4px solid var(--primary);opacity:0;transition:opacity 0s .22s}
+.fc-back .brow{display:flex;align-items:center;gap:8px;padding-right:60px}
+.fc-back .bh{font-family:var(--han);font-weight:700;font-size:24px;white-space:nowrap}
+.fc-back .py{font-weight:700;font-size:17px;margin-top:3px;margin-bottom:2px}
+.fc-back .badge{position:absolute;top:14px;right:14px;font-size:10px;font-weight:800;padding:3px 9px;border-radius:var(--r-pill);text-transform:uppercase}
+.badge.core{background:var(--success-soft);color:var(--success)}
+.badge.supp{background:var(--accent-soft);color:var(--accent-active)}
+.fc-back .mean{font-weight:700;font-size:15px;margin:8px 0;line-height:1.35}
+.fc-back .ex{border-top:1px solid var(--hairline);padding-top:7px;margin-top:6px}
+.fc-back .ex .z{font-family:var(--han);font-size:14px;font-weight:500;display:flex;gap:6px;align-items:flex-start}
+.fc-back .ex .e{font-size:12px;color:var(--muted);margin-top:2px}
+.fc-back .ex .mini{color:var(--accent);font-size:12px;flex-shrink:0;margin-top:1px}
+.fc-back .marks{display:flex;gap:6px;margin-top:auto;padding-top:10px;align-items:stretch}
+.mk{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:800;
+  padding:6px 9px;border-radius:var(--r-pill);white-space:nowrap}
+.mk .lab{display:flex;flex-direction:column;line-height:1.05;text-align:left}
+.mk .lab i{font-size:9px;font-weight:700;opacity:.8;font-style:normal;letter-spacing:.2px}
+.mk.known{background:var(--success-soft);color:var(--success);flex:1}
+.mk.known.on{background:var(--success);color:#fff}
+.mk.review{background:var(--review-soft);color:var(--review);flex:1}
+.mk.review.on{background:var(--review);color:#fff}
+.mk.star{background:var(--star-soft);color:var(--star);font-size:16px;padding:6px 11px}
+.mk.star.on{background:var(--star);color:#fff}
+
+/* tone colors */
+.t1{color:var(--tone1)}.t2{color:var(--tone2)}.t3{color:var(--tone3)}.t4{color:var(--tone4)}.t0{color:var(--tone0)}
+
+/* ─── focus mode ─── */
+.focus{display:flex;flex-direction:column;align-items:center;gap:20px;padding:10px 0}
+.focus .stage{display:flex;align-items:center;gap:20px}
+.focus .fc{width:min(90vw,360px);height:420px}
+.focus .fc-front .char{font-size:120px}
+.focus .fc-front .peek{font-size:26px;height:32px}
+.navbtn{width:52px;height:52px;border-radius:var(--r-pill);background:var(--card);box-shadow:var(--sh-card);
+  font-size:22px;color:var(--primary);display:grid;place-items:center;flex-shrink:0}
+.navbtn:hover{box-shadow:var(--sh-hover)}
+.dots{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;max-width:340px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--hairline)}
+.dot.on{background:var(--primary);width:22px;border-radius:var(--r-pill)}
+.focus .counter{font-weight:800;color:var(--muted);font-size:14px}
+
+/* ─── quiz ─── */
+.quiz{max-width:520px;margin:0 auto}
+.quiz .qbar{height:8px;background:var(--strong);border-radius:var(--r-pill);overflow:hidden;margin-bottom:20px}
+.quiz .qbar i{display:block;height:100%;width:40%;background:linear-gradient(90deg,var(--grad-a),var(--grad-b))}
+.quiz .qcard{background:var(--card);border-radius:var(--r-xl);box-shadow:var(--sh-card);padding:26px;text-align:center}
+.quiz .qtype{font-size:12px;font-weight:800;color:var(--primary);letter-spacing:.4px;text-transform:uppercase}
+.quiz .qprompt{font-size:22px;font-weight:800;margin:12px 0 4px}
+.quiz .qsub{color:var(--muted);font-size:14px;font-weight:600;margin-bottom:22px}
+.quiz .opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opt{background:var(--card);border:1.5px solid var(--hairline);border-radius:var(--r-lg);padding:18px;
+  font-family:var(--han);font-size:30px;font-weight:700;box-shadow:var(--sh-card);transition:.15s}
+.opt:hover{border-color:var(--primary);transform:translateY(-2px)}
+.opt.correct{background:var(--success-soft);border-color:var(--success)}
+.opt.wrong{background:var(--primary-soft);border-color:var(--primary)}
+.section-title{font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin:26px 0 12px}
+</style>
+</head>
+<body>
+
+<div class="protobar">
+  <div class="logo">HSK <span>单词闪卡</span></div>
+  <nav>
+    <button data-go="home" class="on">首页 Home</button>
+    <button data-go="lessons">课程 Lessons</button>
+    <button data-go="study">学习 Study</button>
+    <button data-go="focus">专注 Focus</button>
+    <button data-go="quiz">自测 Quiz</button>
+  </nav>
+  <div class="note">⚠️ 这是可交互的视觉原型（真实 HSK1 数据）。点卡片翻转、🔊 朗读、👁 瞄拼音都能用。确认观感后再搬进 Vue。</div>
+</div>
+
+<div class="wrap">
+
+  <!-- ═══ HOME ═══ -->
+  <section class="view on" id="v-home">
+    <div class="hero">
+      <h1><span class="zh">HSK 单词闪卡</span></h1>
+      <p>Learn Chinese vocabulary lesson by lesson · 按课学中文单词</p>
+    </div>
+    <div class="grid-levels" id="levels"></div>
+  </section>
+
+  <!-- ═══ LESSONS ═══ -->
+  <section class="view" id="v-lessons">
+    <div class="crumb"><a data-go="home">首页 Home</a><span class="sep">/</span><span class="cur">HSK 1</span></div>
+    <div class="grid-lessons" id="lessons"></div>
+  </section>
+
+  <!-- ═══ STUDY (grid) ═══ -->
+  <section class="view" id="v-study">
+    <div class="crumb">
+      <a data-go="home">首页</a><span class="sep">/</span>
+      <a data-go="lessons">HSK 1</a><span class="sep">/</span>
+      <span class="cur" id="study-title">第 8 课 · 我想喝茶</span>
+    </div>
+    <div class="toolbar">
+      <div class="search"><span>🔍</span><input placeholder="搜索汉字 / 拼音 / 英文…  Search…" oninput="filterCards(this.value)"/></div>
+      <div class="toggle">
+        <button class="on" onclick="setMode('grid',this)">▦ 网格 Grid</button>
+        <button onclick="setMode('focus',this)">◉ 专注 Focus</button>
+      </div>
+      <button class="btn primary" data-go="quiz">自测 Quiz</button>
+      <button class="btn secondary" onclick="alert('原型：打印视图将导出词表 / 可裁剪卡片两种版式')">🖨 打印 Print</button>
+    </div>
+    <div class="chips">
+      <div class="chip on">全部 All</div>
+      <div class="chip">需复习 Review</div>
+      <div class="chip">已掌握 Got it</div>
+      <div class="chip">⭐ 收藏 Saved</div>
+    </div>
+    <div class="grid-cards" id="cards" style="margin-top:16px"></div>
+  </section>
+
+  <!-- ═══ FOCUS ═══ -->
+  <section class="view" id="v-focus">
+    <div class="crumb">
+      <a data-go="home">首页</a><span class="sep">/</span>
+      <a data-go="lessons">HSK 1</a><span class="sep">/</span>
+      <a data-go="study">第 8 课</a><span class="sep">/</span><span class="cur">专注模式 Focus</span>
+    </div>
+    <div class="focus">
+      <div class="counter" id="focus-counter">3 / 15</div>
+      <div class="stage">
+        <button class="navbtn" onclick="focusMove(-1)">‹</button>
+        <div id="focus-card"></div>
+        <button class="navbtn" onclick="focusMove(1)">›</button>
+      </div>
+      <div class="dots" id="focus-dots"></div>
+      <p class="muted" style="font-size:13px">← → 键切换 · 点卡片翻转 · Use arrow keys</p>
+    </div>
+  </section>
+
+  <!-- ═══ QUIZ ═══ -->
+  <section class="view" id="v-quiz">
+    <div class="crumb">
+      <a data-go="home">首页</a><span class="sep">/</span>
+      <a data-go="study">第 8 课</a><span class="sep">/</span><span class="cur">自测 Quiz</span>
+    </div>
+    <div class="quiz">
+      <div class="qbar"><i></i></div>
+      <div class="qcard">
+        <div class="qtype">英文选汉字 · Choose the character</div>
+        <div class="qprompt">“to drink”</div>
+        <div class="qsub">点击正确的汉字 · Tap the correct character</div>
+        <div class="opts" id="qopts"></div>
+      </div>
+      <p class="muted" style="text-align:center;margin-top:16px;font-size:13px">原型演示：另有「看汉字回忆」「听音选字」两种题型</p>
+    </div>
+  </section>
+
+</div>
+
+<script>
+/* ─── real HSK1 data ─── */
+const LESSONS = [
+ {n:1,t:'你好',te:'Hello',c:6},{n:2,t:'谢谢你',te:'Thank You',c:4},
+ {n:3,t:'你叫什么名字',te:"What's Your Name?",c:11},{n:4,t:'她是我的汉语老师',te:'She Is My Chinese Teacher',c:10},
+ {n:5,t:'她女儿今年二十岁',te:'Her Daughter Is Twenty',c:10},{n:6,t:'我会说汉语',te:'I Can Speak Chinese',c:12},
+ {n:7,t:'今天几号',te:"What's the Date Today?",c:12},{n:8,t:'我想喝茶',te:"I'd Like to Drink Tea",c:15},
+ {n:9,t:'你儿子在哪儿工作',te:'Where Does Your Son Work?',c:13},{n:10,t:'我能坐这儿吗',te:'May I Sit Here?',c:12},
+ {n:11,t:'现在几点',te:'What Time Is It Now?',c:12},{n:12,t:'明天天气怎么样',te:"How's the Weather Tomorrow?",c:13},
+ {n:13,t:'他在学做中国菜呢',te:'He Is Learning to Cook',c:10},{n:14,t:'她买了不少衣服',te:'She Bought Many Clothes',c:17},
+ {n:15,t:'我是坐飞机来的',te:'I Came by Plane',c:9}
+];
+const WORDS = [
+ {hanzi:"想",pinyin:"xiǎng",meaning:"to want; would like; to think",type:"core",ex:[{zh:"我想喝茶。",en:"I would like to drink tea."},{zh:"我想去北京。",en:"I want to go to Beijing."}]},
+ {hanzi:"喝",pinyin:"hē",meaning:"to drink",type:"core",ex:[{zh:"我喝水。",en:"I drink water."},{zh:"你想喝茶吗？",en:"Would you like tea?"}]},
+ {hanzi:"茶",pinyin:"chá",meaning:"tea",type:"core",ex:[{zh:"我想喝茶。",en:"I would like tea."},{zh:"这个茶很好。",en:"This tea is good."}]},
+ {hanzi:"吃",pinyin:"chī",meaning:"to eat",type:"core",ex:[{zh:"我想吃米饭。",en:"I want to eat rice."},{zh:"你吃饭了吗？",en:"Have you eaten?"}]},
+ {hanzi:"米饭",pinyin:"mǐfàn",meaning:"cooked rice",type:"core",ex:[{zh:"我吃米饭。",en:"I eat rice."},{zh:"米饭很好吃。",en:"The rice is tasty."}]},
+ {hanzi:"下午",pinyin:"xiàwǔ",meaning:"afternoon",type:"core",ex:[{zh:"下午我去商店。",en:"I go to the shop in the afternoon."},{zh:"今天下午我看电影。",en:"I watch a movie this afternoon."}]},
+ {hanzi:"商店",pinyin:"shāngdiàn",meaning:"shop; store",type:"core",ex:[{zh:"我去商店。",en:"I am going to the shop."},{zh:"学校里有一个商店。",en:"There is a shop in the school."}]},
+ {hanzi:"买",pinyin:"mǎi",meaning:"to buy",type:"core",ex:[{zh:"我想买一个杯子。",en:"I want to buy a cup."},{zh:"她去商店买东西。",en:"She buys things at the shop."}]},
+ {hanzi:"个",pinyin:"gè",meaning:"general measure word",type:"core",ex:[{zh:"我买一个杯子。",en:"I buy a cup."},{zh:"我家有三个人。",en:"There are three people in my family."}]},
+ {hanzi:"杯子",pinyin:"bēizi",meaning:"cup; glass",type:"core",ex:[{zh:"我买一个杯子。",en:"I buy a cup."},{zh:"杯子在桌子上。",en:"The cup is on the table."}]},
+ {hanzi:"这",pinyin:"zhè",meaning:"this",type:"core",ex:[{zh:"这是什么？",en:"What is this?"},{zh:"这个杯子多少钱？",en:"How much is this cup?"}]},
+ {hanzi:"多少",pinyin:"duōshao",meaning:"how many; how much",type:"core",ex:[{zh:"这个多少钱？",en:"How much is this?"},{zh:"你家有多少人？",en:"How many people are in your family?"}]},
+ {hanzi:"钱",pinyin:"qián",meaning:"money",type:"core",ex:[{zh:"这个多少钱？",en:"How much is this?"},{zh:"我没有钱。",en:"I don't have money."}]},
+ {hanzi:"块",pinyin:"kuài",meaning:"yuan (colloquial); piece",type:"core",ex:[{zh:"这个杯子十块钱。",en:"This cup is ten yuan."},{zh:"米饭五块钱。",en:"The rice is five yuan."}]},
+ {hanzi:"那",pinyin:"nà",meaning:"that",type:"core",ex:[{zh:"那是什么？",en:"What is that?"},{zh:"那个杯子很好。",en:"That cup is good."}]}
+];
+const LEVELS=[
+ {lv:1,lessons:15,words:166,prog:38,on:true},
+ {lv:2,lessons:15,words:170,prog:12,on:true},
+ {lv:3,lessons:20,words:315,prog:0,on:true},
+ {lv:4,lessons:0,words:0,prog:0,on:false},
+ {lv:5,lessons:0,words:0,prog:0,on:false}
+];
+
+/* ─── tone coloring ─── */
+const TONE={'ā':1,'ē':1,'ī':1,'ō':1,'ū':1,'ǖ':1,'á':2,'é':2,'í':2,'ó':2,'ú':2,'ǘ':2,'ǎ':3,'ě':3,'ǐ':3,'ǒ':3,'ǔ':3,'ǚ':3,'à':4,'è':4,'ì':4,'ò':4,'ù':4,'ǜ':4};
+const SYL=/([bpmfdtnlgkhjqxzcsryw]|[zcs]h)?([iuüv]?[aeiouüvāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]+)(ng|n|r)?/gi;
+function toneOf(s){for(const ch of s){if(TONE[ch])return TONE[ch];}return 0;}
+function colorPinyin(py){
+  return py.replace(/[^\s]+/g,chunk=>chunk.replace(SYL,(m)=>m?`<span class="t${toneOf(m)}">${m}</span>`:m));
+}
+
+/* ─── TTS ─── */
+function speak(text,ev){ if(ev)ev.stopPropagation();
+  try{const u=new SpeechSynthesisUtterance(text);u.lang='zh-CN';u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}
+}
+function peek(ev,py){ ev.stopPropagation(); const f=ev.currentTarget.closest('.fc-front'); f.classList.toggle('peeking'); }
+
+/* ─── render home ─── */
+document.getElementById('levels').innerHTML=LEVELS.map(L=>{
+  if(!L.on)return `<div class="level locked"><span class="lockchip">敬请期待 Coming soon</span>
+    <span class="badge">HSK ${L.lv}</span><h3>HSK ${L.lv}</h3><div class="meta">即将上线</div></div>`;
+  const pct=L.words?Math.round(L.prog/L.words*100):0;
+  return `<div class="level" data-go="lessons"><span class="badge">HSK ${L.lv}</span>
+    <h3>HSK ${L.lv}</h3><div class="meta">${L.lessons} 课 lessons · ${L.words} 词 words</div>
+    <div class="ringrow"><div class="ring" style="--p:${pct};position:relative"><b>${pct}%</b></div>
+    <span class="start">开始 Start →</span></div></div>`;
+}).join('');
+
+/* ─── render lessons ─── */
+document.getElementById('lessons').innerHTML=LESSONS.map(l=>{
+  const pct=l.n===1?100:l.n===8?40:l.n<8?Math.round(60+Math.random()*40):0;
+  const got=Math.round(l.c*pct/100);
+  return `<div class="lesson" data-go="study"><div class="no">第 ${l.n} 课 · LESSON ${l.n}</div>
+    <div class="t han">${l.t}</div><div class="te">${l.te}</div>
+    <div class="bar"><i style="width:${pct}%"></i></div>
+    <div class="cnt"><span>${l.c} 词 words</span><span>${got}/${l.c} 掌握</span></div></div>`;
+}).join('');
+
+/* ─── flashcard html ─── */
+function cardHTML(w,i,full){
+  const exs=full?w.ex:w.ex.slice(0,1);
+  return `<div class="fc" data-i="${i}" onclick="this.classList.toggle('flip')">
+    <div class="fc-inner">
+      <div class="fc-face fc-front">
+        <div class="toprow">
+          <span class="lvl">HSK 1</span>
+          <button class="iconbtn" onclick="speak('${w.hanzi}',event)">🔊</button>
+        </div>
+        <div class="char">${w.hanzi}</div>
+        <div class="peek">${colorPinyin(w.pinyin)}</div>
+        <button class="hint" onclick="peek(event,'${w.pinyin}')" style="cursor:pointer">👁 拼音 peek</button>
+      </div>
+      <div class="fc-face fc-back" onclick="event.stopPropagation();this.closest('.fc').classList.remove('flip')">
+        <span class="badge ${w.type==='core'?'core':'supp'}">${w.type==='core'?'核心 core':'补充 supp'}</span>
+        <div class="brow">
+          <span class="bh">${w.hanzi}</span>
+          <button class="iconbtn" style="background:var(--soft);color:var(--accent);width:30px;height:30px" onclick="speak('${w.hanzi}',event)">🔊</button>
+        </div>
+        <div class="py">${colorPinyin(w.pinyin)}</div>
+        <div class="mean">${w.meaning}</div>
+        ${exs.map(e=>`<div class="ex"><div class="z"><button class="mini" onclick="speak('${e.zh}',event)">🔊</button><span>${e.zh}</span></div><div class="e">${e.en}</div></div>`).join('')}
+        <div class="marks" onclick="event.stopPropagation()">
+          <button class="mk known" onclick="this.classList.toggle('on')">✓<span class="lab">已掌握<i>Got it</i></span></button>
+          <button class="mk review" onclick="this.classList.toggle('on')">↻<span class="lab">需复习<i>Review</i></span></button>
+          <button class="mk star" onclick="this.classList.toggle('on')" title="收藏 Save">★</button>
+        </div>
+      </div>
+    </div></div>`;
+}
+document.getElementById('cards').innerHTML=WORDS.map((w,i)=>cardHTML(w,i,true)).join('');
+
+function filterCards(q){q=q.toLowerCase().trim();
+  document.querySelectorAll('#cards .fc').forEach(fc=>{const w=WORDS[fc.dataset.i];
+    const hit=!q||w.hanzi.includes(q)||w.pinyin.toLowerCase().includes(q)||w.meaning.toLowerCase().includes(q);
+    fc.style.display=hit?'':'none';});
+}
+function setMode(m,btn){document.querySelectorAll('.toggle button').forEach(b=>b.classList.remove('on'));btn.classList.add('on');
+  if(m==='focus')go('focus');}
+
+/* ─── focus ─── */
+let fi=2;
+function renderFocus(){
+  document.getElementById('focus-card').innerHTML=cardHTML(WORDS[fi],fi,true);
+  document.getElementById('focus-counter').textContent=`${fi+1} / ${WORDS.length}`;
+  document.getElementById('focus-dots').innerHTML=WORDS.map((_,i)=>`<span class="dot ${i===fi?'on':''}"></span>`).join('');
+}
+function focusMove(d){fi=(fi+d+WORDS.length)%WORDS.length;renderFocus();}
+document.addEventListener('keydown',e=>{if(!document.getElementById('v-focus').classList.contains('on'))return;
+  if(e.key==='ArrowRight')focusMove(1);if(e.key==='ArrowLeft')focusMove(-1);});
+
+/* ─── quiz ─── */
+const QANS='喝';
+document.getElementById('qopts').innerHTML=['茶','喝','买','想'].map(c=>
+  `<button class="opt han" onclick="qpick(this,'${c}')">${c}</button>`).join('');
+function qpick(el,c){document.querySelectorAll('.opt').forEach(o=>o.style.pointerEvents='none');
+  if(c===QANS)el.classList.add('correct');else{el.classList.add('wrong');
+    [...document.querySelectorAll('.opt')].find(o=>o.textContent===QANS).classList.add('correct');}}
+
+/* ─── nav ─── */
+function go(v){document.querySelectorAll('.view').forEach(s=>s.classList.remove('on'));
+  document.getElementById('v-'+v).classList.add('on');
+  document.querySelectorAll('.protobar nav button').forEach(b=>b.classList.toggle('on',b.dataset.go===v));
+  if(v==='focus')renderFocus();
+  window.scrollTo({top:0,behavior:'smooth'});}
+document.addEventListener('click',e=>{const el=e.target.closest('[data-go]');
+  if(el){e.preventDefault();go(el.dataset.go);}});
+const _v=new URLSearchParams(location.search).get('v');if(_v)go(_v);
+</script>
+</body>
+</html>
