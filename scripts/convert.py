@@ -38,6 +38,11 @@ SOURCES = [
         "col": {"lesson": 1, "title": 2, "hanzi": 3, "pinyin": 4, "meaning": 5,
                 "type": None, "note": 10, "ex": [(6, 7), (8, 9)]},
     },
+    {
+        "file": "HSK4_按课次词汇闪卡表.xlsx", "sheet": "HSK4词汇表", "level": 4,
+        "col": {"lesson": 1, "title": 2, "hanzi": 3, "pinyin": 4, "meaning": 5,
+                "type": None, "note": 10, "ex": [(6, 7), (8, 9)]},
+    },
 ]
 
 TITLES_EN = {
@@ -70,6 +75,17 @@ TITLES_EN = {
         16: "I'm So Tired I Want to Sleep Right After Work",
         17: 'Everyone Has a Way to Cure Your "Illness"', 18: "I Believe They Will Agree",
         19: "Couldn't You Tell?", 20: "I Was Influenced by Him",
+    },
+    4: {
+        1: "Simple Love", 2: "A True Friend", 3: "The Manager Has a Good Impression of Me",
+        4: "Don't Be Too Anxious to Make Money", 5: "Buy What's Right, Not What's Expensive",
+        6: "You Get What You Pay For", 7: "The Best Doctor Is Yourself",
+        8: "Life Doesn't Lack Beauty", 9: "Sunshine Always Comes After the Storm",
+        10: "The Standard of Happiness", 11: "Reading Is Good, Read Good Books, Love Reading",
+        12: "Discover the World with Your Heart", 13: "Watching Peking Opera Over Tea",
+        14: "Protect Mother Earth", 15: "The Art of Raising Children",
+        16: "Life Can Be Better", 17: "Humans and Nature", 18: "Technology and the World",
+        19: "The Flavor of Life", 20: "The Scenery Along the Way",
     },
 }
 
