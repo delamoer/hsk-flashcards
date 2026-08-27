@@ -1,0 +1,2418 @@
+{
+ "series": "huihua360",
+ "unit": 1,
+ "lessons": [
+  {
+   "num": 1,
+   "title": "你好！",
+   "titleEn": "Hello!",
+   "words": [
+    {
+     "id": "huihua360-1-l1-1",
+     "num": 1,
+     "hanzi": "你",
+     "pinyin": "nǐ",
+     "meaning": "you",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你好",
+       "en": "hello"
+      },
+      {
+       "zh": "你们好",
+       "en": "hello, everyone"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-2",
+     "num": 2,
+     "hanzi": "好",
+     "pinyin": "hǎo",
+     "meaning": "good; well",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很好",
+       "en": "very good"
+      },
+      {
+       "zh": "你好",
+       "en": "hello"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-3",
+     "num": 3,
+     "hanzi": "你好",
+     "pinyin": "nǐhǎo",
+     "meaning": "hello",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你好！",
+       "en": "hello!"
+      },
+      {
+       "zh": "老师好",
+       "en": "hello, teacher"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-4",
+     "num": 4,
+     "hanzi": "你们",
+     "pinyin": "nǐmen",
+     "meaning": "you (plural)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你们好",
+       "en": "hello, everyone"
+      },
+      {
+       "zh": "你们是学生",
+       "en": "you are students"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-5",
+     "num": 5,
+     "hanzi": "老师",
+     "pinyin": "lǎoshī",
+     "meaning": "teacher",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师好",
+       "en": "hello, teacher"
+      },
+      {
+       "zh": "汉语老师",
+       "en": "Chinese teacher"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-6",
+     "num": 6,
+     "hanzi": "们",
+     "pinyin": "men",
+     "meaning": "plural suffix for people",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你们",
+       "en": "you (plural)"
+      },
+      {
+       "zh": "我们",
+       "en": "we; us"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-7",
+     "num": 7,
+     "hanzi": "您",
+     "pinyin": "nín",
+     "meaning": "you (polite)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "您好",
+       "en": "hello (polite)"
+      },
+      {
+       "zh": "谢谢您",
+       "en": "thank you (polite)"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-8",
+     "num": 8,
+     "hanzi": "我",
+     "pinyin": "wǒ",
+     "meaning": "I; me",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我是学生",
+       "en": "I am a student"
+      },
+      {
+       "zh": "我的名字",
+       "en": "my name"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-9",
+     "num": 9,
+     "hanzi": "我们",
+     "pinyin": "wǒmen",
+     "meaning": "we; us",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起",
+       "en": "together with us"
+      },
+      {
+       "zh": "我们是学生",
+       "en": "we are students"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-10",
+     "num": 10,
+     "hanzi": "是",
+     "pinyin": "shì",
+     "meaning": "to be; yes",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我是老师",
+       "en": "I am a teacher"
+      },
+      {
+       "zh": "他是学生",
+       "en": "he is a student"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l1-11",
+     "num": 11,
+     "hanzi": "再见",
+     "pinyin": "zàijiàn",
+     "meaning": "goodbye",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师再见",
+       "en": "goodbye, teacher"
+      },
+      {
+       "zh": "明天再见",
+       "en": "see you tomorrow"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "你饿吗？",
+   "titleEn": "Are You Hungry?",
+   "words": [
+    {
+     "id": "huihua360-1-l2-1",
+     "num": 1,
+     "hanzi": "很",
+     "pinyin": "hěn",
+     "meaning": "very",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很好",
+       "en": "very good"
+      },
+      {
+       "zh": "很饿",
+       "en": "very hungry"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-2",
+     "num": 2,
+     "hanzi": "饿",
+     "pinyin": "è",
+     "meaning": "hungry",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很饿",
+       "en": "very hungry"
+      },
+      {
+       "zh": "饿不饿",
+       "en": "are you hungry or not?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-3",
+     "num": 3,
+     "hanzi": "吗",
+     "pinyin": "ma",
+     "meaning": "yes-no question particle",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你好吗",
+       "en": "how are you?"
+      },
+      {
+       "zh": "你饿吗",
+       "en": "are you hungry?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-4",
+     "num": 4,
+     "hanzi": "也",
+     "pinyin": "yě",
+     "meaning": "also; too",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我也去",
+       "en": "I’m going too"
+      },
+      {
+       "zh": "也很好",
+       "en": "also very good"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-5",
+     "num": 5,
+     "hanzi": "这个",
+     "pinyin": "zhège",
+     "meaning": "this; this one",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个很好",
+       "en": "this one is very good"
+      },
+      {
+       "zh": "这个好看",
+       "en": "this one looks nice"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-6",
+     "num": 6,
+     "hanzi": "好看",
+     "pinyin": "hǎokàn",
+     "meaning": "good-looking; nice to look at",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很好看",
+       "en": "very nice-looking"
+      },
+      {
+       "zh": "这个好看",
+       "en": "this one looks nice"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-7",
+     "num": 7,
+     "hanzi": "不",
+     "pinyin": "bù",
+     "meaning": "not; no",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "不好",
+       "en": "not good"
+      },
+      {
+       "zh": "不饿",
+       "en": "not hungry"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-8",
+     "num": 8,
+     "hanzi": "谢谢",
+     "pinyin": "xièxie",
+     "meaning": "thank you; thanks",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "谢谢你",
+       "en": "thank you"
+      },
+      {
+       "zh": "谢谢老师",
+       "en": "thank you, teacher"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-9",
+     "num": 9,
+     "hanzi": "不客气",
+     "pinyin": "bú kèqi",
+     "meaning": "you're welcome",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "不客气",
+       "en": "you’re welcome"
+      },
+      {
+       "zh": "谢谢，不客气",
+       "en": "thank you — you’re welcome"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-10",
+     "num": 10,
+     "hanzi": "对不起",
+     "pinyin": "duìbuqǐ",
+     "meaning": "sorry",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "对不起",
+       "en": "sorry"
+      },
+      {
+       "zh": "真对不起",
+       "en": "I’m really sorry"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l2-11",
+     "num": 11,
+     "hanzi": "没关系",
+     "pinyin": "méi guānxi",
+     "meaning": "it's okay; never mind",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "没关系",
+       "en": "it’s okay"
+      },
+      {
+       "zh": "对不起，没关系",
+       "en": "sorry — it’s okay"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "你是哪国人？",
+   "titleEn": "Where Are You From?",
+   "words": [
+    {
+     "id": "huihua360-1-l3-1",
+     "num": 1,
+     "hanzi": "叫",
+     "pinyin": "jiào",
+     "meaning": "to be called",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我叫大卫",
+       "en": "my name is David"
+      },
+      {
+       "zh": "叫什么名字",
+       "en": "what’s your name?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-2",
+     "num": 2,
+     "hanzi": "什么",
+     "pinyin": "shénme",
+     "meaning": "what",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "什么名字",
+       "en": "what name"
+      },
+      {
+       "zh": "吃什么",
+       "en": "eat what; what to eat"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-3",
+     "num": 3,
+     "hanzi": "名字",
+     "pinyin": "míngzi",
+     "meaning": "name",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的名字",
+       "en": "my name"
+      },
+      {
+       "zh": "叫什么名字",
+       "en": "what’s your name?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-4",
+     "num": 4,
+     "hanzi": "哪",
+     "pinyin": "nǎ",
+     "meaning": "which",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "哪国人",
+       "en": "from which country"
+      },
+      {
+       "zh": "哪个",
+       "en": "which one"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-5",
+     "num": 5,
+     "hanzi": "国",
+     "pinyin": "guó",
+     "meaning": "country",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "中国",
+       "en": "China"
+      },
+      {
+       "zh": "哪国",
+       "en": "which country"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-6",
+     "num": 6,
+     "hanzi": "人",
+     "pinyin": "rén",
+     "meaning": "person; people",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "中国人",
+       "en": "Chinese person; Chinese"
+      },
+      {
+       "zh": "一个人",
+       "en": "one person"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-7",
+     "num": 7,
+     "hanzi": "呢",
+     "pinyin": "ne",
+     "meaning": "modal particle; and...?",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你呢",
+       "en": "what about you?"
+      },
+      {
+       "zh": "他呢",
+       "en": "what about him?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-8",
+     "num": 8,
+     "hanzi": "的",
+     "pinyin": "de",
+     "meaning": "possessive/attributive particle",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的书",
+       "en": "my book"
+      },
+      {
+       "zh": "老师的电话",
+       "en": "teacher’s phone number"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-9",
+     "num": 9,
+     "hanzi": "电话",
+     "pinyin": "diànhuà",
+     "meaning": "telephone; phone",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "电话号码",
+       "en": "phone number"
+      },
+      {
+       "zh": "打电话",
+       "en": "make a phone call"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-10",
+     "num": 10,
+     "hanzi": "号码",
+     "pinyin": "hàomǎ",
+     "meaning": "number",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "电话号码",
+       "en": "phone number"
+      },
+      {
+       "zh": "房间号码",
+       "en": "room number"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l3-11",
+     "num": 11,
+     "hanzi": "多少",
+     "pinyin": "duōshao",
+     "meaning": "how many; how much",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "多少钱",
+       "en": "how much"
+      },
+      {
+       "zh": "多少人",
+       "en": "how many people"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "今天几月几号？",
+   "titleEn": "What's Today's Date?",
+   "words": [
+    {
+     "id": "huihua360-1-l4-1",
+     "num": 1,
+     "hanzi": "今天",
+     "pinyin": "jīntiān",
+     "meaning": "today",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天星期几",
+       "en": "what day is it today?"
+      },
+      {
+       "zh": "今天很好",
+       "en": "today is good"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l4-2",
+     "num": 2,
+     "hanzi": "月",
+     "pinyin": "yuè",
+     "meaning": "month",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "五月",
+       "en": "May"
+      },
+      {
+       "zh": "这个月",
+       "en": "this month"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l4-3",
+     "num": 3,
+     "hanzi": "号",
+     "pinyin": "hào",
+     "meaning": "date; number",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "五月九号",
+       "en": "May 9th"
+      },
+      {
+       "zh": "今天几号",
+       "en": "what’s the date today?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l4-4",
+     "num": 4,
+     "hanzi": "几",
+     "pinyin": "jǐ",
+     "meaning": "how many; several",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "几月几号",
+       "en": "what date"
+      },
+      {
+       "zh": "几个学生",
+       "en": "how many students"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l4-5",
+     "num": 5,
+     "hanzi": "星期",
+     "pinyin": "xīngqī",
+     "meaning": "week; day of the week",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "星期一",
+       "en": "Monday"
+      },
+      {
+       "zh": "这个星期",
+       "en": "this week"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l4-6",
+     "num": 6,
+     "hanzi": "生日",
+     "pinyin": "shēngrì",
+     "meaning": "birthday",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的生日",
+       "en": "my birthday"
+      },
+      {
+       "zh": "生日快乐",
+       "en": "happy birthday"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l4-7",
+     "num": 7,
+     "hanzi": "太",
+     "pinyin": "tài",
+     "meaning": "too; very",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "太好了",
+       "en": "great!"
+      },
+      {
+       "zh": "太大了",
+       "en": "too big"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l4-8",
+     "num": 8,
+     "hanzi": "了",
+     "pinyin": "le",
+     "meaning": "modal/aspect particle",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "太好了",
+       "en": "great!"
+      },
+      {
+       "zh": "下雨了",
+       "en": "it is raining"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "你几点下班？",
+   "titleEn": "What Time Do You Get Off Work?",
+   "words": [
+    {
+     "id": "huihua360-1-l5-1",
+     "num": 1,
+     "hanzi": "点",
+     "pinyin": "diǎn",
+     "meaning": "o'clock; point",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "七点",
+       "en": "seven o’clock"
+      },
+      {
+       "zh": "几点",
+       "en": "what time"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-2",
+     "num": 2,
+     "hanzi": "分",
+     "pinyin": "fēn",
+     "meaning": "minute",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "十分",
+       "en": "ten minutes"
+      },
+      {
+       "zh": "五分",
+       "en": "five minutes"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-3",
+     "num": 3,
+     "hanzi": "半",
+     "pinyin": "bàn",
+     "meaning": "half",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "七点半",
+       "en": "half past seven"
+      },
+      {
+       "zh": "半个小时",
+       "en": "half an hour"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-4",
+     "num": 4,
+     "hanzi": "刻",
+     "pinyin": "kè",
+     "meaning": "quarter of an hour",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一刻",
+       "en": "a quarter of an hour"
+      },
+      {
+       "zh": "三点一刻",
+       "en": "a quarter past three"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-5",
+     "num": 5,
+     "hanzi": "差",
+     "pinyin": "chà",
+     "meaning": "to be short of; minus (time)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "差一刻八点",
+       "en": "a quarter to eight"
+      },
+      {
+       "zh": "差五分",
+       "en": "five minutes to"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-6",
+     "num": 6,
+     "hanzi": "明天",
+     "pinyin": "míngtiān",
+     "meaning": "tomorrow",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "明天见",
+       "en": "see you tomorrow"
+      },
+      {
+       "zh": "明天早上",
+       "en": "tomorrow morning"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-7",
+     "num": 7,
+     "hanzi": "早上",
+     "pinyin": "zǎoshang",
+     "meaning": "morning",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "早上好",
+       "en": "good morning"
+      },
+      {
+       "zh": "明天早上",
+       "en": "tomorrow morning"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-8",
+     "num": 8,
+     "hanzi": "吃",
+     "pinyin": "chī",
+     "meaning": "to eat",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃饭",
+       "en": "eat; have a meal"
+      },
+      {
+       "zh": "吃早饭",
+       "en": "eat breakfast"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-9",
+     "num": 9,
+     "hanzi": "早饭",
+     "pinyin": "zǎofàn",
+     "meaning": "breakfast",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃早饭",
+       "en": "eat breakfast"
+      },
+      {
+       "zh": "早饭时间",
+       "en": "breakfast time"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-10",
+     "num": 10,
+     "hanzi": "现在",
+     "pinyin": "xiànzài",
+     "meaning": "now",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "现在几点",
+       "en": "what time is it now?"
+      },
+      {
+       "zh": "现在很好",
+       "en": "it is good now"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-11",
+     "num": 11,
+     "hanzi": "对",
+     "pinyin": "duì",
+     "meaning": "correct; right",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "对不对",
+       "en": "right or not?"
+      },
+      {
+       "zh": "说得对",
+       "en": "that’s right"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-12",
+     "num": 12,
+     "hanzi": "请问",
+     "pinyin": "qǐngwèn",
+     "meaning": "excuse me; may I ask",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请问一下",
+       "en": "excuse me, may I ask…?"
+      },
+      {
+       "zh": "请问几点",
+       "en": "excuse me, what time…?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-13",
+     "num": 13,
+     "hanzi": "时间",
+     "pinyin": "shíjiān",
+     "meaning": "time",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "什么时间",
+       "en": "what time"
+      },
+      {
+       "zh": "没有时间",
+       "en": "have no time"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-14",
+     "num": 14,
+     "hanzi": "上班",
+     "pinyin": "shàngbān",
+     "meaning": "to go to work; start work",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "八点上班",
+       "en": "start work at eight"
+      },
+      {
+       "zh": "去上班",
+       "en": "go to work"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-15",
+     "num": 15,
+     "hanzi": "下班",
+     "pinyin": "xiàbān",
+     "meaning": "to finish work",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "六点下班",
+       "en": "finish work at six"
+      },
+      {
+       "zh": "下班以后",
+       "en": "after work"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-16",
+     "num": 16,
+     "hanzi": "下课",
+     "pinyin": "xiàkè",
+     "meaning": "class ends; finish class",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "几点下课",
+       "en": "what time does class end?"
+      },
+      {
+       "zh": "下课以后",
+       "en": "after class"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-17",
+     "num": 17,
+     "hanzi": "时候",
+     "pinyin": "shíhou",
+     "meaning": "time; when",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "什么时候",
+       "en": "when"
+      },
+      {
+       "zh": "吃饭的时候",
+       "en": "when eating; at mealtime"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-18",
+     "num": 18,
+     "hanzi": "晚上",
+     "pinyin": "wǎnshang",
+     "meaning": "evening; night",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天晚上",
+       "en": "tonight"
+      },
+      {
+       "zh": "晚上见",
+       "en": "see you tonight"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-19",
+     "num": 19,
+     "hanzi": "一起",
+     "pinyin": "yìqǐ",
+     "meaning": "together",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一起吃饭",
+       "en": "eat together"
+      },
+      {
+       "zh": "一起去",
+       "en": "go together"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-20",
+     "num": 20,
+     "hanzi": "吃饭",
+     "pinyin": "chīfàn",
+     "meaning": "to eat a meal",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一起吃饭",
+       "en": "eat together"
+      },
+      {
+       "zh": "晚上吃饭",
+       "en": "eat dinner in the evening"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-21",
+     "num": 21,
+     "hanzi": "吧",
+     "pinyin": "ba",
+     "meaning": "modal particle for suggestion",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "走吧",
+       "en": "let’s go"
+      },
+      {
+       "zh": "吃饭吧",
+       "en": "let’s eat"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-22",
+     "num": 22,
+     "hanzi": "啊",
+     "pinyin": "a",
+     "meaning": "modal particle; ah",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "好啊",
+       "en": "sure; okay"
+      },
+      {
+       "zh": "是啊",
+       "en": "yes; that’s right"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l5-23",
+     "num": 23,
+     "hanzi": "见",
+     "pinyin": "jiàn",
+     "meaning": "to see; to meet",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "明天见",
+       "en": "see you tomorrow"
+      },
+      {
+       "zh": "晚上见",
+       "en": "see you tonight"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "你家有几口人？",
+   "titleEn": "How Many People Are in Your Family?",
+   "words": [
+    {
+     "id": "huihua360-1-l6-1",
+     "num": 1,
+     "hanzi": "爸爸",
+     "pinyin": "bàba",
+     "meaning": "dad; father",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我爸爸",
+       "en": "my father"
+      },
+      {
+       "zh": "爸爸妈妈",
+       "en": "parents; dad and mom"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-2",
+     "num": 2,
+     "hanzi": "妈妈",
+     "pinyin": "māma",
+     "meaning": "mom; mother",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我妈妈",
+       "en": "my mother"
+      },
+      {
+       "zh": "爸爸妈妈",
+       "en": "parents; dad and mom"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-3",
+     "num": 3,
+     "hanzi": "哥哥",
+     "pinyin": "gēge",
+     "meaning": "older brother",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我哥哥",
+       "en": "my older brother"
+      },
+      {
+       "zh": "哥哥姐姐",
+       "en": "older brother and older sister"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-4",
+     "num": 4,
+     "hanzi": "姐姐",
+     "pinyin": "jiějie",
+     "meaning": "older sister",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我姐姐",
+       "en": "my older sister"
+      },
+      {
+       "zh": "哥哥姐姐",
+       "en": "older brother and older sister"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-5",
+     "num": 5,
+     "hanzi": "弟弟",
+     "pinyin": "dìdi",
+     "meaning": "younger brother",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我弟弟",
+       "en": "my younger brother"
+      },
+      {
+       "zh": "没有弟弟",
+       "en": "don’t have a younger brother"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-6",
+     "num": 6,
+     "hanzi": "妹妹",
+     "pinyin": "mèimei",
+     "meaning": "younger sister",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我妹妹",
+       "en": "my younger sister"
+      },
+      {
+       "zh": "妹妹是学生",
+       "en": "younger sister is a student"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-7",
+     "num": 7,
+     "hanzi": "这",
+     "pinyin": "zhè",
+     "meaning": "this",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是",
+       "en": "this is"
+      },
+      {
+       "zh": "这个",
+       "en": "this one"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-8",
+     "num": 8,
+     "hanzi": "男朋友",
+     "pinyin": "nánpéngyou",
+     "meaning": "boyfriend",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的男朋友",
+       "en": "my boyfriend"
+      },
+      {
+       "zh": "她的男朋友",
+       "en": "her boyfriend"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-9",
+     "num": 9,
+     "hanzi": "汉语",
+     "pinyin": "Hànyǔ",
+     "meaning": "Chinese language",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "学习汉语",
+       "en": "study Chinese"
+      },
+      {
+       "zh": "汉语老师",
+       "en": "Chinese teacher"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-10",
+     "num": 10,
+     "hanzi": "阿姨",
+     "pinyin": "āyí",
+     "meaning": "aunt; ma'am",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "阿姨好",
+       "en": "hello, auntie"
+      },
+      {
+       "zh": "谢谢阿姨",
+       "en": "thank you, auntie"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-11",
+     "num": 11,
+     "hanzi": "欢迎",
+     "pinyin": "huānyíng",
+     "meaning": "to welcome; welcome",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "欢迎你",
+       "en": "welcome"
+      },
+      {
+       "zh": "欢迎来中国",
+       "en": "welcome to China"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-12",
+     "num": 12,
+     "hanzi": "多",
+     "pinyin": "duō",
+     "meaning": "many; much; how (with adjective)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "多大",
+       "en": "how old; how big"
+      },
+      {
+       "zh": "很多",
+       "en": "many; a lot"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-13",
+     "num": 13,
+     "hanzi": "岁",
+     "pinyin": "suì",
+     "meaning": "years old",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "二十岁",
+       "en": "twenty years old"
+      },
+      {
+       "zh": "几岁",
+       "en": "how old"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-14",
+     "num": 14,
+     "hanzi": "家",
+     "pinyin": "jiā",
+     "meaning": "home; family",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我家",
+       "en": "my family; my home"
+      },
+      {
+       "zh": "回家",
+       "en": "go home"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-15",
+     "num": 15,
+     "hanzi": "口",
+     "pinyin": "kǒu",
+     "meaning": "measure word for family members",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "三口人",
+       "en": "three people in the family"
+      },
+      {
+       "zh": "五口人",
+       "en": "five people in the family"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-16",
+     "num": 16,
+     "hanzi": "有",
+     "pinyin": "yǒu",
+     "meaning": "to have; there is/are",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我有",
+       "en": "I have"
+      },
+      {
+       "zh": "家里有",
+       "en": "there is/are at home"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-17",
+     "num": 17,
+     "hanzi": "和",
+     "pinyin": "hé",
+     "meaning": "and",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "爸爸和妈妈",
+       "en": "dad and mom"
+      },
+      {
+       "zh": "我和你",
+       "en": "you and me"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-18",
+     "num": 18,
+     "hanzi": "工作",
+     "pinyin": "gōngzuò",
+     "meaning": "work; job; to work",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "什么工作",
+       "en": "what job"
+      },
+      {
+       "zh": "在北京工作",
+       "en": "work in Beijing"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-19",
+     "num": 19,
+     "hanzi": "做",
+     "pinyin": "zuò",
+     "meaning": "to do; to make",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "做什么",
+       "en": "do what; what are you doing?"
+      },
+      {
+       "zh": "做工作",
+       "en": "do work"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-20",
+     "num": 20,
+     "hanzi": "问题",
+     "pinyin": "wèntí",
+     "meaning": "question; problem",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一个问题",
+       "en": "one question"
+      },
+      {
+       "zh": "没有问题",
+       "en": "no problem"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-21",
+     "num": 21,
+     "hanzi": "谁",
+     "pinyin": "shéi",
+     "meaning": "who; whom",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是谁",
+       "en": "who is he?"
+      },
+      {
+       "zh": "谁的",
+       "en": "whose"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-22",
+     "num": 22,
+     "hanzi": "学生",
+     "pinyin": "xuésheng",
+     "meaning": "student",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "汉语学生",
+       "en": "student of Chinese"
+      },
+      {
+       "zh": "一个学生",
+       "en": "one student"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-23",
+     "num": 23,
+     "hanzi": "学习",
+     "pinyin": "xuéxí",
+     "meaning": "to study; to learn",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "学习汉语",
+       "en": "study Chinese"
+      },
+      {
+       "zh": "在家学习",
+       "en": "study at home"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-24",
+     "num": 24,
+     "hanzi": "在",
+     "pinyin": "zài",
+     "meaning": "at; in; on; to be at",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "在家",
+       "en": "at home"
+      },
+      {
+       "zh": "在学校",
+       "en": "at school"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-25",
+     "num": 25,
+     "hanzi": "哪儿",
+     "pinyin": "nǎr",
+     "meaning": "where",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "在哪儿",
+       "en": "where is/are…?"
+      },
+      {
+       "zh": "去哪儿",
+       "en": "where are you going?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-26",
+     "num": 26,
+     "hanzi": "没有",
+     "pinyin": "méiyǒu",
+     "meaning": "to not have; there isn't",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "没有弟弟",
+       "en": "don’t have a younger brother"
+      },
+      {
+       "zh": "没有时间",
+       "en": "have no time"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l6-27",
+     "num": 27,
+     "hanzi": "银行",
+     "pinyin": "yínháng",
+     "meaning": "bank",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "中国银行",
+       "en": "Bank of China"
+      },
+      {
+       "zh": "在银行",
+       "en": "at the bank"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "西瓜多少钱一斤？",
+   "titleEn": "How Much Is Watermelon per Jin?",
+   "words": [
+    {
+     "id": "huihua360-1-l7-1",
+     "num": 1,
+     "hanzi": "西瓜",
+     "pinyin": "xīguā",
+     "meaning": "watermelon",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "买西瓜",
+       "en": "buy watermelon"
+      },
+      {
+       "zh": "西瓜很甜",
+       "en": "the watermelon is sweet"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-2",
+     "num": 2,
+     "hanzi": "钱",
+     "pinyin": "qián",
+     "meaning": "money",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "多少钱",
+       "en": "how much"
+      },
+      {
+       "zh": "很多钱",
+       "en": "a lot of money"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-3",
+     "num": 3,
+     "hanzi": "斤",
+     "pinyin": "jīn",
+     "meaning": "jin; 500 grams",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一斤苹果",
+       "en": "one jin of apples"
+      },
+      {
+       "zh": "两斤西瓜",
+       "en": "two jin of watermelon"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-4",
+     "num": 4,
+     "hanzi": "块",
+     "pinyin": "kuài",
+     "meaning": "yuan (colloquial); piece",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "两块钱",
+       "en": "two yuan"
+      },
+      {
+       "zh": "一块",
+       "en": "one yuan; one piece"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-5",
+     "num": 5,
+     "hanzi": "苹果",
+     "pinyin": "píngguǒ",
+     "meaning": "apple",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "买苹果",
+       "en": "buy apples"
+      },
+      {
+       "zh": "一个苹果",
+       "en": "one apple"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-6",
+     "num": 6,
+     "hanzi": "怎么",
+     "pinyin": "zěnme",
+     "meaning": "how",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "怎么卖",
+       "en": "how much is it?; how is it sold?"
+      },
+      {
+       "zh": "怎么走",
+       "en": "how do I get there?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-7",
+     "num": 7,
+     "hanzi": "卖",
+     "pinyin": "mài",
+     "meaning": "to sell",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "怎么卖",
+       "en": "how much is it?; how is it sold?"
+      },
+      {
+       "zh": "卖水果",
+       "en": "sell fruit"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-8",
+     "num": 8,
+     "hanzi": "买",
+     "pinyin": "mǎi",
+     "meaning": "to buy",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "买东西",
+       "en": "buy things"
+      },
+      {
+       "zh": "买水果",
+       "en": "buy fruit"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-9",
+     "num": 9,
+     "hanzi": "要",
+     "pinyin": "yào",
+     "meaning": "to want; need",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我要两个",
+       "en": "I want two"
+      },
+      {
+       "zh": "要不要",
+       "en": "do you want it?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-10",
+     "num": 10,
+     "hanzi": "两",
+     "pinyin": "liǎng",
+     "meaning": "two (before measure words)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "两个",
+       "en": "two"
+      },
+      {
+       "zh": "两瓶",
+       "en": "two bottles"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-11",
+     "num": 11,
+     "hanzi": "瓶",
+     "pinyin": "píng",
+     "meaning": "bottle; measure word for bottles",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一瓶水",
+       "en": "a bottle of water"
+      },
+      {
+       "zh": "两瓶水",
+       "en": "two bottles of water"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l7-12",
+     "num": 12,
+     "hanzi": "矿泉水",
+     "pinyin": "kuàngquánshuǐ",
+     "meaning": "mineral water",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一瓶矿泉水",
+       "en": "a bottle of mineral water"
+      },
+      {
+       "zh": "买矿泉水",
+       "en": "buy mineral water"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "请问，洗手间在哪儿？",
+   "titleEn": "Excuse Me, Where Is the Restroom?",
+   "words": [
+    {
+     "id": "huihua360-1-l8-1",
+     "num": 1,
+     "hanzi": "洗手间",
+     "pinyin": "xǐshǒujiān",
+     "meaning": "restroom; washroom",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去洗手间",
+       "en": "go to the restroom"
+      },
+      {
+       "zh": "洗手间在哪儿",
+       "en": "where is the restroom?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-2",
+     "num": 2,
+     "hanzi": "房间",
+     "pinyin": "fángjiān",
+     "meaning": "room",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的房间",
+       "en": "my room"
+      },
+      {
+       "zh": "房间号码",
+       "en": "room number"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-3",
+     "num": 3,
+     "hanzi": "前",
+     "pinyin": "qián",
+     "meaning": "front; ahead",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "往前走",
+       "en": "go straight ahead"
+      },
+      {
+       "zh": "前面",
+       "en": "in front; ahead"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-4",
+     "num": 4,
+     "hanzi": "左",
+     "pinyin": "zuǒ",
+     "meaning": "left",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "往左拐",
+       "en": "turn left"
+      },
+      {
+       "zh": "左边",
+       "en": "left side"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-5",
+     "num": 5,
+     "hanzi": "右",
+     "pinyin": "yòu",
+     "meaning": "right",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "往右拐",
+       "en": "turn right"
+      },
+      {
+       "zh": "右边",
+       "en": "right side"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-6",
+     "num": 6,
+     "hanzi": "往",
+     "pinyin": "wǎng",
+     "meaning": "toward",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "往前走",
+       "en": "go straight ahead"
+      },
+      {
+       "zh": "往右拐",
+       "en": "turn right"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-7",
+     "num": 7,
+     "hanzi": "拐",
+     "pinyin": "guǎi",
+     "meaning": "to turn",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "往左拐",
+       "en": "turn left"
+      },
+      {
+       "zh": "往右拐",
+       "en": "turn right"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-8",
+     "num": 8,
+     "hanzi": "走",
+     "pinyin": "zǒu",
+     "meaning": "to walk; to go",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一直走",
+       "en": "go straight"
+      },
+      {
+       "zh": "往前走",
+       "en": "go straight ahead"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-9",
+     "num": 9,
+     "hanzi": "一直",
+     "pinyin": "yìzhí",
+     "meaning": "straight; continuously",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一直走",
+       "en": "go straight"
+      },
+      {
+       "zh": "一直学习",
+       "en": "keep studying"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-10",
+     "num": 10,
+     "hanzi": "然后",
+     "pinyin": "ránhòu",
+     "meaning": "then; after that",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "然后走",
+       "en": "then go"
+      },
+      {
+       "zh": "然后回家",
+       "en": "then go home"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-11",
+     "num": 11,
+     "hanzi": "图书馆",
+     "pinyin": "túshūguǎn",
+     "meaning": "library",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去图书馆",
+       "en": "go to the library"
+      },
+      {
+       "zh": "国家图书馆",
+       "en": "National Library"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-12",
+     "num": 12,
+     "hanzi": "知道",
+     "pinyin": "zhīdào",
+     "meaning": "to know",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我知道",
+       "en": "I know"
+      },
+      {
+       "zh": "不知道",
+       "en": "don’t know"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-13",
+     "num": 13,
+     "hanzi": "这儿",
+     "pinyin": "zhèr",
+     "meaning": "here",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "在这儿",
+       "en": "here"
+      },
+      {
+       "zh": "从这儿走",
+       "en": "go from here"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-14",
+     "num": 14,
+     "hanzi": "从",
+     "pinyin": "cóng",
+     "meaning": "from",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "从这儿",
+       "en": "from here"
+      },
+      {
+       "zh": "从北京来",
+       "en": "come from Beijing"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-15",
+     "num": 15,
+     "hanzi": "南",
+     "pinyin": "nán",
+     "meaning": "south",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "往南走",
+       "en": "go south"
+      },
+      {
+       "zh": "南边",
+       "en": "south side"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-16",
+     "num": 16,
+     "hanzi": "第",
+     "pinyin": "dì",
+     "meaning": "ordinal prefix",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "第一个",
+       "en": "the first one"
+      },
+      {
+       "zh": "第二个",
+       "en": "the second one"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-17",
+     "num": 17,
+     "hanzi": "路口",
+     "pinyin": "lùkǒu",
+     "meaning": "intersection; crossing",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "第一个路口",
+       "en": "the first intersection"
+      },
+      {
+       "zh": "到路口",
+       "en": "get to the intersection"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-18",
+     "num": 18,
+     "hanzi": "到",
+     "pinyin": "dào",
+     "meaning": "to arrive; to reach",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "到这儿",
+       "en": "get here"
+      },
+      {
+       "zh": "到北京",
+       "en": "arrive in Beijing"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-19",
+     "num": 19,
+     "hanzi": "马路",
+     "pinyin": "mǎlù",
+     "meaning": "road; street",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "马路西边",
+       "en": "west side of the road"
+      },
+      {
+       "zh": "马路右边",
+       "en": "right side of the road"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-20",
+     "num": 20,
+     "hanzi": "西边",
+     "pinyin": "xībian",
+     "meaning": "west side",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "在西边",
+       "en": "on the west side"
+      },
+      {
+       "zh": "马路西边",
+       "en": "west side of the road"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-1-l8-21",
+     "num": 21,
+     "hanzi": "边",
+     "pinyin": "biān",
+     "meaning": "side",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "左边",
+       "en": "left side"
+      },
+      {
+       "zh": "右边",
+       "en": "right side"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

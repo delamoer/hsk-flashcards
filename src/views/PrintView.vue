@@ -2,7 +2,7 @@
   <div class="printpage" v-if="lesson">
     <!-- screen-only controls -->
     <div class="controls">
-      <router-link :to="`/hsk/${level}/lesson/${lesson.num}`" class="btn secondary">← 返回 Back</router-link>
+      <router-link :to="`/course/${series}/${unit}/lesson/${lesson.num}`" class="btn secondary">← 返回 Back</router-link>
       <div class="toggle">
         <button :class="{ on: layout === 'list' }" @click="layout = 'list'">词表 List</button>
         <button :class="{ on: layout === 'cards' }" @click="layout = 'cards'">卡片 Cards</button>
@@ -12,7 +12,7 @@
 
     <div class="sheet">
       <h1 class="title">
-        <span class="han">HSK {{ level }} · 第 {{ lesson.num }} 课 {{ lesson.title }}</span>
+        <span class="han">{{ unitLabel }} · 第 {{ lesson.num }} 课 {{ lesson.title }}</span>
         <span class="sub">{{ lesson.titleEn }} — {{ lesson.words.length }} words</span>
       </h1>
 
@@ -50,16 +50,25 @@
 <script setup>
 import { ref, computed } from "vue";
 import { getLesson } from "@/data";
+import { getSeries } from "@/data/courses.js";
 import { colorPinyin } from "@/utils/pinyinTones";
 import { useSettings } from "@/composables/useSettings";
 
 const props = defineProps({
-  level: { type: [Number, String], required: true },
+  series: { type: String, required: true },
+  unit: { type: [Number, String], required: true },
   lesson: { type: [Number, String], required: true },
 });
+
 const { settings } = useSettings();
-const lesson = computed(() => getLesson(props.level, props.lesson));
+const lesson = computed(() => getLesson(props.series, props.unit, props.lesson));
 const layout = ref("list");
+
+const seriesMeta = computed(() => getSeries(props.series));
+const unitLabel = computed(() => {
+  const u = seriesMeta.value?.units.find((u) => u.id === Number(props.unit));
+  return u?.label || `Unit ${props.unit}`;
+});
 
 function py(p) {
   return settings.toneColors ? colorPinyin(p) : p;
@@ -192,7 +201,6 @@ function print() {
   .cut {
     border-color: #999;
   }
-  /* keep tone colors legible; force exact color printing */
   :deep(.t1),
   :deep(.t2),
   :deep(.t3),

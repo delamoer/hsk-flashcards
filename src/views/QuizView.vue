@@ -2,8 +2,8 @@
   <div class="wrap quizwrap" v-if="lesson">
     <div class="crumb">
       <router-link to="/">首页</router-link><span class="sep">/</span>
-      <router-link :to="`/hsk/${level}`">HSK {{ level }}</router-link><span class="sep">/</span>
-      <router-link :to="`/hsk/${level}/lesson/${lesson.num}`">第 {{ lesson.num }} 课</router-link>
+      <router-link :to="`/course/${series}/${unit}`">{{ unitLabel }}</router-link><span class="sep">/</span>
+      <router-link :to="`/course/${series}/${unit}/lesson/${lesson.num}`">第 {{ lesson.num }} 课</router-link>
       <span class="sep">/</span><span class="cur">自测 Quiz</span>
     </div>
 
@@ -16,7 +16,7 @@
       </p>
       <div class="ractions">
         <button class="btn primary" @click="restart">再来一次 Try again</button>
-        <router-link :to="`/hsk/${level}/lesson/${lesson.num}`" class="btn secondary">
+        <router-link :to="`/course/${series}/${unit}/lesson/${lesson.num}`" class="btn secondary">
           ← 返回本课 Back
         </router-link>
       </div>
@@ -33,7 +33,7 @@
           <div class="qsub">点 🔊 再听 · Tap to replay</div>
         </template>
         <template v-else>
-          <div class="qprompt">“{{ q.answer.meaning }}”</div>
+          <div class="qprompt">"{{ q.answer.meaning }}"</div>
           <div class="qsub">选出对应的汉字 · Pick the matching character</div>
         </template>
 
@@ -68,19 +68,27 @@
 <script setup>
 import { ref, computed } from "vue";
 import { getLesson, allWords } from "@/data";
+import { getSeries } from "@/data/courses.js";
 import { useProgress } from "@/composables/useProgress";
 import { useSettings } from "@/composables/useSettings";
 import { speak } from "@/utils/tts";
 
 const props = defineProps({
-  level: { type: [Number, String], required: true },
+  series: { type: String, required: true },
+  unit: { type: [Number, String], required: true },
   lesson: { type: [Number, String], required: true },
 });
 
 const { setStatus } = useProgress();
 const { settings } = useSettings();
 
-const lesson = computed(() => getLesson(props.level, props.lesson));
+const lesson = computed(() => getLesson(props.series, props.unit, props.lesson));
+
+const seriesMeta = computed(() => getSeries(props.series));
+const unitLabel = computed(() => {
+  const u = seriesMeta.value?.units.find((u) => u.id === Number(props.unit));
+  return u?.label || `Unit ${props.unit}`;
+});
 
 function shuffle(a) {
   const arr = a.slice();
@@ -94,7 +102,7 @@ function shuffle(a) {
 function buildQuestions() {
   const words = lesson.value ? lesson.value.words : [];
   if (words.length < 4) return [];
-  const pool = words.length >= 4 ? words : allWords(props.level);
+  const pool = words.length >= 4 ? words : allWords(props.series, props.unit);
   return shuffle(words).map((answer, i) => {
     const distractors = shuffle(pool.filter((w) => w.id !== answer.id)).slice(0, 3);
     return {
@@ -130,7 +138,7 @@ function pick(opt) {
     correctCount.value++;
   } else {
     missed.value.push(q.value.answer);
-    setStatus(q.value.answer.id, "review"); // wrong → mark for review
+    setStatus(q.value.answer.id, "review");
   }
 }
 
@@ -146,7 +154,6 @@ function next() {
     index.value++;
     answered.value = false;
     picked.value = null;
-    // auto-play audio questions
     if (q.value.type === "audio") setTimeout(() => say(q.value.answer.hanzi), 150);
   } else {
     done.value = true;

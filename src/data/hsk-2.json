@@ -1,0 +1,3341 @@
+{
+ "series": "hsk",
+ "unit": 2,
+ "lessons": [
+  {
+   "num": 1,
+   "title": "九月去北京旅游最好",
+   "titleEn": "September Is the Best Time to Travel to Beijing",
+   "words": [
+    {
+     "id": "h2-l1-1",
+     "num": 1,
+     "hanzi": "旅游",
+     "pinyin": "lǚyóu",
+     "meaning": "to travel; travel",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想去北京旅游。",
+       "en": "I want to travel to Beijing."
+      },
+      {
+       "zh": "九月去中国旅游很好。",
+       "en": "September is a good time to travel in China."
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-2",
+     "num": 2,
+     "hanzi": "觉得",
+     "pinyin": "juéde",
+     "meaning": "to think; to feel",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我觉得很好。",
+       "en": "I think it is very good."
+      },
+      {
+       "zh": "你觉得怎么样？",
+       "en": "What do you think?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-3",
+     "num": 3,
+     "hanzi": "最",
+     "pinyin": "zuì",
+     "meaning": "most; the most",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我最喜欢喝茶。",
+       "en": "I like drinking tea the most."
+      },
+      {
+       "zh": "她的汉语最好。",
+       "en": "Her Chinese is the best."
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-4",
+     "num": 4,
+     "hanzi": "为什么",
+     "pinyin": "wèishénme",
+     "meaning": "why",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你为什么去北京？",
+       "en": "Why are you going to Beijing?"
+      },
+      {
+       "zh": "你为什么不吃？",
+       "en": "Why aren't you eating?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-5",
+     "num": 5,
+     "hanzi": "也",
+     "pinyin": "yě",
+     "meaning": "also; too",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我也喜欢中国菜。",
+       "en": "I also like Chinese food."
+      },
+      {
+       "zh": "她也是学生。",
+       "en": "She is also a student."
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-6",
+     "num": 6,
+     "hanzi": "运动",
+     "pinyin": "yùndòng",
+     "meaning": "sport; to exercise",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢运动。",
+       "en": "I like exercising."
+      },
+      {
+       "zh": "你每天运动吗？",
+       "en": "Do you exercise every day?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-7",
+     "num": 7,
+     "hanzi": "踢足球",
+     "pinyin": "tī zúqiú",
+     "meaning": "to play football/soccer",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢踢足球。",
+       "en": "I like playing football."
+      },
+      {
+       "zh": "下午我们踢足球。",
+       "en": "We play football in the afternoon."
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-8",
+     "num": 8,
+     "hanzi": "一起",
+     "pinyin": "yìqǐ",
+     "meaning": "together",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起去学校。",
+       "en": "We go to school together."
+      },
+      {
+       "zh": "一起吃饭吧。",
+       "en": "Let's eat together."
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-9",
+     "num": 9,
+     "hanzi": "要",
+     "pinyin": "yào",
+     "meaning": "to want to; will; need to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我要去北京。",
+       "en": "I want to go to Beijing."
+      },
+      {
+       "zh": "你要喝茶吗？",
+       "en": "Do you want tea?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-10",
+     "num": 10,
+     "hanzi": "新",
+     "pinyin": "xīn",
+     "meaning": "new",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是我的新书。",
+       "en": "This is my new book."
+      },
+      {
+       "zh": "我想买新衣服。",
+       "en": "I want to buy new clothes."
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-11",
+     "num": 11,
+     "hanzi": "它",
+     "pinyin": "tā",
+     "meaning": "it",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "它是我的猫。",
+       "en": "It is my cat."
+      },
+      {
+       "zh": "它很漂亮。",
+       "en": "It is very pretty."
+      }
+     ]
+    },
+    {
+     "id": "h2-l1-12",
+     "num": 12,
+     "hanzi": "眼睛",
+     "pinyin": "yǎnjing",
+     "meaning": "eye; eyes",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她的眼睛很大。",
+       "en": "Her eyes are big."
+      },
+      {
+       "zh": "我的眼睛很好。",
+       "en": "My eyes are fine."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "我每天六点起床",
+   "titleEn": "I Get Up at Six Every Day",
+   "words": [
+    {
+     "id": "h2-l2-1",
+     "num": 1,
+     "hanzi": "生病",
+     "pinyin": "shēngbìng",
+     "meaning": "to fall ill; to be sick",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他生病了。",
+       "en": "He is sick."
+      },
+      {
+       "zh": "我很少生病。",
+       "en": "I seldom get sick."
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-2",
+     "num": 2,
+     "hanzi": "每",
+     "pinyin": "měi",
+     "meaning": "every; each",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天学习汉语。",
+       "en": "I study Chinese every day."
+      },
+      {
+       "zh": "她每年去北京。",
+       "en": "She goes to Beijing every year."
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-3",
+     "num": 3,
+     "hanzi": "早上",
+     "pinyin": "zǎoshang",
+     "meaning": "morning",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我早上六点起床。",
+       "en": "I get up at six in the morning."
+      },
+      {
+       "zh": "早上我喝牛奶。",
+       "en": "I drink milk in the morning."
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-4",
+     "num": 4,
+     "hanzi": "跑步",
+     "pinyin": "pǎobù",
+     "meaning": "to run; to jog",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天跑步。",
+       "en": "I jog every day."
+      },
+      {
+       "zh": "早上我们一起跑步。",
+       "en": "We jog together in the morning."
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-5",
+     "num": 5,
+     "hanzi": "起床",
+     "pinyin": "qǐchuáng",
+     "meaning": "to get up",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我六点起床。",
+       "en": "I get up at six."
+      },
+      {
+       "zh": "你几点起床？",
+       "en": "What time do you get up?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-6",
+     "num": 6,
+     "hanzi": "药",
+     "pinyin": "yào",
+     "meaning": "medicine",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我吃药了。",
+       "en": "I took the medicine."
+      },
+      {
+       "zh": "这是医生给我的药。",
+       "en": "This is the medicine the doctor gave me."
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-7",
+     "num": 7,
+     "hanzi": "身体",
+     "pinyin": "shēntǐ",
+     "meaning": "body; health",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你身体怎么样？",
+       "en": "How is your health?"
+      },
+      {
+       "zh": "运动对身体很好。",
+       "en": "Exercise is good for your health."
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-8",
+     "num": 8,
+     "hanzi": "出院",
+     "pinyin": "chūyuàn",
+     "meaning": "to leave hospital; be discharged",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他明天出院。",
+       "en": "He leaves the hospital tomorrow."
+      },
+      {
+       "zh": "你什么时候能出院？",
+       "en": "When can you leave the hospital?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-9",
+     "num": 9,
+     "hanzi": "出",
+     "pinyin": "chū",
+     "meaning": "to go out; to come out",
+     "type": null,
+     "note": "教材把“出”作为“出院”的关联词单独教学。",
+     "examples": [
+      {
+       "zh": "我出去一下。",
+       "en": "I am going out for a moment."
+      },
+      {
+       "zh": "他从医院出来了。",
+       "en": "He came out of the hospital."
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-10",
+     "num": 10,
+     "hanzi": "高",
+     "pinyin": "gāo",
+     "meaning": "tall; high",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他很高。",
+       "en": "He is tall."
+      },
+      {
+       "zh": "你多高？",
+       "en": "How tall are you?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-11",
+     "num": 11,
+     "hanzi": "米",
+     "pinyin": "mǐ",
+     "meaning": "meter",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他一米八。",
+       "en": "He is 1.8 meters tall."
+      },
+      {
+       "zh": "我一米六。",
+       "en": "I am 1.6 meters tall."
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-12",
+     "num": 12,
+     "hanzi": "知道",
+     "pinyin": "zhīdào",
+     "meaning": "to know",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我不知道。",
+       "en": "I don't know."
+      },
+      {
+       "zh": "你知道他在哪儿吗？",
+       "en": "Do you know where he is?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-13",
+     "num": 13,
+     "hanzi": "休息",
+     "pinyin": "xiūxi",
+     "meaning": "to rest",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想休息。",
+       "en": "I want to rest."
+      },
+      {
+       "zh": "星期天我在家休息。",
+       "en": "I rest at home on Sunday."
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-14",
+     "num": 14,
+     "hanzi": "忙",
+     "pinyin": "máng",
+     "meaning": "busy",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我今天很忙。",
+       "en": "I am busy today."
+      },
+      {
+       "zh": "老师现在忙吗？",
+       "en": "Is the teacher busy now?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l2-15",
+     "num": 15,
+     "hanzi": "时间",
+     "pinyin": "shíjiān",
+     "meaning": "time",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我没有时间。",
+       "en": "I don't have time."
+      },
+      {
+       "zh": "你有时间吗？",
+       "en": "Do you have time?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "左边那个红色的是我的",
+   "titleEn": "The Red One on the Left Is Mine",
+   "words": [
+    {
+     "id": "h2-l3-1",
+     "num": 1,
+     "hanzi": "手表",
+     "pinyin": "shǒubiǎo",
+     "meaning": "watch; wristwatch",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是我的手表。",
+       "en": "This is my watch."
+      },
+      {
+       "zh": "这个手表多少钱？",
+       "en": "How much is this watch?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-2",
+     "num": 2,
+     "hanzi": "千",
+     "pinyin": "qiān",
+     "meaning": "thousand",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个手表一千块钱。",
+       "en": "This watch is one thousand yuan."
+      },
+      {
+       "zh": "一千个人很多。",
+       "en": "One thousand people is a lot."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-3",
+     "num": 3,
+     "hanzi": "报纸",
+     "pinyin": "bàozhǐ",
+     "meaning": "newspaper",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我看报纸。",
+       "en": "I read the newspaper."
+      },
+      {
+       "zh": "报纸在桌子上。",
+       "en": "The newspaper is on the table."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-4",
+     "num": 4,
+     "hanzi": "送",
+     "pinyin": "sòng",
+     "meaning": "to give; to send",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我送你一本书。",
+       "en": "I give you a book."
+      },
+      {
+       "zh": "这是朋友送我的。",
+       "en": "A friend gave this to me."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-5",
+     "num": 5,
+     "hanzi": "一下",
+     "pinyin": "yíxià",
+     "meaning": "a little; once (after a verb)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请看一下。",
+       "en": "Please take a look."
+      },
+      {
+       "zh": "我问一下老师。",
+       "en": "I will ask the teacher."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-6",
+     "num": 6,
+     "hanzi": "牛奶",
+     "pinyin": "niúnǎi",
+     "meaning": "milk",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我早上喝牛奶。",
+       "en": "I drink milk in the morning."
+      },
+      {
+       "zh": "你想喝牛奶吗？",
+       "en": "Would you like milk?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-7",
+     "num": 7,
+     "hanzi": "房间",
+     "pinyin": "fángjiān",
+     "meaning": "room",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的房间很小。",
+       "en": "My room is small."
+      },
+      {
+       "zh": "他在房间里。",
+       "en": "He is in the room."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-8",
+     "num": 8,
+     "hanzi": "丈夫",
+     "pinyin": "zhàngfu",
+     "meaning": "husband",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她丈夫是医生。",
+       "en": "Her husband is a doctor."
+      },
+      {
+       "zh": "我认识她丈夫。",
+       "en": "I know her husband."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-9",
+     "num": 9,
+     "hanzi": "旁边",
+     "pinyin": "pángbiān",
+     "meaning": "beside; next to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "学校旁边有商店。",
+       "en": "There is a shop next to the school."
+      },
+      {
+       "zh": "他坐在我旁边。",
+       "en": "He sits beside me."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-10",
+     "num": 10,
+     "hanzi": "真",
+     "pinyin": "zhēn",
+     "meaning": "really; truly",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个菜真好吃。",
+       "en": "This dish is really tasty."
+      },
+      {
+       "zh": "你真高。",
+       "en": "You are really tall."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-11",
+     "num": 11,
+     "hanzi": "粉色",
+     "pinyin": "fěnsè",
+     "meaning": "pink",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢粉色。",
+       "en": "I like pink."
+      },
+      {
+       "zh": "这件衣服是粉色的。",
+       "en": "This piece of clothing is pink."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-12",
+     "num": 12,
+     "hanzi": "颜色",
+     "pinyin": "yánsè",
+     "meaning": "color",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你喜欢什么颜色？",
+       "en": "What color do you like?"
+      },
+      {
+       "zh": "这个颜色很好看。",
+       "en": "This color looks nice."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-13",
+     "num": 13,
+     "hanzi": "左边",
+     "pinyin": "zuǒbian",
+     "meaning": "left side",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我坐在左边。",
+       "en": "I sit on the left."
+      },
+      {
+       "zh": "左边那个是我的。",
+       "en": "The one on the left is mine."
+      }
+     ]
+    },
+    {
+     "id": "h2-l3-14",
+     "num": 14,
+     "hanzi": "红色",
+     "pinyin": "hóngsè",
+     "meaning": "red; red color",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢红色。",
+       "en": "I like red."
+      },
+      {
+       "zh": "这件衣服是红色的。",
+       "en": "This piece of clothing is red."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "这个工作是他帮我介绍的",
+   "titleEn": "He Helped Me Find This Job",
+   "words": [
+    {
+     "id": "h2-l4-1",
+     "num": 1,
+     "hanzi": "生日",
+     "pinyin": "shēngrì",
+     "meaning": "birthday",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天是我的生日。",
+       "en": "Today is my birthday."
+      },
+      {
+       "zh": "你生日是几月几号？",
+       "en": "What date is your birthday?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-2",
+     "num": 2,
+     "hanzi": "快乐",
+     "pinyin": "kuàilè",
+     "meaning": "happy; glad",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "祝你生日快乐。",
+       "en": "Happy birthday to you."
+      },
+      {
+       "zh": "今天我很快乐。",
+       "en": "I am very happy today."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-3",
+     "num": 3,
+     "hanzi": "给",
+     "pinyin": "gěi",
+     "meaning": "to give; to; for",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请给我一杯水。",
+       "en": "Please give me a glass of water."
+      },
+      {
+       "zh": "我给妈妈打电话。",
+       "en": "I call my mother."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-4",
+     "num": 4,
+     "hanzi": "接",
+     "pinyin": "jiē",
+     "meaning": "to receive; to answer; to pick up",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我接了一个电话。",
+       "en": "I answered a phone call."
+      },
+      {
+       "zh": "爸爸去学校接我。",
+       "en": "Dad goes to school to pick me up."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-5",
+     "num": 5,
+     "hanzi": "晚上",
+     "pinyin": "wǎnshang",
+     "meaning": "evening; night",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "晚上我看电视。",
+       "en": "I watch TV in the evening."
+      },
+      {
+       "zh": "今天晚上一起吃饭吧。",
+       "en": "Let's eat together tonight."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-6",
+     "num": 6,
+     "hanzi": "问",
+     "pinyin": "wèn",
+     "meaning": "to ask",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想问你一个问题。",
+       "en": "I want to ask you a question."
+      },
+      {
+       "zh": "我问一下老师。",
+       "en": "I will ask the teacher."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-7",
+     "num": 7,
+     "hanzi": "非常",
+     "pinyin": "fēicháng",
+     "meaning": "very; extremely",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我非常喜欢中国菜。",
+       "en": "I really like Chinese food."
+      },
+      {
+       "zh": "今天非常冷。",
+       "en": "It is very cold today."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-8",
+     "num": 8,
+     "hanzi": "开始",
+     "pinyin": "kāishǐ",
+     "meaning": "to begin; to start",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "现在开始上课。",
+       "en": "Class starts now."
+      },
+      {
+       "zh": "电影八点开始。",
+       "en": "The movie starts at eight."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-9",
+     "num": 9,
+     "hanzi": "已经",
+     "pinyin": "yǐjīng",
+     "meaning": "already",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我已经吃饭了。",
+       "en": "I have already eaten."
+      },
+      {
+       "zh": "他已经回家了。",
+       "en": "He has already gone home."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-10",
+     "num": 10,
+     "hanzi": "长",
+     "pinyin": "cháng",
+     "meaning": "long",
+     "type": null,
+     "note": "本课读 cháng，表示“长、时间久”。第13课“长”读 zhǎng。",
+     "examples": [
+      {
+       "zh": "这条路很长。",
+       "en": "This road is long."
+      },
+      {
+       "zh": "我等了很长时间。",
+       "en": "I waited a long time."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-11",
+     "num": 11,
+     "hanzi": "两",
+     "pinyin": "liǎng",
+     "meaning": "two (before a measure word)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我有两个朋友。",
+       "en": "I have two friends."
+      },
+      {
+       "zh": "我买了两本书。",
+       "en": "I bought two books."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-12",
+     "num": 12,
+     "hanzi": "帮",
+     "pinyin": "bāng",
+     "meaning": "to help",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请帮我一下。",
+       "en": "Please help me."
+      },
+      {
+       "zh": "他帮我买东西。",
+       "en": "He helps me buy things."
+      }
+     ]
+    },
+    {
+     "id": "h2-l4-13",
+     "num": 13,
+     "hanzi": "介绍",
+     "pinyin": "jièshào",
+     "meaning": "to introduce",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我介绍一下我的朋友。",
+       "en": "Let me introduce my friend."
+      },
+      {
+       "zh": "这个工作是他介绍的。",
+       "en": "He introduced me to this job."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "就买这件吧",
+   "titleEn": "Let's Just Buy This One",
+   "words": [
+    {
+     "id": "h2-l5-1",
+     "num": 1,
+     "hanzi": "外面",
+     "pinyin": "wàimiàn",
+     "meaning": "outside",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "外面很冷。",
+       "en": "It is cold outside."
+      },
+      {
+       "zh": "我想去外面走走。",
+       "en": "I want to walk outside."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-2",
+     "num": 2,
+     "hanzi": "准备",
+     "pinyin": "zhǔnbèi",
+     "meaning": "to prepare; to plan",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我准备去北京。",
+       "en": "I plan to go to Beijing."
+      },
+      {
+       "zh": "你准备好了吗？",
+       "en": "Are you ready?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-3",
+     "num": 3,
+     "hanzi": "就",
+     "pinyin": "jiù",
+     "meaning": "then; just; right away",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "好，就买这个。",
+       "en": "Okay, then buy this one."
+      },
+      {
+       "zh": "我六点就起床。",
+       "en": "I get up as early as six."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-4",
+     "num": 4,
+     "hanzi": "鱼",
+     "pinyin": "yú",
+     "meaning": "fish",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢吃鱼。",
+       "en": "I like eating fish."
+      },
+      {
+       "zh": "这个鱼很好吃。",
+       "en": "This fish is very tasty."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-5",
+     "num": 5,
+     "hanzi": "吧",
+     "pinyin": "ba",
+     "meaning": "modal particle for suggestion",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们回家吧。",
+       "en": "Let's go home."
+      },
+      {
+       "zh": "你坐这儿吧。",
+       "en": "Sit here."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-6",
+     "num": 6,
+     "hanzi": "件",
+     "pinyin": "jiàn",
+     "meaning": "measure word for clothes/items",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我买了一件衣服。",
+       "en": "I bought a piece of clothing."
+      },
+      {
+       "zh": "这件衣服很漂亮。",
+       "en": "This piece of clothing is pretty."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-7",
+     "num": 7,
+     "hanzi": "还",
+     "pinyin": "hái",
+     "meaning": "still; also; fairly",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个菜还不错。",
+       "en": "This dish is pretty good."
+      },
+      {
+       "zh": "他还在学校。",
+       "en": "He is still at school."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-8",
+     "num": 8,
+     "hanzi": "可以",
+     "pinyin": "kěyǐ",
+     "meaning": "can; may; okay",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我可以坐这儿吗？",
+       "en": "May I sit here?"
+      },
+      {
+       "zh": "现在可以开始了。",
+       "en": "We can start now."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-9",
+     "num": 9,
+     "hanzi": "不错",
+     "pinyin": "búcuò",
+     "meaning": "not bad; pretty good",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个电影不错。",
+       "en": "This movie is pretty good."
+      },
+      {
+       "zh": "今天天气不错。",
+       "en": "The weather is nice today."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-10",
+     "num": 10,
+     "hanzi": "考试",
+     "pinyin": "kǎoshì",
+     "meaning": "exam; to take an exam",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "明天有考试。",
+       "en": "There is an exam tomorrow."
+      },
+      {
+       "zh": "我下午考试。",
+       "en": "I have an exam in the afternoon."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-11",
+     "num": 11,
+     "hanzi": "意思",
+     "pinyin": "yìsi",
+     "meaning": "meaning",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个字是什么意思？",
+       "en": "What does this character mean?"
+      },
+      {
+       "zh": "我不懂这个意思。",
+       "en": "I don't understand this meaning."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-12",
+     "num": 12,
+     "hanzi": "咖啡",
+     "pinyin": "kāfēi",
+     "meaning": "coffee",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢喝咖啡。",
+       "en": "I like drinking coffee."
+      },
+      {
+       "zh": "这杯咖啡很贵。",
+       "en": "This cup of coffee is expensive."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-13",
+     "num": 13,
+     "hanzi": "对",
+     "pinyin": "duì",
+     "meaning": "correct; toward; to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你说得对。",
+       "en": "You are right."
+      },
+      {
+       "zh": "运动对身体好。",
+       "en": "Exercise is good for the body."
+      }
+     ]
+    },
+    {
+     "id": "h2-l5-14",
+     "num": 14,
+     "hanzi": "以后",
+     "pinyin": "yǐhòu",
+     "meaning": "after; later; in the future",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃饭以后我看书。",
+       "en": "I read after eating."
+      },
+      {
+       "zh": "以后我想去中国。",
+       "en": "I want to go to China in the future."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "你怎么不吃了",
+   "titleEn": "Why Aren't You Eating?",
+   "words": [
+    {
+     "id": "h2-l6-1",
+     "num": 1,
+     "hanzi": "门",
+     "pinyin": "mén",
+     "meaning": "door",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请开门。",
+       "en": "Please open the door."
+      },
+      {
+       "zh": "门在左边。",
+       "en": "The door is on the left."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-2",
+     "num": 2,
+     "hanzi": "外",
+     "pinyin": "wài",
+     "meaning": "outside; outer",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "自行车在门外。",
+       "en": "The bicycle is outside the door."
+      },
+      {
+       "zh": "学校外有商店。",
+       "en": "There is a shop outside the school."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-3",
+     "num": 3,
+     "hanzi": "自行车",
+     "pinyin": "zìxíngchē",
+     "meaning": "bicycle",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是我的自行车。",
+       "en": "This is my bicycle."
+      },
+      {
+       "zh": "自行车在门外。",
+       "en": "The bicycle is outside the door."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-4",
+     "num": 4,
+     "hanzi": "羊肉",
+     "pinyin": "yángròu",
+     "meaning": "mutton; lamb",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢吃羊肉。",
+       "en": "I like eating mutton."
+      },
+      {
+       "zh": "这个羊肉很好吃。",
+       "en": "This mutton is very tasty."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-5",
+     "num": 5,
+     "hanzi": "好吃",
+     "pinyin": "hǎochī",
+     "meaning": "delicious; tasty",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个菜很好吃。",
+       "en": "This dish is delicious."
+      },
+      {
+       "zh": "面条真好吃。",
+       "en": "The noodles are really tasty."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-6",
+     "num": 6,
+     "hanzi": "面条",
+     "pinyin": "miàntiáo",
+     "meaning": "noodles",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想吃面条。",
+       "en": "I want to eat noodles."
+      },
+      {
+       "zh": "今天中午吃面条。",
+       "en": "We eat noodles at noon today."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-7",
+     "num": 7,
+     "hanzi": "打篮球",
+     "pinyin": "dǎ lánqiú",
+     "meaning": "to play basketball",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢打篮球。",
+       "en": "I like playing basketball."
+      },
+      {
+       "zh": "下午我们打篮球。",
+       "en": "We play basketball in the afternoon."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-8",
+     "num": 8,
+     "hanzi": "因为",
+     "pinyin": "yīnwèi",
+     "meaning": "because",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "因为下雨，我不出去。",
+       "en": "Because it is raining, I am not going out."
+      },
+      {
+       "zh": "因为很累，我想休息。",
+       "en": "Because I am tired, I want to rest."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-9",
+     "num": 9,
+     "hanzi": "所以",
+     "pinyin": "suǒyǐ",
+     "meaning": "so; therefore",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天很冷，所以我不出去。",
+       "en": "It is cold today, so I am not going out."
+      },
+      {
+       "zh": "我很忙，所以没有时间。",
+       "en": "I am busy, so I don't have time."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-10",
+     "num": 10,
+     "hanzi": "游泳",
+     "pinyin": "yóuyǒng",
+     "meaning": "to swim",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢游泳。",
+       "en": "I like swimming."
+      },
+      {
+       "zh": "下午一起去游泳吧。",
+       "en": "Let's go swimming together this afternoon."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-11",
+     "num": 11,
+     "hanzi": "经常",
+     "pinyin": "jīngcháng",
+     "meaning": "often",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我经常看电影。",
+       "en": "I often watch movies."
+      },
+      {
+       "zh": "他经常去北京。",
+       "en": "He often goes to Beijing."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-12",
+     "num": 12,
+     "hanzi": "公斤",
+     "pinyin": "gōngjīn",
+     "meaning": "kilogram",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个西瓜五公斤。",
+       "en": "This watermelon is five kilograms."
+      },
+      {
+       "zh": "我买了两公斤苹果。",
+       "en": "I bought two kilograms of apples."
+      }
+     ]
+    },
+    {
+     "id": "h2-l6-13",
+     "num": 13,
+     "hanzi": "姐姐",
+     "pinyin": "jiějie",
+     "meaning": "older sister",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我姐姐是老师。",
+       "en": "My older sister is a teacher."
+      },
+      {
+       "zh": "姐姐喜欢喝咖啡。",
+       "en": "My older sister likes drinking coffee."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "你家离公司远吗",
+   "titleEn": "Is Your Home Far from the Office?",
+   "words": [
+    {
+     "id": "h2-l7-1",
+     "num": 1,
+     "hanzi": "教室",
+     "pinyin": "jiàoshì",
+     "meaning": "classroom",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师在教室里。",
+       "en": "The teacher is in the classroom."
+      },
+      {
+       "zh": "教室里有很多学生。",
+       "en": "There are many students in the classroom."
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-2",
+     "num": 2,
+     "hanzi": "机场",
+     "pinyin": "jīchǎng",
+     "meaning": "airport",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我去机场接朋友。",
+       "en": "I go to the airport to pick up a friend."
+      },
+      {
+       "zh": "机场离这儿很远。",
+       "en": "The airport is far from here."
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-3",
+     "num": 3,
+     "hanzi": "路",
+     "pinyin": "lù",
+     "meaning": "road; way",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这条路很长。",
+       "en": "This road is long."
+      },
+      {
+       "zh": "去学校怎么走？",
+       "en": "How do I get to the school?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-4",
+     "num": 4,
+     "hanzi": "离",
+     "pinyin": "lí",
+     "meaning": "to be away from; from (distance)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我家离学校很近。",
+       "en": "My home is close to the school."
+      },
+      {
+       "zh": "机场离这儿远吗？",
+       "en": "Is the airport far from here?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-5",
+     "num": 5,
+     "hanzi": "公司",
+     "pinyin": "gōngsī",
+     "meaning": "company",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在公司工作。",
+       "en": "I work at a company."
+      },
+      {
+       "zh": "公司离我家不远。",
+       "en": "The company is not far from my home."
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-6",
+     "num": 6,
+     "hanzi": "远",
+     "pinyin": "yuǎn",
+     "meaning": "far",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "机场很远。",
+       "en": "The airport is far away."
+      },
+      {
+       "zh": "你家离学校远吗？",
+       "en": "Is your home far from school?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-7",
+     "num": 7,
+     "hanzi": "公共汽车",
+     "pinyin": "gōnggòng qìchē",
+     "meaning": "bus",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我坐公共汽车去公司。",
+       "en": "I take the bus to the company."
+      },
+      {
+       "zh": "公共汽车来了。",
+       "en": "The bus is coming."
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-8",
+     "num": 8,
+     "hanzi": "小时",
+     "pinyin": "xiǎoshí",
+     "meaning": "hour",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我学习了两个小时。",
+       "en": "I studied for two hours."
+      },
+      {
+       "zh": "坐车要一个小时。",
+       "en": "It takes one hour by car."
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-9",
+     "num": 9,
+     "hanzi": "慢",
+     "pinyin": "màn",
+     "meaning": "slow; slowly",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你走得太慢了。",
+       "en": "You walk too slowly."
+      },
+      {
+       "zh": "公共汽车有点儿慢。",
+       "en": "The bus is a little slow."
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-10",
+     "num": 10,
+     "hanzi": "快",
+     "pinyin": "kuài",
+     "meaning": "fast; quickly",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他跑得很快。",
+       "en": "He runs fast."
+      },
+      {
+       "zh": "快八点了。",
+       "en": "It is almost eight o'clock."
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-11",
+     "num": 11,
+     "hanzi": "过",
+     "pinyin": "guò",
+     "meaning": "to spend; to pass (time)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在北京过生日。",
+       "en": "I spend my birthday in Beijing."
+      },
+      {
+       "zh": "我们一起过新年。",
+       "en": "We celebrate New Year together."
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-12",
+     "num": 12,
+     "hanzi": "走",
+     "pinyin": "zǒu",
+     "meaning": "to walk; to leave",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我走路去学校。",
+       "en": "I walk to school."
+      },
+      {
+       "zh": "我们走吧。",
+       "en": "Let's go."
+      }
+     ]
+    },
+    {
+     "id": "h2-l7-13",
+     "num": 13,
+     "hanzi": "到",
+     "pinyin": "dào",
+     "meaning": "to arrive; to reach",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我八点到公司。",
+       "en": "I arrive at the company at eight."
+      },
+      {
+       "zh": "你什么时候到北京？",
+       "en": "When will you arrive in Beijing?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "让我想想再告诉你",
+   "titleEn": "Let Me Think and Tell You Later",
+   "words": [
+    {
+     "id": "h2-l8-1",
+     "num": 1,
+     "hanzi": "再",
+     "pinyin": "zài",
+     "meaning": "again; then",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "明天再来吧。",
+       "en": "Come again tomorrow."
+      },
+      {
+       "zh": "我想再看一下。",
+       "en": "I want to take another look."
+      }
+     ]
+    },
+    {
+     "id": "h2-l8-2",
+     "num": 2,
+     "hanzi": "让",
+     "pinyin": "ràng",
+     "meaning": "to let; to ask someone to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师让我读书。",
+       "en": "The teacher asks me to read."
+      },
+      {
+       "zh": "妈妈让我回家。",
+       "en": "Mom asks me to go home."
+      }
+     ]
+    },
+    {
+     "id": "h2-l8-3",
+     "num": 3,
+     "hanzi": "告诉",
+     "pinyin": "gàosu",
+     "meaning": "to tell",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请告诉我。",
+       "en": "Please tell me."
+      },
+      {
+       "zh": "我告诉你一个事情。",
+       "en": "I will tell you something."
+      }
+     ]
+    },
+    {
+     "id": "h2-l8-4",
+     "num": 4,
+     "hanzi": "等",
+     "pinyin": "děng",
+     "meaning": "to wait",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请等一下。",
+       "en": "Please wait a moment."
+      },
+      {
+       "zh": "我在这儿等你。",
+       "en": "I will wait for you here."
+      }
+     ]
+    },
+    {
+     "id": "h2-l8-5",
+     "num": 5,
+     "hanzi": "找",
+     "pinyin": "zhǎo",
+     "meaning": "to look for",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在找手机。",
+       "en": "I am looking for my phone."
+      },
+      {
+       "zh": "你找谁？",
+       "en": "Who are you looking for?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l8-6",
+     "num": 6,
+     "hanzi": "事情",
+     "pinyin": "shìqing",
+     "meaning": "thing; matter",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我有事情。",
+       "en": "I have something to do."
+      },
+      {
+       "zh": "这是什么事情？",
+       "en": "What is this about?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l8-7",
+     "num": 7,
+     "hanzi": "服务员",
+     "pinyin": "fúwùyuán",
+     "meaning": "waiter; waitress; attendant",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "服务员，请给我水。",
+       "en": "Waiter, please give me some water."
+      },
+      {
+       "zh": "那个服务员很好。",
+       "en": "That waiter is very nice."
+      }
+     ]
+    },
+    {
+     "id": "h2-l8-8",
+     "num": 8,
+     "hanzi": "白",
+     "pinyin": "bái",
+     "meaning": "white",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢白色。",
+       "en": "I like white."
+      },
+      {
+       "zh": "这件衣服是白的。",
+       "en": "This piece of clothing is white."
+      }
+     ]
+    },
+    {
+     "id": "h2-l8-9",
+     "num": 9,
+     "hanzi": "黑",
+     "pinyin": "hēi",
+     "meaning": "black",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的手机是黑的。",
+       "en": "His phone is black."
+      },
+      {
+       "zh": "我不喜欢黑色。",
+       "en": "I don't like black."
+      }
+     ]
+    },
+    {
+     "id": "h2-l8-10",
+     "num": 10,
+     "hanzi": "贵",
+     "pinyin": "guì",
+     "meaning": "expensive",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个手表太贵了。",
+       "en": "This watch is too expensive."
+      },
+      {
+       "zh": "咖啡不贵。",
+       "en": "The coffee is not expensive."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "题太多，我没做完",
+   "titleEn": "Too Many Questions, I Didn't Finish",
+   "words": [
+    {
+     "id": "h2-l9-1",
+     "num": 1,
+     "hanzi": "错",
+     "pinyin": "cuò",
+     "meaning": "wrong; incorrect",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个字写错了。",
+       "en": "This character is written incorrectly."
+      },
+      {
+       "zh": "你说错了。",
+       "en": "You said it wrong."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-2",
+     "num": 2,
+     "hanzi": "从",
+     "pinyin": "cóng",
+     "meaning": "from",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我从北京来。",
+       "en": "I come from Beijing."
+      },
+      {
+       "zh": "我从家走到学校。",
+       "en": "I walk from home to school."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-3",
+     "num": 3,
+     "hanzi": "跳舞",
+     "pinyin": "tiàowǔ",
+     "meaning": "to dance",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她喜欢跳舞。",
+       "en": "She likes dancing."
+      },
+      {
+       "zh": "我们一起跳舞吧。",
+       "en": "Let's dance together."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-4",
+     "num": 4,
+     "hanzi": "第一",
+     "pinyin": "dì-yī",
+     "meaning": "first",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是第一。",
+       "en": "He is first."
+      },
+      {
+       "zh": "这是第一题。",
+       "en": "This is the first question."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-5",
+     "num": 5,
+     "hanzi": "希望",
+     "pinyin": "xīwàng",
+     "meaning": "to hope; to wish",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我希望明天天气好。",
+       "en": "I hope the weather is good tomorrow."
+      },
+      {
+       "zh": "我希望去中国旅游。",
+       "en": "I hope to travel to China."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-6",
+     "num": 6,
+     "hanzi": "问题",
+     "pinyin": "wèntí",
+     "meaning": "question; problem",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我有一个问题。",
+       "en": "I have a question."
+      },
+      {
+       "zh": "这个问题我不懂。",
+       "en": "I don't understand this question."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-7",
+     "num": 7,
+     "hanzi": "欢迎",
+     "pinyin": "huānyíng",
+     "meaning": "to welcome; welcome",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "欢迎你来中国。",
+       "en": "Welcome to China."
+      },
+      {
+       "zh": "欢迎来我家。",
+       "en": "Welcome to my home."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-8",
+     "num": 8,
+     "hanzi": "上班",
+     "pinyin": "shàngbān",
+     "meaning": "to go to work; be at work",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我八点上班。",
+       "en": "I start work at eight."
+      },
+      {
+       "zh": "爸爸去公司上班。",
+       "en": "Dad goes to the company to work."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-9",
+     "num": 9,
+     "hanzi": "懂",
+     "pinyin": "dǒng",
+     "meaning": "to understand",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我听懂了。",
+       "en": "I understood it."
+      },
+      {
+       "zh": "这个问题我不懂。",
+       "en": "I don't understand this question."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-10",
+     "num": 10,
+     "hanzi": "完",
+     "pinyin": "wán",
+     "meaning": "to finish; complete",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我吃完了。",
+       "en": "I finished eating."
+      },
+      {
+       "zh": "我看完这本书了。",
+       "en": "I finished reading this book."
+      }
+     ]
+    },
+    {
+     "id": "h2-l9-11",
+     "num": 11,
+     "hanzi": "题",
+     "pinyin": "tí",
+     "meaning": "question; exercise item",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这题我会。",
+       "en": "I can do this question."
+      },
+      {
+       "zh": "我做完这题了。",
+       "en": "I finished this question."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "别找了，手机在桌子上呢",
+   "titleEn": "Stop Looking, the Phone Is on the Table",
+   "words": [
+    {
+     "id": "h2-l10-1",
+     "num": 1,
+     "hanzi": "课",
+     "pinyin": "kè",
+     "meaning": "class; lesson",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "现在上课。",
+       "en": "Class starts now."
+      },
+      {
+       "zh": "今天有汉语课。",
+       "en": "We have Chinese class today."
+      }
+     ]
+    },
+    {
+     "id": "h2-l10-2",
+     "num": 2,
+     "hanzi": "帮助",
+     "pinyin": "bāngzhù",
+     "meaning": "to help; help",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "谢谢你的帮助。",
+       "en": "Thank you for your help."
+      },
+      {
+       "zh": "我帮助妈妈做饭。",
+       "en": "I help Mom cook."
+      }
+     ]
+    },
+    {
+     "id": "h2-l10-3",
+     "num": 3,
+     "hanzi": "别",
+     "pinyin": "bié",
+     "meaning": "don't; must not",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别说话。",
+       "en": "Don't talk."
+      },
+      {
+       "zh": "别找了。",
+       "en": "Stop looking."
+      }
+     ]
+    },
+    {
+     "id": "h2-l10-4",
+     "num": 4,
+     "hanzi": "哥哥",
+     "pinyin": "gēge",
+     "meaning": "older brother",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我哥哥是医生。",
+       "en": "My older brother is a doctor."
+      },
+      {
+       "zh": "哥哥在公司上班。",
+       "en": "My older brother works at a company."
+      }
+     ]
+    },
+    {
+     "id": "h2-l10-5",
+     "num": 5,
+     "hanzi": "鸡蛋",
+     "pinyin": "jīdàn",
+     "meaning": "egg",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢吃鸡蛋。",
+       "en": "I like eating eggs."
+      },
+      {
+       "zh": "早上我吃一个鸡蛋。",
+       "en": "I eat an egg in the morning."
+      }
+     ]
+    },
+    {
+     "id": "h2-l10-6",
+     "num": 6,
+     "hanzi": "西瓜",
+     "pinyin": "xīguā",
+     "meaning": "watermelon",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个西瓜很大。",
+       "en": "This watermelon is big."
+      },
+      {
+       "zh": "我想吃西瓜。",
+       "en": "I want to eat watermelon."
+      }
+     ]
+    },
+    {
+     "id": "h2-l10-7",
+     "num": 7,
+     "hanzi": "正在",
+     "pinyin": "zhèngzài",
+     "meaning": "in the process of; currently",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他正在看电视。",
+       "en": "He is watching TV."
+      },
+      {
+       "zh": "我正在吃饭。",
+       "en": "I am eating."
+      }
+     ]
+    },
+    {
+     "id": "h2-l10-8",
+     "num": 8,
+     "hanzi": "手机",
+     "pinyin": "shǒujī",
+     "meaning": "mobile phone; cellphone",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的手机在哪儿？",
+       "en": "Where is my phone?"
+      },
+      {
+       "zh": "这个手机很贵。",
+       "en": "This phone is expensive."
+      }
+     ]
+    },
+    {
+     "id": "h2-l10-9",
+     "num": 9,
+     "hanzi": "洗",
+     "pinyin": "xǐ",
+     "meaning": "to wash",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我洗杯子。",
+       "en": "I wash the cup."
+      },
+      {
+       "zh": "我在洗衣服。",
+       "en": "I am washing clothes."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "他比我大三岁",
+   "titleEn": "He Is Three Years Older Than Me",
+   "words": [
+    {
+     "id": "h2-l11-1",
+     "num": 1,
+     "hanzi": "唱歌",
+     "pinyin": "chànggē",
+     "meaning": "to sing",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她喜欢唱歌。",
+       "en": "She likes singing."
+      },
+      {
+       "zh": "我们一起唱歌吧。",
+       "en": "Let's sing together."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-2",
+     "num": 2,
+     "hanzi": "男",
+     "pinyin": "nán",
+     "meaning": "male; man",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "那个男的是我哥哥。",
+       "en": "That man is my older brother."
+      },
+      {
+       "zh": "男学生在左边。",
+       "en": "The male student is on the left."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-3",
+     "num": 3,
+     "hanzi": "女",
+     "pinyin": "nǚ",
+     "meaning": "female; woman",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "那个女的是我姐姐。",
+       "en": "That woman is my older sister."
+      },
+      {
+       "zh": "女老师在教室里。",
+       "en": "The female teacher is in the classroom."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-4",
+     "num": 4,
+     "hanzi": "孩子",
+     "pinyin": "háizi",
+     "meaning": "child",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个孩子五岁。",
+       "en": "This child is five years old."
+      },
+      {
+       "zh": "孩子在看电视。",
+       "en": "The child is watching TV."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-5",
+     "num": 5,
+     "hanzi": "右边",
+     "pinyin": "yòubian",
+     "meaning": "right side",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我坐在右边。",
+       "en": "I sit on the right."
+      },
+      {
+       "zh": "右边那个是我的。",
+       "en": "The one on the right is mine."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-6",
+     "num": 6,
+     "hanzi": "比",
+     "pinyin": "bǐ",
+     "meaning": "than; compared with",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他比我高。",
+       "en": "He is taller than me."
+      },
+      {
+       "zh": "这个比那个便宜。",
+       "en": "This one is cheaper than that one."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-7",
+     "num": 7,
+     "hanzi": "便宜",
+     "pinyin": "piányi",
+     "meaning": "cheap; inexpensive",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个很便宜。",
+       "en": "This is cheap."
+      },
+      {
+       "zh": "这个手表比那个便宜。",
+       "en": "This watch is cheaper than that one."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-8",
+     "num": 8,
+     "hanzi": "说话",
+     "pinyin": "shuōhuà",
+     "meaning": "to speak; to talk",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别说话。",
+       "en": "Don't talk."
+      },
+      {
+       "zh": "他们正在说话。",
+       "en": "They are talking."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-9",
+     "num": 9,
+     "hanzi": "可能",
+     "pinyin": "kěnéng",
+     "meaning": "maybe; possible",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他可能在家。",
+       "en": "He may be at home."
+      },
+      {
+       "zh": "明天可能下雨。",
+       "en": "It may rain tomorrow."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-10",
+     "num": 10,
+     "hanzi": "去年",
+     "pinyin": "qùnián",
+     "meaning": "last year",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我去年去北京了。",
+       "en": "I went to Beijing last year."
+      },
+      {
+       "zh": "去年我在中国工作。",
+       "en": "I worked in China last year."
+      }
+     ]
+    },
+    {
+     "id": "h2-l11-11",
+     "num": 11,
+     "hanzi": "姓",
+     "pinyin": "xìng",
+     "meaning": "to be surnamed; surname",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你姓什么？",
+       "en": "What is your surname?"
+      },
+      {
+       "zh": "我姓王。",
+       "en": "My surname is Wang."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "title": "你穿得太少了",
+   "titleEn": "You're Wearing Too Little",
+   "words": [
+    {
+     "id": "h2-l12-1",
+     "num": 1,
+     "hanzi": "得",
+     "pinyin": "de",
+     "meaning": "structural particle after a verb, before a complement",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他说得很快。",
+       "en": "He speaks very fast."
+      },
+      {
+       "zh": "她汉语说得很好。",
+       "en": "She speaks Chinese very well."
+      }
+     ]
+    },
+    {
+     "id": "h2-l12-2",
+     "num": 2,
+     "hanzi": "妻子",
+     "pinyin": "qīzi",
+     "meaning": "wife",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他妻子是老师。",
+       "en": "His wife is a teacher."
+      },
+      {
+       "zh": "我认识他的妻子。",
+       "en": "I know his wife."
+      }
+     ]
+    },
+    {
+     "id": "h2-l12-3",
+     "num": 3,
+     "hanzi": "雪",
+     "pinyin": "xuě",
+     "meaning": "snow",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "外面有雪。",
+       "en": "There is snow outside."
+      },
+      {
+       "zh": "雪很白。",
+       "en": "Snow is white."
+      }
+     ]
+    },
+    {
+     "id": "h2-l12-4",
+     "num": 4,
+     "hanzi": "零",
+     "pinyin": "líng",
+     "meaning": "zero",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天零度。",
+       "en": "It is zero degrees today."
+      },
+      {
+       "zh": "现在是零下五度。",
+       "en": "It is five degrees below zero now."
+      }
+     ]
+    },
+    {
+     "id": "h2-l12-5",
+     "num": 5,
+     "hanzi": "度",
+     "pinyin": "dù",
+     "meaning": "degree (temperature)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天十度。",
+       "en": "It is ten degrees today."
+      },
+      {
+       "zh": "外面零下五度。",
+       "en": "It is five degrees below zero outside."
+      }
+     ]
+    },
+    {
+     "id": "h2-l12-6",
+     "num": 6,
+     "hanzi": "穿",
+     "pinyin": "chuān",
+     "meaning": "to wear; to put on",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她穿红色衣服。",
+       "en": "She is wearing red clothes."
+      },
+      {
+       "zh": "今天很冷，多穿一点儿。",
+       "en": "It is cold today; wear a little more."
+      }
+     ]
+    },
+    {
+     "id": "h2-l12-7",
+     "num": 7,
+     "hanzi": "进",
+     "pinyin": "jìn",
+     "meaning": "to enter; to come/go in",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请进。",
+       "en": "Please come in."
+      },
+      {
+       "zh": "我进教室了。",
+       "en": "I entered the classroom."
+      }
+     ]
+    },
+    {
+     "id": "h2-l12-8",
+     "num": 8,
+     "hanzi": "弟弟",
+     "pinyin": "dìdi",
+     "meaning": "younger brother",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我弟弟是学生。",
+       "en": "My younger brother is a student."
+      },
+      {
+       "zh": "弟弟在看电视。",
+       "en": "My younger brother is watching TV."
+      }
+     ]
+    },
+    {
+     "id": "h2-l12-9",
+     "num": 9,
+     "hanzi": "近",
+     "pinyin": "jìn",
+     "meaning": "near; close",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我家离公司很近。",
+       "en": "My home is close to the company."
+      },
+      {
+       "zh": "学校离这儿很近。",
+       "en": "The school is close to here."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "title": "门开着呢",
+   "titleEn": "The Door Is Open",
+   "words": [
+    {
+     "id": "h2-l13-1",
+     "num": 1,
+     "hanzi": "着",
+     "pinyin": "zhe",
+     "meaning": "aspect particle indicating a continuing state",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "门开着呢。",
+       "en": "The door is open."
+      },
+      {
+       "zh": "他拿着手机。",
+       "en": "He is holding a phone."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-2",
+     "num": 2,
+     "hanzi": "手",
+     "pinyin": "shǒu",
+     "meaning": "hand",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的手很冷。",
+       "en": "My hands are cold."
+      },
+      {
+       "zh": "他手里有手机。",
+       "en": "He has a phone in his hand."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-3",
+     "num": 3,
+     "hanzi": "拿",
+     "pinyin": "ná",
+     "meaning": "to take; to hold",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请拿一下这个。",
+       "en": "Please take this."
+      },
+      {
+       "zh": "他手里拿着铅笔。",
+       "en": "He is holding a pencil."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-4",
+     "num": 4,
+     "hanzi": "铅笔",
+     "pinyin": "qiānbǐ",
+     "meaning": "pencil",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是我的铅笔。",
+       "en": "This is my pencil."
+      },
+      {
+       "zh": "铅笔在桌子上。",
+       "en": "The pencil is on the table."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-5",
+     "num": 5,
+     "hanzi": "班",
+     "pinyin": "bān",
+     "meaning": "class; group",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们班有二十个学生。",
+       "en": "There are twenty students in our class."
+      },
+      {
+       "zh": "他是我们班的学生。",
+       "en": "He is a student in our class."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-6",
+     "num": 6,
+     "hanzi": "长",
+     "pinyin": "zhǎng",
+     "meaning": "to grow; to have grown",
+     "type": null,
+     "note": "本课读 zhǎng，表示“生长”。第4课“长”读 cháng。",
+     "examples": [
+      {
+       "zh": "孩子长高了。",
+       "en": "The child has grown taller."
+      },
+      {
+       "zh": "他长得很高。",
+       "en": "He is tall."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-7",
+     "num": 7,
+     "hanzi": "笑",
+     "pinyin": "xiào",
+     "meaning": "to smile; to laugh",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她爱笑。",
+       "en": "She likes to smile."
+      },
+      {
+       "zh": "大家都笑了。",
+       "en": "Everyone laughed."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-8",
+     "num": 8,
+     "hanzi": "宾馆",
+     "pinyin": "bīnguǎn",
+     "meaning": "hotel",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "宾馆离机场很近。",
+       "en": "The hotel is close to the airport."
+      },
+      {
+       "zh": "我住在这个宾馆。",
+       "en": "I stay at this hotel."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-9",
+     "num": 9,
+     "hanzi": "一直",
+     "pinyin": "yìzhí",
+     "meaning": "continuously; straight",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一直往前走。",
+       "en": "Go straight ahead."
+      },
+      {
+       "zh": "我一直在等你。",
+       "en": "I have been waiting for you."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-10",
+     "num": 10,
+     "hanzi": "往",
+     "pinyin": "wǎng",
+     "meaning": "toward; in the direction of",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "往前走。",
+       "en": "Go forward."
+      },
+      {
+       "zh": "往右边走。",
+       "en": "Go to the right."
+      }
+     ]
+    },
+    {
+     "id": "h2-l13-11",
+     "num": 11,
+     "hanzi": "路口",
+     "pinyin": "lùkǒu",
+     "meaning": "intersection; crossing",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "前面有一个路口。",
+       "en": "There is an intersection ahead."
+      },
+      {
+       "zh": "到路口往右走。",
+       "en": "Turn right at the intersection."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 14,
+   "title": "你看过那个电影吗",
+   "titleEn": "Have You Seen That Movie?",
+   "words": [
+    {
+     "id": "h2-l14-1",
+     "num": 1,
+     "hanzi": "有意思",
+     "pinyin": "yǒuyìsi",
+     "meaning": "interesting",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个电影很有意思。",
+       "en": "This movie is interesting."
+      },
+      {
+       "zh": "这本书很有意思。",
+       "en": "This book is interesting."
+      }
+     ]
+    },
+    {
+     "id": "h2-l14-2",
+     "num": 2,
+     "hanzi": "但是",
+     "pinyin": "dànshì",
+     "meaning": "but; however",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想去，但是没有时间。",
+       "en": "I want to go, but I don't have time."
+      },
+      {
+       "zh": "他很忙，但是很高兴。",
+       "en": "He is busy, but happy."
+      }
+     ]
+    },
+    {
+     "id": "h2-l14-3",
+     "num": 3,
+     "hanzi": "虽然",
+     "pinyin": "suīrán",
+     "meaning": "although; though",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "虽然很冷，但是我去跑步。",
+       "en": "Although it is cold, I go jogging."
+      },
+      {
+       "zh": "虽然他很忙，但是他来了。",
+       "en": "Although he is busy, he came."
+      }
+     ]
+    },
+    {
+     "id": "h2-l14-4",
+     "num": 4,
+     "hanzi": "次",
+     "pinyin": "cì",
+     "meaning": "time; occasion (measure word)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我去过两次北京。",
+       "en": "I have been to Beijing twice."
+      },
+      {
+       "zh": "这是我第一次来中国。",
+       "en": "This is my first time coming to China."
+      }
+     ]
+    },
+    {
+     "id": "h2-l14-5",
+     "num": 5,
+     "hanzi": "玩儿",
+     "pinyin": "wánr",
+     "meaning": "to play; to have fun",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "孩子在外面玩儿。",
+       "en": "The child is playing outside."
+      },
+      {
+       "zh": "我们一起玩儿吧。",
+       "en": "Let's play together."
+      }
+     ]
+    },
+    {
+     "id": "h2-l14-6",
+     "num": 6,
+     "hanzi": "晴",
+     "pinyin": "qíng",
+     "meaning": "sunny; clear",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天是晴天。",
+       "en": "It is sunny today."
+      },
+      {
+       "zh": "明天会晴吗？",
+       "en": "Will it be sunny tomorrow?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l14-7",
+     "num": 7,
+     "hanzi": "百",
+     "pinyin": "bǎi",
+     "meaning": "hundred",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这本书一百块钱。",
+       "en": "This book costs one hundred yuan."
+      },
+      {
+       "zh": "学校有一百个学生。",
+       "en": "There are one hundred students at the school."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 15,
+   "title": "新年就要到了",
+   "titleEn": "The New Year Is Coming",
+   "words": [
+    {
+     "id": "h2-l15-1",
+     "num": 1,
+     "hanzi": "日",
+     "pinyin": "rì",
+     "meaning": "day; date",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天是八月二十四日。",
+       "en": "Today is August 24th."
+      },
+      {
+       "zh": "我的生日是五月一日。",
+       "en": "My birthday is May 1st."
+      }
+     ]
+    },
+    {
+     "id": "h2-l15-2",
+     "num": 2,
+     "hanzi": "新年",
+     "pinyin": "xīnnián",
+     "meaning": "New Year",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "新年快乐！",
+       "en": "Happy New Year!"
+      },
+      {
+       "zh": "新年就要到了。",
+       "en": "New Year is coming soon."
+      }
+     ]
+    },
+    {
+     "id": "h2-l15-3",
+     "num": 3,
+     "hanzi": "票",
+     "pinyin": "piào",
+     "meaning": "ticket",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我买了票。",
+       "en": "I bought a ticket."
+      },
+      {
+       "zh": "你的票在哪儿？",
+       "en": "Where is your ticket?"
+      }
+     ]
+    },
+    {
+     "id": "h2-l15-4",
+     "num": 4,
+     "hanzi": "火车站",
+     "pinyin": "huǒchēzhàn",
+     "meaning": "train station",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我去火车站买票。",
+       "en": "I go to the train station to buy a ticket."
+      },
+      {
+       "zh": "火车站离这儿很近。",
+       "en": "The train station is close to here."
+      }
+     ]
+    },
+    {
+     "id": "h2-l15-5",
+     "num": 5,
+     "hanzi": "大家",
+     "pinyin": "dàjiā",
+     "meaning": "everyone; everybody",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "大家好。",
+       "en": "Hello, everyone."
+      },
+      {
+       "zh": "谢谢大家。",
+       "en": "Thank you, everyone."
+      }
+     ]
+    },
+    {
+     "id": "h2-l15-6",
+     "num": 6,
+     "hanzi": "更",
+     "pinyin": "gèng",
+     "meaning": "even more; more",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天比昨天更冷。",
+       "en": "Today is even colder than yesterday."
+      },
+      {
+       "zh": "我希望明年更好。",
+       "en": "I hope next year will be better."
+      }
+     ]
+    },
+    {
+     "id": "h2-l15-7",
+     "num": 7,
+     "hanzi": "妹妹",
+     "pinyin": "mèimei",
+     "meaning": "younger sister",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我妹妹是学生。",
+       "en": "My younger sister is a student."
+      },
+      {
+       "zh": "妹妹喜欢唱歌。",
+       "en": "My younger sister likes singing."
+      }
+     ]
+    },
+    {
+     "id": "h2-l15-8",
+     "num": 8,
+     "hanzi": "阴",
+     "pinyin": "yīn",
+     "meaning": "overcast; cloudy",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天是阴天。",
+       "en": "It is cloudy today."
+      },
+      {
+       "zh": "天阴了，可能下雨。",
+       "en": "It has become cloudy; it may rain."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

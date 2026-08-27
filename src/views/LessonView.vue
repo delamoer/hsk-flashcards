@@ -2,7 +2,7 @@
   <div class="wrap" v-if="lesson">
     <div class="crumb">
       <router-link to="/">首页</router-link><span class="sep">/</span>
-      <router-link :to="`/hsk/${level}`">HSK {{ level }}</router-link><span class="sep">/</span>
+      <router-link :to="`/course/${series}/${unit}`">{{ unitLabel }}</router-link><span class="sep">/</span>
       <span class="cur">第 {{ lesson.num }} 课 · {{ lesson.title }}</span>
     </div>
 
@@ -24,10 +24,10 @@
         <button :class="{ on: mode === 'grid' }" @click="mode = 'grid'">▦ 网格 Grid</button>
         <button :class="{ on: mode === 'focus' }" @click="mode = 'focus'">◉ 专注 Focus</button>
       </div>
-      <router-link :to="`/hsk/${level}/lesson/${lesson.num}/quiz`" class="btn primary">
+      <router-link :to="`/course/${series}/${unit}/lesson/${lesson.num}/quiz`" class="btn primary">
         自测 Quiz
       </router-link>
-      <router-link :to="`/hsk/${level}/lesson/${lesson.num}/print`" class="btn secondary">
+      <router-link :to="`/course/${series}/${unit}/lesson/${lesson.num}/print`" class="btn secondary">
         🖨 打印 Print
       </router-link>
     </div>
@@ -57,7 +57,7 @@
         v-for="w in filtered"
         :key="w.id"
         :word="w"
-        :level="level"
+        :level="unit"
         full
       />
     </div>
@@ -67,7 +67,7 @@
       <div class="counter">{{ focusIndex + 1 }} / {{ filtered.length }}</div>
       <div class="stage">
         <button class="navbtn" @click="move(-1)" aria-label="Previous">‹</button>
-        <FlashCard :word="filtered[focusIndex]" :level="level" full focus />
+        <FlashCard :word="filtered[focusIndex]" :level="unit" full focus />
         <button class="navbtn" @click="move(1)" aria-label="Next">›</button>
       </div>
       <div class="dots">
@@ -93,17 +93,25 @@ import { ref, computed, watch, onMounted, onUnmounted } from "vue";
 import FlashCard from "@/components/FlashCard.vue";
 import ProgressRing from "@/components/ProgressRing.vue";
 import { getLesson } from "@/data";
+import { getSeries } from "@/data/courses.js";
 import { useProgress } from "@/composables/useProgress";
 
 const props = defineProps({
-  level: { type: [Number, String], required: true },
+  series: { type: String, required: true },
+  unit: { type: [Number, String], required: true },
   lesson: { type: [Number, String], required: true },
 });
 
 const { statusOf, isStarred, summarize } = useProgress();
 
-const lesson = computed(() => getLesson(props.level, props.lesson));
+const lesson = computed(() => getLesson(props.series, props.unit, props.lesson));
 const words = computed(() => (lesson.value ? lesson.value.words : []));
+
+const seriesMeta = computed(() => getSeries(props.series));
+const unitLabel = computed(() => {
+  const u = seriesMeta.value?.units.find((u) => u.id === Number(props.unit));
+  return u?.label || `Unit ${props.unit}`;
+});
 
 const mode = ref("grid");
 const search = ref("");
@@ -137,7 +145,6 @@ const filtered = computed(() => {
   });
 });
 
-// keep focus index in range when the filtered set changes
 watch(filtered, (list) => {
   if (focusIndex.value >= list.length) focusIndex.value = 0;
 });

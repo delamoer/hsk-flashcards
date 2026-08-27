@@ -1,0 +1,3786 @@
+{
+ "series": "huihua360",
+ "unit": 2,
+ "lessons": [
+  {
+   "num": 1,
+   "title": "第1课",
+   "titleEn": "Lesson 1",
+   "words": [
+    {
+     "id": "huihua360-2-l1-1",
+     "num": 1,
+     "hanzi": "想",
+     "pinyin": "xiǎng",
+     "meaning": "to want to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "想吃",
+       "en": "want to eat"
+      },
+      {
+       "zh": "想要",
+       "en": "want"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-2",
+     "num": 2,
+     "hanzi": "包子",
+     "pinyin": "bāozi",
+     "meaning": "steamed stuffed bun",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃包子",
+       "en": "eat steamed buns"
+      },
+      {
+       "zh": "包子很好吃",
+       "en": "the buns are delicious"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-3",
+     "num": 3,
+     "hanzi": "还是",
+     "pinyin": "háishi",
+     "meaning": "or",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "包子还是饺子",
+       "en": "buns or dumplings?"
+      },
+      {
+       "zh": "刷卡还是付现金",
+       "en": "pay by card or cash?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-4",
+     "num": 4,
+     "hanzi": "饺子",
+     "pinyin": "jiǎozi",
+     "meaning": "dumpling",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃饺子",
+       "en": "eat dumplings"
+      },
+      {
+       "zh": "饺子很好吃",
+       "en": "the dumplings are delicious"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-5",
+     "num": 5,
+     "hanzi": "都",
+     "pinyin": "dōu",
+     "meaning": "all; both",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "都想吃",
+       "en": "everyone wants to eat"
+      },
+      {
+       "zh": "都不想吃",
+       "en": "none of us want to eat"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-6",
+     "num": 6,
+     "hanzi": "咱们",
+     "pinyin": "zánmen",
+     "meaning": "we; us",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "咱们走吧",
+       "en": "let’s go"
+      },
+      {
+       "zh": "咱们一起去",
+       "en": "let’s go together"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-7",
+     "num": 7,
+     "hanzi": "面条儿",
+     "pinyin": "miàntiáor",
+     "meaning": "noodles",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃面条儿",
+       "en": "eat noodles"
+      },
+      {
+       "zh": "想吃面条儿",
+       "en": "want to eat noodles"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-8",
+     "num": 8,
+     "hanzi": "最近",
+     "pinyin": "zuìjìn",
+     "meaning": "recently",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "最近很忙",
+       "en": "busy recently"
+      },
+      {
+       "zh": "最近怎么样",
+       "en": "how have you been recently?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-9",
+     "num": 9,
+     "hanzi": "每",
+     "pinyin": "měi",
+     "meaning": "every",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "每人",
+       "en": "each person"
+      },
+      {
+       "zh": "每个星期",
+       "en": "every week"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-10",
+     "num": 10,
+     "hanzi": "天",
+     "pinyin": "tiān",
+     "meaning": "day",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "三天",
+       "en": "three days"
+      },
+      {
+       "zh": "每天",
+       "en": "every day"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-11",
+     "num": 11,
+     "hanzi": "那",
+     "pinyin": "nà",
+     "meaning": "then; that",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "那好吧",
+       "en": "okay then"
+      },
+      {
+       "zh": "那是什么",
+       "en": "what is that?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-12",
+     "num": 12,
+     "hanzi": "比萨",
+     "pinyin": "bǐsà",
+     "meaning": "pizza",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃比萨",
+       "en": "eat pizza"
+      },
+      {
+       "zh": "一个比萨",
+       "en": "a pizza"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-13",
+     "num": 13,
+     "hanzi": "怎么样",
+     "pinyin": "zěnmeyàng",
+     "meaning": "how; how about",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "最近怎么样",
+       "en": "how have you been recently?"
+      },
+      {
+       "zh": "吃比萨怎么样",
+       "en": "how about pizza?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-14",
+     "num": 14,
+     "hanzi": "主意",
+     "pinyin": "zhǔyi",
+     "meaning": "idea",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "好主意",
+       "en": "good idea"
+      },
+      {
+       "zh": "他的主意",
+       "en": "his idea"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-15",
+     "num": 15,
+     "hanzi": "特价",
+     "pinyin": "tèjià",
+     "meaning": "special offer; sale price",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天特价",
+       "en": "special price today"
+      },
+      {
+       "zh": "特价比萨",
+       "en": "special-price pizza"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-16",
+     "num": 16,
+     "hanzi": "光临",
+     "pinyin": "guānglín",
+     "meaning": "to visit; patronize",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "欢迎光临",
+       "en": "welcome"
+      },
+      {
+       "zh": "谢谢光临",
+       "en": "thank you for coming"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-17",
+     "num": 17,
+     "hanzi": "喝",
+     "pinyin": "hē",
+     "meaning": "to drink",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "喝水",
+       "en": "drink water"
+      },
+      {
+       "zh": "喝咖啡",
+       "en": "drink coffee"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-18",
+     "num": 18,
+     "hanzi": "点儿",
+     "pinyin": "diǎnr",
+     "meaning": "a little; a bit",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃点儿",
+       "en": "eat a little"
+      },
+      {
+       "zh": "喝点儿",
+       "en": "drink a little"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-19",
+     "num": 19,
+     "hanzi": "红茶",
+     "pinyin": "hóngchá",
+     "meaning": "black tea",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一杯红茶",
+       "en": "a cup of black tea"
+      },
+      {
+       "zh": "喝红茶",
+       "en": "drink black tea"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-20",
+     "num": 20,
+     "hanzi": "茶",
+     "pinyin": "chá",
+     "meaning": "tea",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "喝茶",
+       "en": "drink tea"
+      },
+      {
+       "zh": "一杯茶",
+       "en": "a cup of tea"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-21",
+     "num": 21,
+     "hanzi": "大",
+     "pinyin": "dà",
+     "meaning": "big",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "大杯",
+       "en": "large cup"
+      },
+      {
+       "zh": "大房间",
+       "en": "a large room"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-22",
+     "num": 22,
+     "hanzi": "小",
+     "pinyin": "xiǎo",
+     "meaning": "small",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "小杯",
+       "en": "small cup"
+      },
+      {
+       "zh": "小苹果",
+       "en": "small apple"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-23",
+     "num": 23,
+     "hanzi": "种",
+     "pinyin": "zhǒng",
+     "meaning": "kind; type",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一种",
+       "en": "one kind"
+      },
+      {
+       "zh": "这种",
+       "en": "this kind"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-24",
+     "num": 24,
+     "hanzi": "蛋糕",
+     "pinyin": "dàngāo",
+     "meaning": "cake",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "生日蛋糕",
+       "en": "birthday cake"
+      },
+      {
+       "zh": "吃蛋糕",
+       "en": "eat cake"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-25",
+     "num": 25,
+     "hanzi": "真",
+     "pinyin": "zhēn",
+     "meaning": "really",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "真多",
+       "en": "so many"
+      },
+      {
+       "zh": "真好",
+       "en": "really good"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-26",
+     "num": 26,
+     "hanzi": "便宜",
+     "pinyin": "piányi",
+     "meaning": "cheap",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很便宜",
+       "en": "very cheap"
+      },
+      {
+       "zh": "不便宜",
+       "en": "not cheap"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-27",
+     "num": 27,
+     "hanzi": "刷卡",
+     "pinyin": "shuākǎ",
+     "meaning": "to swipe/pay by card",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "可以刷卡",
+       "en": "can pay by card"
+      },
+      {
+       "zh": "刷卡付钱",
+       "en": "pay by card"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-28",
+     "num": 28,
+     "hanzi": "付",
+     "pinyin": "fù",
+     "meaning": "to pay",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "付钱",
+       "en": "pay"
+      },
+      {
+       "zh": "我来付",
+       "en": "I’ll pay"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l1-29",
+     "num": 29,
+     "hanzi": "现金",
+     "pinyin": "xiànjīn",
+     "meaning": "cash",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "付现金",
+       "en": "pay cash"
+      },
+      {
+       "zh": "没有现金",
+       "en": "don’t have cash"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "第2课",
+   "titleEn": "Lesson 2",
+   "words": [
+    {
+     "id": "huihua360-2-l2-1",
+     "num": 1,
+     "hanzi": "住",
+     "pinyin": "zhù",
+     "meaning": "to live; stay",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "住在北京",
+       "en": "live in Beijing"
+      },
+      {
+       "zh": "住三楼",
+       "en": "live on the third floor"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-2",
+     "num": 2,
+     "hanzi": "层",
+     "pinyin": "céng",
+     "meaning": "floor; level",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "三层",
+       "en": "third floor; three floors"
+      },
+      {
+       "zh": "住在五层",
+       "en": "live on the fifth floor"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-3",
+     "num": 3,
+     "hanzi": "高兴",
+     "pinyin": "gāoxìng",
+     "meaning": "happy; glad",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很高兴",
+       "en": "very happy; glad"
+      },
+      {
+       "zh": "真高兴",
+       "en": "really happy"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-4",
+     "num": 4,
+     "hanzi": "认识",
+     "pinyin": "rènshi",
+     "meaning": "to know; meet",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "认识你",
+       "en": "nice to meet you"
+      },
+      {
+       "zh": "我认识他",
+       "en": "I know him"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-5",
+     "num": 5,
+     "hanzi": "狗",
+     "pinyin": "gǒu",
+     "meaning": "dog",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一只狗",
+       "en": "a dog"
+      },
+      {
+       "zh": "小狗",
+       "en": "puppy; little dog"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-6",
+     "num": 6,
+     "hanzi": "它",
+     "pinyin": "tā",
+     "meaning": "it",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "它很可爱",
+       "en": "it is very cute"
+      },
+      {
+       "zh": "我喜欢它",
+       "en": "I like it"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-7",
+     "num": 7,
+     "hanzi": "胖",
+     "pinyin": "pàng",
+     "meaning": "fat",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "有点儿胖",
+       "en": "a little overweight"
+      },
+      {
+       "zh": "胖了一点儿",
+       "en": "gained a little weight"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-8",
+     "num": 8,
+     "hanzi": "眼睛",
+     "pinyin": "yǎnjing",
+     "meaning": "eye; eyes",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "大眼睛",
+       "en": "big eyes"
+      },
+      {
+       "zh": "眼睛很漂亮",
+       "en": "beautiful eyes"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-9",
+     "num": 9,
+     "hanzi": "可爱",
+     "pinyin": "kě'ài",
+     "meaning": "cute; lovely",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很可爱",
+       "en": "very cute"
+      },
+      {
+       "zh": "可爱的小猫",
+       "en": "a cute kitten"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-10",
+     "num": 10,
+     "hanzi": "别",
+     "pinyin": "bié",
+     "meaning": "do not; don't",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别担心",
+       "en": "don’t worry"
+      },
+      {
+       "zh": "别说话",
+       "en": "don’t talk"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-11",
+     "num": 11,
+     "hanzi": "担心",
+     "pinyin": "dānxīn",
+     "meaning": "to worry",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别担心",
+       "en": "don’t worry"
+      },
+      {
+       "zh": "很担心他",
+       "en": "very worried about him"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-12",
+     "num": 12,
+     "hanzi": "喜欢",
+     "pinyin": "xǐhuan",
+     "meaning": "to like",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "喜欢运动",
+       "en": "like sports; like exercising"
+      },
+      {
+       "zh": "很喜欢",
+       "en": "like very much"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-13",
+     "num": 13,
+     "hanzi": "猫",
+     "pinyin": "māo",
+     "meaning": "cat",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一只猫",
+       "en": "a cat"
+      },
+      {
+       "zh": "小猫",
+       "en": "kitten; little cat"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-14",
+     "num": 14,
+     "hanzi": "身体",
+     "pinyin": "shēntǐ",
+     "meaning": "body; health",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "身体很好",
+       "en": "in very good health"
+      },
+      {
+       "zh": "身体不错",
+       "en": "in pretty good health"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-15",
+     "num": 15,
+     "hanzi": "放心",
+     "pinyin": "fàngxīn",
+     "meaning": "to feel relieved; don't worry",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你放心",
+       "en": "don’t worry"
+      },
+      {
+       "zh": "放心吧",
+       "en": "don’t worry"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-16",
+     "num": 16,
+     "hanzi": "对了",
+     "pinyin": "duìle",
+     "meaning": "by the way",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "对了，还有一件事",
+       "en": "right, there is one more thing"
+      },
+      {
+       "zh": "对了，我想起来了",
+       "en": "right, I remember now"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-17",
+     "num": 17,
+     "hanzi": "新",
+     "pinyin": "xīn",
+     "meaning": "new",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "新朋友",
+       "en": "new friend"
+      },
+      {
+       "zh": "新照片",
+       "en": "new photo"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-18",
+     "num": 18,
+     "hanzi": "照片",
+     "pinyin": "zhàopiàn",
+     "meaning": "photo",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一张照片",
+       "en": "a photo"
+      },
+      {
+       "zh": "看照片",
+       "en": "look at photos"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-19",
+     "num": 19,
+     "hanzi": "高",
+     "pinyin": "gāo",
+     "meaning": "tall; high",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很高",
+       "en": "very tall; very high"
+      },
+      {
+       "zh": "比我高",
+       "en": "taller than me"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-20",
+     "num": 20,
+     "hanzi": "个子",
+     "pinyin": "gèzi",
+     "meaning": "height; stature",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "个子很高",
+       "en": "very tall"
+      },
+      {
+       "zh": "个子不高",
+       "en": "not very tall"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-21",
+     "num": 21,
+     "hanzi": "健身",
+     "pinyin": "jiànshēn",
+     "meaning": "to keep fit; exercise",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去健身",
+       "en": "go work out"
+      },
+      {
+       "zh": "每天健身",
+       "en": "work out every day"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-22",
+     "num": 22,
+     "hanzi": "教练",
+     "pinyin": "jiàoliàn",
+     "meaning": "coach; instructor",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "健身教练",
+       "en": "fitness coach"
+      },
+      {
+       "zh": "我的教练",
+       "en": "my coach"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-23",
+     "num": 23,
+     "hanzi": "周末",
+     "pinyin": "zhōumò",
+     "meaning": "weekend",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个周末",
+       "en": "this weekend"
+      },
+      {
+       "zh": "周末见",
+       "en": "see you this weekend"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-24",
+     "num": 24,
+     "hanzi": "非常",
+     "pinyin": "fēicháng",
+     "meaning": "very; extremely",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "非常好",
+       "en": "very good"
+      },
+      {
+       "zh": "非常高兴",
+       "en": "very happy"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l2-25",
+     "num": 25,
+     "hanzi": "休息",
+     "pinyin": "xiūxi",
+     "meaning": "to rest",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "休息一下",
+       "en": "rest for a while"
+      },
+      {
+       "zh": "早点儿休息",
+       "en": "rest earlier"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "第3课",
+   "titleEn": "Lesson 3",
+   "words": [
+    {
+     "id": "huihua360-2-l3-1",
+     "num": 1,
+     "hanzi": "唱",
+     "pinyin": "chàng",
+     "meaning": "to sing",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "唱歌",
+       "en": "sing"
+      },
+      {
+       "zh": "会唱",
+       "en": "can sing"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-2",
+     "num": 2,
+     "hanzi": "歌",
+     "pinyin": "gē",
+     "meaning": "song",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "唱歌",
+       "en": "sing"
+      },
+      {
+       "zh": "汉语歌",
+       "en": "Chinese song"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-3",
+     "num": 3,
+     "hanzi": "听",
+     "pinyin": "tīng",
+     "meaning": "to listen; hear",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "听歌",
+       "en": "listen to songs"
+      },
+      {
+       "zh": "听老师说",
+       "en": "listen to the teacher"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-4",
+     "num": 4,
+     "hanzi": "得",
+     "pinyin": "de",
+     "meaning": "structural particle",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "说得很好",
+       "en": "speak very well"
+      },
+      {
+       "zh": "唱得不错",
+       "en": "sing pretty well"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-5",
+     "num": 5,
+     "hanzi": "太",
+     "pinyin": "tài",
+     "meaning": "too; extremely",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "太好了",
+       "en": "great!"
+      },
+      {
+       "zh": "太贵了",
+       "en": "too expensive"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-6",
+     "num": 6,
+     "hanzi": "电影",
+     "pinyin": "diànyǐng",
+     "meaning": "movie; film",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "看电影",
+       "en": "watch a movie"
+      },
+      {
+       "zh": "这个电影",
+       "en": "this movie"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-7",
+     "num": 7,
+     "hanzi": "旅游",
+     "pinyin": "lǚyóu",
+     "meaning": "to travel; tourism",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去旅游",
+       "en": "go traveling"
+      },
+      {
+       "zh": "喜欢旅游",
+       "en": "like traveling"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-8",
+     "num": 8,
+     "hanzi": "打",
+     "pinyin": "dǎ",
+     "meaning": "to play",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "打网球",
+       "en": "play tennis"
+      },
+      {
+       "zh": "打球",
+       "en": "play ball"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-9",
+     "num": 9,
+     "hanzi": "网球",
+     "pinyin": "wǎngqiú",
+     "meaning": "tennis",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "打网球",
+       "en": "play tennis"
+      },
+      {
+       "zh": "网球比赛",
+       "en": "tennis match"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-10",
+     "num": 10,
+     "hanzi": "爱好",
+     "pinyin": "àihào",
+     "meaning": "hobby",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的爱好",
+       "en": "my hobby"
+      },
+      {
+       "zh": "有什么爱好",
+       "en": "what hobbies do you have?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-11",
+     "num": 11,
+     "hanzi": "不过",
+     "pinyin": "búguò",
+     "meaning": "but; however",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很好，不过有点儿贵",
+       "en": "very good, but a little expensive"
+      },
+      {
+       "zh": "想去，不过没时间",
+       "en": "want to go, but don’t have time"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-12",
+     "num": 12,
+     "hanzi": "会",
+     "pinyin": "huì",
+     "meaning": "can; know how to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "会说汉语",
+       "en": "can speak Chinese"
+      },
+      {
+       "zh": "会打网球",
+       "en": "can play tennis"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-13",
+     "num": 13,
+     "hanzi": "教",
+     "pinyin": "jiāo",
+     "meaning": "to teach",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "教汉语",
+       "en": "teach Chinese"
+      },
+      {
+       "zh": "教我唱歌",
+       "en": "teach me to sing"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-14",
+     "num": 14,
+     "hanzi": "啊",
+     "pinyin": "a",
+     "meaning": "ah; modal particle",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "好啊",
+       "en": "sure; okay"
+      },
+      {
+       "zh": "是啊",
+       "en": "yes; that’s right"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-15",
+     "num": 15,
+     "hanzi": "请",
+     "pinyin": "qǐng",
+     "meaning": "please",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请坐",
+       "en": "please sit down"
+      },
+      {
+       "zh": "请进",
+       "en": "please come in"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-16",
+     "num": 16,
+     "hanzi": "进",
+     "pinyin": "jìn",
+     "meaning": "to enter",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请进",
+       "en": "please come in"
+      },
+      {
+       "zh": "进教室",
+       "en": "enter the classroom"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-17",
+     "num": 17,
+     "hanzi": "坐",
+     "pinyin": "zuò",
+     "meaning": "to sit",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请坐",
+       "en": "please sit down"
+      },
+      {
+       "zh": "坐这儿",
+       "en": "sit here"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-18",
+     "num": 18,
+     "hanzi": "特长",
+     "pinyin": "tècháng",
+     "meaning": "special skill; strong point",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的特长",
+       "en": "my special skill"
+      },
+      {
+       "zh": "有什么特长",
+       "en": "what are you good at?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-19",
+     "num": 19,
+     "hanzi": "说",
+     "pinyin": "shuō",
+     "meaning": "to speak; say",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "说汉语",
+       "en": "speak Chinese"
+      },
+      {
+       "zh": "说得很好",
+       "en": "speak very well"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-20",
+     "num": 20,
+     "hanzi": "语言",
+     "pinyin": "yǔyán",
+     "meaning": "language",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "学语言",
+       "en": "learn a language"
+      },
+      {
+       "zh": "汉语是一种语言",
+       "en": "Chinese is a language"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-21",
+     "num": 21,
+     "hanzi": "不错",
+     "pinyin": "búcuò",
+     "meaning": "good; not bad",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很不错",
+       "en": "very good; pretty good"
+      },
+      {
+       "zh": "味道不错",
+       "en": "tastes good"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-22",
+     "num": 22,
+     "hanzi": "还可以",
+     "pinyin": "hái kěyǐ",
+     "meaning": "fairly good; okay",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "味道还可以",
+       "en": "tastes okay"
+      },
+      {
+       "zh": "汉语还可以",
+       "en": "my Chinese is okay"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-23",
+     "num": 23,
+     "hanzi": "除了",
+     "pinyin": "chúle",
+     "meaning": "except; besides",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "除了我",
+       "en": "except me"
+      },
+      {
+       "zh": "除了汉语",
+       "en": "besides Chinese"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-24",
+     "num": 24,
+     "hanzi": "这些",
+     "pinyin": "zhèxiē",
+     "meaning": "these",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这些照片",
+       "en": "these photos"
+      },
+      {
+       "zh": "这些东西",
+       "en": "these things"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l3-25",
+     "num": 25,
+     "hanzi": "功夫",
+     "pinyin": "gōngfu",
+     "meaning": "kung fu",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "中国功夫",
+       "en": "Chinese kung fu"
+      },
+      {
+       "zh": "学功夫",
+       "en": "learn kung fu"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "第4课",
+   "titleEn": "Lesson 4",
+   "words": [
+    {
+     "id": "huihua360-2-l4-1",
+     "num": 1,
+     "hanzi": "去",
+     "pinyin": "qù",
+     "meaning": "to go",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去北京",
+       "en": "go to Beijing"
+      },
+      {
+       "zh": "一起去",
+       "en": "go together"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-2",
+     "num": 2,
+     "hanzi": "过",
+     "pinyin": "guo",
+     "meaning": "aspect particle for past experience",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去过北京",
+       "en": "have been to Beijing"
+      },
+      {
+       "zh": "吃过这个菜",
+       "en": "have eaten this dish before"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-3",
+     "num": 3,
+     "hanzi": "假期",
+     "pinyin": "jiàqī",
+     "meaning": "holiday; vacation",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个假期",
+       "en": "this holiday"
+      },
+      {
+       "zh": "假期去旅游",
+       "en": "travel during the holiday"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-4",
+     "num": 4,
+     "hanzi": "以前",
+     "pinyin": "yǐqián",
+     "meaning": "before; ago",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "三年以前",
+       "en": "three years ago"
+      },
+      {
+       "zh": "以前住这儿",
+       "en": "used to live here"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-5",
+     "num": 5,
+     "hanzi": "地方",
+     "pinyin": "dìfang",
+     "meaning": "place",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个地方",
+       "en": "this place"
+      },
+      {
+       "zh": "什么地方",
+       "en": "what place; where"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-6",
+     "num": 6,
+     "hanzi": "订",
+     "pinyin": "dìng",
+     "meaning": "to order; book",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "订房间",
+       "en": "book a room"
+      },
+      {
+       "zh": "订外卖",
+       "en": "order takeout"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-7",
+     "num": 7,
+     "hanzi": "外卖",
+     "pinyin": "wàimài",
+     "meaning": "takeaway; takeout",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "点外卖",
+       "en": "order takeout"
+      },
+      {
+       "zh": "送外卖",
+       "en": "deliver takeout"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-8",
+     "num": 8,
+     "hanzi": "上网",
+     "pinyin": "shàngwǎng",
+     "meaning": "to go online; surf the internet",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "上网看看",
+       "en": "go online and take a look"
+      },
+      {
+       "zh": "每天上网",
+       "en": "go online every day"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-9",
+     "num": 9,
+     "hanzi": "家",
+     "pinyin": "jiā",
+     "meaning": "measure word for families/companies",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一家饭店",
+       "en": "a restaurant"
+      },
+      {
+       "zh": "两家公司",
+       "en": "two companies"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-10",
+     "num": 10,
+     "hanzi": "菜",
+     "pinyin": "cài",
+     "meaning": "food; dish",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "中国菜",
+       "en": "Chinese food"
+      },
+      {
+       "zh": "点菜",
+       "en": "order dishes"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-11",
+     "num": 11,
+     "hanzi": "辣",
+     "pinyin": "là",
+     "meaning": "spicy",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很辣",
+       "en": "very spicy"
+      },
+      {
+       "zh": "太辣了",
+       "en": "too spicy"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-12",
+     "num": 12,
+     "hanzi": "西餐厅",
+     "pinyin": "xīcāntīng",
+     "meaning": "Western restaurant",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一家西餐厅",
+       "en": "a Western restaurant"
+      },
+      {
+       "zh": "去西餐厅",
+       "en": "go to a Western restaurant"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-13",
+     "num": 13,
+     "hanzi": "味道",
+     "pinyin": "wèidao",
+     "meaning": "flavor; taste",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "味道不错",
+       "en": "tastes good"
+      },
+      {
+       "zh": "什么味道",
+       "en": "what flavor?; what smell?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-14",
+     "num": 14,
+     "hanzi": "送",
+     "pinyin": "sòng",
+     "meaning": "to deliver; give",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "送外卖",
+       "en": "deliver takeout"
+      },
+      {
+       "zh": "送给朋友",
+       "en": "give it to a friend"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-15",
+     "num": 15,
+     "hanzi": "特别",
+     "pinyin": "tèbié",
+     "meaning": "particularly; especially",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "特别好吃",
+       "en": "especially delicious"
+      },
+      {
+       "zh": "特别喜欢",
+       "en": "like very much"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-16",
+     "num": 16,
+     "hanzi": "慢",
+     "pinyin": "màn",
+     "meaning": "slow",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "太慢了",
+       "en": "too slow"
+      },
+      {
+       "zh": "走得很慢",
+       "en": "walk very slowly"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-17",
+     "num": 17,
+     "hanzi": "有名",
+     "pinyin": "yǒumíng",
+     "meaning": "famous",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很有名",
+       "en": "very famous"
+      },
+      {
+       "zh": "有名的饭店",
+       "en": "a famous restaurant"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-18",
+     "num": 18,
+     "hanzi": "没",
+     "pinyin": "méi",
+     "meaning": "not; have not",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "没吃饭",
+       "en": "haven’t eaten"
+      },
+      {
+       "zh": "没问题",
+       "en": "no problem"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-19",
+     "num": 19,
+     "hanzi": "可以",
+     "pinyin": "kěyǐ",
+     "meaning": "can; may",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "可以试试",
+       "en": "can give it a try"
+      },
+      {
+       "zh": "可以进去",
+       "en": "can go in"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l4-20",
+     "num": 20,
+     "hanzi": "试",
+     "pinyin": "shì",
+     "meaning": "to try",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "试一下",
+       "en": "give it a try"
+      },
+      {
+       "zh": "可以试试",
+       "en": "can give it a try"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "第5课",
+   "titleEn": "Lesson 5",
+   "words": [
+    {
+     "id": "huihua360-2-l5-1",
+     "num": 1,
+     "hanzi": "了",
+     "pinyin": "le",
+     "meaning": "modal particle",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "下雨了",
+       "en": "it is raining"
+      },
+      {
+       "zh": "我到了",
+       "en": "I’ve arrived"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-2",
+     "num": 2,
+     "hanzi": "跟",
+     "pinyin": "gēn",
+     "meaning": "with",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "跟朋友一起",
+       "en": "together with friends"
+      },
+      {
+       "zh": "跟我来",
+       "en": "come with me"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-3",
+     "num": 3,
+     "hanzi": "同学",
+     "pinyin": "tóngxué",
+     "meaning": "classmate",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的同学",
+       "en": "my classmate"
+      },
+      {
+       "zh": "跟同学一起",
+       "en": "together with classmates"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-4",
+     "num": 4,
+     "hanzi": "郊区",
+     "pinyin": "jiāoqū",
+     "meaning": "suburb",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去郊区",
+       "en": "go to the suburbs"
+      },
+      {
+       "zh": "住在郊区",
+       "en": "live in the suburbs"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-5",
+     "num": 5,
+     "hanzi": "滑雪",
+     "pinyin": "huáxuě",
+     "meaning": "to ski",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去滑雪",
+       "en": "go skiing"
+      },
+      {
+       "zh": "会滑雪",
+       "en": "can ski"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-6",
+     "num": 6,
+     "hanzi": "那儿",
+     "pinyin": "nàr",
+     "meaning": "there",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去那儿",
+       "en": "go there"
+      },
+      {
+       "zh": "在那儿",
+       "en": "over there"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-7",
+     "num": 7,
+     "hanzi": "滑雪场",
+     "pinyin": "huáxuěchǎng",
+     "meaning": "ski resort",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去滑雪场",
+       "en": "go to the ski resort"
+      },
+      {
+       "zh": "这个滑雪场",
+       "en": "this ski resort"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-8",
+     "num": 8,
+     "hanzi": "棒",
+     "pinyin": "bàng",
+     "meaning": "excellent; amazing",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "太棒了",
+       "en": "fantastic!"
+      },
+      {
+       "zh": "真的很棒",
+       "en": "really great"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-9",
+     "num": 9,
+     "hanzi": "难",
+     "pinyin": "nán",
+     "meaning": "hard; difficult",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很难",
+       "en": "very difficult"
+      },
+      {
+       "zh": "太难了",
+       "en": "too difficult"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-10",
+     "num": 10,
+     "hanzi": "怕",
+     "pinyin": "pà",
+     "meaning": "to fear; be afraid",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别怕",
+       "en": "don’t be afraid"
+      },
+      {
+       "zh": "怕冷",
+       "en": "afraid of the cold"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-11",
+     "num": 11,
+     "hanzi": "摔",
+     "pinyin": "shuāi",
+     "meaning": "to fall",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "怕摔",
+       "en": "afraid of falling"
+      },
+      {
+       "zh": "摔了一下",
+       "en": "had a fall"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-12",
+     "num": 12,
+     "hanzi": "就行",
+     "pinyin": "jiù xíng",
+     "meaning": "will do; is enough",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这样就行",
+       "en": "this will do"
+      },
+      {
+       "zh": "不怕就行",
+       "en": "as long as you’re not afraid"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-13",
+     "num": 13,
+     "hanzi": "次",
+     "pinyin": "cì",
+     "meaning": "time; occasion",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "第一次",
+       "en": "the first time"
+      },
+      {
+       "zh": "去过两次",
+       "en": "have been there twice"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-14",
+     "num": 14,
+     "hanzi": "想",
+     "pinyin": "xiǎng",
+     "meaning": "to think",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "想一想",
+       "en": "think about it"
+      },
+      {
+       "zh": "我想好了",
+       "en": "I’ve made up my mind"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-15",
+     "num": 15,
+     "hanzi": "干",
+     "pinyin": "gàn",
+     "meaning": "to do",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "干什么",
+       "en": "do what; what are you doing?"
+      },
+      {
+       "zh": "干得不错",
+       "en": "did a good job"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-16",
+     "num": 16,
+     "hanzi": "几",
+     "pinyin": "jǐ",
+     "meaning": "several; how many",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "几个人",
+       "en": "how many people"
+      },
+      {
+       "zh": "几次",
+       "en": "how many times"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-17",
+     "num": 17,
+     "hanzi": "朋友",
+     "pinyin": "péngyou",
+     "meaning": "friend",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "好朋友",
+       "en": "good friend"
+      },
+      {
+       "zh": "一个朋友",
+       "en": "a friend"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-18",
+     "num": 18,
+     "hanzi": "来",
+     "pinyin": "lái",
+     "meaning": "to come",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "来我家",
+       "en": "come to my home"
+      },
+      {
+       "zh": "明天来",
+       "en": "come tomorrow"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-19",
+     "num": 19,
+     "hanzi": "做饭",
+     "pinyin": "zuòfàn",
+     "meaning": "to cook",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "会做饭",
+       "en": "can cook"
+      },
+      {
+       "zh": "在家做饭",
+       "en": "cook at home"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-20",
+     "num": 20,
+     "hanzi": "要求",
+     "pinyin": "yāoqiú",
+     "meaning": "to ask; require",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一个要求",
+       "en": "one requirement"
+      },
+      {
+       "zh": "要求每个人",
+       "en": "require everyone"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-21",
+     "num": 21,
+     "hanzi": "带",
+     "pinyin": "dài",
+     "meaning": "to take; bring",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "带一个菜",
+       "en": "bring one dish"
+      },
+      {
+       "zh": "带手机",
+       "en": "bring your phone"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-22",
+     "num": 22,
+     "hanzi": "办法",
+     "pinyin": "bànfǎ",
+     "meaning": "way; method",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "好办法",
+       "en": "good idea; good method"
+      },
+      {
+       "zh": "想个办法",
+       "en": "think of a way"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-23",
+     "num": 23,
+     "hanzi": "猜",
+     "pinyin": "cāi",
+     "meaning": "to guess",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你猜",
+       "en": "take a guess"
+      },
+      {
+       "zh": "猜一猜",
+       "en": "take a guess"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-24",
+     "num": 24,
+     "hanzi": "一定",
+     "pinyin": "yídìng",
+     "meaning": "certainly; definitely",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一定来",
+       "en": "definitely come"
+      },
+      {
+       "zh": "一定可以",
+       "en": "definitely can"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l5-25",
+     "num": 25,
+     "hanzi": "沙拉",
+     "pinyin": "shālā",
+     "meaning": "salad",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃沙拉",
+       "en": "eat salad"
+      },
+      {
+       "zh": "这个沙拉",
+       "en": "this salad"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "第6课",
+   "titleEn": "Lesson 6",
+   "words": [
+    {
+     "id": "huihua360-2-l6-1",
+     "num": 1,
+     "hanzi": "有点儿",
+     "pinyin": "yǒudiǎnr",
+     "meaning": "a little; a bit",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "有点儿冷",
+       "en": "a little cold"
+      },
+      {
+       "zh": "有点儿疼",
+       "en": "hurts a little"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-2",
+     "num": 2,
+     "hanzi": "舒服",
+     "pinyin": "shūfu",
+     "meaning": "comfortable; well",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很舒服",
+       "en": "very comfortable"
+      },
+      {
+       "zh": "不太舒服",
+       "en": "not feeling very well"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-3",
+     "num": 3,
+     "hanzi": "头",
+     "pinyin": "tóu",
+     "meaning": "head",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "头疼",
+       "en": "headache; head hurts"
+      },
+      {
+       "zh": "我的头",
+       "en": "my head"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-4",
+     "num": 4,
+     "hanzi": "疼",
+     "pinyin": "téng",
+     "meaning": "painful; to hurt",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "头疼",
+       "en": "headache; head hurts"
+      },
+      {
+       "zh": "有点儿疼",
+       "en": "hurts a little"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-5",
+     "num": 5,
+     "hanzi": "觉得",
+     "pinyin": "juéde",
+     "meaning": "to feel; think",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "觉得冷",
+       "en": "feel cold"
+      },
+      {
+       "zh": "我觉得可以",
+       "en": "I think it’s okay"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-6",
+     "num": 6,
+     "hanzi": "冷",
+     "pinyin": "lěng",
+     "meaning": "cold",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很冷",
+       "en": "very cold"
+      },
+      {
+       "zh": "有点儿冷",
+       "en": "a little cold"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-7",
+     "num": 7,
+     "hanzi": "发烧",
+     "pinyin": "fāshāo",
+     "meaning": "to have a fever",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "有点儿发烧",
+       "en": "have a slight fever"
+      },
+      {
+       "zh": "发烧了",
+       "en": "have a fever"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-8",
+     "num": 8,
+     "hanzi": "量",
+     "pinyin": "liáng",
+     "meaning": "to measure",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "量体温",
+       "en": "take your temperature"
+      },
+      {
+       "zh": "量一下",
+       "en": "measure it"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-9",
+     "num": 9,
+     "hanzi": "体温",
+     "pinyin": "tǐwēn",
+     "meaning": "body temperature",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "量体温",
+       "en": "take your temperature"
+      },
+      {
+       "zh": "体温三十八度",
+       "en": "temperature is 38°C"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-10",
+     "num": 10,
+     "hanzi": "只",
+     "pinyin": "zhǐ",
+     "meaning": "only",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "只喝水",
+       "en": "only drink water"
+      },
+      {
+       "zh": "只有一个",
+       "en": "only one"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-11",
+     "num": 11,
+     "hanzi": "度",
+     "pinyin": "dù",
+     "meaning": "degree",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "三十八度",
+       "en": "38 degrees"
+      },
+      {
+       "zh": "零下五度",
+       "en": "5 degrees below zero"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-12",
+     "num": 12,
+     "hanzi": "先",
+     "pinyin": "xiān",
+     "meaning": "first",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "先休息",
+       "en": "rest first"
+      },
+      {
+       "zh": "先吃药",
+       "en": "take the medicine first"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-13",
+     "num": 13,
+     "hanzi": "验血",
+     "pinyin": "yànxuè",
+     "meaning": "to have a blood test",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去验血",
+       "en": "go for a blood test"
+      },
+      {
+       "zh": "先验血",
+       "en": "get a blood test first"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-14",
+     "num": 14,
+     "hanzi": "感冒",
+     "pinyin": "gǎnmào",
+     "meaning": "to have a cold; cold",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "感冒了",
+       "en": "have a cold"
+      },
+      {
+       "zh": "有点儿感冒",
+       "en": "have a slight cold"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-15",
+     "num": 15,
+     "hanzi": "药",
+     "pinyin": "yào",
+     "meaning": "medicine",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "吃药",
+       "en": "take medicine"
+      },
+      {
+       "zh": "两片药",
+       "en": "two pills"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-16",
+     "num": 16,
+     "hanzi": "片",
+     "pinyin": "piàn",
+     "meaning": "piece; tablet",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一片药",
+       "en": "one pill"
+      },
+      {
+       "zh": "两片药",
+       "en": "two pills"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-17",
+     "num": 17,
+     "hanzi": "水",
+     "pinyin": "shuǐ",
+     "meaning": "water",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "喝水",
+       "en": "drink water"
+      },
+      {
+       "zh": "一杯水",
+       "en": "a glass of water"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-18",
+     "num": 18,
+     "hanzi": "少",
+     "pinyin": "shǎo",
+     "meaning": "few; little",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "少一点儿",
+       "en": "a little less"
+      },
+      {
+       "zh": "人很少",
+       "en": "there are few people"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-19",
+     "num": 19,
+     "hanzi": "大夫",
+     "pinyin": "dàifu",
+     "meaning": "doctor",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "看大夫",
+       "en": "see a doctor"
+      },
+      {
+       "zh": "问大夫",
+       "en": "ask the doctor"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-20",
+     "num": 20,
+     "hanzi": "病",
+     "pinyin": "bìng",
+     "meaning": "to be ill; illness",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "生病了",
+       "en": "got sick; is sick"
+      },
+      {
+       "zh": "病好了",
+       "en": "recovered; got better"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-21",
+     "num": 21,
+     "hanzi": "能",
+     "pinyin": "néng",
+     "meaning": "can; be able to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "能休息",
+       "en": "can rest"
+      },
+      {
+       "zh": "能去吗",
+       "en": "can you go?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-22",
+     "num": 22,
+     "hanzi": "帮",
+     "pinyin": "bāng",
+     "meaning": "to help",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "帮我一下",
+       "en": "help me for a moment"
+      },
+      {
+       "zh": "帮朋友",
+       "en": "help a friend"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l6-23",
+     "num": 23,
+     "hanzi": "请假",
+     "pinyin": "qǐngjià",
+     "meaning": "to ask for leave",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请一天假",
+       "en": "take one day off"
+      },
+      {
+       "zh": "跟老师请假",
+       "en": "ask the teacher for leave"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "第7课",
+   "titleEn": "Lesson 7",
+   "words": [
+    {
+     "id": "huihua360-2-l7-1",
+     "num": 1,
+     "hanzi": "喂",
+     "pinyin": "wèi",
+     "meaning": "hello (on the phone)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "喂，你好",
+       "en": "hello?"
+      },
+      {
+       "zh": "喂，请问",
+       "en": "hello, may I ask…?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-2",
+     "num": 2,
+     "hanzi": "在",
+     "pinyin": "zài",
+     "meaning": "in the process of",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "在吃饭",
+       "en": "eating"
+      },
+      {
+       "zh": "在上课",
+       "en": "in class"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-3",
+     "num": 3,
+     "hanzi": "干吗",
+     "pinyin": "gànmá",
+     "meaning": "to do what; why",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你在干吗",
+       "en": "what are you doing?"
+      },
+      {
+       "zh": "干吗不去",
+       "en": "why not go?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-4",
+     "num": 4,
+     "hanzi": "正在",
+     "pinyin": "zhèngzài",
+     "meaning": "in the process of; currently",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "正在开会",
+       "en": "in a meeting right now"
+      },
+      {
+       "zh": "正在睡觉",
+       "en": "sleeping right now"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-5",
+     "num": 5,
+     "hanzi": "呢",
+     "pinyin": "ne",
+     "meaning": "modal particle",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "在上课呢",
+       "en": "in class right now"
+      },
+      {
+       "zh": "你呢",
+       "en": "what about you?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-6",
+     "num": 6,
+     "hanzi": "事",
+     "pinyin": "shì",
+     "meaning": "thing; matter",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "有事",
+       "en": "have something to do"
+      },
+      {
+       "zh": "什么事",
+       "en": "what’s the matter?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-7",
+     "num": 7,
+     "hanzi": "打算",
+     "pinyin": "dǎsuàn",
+     "meaning": "to plan; plan",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "打算去北京",
+       "en": "plan to go to Beijing"
+      },
+      {
+       "zh": "有什么打算",
+       "en": "what plans do you have?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-8",
+     "num": 8,
+     "hanzi": "球",
+     "pinyin": "qiú",
+     "meaning": "ball",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "打球",
+       "en": "play ball"
+      },
+      {
+       "zh": "看球",
+       "en": "watch a game"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-9",
+     "num": 9,
+     "hanzi": "出发",
+     "pinyin": "chūfā",
+     "meaning": "to set out; depart",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "几点出发",
+       "en": "what time do we leave?"
+      },
+      {
+       "zh": "现在出发",
+       "en": "leave now"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-10",
+     "num": 10,
+     "hanzi": "外边",
+     "pinyin": "wàibian",
+     "meaning": "outside",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "在外边",
+       "en": "outside"
+      },
+      {
+       "zh": "去外边",
+       "en": "go outside"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-11",
+     "num": 11,
+     "hanzi": "宿舍",
+     "pinyin": "sùshè",
+     "meaning": "dormitory",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "在宿舍",
+       "en": "in the dorm"
+      },
+      {
+       "zh": "回宿舍",
+       "en": "go back to the dorm"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-12",
+     "num": 12,
+     "hanzi": "门口",
+     "pinyin": "ménkǒu",
+     "meaning": "doorway; entrance",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "在门口",
+       "en": "at the door"
+      },
+      {
+       "zh": "学校门口",
+       "en": "school entrance"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-13",
+     "num": 13,
+     "hanzi": "不见不散",
+     "pinyin": "bú jiàn bú sàn",
+     "meaning": "don't leave until we meet; see you there",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "八点见，不见不散",
+       "en": "see you at eight; don’t leave until we meet"
+      },
+      {
+       "zh": "门口见，不见不散",
+       "en": "meet at the entrance; don’t leave until we meet"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-14",
+     "num": 14,
+     "hanzi": "都",
+     "pinyin": "dōu",
+     "meaning": "already; even",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "都八点了",
+       "en": "it’s already eight o’clock"
+      },
+      {
+       "zh": "都到了",
+       "en": "everyone has arrived"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-15",
+     "num": 15,
+     "hanzi": "晚",
+     "pinyin": "wǎn",
+     "meaning": "late",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "来晚了",
+       "en": "came late; am late"
+      },
+      {
+       "zh": "太晚了",
+       "en": "too late"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-16",
+     "num": 16,
+     "hanzi": "给",
+     "pinyin": "gěi",
+     "meaning": "for; to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "给我打电话",
+       "en": "call me"
+      },
+      {
+       "zh": "送给你",
+       "en": "give it to you"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-17",
+     "num": 17,
+     "hanzi": "打",
+     "pinyin": "dǎ",
+     "meaning": "to call",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "打电话",
+       "en": "make a phone call"
+      },
+      {
+       "zh": "打给朋友",
+       "en": "call a friend"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-18",
+     "num": 18,
+     "hanzi": "一直",
+     "pinyin": "yìzhí",
+     "meaning": "always; all the time",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一直等你",
+       "en": "keep waiting for you"
+      },
+      {
+       "zh": "一直在下雨",
+       "en": "it has been raining"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-19",
+     "num": 19,
+     "hanzi": "接",
+     "pinyin": "jiē",
+     "meaning": "to pick up",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去机场接人",
+       "en": "go to the airport to pick someone up"
+      },
+      {
+       "zh": "接电话",
+       "en": "answer the phone"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-20",
+     "num": 20,
+     "hanzi": "不好意思",
+     "pinyin": "bù hǎoyìsi",
+     "meaning": "sorry; excuse me",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "不好意思，我来晚了",
+       "en": "sorry, I’m late"
+      },
+      {
+       "zh": "不好意思，请问一下",
+       "en": "excuse me, may I ask…?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-21",
+     "num": 21,
+     "hanzi": "不行",
+     "pinyin": "bùxíng",
+     "meaning": "cannot; won't do",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天不行",
+       "en": "today won’t work"
+      },
+      {
+       "zh": "这样不行",
+       "en": "this won’t work"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-22",
+     "num": 22,
+     "hanzi": "得",
+     "pinyin": "děi",
+     "meaning": "need to; have to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "得走了",
+       "en": "have to go now"
+      },
+      {
+       "zh": "得早点儿去",
+       "en": "have to go earlier"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-23",
+     "num": 23,
+     "hanzi": "机场",
+     "pinyin": "jīchǎng",
+     "meaning": "airport",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "去机场",
+       "en": "go to the airport"
+      },
+      {
+       "zh": "机场见",
+       "en": "see you at the airport"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l7-24",
+     "num": 24,
+     "hanzi": "约",
+     "pinyin": "yuē",
+     "meaning": "to make an appointment",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "约朋友",
+       "en": "make plans with a friend"
+      },
+      {
+       "zh": "约个时间",
+       "en": "set a time"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "第8课",
+   "titleEn": "Lesson 8",
+   "words": [
+    {
+     "id": "huihua360-2-l8-1",
+     "num": 1,
+     "hanzi": "天气",
+     "pinyin": "tiānqì",
+     "meaning": "weather",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天天气",
+       "en": "today’s weather"
+      },
+      {
+       "zh": "天气很好",
+       "en": "the weather is very good"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-2",
+     "num": 2,
+     "hanzi": "热",
+     "pinyin": "rè",
+     "meaning": "hot",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很热",
+       "en": "very hot"
+      },
+      {
+       "zh": "比昨天热",
+       "en": "hotter than yesterday"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-3",
+     "num": 3,
+     "hanzi": "夏天",
+     "pinyin": "xiàtiān",
+     "meaning": "summer",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "北京的夏天",
+       "en": "summer in Beijing"
+      },
+      {
+       "zh": "夏天很热",
+       "en": "summer is very hot"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-4",
+     "num": 4,
+     "hanzi": "比",
+     "pinyin": "bǐ",
+     "meaning": "than",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "比北京冷",
+       "en": "colder than Beijing"
+      },
+      {
+       "zh": "比我高",
+       "en": "taller than me"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-5",
+     "num": 5,
+     "hanzi": "凉快",
+     "pinyin": "liángkuai",
+     "meaning": "cool; pleasantly cool",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很凉快",
+       "en": "very cool"
+      },
+      {
+       "zh": "比北京凉快",
+       "en": "cooler than Beijing"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-6",
+     "num": 6,
+     "hanzi": "听说",
+     "pinyin": "tīngshuō",
+     "meaning": "to hear; be told",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "听说很冷",
+       "en": "heard it is very cold"
+      },
+      {
+       "zh": "我听说了",
+       "en": "I heard about it"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-7",
+     "num": 7,
+     "hanzi": "冬天",
+     "pinyin": "dōngtiān",
+     "meaning": "winter",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "北京的冬天",
+       "en": "winter in Beijing"
+      },
+      {
+       "zh": "冬天很冷",
+       "en": "winter is very cold"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-8",
+     "num": 8,
+     "hanzi": "极了",
+     "pinyin": "jí le",
+     "meaning": "extremely",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "冷极了",
+       "en": "extremely cold"
+      },
+      {
+       "zh": "好极了",
+       "en": "excellent; great"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-9",
+     "num": 9,
+     "hanzi": "大概",
+     "pinyin": "dàgài",
+     "meaning": "roughly; approximately; probably",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "大概十点",
+       "en": "around ten o’clock"
+      },
+      {
+       "zh": "大概三十度",
+       "en": "about 30 degrees"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-10",
+     "num": 10,
+     "hanzi": "最",
+     "pinyin": "zuì",
+     "meaning": "most; -est",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "最喜欢",
+       "en": "like the most; favorite"
+      },
+      {
+       "zh": "最低气温",
+       "en": "lowest temperature"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-11",
+     "num": 11,
+     "hanzi": "低",
+     "pinyin": "dī",
+     "meaning": "low",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "气温很低",
+       "en": "the temperature is very low"
+      },
+      {
+       "zh": "比昨天低",
+       "en": "lower than yesterday"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-12",
+     "num": 12,
+     "hanzi": "气温",
+     "pinyin": "qìwēn",
+     "meaning": "temperature",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "最低气温",
+       "en": "lowest temperature"
+      },
+      {
+       "zh": "气温很低",
+       "en": "the temperature is very low"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-13",
+     "num": 13,
+     "hanzi": "零下",
+     "pinyin": "língxià",
+     "meaning": "below zero",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "零下十度",
+       "en": "10 degrees below zero"
+      },
+      {
+       "zh": "零下二十度",
+       "en": "20 degrees below zero"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-14",
+     "num": 14,
+     "hanzi": "多",
+     "pinyin": "duō",
+     "meaning": "more than; over",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "二十多度",
+       "en": "over 20 degrees"
+      },
+      {
+       "zh": "三十多个人",
+       "en": "more than thirty people"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-15",
+     "num": 15,
+     "hanzi": "习惯",
+     "pinyin": "xíguàn",
+     "meaning": "to be accustomed to; habit",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "习惯了",
+       "en": "got used to it"
+      },
+      {
+       "zh": "不太习惯",
+       "en": "not quite used to it"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-16",
+     "num": 16,
+     "hanzi": "又",
+     "pinyin": "yòu",
+     "meaning": "again",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "又下雨了",
+       "en": "it is raining again"
+      },
+      {
+       "zh": "又来了",
+       "en": "came again; here again"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-17",
+     "num": 17,
+     "hanzi": "下",
+     "pinyin": "xià",
+     "meaning": "to fall (rain/snow)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "下雨",
+       "en": "rain; to rain"
+      },
+      {
+       "zh": "下雪",
+       "en": "snow; to snow"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-18",
+     "num": 18,
+     "hanzi": "雨",
+     "pinyin": "yǔ",
+     "meaning": "rain",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "下雨",
+       "en": "rain; to rain"
+      },
+      {
+       "zh": "雨很大",
+       "en": "it is raining heavily"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-19",
+     "num": 19,
+     "hanzi": "常常",
+     "pinyin": "chángcháng",
+     "meaning": "often; frequently",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "常常下雨",
+       "en": "it often rains"
+      },
+      {
+       "zh": "常常见面",
+       "en": "meet often"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-20",
+     "num": 20,
+     "hanzi": "预报",
+     "pinyin": "yùbào",
+     "meaning": "forecast",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "天气预报",
+       "en": "weather forecast"
+      },
+      {
+       "zh": "看预报",
+       "en": "check the forecast"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-21",
+     "num": 21,
+     "hanzi": "更",
+     "pinyin": "gèng",
+     "meaning": "more; even more",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "更冷",
+       "en": "colder"
+      },
+      {
+       "zh": "更好",
+       "en": "better"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-22",
+     "num": 22,
+     "hanzi": "比赛",
+     "pinyin": "bǐsài",
+     "meaning": "match; game; competition",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "看比赛",
+       "en": "watch a match"
+      },
+      {
+       "zh": "比赛开始",
+       "en": "the match starts"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-23",
+     "num": 23,
+     "hanzi": "怎么办",
+     "pinyin": "zěnme bàn",
+     "meaning": "what to do; what should one do",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "怎么办呢",
+       "en": "what should we do?"
+      },
+      {
+       "zh": "下雨怎么办",
+       "en": "what if it rains?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-24",
+     "num": 24,
+     "hanzi": "周",
+     "pinyin": "zhōu",
+     "meaning": "week",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这周",
+       "en": "this week"
+      },
+      {
+       "zh": "下周",
+       "en": "next week"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-2-l8-25",
+     "num": 25,
+     "hanzi": "比",
+     "pinyin": "bǐ",
+     "meaning": "to compete",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "比一比",
+       "en": "compare them; have a comparison"
+      },
+      {
+       "zh": "跟他比",
+       "en": "compare with him"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

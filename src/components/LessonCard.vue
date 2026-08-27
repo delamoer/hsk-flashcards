@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="`/hsk/${level}/lesson/${lesson.num}`" class="lesson">
+  <router-link :to="`/course/${series}/${unit}/lesson/${lesson.num}`" class="lesson">
     <div class="no">第 {{ lesson.num }} 课 · LESSON {{ lesson.num }}</div>
     <div class="t han">{{ lesson.title }}</div>
     <div class="te">{{ lesson.titleEn }}</div>
@@ -17,7 +17,8 @@ import { useProgress } from "@/composables/useProgress";
 
 const props = defineProps({
   lesson: { type: Object, required: true },
-  level: { type: [Number, String], required: true },
+  series: { type: String, required: true },
+  unit: { type: [Number, String], required: true },
 });
 
 const { summarize } = useProgress();
