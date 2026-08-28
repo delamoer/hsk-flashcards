@@ -4,8 +4,8 @@
  "lessons": [
   {
    "num": 1,
-   "title": "第1课",
-   "titleEn": "Lesson 1",
+   "title": "请问，您想喝点儿什么？",
+   "titleEn": "What would you like to drink, please?",
    "words": [
     {
      "id": "huihua360-2-l1-1",
@@ -562,8 +562,8 @@
   },
   {
    "num": 2,
-   "title": "第2课",
-   "titleEn": "Lesson 2",
+   "title": "爸妈身体怎么样？",
+   "titleEn": "How have Mom and Dad been?",
    "words": [
     {
      "id": "huihua360-2-l2-1",
@@ -1044,8 +1044,8 @@
   },
   {
    "num": 3,
-   "title": "第3课",
-   "titleEn": "Lesson 3",
+   "title": "你有什么爱好？",
+   "titleEn": "What hobbies do you have?",
    "words": [
     {
      "id": "huihua360-2-l3-1",
@@ -1526,8 +1526,8 @@
   },
   {
    "num": 4,
-   "title": "第4课",
-   "titleEn": "Lesson 4",
+   "title": "你去过上海吗？",
+   "titleEn": "Have you ever been to Shanghai?",
    "words": [
     {
      "id": "huihua360-2-l4-1",
@@ -1913,8 +1913,8 @@
   },
   {
    "num": 5,
-   "title": "第5课",
-   "titleEn": "Lesson 5",
+   "title": "周末你去哪儿了？",
+   "titleEn": "Where did you go on the weekend?",
    "words": [
     {
      "id": "huihua360-2-l5-1",
@@ -2395,8 +2395,8 @@
   },
   {
    "num": 6,
-   "title": "第6课",
-   "titleEn": "Lesson 6",
+   "title": "哪儿不舒服？",
+   "titleEn": "What's the matter?",
    "words": [
     {
      "id": "huihua360-2-l6-1",
@@ -2839,8 +2839,8 @@
   },
   {
    "num": 7,
-   "title": "第7课",
-   "titleEn": "Lesson 7",
+   "title": "我正在跑步呢",
+   "titleEn": "I'm jogging",
    "words": [
     {
      "id": "huihua360-2-l7-1",
@@ -3302,8 +3302,8 @@
   },
   {
    "num": 8,
-   "title": "第8课",
-   "titleEn": "Lesson 8",
+   "title": "今天天气真热！",
+   "titleEn": "It is so hot today!",
    "words": [
     {
      "id": "huihua360-2-l8-1",

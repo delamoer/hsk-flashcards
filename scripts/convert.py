@@ -162,8 +162,31 @@ TITLES_EN = {
             8: "Excuse Me, Where Is the Restroom?",
         },
         2: {
-            1: "Lesson 1", 2: "Lesson 2", 3: "Lesson 3", 4: "Lesson 4",
-            5: "Lesson 5", 6: "Lesson 6", 7: "Lesson 7", 8: "Lesson 8",
+            1: "What would you like to drink, please?",
+            2: "How have Mom and Dad been?",
+            3: "What hobbies do you have?",
+            4: "Have you ever been to Shanghai?",
+            5: "Where did you go on the weekend?",
+            6: "What's the matter?",
+            7: "I'm jogging",
+            8: "It is so hot today!",
+        },
+    },
+}
+
+# Chinese title overrides — used when the xlsx contains placeholder text.
+# Structure mirrors TITLES_EN: {series: {unit: {lesson_num: "title"}}}
+TITLES_ZH = {
+    "huihua360": {
+        2: {
+            1: "请问，您想喝点儿什么？",
+            2: "爸妈身体怎么样？",
+            3: "你有什么爱好？",
+            4: "你去过上海吗？",
+            5: "周末你去哪儿了？",
+            6: "哪儿不舒服？",
+            7: "我正在跑步呢",
+            8: "今天天气真热！",
         },
     },
 }
@@ -223,7 +246,7 @@ def convert(src):
         if ln not in lessons:
             lessons[ln] = {
                 "num": ln,
-                "title": clean(r[col["title"]]),
+                "title": TITLES_ZH.get(series, {}).get(unit, {}).get(ln) or clean(r[col["title"]]),
                 "titleEn": TITLES_EN.get(series, {}).get(unit, {}).get(ln, ""),
                 "words": [],
             }
