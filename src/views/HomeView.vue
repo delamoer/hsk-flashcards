@@ -3,6 +3,15 @@
     <div class="hero">
       <h1><span class="zh">中文单词闪卡</span></h1>
       <p>Learn Chinese vocabulary lesson by lesson · 按课学中文单词</p>
+      <label class="globalsearch">
+        <span>🔍</span>
+        <input
+          v-model="q"
+          placeholder="搜索全部课程：汉字 / 拼音 / 英文…  Search all courses…"
+          @keyup.enter="goSearch"
+        />
+        <button class="go" @click="goSearch">搜索 Search</button>
+      </label>
     </div>
 
     <section v-for="series in courseRegistry" :key="series.id" class="series-section">
@@ -27,11 +36,20 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+import { useRouter } from "vue-router";
 import CourseUnitCard from "@/components/CourseUnitCard.vue";
 import { courseRegistry, allWords } from "@/data";
 import { useProgress } from "@/composables/useProgress";
 
 const { percentKnown } = useProgress();
+const router = useRouter();
+const q = ref("");
+
+function goSearch() {
+  const query = q.value.trim();
+  if (query) router.push({ name: "search", query: { q: query } });
+}
 
 function percentFor(seriesId, unit) {
   if (!unit.available) return 0;
@@ -59,6 +77,39 @@ function percentFor(seriesId, unit) {
   margin-top: 8px;
   color: var(--muted);
   font-size: 15px;
+}
+.globalsearch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 560px;
+  margin: 20px auto 0;
+  background: var(--card);
+  border: 1.5px solid var(--hairline);
+  border-radius: var(--r-pill);
+  padding: 8px 8px 8px 18px;
+  box-shadow: var(--sh-card);
+}
+.globalsearch input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-family: var(--ui);
+  font-size: 15px;
+  background: transparent;
+  color: var(--ink);
+}
+.globalsearch input::placeholder {
+  color: var(--muted-soft);
+}
+.globalsearch .go {
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 9px 18px;
+  border-radius: var(--r-pill);
 }
 
 .series-section {

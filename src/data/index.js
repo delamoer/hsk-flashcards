@@ -74,3 +74,56 @@ export function allWords(seriesId, unitId) {
   if (!ds) return [];
   return ds.lessons.flatMap((l) => l.words);
 }
+
+// Flat index of every word across all courses, each tagged with its source
+// (series / unit / lesson). Built once on first search, then cached.
+let _flatIndex = null;
+function buildFlatIndex() {
+  const out = [];
+  for (const series of COURSE_REGISTRY) {
+    for (const unit of series.units) {
+      const ds = DATASETS[key(series.id, unit.id)];
+      if (!ds) continue;
+      for (const lesson of ds.lessons) {
+        for (const word of lesson.words) {
+          out.push({
+            word,
+            series: series.id,
+            seriesName: series.name,
+            unit: unit.id,
+            unitLabel: unit.label,
+            lessonNum: lesson.num,
+            lessonTitle: lesson.title,
+          });
+        }
+      }
+    }
+  }
+  return out;
+}
+
+// Strip pinyin tone marks so "qishi" matches "qǐshì" (and lowercases).
+function normalize(s) {
+  return (s || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+// Global cross-course search over hanzi / pinyin / English meaning.
+// Returns { total, results } where results is capped at `limit` entries.
+export function searchAll(query, limit = 60) {
+  const raw = query.trim();
+  if (!raw) return { total: 0, results: [] };
+  if (!_flatIndex) _flatIndex = buildFlatIndex();
+  const nq = normalize(raw);
+  const matches = _flatIndex.filter((e) => {
+    const w = e.word;
+    return (
+      w.hanzi.includes(raw) ||
+      normalize(w.pinyin).includes(nq) ||
+      normalize(w.meaning).includes(nq)
+    );
+  });
+  return { total: matches.length, results: matches.slice(0, limit) };
+}
