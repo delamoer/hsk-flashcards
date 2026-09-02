@@ -1,0 +1,3501 @@
+{
+ "series": "huihua360",
+ "unit": 4,
+ "lessons": [
+  {
+   "num": 1,
+   "title": "他穿着一件白色的衬衫",
+   "titleEn": "He's Wearing a White Shirt",
+   "words": [
+    {
+     "id": "huihua360-4-l1-1",
+     "num": 1,
+     "hanzi": "见面",
+     "pinyin": "jiànmiàn",
+     "meaning": "to meet",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "明天我们见面吧。",
+       "en": "Let's meet tomorrow."
+      },
+      {
+       "zh": "我跟他见过面。",
+       "en": "I have met him."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-2",
+     "num": 2,
+     "hanzi": "门",
+     "pinyin": "mén",
+     "meaning": "door",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请打开门。",
+       "en": "Please open the door."
+      },
+      {
+       "zh": "门开着。",
+       "en": "The door is open."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-3",
+     "num": 3,
+     "hanzi": "着",
+     "pinyin": "zhe",
+     "meaning": "aspect particle showing a continuing state",
+     "type": null,
+     "note": "本课读轻声 zhe",
+     "examples": [
+      {
+       "zh": "门开着。",
+       "en": "The door is open."
+      },
+      {
+       "zh": "他拿着一本书。",
+       "en": "He is holding a book."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-4",
+     "num": 4,
+     "hanzi": "看见",
+     "pinyin": "kànjiàn",
+     "meaning": "to see",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我看见老师了。",
+       "en": "I saw the teacher."
+      },
+      {
+       "zh": "你看见我的手机了吗？",
+       "en": "Did you see my phone?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-5",
+     "num": 5,
+     "hanzi": "男生",
+     "pinyin": "nánshēng",
+     "meaning": "boy; male student",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "班里有十个男生。",
+       "en": "There are ten male students in the class."
+      },
+      {
+       "zh": "那个男生在打球。",
+       "en": "That boy is playing ball."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-6",
+     "num": 6,
+     "hanzi": "穿",
+     "pinyin": "chuān",
+     "meaning": "to wear",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我今天穿白色衬衫。",
+       "en": "I am wearing a white shirt today."
+      },
+      {
+       "zh": "她喜欢穿裙子。",
+       "en": "She likes wearing skirts."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-7",
+     "num": 7,
+     "hanzi": "那个",
+     "pinyin": "nàge",
+     "meaning": "that; that one",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "那个男生是我朋友。",
+       "en": "That boy is my friend."
+      },
+      {
+       "zh": "我要那个。",
+       "en": "I want that one."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-8",
+     "num": 8,
+     "hanzi": "拿",
+     "pinyin": "ná",
+     "meaning": "to take; hold",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请拿这本书。",
+       "en": "Please take this book."
+      },
+      {
+       "zh": "我拿了一个包。",
+       "en": "I took a bag."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-9",
+     "num": 9,
+     "hanzi": "衬衫",
+     "pinyin": "chènshān",
+     "meaning": "shirt",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这件衬衫很好看。",
+       "en": "This shirt looks nice."
+      },
+      {
+       "zh": "我想买一件白衬衫。",
+       "en": "I want to buy a white shirt."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-10",
+     "num": 10,
+     "hanzi": "手",
+     "pinyin": "shǒu",
+     "meaning": "hand",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是我的手。",
+       "en": "This is my hand."
+      },
+      {
+       "zh": "手在桌子上。",
+       "en": "The hand is on the table."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-11",
+     "num": 11,
+     "hanzi": "厚",
+     "pinyin": "hòu",
+     "meaning": "thick",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这本书很厚。",
+       "en": "This book is thick."
+      },
+      {
+       "zh": "冬天要穿厚衣服。",
+       "en": "You should wear thick clothes in winter."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-12",
+     "num": 12,
+     "hanzi": "只是",
+     "pinyin": "zhǐshì",
+     "meaning": "only; just",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我只是问一问。",
+       "en": "I’m just asking."
+      },
+      {
+       "zh": "他会说一点儿，只是不多。",
+       "en": "He can speak a little, but not much."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-13",
+     "num": 13,
+     "hanzi": "经理",
+     "pinyin": "jīnglǐ",
+     "meaning": "manager",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "王经理今天很忙。",
+       "en": "Manager Wang is busy today."
+      },
+      {
+       "zh": "经理在开会。",
+       "en": "The manager is in a meeting."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-14",
+     "num": 14,
+     "hanzi": "接",
+     "pinyin": "jiē",
+     "meaning": "to pick up (someone)",
+     "type": null,
+     "note": "本课指接人",
+     "examples": [
+      {
+       "zh": "我去机场接朋友。",
+       "en": "I am going to the airport to pick up a friend."
+      },
+      {
+       "zh": "爸爸来学校接我。",
+       "en": "Dad comes to school to pick me up."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-15",
+     "num": 15,
+     "hanzi": "文件包",
+     "pinyin": "wénjiànbāo",
+     "meaning": "briefcase",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个文件包是经理的。",
+       "en": "This briefcase belongs to the manager."
+      },
+      {
+       "zh": "他拿着一个文件包。",
+       "en": "He is holding a briefcase."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-16",
+     "num": 16,
+     "hanzi": "包",
+     "pinyin": "bāo",
+     "meaning": "bag",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是我的包。",
+       "en": "This is my bag."
+      },
+      {
+       "zh": "我买了一个包。",
+       "en": "I bought a bag."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-17",
+     "num": 17,
+     "hanzi": "姓",
+     "pinyin": "xìng",
+     "meaning": "surname; to be surnamed",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你姓什么？",
+       "en": "What is your surname?"
+      },
+      {
+       "zh": "他姓什么？",
+       "en": "What is his surname?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-18",
+     "num": 18,
+     "hanzi": "意思",
+     "pinyin": "yìsi",
+     "meaning": "meaning",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个是什么意思？",
+       "en": "What does this mean?"
+      },
+      {
+       "zh": "我懂你的意思。",
+       "en": "I understand what you mean."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-19",
+     "num": 19,
+     "hanzi": "马上",
+     "pinyin": "mǎshàng",
+     "meaning": "immediately; right away",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我马上回来。",
+       "en": "I will come back right away."
+      },
+      {
+       "zh": "电影马上开始。",
+       "en": "The movie is about to start."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-20",
+     "num": 20,
+     "hanzi": "等",
+     "pinyin": "děng",
+     "meaning": "to wait",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请等一会儿。",
+       "en": "Please wait a moment."
+      },
+      {
+       "zh": "我在等朋友。",
+       "en": "I am waiting for a friend."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-21",
+     "num": 21,
+     "hanzi": "做事",
+     "pinyin": "zuòshì",
+     "meaning": "to do things; work",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他做事很认真。",
+       "en": "He is very serious about his work."
+      },
+      {
+       "zh": "做事不要太马虎。",
+       "en": "Do not be too careless when doing things."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-22",
+     "num": 22,
+     "hanzi": "总是",
+     "pinyin": "zǒngshì",
+     "meaning": "always",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他总是很忙。",
+       "en": "He is always busy."
+      },
+      {
+       "zh": "她总是笑着说话。",
+       "en": "She always speaks with a smile."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-23",
+     "num": 23,
+     "hanzi": "马虎",
+     "pinyin": "mǎhu",
+     "meaning": "careless",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他做事有点儿马虎。",
+       "en": "He is a little careless in his work."
+      },
+      {
+       "zh": "考试的时候不要马虎。",
+       "en": "Do not be careless during an exam."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l1-24",
+     "num": 24,
+     "hanzi": "头发",
+     "pinyin": "tóufa",
+     "meaning": "hair",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她的头发很长。",
+       "en": "Her hair is long."
+      },
+      {
+       "zh": "我的头发是黑色的。",
+       "en": "My hair is black."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "我们把桌子放到窗户旁边吧",
+   "titleEn": "Let's Put the Table by the Window",
+   "words": [
+    {
+     "id": "huihua360-4-l2-1",
+     "num": 1,
+     "hanzi": "把",
+     "pinyin": "bǎ",
+     "meaning": "ba-construction marker",
+     "type": null,
+     "note": "本课作“把”字句标记",
+     "examples": [
+      {
+       "zh": "请把门关上。",
+       "en": "Please close the door."
+      },
+      {
+       "zh": "我把书放在桌子上。",
+       "en": "I put the book on the table."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-2",
+     "num": 2,
+     "hanzi": "纸",
+     "pinyin": "zhǐ",
+     "meaning": "paper",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请给我一张纸。",
+       "en": "Please give me a piece of paper."
+      },
+      {
+       "zh": "我把号码写在纸上。",
+       "en": "I wrote the number on the paper."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-3",
+     "num": 3,
+     "hanzi": "扔",
+     "pinyin": "rēng",
+     "meaning": "to throw away",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请把垃圾扔了。",
+       "en": "Please throw away the trash."
+      },
+      {
+       "zh": "别扔这张纸。",
+       "en": "Do not throw away this piece of paper."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-4",
+     "num": 4,
+     "hanzi": "安装",
+     "pinyin": "ānzhuāng",
+     "meaning": "to install",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "师傅来安装空调。",
+       "en": "The worker came to install the air conditioner."
+      },
+      {
+       "zh": "这个怎么安装？",
+       "en": "How do you install this?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-5",
+     "num": 5,
+     "hanzi": "书柜",
+     "pinyin": "shūguì",
+     "meaning": "bookcase",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "书都在书柜里。",
+       "en": "The books are all in the bookcase."
+      },
+      {
+       "zh": "我们买了一个新书柜。",
+       "en": "We bought a new bookcase."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-6",
+     "num": 6,
+     "hanzi": "说明书",
+     "pinyin": "shuōmíngshū",
+     "meaning": "instruction manual",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请先看说明书。",
+       "en": "Please read the instruction manual first."
+      },
+      {
+       "zh": "说明书在桌子上。",
+       "en": "The instruction manual is on the table."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-7",
+     "num": 7,
+     "hanzi": "着急",
+     "pinyin": "zháojí",
+     "meaning": "worried; anxious",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别着急，他马上来。",
+       "en": "Don't worry; he will come soon."
+      },
+      {
+       "zh": "找不到手机，我很着急。",
+       "en": "I am worried because I can't find my phone."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-8",
+     "num": 8,
+     "hanzi": "垃圾",
+     "pinyin": "lājī",
+     "meaning": "garbage; trash",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请把垃圾扔了。",
+       "en": "Please throw away the trash."
+      },
+      {
+       "zh": "地上有垃圾。",
+       "en": "There is trash on the floor."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-9",
+     "num": 9,
+     "hanzi": "已经",
+     "pinyin": "yǐjīng",
+     "meaning": "already",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我已经吃饭了。",
+       "en": "I have already eaten."
+      },
+      {
+       "zh": "他已经回家了。",
+       "en": "He has already gone home."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-10",
+     "num": 10,
+     "hanzi": "运",
+     "pinyin": "yùn",
+     "meaning": "to carry; transport",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他们把书运上楼。",
+       "en": "They carried the books upstairs."
+      },
+      {
+       "zh": "这些东西怎么运？",
+       "en": "How do we transport these things?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-11",
+     "num": 11,
+     "hanzi": "查",
+     "pinyin": "chá",
+     "meaning": "to check; look up",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我查一下词典。",
+       "en": "I will look it up in the dictionary."
+      },
+      {
+       "zh": "请帮我查一下。",
+       "en": "Please help me check it."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-12",
+     "num": 12,
+     "hanzi": "装",
+     "pinyin": "zhuāng",
+     "meaning": "to install; assemble",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们把书柜装好了。",
+       "en": "We finished assembling the bookcase."
+      },
+      {
+       "zh": "他在装空调。",
+       "en": "He is installing the air conditioner."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-13",
+     "num": 13,
+     "hanzi": "刚才",
+     "pinyin": "gāngcái",
+     "meaning": "just now",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "刚才谁来了？",
+       "en": "Who came just now?"
+      },
+      {
+       "zh": "我刚才在办公室。",
+       "en": "I was in the office just now."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-14",
+     "num": 14,
+     "hanzi": "楼",
+     "pinyin": "lóu",
+     "meaning": "floor; story; building",
+     "type": null,
+     "note": "本课主要指楼层",
+     "examples": [
+      {
+       "zh": "我住在三楼。",
+       "en": "I live on the third floor."
+      },
+      {
+       "zh": "这个楼很高。",
+       "en": "This building is tall."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-15",
+     "num": 15,
+     "hanzi": "小心",
+     "pinyin": "xiǎoxīn",
+     "meaning": "careful; to be careful",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "路上小心。",
+       "en": "Be careful on the road."
+      },
+      {
+       "zh": "小心，水很热。",
+       "en": "Be careful; the water is hot."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-16",
+     "num": 16,
+     "hanzi": "手机",
+     "pinyin": "shǒujī",
+     "meaning": "mobile phone",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的手机没电了。",
+       "en": "My phone is out of power."
+      },
+      {
+       "zh": "别忘了带手机。",
+       "en": "Do not forget to bring your phone."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-17",
+     "num": 17,
+     "hanzi": "丢",
+     "pinyin": "diū",
+     "meaning": "to lose",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我把手机丢了。",
+       "en": "I lost my phone."
+      },
+      {
+       "zh": "别把票丢了。",
+       "en": "Don’t lose the ticket."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-18",
+     "num": 18,
+     "hanzi": "放",
+     "pinyin": "fàng",
+     "meaning": "to put; place",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请把书放在桌子上。",
+       "en": "Please put the book on the table."
+      },
+      {
+       "zh": "牛奶放在冰箱里。",
+       "en": "Put the milk in the refrigerator."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-19",
+     "num": 19,
+     "hanzi": "窗户",
+     "pinyin": "chuānghu",
+     "meaning": "window",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请打开窗户。",
+       "en": "Please open the window."
+      },
+      {
+       "zh": "桌子在窗户旁边。",
+       "en": "The table is beside the window."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-20",
+     "num": 20,
+     "hanzi": "搬家",
+     "pinyin": "bānjiā",
+     "meaning": "to move house",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们下个月搬家。",
+       "en": "We are moving next month."
+      },
+      {
+       "zh": "他刚搬家。",
+       "en": "He just moved house."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-21",
+     "num": 21,
+     "hanzi": "擦",
+     "pinyin": "cā",
+     "meaning": "to wipe; clean",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请把桌子擦干净。",
+       "en": "Please wipe the table clean."
+      },
+      {
+       "zh": "我在擦窗户。",
+       "en": "I am wiping the window."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-22",
+     "num": 22,
+     "hanzi": "干净",
+     "pinyin": "gānjìng",
+     "meaning": "clean",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "房间很干净。",
+       "en": "The room is clean."
+      },
+      {
+       "zh": "请把房间打扫干净。",
+       "en": "Please clean the room."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-23",
+     "num": 23,
+     "hanzi": "借",
+     "pinyin": "jiè",
+     "meaning": "to borrow; lend",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想借这本书。",
+       "en": "I want to borrow this book."
+      },
+      {
+       "zh": "我借给他一本词典。",
+       "en": "I lend him a dictionary."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l2-24",
+     "num": 24,
+     "hanzi": "弄",
+     "pinyin": "nòng",
+     "meaning": "to do; make; handle",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你在弄什么？",
+       "en": "What are you doing?"
+      },
+      {
+       "zh": "别把手机弄丢了。",
+       "en": "Do not lose your phone."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "我妈妈一直笑着夸你",
+   "titleEn": "My Mom Keeps Praising You with a Smile",
+   "words": [
+    {
+     "id": "huihua360-4-l3-1",
+     "num": 1,
+     "hanzi": "女朋友",
+     "pinyin": "nǚpéngyou",
+     "meaning": "girlfriend",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是他的女朋友。",
+       "en": "This is his girlfriend."
+      },
+      {
+       "zh": "我见过他的女朋友。",
+       "en": "I have met his girlfriend."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-2",
+     "num": 2,
+     "hanzi": "礼物",
+     "pinyin": "lǐwù",
+     "meaning": "gift; present",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是给你的礼物。",
+       "en": "This is a gift for you."
+      },
+      {
+       "zh": "我给妈妈买了礼物。",
+       "en": "I bought Mom a gift."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-3",
+     "num": 3,
+     "hanzi": "玫瑰",
+     "pinyin": "méigui",
+     "meaning": "rose",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我买了一朵玫瑰。",
+       "en": "I bought a rose."
+      },
+      {
+       "zh": "她喜欢红玫瑰。",
+       "en": "She likes red roses."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-4",
+     "num": 4,
+     "hanzi": "花",
+     "pinyin": "huā",
+     "meaning": "flower",
+     "type": null,
+     "note": "本课义项：to spend",
+     "examples": [
+      {
+       "zh": "我花了十元。",
+       "en": "I spent ten yuan."
+      },
+      {
+       "zh": "买这个花了二十元。",
+       "en": "Buying this cost twenty yuan."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-5",
+     "num": 5,
+     "hanzi": "代表",
+     "pinyin": "dàibiǎo",
+     "meaning": "to represent; stand for",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "红色代表热情。",
+       "en": "Red represents enthusiasm."
+      },
+      {
+       "zh": "这朵花代表爱。",
+       "en": "This flower represents love."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-6",
+     "num": 6,
+     "hanzi": "水果",
+     "pinyin": "shuǐguǒ",
+     "meaning": "fruit",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天吃水果。",
+       "en": "I eat fruit every day."
+      },
+      {
+       "zh": "桌子上有很多水果。",
+       "en": "There is a lot of fruit on the table."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-7",
+     "num": 7,
+     "hanzi": "茶叶",
+     "pinyin": "cháyè",
+     "meaning": "tea leaves",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是中国茶叶。",
+       "en": "This is Chinese tea."
+      },
+      {
+       "zh": "他买了一些茶叶。",
+       "en": "He bought some tea leaves."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-8",
+     "num": 8,
+     "hanzi": "浪漫",
+     "pinyin": "làngmàn",
+     "meaning": "romantic",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个地方很浪漫。",
+       "en": "This place is romantic."
+      },
+      {
+       "zh": "他们有一个浪漫的晚饭。",
+       "en": "They are having a romantic dinner."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-9",
+     "num": 9,
+     "hanzi": "饱",
+     "pinyin": "bǎo",
+     "meaning": "full (after eating)",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我吃饱了。",
+       "en": "I am full."
+      },
+      {
+       "zh": "你吃饱了吗？",
+       "en": "Are you full?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-10",
+     "num": 10,
+     "hanzi": "不用",
+     "pinyin": "búyòng",
+     "meaning": "need not; do not need to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你不用等我。",
+       "en": "You don’t need to wait for me."
+      },
+      {
+       "zh": "今天不用上课。",
+       "en": "There is no need to have class today."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-11",
+     "num": 11,
+     "hanzi": "客厅",
+     "pinyin": "kètīng",
+     "meaning": "living room",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们在客厅看电视。",
+       "en": "We watch TV in the living room."
+      },
+      {
+       "zh": "客厅里有一个沙发。",
+       "en": "There is a sofa in the living room."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-12",
+     "num": 12,
+     "hanzi": "电视",
+     "pinyin": "diànshì",
+     "meaning": "television; TV",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我晚上看电视。",
+       "en": "I watch TV in the evening."
+      },
+      {
+       "zh": "客厅里有一台电视。",
+       "en": "There is a TV in the living room."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-13",
+     "num": 13,
+     "hanzi": "表现",
+     "pinyin": "biǎoxiàn",
+     "meaning": "to perform; behave; performance",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他今天表现很好。",
+       "en": "He performed very well today."
+      },
+      {
+       "zh": "她在比赛中表现不错。",
+       "en": "She performed well in the competition."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-14",
+     "num": 14,
+     "hanzi": "笑",
+     "pinyin": "xiào",
+     "meaning": "to smile; laugh",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她笑了。",
+       "en": "She smiled."
+      },
+      {
+       "zh": "别笑了。",
+       "en": "Stop laughing."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-15",
+     "num": 15,
+     "hanzi": "夸",
+     "pinyin": "kuā",
+     "meaning": "to praise",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师夸我了。",
+       "en": "The teacher praised me."
+      },
+      {
+       "zh": "妈妈常常夸他。",
+       "en": "Mom often praises him."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-16",
+     "num": 16,
+     "hanzi": "能干",
+     "pinyin": "nénggàn",
+     "meaning": "capable; competent",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她很能干。",
+       "en": "She is very capable."
+      },
+      {
+       "zh": "大家都说他很能干。",
+       "en": "Everyone says he is very capable."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-17",
+     "num": 17,
+     "hanzi": "为",
+     "pinyin": "wèi",
+     "meaning": "for; for the sake of",
+     "type": null,
+     "note": "本课读 wèi",
+     "examples": [
+      {
+       "zh": "这是为你准备的。",
+       "en": "This was prepared for you."
+      },
+      {
+       "zh": "我为你高兴。",
+       "en": "I am happy for you."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l3-18",
+     "num": 18,
+     "hanzi": "家乡",
+     "pinyin": "jiāxiāng",
+     "meaning": "hometown",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的家乡很漂亮。",
+       "en": "My hometown is beautiful."
+      },
+      {
+       "zh": "我想回家乡看看。",
+       "en": "I want to go back and visit my hometown."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "刚出门我的自行车就被撞坏了",
+   "titleEn": "My Bike Got Hit Right After I Left",
+   "words": [
+    {
+     "id": "huihua360-4-l4-1",
+     "num": 1,
+     "hanzi": "被",
+     "pinyin": "bèi",
+     "meaning": "passive marker; by",
+     "type": null,
+     "note": "本课作被动标记",
+     "examples": [
+      {
+       "zh": "我的车被他撞了。",
+       "en": "My car was hit by him."
+      },
+      {
+       "zh": "书被弟弟拿走了。",
+       "en": "The book was taken away by my younger brother."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-2",
+     "num": 2,
+     "hanzi": "撞",
+     "pinyin": "zhuàng",
+     "meaning": "to hit; bump into",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的车被他撞了。",
+       "en": "My car was hit by him."
+      },
+      {
+       "zh": "骑车小心，别撞人。",
+       "en": "Be careful when riding; do not hit anyone."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-3",
+     "num": 3,
+     "hanzi": "坏",
+     "pinyin": "huài",
+     "meaning": "broken; bad",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "电脑坏了。",
+       "en": "The computer is broken."
+      },
+      {
+       "zh": "这个苹果坏了。",
+       "en": "This apple has gone bad."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-4",
+     "num": 4,
+     "hanzi": "树",
+     "pinyin": "shù",
+     "meaning": "tree",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "学校前面有很多树。",
+       "en": "There are many trees in front of the school."
+      },
+      {
+       "zh": "那棵树很高。",
+       "en": "That tree is tall."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-5",
+     "num": 5,
+     "hanzi": "腿",
+     "pinyin": "tuǐ",
+     "meaning": "leg",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的腿有点儿疼。",
+       "en": "My leg hurts a little."
+      },
+      {
+       "zh": "他的腿很长。",
+       "en": "His legs are long."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-6",
+     "num": 6,
+     "hanzi": "可",
+     "pinyin": "kě",
+     "meaning": "really; indeed (for emphasis)",
+     "type": null,
+     "note": "本课作强调副词",
+     "examples": [
+      {
+       "zh": "今天可冷了。",
+       "en": "It is really cold today."
+      },
+      {
+       "zh": "这个菜可好吃了。",
+       "en": "This dish is really delicious."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-7",
+     "num": 7,
+     "hanzi": "倒霉",
+     "pinyin": "dǎoméi",
+     "meaning": "unlucky",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天真倒霉。",
+       "en": "I am really unlucky today."
+      },
+      {
+       "zh": "他觉得自己很倒霉。",
+       "en": "He feels very unlucky."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-8",
+     "num": 8,
+     "hanzi": "本来",
+     "pinyin": "běnlái",
+     "meaning": "originally; at first",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我本来想去。",
+       "en": "I originally wanted to go."
+      },
+      {
+       "zh": "他本来不想买。",
+       "en": "He did not originally want to buy it."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-9",
+     "num": 9,
+     "hanzi": "可是",
+     "pinyin": "kěshì",
+     "meaning": "but; however",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想去，可是没时间。",
+       "en": "I want to go, but I have no time."
+      },
+      {
+       "zh": "天气很好，可是有点儿冷。",
+       "en": "The weather is nice, but a little cold."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-10",
+     "num": 10,
+     "hanzi": "用",
+     "pinyin": "yòng",
+     "meaning": "to use",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我用手机查。",
+       "en": "I use my phone to check."
+      },
+      {
+       "zh": "这个怎么用？",
+       "en": "How do you use this?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-11",
+     "num": 11,
+     "hanzi": "半天",
+     "pinyin": "bàntiān",
+     "meaning": "a long while; half a day",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我等了半天。",
+       "en": "I waited for a long time."
+      },
+      {
+       "zh": "这件事我想了半天。",
+       "en": "I thought about this for a long while."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-12",
+     "num": 12,
+     "hanzi": "生气",
+     "pinyin": "shēngqì",
+     "meaning": "angry; to get angry",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别生气。",
+       "en": "Don't be angry."
+      },
+      {
+       "zh": "他为什么生气？",
+       "en": "Why is he angry?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-13",
+     "num": 13,
+     "hanzi": "故意",
+     "pinyin": "gùyì",
+     "meaning": "intentionally; on purpose",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我不是故意的。",
+       "en": "I did not do it on purpose."
+      },
+      {
+       "zh": "他不是故意迟到的。",
+       "en": "He was not late on purpose."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-14",
+     "num": 14,
+     "hanzi": "难道",
+     "pinyin": "nándào",
+     "meaning": "could it be...?; rhetorical-question adverb",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "难道你不知道吗？",
+       "en": "Don't you know?"
+      },
+      {
+       "zh": "难道他今天不来吗？",
+       "en": "Could it be that he is not coming today?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-15",
+     "num": 15,
+     "hanzi": "粗心",
+     "pinyin": "cūxīn",
+     "meaning": "careless",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他太粗心了。",
+       "en": "He is too careless."
+      },
+      {
+       "zh": "粗心容易做错题。",
+       "en": "Being careless makes it easy to get questions wrong."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l4-16",
+     "num": 16,
+     "hanzi": "注意",
+     "pinyin": "zhùyì",
+     "meaning": "to pay attention to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请注意安全。",
+       "en": "Please pay attention to safety."
+      },
+      {
+       "zh": "上课要注意听。",
+       "en": "Pay attention in class."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "听说你住院了，大家都很关心你",
+   "titleEn": "We Heard You Were Hospitalized — Everyone Cares",
+   "words": [
+    {
+     "id": "huihua360-4-l5-1",
+     "num": 1,
+     "hanzi": "住院",
+     "pinyin": "zhùyuàn",
+     "meaning": "to be hospitalized",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他住院了。",
+       "en": "He was hospitalized."
+      },
+      {
+       "zh": "医生说我不用住院。",
+       "en": "The doctor said I don’t need to stay in the hospital."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-2",
+     "num": 2,
+     "hanzi": "大家",
+     "pinyin": "dàjiā",
+     "meaning": "everyone",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "大家都来了。",
+       "en": "Everyone is here."
+      },
+      {
+       "zh": "大家一起吃饭吧。",
+       "en": "Let's all eat together."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-3",
+     "num": 3,
+     "hanzi": "关心",
+     "pinyin": "guānxīn",
+     "meaning": "to care about; be concerned about",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "妈妈很关心我。",
+       "en": "Mom cares about me."
+      },
+      {
+       "zh": "谢谢你关心我。",
+       "en": "Thank you for caring about me."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-4",
+     "num": 4,
+     "hanzi": "脚",
+     "pinyin": "jiǎo",
+     "meaning": "foot",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的脚有点儿疼。",
+       "en": "My foot hurts a little."
+      },
+      {
+       "zh": "他的脚很大。",
+       "en": "His feet are big."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-5",
+     "num": 5,
+     "hanzi": "骨折",
+     "pinyin": "gǔzhé",
+     "meaning": "fracture; to break a bone",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的脚骨折了。",
+       "en": "He broke his foot."
+      },
+      {
+       "zh": "骨折以后要好好休息。",
+       "en": "You should rest well after a fracture."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-6",
+     "num": 6,
+     "hanzi": "出院",
+     "pinyin": "chūyuàn",
+     "meaning": "to leave the hospital",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我明天可以出院了。",
+       "en": "I can leave the hospital tomorrow."
+      },
+      {
+       "zh": "他已经出院了。",
+       "en": "He has already left the hospital."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-7",
+     "num": 7,
+     "hanzi": "不但",
+     "pinyin": "bùdàn",
+     "meaning": "not only",
+     "type": null,
+     "note": "常与“而且/还”连用",
+     "examples": [
+      {
+       "zh": "他不但会说中文，还会说英文。",
+       "en": "He can speak not only Chinese, but also English."
+      },
+      {
+       "zh": "她不但喜欢唱歌，还喜欢跳舞。",
+       "en": "She not only likes singing, but also dancing."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-8",
+     "num": 8,
+     "hanzi": "水平",
+     "pinyin": "shuǐpíng",
+     "meaning": "level; standard",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的汉语水平很高。",
+       "en": "His Chinese level is high."
+      },
+      {
+       "zh": "我想提高汉语水平。",
+       "en": "I want to improve my Chinese level."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-9",
+     "num": 9,
+     "hanzi": "而且",
+     "pinyin": "érqiě",
+     "meaning": "and; moreover; but also",
+     "type": null,
+     "note": "常与“不但”连用",
+     "examples": [
+      {
+       "zh": "他会中文，而且会英文。",
+       "en": "He speaks Chinese and also English."
+      },
+      {
+       "zh": "这里不但安静，而且很干净。",
+       "en": "It is not only quiet here, but also very clean."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-10",
+     "num": 10,
+     "hanzi": "热情",
+     "pinyin": "rèqíng",
+     "meaning": "warm; enthusiastic",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她对客人很热情。",
+       "en": "She is very warm to guests."
+      },
+      {
+       "zh": "这里的人很热情。",
+       "en": "The people here are very friendly."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-11",
+     "num": 11,
+     "hanzi": "因为",
+     "pinyin": "yīnwèi",
+     "meaning": "because",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "因为下雨，所以我没去。",
+       "en": "Because it rained, I didn’t go."
+      },
+      {
+       "zh": "因为很累，我想休息。",
+       "en": "Because I’m tired, I want to rest."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-12",
+     "num": 12,
+     "hanzi": "孩子",
+     "pinyin": "háizi",
+     "meaning": "child; children",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "孩子在公园玩。",
+       "en": "The child is playing in the park."
+      },
+      {
+       "zh": "她有两个孩子。",
+       "en": "She has two children."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-13",
+     "num": 13,
+     "hanzi": "国外",
+     "pinyin": "guówài",
+     "meaning": "abroad; foreign countries",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他在国外工作。",
+       "en": "He works abroad."
+      },
+      {
+       "zh": "我想去国外旅行。",
+       "en": "I want to travel abroad."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-14",
+     "num": 14,
+     "hanzi": "照顾",
+     "pinyin": "zhàogù",
+     "meaning": "to look after; take care of",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "妈妈照顾孩子。",
+       "en": "Mom takes care of the child."
+      },
+      {
+       "zh": "你要照顾好自己。",
+       "en": "You should take good care of yourself."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-15",
+     "num": 15,
+     "hanzi": "生活",
+     "pinyin": "shēnghuó",
+     "meaning": "life; to live",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "北京的生活很方便。",
+       "en": "Life in Beijing is convenient."
+      },
+      {
+       "zh": "我喜欢这里的生活。",
+       "en": "I like life here."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-16",
+     "num": 16,
+     "hanzi": "专业",
+     "pinyin": "zhuānyè",
+     "meaning": "professional; specialized",
+     "type": null,
+     "note": "本课指专业的医生等；本课指“专业的、职业水平的”",
+     "examples": [
+      {
+       "zh": "这里有专业的医生。",
+       "en": "There are professional doctors here."
+      },
+      {
+       "zh": "他是一名专业的老师。",
+       "en": "He is a professional teacher."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-17",
+     "num": 17,
+     "hanzi": "看病",
+     "pinyin": "kànbìng",
+     "meaning": "to see a doctor; get medical treatment",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我去医院看病。",
+       "en": "I am going to the hospital to see a doctor."
+      },
+      {
+       "zh": "生病了要去看病。",
+       "en": "You should see a doctor when you are sick."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-18",
+     "num": 18,
+     "hanzi": "对",
+     "pinyin": "duì",
+     "meaning": "toward; for; to",
+     "type": null,
+     "note": "本课用于“对……来说”",
+     "examples": [
+      {
+       "zh": "对学生来说，这很重要。",
+       "en": "For students, this is very important."
+      },
+      {
+       "zh": "对老人来说，健康很重要。",
+       "en": "For elderly people, health is very important."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-19",
+     "num": 19,
+     "hanzi": "老人",
+     "pinyin": "lǎorén",
+     "meaning": "elderly person",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这位老人住在附近。",
+       "en": "This elderly person lives nearby."
+      },
+      {
+       "zh": "老人喜欢在公园走走。",
+       "en": "Older people like walking in the park."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-20",
+     "num": 20,
+     "hanzi": "健康",
+     "pinyin": "jiànkāng",
+     "meaning": "healthy; health",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "运动让身体更健康。",
+       "en": "Exercise makes the body healthier."
+      },
+      {
+       "zh": "祝你身体健康。",
+       "en": "I wish you good health."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-21",
+     "num": 21,
+     "hanzi": "重要",
+     "pinyin": "zhòngyào",
+     "meaning": "important",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个问题很重要。",
+       "en": "This question is important."
+      },
+      {
+       "zh": "身体健康最重要。",
+       "en": "Good health is the most important."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-22",
+     "num": 22,
+     "hanzi": "首",
+     "pinyin": "shǒu",
+     "meaning": "measure word for songs and poems",
+     "type": null,
+     "note": "本课作量词",
+     "examples": [
+      {
+       "zh": "我听了一首歌。",
+       "en": "I listened to a song."
+      },
+      {
+       "zh": "她会唱两首中文歌。",
+       "en": "She can sing two Chinese songs."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l5-23",
+     "num": 23,
+     "hanzi": "多才多艺",
+     "pinyin": "duōcái-duōyì",
+     "meaning": "multi-talented; versatile",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她真是多才多艺。",
+       "en": "She is really multi-talented."
+      },
+      {
+       "zh": "他会唱歌也会画画，很是多才多艺。",
+       "en": "He can sing and draw; he is very versatile."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "请你先做一下自我介绍",
+   "titleEn": "Please Introduce Yourself First",
+   "words": [
+    {
+     "id": "huihua360-4-l6-1",
+     "num": 1,
+     "hanzi": "面试官",
+     "pinyin": "miànshìguān",
+     "meaning": "interviewer",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "面试官问了我几个问题。",
+       "en": "The interviewer asked me several questions."
+      },
+      {
+       "zh": "我跟面试官说了谢谢。",
+       "en": "I thanked the interviewer."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-2",
+     "num": 2,
+     "hanzi": "自我",
+     "pinyin": "zìwǒ",
+     "meaning": "self; oneself",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请做一下自我介绍。",
+       "en": "Please introduce yourself."
+      },
+      {
+       "zh": "自我介绍不用太长。",
+       "en": "A self-introduction does not need to be too long."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-3",
+     "num": 3,
+     "hanzi": "介绍",
+     "pinyin": "jièshào",
+     "meaning": "to introduce; introduction",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我介绍一下。",
+       "en": "Let me introduce it."
+      },
+      {
+       "zh": "请介绍你的朋友。",
+       "en": "Please introduce your friend."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-4",
+     "num": 4,
+     "hanzi": "体育",
+     "pinyin": "tǐyù",
+     "meaning": "sports; physical education",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢体育。",
+       "en": "I like sports."
+      },
+      {
+       "zh": "下午有体育课。",
+       "en": "There is PE class this afternoon."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-5",
+     "num": 5,
+     "hanzi": "留学生",
+     "pinyin": "liúxuéshēng",
+     "meaning": "international student",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她是留学生。",
+       "en": "She is an international student."
+      },
+      {
+       "zh": "学校里有很多留学生。",
+       "en": "There are many international students at the school."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-6",
+     "num": 6,
+     "hanzi": "当",
+     "pinyin": "dāng",
+     "meaning": "to be; serve as",
+     "type": null,
+     "note": "本课读 dāng",
+     "examples": [
+      {
+       "zh": "我想当老师。",
+       "en": "I want to be a teacher."
+      },
+      {
+       "zh": "他在学校当志愿者。",
+       "en": "He volunteers at the school."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-7",
+     "num": 7,
+     "hanzi": "志愿者",
+     "pinyin": "zhìyuànzhě",
+     "meaning": "volunteer",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她是学校的志愿者。",
+       "en": "She is a volunteer at the school."
+      },
+      {
+       "zh": "我想当志愿者。",
+       "en": "I want to be a volunteer."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-8",
+     "num": 8,
+     "hanzi": "感兴趣",
+     "pinyin": "gǎn xìngqù",
+     "meaning": "to be interested in",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我对汉语很感兴趣。",
+       "en": "I am very interested in Chinese."
+      },
+      {
+       "zh": "他对历史感兴趣。",
+       "en": "He is interested in history."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-9",
+     "num": 9,
+     "hanzi": "专业",
+     "pinyin": "zhuānyè",
+     "meaning": "major; field of study",
+     "type": null,
+     "note": "本课指所学专业；本课指“所学专业”",
+     "examples": [
+      {
+       "zh": "我的专业是中文。",
+       "en": "My major is Chinese."
+      },
+      {
+       "zh": "你学什么专业？",
+       "en": "What is your major?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-10",
+     "num": 10,
+     "hanzi": "如果",
+     "pinyin": "rúguǒ",
+     "meaning": "if",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "如果下雨，我们就在家。",
+       "en": "If it rains, we will stay home."
+      },
+      {
+       "zh": "如果你累了，就休息。",
+       "en": "If you are tired, rest."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-11",
+     "num": 11,
+     "hanzi": "了解",
+     "pinyin": "liǎojiě",
+     "meaning": "to understand; know about",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想了解中国文化。",
+       "en": "I want to learn about Chinese culture."
+      },
+      {
+       "zh": "你了解他吗？",
+       "en": "Do you know him well?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-12",
+     "num": 12,
+     "hanzi": "加入",
+     "pinyin": "jiārù",
+     "meaning": "to join",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "欢迎你加入我们。",
+       "en": "Welcome to join us."
+      },
+      {
+       "zh": "我想加入这个小组。",
+       "en": "I want to join this group."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-13",
+     "num": 13,
+     "hanzi": "机会",
+     "pinyin": "jīhuì",
+     "meaning": "chance; opportunity",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一个好机会。",
+       "en": "This is a good opportunity."
+      },
+      {
+       "zh": "我有机会去中国留学。",
+       "en": "I have a chance to study in China."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-14",
+     "num": 14,
+     "hanzi": "参加",
+     "pinyin": "cānjiā",
+     "meaning": "to participate in; attend",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我参加了比赛。",
+       "en": "I took part in the competition."
+      },
+      {
+       "zh": "你参加考试吗？",
+       "en": "Are you taking the exam?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-15",
+     "num": 15,
+     "hanzi": "面试",
+     "pinyin": "miànshì",
+     "meaning": "interview; to interview",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我明天有面试。",
+       "en": "I have an interview tomorrow."
+      },
+      {
+       "zh": "这次面试很顺利。",
+       "en": "This interview went smoothly."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-16",
+     "num": 16,
+     "hanzi": "饭店",
+     "pinyin": "fàndiàn",
+     "meaning": "restaurant",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们去饭店吃饭。",
+       "en": "We are going to a restaurant to eat."
+      },
+      {
+       "zh": "这家饭店很有名。",
+       "en": "This restaurant is famous."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-17",
+     "num": 17,
+     "hanzi": "主要",
+     "pinyin": "zhǔyào",
+     "meaning": "main; mainly",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我来中国主要是学习汉语。",
+       "en": "I came to China mainly to study Chinese."
+      },
+      {
+       "zh": "主要问题是没有时间。",
+       "en": "The main problem is lack of time."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-18",
+     "num": 18,
+     "hanzi": "为",
+     "pinyin": "wèi",
+     "meaning": "for; for the sake of",
+     "type": null,
+     "note": "介词，读 wèi",
+     "examples": [
+      {
+       "zh": "我为你高兴。",
+       "en": "I am happy for you."
+      },
+      {
+       "zh": "他为工作去了上海。",
+       "en": "He went to Shanghai for work."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-19",
+     "num": 19,
+     "hanzi": "原来",
+     "pinyin": "yuánlái",
+     "meaning": "originally; formerly",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我原来住在北京。",
+       "en": "I used to live in Beijing."
+      },
+      {
+       "zh": "他原来是老师。",
+       "en": "He used to be a teacher."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-20",
+     "num": 20,
+     "hanzi": "细心",
+     "pinyin": "xìxīn",
+     "meaning": "careful; attentive",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她做事很细心。",
+       "en": "She is very careful in her work."
+      },
+      {
+       "zh": "开车要细心。",
+       "en": "You need to be careful when driving."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-21",
+     "num": 21,
+     "hanzi": "认真",
+     "pinyin": "rènzhēn",
+     "meaning": "serious; conscientious",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他学习很认真。",
+       "en": "He studies very seriously."
+      },
+      {
+       "zh": "请认真看题。",
+       "en": "Please read the question carefully."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-22",
+     "num": 22,
+     "hanzi": "遇到",
+     "pinyin": "yùdào",
+     "meaning": "to encounter; meet",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在路上遇到老师。",
+       "en": "I ran into the teacher on the road."
+      },
+      {
+       "zh": "遇到问题别着急。",
+       "en": "Don't worry when you run into a problem."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-23",
+     "num": 23,
+     "hanzi": "解决",
+     "pinyin": "jiějué",
+     "meaning": "to solve; resolve",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起解决这个问题。",
+       "en": "Let's solve this problem together."
+      },
+      {
+       "zh": "这个问题已经解决了。",
+       "en": "This problem has already been solved."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-24",
+     "num": 24,
+     "hanzi": "缺点",
+     "pinyin": "quēdiǎn",
+     "meaning": "shortcoming; weakness",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "每个人都有缺点。",
+       "en": "Everyone has shortcomings."
+      },
+      {
+       "zh": "这是我的一个缺点。",
+       "en": "This is one of my weaknesses."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-25",
+     "num": 25,
+     "hanzi": "事情",
+     "pinyin": "shìqing",
+     "meaning": "thing; matter",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我有一件事情。",
+       "en": "I have something to do."
+      },
+      {
+       "zh": "这是什么事情？",
+       "en": "What is this about?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-26",
+     "num": 26,
+     "hanzi": "容易",
+     "pinyin": "róngyì",
+     "meaning": "easy; likely to",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个问题很容易。",
+       "en": "This question is easy."
+      },
+      {
+       "zh": "学汉字不容易。",
+       "en": "Learning Chinese characters is not easy."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l6-27",
+     "num": 27,
+     "hanzi": "通知",
+     "pinyin": "tōngzhī",
+     "meaning": "notice; notification",
+     "type": null,
+     "note": "本课作名词",
+     "examples": [
+      {
+       "zh": "我收到一个通知。",
+       "en": "I received a notice."
+      },
+      {
+       "zh": "学校发了一个通知。",
+       "en": "The school issued a notice."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "我也搬不动了",
+   "titleEn": "I Can't Move It Either",
+   "words": [
+    {
+     "id": "huihua360-4-l7-1",
+     "num": 1,
+     "hanzi": "吵",
+     "pinyin": "chǎo",
+     "meaning": "noisy",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "外面太吵了。",
+       "en": "It is too noisy outside."
+      },
+      {
+       "zh": "这里一点儿也不吵。",
+       "en": "It is not noisy here at all."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-2",
+     "num": 2,
+     "hanzi": "声音",
+     "pinyin": "shēngyīn",
+     "meaning": "sound; voice",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的声音很好听。",
+       "en": "Your voice sounds nice."
+      },
+      {
+       "zh": "电视声音太大了。",
+       "en": "The TV is too loud."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-3",
+     "num": 3,
+     "hanzi": "了",
+     "pinyin": "liǎo",
+     "meaning": "can; be able to (in potential complements)",
+     "type": null,
+     "note": "本课读 liǎo，如“听得了/听不了”；本课读 liǎo，用于可能补语",
+     "examples": [
+      {
+       "zh": "这件事我做得了。",
+       "en": "I can do this."
+      },
+      {
+       "zh": "这么多饭我吃不了。",
+       "en": "I cannot eat this much food."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-4",
+     "num": 4,
+     "hanzi": "博物馆",
+     "pinyin": "bówùguǎn",
+     "meaning": "museum",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "周末我们去博物馆。",
+       "en": "We are going to the museum this weekend."
+      },
+      {
+       "zh": "博物馆九点开门。",
+       "en": "The museum opens at nine."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-5",
+     "num": 5,
+     "hanzi": "大门",
+     "pinyin": "dàmén",
+     "meaning": "main gate; entrance",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在学校大门等你。",
+       "en": "I will wait for you at the school gate."
+      },
+      {
+       "zh": "大门已经关了。",
+       "en": "The main gate is already closed."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-6",
+     "num": 6,
+     "hanzi": "身后",
+     "pinyin": "shēnhòu",
+     "meaning": "behind someone",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他站在我身后。",
+       "en": "He is standing behind me."
+      },
+      {
+       "zh": "身后有人叫我。",
+       "en": "Someone behind me is calling me."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-7",
+     "num": 7,
+     "hanzi": "主任",
+     "pinyin": "zhǔrèn",
+     "meaning": "director; person in charge",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "主任正在开会。",
+       "en": "The director is in a meeting."
+      },
+      {
+       "zh": "我去找主任。",
+       "en": "I am going to see the director."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-8",
+     "num": 8,
+     "hanzi": "司机",
+     "pinyin": "sījī",
+     "meaning": "driver",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是出租车司机。",
+       "en": "He is a taxi driver."
+      },
+      {
+       "zh": "司机在车里等我们。",
+       "en": "The driver is waiting for us in the car."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-9",
+     "num": 9,
+     "hanzi": "停",
+     "pinyin": "tíng",
+     "meaning": "to stop; park",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "车停在门口。",
+       "en": "The car is parked at the entrance."
+      },
+      {
+       "zh": "请在这里停一下。",
+       "en": "Please stop here."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-10",
+     "num": 10,
+     "hanzi": "外面",
+     "pinyin": "wàimiàn",
+     "meaning": "outside",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "外面很冷。",
+       "en": "It is cold outside."
+      },
+      {
+       "zh": "他在外面。",
+       "en": "He is outside."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-11",
+     "num": 11,
+     "hanzi": "开",
+     "pinyin": "kāi",
+     "meaning": "to drive",
+     "type": null,
+     "note": "本课指开车；本课指“开车”",
+     "examples": [
+      {
+       "zh": "我会开车。",
+       "en": "I can drive."
+      },
+      {
+       "zh": "他开车去公司。",
+       "en": "He drives to work."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-12",
+     "num": 12,
+     "hanzi": "进来",
+     "pinyin": "jìnlái",
+     "meaning": "to come in",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请进来。",
+       "en": "Please come in."
+      },
+      {
+       "zh": "他已经进来了。",
+       "en": "He has already come in."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-13",
+     "num": 13,
+     "hanzi": "直接",
+     "pinyin": "zhíjiē",
+     "meaning": "direct; directly",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你可以直接进去。",
+       "en": "You can go straight in."
+      },
+      {
+       "zh": "我下课后直接回家。",
+       "en": "I go straight home after class."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-14",
+     "num": 14,
+     "hanzi": "搬",
+     "pinyin": "bān",
+     "meaning": "to move; carry",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我下个月搬家。",
+       "en": "I am moving next month."
+      },
+      {
+       "zh": "请帮我搬桌子。",
+       "en": "Please help me move the table."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-15",
+     "num": 15,
+     "hanzi": "会议室",
+     "pinyin": "huìyìshì",
+     "meaning": "meeting room; conference room",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们在会议室开会。",
+       "en": "We have meetings in the conference room."
+      },
+      {
+       "zh": "会议室在二楼。",
+       "en": "The conference room is on the second floor."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-16",
+     "num": 16,
+     "hanzi": "恐怕",
+     "pinyin": "kǒngpà",
+     "meaning": "probably; I'm afraid",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我恐怕不能去。",
+       "en": "I'm afraid I cannot go."
+      },
+      {
+       "zh": "恐怕要下雨了。",
+       "en": "I'm afraid it is going to rain."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-17",
+     "num": 17,
+     "hanzi": "动",
+     "pinyin": "dòng",
+     "meaning": "to move",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别动。",
+       "en": "Don’t move."
+      },
+      {
+       "zh": "请动一下。",
+       "en": "Please move a little."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-18",
+     "num": 18,
+     "hanzi": "掉",
+     "pinyin": "diào",
+     "meaning": "to drop; fall",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "手机掉了。",
+       "en": "The phone fell."
+      },
+      {
+       "zh": "别把书掉在地上。",
+       "en": "Do not drop the book on the floor."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-19",
+     "num": 19,
+     "hanzi": "推车",
+     "pinyin": "tuīchē",
+     "meaning": "cart; trolley",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "把书放在推车上。",
+       "en": "Put the books on the cart."
+      },
+      {
+       "zh": "这里有一辆推车。",
+       "en": "There is a cart here."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-20",
+     "num": 20,
+     "hanzi": "要不",
+     "pinyin": "yàobù",
+     "meaning": "otherwise; or else",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "要不我们坐地铁吧。",
+       "en": "How about taking the subway?"
+      },
+      {
+       "zh": "要不明天再去。",
+       "en": "Otherwise, let's go tomorrow."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l7-21",
+     "num": 21,
+     "hanzi": "关",
+     "pinyin": "guān",
+     "meaning": "to close; shut",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请关门。",
+       "en": "Please close the door."
+      },
+      {
+       "zh": "别忘了关空调。",
+       "en": "Don't forget to turn off the air conditioner."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "只有坚持，才能胜利！",
+   "titleEn": "Only by Persevering Can You Win!",
+   "words": [
+    {
+     "id": "huihua360-4-l8-1",
+     "num": 1,
+     "hanzi": "越……越……",
+     "pinyin": "yuè...yuè...",
+     "meaning": "the more...the more...",
+     "type": null,
+     "note": "固定结构",
+     "examples": [
+      {
+       "zh": "中文越学越有意思。",
+       "en": "The more I study Chinese, the more interesting it becomes."
+      },
+      {
+       "zh": "他越说越开心。",
+       "en": "The more he talks, the happier he becomes."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-2",
+     "num": 2,
+     "hanzi": "放弃",
+     "pinyin": "fàngqì",
+     "meaning": "to give up",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "不要放弃。",
+       "en": "Do not give up."
+      },
+      {
+       "zh": "他没有放弃学习中文。",
+       "en": "He did not give up learning Chinese."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-3",
+     "num": 3,
+     "hanzi": "胜利",
+     "pinyin": "shènglì",
+     "meaning": "to win; victory",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们终于胜利了。",
+       "en": "We finally won."
+      },
+      {
+       "zh": "坚持就是胜利。",
+       "en": "Persistence is victory."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-4",
+     "num": 4,
+     "hanzi": "进步",
+     "pinyin": "jìnbù",
+     "meaning": "to make progress; progress",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的中文进步很快。",
+       "en": "Your Chinese is improving quickly."
+      },
+      {
+       "zh": "每天练习会有进步。",
+       "en": "Daily practice will bring progress."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-5",
+     "num": 5,
+     "hanzi": "这样",
+     "pinyin": "zhèyàng",
+     "meaning": "like this; this way",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这样很好。",
+       "en": "This way is good."
+      },
+      {
+       "zh": "不要这样做。",
+       "en": "Don’t do it this way."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-6",
+     "num": 6,
+     "hanzi": "期末",
+     "pinyin": "qīmò",
+     "meaning": "end of term; end of semester",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "期末有考试。",
+       "en": "There is an exam at the end of the term."
+      },
+      {
+       "zh": "期末我很忙。",
+       "en": "I am very busy at the end of the term."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-7",
+     "num": 7,
+     "hanzi": "不要",
+     "pinyin": "búyào",
+     "meaning": "do not; don't",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "不要担心。",
+       "en": "Do not worry."
+      },
+      {
+       "zh": "上课不要迟到。",
+       "en": "Do not be late for class."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-8",
+     "num": 8,
+     "hanzi": "祝贺",
+     "pinyin": "zhùhè",
+     "meaning": "to congratulate",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "祝贺你！",
+       "en": "Congratulations!"
+      },
+      {
+       "zh": "祝贺你取得好成绩！",
+       "en": "Congratulations on getting a good result!"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-9",
+     "num": 9,
+     "hanzi": "取得",
+     "pinyin": "qǔdé",
+     "meaning": "to achieve; gain",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他取得了好成绩。",
+       "en": "He achieved a good result."
+      },
+      {
+       "zh": "我们取得了进步。",
+       "en": "We made progress."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-10",
+     "num": 10,
+     "hanzi": "帮助",
+     "pinyin": "bāngzhù",
+     "meaning": "to help; help",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "谢谢你的帮助。",
+       "en": "Thank you for your help."
+      },
+      {
+       "zh": "我来帮助你。",
+       "en": "I will help you."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-11",
+     "num": 11,
+     "hanzi": "送行",
+     "pinyin": "sòngxíng",
+     "meaning": "to see someone off",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们去机场给他送行。",
+       "en": "We are going to the airport to see him off."
+      },
+      {
+       "zh": "朋友来给我送行。",
+       "en": "My friends came to see me off."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-12",
+     "num": 12,
+     "hanzi": "舍不得",
+     "pinyin": "shěbude",
+     "meaning": "to be reluctant to part with",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我舍不得离开这里。",
+       "en": "I hate to leave here."
+      },
+      {
+       "zh": "她舍不得朋友。",
+       "en": "She is reluctant to part with her friends."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-13",
+     "num": 13,
+     "hanzi": "回国",
+     "pinyin": "huíguó",
+     "meaning": "to return to one's home country",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他下个月回国。",
+       "en": "He will return to his country next month."
+      },
+      {
+       "zh": "你什么时候回国？",
+       "en": "When are you returning to your country?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-14",
+     "num": 14,
+     "hanzi": "感觉",
+     "pinyin": "gǎnjué",
+     "meaning": "to feel; feeling",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我感觉好多了。",
+       "en": "I feel much better."
+      },
+      {
+       "zh": "你感觉怎么样？",
+       "en": "How do you feel?"
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-15",
+     "num": 15,
+     "hanzi": "好像",
+     "pinyin": "hǎoxiàng",
+     "meaning": "seemingly; to seem",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他好像很累。",
+       "en": "He seems very tired."
+      },
+      {
+       "zh": "今天好像要下雨。",
+       "en": "It looks like it will rain today."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-16",
+     "num": 16,
+     "hanzi": "分别",
+     "pinyin": "fēnbié",
+     "meaning": "to part; separate",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们明天就要分别了。",
+       "en": "We will part tomorrow."
+      },
+      {
+       "zh": "分别的时候大家很难过。",
+       "en": "Everyone was sad when we parted."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-17",
+     "num": 17,
+     "hanzi": "难过",
+     "pinyin": "nánguò",
+     "meaning": "sad; upset",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别难过。",
+       "en": "Don't be sad."
+      },
+      {
+       "zh": "找不到手机，我很难过。",
+       "en": "I am sad because I can't find my phone."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-18",
+     "num": 18,
+     "hanzi": "感动",
+     "pinyin": "gǎndòng",
+     "meaning": "moved; touched",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我很感动。",
+       "en": "I am very moved."
+      },
+      {
+       "zh": "这个故事让我很感动。",
+       "en": "This story moved me a lot."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-19",
+     "num": 19,
+     "hanzi": "感谢",
+     "pinyin": "gǎnxiè",
+     "meaning": "to thank; appreciate",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "感谢你的帮助。",
+       "en": "Thank you for your help."
+      },
+      {
+       "zh": "我想感谢老师。",
+       "en": "I want to thank the teacher."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-20",
+     "num": 20,
+     "hanzi": "记得",
+     "pinyin": "jìde",
+     "meaning": "to remember",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我记得你的名字。",
+       "en": "I remember your name."
+      },
+      {
+       "zh": "请记得我的名字。",
+       "en": "Please remember my name."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-21",
+     "num": 21,
+     "hanzi": "欢迎",
+     "pinyin": "huānyíng",
+     "meaning": "to welcome; welcome",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "欢迎你来我家。",
+       "en": "Welcome to my home."
+      },
+      {
+       "zh": "欢迎来中国。",
+       "en": "Welcome to China."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-22",
+     "num": 22,
+     "hanzi": "祝福",
+     "pinyin": "zhùfú",
+     "meaning": "to wish well; blessing",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "谢谢你的祝福。",
+       "en": "Thank you for your good wishes."
+      },
+      {
+       "zh": "我祝福你一切顺利。",
+       "en": "I wish everything goes smoothly for you."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-23",
+     "num": 23,
+     "hanzi": "顺利",
+     "pinyin": "shùnlì",
+     "meaning": "smoothly; successful",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天的面试很顺利。",
+       "en": "Today's interview went smoothly."
+      },
+      {
+       "zh": "祝你一路顺利。",
+       "en": "I wish you a smooth journey."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-24",
+     "num": 24,
+     "hanzi": "聚会",
+     "pinyin": "jùhuì",
+     "meaning": "gathering; get-together",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "周末我们有一个聚会。",
+       "en": "We have a get-together this weekend."
+      },
+      {
+       "zh": "大家在聚会上聊天。",
+       "en": "Everyone chats at the gathering."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-25",
+     "num": 25,
+     "hanzi": "庆祝",
+     "pinyin": "qìngzhù",
+     "meaning": "to celebrate",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起庆祝。",
+       "en": "Let's celebrate together."
+      },
+      {
+       "zh": "大家庆祝考试结束。",
+       "en": "Everyone celebrates the end of the exam."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-26",
+     "num": 26,
+     "hanzi": "酒",
+     "pinyin": "jiǔ",
+     "meaning": "alcoholic drink; wine",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他不喝酒。",
+       "en": "He does not drink alcohol."
+      },
+      {
+       "zh": "桌子上有一瓶酒。",
+       "en": "There is a bottle of wine on the table."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-27",
+     "num": 27,
+     "hanzi": "杯",
+     "pinyin": "bēi",
+     "meaning": "cup; glass; measure word",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请给我一个杯。",
+       "en": "Please give me a cup."
+      },
+      {
+       "zh": "我喝了一杯水。",
+       "en": "I drank a glass of water."
+      }
+     ]
+    },
+    {
+     "id": "huihua360-4-l8-28",
+     "num": 28,
+     "hanzi": "笑",
+     "pinyin": "xiào",
+     "meaning": "to smile; laugh",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她笑了。",
+       "en": "She smiled."
+      },
+      {
+       "zh": "别笑了。",
+       "en": "Stop laughing."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

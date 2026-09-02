@@ -16,6 +16,7 @@ export const COURSE_REGISTRY = [
       { id: 3, label: "HSK 3", available: true },
       { id: 4, label: "HSK 4", available: true },
       { id: 5, label: "HSK 5", available: true },
+      { id: 6, label: "HSK 6", available: true },
     ],
   },
   {
@@ -27,6 +28,7 @@ export const COURSE_REGISTRY = [
     units: [
       { id: 1, label: "HSK 1", available: true },
       { id: 2, label: "HSK 2", available: true },
+      { id: 3, label: "HSK 3", available: true },
     ],
   },
   {
@@ -38,6 +40,8 @@ export const COURSE_REGISTRY = [
     units: [
       { id: 1, label: "Book 1", available: true },
       { id: 2, label: "Book 2", available: true },
+      { id: 3, label: "Book 3", available: true },
+      { id: 4, label: "Book 4", available: true },
     ],
   },
 ];

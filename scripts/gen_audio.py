@@ -45,9 +45,19 @@ def save_manifest(manifest: dict):
     )
 
 
-async def synthesize(text: str, path: Path):
-    comm = edge_tts.Communicate(text, VOICE)
-    await comm.save(str(path))
+async def synthesize(text: str, path: Path, retries: int = 3):
+    for attempt in range(retries):
+        try:
+            comm = edge_tts.Communicate(text, VOICE)
+            await comm.save(str(path))
+            return
+        except Exception as e:
+            if attempt < retries - 1:
+                wait = 2 ** (attempt + 1)
+                print(f"    ⚠ retry {attempt+1} for '{text}' ({e.__class__.__name__}), waiting {wait}s…")
+                await asyncio.sleep(wait)
+            else:
+                raise
 
 
 def collect_texts(series: str, unit: int, lesson_num: int | None) -> list[str]:
@@ -88,18 +98,38 @@ def collect_all_texts() -> list[str]:
     return texts
 
 
-async def generate(texts: list[str], manifest: dict) -> int:
-    new_count = 0
+async def generate(texts: list[str], manifest: dict, concurrency: int = 8) -> int:
+    # Filter to work that isn't done yet; repair manifest for orphaned files.
+    pending: list[tuple[str, str, Path]] = []
     for text in texts:
-        if text in manifest:
-            continue
         filename = text_hash(text) + ".mp3"
         output = AUDIO_DIR / filename
-        print(f"  ✔ {text}  →  {filename}")
-        await synthesize(text, output)
-        manifest[text] = filename
-        new_count += 1
-    return new_count
+        if text in manifest or output.exists():
+            if text not in manifest:
+                manifest[text] = filename  # repair manifest for orphaned files
+            continue
+        pending.append((text, filename, output))
+
+    total = len(pending)
+    done = 0
+    sem = asyncio.Semaphore(concurrency)
+    lock = asyncio.Lock()
+
+    async def worker(text: str, filename: str, output: Path):
+        nonlocal done
+        async with sem:
+            await synthesize(text, output)
+        # Manifest mutation + periodic save under a lock (asyncio is single
+        # threaded, but await points can interleave — keep writes atomic).
+        async with lock:
+            manifest[text] = filename
+            done += 1
+            print(f"  ✔ [{done}/{total}] {text}  →  {filename}")
+            if done % 50 == 0:
+                save_manifest(manifest)
+
+    await asyncio.gather(*(worker(t, f, o) for t, f, o in pending))
+    return total
 
 
 async def main():
@@ -108,6 +138,7 @@ async def main():
     parser.add_argument("--unit", type=int, default=1)
     parser.add_argument("--lesson", type=int, default=None, help="Specific lesson number (omit = whole unit)")
     parser.add_argument("--all", action="store_true", help="Generate for entire corpus")
+    parser.add_argument("--concurrency", type=int, default=8, help="Concurrent TTS requests")
     args = parser.parse_args()
 
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
@@ -121,8 +152,8 @@ async def main():
         texts = collect_texts(args.series, args.unit, args.lesson)
         label = f"{args.series}-{args.unit}" + (f" lesson {args.lesson}" if args.lesson else "")
 
-    print(f"Scope: {label} — {len(texts)} unique texts ({len(texts) - sum(t in manifest for t in texts)} new)")
-    new_count = await generate(texts, manifest)
+    print(f"Scope: {label} — {len(texts)} unique texts ({len(texts) - sum(t in manifest for t in texts)} new), concurrency={args.concurrency}")
+    new_count = await generate(texts, manifest, args.concurrency)
     save_manifest(manifest)
     print(f"\nDone: {new_count} generated, {already} already existed, {len(manifest)} total in manifest")
 

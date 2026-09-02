@@ -11,10 +11,14 @@ import hsk2 from "./hsk-2.json";
 import hsk3 from "./hsk-3.json";
 import hsk4 from "./hsk-4.json";
 import hsk5 from "./hsk-5.json";
+import hsk6 from "./hsk-6.json";
 import newhsk3_1 from "./newhsk3-1.json";
 import newhsk3_2 from "./newhsk3-2.json";
+import newhsk3_3 from "./newhsk3-3.json";
 import huihua360_1 from "./huihua360-1.json";
 import huihua360_2 from "./huihua360-2.json";
+import huihua360_3 from "./huihua360-3.json";
+import huihua360_4 from "./huihua360-4.json";
 
 const DATASETS = {
   "hsk-1": hsk1,
@@ -22,10 +26,14 @@ const DATASETS = {
   "hsk-3": hsk3,
   "hsk-4": hsk4,
   "hsk-5": hsk5,
+  "hsk-6": hsk6,
   "newhsk3-1": newhsk3_1,
   "newhsk3-2": newhsk3_2,
+  "newhsk3-3": newhsk3_3,
   "huihua360-1": huihua360_1,
   "huihua360-2": huihua360_2,
+  "huihua360-3": huihua360_3,
+  "huihua360-4": huihua360_4,
 };
 
 function key(seriesId, unitId) {
