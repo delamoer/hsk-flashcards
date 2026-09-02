@@ -58,6 +58,7 @@
         :key="w.id"
         :word="w"
         :level="unit"
+        :tag="unitLabel"
         full
       />
     </div>
@@ -67,7 +68,7 @@
       <div class="counter">{{ focusIndex + 1 }} / {{ filtered.length }}</div>
       <div class="stage">
         <button class="navbtn" @click="move(-1)" aria-label="Previous">‹</button>
-        <FlashCard :word="filtered[focusIndex]" :level="unit" full focus />
+        <FlashCard :word="filtered[focusIndex]" :level="unit" :tag="unitLabel" full focus />
         <button class="navbtn" @click="move(1)" aria-label="Next">›</button>
       </div>
       <div class="dots">

@@ -4,7 +4,7 @@
       <!-- FRONT: character only -->
       <div class="fc-face fc-front">
         <div class="toprow">
-          <span class="lvl">HSK {{ level }}</span>
+          <span class="lvl">{{ tag || `HSK ${level}` }}</span>
           <button class="iconbtn" @click.stop="say(word.hanzi)" title="朗读 Play">🔊</button>
         </div>
         <div class="char">{{ word.hanzi }}</div>
@@ -72,6 +72,7 @@ import { useSettings } from "@/composables/useSettings";
 const props = defineProps({
   word: { type: Object, required: true },
   level: { type: [Number, String], default: 1 },
+  tag: { type: String, default: "" }, // front badge label (e.g. "Book 3"); falls back to "HSK {level}"
   full: { type: Boolean, default: false }, // show all examples (focus mode)
   focus: { type: Boolean, default: false }, // large focus-mode styling
 });
@@ -140,6 +141,7 @@ function say(text) {
 }
 /* opacity swap at the flip midpoint — bulletproof even if backface-visibility misbehaves */
 .fc-front {
+  /* --grad-a/b are themed per course at the App shell (see App.vue) */
   background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
   color: #fff;
   box-shadow: var(--sh-front);
