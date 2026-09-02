@@ -93,7 +93,7 @@
 import { ref, computed, watch, onMounted, onUnmounted } from "vue";
 import FlashCard from "@/components/FlashCard.vue";
 import ProgressRing from "@/components/ProgressRing.vue";
-import { getLesson } from "@/data";
+import { getLesson, matchWord } from "@/data";
 import { getSeries } from "@/data/courses.js";
 import { useProgress } from "@/composables/useProgress";
 
@@ -132,17 +132,12 @@ const counts = computed(() => {
 });
 
 const filtered = computed(() => {
-  const q = search.value.toLowerCase().trim();
+  const q = search.value.trim();
   return words.value.filter((w) => {
     if (filter.value === "review" && statusOf(w.id) !== "review") return false;
     if (filter.value === "known" && statusOf(w.id) !== "known") return false;
     if (filter.value === "star" && !isStarred(w.id)) return false;
-    if (!q) return true;
-    return (
-      w.hanzi.includes(q) ||
-      w.pinyin.toLowerCase().includes(q) ||
-      (w.meaning || "").toLowerCase().includes(q)
-    );
+    return matchWord(w, q);
   });
 });
 

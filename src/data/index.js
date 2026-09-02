@@ -110,20 +110,31 @@ function normalize(s) {
     .toLowerCase();
 }
 
+// Also drop whitespace \u2014 pinyin in the data is inconsistently spaced
+// ("n\u01d0 h\u01ceo" vs "n\u01d0h\u01ceo"), so match space-insensitively.
+function normalizePinyin(s) {
+  return normalize(s).replace(/\s+/g, "");
+}
+
+// Does a word match a query? Matches hanzi (raw), pinyin (tone- and
+// space-insensitive), or English meaning. Empty query matches everything.
+// Shared by global search and the in-lesson search box.
+export function matchWord(word, query) {
+  const raw = (query || "").trim();
+  if (!raw) return true;
+  return (
+    word.hanzi.includes(raw) ||
+    normalizePinyin(word.pinyin).includes(normalizePinyin(raw)) ||
+    normalize(word.meaning).includes(normalize(raw))
+  );
+}
+
 // Global cross-course search over hanzi / pinyin / English meaning.
 // Returns { total, results } where results is capped at `limit` entries.
 export function searchAll(query, limit = 60) {
   const raw = query.trim();
   if (!raw) return { total: 0, results: [] };
   if (!_flatIndex) _flatIndex = buildFlatIndex();
-  const nq = normalize(raw);
-  const matches = _flatIndex.filter((e) => {
-    const w = e.word;
-    return (
-      w.hanzi.includes(raw) ||
-      normalize(w.pinyin).includes(nq) ||
-      normalize(w.meaning).includes(nq)
-    );
-  });
+  const matches = _flatIndex.filter((e) => matchWord(e.word, raw));
   return { total: matches.length, results: matches.slice(0, limit) };
 }
