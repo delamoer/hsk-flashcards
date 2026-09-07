@@ -69,6 +69,20 @@ Deno.serve(async (req) => {
   const action = body.action as string;
 
   try {
+    if (action === "list") {
+      // auth.users is the source of truth for email + display name (user_metadata).
+      const { data, error } = await admin.auth.admin.listUsers({ page: 1, perPage: 1000 });
+      if (error) return json({ error: error.message }, 400);
+      const users = data.users.map((u) => ({
+        id: u.id,
+        email: u.email ?? null,
+        display_name: (u.user_metadata?.display_name as string) ?? null,
+        created_at: u.created_at,
+        last_sign_in_at: u.last_sign_in_at ?? null,
+      }));
+      return json({ ok: true, users });
+    }
+
     if (action === "create") {
       const email = String(body.email ?? "").trim();
       const password = String(body.password ?? "");
@@ -82,6 +96,19 @@ Deno.serve(async (req) => {
       });
       if (error) return json({ error: error.message }, 400);
       return json({ ok: true, user: { id: data.user.id, email: data.user.email } });
+    }
+
+    if (action === "set_name") {
+      const user_id = String(body.user_id ?? "");
+      const display_name = String(body.display_name ?? "").trim();
+      if (!user_id) return json({ error: "user_id 必填" }, 400);
+      const { error } = await admin.auth.admin.updateUserById(user_id, {
+        user_metadata: { display_name },
+      });
+      if (error) return json({ error: error.message }, 400);
+      // mirror into profiles so anything reading that table stays consistent
+      await admin.from("profiles").update({ display_name }).eq("id", user_id);
+      return json({ ok: true });
     }
 
     if (action === "reset_password") {
