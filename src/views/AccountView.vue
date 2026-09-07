@@ -29,9 +29,9 @@
           <div class="v"><b>{{ overall.percent }}%</b><span>掌握率</span></div>
         </div>
         <div class="statgrid">
-          <div class="stat known"><b>{{ overall.known }}</b><span><i class="dot"></i>已掌握</span></div>
-          <div class="stat review"><b>{{ overall.review }}</b><span><i class="dot"></i>需复习</span></div>
-          <div class="stat star"><b>{{ overall.star }}</b><span><i class="dot"></i>收藏</span></div>
+          <router-link class="stat known" :to="{ name: 'mywords', query: { filter: 'known' } }"><b>{{ overall.known }}</b><span><i class="dot"></i>已掌握</span></router-link>
+          <router-link class="stat review" :to="{ name: 'mywords', query: { filter: 'review' } }"><b>{{ overall.review }}</b><span><i class="dot"></i>需复习</span></router-link>
+          <router-link class="stat star" :to="{ name: 'mywords', query: { filter: 'star' } }"><b>{{ overall.star }}</b><span><i class="dot"></i>收藏</span></router-link>
         </div>
       </div>
       <div class="courses">
@@ -409,7 +409,13 @@ async function doSignOut() {
 }
 .stat {
   text-align: center;
-  padding: 6px 4px;
+  padding: 8px 4px;
+  border-radius: var(--r-md);
+  transition: background 0.15s, transform 0.15s;
+}
+.stat:hover {
+  background: var(--soft);
+  transform: translateY(-2px);
 }
 .stat b {
   display: block;
@@ -698,11 +704,28 @@ async function doSignOut() {
   }
 }
 @media (max-width: 480px) {
+  .hero {
+    padding: 22px 20px;
+    gap: 16px;
+  }
+  .hero .brush {
+    font-size: 130px;
+    bottom: -20px;
+    right: 12px;
+  }
+  .avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 20px;
+  }
+  .hi .name {
+    font-size: 19px;
+  }
   .statgrid {
     gap: 4px;
   }
   .stat b {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 </style>

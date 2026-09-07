@@ -17,6 +17,7 @@
               <div class="me">{{ user.email }}</div>
             </div>
           </div>
+          <router-link to="/my-words" class="mi" @click="open = false">我的词 <i>My words</i></router-link>
           <router-link to="/account" class="mi" @click="open = false">账号 <i>Account</i></router-link>
           <router-link v-if="isAdmin" to="/admin" class="mi" @click="open = false">管理 <i>Admin</i></router-link>
           <button class="mi danger" @click="handleSignOut">退出 <i>Sign out</i></button>
@@ -147,6 +148,7 @@ const avatarChar = computed(() => {
   top: calc(100% + 8px);
   right: 0;
   min-width: 220px;
+  max-width: calc(100vw - 32px);
   background: var(--card);
   border-radius: var(--r-md);
   box-shadow: var(--sh-pop);

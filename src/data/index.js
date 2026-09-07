@@ -102,6 +102,13 @@ function buildFlatIndex() {
   return out;
 }
 
+// Every word across all courses, each tagged with its source (series / unit /
+// lesson). Cached — reuses the same flat index the global search builds.
+export function everyWord() {
+  if (!_flatIndex) _flatIndex = buildFlatIndex();
+  return _flatIndex;
+}
+
 // Strip pinyin tone marks so "qishi" matches "qǐshì" (and lowercases).
 function normalize(s) {
   return (s || "")
