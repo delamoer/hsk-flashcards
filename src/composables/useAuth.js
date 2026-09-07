@@ -83,7 +83,16 @@ export function useAuth() {
     if (!isSupabaseConfigured) {
       return { error: { message: "Supabase 未配置：请先在 .env 填入项目 URL 和 anon key。" } };
     }
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    // Update state eagerly from the sign-in response so isLoggedIn flips (and the
+    // redirect fires) immediately — don't wait for the onAuthStateChange event,
+    // which can lag on mobile (supabase-js may do an extra getUser() round trip).
+    if (!error && data?.session) {
+      session.value = data.session;
+      user.value = data.session.user;
+      loadRole(); // fire-and-forget; role isn't needed to land on the home page
+      notify();
+    }
     return { error };
   }
 
