@@ -188,6 +188,18 @@ function print() {
   margin-top: 6px;
 }
 
+/* on-screen only — printing re-forces 3 columns in @media print below */
+@media (max-width: 640px) {
+  .cutgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 420px) {
+  .cutgrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media print {
   .controls {
     display: none;

@@ -377,4 +377,10 @@ function say(text) {
   background: var(--star);
   color: #fff;
 }
+
+@media (max-width: 480px) {
+  .char {
+    font-size: 56px;
+  }
+}
 </style>

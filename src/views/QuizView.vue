@@ -293,4 +293,17 @@ function restart() {
   text-align: center;
   padding: 40px 0;
 }
+
+@media (max-width: 480px) {
+  .qcard {
+    padding: 18px;
+  }
+  .opts {
+    grid-template-columns: 1fr;
+  }
+  .opt {
+    padding: 14px;
+    font-size: 26px;
+  }
+}
 </style>

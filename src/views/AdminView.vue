@@ -857,13 +857,33 @@ onMounted(reload);
 
 @media (max-width: 640px) {
   .kpis {
+    grid-template-columns: 1fr;
     gap: 10px;
   }
   .kpi {
-    padding: 14px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
   }
   .kpi b {
     font-size: 24px;
+  }
+  /* create form: stack fields full-width */
+  .f {
+    flex-basis: 100%;
+  }
+  /* list toolbar: wrap, search takes a full row */
+  .tools {
+    width: 100%;
+  }
+  .search {
+    min-width: 0;
+    flex: 1 1 100%;
+  }
+  /* keep table columns from squishing — scroll horizontally instead */
+  .tbl {
+    min-width: 720px;
   }
 }
 </style>

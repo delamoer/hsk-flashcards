@@ -382,9 +382,31 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 12px;
   }
+  .search {
+    min-width: 0;
+    flex-basis: 100%;
+  }
+  /* Focus mode: overlay the nav buttons on the card edges so they don't add
+     to width (52px + card + 52px overflowed the viewport). */
+  .focus .stage {
+    gap: 0;
+    position: relative;
+  }
   .navbtn {
     width: 44px;
     height: 44px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(4px);
+  }
+  .navbtn:first-child {
+    left: 6px;
+  }
+  .navbtn:last-child {
+    right: 6px;
   }
 }
 </style>
