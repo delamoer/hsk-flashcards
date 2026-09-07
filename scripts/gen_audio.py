@@ -22,7 +22,8 @@ import edge_tts
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "src" / "data"
-AUDIO_DIR = ROOT / "public" / "audio"
+# Audio lives outside the Vite build (uploaded to Supabase Storage, not shipped in dist).
+AUDIO_DIR = ROOT / "audio-src"
 MANIFEST_FILE = AUDIO_DIR / "manifest.json"
 
 # zh-CN-XiaoxiaoNeural: warm, natural female voice — best overall for Mandarin learners

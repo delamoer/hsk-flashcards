@@ -24,6 +24,15 @@
         <button :class="{ on: mode === 'grid' }" @click="mode = 'grid'">▦ 网格 Grid</button>
         <button :class="{ on: mode === 'focus' }" @click="mode = 'focus'">◉ 专注 Focus</button>
       </div>
+      <button
+        class="tone"
+        :class="{ on: settings.toneColors }"
+        @click="settings.toneColors = !settings.toneColors"
+        :title="settings.toneColors ? '声调配色：开' : '声调配色：关'"
+      >
+        <span class="t1">声</span><span class="t2">调</span><span class="t3">配</span><span class="t4">色</span>
+        <b>{{ settings.toneColors ? "ON" : "OFF" }}</b>
+      </button>
       <router-link :to="`/course/${series}/${unit}/lesson/${lesson.num}/quiz`" class="btn primary">
         自测 Quiz
       </router-link>
@@ -96,6 +105,8 @@ import ProgressRing from "@/components/ProgressRing.vue";
 import { getLesson, matchWord } from "@/data";
 import { getSeries } from "@/data/courses.js";
 import { useProgress } from "@/composables/useProgress";
+import { useSettings } from "@/composables/useSettings";
+import { preload } from "@/utils/tts";
 
 const props = defineProps({
   series: { type: String, required: true },
@@ -104,9 +115,24 @@ const props = defineProps({
 });
 
 const { statusOf, isStarred, summarize } = useProgress();
+const { settings } = useSettings();
 
 const lesson = computed(() => getLesson(props.series, props.unit, props.lesson));
 const words = computed(() => (lesson.value ? lesson.value.words : []));
+
+// Warm the audio cache for this lesson so the first 🔊 tap plays instantly.
+watch(
+  words,
+  (list) => {
+    const texts = [];
+    for (const w of list) {
+      texts.push(w.hanzi);
+      for (const ex of w.examples || []) if (ex.zh) texts.push(ex.zh);
+    }
+    if (texts.length) preload(texts);
+  },
+  { immediate: true }
+);
 
 const seriesMeta = computed(() => getSeries(props.series));
 const unitLabel = computed(() => {
@@ -229,6 +255,32 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
   background: #fff;
   color: var(--primary);
   box-shadow: var(--sh-card);
+}
+.tone {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  background: var(--soft);
+  border-radius: var(--r-pill);
+  padding: 8px 12px;
+  font-family: var(--han);
+  font-weight: 700;
+  font-size: 13px;
+  opacity: 0.5;
+  transition: opacity 0.15s;
+}
+.tone.on {
+  opacity: 1;
+}
+.tone:not(.on) span {
+  color: var(--muted-soft) !important;
+}
+.tone b {
+  font-family: var(--ui);
+  font-size: 10px;
+  font-weight: 800;
+  margin-left: 6px;
+  color: var(--muted);
 }
 
 .chips {

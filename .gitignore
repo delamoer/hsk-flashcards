@@ -4,4 +4,7 @@ dist
 .DS_Store
 ~$*.xlsx
 .claude/
-public/audio/
+audio-src/
+.env
+__pycache__/
+design-demos/
