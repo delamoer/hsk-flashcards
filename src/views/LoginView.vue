@@ -5,7 +5,7 @@
       <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
       <div class="brushmark">学</div>
 
-      <div class="logo">HSK <b>单词闪卡</b></div>
+      <div class="logo">学<b>中文</b> · Learn Chinese</div>
 
       <div class="deck">
         <div class="halo"></div>

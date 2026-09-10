@@ -1,6 +1,15 @@
 <template>
-  <header v-if="!hideChrome" class="appbar">
-    <router-link to="/" class="logo">HSK <span>单词闪卡</span></router-link>
+  <header v-if="!hideChrome" ref="barRef" class="appbar">
+    <router-link to="/" class="logo">
+      <span class="mark">学</span>
+      <span class="wordmark"><b class="wm-zh">学中文</b><i class="wm-en">Learn Chinese</i></span>
+    </router-link>
+
+    <nav v-if="showNav" class="mainnav">
+      <router-link to="/" class="navlink" :class="{ on: isCourses }">词汇闪卡 <i>Flashcards</i></router-link>
+      <router-link to="/pinyin" class="navlink" :class="{ on: route.name === 'pinyin' }">拼音 <i>Pinyin</i></router-link>
+      <router-link to="/my-words" class="navlink" :class="{ on: route.name === 'mywords' }">我的词 <i>My words</i></router-link>
+    </nav>
 
     <div v-if="isConfigured" class="account">
       <div v-if="isLoggedIn" class="usermenu" ref="menuRef">
@@ -17,7 +26,6 @@
               <div class="me">{{ user.email }}</div>
             </div>
           </div>
-          <router-link to="/my-words" class="mi" @click="open = false">我的词 <i>My words</i></router-link>
           <router-link to="/account" class="mi" @click="open = false">账号 <i>Account</i></router-link>
           <router-link v-if="isAdmin" to="/admin" class="mi" @click="open = false">管理 <i>Admin</i></router-link>
           <button class="mi danger" @click="handleSignOut">退出 <i>Sign out</i></button>
@@ -29,7 +37,7 @@
 </template>
 
 <script setup>
-import { computed, ref, watch, onMounted, onUnmounted } from "vue";
+import { computed, ref, watch, onMounted, onUnmounted, nextTick } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useAuth } from "@/composables/useAuth";
 
@@ -43,9 +51,31 @@ const menuRef = ref(null);
 function onDocClick(e) {
   if (open.value && menuRef.value && !menuRef.value.contains(e.target)) open.value = false;
 }
-onMounted(() => document.addEventListener("click", onDocClick));
-onUnmounted(() => document.removeEventListener("click", onDocClick));
-watch(() => route.fullPath, () => { open.value = false; });
+
+// Publish the real header height as --appbar-h so sticky content (e.g. the pinyin
+// chart's detail card) can offset itself below the bar — the bar grows taller on
+// mobile when the nav wraps to a second row, so we measure instead of hard-coding.
+const barRef = ref(null);
+let ro;
+function measureBar() {
+  const h = barRef.value?.offsetHeight;
+  if (h) document.documentElement.style.setProperty("--appbar-h", `${h}px`);
+}
+onMounted(() => {
+  document.addEventListener("click", onDocClick);
+  measureBar();
+  if (barRef.value && "ResizeObserver" in window) {
+    ro = new ResizeObserver(measureBar);
+    ro.observe(barRef.value);
+  }
+  window.addEventListener("resize", measureBar);
+});
+onUnmounted(() => {
+  document.removeEventListener("click", onDocClick);
+  ro?.disconnect();
+  window.removeEventListener("resize", measureBar);
+});
+watch(() => route.fullPath, () => { open.value = false; nextTick(measureBar); });
 
 async function handleSignOut() {
   open.value = false;
@@ -53,6 +83,11 @@ async function handleSignOut() {
   router.push("/login");
 }
 const hideChrome = computed(() => route.name === "print" || route.name === "login");
+
+// Top-level section nav (desktop-primary). Shown once the user is in the app.
+const showNav = computed(() => !isConfigured || isLoggedIn.value);
+const COURSE_ROUTES = new Set(["home", "lessons", "lesson", "quiz", "search"]);
+const isCourses = computed(() => COURSE_ROUTES.has(route.name));
 
 const emailName = computed(() => (user.value?.email || "").split("@")[0]);
 // Chip label: display name if set, else a trimmed email prefix.
@@ -82,19 +117,101 @@ const avatarChar = computed(() => {
   border-bottom: 1px solid var(--hairline);
 }
 .logo {
-  font-weight: 800;
-  font-size: 17px;
-  color: var(--primary-strong);
-  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  white-space: nowrap;
 }
-.logo span {
+.logo .mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-family: "Ma Shan Zheng", var(--han);
+  font-size: 23px;
+  line-height: 1;
+  padding-bottom: 2px;
+  box-shadow: var(--sh-card);
+}
+.logo .wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+.logo .wm-zh {
+  font-size: 16px;
+  font-weight: 800;
   color: var(--ink);
+  letter-spacing: 0.5px;
+}
+.logo .wm-en {
+  font-style: normal;
+  font-size: 9px;
+  font-weight: 800;
+  color: var(--muted-soft);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.mainnav {
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+}
+.navlink {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 7px 14px;
+  border-radius: var(--r-pill);
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--body);
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+.navlink i {
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.navlink:hover {
+  background: var(--hairline-soft);
+}
+.navlink.on {
+  background: var(--soft);
+  color: var(--primary-strong);
 }
 .account {
   margin-left: auto;
   display: inline-flex;
   align-items: center;
   gap: 10px;
+}
+
+/* mobile: nav drops to its own scrollable row under the logo */
+@media (max-width: 640px) {
+  .appbar {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+  .mainnav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+  }
+  .navlink {
+    background: var(--hairline-soft);
+  }
+  .navlink.on {
+    background: var(--soft);
+  }
 }
 .userchip {
   display: inline-flex;

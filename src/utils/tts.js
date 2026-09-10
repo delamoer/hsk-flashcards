@@ -78,6 +78,21 @@ export function preload(texts) {
   });
 }
 
+// ── Pinyin syllable audio (human recordings, hugolpz/audio-cmn CC-BY-SA) ──
+// Stored flat under the same public bucket at pinyin/<stem>.mp3 (e.g. pinyin/ba1.mp3).
+// Played by filename stem — no manifest needed. Returns a promise that resolves
+// when playback ends (so callers can chain 播放→停顿→跟读).
+
+export function pinyinUrl(stem) {
+  return STORAGE_BASE && stem ? `${STORAGE_BASE}pinyin/${stem}.mp3` : null;
+}
+
+export function playPinyin(stem, rate = 1) {
+  const url = pinyinUrl(stem);
+  if (!url) return Promise.reject(new Error("no pinyin audio configured"));
+  return playUrl(url, rate);
+}
+
 // ── speechSynthesis fallback ──────────────────────────────────────────────
 
 let cachedVoice = null;

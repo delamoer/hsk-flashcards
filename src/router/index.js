@@ -22,6 +22,7 @@ const routes = [
   { path: "/login", name: "login", component: () => import("@/views/LoginView.vue") },
   { path: "/account", name: "account", component: () => import("@/views/AccountView.vue") },
   { path: "/my-words", name: "mywords", component: () => import("@/views/MyWordsView.vue") },
+  { path: "/pinyin", name: "pinyin", component: () => import("@/views/PinyinView.vue") },
   { path: "/admin", name: "admin", component: () => import("@/views/AdminView.vue") },
 
   // ── Canonical routes ────────────────────────────────────────────────────

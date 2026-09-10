@@ -1,20 +1,13 @@
 <template>
   <div class="wrap">
-    <div class="crumb">
-      <router-link to="/">首页 Home</router-link>
-      <span class="sep">/</span>
-      <span class="cur">我的词 My words</span>
-    </div>
-
-    <h2 class="title">我的词 <i>My words</i></h2>
-    <p class="sub">把散落在各课的词汇按标签汇总，一次过完 · Every word you've studied, in one place</p>
-
-    <div class="toolbar">
-      <label class="search">
+    <header class="hero">
+      <h1><span class="zh">我的词</span> <span class="en">My words</span></h1>
+      <p>把散落在各课的词汇按标签汇总，一次过完 · Every word you've studied, in one place</p>
+      <label class="herosearch">
         <span>🔍</span>
         <input v-model="search" placeholder="搜索汉字 / 拼音 / 英文…  Search…" />
       </label>
-    </div>
+    </header>
 
     <div class="chips">
       <button
@@ -114,37 +107,42 @@ const emptyText = computed(() => {
 </script>
 
 <style scoped>
-.title {
-  font-size: 26px;
+.hero {
+  text-align: center;
+  padding: 12px 0 22px;
+}
+.hero h1 {
+  font-size: 30px;
   font-weight: 800;
 }
-.title i {
-  font-style: normal;
+.hero .zh {
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero .en {
+  color: var(--muted-soft);
+  font-weight: 700;
+}
+.hero p {
+  margin-top: 6px;
+  color: var(--muted);
   font-size: 14px;
-  font-weight: 600;
-  color: var(--muted);
-  margin-left: 8px;
 }
-.sub {
-  color: var(--muted);
-  font-weight: 600;
-  font-size: 13px;
-  margin: 6px 0 18px;
-}
-.toolbar {
-  margin-bottom: 14px;
-}
-.search {
+.herosearch {
   display: flex;
   align-items: center;
   gap: 8px;
+  max-width: 520px;
+  margin: 18px auto 0;
   background: var(--card);
   border: 1.5px solid var(--hairline);
   border-radius: var(--r-pill);
-  padding: 10px 16px;
-  max-width: 460px;
+  padding: 10px 18px;
+  box-shadow: var(--sh-card);
 }
-.search input {
+.herosearch input {
   border: none;
   outline: none;
   flex: 1;
@@ -153,11 +151,12 @@ const emptyText = computed(() => {
   background: transparent;
   color: var(--ink);
 }
-.search input::placeholder {
+.herosearch input::placeholder {
   color: var(--muted-soft);
 }
 .chips {
   display: flex;
+  justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 18px;
