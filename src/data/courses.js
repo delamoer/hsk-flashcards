@@ -40,6 +40,7 @@ export const COURSE_REGISTRY = [
       { id: 1, label: "HSK 1", available: true },
       { id: 2, label: "HSK 2", available: true },
       { id: 3, label: "HSK 3", available: true },
+      { id: 4, label: "HSK 4", available: true },
     ],
   },
   {

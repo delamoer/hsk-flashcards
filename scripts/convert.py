@@ -96,6 +96,14 @@ SOURCES = [
                 "type": None, "note": 10, "ex": [(6, 7), (8, 9)]},
     },
     {
+        # HSK 4 upper half (4A / 4上): lessons 1–10. Lower half (4B) to be merged later.
+        "series": "newhsk3", "unit": 4,
+        "file": "sources/New_HSK3.0_HSK4A_按课次词汇闪卡表.xlsx", "sheet": "HSK4A词汇表",
+        "col": {"lesson": 1, "lesson_key": None, "title": 2,
+                "hanzi": 3, "pinyin": 4, "meaning": 5,
+                "type": None, "note": 10, "ex": [(6, 7), (8, 9)]},
+    },
+    {
         "series": "huihua360", "unit": 1,
         "file": "sources/标准汉语会话360句1_按课次词汇闪卡表_HSK统一格式_含英文翻译.xlsx",
         "sheet": "360句1词汇表",
@@ -305,6 +313,18 @@ TITLES_EN = {
             16: "I Heard Some Pandas Went Abroad",
             17: "I Should Learn More from Serious People",
             18: "I Learned to Make Dumplings",
+        },
+        4: {
+            1: "We Came to China to Study",
+            2: "We Rented a Suitable Apartment",
+            3: "Just Scan It with Your Phone",
+            4: "Glad I Could Help You",
+            5: '"Not Afraid of Spicy" and "Afraid of Not Spicy"',
+            6: "I'll Go with You to See the Doctor",
+            7: "Learning on the Job",
+            8: "Relax When It's Time to Relax",
+            9: "Meeting You at Just the Right Time",
+            10: "The South Doesn't Get the North's Cold",
         },
     },
     "huihua360": {
