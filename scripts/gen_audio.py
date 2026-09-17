@@ -83,6 +83,33 @@ def collect_texts(series: str, unit: int, lesson_num: int | None) -> list[str]:
     return texts
 
 
+def collect_text_lines() -> list[str]:
+    """Dialogue lines (speaker stripped) from the 课文 data — these are what the
+    读原文 🔊 button speaks, so they need pre-generated audio too."""
+    import re
+    seen: set[str] = set()
+    texts: list[str] = []
+    for f in sorted((DATA_DIR / "texts").glob("*-*.json")):
+        data = json.loads(f.read_text(encoding="utf-8"))
+        if "lessons" not in data:
+            continue
+        for lesson in data["lessons"]:
+            for t in lesson["texts"]:
+                for raw in (t.get("original") or "").split("\n"):
+                    line = raw.strip()
+                    if not line:
+                        continue
+                    m = re.match(r"^[^：:]{1,8}[：:](.*)$", line)
+                    speech = (m.group(1).strip() if m else line)
+                    # skip lines with nothing speakable (e.g. "……") to avoid TTS errors
+                    if not re.search(r"[一-鿿A-Za-z0-9]", speech):
+                        continue
+                    if speech and speech not in seen:
+                        seen.add(speech)
+                        texts.append(speech)
+    return texts
+
+
 def collect_all_texts() -> list[str]:
     seen: set[str] = set()
     texts: list[str] = []
@@ -119,7 +146,12 @@ async def generate(texts: list[str], manifest: dict, concurrency: int = 8) -> in
     async def worker(text: str, filename: str, output: Path):
         nonlocal done
         async with sem:
-            await synthesize(text, output)
+            try:
+                await synthesize(text, output)
+            except Exception as e:
+                async with lock:
+                    print(f"  ✗ skip '{text}' ({e.__class__.__name__})")
+                return
         # Manifest mutation + periodic save under a lock (asyncio is single
         # threaded, but await points can interleave — keep writes atomic).
         async with lock:
@@ -139,6 +171,7 @@ async def main():
     parser.add_argument("--unit", type=int, default=1)
     parser.add_argument("--lesson", type=int, default=None, help="Specific lesson number (omit = whole unit)")
     parser.add_argument("--all", action="store_true", help="Generate for entire corpus")
+    parser.add_argument("--texts", action="store_true", help="Generate for 课文 dialogue lines")
     parser.add_argument("--concurrency", type=int, default=8, help="Concurrent TTS requests")
     args = parser.parse_args()
 
@@ -146,7 +179,10 @@ async def main():
     manifest = load_manifest()
     already = len(manifest)
 
-    if args.all:
+    if args.texts:
+        texts = collect_text_lines()
+        label = "课文 dialogue lines"
+    elif args.all:
         texts = collect_all_texts()
         label = "entire corpus"
     else:

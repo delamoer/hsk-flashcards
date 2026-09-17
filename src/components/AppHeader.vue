@@ -8,6 +8,7 @@
     <nav v-if="showNav" class="mainnav">
       <router-link to="/" class="navlink" :class="{ on: isCourses }">词汇闪卡 <i>Flashcards</i></router-link>
       <router-link to="/pinyin" class="navlink" :class="{ on: route.name === 'pinyin' }">拼音 <i>Pinyin</i></router-link>
+      <router-link to="/texts" class="navlink" :class="{ on: isTexts }">课文 <i>Texts</i></router-link>
       <router-link to="/my-words" class="navlink" :class="{ on: route.name === 'mywords' }">我的词 <i>My words</i></router-link>
     </nav>
 
@@ -88,6 +89,8 @@ const hideChrome = computed(() => route.name === "print" || route.name === "logi
 const showNav = computed(() => !isConfigured || isLoggedIn.value);
 const COURSE_ROUTES = new Set(["home", "lessons", "lesson", "quiz", "search"]);
 const isCourses = computed(() => COURSE_ROUTES.has(route.name));
+const TEXT_ROUTES = new Set(["texts", "texts-unit", "text"]);
+const isTexts = computed(() => TEXT_ROUTES.has(route.name));
 
 const emailName = computed(() => (user.value?.email || "").split("@")[0]);
 // Chip label: display name if set, else a trimmed email prefix.

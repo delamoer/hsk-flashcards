@@ -1,0 +1,26 @@
+{
+ "hsk-1": {
+  "lessonCount": 15,
+  "textCount": 45
+ },
+ "hsk-2": {
+  "lessonCount": 15,
+  "textCount": 60
+ },
+ "hsk-3": {
+  "lessonCount": 20,
+  "textCount": 80
+ },
+ "newhsk3-1": {
+  "lessonCount": 15,
+  "textCount": 45
+ },
+ "newhsk3-2": {
+  "lessonCount": 15,
+  "textCount": 60
+ },
+ "newhsk3-3": {
+  "lessonCount": 18,
+  "textCount": 72
+ }
+}

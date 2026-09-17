@@ -11,7 +11,14 @@
         <h2 class="han">{{ lesson.title }}</h2>
         <p class="te">{{ lesson.titleEn }}</p>
       </div>
-      <ProgressRing :percent="percent" :size="56" />
+      <div class="lh-right">
+        <router-link
+          v-if="showTexts"
+          class="textlink"
+          :to="`/texts/${series}/${unit}/${lesson.num}/1`"
+        >📖 读本课课文 <i>Read text</i></router-link>
+        <ProgressRing :percent="percent" :size="56" />
+      </div>
     </div>
 
     <!-- toolbar -->
@@ -107,6 +114,7 @@ import FlashCard from "@/components/FlashCard.vue";
 import ProgressRing from "@/components/ProgressRing.vue";
 import { getUnit, matchWord } from "@/data";
 import { getSeries } from "@/data/courses.js";
+import { hasTextLesson } from "@/data/texts";
 import { useProgress } from "@/composables/useProgress";
 import { useSettings } from "@/composables/useSettings";
 import { preload } from "@/utils/tts";
@@ -138,6 +146,7 @@ const lesson = computed(() => {
   return ds.value.lessons.find((l) => l.num === Number(props.lesson)) || null;
 });
 const words = computed(() => (lesson.value ? lesson.value.words : []));
+const showTexts = computed(() => !!lesson.value && hasTextLesson(props.series, props.unit, lesson.value.num));
 
 // Warm the audio cache for this lesson so the first 🔊 tap plays instantly.
 watch(
@@ -225,6 +234,41 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
   color: var(--muted);
   font-weight: 600;
   margin-top: 2px;
+}
+.lh-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.textlink {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 9px 16px;
+  border-radius: var(--r-pill);
+  background: var(--soft);
+  color: var(--primary-strong);
+  font-weight: 800;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background 0.15s, transform 0.15s;
+}
+.textlink i {
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.textlink:hover {
+  background: var(--strong);
+  transform: translateY(-1px);
+}
+@media (max-width: 560px) {
+  .lh-right {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 8px;
+  }
 }
 
 .toolbar {

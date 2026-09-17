@@ -25,6 +25,26 @@ const routes = [
   { path: "/pinyin", name: "pinyin", component: () => import("@/views/PinyinView.vue") },
   { path: "/admin", name: "admin", component: () => import("@/views/AdminView.vue") },
 
+  // ── 课文 Texts ──────────────────────────────────────────────────────────
+  { path: "/texts", name: "texts", component: () => import("@/views/TextsHomeView.vue") },
+  {
+    path: "/texts/:series/:unit",
+    name: "texts-unit",
+    component: () => import("@/views/TextsUnitView.vue"),
+    props: courseProps,
+  },
+  {
+    path: "/texts/:series/:unit/:lesson/:n",
+    name: "text",
+    component: () => import("@/views/TextView.vue"),
+    props: (route) => ({
+      series: route.params.series,
+      unit: route.params.unit,
+      lesson: route.params.lesson,
+      n: route.params.n,
+    }),
+  },
+
   // ── Canonical routes ────────────────────────────────────────────────────
   {
     path: "/course/:series/:unit",
