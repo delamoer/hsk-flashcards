@@ -9,6 +9,9 @@ It began as a pure flashcard app (organized **course → lesson → word**) and 
 multi-section learning platform. Top-level sections (see the nav in `AppHeader.vue`):
 - **词汇闪卡 Flashcards** (`/`, the home) — the original vocab decks (HSK + 会话 courses).
 - **拼音 Pinyin** (`/pinyin`) — an interactive pinyin chart with native audio (see below).
+- **课文 Texts** (`/texts`) — per-lesson dialogue texts with a "double cloze" exercise
+  (生词挖空 word-bank fill + 连词成句 whole-dialogue reordering), tied to the same
+  series/unit/lesson taxonomy as the flashcards (旧版→`hsk`, 新版→`newhsk3`).
 - **我的词 My words** (`/my-words`) — cross-course roundup of studied/starred words.
 
 Two audiences: a teacher in class (projector) and — most of the time — students self-studying,
@@ -56,9 +59,20 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   grid) **and** injects the bilingual pedagogy (English pronunciation analogues, place/manner EN,
   example words) which lives *in that script's maps* — edit the script, not the JSON, then re-run.
   `PinyinView.vue` imports `pinyin.json` directly (lazy-loaded route, so it's not in the main bundle).
+- **课文 (Texts) data is generated too.** Source = the six `sources/{新版|旧版}HSK{1,2,3}_逐篇课文双重挖空练习_*.xlsx`.
+  `scripts/convert_texts.py` normalizes them into `src/data/texts/{series}-{unit}.json` (+ `texts/meta.json`),
+  lazy-loaded via `src/data/texts.js` (its own `import.meta.glob`, kept in a subfolder so the flashcard
+  glob never picks it up). Each text carries: `original` (dialogue), `vocab` (numbered-blank cloze +
+  answers), `grammar` (a designated clause), `sentences` (every line tokenized for 连词成句), and `note`
+  (whole-lesson grammar list — identical across a lesson's texts, shown as shared reference). **连词成句
+  tokenization uses NO jieba**: `convert_texts.py` max-matches against a lexicon built from the flashcard
+  vocabulary + the hand-vetted `scripts/grammar_segments.tsv` (358 grammar clauses, manually segmented —
+  edit the TSV, not generated output). 课文 audio (dialogue lines) is generated via
+  `gen_audio.py --texts` and uploaded to the same Storage `audio` bucket.
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
   works on GitHub Pages without server rewrites. Routes: `/`, `/pinyin`, `/my-words`, `/search`,
-  `/login`, `/account`, `/admin`, and the course flow `/course/:series/:unit[/lesson/:lesson[/quiz|print]]`
+  `/login`, `/account`, `/admin`, the course flow `/course/:series/:unit[/lesson/:lesson[/quiz|print]]`,
+  and the 课文 flow `/texts`, `/texts/:series/:unit`, `/texts/:series/:unit/:lesson/:n`
   (legacy `/hsk/:level/...` redirects preserved). All routes are behind a login wall when Supabase is configured.
 - **State** lives in composables backed by localStorage:
   - `useProgress` → per-word `{ s: "new"|"known"|"review", star }` (key `hsk-flashcards-progress-v1`)
