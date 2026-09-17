@@ -18,6 +18,9 @@
       />
     </div>
   </div>
+  <div class="wrap" v-else-if="loading">
+    <p class="muted">加载中… · Loading…</p>
+  </div>
   <div class="wrap" v-else>
     <p class="muted">该课程暂未上线 · This course is not available yet.</p>
     <router-link to="/" class="btn secondary" style="margin-top: 16px">← 返回首页 Home</router-link>
@@ -25,7 +28,7 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { ref, computed, watch } from "vue";
 import LessonCard from "@/components/LessonCard.vue";
 import { getUnit } from "@/data";
 import { getSeries } from "@/data/courses.js";
@@ -35,7 +38,17 @@ const props = defineProps({
   unit: { type: [Number, String], required: true },
 });
 
-const data = computed(() => getUnit(props.series, props.unit));
+const data = ref(null);
+const loading = ref(true);
+watch(
+  () => [props.series, props.unit],
+  async ([s, u]) => {
+    loading.value = true;
+    data.value = await getUnit(s, u);
+    loading.value = false;
+  },
+  { immediate: true }
+);
 const seriesMeta = computed(() => getSeries(props.series));
 const unitLabel = computed(() => {
   const u = seriesMeta.value?.units.find((u) => u.id === Number(props.unit));

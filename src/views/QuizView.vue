@@ -63,11 +63,17 @@
       <p class="muted">本课词汇不足以生成测验 · Not enough words to quiz.</p>
     </div>
   </div>
+  <div class="wrap quizwrap" v-else-if="loading">
+    <p class="muted">加载中… · Loading…</p>
+  </div>
+  <div class="wrap quizwrap" v-else>
+    <p class="muted">课程不存在 · Lesson not found.</p>
+  </div>
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
-import { getLesson, allWords } from "@/data";
+import { ref, computed, watch } from "vue";
+import { getUnit } from "@/data";
 import { getSeries } from "@/data/courses.js";
 import { useProgress } from "@/composables/useProgress";
 import { useSettings } from "@/composables/useSettings";
@@ -82,7 +88,13 @@ const props = defineProps({
 const { setStatus } = useProgress();
 const { settings } = useSettings();
 
-const lesson = computed(() => getLesson(props.series, props.unit, props.lesson));
+// Load the unit once (cached), derive the current lesson from it.
+const ds = ref(null);
+const loading = ref(true);
+const lesson = computed(() => {
+  if (!ds.value) return null;
+  return ds.value.lessons.find((l) => l.num === Number(props.lesson)) || null;
+});
 
 const seriesMeta = computed(() => getSeries(props.series));
 const unitLabel = computed(() => {
@@ -102,9 +114,8 @@ function shuffle(a) {
 function buildQuestions() {
   const words = lesson.value ? lesson.value.words : [];
   if (words.length < 4) return [];
-  const pool = words.length >= 4 ? words : allWords(props.series, props.unit);
   return shuffle(words).map((answer, i) => {
-    const distractors = shuffle(pool.filter((w) => w.id !== answer.id)).slice(0, 3);
+    const distractors = shuffle(words.filter((w) => w.id !== answer.id)).slice(0, 3);
     return {
       answer,
       type: i % 2 === 0 ? "en" : "audio",
@@ -113,7 +124,19 @@ function buildQuestions() {
   });
 }
 
-const questions = ref(buildQuestions());
+const questions = ref([]);
+
+// (Re)load the unit whenever the route target changes, then build the quiz.
+watch(
+  () => [props.series, props.unit, props.lesson],
+  async ([s, u]) => {
+    loading.value = true;
+    ds.value = await getUnit(s, u);
+    loading.value = false;
+    restart();
+  },
+  { immediate: true }
+);
 const index = ref(0);
 const answered = ref(false);
 const picked = ref(null);

@@ -448,20 +448,43 @@ def convert(src):
     return data, total
 
 
+# Per-unit word-id prefix (e.g. "h1-", "newhsk3-1-"), used by the frontend to
+# tally progress without loading the full word list. Ids look like "{prefix}l{n}-{i}".
+def unit_id_prefix(data):
+    for lesson in data["lessons"]:
+        for word in lesson["words"]:
+            wid = word.get("id") or ""
+            i = wid.find("-l")
+            if i > 0:
+                return wid[: i + 1]
+    return None
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     summary = []
+    meta = {}  # {series}-{unit} → { lessonCount, wordCount, idPrefix } for lazy-loaded UI
     for src in SOURCES:
         data, total = convert(src)
-        path = OUT / f"{src['series']}-{src['unit']}.json"
+        key = f"{src['series']}-{src['unit']}"
+        path = OUT / f"{key}.json"
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+        meta[key] = {
+            "lessonCount": len(data["lessons"]),
+            "wordCount": total,
+            "idPrefix": unit_id_prefix(data),
+        }
         missing_en = [l["num"] for l in data["lessons"] if not l["titleEn"]]
         summary.append((src["series"], src["unit"], len(data["lessons"]), total, missing_en, path))
+
+    meta_path = OUT / "meta.json"
+    meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
 
     print("Converted:")
     for series, unit, nl, nw, miss, path in summary:
         warn = f"  ⚠ missing EN titles for lessons {miss}" if miss else ""
         print(f"  {series}-{unit}: {nl} lessons, {nw} words → {path.relative_to(ROOT)}{warn}")
+    print(f"  meta → {meta_path.relative_to(ROOT)} ({len(meta)} units)")
 
 
 if __name__ == "__main__":

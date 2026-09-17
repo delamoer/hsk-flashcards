@@ -39,10 +39,10 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import CourseUnitCard from "@/components/CourseUnitCard.vue";
-import { courseRegistry, allWords } from "@/data";
+import { courseRegistry } from "@/data";
 import { useProgress } from "@/composables/useProgress";
 
-const { percentKnown } = useProgress();
+const { percentKnownByPrefix } = useProgress();
 const router = useRouter();
 const q = ref("");
 
@@ -53,7 +53,7 @@ function goSearch() {
 
 function percentFor(seriesId, unit) {
   if (!unit.available) return 0;
-  return percentKnown(allWords(seriesId, unit.id));
+  return percentKnownByPrefix(unit.idPrefix, unit.wordCount);
 }
 </script>
 

@@ -129,12 +129,12 @@ import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/composables/useAuth";
 import { useProgress } from "@/composables/useProgress";
 import { useSettings } from "@/composables/useSettings";
-import { courseRegistry, allWords } from "@/data";
+import { courseRegistry } from "@/data";
 import { speak } from "@/utils/tts";
 
 const router = useRouter();
 const { user, isAdmin, displayName, signOut, updateDisplayName } = useAuth();
-const { summarize } = useProgress();
+const { countByPrefixes } = useProgress();
 const { settings } = useSettings();
 
 // ── 资料头部 ────────────────────────────────────────────────
@@ -178,20 +178,20 @@ const lastSignIn = computed(() => fmtDate(user.value?.last_sign_in_at));
 // ── 学习看板 ────────────────────────────────────────────────
 const courseStats = computed(() =>
   courseRegistry.map((series) => {
-    const words = series.units
-      .filter((u) => u.available)
-      .flatMap((u) => allWords(series.id, u.id));
-    const s = summarize(words);
+    const units = series.units.filter((u) => u.available);
+    const total = units.reduce((n, u) => n + u.wordCount, 0);
+    const prefixes = units.map((u) => u.idPrefix);
+    const c = countByPrefixes(prefixes);
     return {
       id: series.id,
       name: series.name,
       gradA: series.gradA,
       gradB: series.gradB,
-      total: s.total,
-      known: s.known,
-      review: s.review,
-      star: s.star,
-      percent: s.total ? Math.round((s.known / s.total) * 100) : 0,
+      total,
+      known: c.known,
+      review: c.review,
+      star: c.star,
+      percent: total ? Math.round((c.known / total) * 100) : 0,
     };
   })
 );

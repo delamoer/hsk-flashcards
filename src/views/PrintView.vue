@@ -48,8 +48,8 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
-import { getLesson } from "@/data";
+import { ref, computed, watch } from "vue";
+import { getUnit } from "@/data";
 import { getSeries } from "@/data/courses.js";
 import { colorPinyin } from "@/utils/pinyinTones";
 import { useSettings } from "@/composables/useSettings";
@@ -61,7 +61,18 @@ const props = defineProps({
 });
 
 const { settings } = useSettings();
-const lesson = computed(() => getLesson(props.series, props.unit, props.lesson));
+const ds = ref(null);
+watch(
+  () => [props.series, props.unit],
+  async ([s, u]) => {
+    ds.value = await getUnit(s, u);
+  },
+  { immediate: true }
+);
+const lesson = computed(() => {
+  if (!ds.value) return null;
+  return ds.value.lessons.find((l) => l.num === Number(props.lesson)) || null;
+});
 const layout = ref("list");
 
 const seriesMeta = computed(() => getSeries(props.series));

@@ -78,11 +78,14 @@ function lessonLink(r) {
   return `/course/${r.series}/${r.unit}/lesson/${r.lessonNum}`;
 }
 
-function run(query) {
-  const { total: t, results: rs } = searchAll(query);
+async function run(query) {
+  const trimmed = query.trim();
+  const { total: t, results: rs } = await searchAll(query);
+  // Guard against out-of-order results if the query changed mid-load.
+  if (q.value.trim() !== trimmed) return;
   total.value = t;
   results.value = rs;
-  committed.value = query.trim();
+  committed.value = trimmed;
 }
 
 // Enter commits the query to the URL (shareable); the URL watcher runs the search.

@@ -39,9 +39,18 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   in the repo root. `scripts/convert.py` normalizes them into `src/data/hsk{1,2,3}.json`.
   **Never edit `src/data/*.json` by hand** — edit the xlsx (and English titles in `convert.py`'s
   `TITLES_EN`), then run `npm run convert`.
-- `src/data/index.js` loads the JSON and exposes `levels`, `getLevel`, `getLesson`, `allWords`,
-  plus `everyWord()` (flat cross-course index, used by 我的词) and `matchWord()`.
+- **Course data is lazy-loaded, one chunk per unit.** `src/data/index.js` uses
+  `import.meta.glob("./*-*.json")` so each `{series}-{unit}.json` is a separate chunk fetched on
+  demand (kept out of the main bundle). Because of this, the data accessors are **async**:
+  `getUnit` / `getLesson` / `allWords` / `everyWord()` / `searchAll()` all return Promises — views
+  `await` them into a ref (with a small `loading` state). `matchWord()` stays sync/pure.
   Word shape: `{ id, num, hanzi, pinyin, meaning, type("core"|"supplement"|null), note, examples:[{zh,en}] }`.
+- **`src/data/meta.json` is generated too** (by `convert.py`): `{ "{series}-{unit}": { lessonCount,
+  wordCount, idPrefix } }`. It's tiny and statically imported, so the home grid, progress rings, and
+  Account/Admin totals render **without loading any word data**. `courseRegistry` (sync) is built from
+  it. Progress rings avoid loading words via `useProgress().percentKnownByPrefix(idPrefix, wordCount)` /
+  `countByPrefixes([...])`, which tally localStorage progress by word-id prefix (ids look like
+  `{idPrefix}l{n}-{i}`). Only 我的词 (`everyWord`) and search (`searchAll`) pull full data — both lazy routes.
 - **Pinyin data is also generated, not hand-written.** Source = `sources/汉语拼音…网站数据 (2).xlsx`.
   `scripts/convert_pinyin.py` normalizes it into `src/data/pinyin.json` (initials / finals / syllables /
   grid) **and** injects the bilingual pedagogy (English pronunciation analogues, place/manner EN,

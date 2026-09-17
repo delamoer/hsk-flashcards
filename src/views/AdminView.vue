@@ -182,14 +182,14 @@
 import { ref, computed, onMounted } from "vue";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/composables/useAuth";
-import { courseRegistry, allWords } from "@/data";
+import { courseRegistry } from "@/data";
 
 const { user } = useAuth();
 const myId = user.value?.id;
 
 // Total words across all available courses — denominator for each student's %.
 const TOTAL_WORDS = courseRegistry.reduce(
-  (n, s) => n + s.units.filter((u) => u.available).reduce((m, u) => m + allWords(s.id, u.id).length, 0),
+  (n, s) => n + s.units.filter((u) => u.available).reduce((m, u) => m + u.wordCount, 0),
   0
 );
 

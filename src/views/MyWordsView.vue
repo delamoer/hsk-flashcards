@@ -22,7 +22,11 @@
       </button>
     </div>
 
-    <div v-if="!filtered.length" class="empty">
+    <div v-if="loading" class="empty">
+      <p class="muted">加载中… · Loading…</p>
+    </div>
+
+    <div v-else-if="!filtered.length" class="empty">
       <p>{{ emptyText }}</p>
       <p class="muted">
         <router-link to="/" class="golink">去学习 Start learning →</router-link>
@@ -42,7 +46,7 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import FlashCard from "@/components/FlashCard.vue";
 import { everyWord, matchWord } from "@/data";
@@ -51,7 +55,13 @@ import { useProgress } from "@/composables/useProgress";
 const route = useRoute();
 const { statusOf, isStarred } = useProgress();
 
-const entries = everyWord();
+// Cross-course word index — loaded on demand (pulls every unit's data).
+const entries = ref([]);
+const loading = ref(true);
+onMounted(async () => {
+  entries.value = await everyWord();
+  loading.value = false;
+});
 
 const filters = [
   { key: "review", label: "需复习 Review" },
@@ -79,7 +89,7 @@ function passesTag(id, key) {
 
 const counts = computed(() => {
   const c = { review: 0, known: 0, star: 0, studied: 0 };
-  for (const e of entries) {
+  for (const e of entries.value) {
     const id = e.word.id;
     if (statusOf(id) === "review") c.review++;
     if (statusOf(id) === "known") c.known++;
@@ -91,7 +101,7 @@ const counts = computed(() => {
 
 const filtered = computed(() => {
   const q = search.value.trim();
-  return entries.filter((e) => passesTag(e.word.id, filter.value) && matchWord(e.word, q));
+  return entries.value.filter((e) => passesTag(e.word.id, filter.value) && matchWord(e.word, q));
 });
 
 const emptyText = computed(() => {

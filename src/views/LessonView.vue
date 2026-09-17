@@ -93,6 +93,9 @@
     </div>
   </div>
 
+  <div class="wrap" v-else-if="loading">
+    <p class="muted">加载中… · Loading…</p>
+  </div>
   <div class="wrap" v-else>
     <p class="muted">课程不存在 · Lesson not found.</p>
   </div>
@@ -102,7 +105,7 @@
 import { ref, computed, watch, onMounted, onUnmounted } from "vue";
 import FlashCard from "@/components/FlashCard.vue";
 import ProgressRing from "@/components/ProgressRing.vue";
-import { getLesson, matchWord } from "@/data";
+import { getUnit, matchWord } from "@/data";
 import { getSeries } from "@/data/courses.js";
 import { useProgress } from "@/composables/useProgress";
 import { useSettings } from "@/composables/useSettings";
@@ -117,7 +120,23 @@ const props = defineProps({
 const { statusOf, isStarred, summarize } = useProgress();
 const { settings } = useSettings();
 
-const lesson = computed(() => getLesson(props.series, props.unit, props.lesson));
+// Load the whole unit once (cached); switching lessons within it needs no refetch.
+const ds = ref(null);
+const loading = ref(true);
+watch(
+  () => [props.series, props.unit],
+  async ([s, u]) => {
+    loading.value = true;
+    ds.value = await getUnit(s, u);
+    loading.value = false;
+  },
+  { immediate: true }
+);
+
+const lesson = computed(() => {
+  if (!ds.value) return null;
+  return ds.value.lessons.find((l) => l.num === Number(props.lesson)) || null;
+});
 const words = computed(() => (lesson.value ? lesson.value.words : []));
 
 // Warm the audio cache for this lesson so the first 🔊 tap plays instantly.

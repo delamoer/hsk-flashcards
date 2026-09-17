@@ -156,5 +156,38 @@ export function useProgress() {
     return Math.round((summarize(words).known / words.length) * 100);
   }
 
-  return { state, statusOf, isStarred, setStatus, toggleStar, summarize, percentKnown };
+  // Tally progress by word-id prefix instead of a loaded word list — lets the
+  // home grid / account / admin show per-unit progress without loading word
+  // data (ids look like "{idPrefix}l{n}-{i}", see src/data/meta.json).
+  // Reads the reactive `state`, so it stays live inside computeds.
+  function countByPrefixes(prefixes) {
+    const c = { known: 0, review: 0, star: 0 };
+    if (!prefixes || !prefixes.length) return c;
+    for (const id in state) {
+      if (!prefixes.some((p) => p && id.startsWith(p))) continue;
+      const e = state[id];
+      const s = e?.s || "new";
+      if (s === "known") c.known++;
+      else if (s === "review") c.review++;
+      if (e?.star) c.star++;
+    }
+    return c;
+  }
+
+  function percentKnownByPrefix(prefix, total) {
+    if (!prefix || !total) return 0;
+    return Math.round((countByPrefixes([prefix]).known / total) * 100);
+  }
+
+  return {
+    state,
+    statusOf,
+    isStarred,
+    setStatus,
+    toggleStar,
+    summarize,
+    percentKnown,
+    countByPrefixes,
+    percentKnownByPrefix,
+  };
 }

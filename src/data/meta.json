@@ -1,0 +1,67 @@
+{
+ "hsk-1": {
+  "lessonCount": 15,
+  "wordCount": 166,
+  "idPrefix": "h1-"
+ },
+ "hsk-2": {
+  "lessonCount": 15,
+  "wordCount": 170,
+  "idPrefix": "h2-"
+ },
+ "hsk-3": {
+  "lessonCount": 20,
+  "wordCount": 315,
+  "idPrefix": "h3-"
+ },
+ "hsk-4": {
+  "lessonCount": 20,
+  "wordCount": 600,
+  "idPrefix": "h4-"
+ },
+ "hsk-5": {
+  "lessonCount": 36,
+  "wordCount": 1105,
+  "idPrefix": "h5-"
+ },
+ "hsk-6": {
+  "lessonCount": 40,
+  "wordCount": 1955,
+  "idPrefix": "h6-"
+ },
+ "huihua360-1": {
+  "lessonCount": 8,
+  "wordCount": 124,
+  "idPrefix": "huihua360-1-"
+ },
+ "huihua360-2": {
+  "lessonCount": 8,
+  "wordCount": 196,
+  "idPrefix": "huihua360-2-"
+ },
+ "huihua360-3": {
+  "lessonCount": 8,
+  "wordCount": 207,
+  "idPrefix": "huihua360-3-"
+ },
+ "huihua360-4": {
+  "lessonCount": 8,
+  "wordCount": 181,
+  "idPrefix": "huihua360-4-"
+ },
+ "newhsk3-1": {
+  "lessonCount": 15,
+  "wordCount": 303,
+  "idPrefix": "newhsk3-1-"
+ },
+ "newhsk3-2": {
+  "lessonCount": 15,
+  "wordCount": 211,
+  "idPrefix": "newhsk3-2-"
+ },
+ "newhsk3-3": {
+  "lessonCount": 18,
+  "wordCount": 483,
+  "idPrefix": "newhsk3-3-"
+ }
+}
