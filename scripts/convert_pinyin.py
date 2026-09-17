@@ -19,7 +19,7 @@ from pathlib import Path
 import openpyxl
 
 ROOT = Path(__file__).resolve().parent.parent
-XLSX = ROOT / "sources" / "汉语拼音_声母韵母可拼音节_网站数据 (2).xlsx"
+XLSX = ROOT / "sources" / "汉语拼音_声母韵母可拼音节_网站数据.xlsx"
 OUT = ROOT / "src" / "data" / "pinyin.json"
 AUDIO_DIR = ROOT / "audio-src" / "pinyin"
 HUGO_BASE = "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/syllabs"

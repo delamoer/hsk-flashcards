@@ -51,7 +51,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   it. Progress rings avoid loading words via `useProgress().percentKnownByPrefix(idPrefix, wordCount)` /
   `countByPrefixes([...])`, which tally localStorage progress by word-id prefix (ids look like
   `{idPrefix}l{n}-{i}`). Only 我的词 (`everyWord`) and search (`searchAll`) pull full data — both lazy routes.
-- **Pinyin data is also generated, not hand-written.** Source = `sources/汉语拼音…网站数据 (2).xlsx`.
+- **Pinyin data is also generated, not hand-written.** Source = `sources/汉语拼音…网站数据.xlsx`.
   `scripts/convert_pinyin.py` normalizes it into `src/data/pinyin.json` (initials / finals / syllables /
   grid) **and** injects the bilingual pedagogy (English pronunciation analogues, place/manner EN,
   example words) which lives *in that script's maps* — edit the script, not the JSON, then re-run.
