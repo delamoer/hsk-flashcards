@@ -14,9 +14,7 @@
 
       <!-- BACK: full detail -->
       <div class="fc-face fc-back" @click.stop="flipped = false">
-        <span v-if="word.type" class="badge" :class="word.type === 'core' ? 'core' : 'supp'">
-          {{ word.type === "core" ? "核心 core" : "补充 supp" }}
-        </span>
+        <span v-if="pos" class="pos-tag"><b>{{ pos.zh }}</b><i>{{ pos.en }}</i></span>
         <div class="brow">
           <span class="bh">{{ word.hanzi }}</span>
           <button class="iconbtn small" @click.stop="say(word.hanzi)" title="朗读 Play">🔊</button>
@@ -65,6 +63,7 @@
 <script setup>
 import { ref, computed, watch } from "vue";
 import { colorPinyin } from "@/utils/pinyinTones";
+import { posLabel } from "@/data/pos";
 import { speak } from "@/utils/tts";
 import { useProgress } from "@/composables/useProgress";
 import { useSettings } from "@/composables/useSettings";
@@ -100,6 +99,7 @@ const shownExamples = computed(() =>
 const pinyinHtml = computed(() =>
   settings.toneColors ? colorPinyin(props.word.pinyin) : props.word.pinyin
 );
+const pos = computed(() => posLabel(props.word.pos));
 
 function say(text) {
   speak(text, { rate: settings.ttsRate });
@@ -236,29 +236,35 @@ function say(text) {
 }
 
 /* back */
-.badge {
+.pos-tag {
   position: absolute;
-  top: 14px;
+  top: 12px;
   right: 14px;
-  font-size: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.1;
+  padding: 4px 10px;
+  border-radius: var(--r-md);
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+}
+.pos-tag b {
+  font-size: 12px;
   font-weight: 800;
-  padding: 3px 9px;
-  border-radius: var(--r-pill);
-  text-transform: uppercase;
 }
-.badge.core {
-  background: var(--success-soft);
-  color: var(--success);
-}
-.badge.supp {
-  background: var(--accent-soft);
-  color: var(--accent-active);
+.pos-tag i {
+  font-style: normal;
+  font-size: 9px;
+  font-weight: 700;
+  opacity: 0.8;
+  letter-spacing: 0.2px;
 }
 .brow {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding-right: 60px;
+  padding-right: 96px;
 }
 .bh {
   font-family: var(--han);

@@ -13,6 +13,7 @@
      "hanzi": "你",
      "pinyin": "nǐ",
      "meaning": "you",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -32,6 +33,7 @@
      "hanzi": "好",
      "pinyin": "hǎo",
      "meaning": "good; well",
+     "pos": "a",
      "type": "core",
      "note": null,
      "examples": [
@@ -51,6 +53,7 @@
      "hanzi": "您",
      "pinyin": "nín",
      "meaning": "you (polite)",
+     "pos": "pron",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -70,6 +73,7 @@
      "hanzi": "你们",
      "pinyin": "nǐmen",
      "meaning": "you (plural)",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -89,6 +93,7 @@
      "hanzi": "对不起",
      "pinyin": "duìbuqǐ",
      "meaning": "sorry",
+     "pos": null,
      "type": "core",
      "note": null,
      "examples": [
@@ -108,6 +113,7 @@
      "hanzi": "没关系",
      "pinyin": "méi guānxi",
      "meaning": "it doesn't matter; that's okay",
+     "pos": null,
      "type": "core",
      "note": null,
      "examples": [
@@ -134,6 +140,7 @@
      "hanzi": "谢谢",
      "pinyin": "xièxie",
      "meaning": "thank you; thanks",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -153,6 +160,7 @@
      "hanzi": "不",
      "pinyin": "bù",
      "meaning": "not; no",
+     "pos": "adv",
      "type": "core",
      "note": null,
      "examples": [
@@ -172,6 +180,7 @@
      "hanzi": "不客气",
      "pinyin": "bú kèqi",
      "meaning": "you're welcome",
+     "pos": null,
      "type": "core",
      "note": null,
      "examples": [
@@ -191,6 +200,7 @@
      "hanzi": "再见",
      "pinyin": "zàijiàn",
      "meaning": "goodbye",
+     "pos": null,
      "type": "core",
      "note": null,
      "examples": [
@@ -217,6 +227,7 @@
      "hanzi": "叫",
      "pinyin": "jiào",
      "meaning": "to be called; to call",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -236,6 +247,7 @@
      "hanzi": "什么",
      "pinyin": "shénme",
      "meaning": "what",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -255,6 +267,7 @@
      "hanzi": "名字",
      "pinyin": "míngzi",
      "meaning": "name",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -274,6 +287,7 @@
      "hanzi": "我",
      "pinyin": "wǒ",
      "meaning": "I; me",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -293,6 +307,7 @@
      "hanzi": "是",
      "pinyin": "shì",
      "meaning": "to be; yes",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -312,6 +327,7 @@
      "hanzi": "老师",
      "pinyin": "lǎoshī",
      "meaning": "teacher",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -331,6 +347,7 @@
      "hanzi": "吗",
      "pinyin": "ma",
      "meaning": "question particle",
+     "pos": "part",
      "type": "core",
      "note": null,
      "examples": [
@@ -350,6 +367,7 @@
      "hanzi": "学生",
      "pinyin": "xuésheng",
      "meaning": "student",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -369,6 +387,7 @@
      "hanzi": "人",
      "pinyin": "rén",
      "meaning": "person; people",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -388,6 +407,7 @@
      "hanzi": "中国",
      "pinyin": "Zhōngguó",
      "meaning": "China",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -407,6 +427,7 @@
      "hanzi": "美国",
      "pinyin": "Měiguó",
      "meaning": "the United States",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -433,6 +454,7 @@
      "hanzi": "她",
      "pinyin": "tā",
      "meaning": "she; her",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -452,6 +474,7 @@
      "hanzi": "谁",
      "pinyin": "shéi",
      "meaning": "who; whom",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -471,6 +494,7 @@
      "hanzi": "的",
      "pinyin": "de",
      "meaning": "possessive/attributive particle",
+     "pos": "part",
      "type": "core",
      "note": null,
      "examples": [
@@ -490,6 +514,7 @@
      "hanzi": "汉语",
      "pinyin": "Hànyǔ",
      "meaning": "Chinese language",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -509,6 +534,7 @@
      "hanzi": "哪",
      "pinyin": "nǎ",
      "meaning": "which",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -528,6 +554,7 @@
      "hanzi": "国",
      "pinyin": "guó",
      "meaning": "country; nation",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -547,6 +574,7 @@
      "hanzi": "呢",
      "pinyin": "ne",
      "meaning": "particle used in questions/topic follow-up",
+     "pos": "part",
      "type": "core",
      "note": null,
      "examples": [
@@ -566,6 +594,7 @@
      "hanzi": "他",
      "pinyin": "tā",
      "meaning": "he; him",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -585,6 +614,7 @@
      "hanzi": "同学",
      "pinyin": "tóngxué",
      "meaning": "classmate",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -604,6 +634,7 @@
      "hanzi": "朋友",
      "pinyin": "péngyou",
      "meaning": "friend",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -630,6 +661,7 @@
      "hanzi": "家",
      "pinyin": "jiā",
      "meaning": "home; family",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -649,6 +681,7 @@
      "hanzi": "有",
      "pinyin": "yǒu",
      "meaning": "to have; there is/are",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -668,6 +701,7 @@
      "hanzi": "口",
      "pinyin": "kǒu",
      "meaning": "measure word for family members",
+     "pos": "mw",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -687,6 +721,7 @@
      "hanzi": "女儿",
      "pinyin": "nǚ'ér",
      "meaning": "daughter",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -706,6 +741,7 @@
      "hanzi": "几",
      "pinyin": "jǐ",
      "meaning": "how many; several",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -725,6 +761,7 @@
      "hanzi": "岁",
      "pinyin": "suì",
      "meaning": "years old",
+     "pos": "mw",
      "type": "core",
      "note": null,
      "examples": [
@@ -744,6 +781,7 @@
      "hanzi": "了",
      "pinyin": "le",
      "meaning": "particle indicating change/completion",
+     "pos": "part",
      "type": "core",
      "note": null,
      "examples": [
@@ -763,6 +801,7 @@
      "hanzi": "今年",
      "pinyin": "jīnnián",
      "meaning": "this year",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -782,6 +821,7 @@
      "hanzi": "多",
      "pinyin": "duō",
      "meaning": "many; much; how (with adjective)",
+     "pos": "a",
      "type": "core",
      "note": null,
      "examples": [
@@ -801,6 +841,7 @@
      "hanzi": "大",
      "pinyin": "dà",
      "meaning": "big; old (age)",
+     "pos": "a",
      "type": "core",
      "note": null,
      "examples": [
@@ -827,6 +868,7 @@
      "hanzi": "会",
      "pinyin": "huì",
      "meaning": "can; know how to",
+     "pos": "mv",
      "type": "core",
      "note": null,
      "examples": [
@@ -846,6 +888,7 @@
      "hanzi": "说",
      "pinyin": "shuō",
      "meaning": "to speak; to say",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -865,6 +908,7 @@
      "hanzi": "妈妈",
      "pinyin": "māma",
      "meaning": "mom; mother",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -884,6 +928,7 @@
      "hanzi": "菜",
      "pinyin": "cài",
      "meaning": "dish; vegetable",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -903,6 +948,7 @@
      "hanzi": "很",
      "pinyin": "hěn",
      "meaning": "very",
+     "pos": "adv",
      "type": "core",
      "note": null,
      "examples": [
@@ -922,6 +968,7 @@
      "hanzi": "好吃",
      "pinyin": "hǎochī",
      "meaning": "delicious; tasty",
+     "pos": "a",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -941,6 +988,7 @@
      "hanzi": "做",
      "pinyin": "zuò",
      "meaning": "to do; to make; to cook",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -960,6 +1008,7 @@
      "hanzi": "写",
      "pinyin": "xiě",
      "meaning": "to write",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -979,6 +1028,7 @@
      "hanzi": "汉字",
      "pinyin": "hànzì",
      "meaning": "Chinese character",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -998,6 +1048,7 @@
      "hanzi": "字",
      "pinyin": "zì",
      "meaning": "character; written word",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1017,6 +1068,7 @@
      "hanzi": "怎么",
      "pinyin": "zěnme",
      "meaning": "how",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -1036,6 +1088,7 @@
      "hanzi": "读",
      "pinyin": "dú",
      "meaning": "to read; to read aloud",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1062,6 +1115,7 @@
      "hanzi": "请",
      "pinyin": "qǐng",
      "meaning": "please; to invite",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1081,6 +1135,7 @@
      "hanzi": "问",
      "pinyin": "wèn",
      "meaning": "to ask",
+     "pos": "v",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -1100,6 +1155,7 @@
      "hanzi": "今天",
      "pinyin": "jīntiān",
      "meaning": "today",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1119,6 +1175,7 @@
      "hanzi": "号",
      "pinyin": "hào",
      "meaning": "date; number",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1138,6 +1195,7 @@
      "hanzi": "月",
      "pinyin": "yuè",
      "meaning": "month; moon",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1157,6 +1215,7 @@
      "hanzi": "星期",
      "pinyin": "xīngqī",
      "meaning": "week; day of the week",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1176,6 +1235,7 @@
      "hanzi": "昨天",
      "pinyin": "zuótiān",
      "meaning": "yesterday",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1195,6 +1255,7 @@
      "hanzi": "明天",
      "pinyin": "míngtiān",
      "meaning": "tomorrow",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1214,6 +1275,7 @@
      "hanzi": "去",
      "pinyin": "qù",
      "meaning": "to go",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1233,6 +1295,7 @@
      "hanzi": "学校",
      "pinyin": "xuéxiào",
      "meaning": "school",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1252,6 +1315,7 @@
      "hanzi": "看",
      "pinyin": "kàn",
      "meaning": "to look; to watch; to read",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1271,6 +1335,7 @@
      "hanzi": "书",
      "pinyin": "shū",
      "meaning": "book",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1297,6 +1362,7 @@
      "hanzi": "想",
      "pinyin": "xiǎng",
      "meaning": "to want; would like; to think",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1316,6 +1382,7 @@
      "hanzi": "喝",
      "pinyin": "hē",
      "meaning": "to drink",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1335,6 +1402,7 @@
      "hanzi": "茶",
      "pinyin": "chá",
      "meaning": "tea",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1354,6 +1422,7 @@
      "hanzi": "吃",
      "pinyin": "chī",
      "meaning": "to eat",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1373,6 +1442,7 @@
      "hanzi": "米饭",
      "pinyin": "mǐfàn",
      "meaning": "cooked rice; rice meal",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1392,6 +1462,7 @@
      "hanzi": "下午",
      "pinyin": "xiàwǔ",
      "meaning": "afternoon",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1411,6 +1482,7 @@
      "hanzi": "商店",
      "pinyin": "shāngdiàn",
      "meaning": "shop; store",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1430,6 +1502,7 @@
      "hanzi": "买",
      "pinyin": "mǎi",
      "meaning": "to buy",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1449,6 +1522,7 @@
      "hanzi": "个",
      "pinyin": "gè",
      "meaning": "general measure word",
+     "pos": "mw",
      "type": "core",
      "note": null,
      "examples": [
@@ -1468,6 +1542,7 @@
      "hanzi": "杯子",
      "pinyin": "bēizi",
      "meaning": "cup; glass",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1487,6 +1562,7 @@
      "hanzi": "这",
      "pinyin": "zhè",
      "meaning": "this",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -1506,6 +1582,7 @@
      "hanzi": "多少",
      "pinyin": "duōshao",
      "meaning": "how many; how much",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -1525,6 +1602,7 @@
      "hanzi": "钱",
      "pinyin": "qián",
      "meaning": "money",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1544,6 +1622,7 @@
      "hanzi": "块",
      "pinyin": "kuài",
      "meaning": "yuan; piece (colloquial measure word)",
+     "pos": "mw",
      "type": "core",
      "note": null,
      "examples": [
@@ -1563,6 +1642,7 @@
      "hanzi": "那",
      "pinyin": "nà",
      "meaning": "that",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -1589,6 +1669,7 @@
      "hanzi": "小",
      "pinyin": "xiǎo",
      "meaning": "small; little",
+     "pos": "a",
      "type": "core",
      "note": null,
      "examples": [
@@ -1608,6 +1689,7 @@
      "hanzi": "猫",
      "pinyin": "māo",
      "meaning": "cat",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1627,6 +1709,7 @@
      "hanzi": "在",
      "pinyin": "zài",
      "meaning": "to be at/in; at; in",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1646,6 +1729,7 @@
      "hanzi": "那儿",
      "pinyin": "nàr",
      "meaning": "there",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -1665,6 +1749,7 @@
      "hanzi": "狗",
      "pinyin": "gǒu",
      "meaning": "dog",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1684,6 +1769,7 @@
      "hanzi": "椅子",
      "pinyin": "yǐzi",
      "meaning": "chair",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1703,6 +1789,7 @@
      "hanzi": "下面",
      "pinyin": "xiàmiàn",
      "meaning": "below; under",
+     "pos": "n",
      "type": "core",
      "note": "下 (xià)",
      "examples": [
@@ -1722,6 +1809,7 @@
      "hanzi": "哪儿",
      "pinyin": "nǎr",
      "meaning": "where",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -1741,6 +1829,7 @@
      "hanzi": "工作",
      "pinyin": "gōngzuò",
      "meaning": "to work; work",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -1760,6 +1849,7 @@
      "hanzi": "儿子",
      "pinyin": "érzi",
      "meaning": "son",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1779,6 +1869,7 @@
      "hanzi": "医院",
      "pinyin": "yīyuàn",
      "meaning": "hospital",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1798,6 +1889,7 @@
      "hanzi": "医生",
      "pinyin": "yīshēng",
      "meaning": "doctor",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1817,6 +1909,7 @@
      "hanzi": "爸爸",
      "pinyin": "bàba",
      "meaning": "dad; father",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1843,6 +1936,7 @@
      "hanzi": "桌子",
      "pinyin": "zhuōzi",
      "meaning": "table; desk",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1862,6 +1956,7 @@
      "hanzi": "上",
      "pinyin": "shàng",
      "meaning": "on; above; up",
+     "pos": null,
      "type": "core",
      "note": null,
      "examples": [
@@ -1881,6 +1976,7 @@
      "hanzi": "电脑",
      "pinyin": "diànnǎo",
      "meaning": "computer",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1900,6 +1996,7 @@
      "hanzi": "和",
      "pinyin": "hé",
      "meaning": "and",
+     "pos": "conj",
      "type": "core",
      "note": null,
      "examples": [
@@ -1919,6 +2016,7 @@
      "hanzi": "本",
      "pinyin": "běn",
      "meaning": "measure word for books",
+     "pos": "mw",
      "type": "core",
      "note": null,
      "examples": [
@@ -1938,6 +2036,7 @@
      "hanzi": "里",
      "pinyin": "lǐ",
      "meaning": "inside; in",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1957,6 +2056,7 @@
      "hanzi": "前面",
      "pinyin": "qiánmiàn",
      "meaning": "in front; ahead",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1976,6 +2076,7 @@
      "hanzi": "后面",
      "pinyin": "hòumiàn",
      "meaning": "behind; at the back",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -1995,6 +2096,7 @@
      "hanzi": "这儿",
      "pinyin": "zhèr",
      "meaning": "here",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -2014,6 +2116,7 @@
      "hanzi": "没有",
      "pinyin": "méiyǒu",
      "meaning": "to not have; there is/are not",
+     "pos": "v",
      "type": "core",
      "note": "没 (méi)",
      "examples": [
@@ -2033,6 +2136,7 @@
      "hanzi": "能",
      "pinyin": "néng",
      "meaning": "can; may; be able to",
+     "pos": "mv",
      "type": "core",
      "note": null,
      "examples": [
@@ -2052,6 +2156,7 @@
      "hanzi": "坐",
      "pinyin": "zuò",
      "meaning": "to sit; to take (transport)",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2078,6 +2183,7 @@
      "hanzi": "现在",
      "pinyin": "xiànzài",
      "meaning": "now",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2097,6 +2203,7 @@
      "hanzi": "点",
      "pinyin": "diǎn",
      "meaning": "o'clock; point",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2116,6 +2223,7 @@
      "hanzi": "分",
      "pinyin": "fēn",
      "meaning": "minute",
+     "pos": "mw",
      "type": "core",
      "note": null,
      "examples": [
@@ -2135,6 +2243,7 @@
      "hanzi": "中午",
      "pinyin": "zhōngwǔ",
      "meaning": "noon",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2154,6 +2263,7 @@
      "hanzi": "吃饭",
      "pinyin": "chīfàn",
      "meaning": "to eat a meal",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2173,6 +2283,7 @@
      "hanzi": "时候",
      "pinyin": "shíhou",
      "meaning": "time; when",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2192,6 +2303,7 @@
      "hanzi": "回",
      "pinyin": "huí",
      "meaning": "to return; to go back",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2211,6 +2323,7 @@
      "hanzi": "我们",
      "pinyin": "wǒmen",
      "meaning": "we; us",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -2230,6 +2343,7 @@
      "hanzi": "电影",
      "pinyin": "diànyǐng",
      "meaning": "movie; film",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2249,6 +2363,7 @@
      "hanzi": "住",
      "pinyin": "zhù",
      "meaning": "to live; to stay",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2268,6 +2383,7 @@
      "hanzi": "前",
      "pinyin": "qián",
      "meaning": "before; ago; in front",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2287,6 +2403,7 @@
      "hanzi": "北京",
      "pinyin": "Běijīng",
      "meaning": "Beijing",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2313,6 +2430,7 @@
      "hanzi": "天气",
      "pinyin": "tiānqì",
      "meaning": "weather",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2332,6 +2450,7 @@
      "hanzi": "怎么样",
      "pinyin": "zěnmeyàng",
      "meaning": "how; how about",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -2351,6 +2470,7 @@
      "hanzi": "太",
      "pinyin": "tài",
      "meaning": "too; very",
+     "pos": "adv",
      "type": "core",
      "note": "太……了",
      "examples": [
@@ -2370,6 +2490,7 @@
      "hanzi": "热",
      "pinyin": "rè",
      "meaning": "hot",
+     "pos": "a",
      "type": "core",
      "note": null,
      "examples": [
@@ -2389,6 +2510,7 @@
      "hanzi": "冷",
      "pinyin": "lěng",
      "meaning": "cold",
+     "pos": "a",
      "type": "core",
      "note": null,
      "examples": [
@@ -2408,6 +2530,7 @@
      "hanzi": "下雨",
      "pinyin": "xiàyǔ",
      "meaning": "to rain",
+     "pos": "v",
      "type": "core",
      "note": "下 (xià) + 雨 (yǔ)",
      "examples": [
@@ -2427,6 +2550,7 @@
      "hanzi": "小姐",
      "pinyin": "xiǎojiě",
      "meaning": "Miss; young lady",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2446,6 +2570,7 @@
      "hanzi": "来",
      "pinyin": "lái",
      "meaning": "to come",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2465,6 +2590,7 @@
      "hanzi": "身体",
      "pinyin": "shēntǐ",
      "meaning": "body; health",
+     "pos": "n",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -2484,6 +2610,7 @@
      "hanzi": "爱",
      "pinyin": "ài",
      "meaning": "to love; to like very much",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2503,6 +2630,7 @@
      "hanzi": "些",
      "pinyin": "xiē",
      "meaning": "some; a few",
+     "pos": null,
      "type": "core",
      "note": null,
      "examples": [
@@ -2522,6 +2650,7 @@
      "hanzi": "水果",
      "pinyin": "shuǐguǒ",
      "meaning": "fruit",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2541,6 +2670,7 @@
      "hanzi": "水",
      "pinyin": "shuǐ",
      "meaning": "water",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2567,6 +2697,7 @@
      "hanzi": "喂",
      "pinyin": "wéi",
      "meaning": "hello (on the phone)",
+     "pos": "intj",
      "type": "core",
      "note": null,
      "examples": [
@@ -2586,6 +2717,7 @@
      "hanzi": "也",
      "pinyin": "yě",
      "meaning": "also; too",
+     "pos": "adv",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -2605,6 +2737,7 @@
      "hanzi": "学习",
      "pinyin": "xuéxí",
      "meaning": "to study; to learn",
+     "pos": "v",
      "type": "core",
      "note": "学 (xué)",
      "examples": [
@@ -2624,6 +2757,7 @@
      "hanzi": "上午",
      "pinyin": "shàngwǔ",
      "meaning": "morning",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2643,6 +2777,7 @@
      "hanzi": "睡觉",
      "pinyin": "shuìjiào",
      "meaning": "to sleep; go to bed",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2662,6 +2797,7 @@
      "hanzi": "电视",
      "pinyin": "diànshì",
      "meaning": "television; TV",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2681,6 +2817,7 @@
      "hanzi": "喜欢",
      "pinyin": "xǐhuan",
      "meaning": "to like",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2700,6 +2837,7 @@
      "hanzi": "给",
      "pinyin": "gěi",
      "meaning": "to; for; to give",
+     "pos": "prep",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -2719,6 +2857,7 @@
      "hanzi": "打电话",
      "pinyin": "dǎ diànhuà",
      "meaning": "to make a phone call",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2738,6 +2877,7 @@
      "hanzi": "吧",
      "pinyin": "ba",
      "meaning": "modal particle for suggestion/request",
+     "pos": "part",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -2764,6 +2904,7 @@
      "hanzi": "东西",
      "pinyin": "dōngxi",
      "meaning": "thing; stuff",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2783,6 +2924,7 @@
      "hanzi": "一点儿",
      "pinyin": "yìdiǎnr",
      "meaning": "a little; a bit",
+     "pos": null,
      "type": "core",
      "note": null,
      "examples": [
@@ -2802,6 +2944,7 @@
      "hanzi": "苹果",
      "pinyin": "píngguǒ",
      "meaning": "apple",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2821,6 +2964,7 @@
      "hanzi": "看见",
      "pinyin": "kànjiàn",
      "meaning": "to see",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2840,6 +2984,7 @@
      "hanzi": "先生",
      "pinyin": "xiānsheng",
      "meaning": "Mr.; sir; husband",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2859,6 +3004,7 @@
      "hanzi": "开",
      "pinyin": "kāi",
      "meaning": "to drive; to open; to start",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2878,6 +3024,7 @@
      "hanzi": "车",
      "pinyin": "chē",
      "meaning": "car; vehicle",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2897,6 +3044,7 @@
      "hanzi": "回来",
      "pinyin": "huílai",
      "meaning": "to come back; return",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -2916,6 +3064,7 @@
      "hanzi": "分钟",
      "pinyin": "fēnzhōng",
      "meaning": "minute",
+     "pos": "mw",
      "type": "core",
      "note": null,
      "examples": [
@@ -2935,6 +3084,7 @@
      "hanzi": "后",
      "pinyin": "hòu",
      "meaning": "after; later; behind",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2954,6 +3104,7 @@
      "hanzi": "衣服",
      "pinyin": "yīfu",
      "meaning": "clothes",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -2973,6 +3124,7 @@
      "hanzi": "漂亮",
      "pinyin": "piàoliang",
      "meaning": "beautiful; pretty",
+     "pos": "a",
      "type": "core",
      "note": null,
      "examples": [
@@ -2992,6 +3144,7 @@
      "hanzi": "啊",
      "pinyin": "a",
      "meaning": "modal particle expressing confirmation/emotion",
+     "pos": "part",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -3011,6 +3164,7 @@
      "hanzi": "少",
      "pinyin": "shǎo",
      "meaning": "few; little; less",
+     "pos": "a",
      "type": "core",
      "note": "不少 (bùshǎo)",
      "examples": [
@@ -3030,6 +3184,7 @@
      "hanzi": "这些",
      "pinyin": "zhèxiē",
      "meaning": "these",
+     "pos": "pron",
      "type": "core",
      "note": null,
      "examples": [
@@ -3049,6 +3204,7 @@
      "hanzi": "都",
      "pinyin": "dōu",
      "meaning": "all; both",
+     "pos": "adv",
      "type": "core",
      "note": null,
      "examples": [
@@ -3068,6 +3224,7 @@
      "hanzi": "张",
      "pinyin": "zhāng",
      "meaning": "measure word for flat objects",
+     "pos": "mw",
      "type": "core",
      "note": null,
      "examples": [
@@ -3094,6 +3251,7 @@
      "hanzi": "认识",
      "pinyin": "rènshi",
      "meaning": "to know; to recognize; to meet",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -3113,6 +3271,7 @@
      "hanzi": "年",
      "pinyin": "nián",
      "meaning": "year",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -3132,6 +3291,7 @@
      "hanzi": "大学",
      "pinyin": "dàxué",
      "meaning": "university; college",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -3151,6 +3311,7 @@
      "hanzi": "饭店",
      "pinyin": "fàndiàn",
      "meaning": "restaurant; hotel",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -3170,6 +3331,7 @@
      "hanzi": "出租车",
      "pinyin": "chūzūchē",
      "meaning": "taxi",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [
@@ -3189,6 +3351,7 @@
      "hanzi": "一起",
      "pinyin": "yìqǐ",
      "meaning": "together",
+     "pos": "adv",
      "type": "supplement",
      "note": null,
      "examples": [
@@ -3208,6 +3371,7 @@
      "hanzi": "高兴",
      "pinyin": "gāoxìng",
      "meaning": "happy; glad",
+     "pos": "a",
      "type": "core",
      "note": null,
      "examples": [
@@ -3227,6 +3391,7 @@
      "hanzi": "听",
      "pinyin": "tīng",
      "meaning": "to listen; to hear",
+     "pos": "v",
      "type": "core",
      "note": null,
      "examples": [
@@ -3246,6 +3411,7 @@
      "hanzi": "飞机",
      "pinyin": "fēijī",
      "meaning": "airplane",
+     "pos": "n",
      "type": "core",
      "note": null,
      "examples": [

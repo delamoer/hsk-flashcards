@@ -19,6 +19,24 @@ import openpyxl
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "data"
+POS_FILE = ROOT / "scripts" / "pos.tsv"
+
+
+def load_pos() -> dict:
+    """hanzi → 词性 code (from the hand-curated scripts/pos.tsv). Words absent
+    here get pos=None (blank on the card) — we only show POS we're sure of."""
+    pos = {}
+    if POS_FILE.exists():
+        for line in POS_FILE.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or "\t" not in line:
+                continue
+            h, code = line.split("\t", 1)
+            pos[h.strip()] = code.strip()
+    return pos
+
+
+POS = load_pos()
 
 # Each source entry:
 #   series    — course series ID (matches courses.js)
@@ -451,12 +469,14 @@ def convert(src):
             zh, en = clean(r[zh_i]), clean(r[en_i])
             if zh:
                 examples.append({"zh": zh, "en": en or ""})
+        hanzi = clean(r[col["hanzi"]])
         word = {
             "id": f"{id_prefix}-l{ln}-{idx}",
             "num": idx,
-            "hanzi": clean(r[col["hanzi"]]),
+            "hanzi": hanzi,
             "pinyin": clean(r[col["pinyin"]]),
             "meaning": clean(r[col["meaning"]]),
+            "pos": POS.get(hanzi),  # 词性 code (see scripts/pos.tsv); None = not yet tagged
             "type": classify_type(r[col["type"]]) if col["type"] is not None else None,
             "note": clean(r[col["note"]]) if col["note"] is not None else None,
             "examples": examples,
