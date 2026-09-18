@@ -47,7 +47,13 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   demand (kept out of the main bundle). Because of this, the data accessors are **async**:
   `getUnit` / `getLesson` / `allWords` / `everyWord()` / `searchAll()` all return Promises — views
   `await` them into a ref (with a small `loading` state). `matchWord()` stays sync/pure.
-  Word shape: `{ id, num, hanzi, pinyin, meaning, type("core"|"supplement"|null), note, examples:[{zh,en}] }`.
+  Word shape: `{ id, num, hanzi, pinyin, meaning, pos, type("core"|"supplement"|null), note, examples:[{zh,en}] }`.
+- **词性 (part of speech) is hand-curated, not in the xlsx.** `scripts/pos.tsv` (`hanzi<TAB>code`) is
+  the source of truth — ~4700 words tagged by hand (codes: `n v mv a adv pron num mw prep conj part
+  intj idiom`; bilingual labels in `src/data/pos.js`). `convert.py` reads it and sets each word's `pos`
+  (None when untagged — the card shows nothing rather than a wrong guess). `scripts/gen_pos_draft.py`
+  is a one-off bootstrap (auto-buckets closed-class words + "to …" verbs, leaves the rest for manual
+  review); edit `pos.tsv` by hand, not the draft. FlashCard shows `pos` as a bilingual chip (back, top-right).
 - **`src/data/meta.json` is generated too** (by `convert.py`): `{ "{series}-{unit}": { lessonCount,
   wordCount, idPrefix } }`. It's tiny and statically imported, so the home grid, progress rings, and
   Account/Admin totals render **without loading any word data**. `courseRegistry` (sync) is built from
