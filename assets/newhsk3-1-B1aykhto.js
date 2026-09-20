@@ -1,13 +1,13 @@
 const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"课文1",original:`王一飞：AI小语，你好！
 小语：王老师，你好！`,lines:[{name:"王一飞",zh:"AI小语，你好！",py:"AI Xiǎoyǔ, nǐ hǎo!",en:"AI Xiaoyu, hello!"},{name:"小语",zh:"王老师，你好！",py:"Wáng lǎoshī, nǐ hǎo!",en:"Hello, Teacher Wang!"}],vocab:{seg:[{t:"王一飞：AI小语，"},{b:1},{t:`！
-小语：王`},{b:2},{t:"，你好！"}],answers:["你好","老师"]},grammar:{before:"王一飞：",after:`！
+小语：王`},{b:2},{t:"，你好！"}],answers:["你好","老师"],tiles:{你好:{py:"nǐhǎo",en:"hello"},老师:{py:"lǎoshī",en:"teacher"}}},grammar:{before:"王一飞：",after:`！
 小语：王老师，你好！`,answer:"AI小语，你好",tokens:["AI","小语","你好"]},sentences:[{speaker:"王一飞",text:"AI小语，你好！",tokens:["AI","小语","你好"]},{speaker:"小语",text:"王老师，你好！",tokens:["王老师","你好"]}],note:"本课无单列语法讲解；以问候、称呼、感谢和告别等核心交际表达为重点"},{n:2,title:"课文2",original:`王一飞：大家好！
 陈天中：老师，您好！
 小语：你好！
 陈天中：你好，小语！`,lines:[{name:"王一飞",zh:"大家好！",py:"Dàjiā hǎo!",en:"Hello, everyone!"},{name:"陈天中",zh:"老师，您好！",py:"Lǎoshī, nín hǎo!",en:"Hello, Teacher!"},{name:"小语",zh:"你好！",py:"Nǐ hǎo!",en:"Hello!"},{name:"陈天中",zh:"你好，小语！",py:"Nǐ hǎo, Xiǎoyǔ!",en:"Hello, Xiaoyu!"}],vocab:{seg:[{t:"王一飞："},{b:1},{t:`好！
 陈天中：`},{b:2},{t:"，"},{b:3},{t:`好！
 小语：你好！
-陈天中：你好，小语！`}],answers:["大家","老师","您"]},grammar:{before:`王一飞：大家好！
+陈天中：你好，小语！`}],answers:["大家","老师","您"],tiles:{大家:{py:"dàjiā",en:"everyone"},老师:{py:"lǎoshī",en:"teacher"},您:{py:"nín",en:"you (polite)"}}},grammar:{before:`王一飞：大家好！
 陈天中：`,after:`！
 小语：你好！
 陈天中：你好，小语！`,answer:"老师，您好",tokens:["老师","您好"]},sentences:[{speaker:"王一飞",text:"大家好！",tokens:["大家","好"]},{speaker:"陈天中",text:"老师，您好！",tokens:["老师","您好"]},{speaker:"陈天中",text:"你好，小语！",tokens:["你好","小语"]}],note:"本课无单列语法讲解；以问候、称呼、感谢和告别等核心交际表达为重点"},{n:3,title:"课文3",original:`学生们：谢谢！
@@ -16,19 +16,19 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 学生们：老师，再见！`,lines:[{name:"学生们",zh:"谢谢！",py:"Xièxie!",en:"Thank you!"},{name:"小语",zh:"不客气！",py:"Bú kèqi!",en:"You're welcome!"},{name:"王一飞",zh:"同学们，再见！",py:"Tóngxuémen, zàijiàn!",en:"Goodbye, students!"},{name:"学生们",zh:"老师，再见！",py:"Lǎoshī, zàijiàn!",en:"Goodbye, Teacher!"}],vocab:{seg:[{t:"学生们："},{b:1},{t:`！
 小语：`},{b:2},{t:`！
 王一飞：`},{b:3},{t:"，"},{b:4},{t:`！
-学生们：老师，再见！`}],answers:["谢谢","不客气","同学们","再见"]},grammar:{before:`学生们：谢谢！
+学生们：老师，再见！`}],answers:["谢谢","不客气","同学们","再见"],tiles:{谢谢:{py:"xièxie",en:"thank you; thanks"},不客气:{py:"bú kèqi",en:"you're welcome"},同学们:{py:"tóngxuémen",en:"classmates (plural)"},再见:{py:"zàijiàn",en:"goodbye"}}},grammar:{before:`学生们：谢谢！
 小语：`,after:`！
 王一飞：同学们，再见！
 学生们：老师，再见！`,answer:"不客气",tokens:["不","客气"]},sentences:[{speaker:"王一飞",text:"同学们，再见！",tokens:["同学们","再见"]},{speaker:"学生们",text:"老师，再见！",tokens:["老师","再见"]}],note:"本课无单列语法讲解；以问候、称呼、感谢和告别等核心交际表达为重点"}]},{num:2,name:"我叫李文",texts:[{n:1,title:"课文1",original:`王一飞：请问，你叫什么名字？
 陈天中：我叫陈天中。`,lines:[{name:"王一飞",zh:"请问，你叫什么名字？",py:"Qǐngwèn, nǐ jiào shénme míngzi?",en:"Excuse me, what's your name?"},{name:"陈天中",zh:"我叫陈天中。",py:"Wǒ jiào Chén Tiānzhōng.",en:"My name is Chen Tianzhong."}],vocab:{seg:[{t:"王一飞："},{b:1},{t:"，你"},{b:2},{b:3},{b:4},{t:`？
-陈天中：我叫陈天中。`}],answers:["请问","叫","什么","名字"]},grammar:{before:"王一飞：请问，",after:`？
+陈天中：我叫陈天中。`}],answers:["请问","叫","什么","名字"],tiles:{请问:{py:"qǐngwèn",en:"excuse me; may I ask"},叫:{py:"jiào",en:"to be called; to call"},什么:{py:"shénme",en:"what"},名字:{py:"míngzi",en:"name"}}},grammar:{before:"王一飞：请问，",after:`？
 陈天中：我叫陈天中。`,answer:"你叫什么名字",tokens:["你","叫","什么","名字"]},sentences:[{speaker:"王一飞",text:"请问，你叫什么名字？",tokens:["请问","你","叫","什么","名字"]},{speaker:"陈天中",text:"我叫陈天中。",tokens:["我","叫","陈","天","中"]}],note:"汉语的基本语序"},{n:2,title:"课文2",original:`陈天中：你好，安妮！
 白家月：你好，陈天中！我不是安妮，我是白家月。
 陈天中：对不起！
 白家月：没关系！`,lines:[{name:"陈天中",zh:"你好，安妮！",py:"Nǐ hǎo, Ānnī!",en:"Hello, Annie!"},{name:"白家月",zh:"你好，陈天中！我不是安妮，我是白家月。",py:"Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè.",en:"Hello, Chen Tianzhong! I'm not Annie, I'm Bai Jiayue."},{name:"陈天中",zh:"对不起！",py:"Duìbuqǐ!",en:"Sorry!"},{name:"白家月",zh:"没关系！",py:"Méi guānxi!",en:"It's okay!"}],vocab:{seg:[{t:`陈天中：你好，安妮！
 白家月：你好，陈天中！我`},{b:1},{t:`安妮，我是白家月。
 陈天中：`},{b:2},{t:`！
-白家月：`},{b:3},{t:"！"}],answers:["不是","对不起","没关系"]},grammar:{before:`陈天中：你好，安妮！
+白家月：`},{b:3},{t:"！"}],answers:["不是","对不起","没关系"],tiles:{不是:{py:"bú shì",en:"no; is not"},对不起:{py:"duìbuqǐ",en:"sorry"},没关系:{py:"méi guānxi",en:"it doesn't matter; that's okay"}}},grammar:{before:`陈天中：你好，安妮！
 白家月：你好，陈天中！`,after:`。
 陈天中：对不起！
 白家月：没关系！`,answer:"我不是安妮，我是白家月",tokens:["我","不是","安妮","我","是","白家月"]},sentences:[{speaker:"陈天中",text:"你好，安妮！",tokens:["你好","安妮"]},{speaker:"白家月",text:"你好，陈天中！我不是安妮，我是白家月。",tokens:["你好","陈","天","中","我","不是","安妮","我","是","白家月"]}],note:"汉语的基本语序"},{n:3,title:"课文3",original:`李文：你好！我叫李文。
@@ -37,19 +37,19 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 白家月：认识你我也很高兴。`,lines:[{name:"李文",zh:"你好！我叫李文。",py:"Nǐ hǎo! Wǒ jiào Lǐ Wén.",en:"Hello! My name is Li Wen."},{name:"白家月",zh:"你好！我叫白家月。",py:"Nǐ hǎo! Wǒ jiào Bái Jiāyuè.",en:"Hello! My name is Bai Jiayue."},{name:"李文",zh:"很高兴认识你。",py:"Hěn gāoxìng rènshi nǐ.",en:"Nice to meet you."},{name:"白家月",zh:"认识你我也很高兴。",py:"Rènshi nǐ wǒ yě hěn gāoxìng.",en:"Nice to meet you too."}],vocab:{seg:[{t:`李文：你好！我叫李文。
 白家月：你好！我叫白家月。
 李文：很`},{b:1},{b:2},{t:`你。
-白家月：认识你我也很高兴。`}],answers:["高兴","认识"]},grammar:{before:"李文：你好！",after:`。
+白家月：认识你我也很高兴。`}],answers:["高兴","认识"],tiles:{高兴:{py:"gāoxìng",en:"happy; glad"},认识:{py:"rènshi",en:"to know; to recognize; to meet"}}},grammar:{before:"李文：你好！",after:`。
 白家月：你好！我叫白家月。
 李文：很高兴认识你。
 白家月：认识你我也很高兴。`,answer:"我叫李文",tokens:["我","叫","李文"]},sentences:[{speaker:"李文",text:"你好！我叫李文。",tokens:["你好","我","叫","李文"]},{speaker:"白家月",text:"你好！我叫白家月。",tokens:["你好","我","叫","白家月"]},{speaker:"李文",text:"很高兴认识你。",tokens:["很","高兴","认识","你"]},{speaker:"白家月",text:"认识你我也很高兴。",tokens:["认识","你","我","也","很","高兴"]}],note:"汉语的基本语序"}]},{num:3,name:"我是中国人",texts:[{n:1,title:"课文1",original:`李文：我是中国人。
 白家月：我是法国人。我的中文老师也是中国人。`,lines:[{name:"李文",zh:"我是中国人。",py:"Wǒ shì Zhōngguórén.",en:"I'm Chinese."},{name:"白家月",zh:"我是法国人。我的中文老师也是中国人。",py:"Wǒ shì Fǎguórén. Wǒ de Zhōngwén lǎoshī yě shì Zhōngguórén.",en:"I'm French. My Chinese teacher is Chinese too."}],vocab:{seg:[{t:"李文：我是"},{b:1},{t:`。
-白家月：我是`},{b:2},{t:"。我的"},{b:3},{b:4},{t:"也是中国人。"}],answers:["中国人","法国人","中文","老师"]},grammar:{before:"李文：",after:`。
+白家月：我是`},{b:2},{t:"。我的"},{b:3},{b:4},{t:"也是中国人。"}],answers:["中国人","法国人","中文","老师"],tiles:{中国人:{py:"Zhōngguórén",en:"Chinese (person)"},法国人:{py:"Fǎguórén",en:"French (person)"},中文:{py:"Zhōngwén",en:"Chinese language"},老师:{py:"lǎoshī",en:"teacher"}}},grammar:{before:"李文：",after:`。
 白家月：我是法国人。我的中文老师也是中国人。`,answer:"我是中国人",tokens:["我","是","中国","人"]},sentences:[{speaker:"李文",text:"我是中国人。",tokens:["我","是","中国人"]},{speaker:"白家月",text:"我是法国人。我的中文老师也是中国人。",tokens:["我","是","法国人","我","的","中文","老师","也","是","中国人"]}],note:"“是”字句；结构助词“的”；用“吗”的是非问句"},{n:2,title:"课文2",original:`安妮：这是谁？
 陈天中：这是我女朋友。
 安妮：你女朋友是哪国人？
 陈天中：她也是泰国人。`,lines:[{name:"安妮",zh:"这是谁？",py:"Zhè shì shéi?",en:"Who is this?"},{name:"陈天中",zh:"这是我女朋友。",py:"Zhè shì wǒ nǚpéngyou.",en:"This is my girlfriend."},{name:"安妮",zh:"你女朋友是哪国人？",py:"Nǐ nǚpéngyou shì nǎ guó rén?",en:"What country is your girlfriend from?"},{name:"陈天中",zh:"她也是泰国人。",py:"Tā yě shì Tàiguórén.",en:"She's Thai too."}],vocab:{seg:[{t:"安妮：这是"},{b:1},{t:`？
 陈天中：这是我`},{b:2},{t:`。
 安妮：你女朋友是`},{b:3},{t:`？
-陈天中：她也是`},{b:4},{t:"。"}],answers:["谁","女朋友","哪国人","泰国人"]},grammar:{before:`安妮：这是谁？
+陈天中：她也是`},{b:4},{t:"。"}],answers:["谁","女朋友","哪国人","泰国人"],tiles:{谁:{py:"shéi",en:"who; whom"},女朋友:{py:"nǚpéngyou",en:"girlfriend"},哪国人:{py:"nǎ guó rén",en:"from which country"},泰国人:{py:"Tàiguórén",en:"Thai (person)"}}},grammar:{before:`安妮：这是谁？
 陈天中：这是我女朋友。
 安妮：`,after:`？
 陈天中：她也是泰国人。`,answer:"你女朋友是哪国人",tokens:["你","女朋友","是","哪","国","人"]},sentences:[{speaker:"安妮",text:"这是谁？",tokens:["这","是","谁"]},{speaker:"陈天中",text:"这是我女朋友。",tokens:["这","是","我","女朋友"]},{speaker:"安妮",text:"你女朋友是哪国人？",tokens:["你","女朋友","是","哪国人"]},{speaker:"陈天中",text:"她也是泰国人。",tokens:["她","也","是","泰国人"]}],note:"“是”字句；结构助词“的”；用“吗”的是非问句"},{n:3,title:"课文3",original:`王一雪：喂，一飞！
@@ -62,7 +62,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一雪：你`},{b:2},{t:"还"},{b:3},{t:`吗？
 王一飞：对。还很忙。你也很忙吗？
 王一雪：我不太忙。我们很`},{b:4},{t:`你。
-王一飞：我也想你们。`}],answers:["姐姐","工作","忙","想"]},grammar:{before:`王一雪：喂，一飞！
+王一飞：我也想你们。`}],answers:["姐姐","工作","忙","想"],tiles:{姐姐:{py:"jiějie",en:"older sister"},工作:{py:"gōngzuò",en:"to work; work"},忙:{py:"máng",en:"busy"},想:{py:"xiǎng",en:"to want; would like; to think"}}},grammar:{before:`王一雪：喂，一飞！
 王一飞：姐姐！
 王一雪：你工作还忙吗？
 王一飞：对。还很忙。`,after:`？
@@ -73,7 +73,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一雪：她有二十个学生。`,lines:[{name:"刘明",zh:"一飞忙吗？",py:"Yīfēi máng ma?",en:"Is Yifei busy?"},{name:"王一雪",zh:"她很忙。",py:"Tā hěn máng.",en:"She's very busy."},{name:"刘明",zh:"她有多少个学生？",py:"Tā yǒu duōshao ge xuésheng?",en:"How many students does she have?"},{name:"王一雪",zh:"她有二十个学生。",py:"Tā yǒu èrshí ge xuésheng.",en:"She has twenty students."}],vocab:{seg:[{t:"刘明：一飞"},{b:1},{t:`吗？
 王一雪：她很忙。
 刘明：她有`},{b:2},{t:"个"},{b:3},{t:`？
-王一雪：她有二十个学生。`}],answers:["忙","多少","学生"]},grammar:{before:`刘明：一飞忙吗？
+王一雪：她有二十个学生。`}],answers:["忙","多少","学生"],tiles:{忙:{py:"máng",en:"busy"},多少:{py:"duōshao",en:"how many; how much"},学生:{py:"xuésheng",en:"student"}}},grammar:{before:`刘明：一飞忙吗？
 王一雪：她很忙。
 刘明：她有多少个学生？
 王一雪：`,after:"。",answer:"她有二十个学生",tokens:["她","有","二十个","学生"]},sentences:[{speaker:"刘明",text:"一飞忙吗？",tokens:["一","飞","忙","吗"]},{speaker:"王一雪",text:"她很忙。",tokens:["她","很","忙"]},{speaker:"刘明",text:"她有多少个学生？",tokens:["她","有","多少","个","学生"]},{speaker:"王一雪",text:"她有二十个学生。",tokens:["她","有","二十个","学生"]}],note:"“有”字句（1）；数字的表达；语气助词“呢”（1）；名量词和名量结构"},{n:2,title:"课文2",original:`王一雪：我有两个哥哥。你呢？
@@ -82,7 +82,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 杨同乐：我家有四口人，爸爸、妈妈、妹妹和我。`,lines:[{name:"王一雪",zh:"我有两个哥哥。你呢？",py:"Wǒ yǒu liǎng ge gēge. Nǐ ne?",en:"I have two older brothers. How about you?"},{name:"杨同乐",zh:"我没有哥哥。",py:"Wǒ méiyǒu gēge.",en:"I don't have any older brothers."},{name:"王一雪",zh:"你家有几口人？",py:"Nǐ jiā yǒu jǐ kǒu rén?",en:"How many people are in your family?"},{name:"杨同乐",zh:"我家有四口人，爸爸、妈妈、妹妹和我。",py:"Wǒ jiā yǒu sì kǒu rén, bàba, māma, mèimei hé wǒ.",en:"There are four people in my family: dad, mom, little sister, and me."}],vocab:{seg:[{t:"王一雪：我有两个"},{b:1},{t:`。你呢？
 杨同乐：我`},{b:2},{t:`哥哥。
 王一雪：你`},{b:3},{t:"有"},{b:4},{t:`？
-杨同乐：我家有四口人，爸爸、妈妈、`},{b:5},{t:"和我。"}],answers:["哥哥","没有","家","几口人","妹妹"]},grammar:{before:`王一雪：我有两个哥哥。你呢？
+杨同乐：我家有四口人，爸爸、妈妈、`},{b:5},{t:"和我。"}],answers:["哥哥","没有","家","几口人","妹妹"],tiles:{哥哥:{py:"gēge",en:"older brother"},没有:{py:"méiyǒu",en:"to not have; there is/are not"},家:{py:"jiā",en:"home; family"},几口人:{py:"jǐ kǒu rén",en:"how many people (in a family)"},妹妹:{py:"mèimei",en:"younger sister"}}},grammar:{before:`王一雪：我有两个哥哥。你呢？
 杨同乐：我没有哥哥。
 王一雪：`,after:`？
 杨同乐：我家有四口人，爸爸、妈妈、妹妹和我。`,answer:"你家有几口人",tokens:["你家","有","几口","人"]},sentences:[{speaker:"王一雪",text:"我有两个哥哥。你呢？",tokens:["我","有","两个","哥哥","你","呢"]},{speaker:"杨同乐",text:"我没有哥哥。",tokens:["我","没有","哥哥"]},{speaker:"王一雪",text:"你家有几口人？",tokens:["你家","有","几口人"]},{speaker:"杨同乐",text:"我家有四口人，爸爸、妈妈、妹妹和我。",tokens:["我家","有","四","口","人","爸爸","妈妈","妹妹","和","我"]}],note:"“有”字句（1）；数字的表达；语气助词“呢”（1）；名量词和名量结构"},{n:3,title:"课文3",original:`杨同乐：这是您儿子吗？
@@ -95,7 +95,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 杨同乐：您儿子`},{b:4},{t:`？
 王一雪：他`},{b:5},{t:`五岁。
 杨同乐：您女儿`},{b:6},{t:`？
-王一雪：她今年十二。`}],answers:["儿子","孩子","女儿","几岁","今年","多大"]},grammar:{before:`杨同乐：这是您儿子吗？
+王一雪：她今年十二。`}],answers:["儿子","孩子","女儿","几岁","今年","多大"],tiles:{儿子:{py:"érzi",en:"son"},孩子:{py:"háizi",en:"child; children"},女儿:{py:"nǚ'ér",en:"daughter"},几岁:{py:"jǐ suì",en:"how old (for a child)"},今年:{py:"jīnnián",en:"this year"},多大:{py:"duō dà",en:"how old; how big"}}},grammar:{before:`杨同乐：这是您儿子吗？
 王一雪：是的。我有两个孩子，一个儿子，一个女儿。
 杨同乐：您儿子几岁？
 王一雪：他今年五岁。
@@ -106,7 +106,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 刘明：星期日。今天我休息。`,lines:[{name:"王一雪",zh:"今天几号？",py:"Jīntiān jǐ hào?",en:"What's the date today?"},{name:"刘明",zh:"今天9月8号。",py:"Jīntiān jiǔ yuè bā hào.",en:"Today is September 8th."},{name:"王一雪",zh:"星期几？",py:"Xīngqī jǐ?",en:"What day of the week is it?"},{name:"刘明",zh:"星期日。今天我休息。",py:"Xīngqīrì. Jīntiān wǒ xiūxi.",en:"Sunday. I'm off today."}],vocab:{seg:[{t:"王一雪："},{b:1},{t:"几"},{b:2},{t:`？
 刘明：今天9月8号。
 王一雪：`},{b:3},{t:`几？
-刘明：星期日。今天我`},{b:4},{t:"。"}],answers:["今天","号","星期","休息"]},grammar:{before:`王一雪：今天几号？
+刘明：星期日。今天我`},{b:4},{t:"。"}],answers:["今天","号","星期","休息"],tiles:{今天:{py:"jīntiān",en:"today"},号:{py:"hào",en:"date; number"},星期:{py:"xīngqī",en:"week; day of the week"},休息:{py:"xiūxi",en:"to rest"}}},grammar:{before:`王一雪：今天几号？
 刘明：`,after:`。
 王一雪：星期几？
 刘明：星期日。今天我休息。`,answer:"今天9月8号",tokens:["今天","9","月","8","号"]},sentences:[{speaker:"王一雪",text:"今天几号？",tokens:["今天","几号"]},{speaker:"刘明",text:"今天9月8号。",tokens:["今天","9","月","8","号"]},{speaker:"王一雪",text:"星期几？",tokens:["星期","几"]},{speaker:"刘明",text:"星期日。今天我休息。",tokens:["星期日","今天","我","休息"]}],note:"时间的表达（1）；名词谓语句；能愿动词“会”"},{n:2,title:"课文2",original:`王一雪：你会做饭吗？
@@ -115,7 +115,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 杨同乐：我会做面条儿、饺子，也会做一些菜。星期天我也做饭。`,lines:[{name:"王一雪",zh:"你会做饭吗？",py:"Nǐ huì zuò fàn ma?",en:"Can you cook?"},{name:"杨同乐",zh:"我会做。",py:"Wǒ huì zuò.",en:"Yes, I can."},{name:"王一雪",zh:"你会做什么？",py:"Nǐ huì zuò shénme?",en:"What can you cook?"},{name:"杨同乐",zh:"我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",py:"Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",en:"I can make noodles and dumplings, and some dishes too. I cook on Sundays as well."}],vocab:{seg:[{t:"王一雪：你会"},{b:1},{t:`吗？
 杨同乐：我会做。
 王一雪：你会做什么？
-杨同乐：我会做`},{b:2},{t:"、"},{b:3},{t:"，也会做"},{b:4},{b:5},{t:"。星期天我也做饭。"}],answers:["做饭","面条儿","饺子","一些","菜"]},grammar:{before:"王一雪：",after:`？
+杨同乐：我会做`},{b:2},{t:"、"},{b:3},{t:"，也会做"},{b:4},{b:5},{t:"。星期天我也做饭。"}],answers:["做饭","面条儿","饺子","一些","菜"],tiles:{做饭:{py:"zuòfàn",en:"to cook"},面条儿:{py:"miàntiáor",en:"noodles"},饺子:{py:"jiǎozi",en:"dumpling"},一些:{py:"yìxiē",en:"some; a few"},菜:{py:"cài",en:"dish; vegetable"}}},grammar:{before:"王一雪：",after:`？
 杨同乐：我会做。
 王一雪：你会做什么？
 杨同乐：我会做面条儿、饺子，也会做一些菜。星期天我也做饭。`,answer:"你会做饭吗",tokens:["你","会","做饭","吗"]},sentences:[{speaker:"王一雪",text:"你会做饭吗？",tokens:["你","会","做饭","吗"]},{speaker:"杨同乐",text:"我会做。",tokens:["我","会","做"]},{speaker:"王一雪",text:"你会做什么？",tokens:["你","会","做","什么"]},{speaker:"杨同乐",text:"我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",tokens:["我","会","做","面条儿","饺子","也","会","做","一些","菜","星期天","我","也","做饭"]}],note:"时间的表达（1）；名词谓语句；能愿动词“会”"},{n:3,title:"课文3",original:`王一雪：同乐，下班吗？
@@ -128,7 +128,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一雪：这是你的`},{b:2},{b:3},{t:`吗？
 杨同乐：是的，是我的新电脑。
 王一雪：真`},{b:4},{t:`！
-杨同乐：我也很`},{b:5},{t:"它。"}],answers:["下班","新","电脑","好看","喜欢"]},grammar:{before:`王一雪：同乐，下班吗？
+杨同乐：我也很`},{b:5},{t:"它。"}],answers:["下班","新","电脑","好看","喜欢"],tiles:{下班:{py:"xiàbān",en:"to finish work"},新:{py:"xīn",en:"new"},电脑:{py:"diànnǎo",en:"computer"},好看:{py:"hǎokàn",en:"good-looking; nice to look at"},喜欢:{py:"xǐhuan",en:"to like"}}},grammar:{before:`王一雪：同乐，下班吗？
 杨同乐：下班。
 王一雪：`,after:`？
 杨同乐：是的，是我的新电脑。
@@ -139,7 +139,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 白家月：好的。`,lines:[{name:"李文",zh:"家月，你的手机号是多少？",py:"Jiāyuè, nǐ de shǒujī hào shì duōshao?",en:"Jiayue, what's your phone number?"},{name:"白家月",zh:"我的手机号是+33 601493190。",py:"Wǒ de shǒujī hào shì +33 601493190.",en:"My phone number is +33 601493190."},{name:"李文",zh:"我的手机号是+86 13552721160。",py:"Wǒ de shǒujī hào shì +86 13552721160.",en:"My phone number is +86 13552721160."},{name:"白家月",zh:"好的。",py:"Hǎo de.",en:"Okay."}],vocab:{seg:[{t:"李文：家月，你的"},{b:1},{b:2},{t:`是多少？
 白家月：我的手机号是+33 601493190。
 李文：我的手机号是+86 13552721160。
-白家月：好的。`}],answers:["手机","号"]},grammar:{before:"李文：家月，",after:`？
+白家月：好的。`}],answers:["手机","号"],tiles:{手机:{py:"shǒujī",en:"mobile phone"},号:{py:"hào",en:"date; number"}}},grammar:{before:"李文：家月，",after:`？
 白家月：我的手机号是+33 601493190。
 李文：我的手机号是+86 13552721160。
 白家月：好的。`,answer:"你的手机号是多少",tokens:["你","的","手机号","是","多少"]},sentences:[{speaker:"李文",text:"家月，你的手机号是多少？",tokens:["家","月","你","的","手机号","是","多少"]},{speaker:"白家月",text:"我的手机号是+33 601493190。",tokens:["我","的","手机号","是","+","3","3","6","0","1","4","9","3","1","9","0"]},{speaker:"李文",text:"我的手机号是+86 13552721160。",tokens:["我","的","手机号","是","+","8","6","1","3","5","5","2","7","2","1","1","6","0"]},{speaker:"白家月",text:"好的。",tokens:["好","的"]}],note:"能愿动词“想”；连动句（1）；疑问代词“怎么”"},{n:2,title:"课文2",original:`陈天中：家月，明天你去哪儿？
@@ -148,7 +148,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 白家月：我想买些牛奶。`,lines:[{name:"陈天中",zh:"家月，明天你去哪儿？",py:"Jiāyuè, míngtiān nǐ qù nǎr?",en:"Jiayue, where are you going tomorrow?"},{name:"白家月",zh:"我想去超市买东西。",py:"Wǒ xiǎng qù chāoshì mǎi dōngxi.",en:"I want to go to the supermarket to buy some things."},{name:"陈天中",zh:"你去超市买什么？",py:"Nǐ qù chāoshì mǎi shénme?",en:"What are you going to buy at the supermarket?"},{name:"白家月",zh:"我想买些牛奶。",py:"Wǒ xiǎng mǎi xiē niúnǎi.",en:"I want to buy some milk."}],vocab:{seg:[{t:"陈天中：家月，"},{b:1},{t:`你去哪儿？
 白家月：我想去`},{b:2},{b:3},{b:4},{t:`。
 陈天中：你去超市买什么？
-白家月：我想买些`},{b:5},{t:"。"}],answers:["明天","超市","买","东西","牛奶"]},grammar:{before:`陈天中：家月，明天你去哪儿？
+白家月：我想买些`},{b:5},{t:"。"}],answers:["明天","超市","买","东西","牛奶"],tiles:{明天:{py:"míngtiān",en:"tomorrow"},超市:{py:"chāoshì",en:"supermarket"},买:{py:"mǎi",en:"to buy"},东西:{py:"dōngxi",en:"thing; stuff"},牛奶:{py:"niúnǎi",en:"milk"}}},grammar:{before:`陈天中：家月，明天你去哪儿？
 白家月：`,after:`。
 陈天中：你去超市买什么？
 白家月：我想买些牛奶。`,answer:"我想去超市买东西",tokens:["我","想","去","超市","买","东西"]},sentences:[{speaker:"陈天中",text:"家月，明天你去哪儿？",tokens:["家","月","明天","你","去","哪儿"]},{speaker:"白家月",text:"我想去超市买东西。",tokens:["我","想","去","超市","买","东西"]},{speaker:"陈天中",text:"你去超市买什么？",tokens:["你","去","超市","买","什么"]},{speaker:"白家月",text:"我想买些牛奶。",tokens:["我","想","买","些","牛奶"]}],note:"能愿动词“想”；连动句（1）；疑问代词“怎么”"},{n:3,title:"课文3",original:`王一雪：星期天我们去哪儿吃晚饭？
@@ -161,7 +161,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 刘小雪：那边的`},{b:3},{t:`非常好吃，我想吃包子。
 刘小明：妈妈，我想吃`},{b:4},{t:`，不想吃包子。
 王一雪：好的。我们怎么去？
-刘明：坐`},{b:5},{t:"去。"}],answers:["晚饭","饭店","包子","米饭","出租车"]},grammar:{before:`王一雪：星期天我们去哪儿吃晚饭？
+刘明：坐`},{b:5},{t:"去。"}],answers:["晚饭","饭店","包子","米饭","出租车"],tiles:{晚饭:{py:"wǎnfàn",en:"dinner"},饭店:{py:"fàndiàn",en:"restaurant; hotel"},包子:{py:"bāozi",en:"steamed stuffed bun"},米饭:{py:"mǐfàn",en:"cooked rice; rice meal"},出租车:{py:"chūzūchē",en:"taxi"}}},grammar:{before:`王一雪：星期天我们去哪儿吃晚饭？
 刘明：我还想去西安饭店。
 刘小雪：那边的包子非常好吃，我想吃包子。
 刘小明：妈妈，我想吃米饭，不想吃包子。
@@ -172,7 +172,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 安妮：好的，我们下午两点见吧。`,lines:[{name:"白家月",zh:"现在几点？",py:"Xiànzài jǐ diǎn?",en:"What time is it now?"},{name:"安妮",zh:"早上八点四十。",py:"Zǎoshang bā diǎn sìshí.",en:"8:40 in the morning."},{name:"白家月",zh:"我上午十点十分有课。",py:"Wǒ shàngwǔ shí diǎn shí fēn yǒu kè.",en:"I have class at 10:10 a.m."},{name:"安妮",zh:"好的，我们下午两点见吧。",py:"Hǎo de, wǒmen xiàwǔ liǎng diǎn jiàn ba.",en:"Okay, let's meet at 2 p.m."}],vocab:{seg:[{t:"白家月："},{b:1},{t:"几"},{b:2},{t:`？
 安妮：`},{b:3},{t:`八点四十。
 白家月：我`},{b:4},{t:"十点十分有"},{b:5},{t:`。
-安妮：好的，我们`},{b:6},{t:"两点见吧。"}],answers:["现在","点","早上","上午","课","下午"]},grammar:{before:`白家月：现在几点？
+安妮：好的，我们`},{b:6},{t:"两点见吧。"}],answers:["现在","点","早上","上午","课","下午"],tiles:{现在:{py:"xiànzài",en:"now"},点:{py:"diǎn",en:"o'clock; point"},早上:{py:"zǎoshang",en:"morning"},上午:{py:"shàngwǔ",en:"morning"},课:{py:"kè",en:"class; lesson"},下午:{py:"xiàwǔ",en:"afternoon"}}},grammar:{before:`白家月：现在几点？
 安妮：早上八点四十。
 白家月：我上午十点十分有课。
 安妮：好的，`,after:"。",answer:"我们下午两点见吧",tokens:["我们","下午","两点","见","吧"]},sentences:[{speaker:"白家月",text:"现在几点？",tokens:["现在","几","点"]},{speaker:"安妮",text:"早上八点四十。",tokens:["早上","八点","四","十"]},{speaker:"白家月",text:"我上午十点十分有课。",tokens:["我","上午","十点","十分","有","课"]},{speaker:"安妮",text:"好的，我们下午两点见吧。",tokens:["好","的","我们","下午","两点","见","吧"]}],note:"时间的表达（2）；语气助词“吧”（1）；副词、时间词语作状语的位置；语气助词“呢”（2）"},{n:2,title:"课文2",original:`李文：下午我想去电影院看电影，你去吗？
@@ -181,7 +181,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 白家月：我明天下午两点还上课呢，四点半下课。`,lines:[{name:"李文",zh:"下午我想去电影院看电影，你去吗？",py:"Xiàwǔ wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng, nǐ qù ma?",en:"I want to go to the cinema to watch a movie this afternoon; are you coming?"},{name:"白家月",zh:"我不想去，下午还有事。",py:"Wǒ bù xiǎng qù, xiàwǔ hái yǒu shì.",en:"I don't want to go; I have things to do this afternoon."},{name:"李文",zh:"好的。明天呢？",py:"Hǎo de. Míngtiān ne?",en:"Okay. How about tomorrow?"},{name:"白家月",zh:"我明天下午两点还上课呢，四点半下课。",py:"Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne, sì diǎn bàn xiàkè.",en:"I still have class at 2 p.m. tomorrow, and it ends at 4:30."}],vocab:{seg:[{t:"李文：下午我想去"},{b:1},{b:2},{t:`电影，你去吗？
 白家月：我不想去，下午还有`},{b:3},{t:`。
 李文：好的。明天呢？
-白家月：我明天下午两点还`},{b:4},{t:"呢，四点半"},{b:5},{t:"。"}],answers:["电影院","看","事","上课","下课"]},grammar:{before:`李文：下午我想去电影院看电影，你去吗？
+白家月：我明天下午两点还`},{b:4},{t:"呢，四点半"},{b:5},{t:"。"}],answers:["电影院","看","事","上课","下课"],tiles:{电影院:{py:"diànyǐngyuàn",en:"cinema"},看:{py:"kàn",en:"to look; to watch; to read"},事:{py:"shì",en:"thing; matter"},上课:{py:"shàngkè",en:"to attend class"},下课:{py:"xiàkè",en:"class ends; finish class"}}},grammar:{before:`李文：下午我想去电影院看电影，你去吗？
 白家月：我不想去，下午还有事。
 李文：好的。明天呢？
 白家月：`,after:"。",answer:"我明天下午两点还上课呢，四点半下课",tokens:["我","明天","下午","两点","还","上课","呢","四点","半","下课"]},sentences:[{speaker:"李文",text:"下午我想去电影院看电影，你去吗？",tokens:["下午","我","想","去","电影院","看","电影","你","去","吗"]},{speaker:"白家月",text:"我不想去，下午还有事。",tokens:["我","不","想","去","下午","还有","事"]},{speaker:"李文",text:"好的。明天呢？",tokens:["好","的","明天","呢"]},{speaker:"白家月",text:"我明天下午两点还上课呢，四点半下课。",tokens:["我","明天","下午","两点","还","上课","呢","四点","半","下课"]}],note:"时间的表达（2）；语气助词“吧”（1）；副词、时间词语作状语的位置；语气助词“呢”（2）"},{n:3,title:"课文3",original:`王一雪：喂，你在哪儿呢？
@@ -194,7 +194,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一雪：我`},{b:2},{t:`六点半下班。
 刘明：我八点去`},{b:3},{b:4},{t:`。
 王一雪：好的，你去`},{b:5},{t:`里买些菜吧。
-刘明：好，我十`},{b:6},{t:"后去。"}],answers:["家里","晚上","医院","上班","店","分钟"]},grammar:{before:`王一雪：喂，你在哪儿呢？
+刘明：好，我十`},{b:6},{t:"后去。"}],answers:["家里","晚上","医院","上班","店","分钟"],tiles:{家里:{py:"jiā li",en:"at home; in the house"},晚上:{py:"wǎnshang",en:"evening; night"},医院:{py:"yīyuàn",en:"hospital"},上班:{py:"shàngbān",en:"to go to work; start work"},店:{py:"diàn",en:"shop; store"},分钟:{py:"fēnzhōng",en:"minute"}}},grammar:{before:`王一雪：喂，你在哪儿呢？
 刘明：我在家里呢。
 王一雪：`,after:`。
 刘明：我八点去医院上班。
@@ -205,7 +205,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 陈天中：这只小猫真漂亮！`,lines:[{name:"白家月",zh:"房间外有一只小猫。",py:"Fángjiān wài yǒu yì zhī xiǎo māo.",en:"There's a kitten outside the room."},{name:"陈天中",zh:"我没看见，它在哪儿呢？",py:"Wǒ méi kànjiàn, tā zài nǎr ne?",en:"I don't see it; where is it?"},{name:"白家月",zh:"它在桌子下呢。",py:"Tā zài zhuōzi xià ne.",en:"It's under the table."},{name:"陈天中",zh:"这只小猫真漂亮！",py:"Zhè zhī xiǎo māo zhēn piàoliang!",en:"This kitten is so pretty!"}],vocab:{seg:[{t:"白家月："},{b:1},{b:2},{t:"有一只"},{b:3},{t:`。
 陈天中：我没`},{b:4},{t:`，它在哪儿呢？
 白家月：它在`},{b:5},{b:6},{t:`呢。
-陈天中：这只小猫真漂亮！`}],answers:["房间","外","小猫","看见","桌子","下"]},grammar:{before:`白家月：房间外有一只小猫。
+陈天中：这只小猫真漂亮！`}],answers:["房间","外","小猫","看见","桌子","下"],tiles:{房间:{py:"fángjiān",en:"room"},外:{py:"wài",en:"outside"},小猫:{py:"xiǎo māo",en:"kitten; little cat"},看见:{py:"kànjiàn",en:"to see"},桌子:{py:"zhuōzi",en:"table; desk"},下:{py:"xià",en:"to fall (rain/snow)"}}},grammar:{before:`白家月：房间外有一只小猫。
 陈天中：我没看见，它在哪儿呢？
 白家月：`,after:`。
 陈天中：这只小猫真漂亮！`,answer:"它在桌子下呢",tokens:["它","在","桌子","下","呢"]},sentences:[{speaker:"白家月",text:"房间外有一只小猫。",tokens:["房间","外","有","一","只","小猫"]},{speaker:"陈天中",text:"我没看见，它在哪儿呢？",tokens:["我","没","看见","它","在","哪儿","呢"]},{speaker:"白家月",text:"它在桌子下呢。",tokens:["它","在","桌子","下","呢"]},{speaker:"陈天中",text:"这只小猫真漂亮！",tokens:["这","只","小猫","真","漂亮"]}],note:"方位词；介词“在”；能愿动词“能”"},{n:2,title:"课文2",original:`白家月：我们在哪儿见呢？
@@ -214,7 +214,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 李文：我能到。我在学校吃午饭。`,lines:[{name:"白家月",zh:"我们在哪儿见呢？",py:"Wǒmen zài nǎr jiàn ne?",en:"Where should we meet?"},{name:"李文",zh:"在学校书店前见吧。",py:"Zài xuéxiào shūdiàn qián jiàn ba.",en:"Let's meet in front of the school bookstore."},{name:"白家月",zh:"好的。下午两点你能到吗？",py:"Hǎo de. Xiàwǔ liǎng diǎn nǐ néng dào ma?",en:"Okay. Can you get there by 2 p.m.?"},{name:"李文",zh:"我能到。我在学校吃午饭。",py:"Wǒ néng dào. Wǒ zài xuéxiào chī wǔfàn.",en:"I can. I'll have lunch at school."}],vocab:{seg:[{t:`白家月：我们在哪儿见呢？
 李文：在`},{b:1},{b:2},{b:3},{t:`见吧。
 白家月：好的。下午两点你`},{b:4},{t:`到吗？
-李文：我能到。我在学校吃`},{b:5},{t:"。"}],answers:["学校","书店","前","能","午饭"]},grammar:{before:`白家月：我们在哪儿见呢？
+李文：我能到。我在学校吃`},{b:5},{t:"。"}],answers:["学校","书店","前","能","午饭"],tiles:{学校:{py:"xuéxiào",en:"school"},书店:{py:"shūdiàn",en:"bookstore"},前:{py:"qián",en:"before; ago; in front"},能:{py:"néng",en:"can; may; be able to"},午饭:{py:"wǔfàn",en:"lunch"}}},grammar:{before:`白家月：我们在哪儿见呢？
 李文：在学校书店前见吧。
 白家月：好的。`,after:`？
 李文：我能到。我在学校吃午饭。`,answer:"下午两点你能到吗",tokens:["下午","两点","你","能","到","吗"]},sentences:[{speaker:"白家月",text:"我们在哪儿见呢？",tokens:["我们","在","哪儿","见","呢"]},{speaker:"李文",text:"在学校书店前见吧。",tokens:["在","学校","书店","前","见","吧"]},{speaker:"白家月",text:"好的。下午两点你能到吗？",tokens:["好","的","下午","两点","你","能","到","吗"]},{speaker:"李文",text:"我能到。我在学校吃午饭。",tokens:["我","能","到","我","在","学校","吃","午饭"]}],note:"方位词；介词“在”；能愿动词“能”"},{n:3,title:"课文3",original:`刘明：小胡，还没吃饭呢？
@@ -227,7 +227,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 刘明：`},{b:3},{t:"医院"},{b:4},{t:`多，医生非常忙。
 胡医生：是的。我爸爸也在医院`},{b:5},{t:`，他也非常忙。
 刘明：你家有两个医生？
-胡医生：对。`}],answers:["饭","医生","大","病人","工作"]},grammar:{before:`刘明：小胡，还没吃饭呢？
+胡医生：对。`}],answers:["饭","医生","大","病人","工作"],tiles:{饭:{py:"fàn",en:"meal; cooked rice"},医生:{py:"yīshēng",en:"doctor"},大:{py:"dà",en:"big; old (age)"},病人:{py:"bìngrén",en:"patient; sick person"},工作:{py:"gōngzuò",en:"to work; work"}}},grammar:{before:`刘明：小胡，还没吃饭呢？
 胡医生：没吃呢。
 刘明：大医院病人多，医生非常忙。
 胡医生：是的。`,after:`，他也非常忙。
@@ -238,7 +238,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 白家月：好的，晚上七点见！`,lines:[{name:"李文",zh:"学校前边有一家电影院。",py:"Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn.",en:"There's a cinema in front of the school."},{name:"白家月",zh:"对。我们晚上去那个电影院看电影吧。",py:"Duì. Wǒmen wǎnshang qù nàge diànyǐngyuàn kàn diànyǐng ba.",en:"Right. Let's go watch a movie at that cinema tonight."},{name:"李文",zh:"好！我们七点在电影院外边见，好吗？",py:"Hǎo! Wǒmen qī diǎn zài diànyǐngyuàn wàibian jiàn, hǎo ma?",en:"Great! Let's meet outside the cinema at seven, okay?"},{name:"白家月",zh:"好的，晚上七点见！",py:"Hǎo de, wǎnshang qī diǎn jiàn!",en:"Okay, see you at seven tonight!"}],vocab:{seg:[{t:"李文：学校"},{b:1},{t:"有一家"},{b:2},{t:`。
 白家月：对。我们晚上去那个电影院看电影吧。
 李文：好！我们七点在电影院`},{b:3},{t:`见，好吗？
-白家月：好的，晚上七点见！`}],answers:["前边","电影院","外边"]},grammar:{before:"李文：",after:`。
+白家月：好的，晚上七点见！`}],answers:["前边","电影院","外边"],tiles:{前边:{py:"qiánbian",en:"in front; ahead"},电影院:{py:"diànyǐngyuàn",en:"cinema"},外边:{py:"wàibian",en:"outside"}}},grammar:{before:"李文：",after:`。
 白家月：对。我们晚上去那个电影院看电影吧。
 李文：好！我们七点在电影院外边见，好吗？
 白家月：好的，晚上七点见！`,answer:"学校前边有一家电影院",tokens:["学校","前边","有","一家","电影院"]},sentences:[{speaker:"李文",text:"学校前边有一家电影院。",tokens:["学校","前边","有","一家","电影院"]},{speaker:"白家月",text:"对。我们晚上去那个电影院看电影吧。",tokens:["对","我们","晚上","去","那个","电影院","看","电影","吧"]},{speaker:"李文",text:"好！我们七点在电影院外边见，好吗？",tokens:["好","我们","七","点","在","电影院","外边","见","好","吗"]},{speaker:"白家月",text:"好的，晚上七点见！",tokens:["好","的","晚上","七","点","见"]}],note:"存现句（1）；时间词语和处所词语同时作状语的顺序；表示序数的“第”"},{n:2,title:"课文2",original:`白家月：椅子上有一本中文书，那是谁的书？
@@ -247,7 +247,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 陈天中：我明天上午在学校学习。`,lines:[{name:"白家月",zh:"椅子上有一本中文书，那是谁的书？",py:"Yǐzi shàng yǒu yì běn Zhōngwén shū, nà shì shéi de shū?",en:"There's a Chinese book on the chair; whose book is that?"},{name:"陈天中",zh:"是我的书，谢谢。这是我的第二本中文书。",py:"Shì wǒ de shū, xièxie. Zhè shì wǒ de dì-èr běn Zhōngwén shū.",en:"It's my book, thanks. This is my second Chinese book."},{name:"白家月",zh:"不客气。你明天上午在哪儿？",py:"Bú kèqi. Nǐ míngtiān shàngwǔ zài nǎr?",en:"You're welcome. Where will you be tomorrow morning?"},{name:"陈天中",zh:"我明天上午在学校学习。",py:"Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.",en:"I'll be studying at school tomorrow morning."}],vocab:{seg:[{t:"白家月："},{b:1},{t:"上有一"},{b:2},{t:"中文"},{b:3},{t:`，那是谁的书？
 陈天中：是我的书，谢谢。这是我的`},{b:4},{t:`二本中文书。
 白家月：不客气。你明天上午在哪儿？
-陈天中：我明天上午在学校`},{b:5},{t:"。"}],answers:["椅子","本","书","第","学习"]},grammar:{before:`白家月：椅子上有一本中文书，那是谁的书？
+陈天中：我明天上午在学校`},{b:5},{t:"。"}],answers:["椅子","本","书","第","学习"],tiles:{椅子:{py:"yǐzi",en:"chair"},本:{py:"běn",en:"measure word for books"},书:{py:"shū",en:"book"},第:{py:"dì",en:"ordinal prefix"},学习:{py:"xuéxí",en:"to study; to learn"}}},grammar:{before:`白家月：椅子上有一本中文书，那是谁的书？
 陈天中：是我的书，谢谢。`,after:`。
 白家月：不客气。你明天上午在哪儿？
 陈天中：我明天上午在学校学习。`,answer:"这是我的第二本中文书",tokens:["这","是","我","的","第二","本","中文","书"]},sentences:[{speaker:"白家月",text:"椅子上有一本中文书，那是谁的书？",tokens:["椅子","上","有","一","本","中文","书","那","是","谁","的","书"]},{speaker:"陈天中",text:"是我的书，谢谢。这是我的第二本中文书。",tokens:["是","我","的","书","谢谢","这","是","我","的","第二","本","中文","书"]},{speaker:"白家月",text:"不客气。你明天上午在哪儿？",tokens:["不客气","你","明天","上午","在","哪儿"]},{speaker:"陈天中",text:"我明天上午在学校学习。",tokens:["我","明天","上午","在","学校","学习"]}],note:"存现句（1）；时间词语和处所词语同时作状语的顺序；表示序数的“第”"},{n:3,title:"课文3",original:`王一雪：明天星期六，你做什么？
@@ -260,7 +260,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一雪：你唱歌很好听。
 杨同乐：谢谢！您星期六做什么？
 王一雪：我在家里做饭、看`},{b:6},{t:`，和孩子们、小狗玩。
-杨同乐：我也有一只小狗。`}],answers:["做","白天","读书","朋友","唱歌","电视"]},grammar:{before:`王一雪：明天星期六，你做什么？
+杨同乐：我也有一只小狗。`}],answers:["做","白天","读书","朋友","唱歌","电视"],tiles:{做:{py:"zuò",en:"to do; to make; to cook"},白天:{py:"báitiān",en:"daytime"},读书:{py:"dúshū",en:"to read; study"},朋友:{py:"péngyou",en:"friend"},唱歌:{py:"chànggē",en:"to sing"},电视:{py:"diànshì",en:"television; TV"}}},grammar:{before:`王一雪：明天星期六，你做什么？
 杨同乐：`,after:`。
 王一雪：你唱歌很好听。
 杨同乐：谢谢！您星期六做什么？
@@ -273,7 +273,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 `},{b:2},{t:"：有，杯子在"},{b:3},{t:`。
 王一雪：多少`},{b:4},{t:`一个？
 售货员：`},{b:5},{t:"五块钱一个，"},{b:6},{t:`十块钱一个。
-王一雪：我买这个吧。`}],answers:["杯子","售货员","这边","钱","这些","那些"]},grammar:{before:`王一雪：请问，有杯子吗？
+王一雪：我买这个吧。`}],answers:["杯子","售货员","这边","钱","这些","那些"],tiles:{杯子:{py:"bēizi",en:"cup; glass"},售货员:{py:"shòuhuòyuán",en:"salesperson"},这边:{py:"zhèbiān",en:"here; this side"},钱:{py:"qián",en:"money"},这些:{py:"zhèxiē",en:"these"},那些:{py:"nàxiē",en:"those"}}},grammar:{before:`王一雪：请问，有杯子吗？
 售货员：有，杯子在这边。
 王一雪：`,after:`？
 售货员：这些五块钱一个，那些十块钱一个。
@@ -285,7 +285,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 售货员：您想买什么？
 王一雪：我想买两`},{b:3},{b:4},{t:`。
 售货员：苹果三块五一斤。这些七块二，七块钱吧。
-王一雪：好的，这儿的苹果真`},{b:5},{t:"！"}],answers:["水果","少","斤","苹果","便宜"]},grammar:{before:"王一雪：",after:`！
+王一雪：好的，这儿的苹果真`},{b:5},{t:"！"}],answers:["水果","少","斤","苹果","便宜"],tiles:{水果:{py:"shuǐguǒ",en:"fruit"},少:{py:"shǎo",en:"few; little; less"},斤:{py:"jīn",en:"jin; 500 grams"},苹果:{py:"píngguǒ",en:"apple"},便宜:{py:"piányi",en:"cheap"}}},grammar:{before:"王一雪：",after:`！
 售货员：您想买什么？
 王一雪：我想买两斤苹果。
 售货员：苹果三块五一斤。这些七块二，七块钱吧。
@@ -299,7 +299,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一雪：小雪能穿，买一件吧。
 刘明：好的。小明能穿吗？
 王一雪：不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。
-刘明：好的。`}],answers:["商店","衣服","件","元","怎么样","贵"]},grammar:{before:"王一雪：这家商店衣服真多！",after:`？
+刘明：好的。`}],answers:["商店","衣服","件","元","怎么样","贵"],tiles:{商店:{py:"shāngdiàn",en:"shop; store"},衣服:{py:"yīfu",en:"clothes"},件:{py:"jiàn",en:"measure word for clothes/items"},元:{py:"yuán",en:"yuan"},怎么样:{py:"zěnmeyàng",en:"how; how about"},贵:{py:"guì",en:"expensive"}}},grammar:{before:"王一雪：这家商店衣服真多！",after:`？
 刘明：好看，也不贵。
 王一雪：小雪能穿，买一件吧。
 刘明：好的。小明能穿吗？
@@ -310,7 +310,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 李文：我没开车，坐车呢。`,lines:[{name:"王一飞",zh:"喂，李文，你什么时候能到饭店？",py:"Wéi, Lǐ Wén, nǐ shénme shíhou néng dào fàndiàn?",en:"Hello, Li Wen, when can you get to the restaurant?"},{name:"李文",zh:"还不知道，正在找呢。它是不是在超市后边？",py:"Hái bù zhīdào, zhèngzài zhǎo ne. Tā shì bu shì zài chāoshì hòubian?",en:"I'm not sure yet, still looking. Is it behind the supermarket?"},{name:"王一飞",zh:"是的。你开车没开车？",py:"Shì de. Nǐ kāichē méi kāichē?",en:"Yes. Are you driving?"},{name:"李文",zh:"我没开车，坐车呢。",py:"Wǒ méi kāichē, zuòchē ne.",en:"I'm not driving; I'm taking the bus."}],vocab:{seg:[{t:"王一飞：喂，李文，你什么"},{b:1},{t:"能到"},{b:2},{t:`？
 李文：还不`},{b:3},{t:"，"},{b:4},{b:5},{t:`呢。它是不是在超市后边？
 王一飞：是的。你`},{b:6},{t:`没开车？
-李文：我没开车，坐车呢。`}],answers:["时候","饭店","知道","正在","找","开车"]},grammar:{before:`王一飞：喂，李文，你什么时候能到饭店？
+李文：我没开车，坐车呢。`}],answers:["时候","饭店","知道","正在","找","开车"],tiles:{时候:{py:"shíhou",en:"time; when"},饭店:{py:"fàndiàn",en:"restaurant; hotel"},知道:{py:"zhīdào",en:"to know"},正在:{py:"zhèngzài",en:"in the process of; currently"},找:{py:"zhǎo",en:"to look for"},开车:{py:"kāichē",en:"to drive"}}},grammar:{before:`王一飞：喂，李文，你什么时候能到饭店？
 李文：还不知道，正在找呢。它是不是在超市后边？
 王一飞：是的。`,after:`？
 李文：我没开车，坐车呢。`,answer:"你开车没开车",tokens:["你","开车","没","开车"]},sentences:[{speaker:"王一飞",text:"喂，李文，你什么时候能到饭店？",tokens:["喂","李文","你","什么","时候","能","到","饭店"]},{speaker:"李文",text:"还不知道，正在找呢。它是不是在超市后边？",tokens:["还","不","知道","正在","找","呢","它","是不是","在","超市","后边"]},{speaker:"王一飞",text:"是的。你开车没开车？",tokens:["是","的","你","开车","没","开车"]},{speaker:"李文",text:"我没开车，坐车呢。",tokens:["我","没","开车","坐","车","呢"]}],note:"正反问；时间副词“在/正在”；能愿动词“要”"},{n:2,title:"课文2",original:`王一飞：你还在读大学吗？
@@ -319,7 +319,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 李文：非常忙，我学医，我们的课很多。`,lines:[{name:"王一飞",zh:"你还在读大学吗？",py:"Nǐ hái zài dú dàxué ma?",en:"Are you still in college?"},{name:"李文",zh:"对，我读大学呢，还是大学生。",py:"Duì, wǒ dú dàxué ne, hái shì dàxuéshēng.",en:"Yes, I'm in college; I'm still a college student."},{name:"王一飞",zh:"你们学习忙不忙？",py:"Nǐmen xuéxí máng bu máng?",en:"Are your studies keeping you busy?"},{name:"李文",zh:"非常忙，我学医，我们的课很多。",py:"Fēicháng máng, wǒ xué yī, wǒmen de kè hěn duō.",en:"Very busy. I study medicine, and we have a lot of classes."}],vocab:{seg:[{t:"王一飞：你还在"},{b:1},{b:2},{t:`吗？
 李文：对，我读大`},{b:3},{t:"呢，还是"},{b:4},{t:`。
 王一飞：你们学习忙不忙？
-李文：非常忙，我学`},{b:5},{t:"，我们的课很多。"}],answers:["读","大学","学","大学生","医"]},grammar:{before:"王一飞：",after:`？
+李文：非常忙，我学`},{b:5},{t:"，我们的课很多。"}],answers:["读","大学","学","大学生","医"],tiles:{读:{py:"dú",en:"to read; to read aloud"},大学:{py:"dàxué",en:"university; college"},学:{py:"xué",en:"to learn; study"},大学生:{py:"dàxuéshēng",en:"university student"},医:{py:"yī",en:"medicine; to treat (illness)"}}},grammar:{before:"王一飞：",after:`？
 李文：对，我读大学呢，还是大学生。
 王一飞：你们学习忙不忙？
 李文：非常忙，我学医，我们的课很多。`,answer:"你还在读大学吗",tokens:["你","还","在","读","大学","吗"]},sentences:[{speaker:"王一飞",text:"你还在读大学吗？",tokens:["你","还","在","读","大学","吗"]},{speaker:"李文",text:"对，我读大学呢，还是大学生。",tokens:["对","我","读","大学","呢","还是","大学生"]},{speaker:"王一飞",text:"你们学习忙不忙？",tokens:["你们","学习","忙","不","忙"]},{speaker:"李文",text:"非常忙，我学医，我们的课很多。",tokens:["非常","忙","我","学","医","我们","的","课","很多"]}],note:"正反问；时间副词“在/正在”；能愿动词“要”"},{n:3,title:"课文3",original:`刘明：弟弟起床没起床呢？
@@ -332,7 +332,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 刘明：还睡呢？他今天去不去`},{b:4},{t:`？
 刘小雪：去哪里？
 刘明：去超市。
-刘小雪：我`},{b:5},{b:6},{t:"他，他对我说，他不去，他今天要和小朋友玩。"}],answers:["弟弟","起床","睡觉","那里","昨天","问"]},grammar:{before:`刘明：弟弟起床没起床呢？
+刘小雪：我`},{b:5},{b:6},{t:"他，他对我说，他不去，他今天要和小朋友玩。"}],answers:["弟弟","起床","睡觉","那里","昨天","问"],tiles:{弟弟:{py:"dìdi",en:"younger brother"},起床:{py:"qǐchuáng",en:"to get up"},睡觉:{py:"shuìjiào",en:"to sleep; go to bed"},那里:{py:"nàlǐ",en:"there"},昨天:{py:"zuótiān",en:"yesterday"},问:{py:"wèn",en:"to ask"}}},grammar:{before:`刘明：弟弟起床没起床呢？
 刘小雪：没起床呢，还在睡觉。
 刘明：还睡呢？他今天去不去那里？
 刘小雪：去哪里？
@@ -343,7 +343,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一飞：有点儿大，我觉得很冷。`,lines:[{name:"王一雪",zh:"今天天气怎么样？",py:"Jīntiān tiānqì zěnmeyàng?",en:"How's the weather today?"},{name:"王一飞",zh:"这里的天不太好，下雨了。",py:"Zhèli de tiān bú tài hǎo, xià yǔ le.",en:"The weather here isn't great; it's raining."},{name:"王一雪",zh:"雨大吗？",py:"Yǔ dà ma?",en:"Is the rain heavy?"},{name:"王一飞",zh:"有点儿大，我觉得很冷。",py:"Yǒudiǎnr dà, wǒ juéde hěn lěng.",en:"A bit heavy; I feel quite cold."}],vocab:{seg:[{t:"王一雪：今天"},{b:1},{t:`怎么样？
 王一飞：这里的天不太好，`},{b:2},{t:`了。
 王一雪：`},{b:3},{t:`大吗？
-王一飞：有点儿大，我觉得很`},{b:4},{t:"。"}],answers:["天气","下雨","雨","冷"]},grammar:{before:`王一雪：今天天气怎么样？
+王一飞：有点儿大，我觉得很`},{b:4},{t:"。"}],answers:["天气","下雨","雨","冷"],tiles:{天气:{py:"tiānqì",en:"weather"},下雨:{py:"xiàyǔ",en:"to rain"},雨:{py:"yǔ",en:"rain"},冷:{py:"lěng",en:"cold"}}},grammar:{before:`王一雪：今天天气怎么样？
 王一飞：这里的天不太好，`,after:`。
 王一雪：雨大吗？
 王一飞：有点儿大，我觉得很冷。`,answer:"下雨了",tokens:["下雨","了"]},sentences:[{speaker:"王一雪",text:"今天天气怎么样？",tokens:["今天","天气","怎么样"]},{speaker:"王一飞",text:"这里的天不太好，下雨了。",tokens:["这里","的","天","不太","好","下雨","了"]},{speaker:"王一雪",text:"雨大吗？",tokens:["雨","大","吗"]},{speaker:"王一飞",text:"有点儿大，我觉得很冷。",tokens:["有点儿","大","我","觉得","很","冷"]}],note:"非主谓句；语气助词“了”（1）；“太……了”格式"},{n:2,title:"课文2",original:`王一雪：昨天下雪了。
@@ -352,7 +352,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 杨同乐：对，我昨天去医院看病了。`,lines:[{name:"王一雪",zh:"昨天下雪了。",py:"Zuótiān xià xuě le.",en:"It snowed yesterday."},{name:"杨同乐",zh:"是的，太冷了。",py:"Shì de, tài lěng le.",en:"Yes, it was too cold."},{name:"王一雪",zh:"你昨天没来公司，生病了？",py:"Nǐ zuótiān méi lái gōngsī, shēngbìng le?",en:"You didn't come to the office yesterday—were you sick?"},{name:"杨同乐",zh:"对，我昨天去医院看病了。",py:"Duì, wǒ zuótiān qù yīyuàn kànbìng le.",en:"Yes, I went to the hospital to see a doctor yesterday."}],vocab:{seg:[{t:"王一"},{b:1},{t:`：昨天下雪了。
 杨同乐：是的，太冷了。
 王一雪：你昨天没来`},{b:2},{t:"，"},{b:3},{t:`了？
-杨同乐：对，我昨天去医院`},{b:4},{t:"了。"}],answers:["雪","公司","生病","看病"]},grammar:{before:`王一雪：昨天下雪了。
+杨同乐：对，我昨天去医院`},{b:4},{t:"了。"}],answers:["雪","公司","生病","看病"],tiles:{雪:{py:"xuě",en:"snow"},公司:{py:"gōngsī",en:"company"},生病:{py:"shēngbìng",en:"to get sick"},看病:{py:"kànbìng",en:"to see a doctor; get medical treatment"}}},grammar:{before:`王一雪：昨天下雪了。
 杨同乐：是的，`,after:`。
 王一雪：你昨天没来公司，生病了？
 杨同乐：对，我昨天去医院看病了。`,answer:"太冷了",tokens:["太","冷","了"]},sentences:[{speaker:"王一雪",text:"昨天下雪了。",tokens:["昨天","下","雪","了"]},{speaker:"杨同乐",text:"是的，太冷了。",tokens:["是","的","太","冷","了"]},{speaker:"王一雪",text:"你昨天没来公司，生病了？",tokens:["你","昨天","没","来","公司","生病","了"]},{speaker:"杨同乐",text:"对，我昨天去医院看病了。",tokens:["对","我","昨天","去","医院","看病","了"]}],note:"非主谓句；语气助词“了”（1）；“太……了”格式"},{n:3,title:"课文3",original:`杨同乐：医生，我病了。
@@ -365,7 +365,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 杨同乐：我很冷。
 胡医生：好的，吃`},{b:2},{b:3},{t:"，今"},{b:4},{t:`休息半天吧。
 杨同乐：好的。
-胡医生：`},{b:5},{t:"家后"},{b:6},{t:"喝些热水。"}],answers:["病","一点儿","药","天","回","再"]},grammar:{before:"杨同乐：医生，",after:`。
+胡医生：`},{b:5},{t:"家后"},{b:6},{t:"喝些热水。"}],answers:["病","一点儿","药","天","回","再"],tiles:{病:{py:"bìng",en:"to be ill; illness"},一点儿:{py:"yìdiǎnr",en:"a little; a bit"},药:{py:"yào",en:"medicine"},天:{py:"tiān",en:"day"},回:{py:"huí",en:"to return; to go back"},再:{py:"zài",en:"again; then"}}},grammar:{before:"杨同乐：医生，",after:`。
 胡医生：我看看。你觉得怎么样？
 杨同乐：我很冷。
 胡医生：好的，吃一点儿药，今天休息半天吧。
@@ -376,7 +376,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一飞：我不知道。你可以打电话问一下。`,lines:[{name:"白家月",zh:"王老师，我可以再问您一个问题吗？",py:"Wáng lǎoshī, wǒ kěyǐ zài wèn nín yí ge wèntí ma?",en:"Teacher Wang, may I ask you another question?"},{name:"王一飞",zh:"可以。你有什么问题？",py:"Kěyǐ. Nǐ yǒu shénme wèntí?",en:"Sure. What's your question?"},{name:"白家月",zh:"那个小店卖不卖手机？",py:"Nàge xiǎo diàn mài bu mài shǒujī?",en:"Does that little shop sell phones?"},{name:"王一飞",zh:"我不知道。你可以打电话问一下。",py:"Wǒ bù zhīdào. Nǐ kěyǐ dǎ diànhuà wèn yíxià.",en:"I don't know. You can call and ask."}],vocab:{seg:[{t:"白家月：王老师，我"},{b:1},{t:`再问您一个问题吗？
 王一飞：可以。你有什么问题？
 白家月：那个小店`},{b:2},{t:`不卖手机？
-王一飞：我不知道。你可以打`},{b:3},{t:"问"},{b:4},{t:"。"}],answers:["可以","卖","电话","一下"]},grammar:{before:"白家月：王老师，",after:`？
+王一飞：我不知道。你可以打`},{b:3},{t:"问"},{b:4},{t:"。"}],answers:["可以","卖","电话","一下"],tiles:{可以:{py:"kěyǐ",en:"can; may"},卖:{py:"mài",en:"to sell"},电话:{py:"diànhuà",en:"telephone; phone"},一下:{py:"yíxià",en:"a little; once"}}},grammar:{before:"白家月：王老师，",after:`？
 王一飞：可以。你有什么问题？
 白家月：那个小店卖不卖手机？
 王一飞：我不知道。你可以打电话问一下。`,answer:"我可以再问您一个问题吗",tokens:["我","可以","再","问","您","一个","问题","吗"]},sentences:[{speaker:"白家月",text:"王老师，我可以再问您一个问题吗？",tokens:["王老师","我","可以","再","问","您","一个","问题","吗"]},{speaker:"王一飞",text:"可以。你有什么问题？",tokens:["可以","你","有","什么","问题"]},{speaker:"白家月",text:"那个小店卖不卖手机？",tokens:["那个","小","店","卖","不","卖","手机"]},{speaker:"王一飞",text:"我不知道。你可以打电话问一下。",tokens:["我","不","知道","你","可以","打电话","问","一下"]}],note:"能愿动词“可以”；“动词+一下”结构；双宾语句（1）"},{n:2,title:"课文2",original:`服务员：女士，请坐！您喝什么？
@@ -385,7 +385,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一雪：我还没吃早饭，再要这个面包和鸡蛋吧。`,lines:[{name:"服务员",zh:"女士，请坐！您喝什么？",py:"Nǚshì, qǐng zuò! Nín hē shénme?",en:"Please have a seat, ma'am! What would you like to drink?"},{name:"王一雪",zh:"我看一下。请给我一杯牛奶。",py:"Wǒ kàn yíxià. Qǐng gěi wǒ yì bēi niúnǎi.",en:"Let me have a look. A glass of milk, please."},{name:"服务员",zh:"好的。您还要什么？",py:"Hǎo de. Nín hái yào shénme?",en:"Okay. Anything else?"},{name:"王一雪",zh:"我还没吃早饭，再要这个面包和鸡蛋吧。",py:"Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba.",en:"I haven't had breakfast yet, so I'll also have this bread and egg."}],vocab:{seg:[{b:1},{t:"："},{b:2},{t:`，请坐！您喝什么？
 王一雪：我看一下。请给我一杯`},{b:3},{t:`。
 服务员：好的。您还要什么？
-王一雪：我还没吃`},{b:4},{t:"，再要这个"},{b:5},{t:"和"},{b:6},{t:"吧。"}],answers:["服务员","女士","牛奶","早饭","面包","鸡蛋"]},grammar:{before:`服务员：女士，请坐！您喝什么？
+王一雪：我还没吃`},{b:4},{t:"，再要这个"},{b:5},{t:"和"},{b:6},{t:"吧。"}],answers:["服务员","女士","牛奶","早饭","面包","鸡蛋"],tiles:{服务员:{py:"fúwùyuán",en:"waiter; waitress; attendant"},女士:{py:"nǚshì",en:"lady; madam"},牛奶:{py:"niúnǎi",en:"milk"},早饭:{py:"zǎofàn",en:"breakfast"},面包:{py:"miànbāo",en:"bread"},鸡蛋:{py:"jīdàn",en:"egg"}}},grammar:{before:`服务员：女士，请坐！您喝什么？
 王一雪：`,after:`。请给我一杯牛奶。
 服务员：好的。您还要什么？
 王一雪：我还没吃早饭，再要这个面包和鸡蛋吧。`,answer:"我看一下",tokens:["我","看","一下"]},sentences:[{speaker:"服务员",text:"女士，请坐！您喝什么？",tokens:["女士","请","坐","您","喝","什么"]},{speaker:"王一雪",text:"我看一下。请给我一杯牛奶。",tokens:["我","看","一下","请","给","我","一杯","牛奶"]},{speaker:"服务员",text:"好的。您还要什么？",tokens:["好","的","您","还要","什么"]},{speaker:"王一雪",text:"我还没吃早饭，再要这个面包和鸡蛋吧。",tokens:["我","还","没","吃","早饭","再","要","这个","面包","和","鸡蛋","吧"]}],note:"能愿动词“可以”；“动词+一下”结构；双宾语句（1）"},{n:3,title:"课文3",original:`服务员：先生，请坐！您要什么？
@@ -398,7 +398,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 服务员：好的。一斤饺子40个。
 刘明：40个太多了，我要`},{b:3},{t:`吧。
 服务员：半斤20个。您想喝什么？
-刘明：请给我一杯`},{b:4},{t:"吧。"}],answers:["先生","饺子","一半","茶"]},grammar:{before:`服务员：先生，请坐！您要什么？
+刘明：请给我一杯`},{b:4},{t:"吧。"}],answers:["先生","饺子","一半","茶"],tiles:{先生:{py:"xiānsheng",en:"Mr.; sir; husband"},饺子:{py:"jiǎozi",en:"dumpling"},一半:{py:"yíbàn",en:"half"},茶:{py:"chá",en:"tea"}}},grammar:{before:`服务员：先生，请坐！您要什么？
 刘明：我要一斤饺子。
 服务员：好的。一斤饺子40个。
 刘明：40个太多了，我要一半吧。
@@ -409,7 +409,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 陈天中：我看了一个电影。`,lines:[{name:"白家月",zh:"你们上火车后看见王老师了吗？",py:"Nǐmen shàng huǒchē hòu kànjiàn Wáng lǎoshī le ma?",en:"Did you see Teacher Wang after you got on the train?"},{name:"陈天中",zh:"没看见。中午车开后，有些人在看书，有些人睡觉了。",py:"Méi kànjiàn. Zhōngwǔ chē kāi hòu, yǒuxiē rén zài kàn shū, yǒuxiē rén shuìjiào le.",en:"No. After the train left at noon, some people were reading and some went to sleep."},{name:"白家月",zh:"你呢？",py:"Nǐ ne?",en:"And you?"},{name:"陈天中",zh:"我看了一个电影。",py:"Wǒ kàn le yí ge diànyǐng.",en:"I watched a movie."}],vocab:{seg:[{t:"白家月：你们上"},{b:1},{t:`后看见王老师了吗？
 陈天中：没看见。中午车开后，`},{b:2},{t:"人在看书，有些人"},{b:3},{t:`了。
 白家月：你呢？
-陈天中：我看了一个`},{b:4},{t:"。"}],answers:["火车","有些","睡觉","电影"]},grammar:{before:`白家月：你们上火车后看见王老师了吗？
+陈天中：我看了一个`},{b:4},{t:"。"}],answers:["火车","有些","睡觉","电影"],tiles:{火车:{py:"huǒchē",en:"train"},有些:{py:"yǒuxiē",en:"some; somewhat"},睡觉:{py:"shuìjiào",en:"to sleep; go to bed"},电影:{py:"diànyǐng",en:"movie; film"}}},grammar:{before:`白家月：你们上火车后看见王老师了吗？
 陈天中：没看见。中午车开后，有些人在看书，有些人睡觉了。
 白家月：你呢？
 陈天中：`,after:"。",answer:"我看了一个电影",tokens:["我","看","了","一个","电影"]},sentences:[{speaker:"白家月",text:"你们上火车后看见王老师了吗？",tokens:["你们","上","火车","后","看见","王老师","了","吗"]},{speaker:"陈天中",text:"没看见。中午车开后，有些人在看书，有些人睡觉了。",tokens:["没","看见","中午","车","开","后","有些","人","在","看书","有些","人","睡觉","了"]},{speaker:"白家月",text:"你呢？",tokens:["你","呢"]},{speaker:"陈天中",text:"我看了一个电影。",tokens:["我","看","了","一个","电影"]}],note:"动态助词“了”（2）；离合词（1）；范围副词“都”"},{n:2,title:"课文2",original:`王一飞：你们会说汉语了，也会写汉字了吗？
@@ -420,7 +420,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 白家月：我们都会写了。
 陈天中：老师，我`},{b:3},{t:`不见。
 王一飞：请大家`},{b:4},{b:5},{t:"！请听老师的问题：你们都会写"},{b:6},{t:`汉字了？
-陈天中：我会写这些字了，您看！`}],answers:["汉语","汉字","听","不要","说话","哪些"]},grammar:{before:`王一飞：你们会说汉语了，也会写汉字了吗？
+陈天中：我会写这些字了，您看！`}],answers:["汉语","汉字","听","不要","说话","哪些"],tiles:{汉语:{py:"Hànyǔ",en:"Chinese language"},汉字:{py:"hànzì",en:"Chinese character"},听:{py:"tīng",en:"to listen; to hear"},不要:{py:"búyào",en:"do not; don't"},说话:{py:"shuōhuà",en:"to talk"},哪些:{py:"nǎxiē",en:"which ones"}}},grammar:{before:`王一飞：你们会说汉语了，也会写汉字了吗？
 白家月：`,after:`。
 陈天中：老师，我听不见。
 王一飞：请大家不要说话！请听老师的问题：你们都会写哪些汉字了？
@@ -434,7 +434,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 刘明：我们家有了一个`},{b:4},{t:`。
 王一雪：还有了一个`},{b:5},{t:`。
 刘明：`},{b:6},{t:`后，他们都忙了。
-王一雪：是的。太晚了，睡觉吧。`}],answers:["明年","中学","小学","中学生","小学生","上学"]},grammar:{before:`刘明：明年女儿上中学。
+王一雪：是的。太晚了，睡觉吧。`}],answers:["明年","中学","小学","中学生","小学生","上学"],tiles:{明年:{py:"míngnián",en:"next year"},中学:{py:"zhōngxué",en:"middle school"},小学:{py:"xiǎoxué",en:"primary school"},中学生:{py:"zhōngxuéshēng",en:"middle school student"},小学生:{py:"xiǎoxuéshēng",en:"primary school student"},上学:{py:"shàngxué",en:"to go to school"}}},grammar:{before:`刘明：明年女儿上中学。
 王一雪：对。儿子也上小学了。
 刘明：我们家有了一个中学生。
 王一雪：还有了一个小学生。
@@ -445,7 +445,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 李文：我爱吃中国菜，也喜欢做。大家多吃点儿。`,lines:[{name:"李文",zh:"你们爱吃哪个菜？",py:"Nǐmen ài chī nǎge cài?",en:"Which dish do you like?"},{name:"白家月",zh:"我喜欢这个，也喜欢那个。",py:"Wǒ xǐhuan zhège, yě xǐhuan nàge.",en:"I like this one, and that one too."},{name:"陈天中",zh:"这些菜都好吃，还很好看。",py:"Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.",en:"These dishes are all delicious, and they look great too."},{name:"李文",zh:"我爱吃中国菜，也喜欢做。大家多吃点儿。",py:"Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò. Dàjiā duō chī diǎnr.",en:"I love Chinese food, and I like cooking it too. Everyone, help yourselves."}],vocab:{seg:[{t:"李文：你们"},{b:1},{t:"吃"},{b:2},{t:`菜？
 白家月：我喜欢这个，也喜欢那个。
 陈天中：这些菜都好吃，还很好看。
-李文：我爱吃中国菜，也喜欢做。大家多吃点儿。`}],answers:["爱","哪个"]},grammar:{before:`李文：你们爱吃哪个菜？
+李文：我爱吃中国菜，也喜欢做。大家多吃点儿。`}],answers:["爱","哪个"],tiles:{爱:{py:"ài",en:"to love; to like very much"},哪个:{py:"nǎge",en:"which one"}}},grammar:{before:`李文：你们爱吃哪个菜？
 白家月：`,after:`。
 陈天中：这些菜都好吃，还很好看。
 李文：我爱吃中国菜，也喜欢做。大家多吃点儿。`,answer:"我喜欢这个，也喜欢那个",tokens:["我","喜欢","这个","也","喜欢","那个"]},sentences:[{speaker:"李文",text:"你们爱吃哪个菜？",tokens:["你们","爱","吃","哪个","菜"]},{speaker:"白家月",text:"我喜欢这个，也喜欢那个。",tokens:["我","喜欢","这个","也","喜欢","那个"]},{speaker:"陈天中",text:"这些菜都好吃，还很好看。",tokens:["这些","菜","都","好吃","还","很","好看"]},{speaker:"李文",text:"我爱吃中国菜，也喜欢做。大家多吃点儿。",tokens:["我","爱","吃","中国","菜","也","喜欢","做","大家","多","吃","点儿"]}],note:"并列复句“……，还/也……”"},{n:2,title:"课文2",original:`李文：你们都想去哪儿？
@@ -454,7 +454,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 李文：我和王老师都是北京人，北京非常漂亮。`,lines:[{name:"李文",zh:"你们都想去哪儿？",py:"Nǐmen dōu xiǎng qù nǎr?",en:"Where do you all want to go?"},{name:"安妮",zh:"去年我和男朋友去了西安，今年我想去北京。",py:"Qùnián wǒ hé nánpéngyou qù le Xī'ān, jīnnián wǒ xiǎng qù Běijīng.",en:"Last year my boyfriend and I went to Xi'an; this year I want to go to Beijing."},{name:"白家月",zh:"前几年我去了西安，非常好玩儿。今年我也想去北京。",py:"Qián jǐ nián wǒ qù le Xī'ān, fēicháng hǎowánr. Jīnnián wǒ yě xiǎng qù Běijīng.",en:"A few years ago I went to Xi'an—it was great fun. This year I want to go to Beijing too."},{name:"李文",zh:"我和王老师都是北京人，北京非常漂亮。",py:"Wǒ hé Wáng lǎoshī dōu shì Běijīngrén, Běijīng fēicháng piàoliang.",en:"Teacher Wang and I are both from Beijing; Beijing is very beautiful."}],vocab:{seg:[{t:`李文：你们都想去哪儿？
 安妮：`},{b:1},{t:"我和"},{b:2},{t:`去了西安，今年我想去北京。
 白家月：前`},{b:3},{t:"年我去了西安，非常"},{b:4},{t:`。今年我也想去北京。
-李文：我和王老师都是北京人，北京非常漂亮。`}],answers:["去年","男朋友","几","好玩儿"]},grammar:{before:`李文：你们都想去哪儿？
+李文：我和王老师都是北京人，北京非常漂亮。`}],answers:["去年","男朋友","几","好玩儿"],tiles:{去年:{py:"qùnián",en:"last year"},男朋友:{py:"nánpéngyou",en:"boyfriend"},几:{py:"jǐ",en:"how many; several"},好玩儿:{py:"hǎowánr",en:"fun; interesting"}}},grammar:{before:`李文：你们都想去哪儿？
 安妮：去年我和男朋友去了西安，今年我想去北京。
 白家月：前几年我去了西安，非常好玩儿。`,after:`。
 李文：我和王老师都是北京人，北京非常漂亮。`,answer:"今年我也想去北京",tokens:["今年","我","也","想","去","北京"]},sentences:[{speaker:"李文",text:"你们都想去哪儿？",tokens:["你们","都","想","去","哪儿"]},{speaker:"安妮",text:"去年我和男朋友去了西安，今年我想去北京。",tokens:["去年","我","和","男朋友","去","了","西","安","今年","我","想","去","北京"]},{speaker:"白家月",text:"前几年我去了西安，非常好玩儿。今年我也想去北京。",tokens:["前","几","年","我","去","了","西","安","非常","好玩儿","今年","我","也","想","去","北京"]},{speaker:"李文",text:"我和王老师都是北京人，北京非常漂亮。",tokens:["我","和","王老师","都","是","北京","人","北京","非常","漂亮"]}],note:"并列复句“……，还/也……”"},{n:3,title:"课文3",original:`王一飞：你们的飞机到北京要几个小时？
@@ -467,7 +467,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一飞：我`},{b:3},{t:"都在北京，星期天我姐姐也有"},{b:4},{t:"，她可以去"},{b:5},{b:6},{t:`你们，你们也可以住我家。
 安妮：我们星期日早上八点到大兴机场，早不早？
 王一飞：不早。
-白家月：谢谢老师！那我们和您姐姐在大兴机场见！`}],answers:["飞机","小时","家人","时间","机场","接"]},grammar:{before:`王一飞：你们的飞机到北京要几个小时？
+白家月：谢谢老师！那我们和您姐姐在大兴机场见！`}],answers:["飞机","小时","家人","时间","机场","接"],tiles:{飞机:{py:"fēijī",en:"airplane"},小时:{py:"xiǎoshí",en:"hour"},家人:{py:"jiārén",en:"family member"},时间:{py:"shíjiān",en:"time"},机场:{py:"jīchǎng",en:"airport"},接:{py:"jiē",en:"to receive; to pick up"}}},grammar:{before:`王一飞：你们的飞机到北京要几个小时？
 白家月：九个小时。
 王一飞：我家人都在北京，星期天我姐姐也有时间，`,after:`。
 安妮：我们星期日早上八点到大兴机场，早不早？

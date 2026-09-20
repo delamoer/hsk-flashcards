@@ -6,7 +6,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：我早就想好了，请你吃饭、看电影、喝咖啡。
 小丽：请我？
 小刚：是啊，我已经找好饭馆了，电影票也买好了。
-小丽：我还没想好要不要跟你去呢。`}],answers:["周末","打算"]},grammar:{before:`小丽：周末你有什么打算？
+小丽：我还没想好要不要跟你去呢。`}],answers:["周末","打算"],tiles:{周末:{py:"zhōumò",en:"weekend"},打算:{py:"dǎsuàn",en:"to plan; plan"}}},grammar:{before:`小丽：周末你有什么打算？
 小刚：我早就`,after:`，请你吃饭、看电影、喝咖啡。
 小丽：请我？
 小刚：是啊，我已经找好饭馆了，电影票也买好了。
@@ -18,7 +18,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 儿子：都写完了。
 妈妈：明天不是有考试吗？你怎么一点儿也不`},{b:4},{t:`？
 儿子：我早就复习好了。
-妈妈：那也不能一直玩儿啊。`}],answers:["一直","游戏","作业","着急"]},grammar:{before:`妈妈：你一直玩儿电脑游戏，作业写完了吗？
+妈妈：那也不能一直玩儿啊。`}],answers:["一直","游戏","作业","着急"],tiles:{一直:{py:"yìzhí",en:"straight; continuously"},游戏:{py:"yóuxì",en:"game"},作业:{py:"zuòyè",en:"homework"},着急:{py:"zháojí",en:"worried; anxious"}}},grammar:{before:`妈妈：你一直玩儿电脑游戏，作业写完了吗？
 儿子：都写完了。
 妈妈：明天不是有考试吗？你怎么`,after:`？
 儿子：我早就复习好了。
@@ -28,7 +28,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：南方太热了，北方好一些，不冷也不热。`,lines:[{name:"小丽",zh:"下个月我去旅游，你能跟我一起去吗？",py:"Xià ge yuè wǒ qù lǚyóu, nǐ néng gēn wǒ yìqǐ qù ma?",en:"I'm traveling next month—can you come with me?"},{name:"小刚",zh:"我还没想好呢。你觉得哪儿最好玩儿？",py:"Wǒ hái méi xiǎnghǎo ne. Nǐ juéde nǎr zuì hǎowánr?",en:"I haven't decided yet. Where do you think is the most fun?"},{name:"小丽",zh:"南方啊，我们去年就是这个时候去的。",py:"Nánfāng a, wǒmen qùnián jiù shì zhège shíhou qù de.",en:"The south—we went at exactly this time last year."},{name:"小刚",zh:"南方太热了，北方好一些，不冷也不热。",py:"Nánfāng tài rè le, běifāng hǎo yìxiē, bù lěng yě bú rè.",en:"The south is too hot; the north is better—neither cold nor hot."}],vocab:{seg:[{t:`小丽：下个月我去旅游，你能跟我一起去吗？
 小刚：我还没想好呢。你觉得哪儿最好玩儿？
 小丽：`},{b:1},{t:`啊，我们去年就是这个时候去的。
-小刚：南方太热了，`},{b:2},{t:"好一些，不冷也不热。"}],answers:["南方","北方"]},grammar:{before:`小丽：下个月我去旅游，你能跟我一起去吗？
+小刚：南方太热了，`},{b:2},{t:"好一些，不冷也不热。"}],answers:["南方","北方"],tiles:{南方:{py:"nánfāng",en:"south; southern part"},北方:{py:"běifāng",en:"north; northern part"}}},grammar:{before:`小丽：下个月我去旅游，你能跟我一起去吗？
 `,after:`。你觉得哪儿最好玩儿？
 小丽：南方啊，我们去年就是这个时候去的。
 小刚：南方太热了，北方好一些，不冷也不热。`,answer:"小刚：我还没想好呢",tokens:["小刚","我","还","没","想好","呢"]},sentences:[{speaker:"小丽",text:"下个月我去旅游，你能跟我一起去吗？",tokens:["下个月","我","去","旅游","你","能","跟","我","一起","去","吗"]},{speaker:"小刚",text:"我还没想好呢。你觉得哪儿最好玩儿？",tokens:["我","还","没","想好","呢","你","觉得","哪儿","最好","玩儿"]},{speaker:"小丽",text:"南方啊，我们去年就是这个时候去的。",tokens:["南方","啊","我们","去年","就是","这个","时候","去","的"]},{speaker:"小刚",text:"南方太热了，北方好一些，不冷也不热。",tokens:["南方","太","热","了","北方","好","一些","不","冷","也","不","热"]}],note:"结果补语“好”：V + 好；“一……也/都 + 不/没……”表示完全否定；连词“那”表示“那么/既然这样”"},{n:4,title:"课文4",original:`小刚：水果、面包、茶都准备好了，我们还带什么？
@@ -39,7 +39,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：手机、电脑、`},{b:3},{t:`，一个也不能少。
 小刚：这些我昨天下午就准备好了。
 小丽：再多带几件衣服吧。
-小刚：我们是去旅游，不是`},{b:4},{t:"家，还是少带一些吧。"}],answers:["面包","带","地图","搬"]},grammar:{before:"小刚：水果、面包、茶都",after:`，我们还带什么？
+小刚：我们是去旅游，不是`},{b:4},{t:"家，还是少带一些吧。"}],answers:["面包","带","地图","搬"],tiles:{面包:{py:"miànbāo",en:"bread"},带:{py:"dài",en:"to bring; to take; to carry"},地图:{py:"dìtú",en:"map"},搬:{py:"bān",en:"to move; to carry"}}},grammar:{before:"小刚：水果、面包、茶都",after:`，我们还带什么？
 小丽：手机、电脑、地图，一个也不能少。
 小刚：这些我昨天下午就准备好了。
 小丽：再多带几件衣服吧。
@@ -53,7 +53,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：我现在`},{b:1},{t:"也"},{b:2},{t:"，"},{b:3},{t:`也疼。
 小刚：好，那边树多，我们过去坐一下吧。
 小丽：上来的时候我怎么没觉得这么累？
-小刚：上山`},{b:4},{t:"下山难，你不知道？"}],answers:["腿","疼","脚","容易"]},grammar:{before:`小丽：休息一下吧。
+小刚：上山`},{b:4},{t:"下山难，你不知道？"}],answers:["腿","疼","脚","容易"],tiles:{腿:{py:"tuǐ",en:"leg"},疼:{py:"téng",en:"to hurt; painful"},脚:{py:"jiǎo",en:"foot"},容易:{py:"róngyì",en:"easy"}}},grammar:{before:`小丽：休息一下吧。
 `,after:`？
 小丽：我现在腿也疼，脚也疼。
 小刚：好，那边树多，我们过去坐一下吧。
@@ -68,7 +68,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周太太：他去哪儿了？什么时候回来？
 秘书：他出去办事了，下午回来。
 周太太：回来了就让他给我打个电话。
-秘书：好的，他到了办公室我就告诉他。`}],answers:["太太","秘书","经理","办公室"]},grammar:{before:`周太太：喂，你好，请问周明在吗？
+秘书：好的，他到了办公室我就告诉他。`}],answers:["太太","秘书","经理","办公室"],tiles:{太太:{py:"tàitai",en:"wife; Mrs."},秘书:{py:"mìshū",en:"secretary"},经理:{py:"jīnglǐ",en:"manager"},办公室:{py:"bàngōngshì",en:"office"}}},grammar:{before:`周太太：喂，你好，请问周明在吗？
 秘书：周经理出去了，不在办公室。
 周太太：他去哪儿了？什么时候回来？
 秘书：他出去办事了，下午回来。
@@ -81,7 +81,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：没事，我出去叫`},{b:1},{t:`出租车就行了。
 小刚：那你等等，我上`},{b:2},{t:"去给你"},{b:3},{b:4},{t:`伞。
 小丽：好的，我跟你一起上去吧。
-小刚：你在这儿等吧，我拿了伞就下来。`}],answers:["辆","楼","拿","把"]},grammar:{before:"小刚：雨下得真大。",after:`？我送你吧。
+小刚：你在这儿等吧，我拿了伞就下来。`}],answers:["辆","楼","拿","把"],tiles:{辆:{py:"liàng",en:"measure word for vehicles"},楼:{py:"lóu",en:"building; floor"},拿:{py:"ná",en:"to take; to hold"},把:{py:"bǎ",en:"measure word for handled objects; disposal marker"}}},grammar:{before:"小刚：雨下得真大。",after:`？我送你吧。
 小丽：没事，我出去叫辆出租车就行了。
 小刚：那你等等，我上楼去给你拿把伞。
 小丽：好的，我跟你一起上去吧。
@@ -93,7 +93,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周明：你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？
 周太太：`},{b:3},{t:`我每天都运动。
 周明：但是你一点儿也没`},{b:4},{t:`！你做什么运动了？
-周太太：做饭啊。`}],answers:["太太","胖","其实","瘦"]},grammar:{before:`周太太：你看，我这么胖，怎么办呢？
+周太太：做饭啊。`}],answers:["太太","胖","其实","瘦"],tiles:{太太:{py:"tàitai",en:"wife; Mrs."},胖:{py:"pàng",en:"fat; overweight"},其实:{py:"qíshí",en:"actually; in fact"},瘦:{py:"shòu",en:"thin; slim"}}},grammar:{before:`周太太：你看，我这么胖，怎么办呢？
 周明：你每天晚上`,after:`，也不出去走走，能不胖吗？
 周太太：其实我每天都运动。
 周明：但是你一点儿也没瘦！你做什么运动了？
@@ -107,7 +107,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：没事，我们明天要去爬山。
 小丽：爬山的时候要`},{b:2},{t:`点儿。
 小刚：好，你也去吗？
-小丽：我不去，我有事。`}],answers:["还是","小心"]},grammar:{before:"小刚：明天是",after:`？
+小丽：我不去，我有事。`}],answers:["还是","小心"],tiles:{还是:{py:"háishi",en:"or; still"},小心:{py:"xiǎoxīn",en:"careful; be careful"}}},grammar:{before:"小刚：明天是",after:`？
 小丽：阴天，电视上说多云。怎么了？有事？
 小刚：没事，我们明天要去爬山。
 小丽：爬山的时候要小心点儿。
@@ -124,7 +124,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周明：这件衬衫怎么样？
 周太太：还不错，多少钱？
 周明：这上面写着320`},{b:3},{t:`。
-周太太：买一件。`}],answers:["周太太","那我们再","元"]},grammar:{before:`周太太：你觉得这条裤子怎么样？
+周太太：买一件。`}],answers:["周太太","那我们再","元"],tiles:{周太太:{py:"Zhōu tàitai",en:"Mrs. Zhou"},那我们再:{py:"nà wǒmen zài",en:"then let's … (do sth) again"},元:{py:"yuán",en:"yuan"}}},grammar:{before:`周太太：你觉得这条裤子怎么样？
 周明：我记得你已经有两条这样的裤子了。
 周太太：那我们再看看别的。
 周明：这件衬衫怎么样？
@@ -138,7 +138,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周明：西瓜吧。你看，这上面写着“西瓜不`},{b:1},{t:`不要钱”。
 周太太：那我们买一个大点儿的吧。
 周明：再买几个苹果。
-周太太：好啊，今天晚上`},{b:2},{t:"吃水果不吃饭！"}],answers:["甜","只"]},grammar:{before:`周太太：这些水果真新鲜，我们买西瓜还是苹果？
+周太太：好啊，今天晚上`},{b:2},{t:"吃水果不吃饭！"}],answers:["甜","只"],tiles:{甜:{py:"tián",en:"sweet"},只:{py:"zhǐ",en:"only; just"}}},grammar:{before:`周太太：这些水果真新鲜，我们买西瓜还是苹果？
 周明：西瓜吧。你看，这`,after:`“西瓜不甜不要钱”。
 周太太：那我们买一个大点儿的吧。
 周明：再买几个苹果。
@@ -150,7 +150,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：茶`},{b:3},{t:`咖啡都可以。你呢？你喝什么？
 小丽：我喝茶，茶是我的最爱。天冷了或者工作累了的时候，喝杯热茶会很`},{b:4},{t:`。
 小刚：你喜欢喝什么茶？
-小丽：花茶、绿茶、红茶，我都喜欢。`}],answers:["放","饮料","或者","舒服"]},grammar:{before:"小丽：",after:`，你喝什么？
+小丽：花茶、绿茶、红茶，我都喜欢。`}],answers:["放","饮料","或者","舒服"],tiles:{放:{py:"fàng",en:"to put; to place"},饮料:{py:"yǐnliào",en:"drink; beverage"},或者:{py:"huòzhě",en:"or (in statements)"},舒服:{py:"shūfu",en:"comfortable; well"}}},grammar:{before:"小丽：",after:`，你喝什么？
 小刚：茶或者咖啡都可以。你呢？你喝什么？
 小丽：我喝茶，茶是我的最爱。天冷了或者工作累了的时候，喝杯热茶会很舒服。
 小刚：你喜欢喝什么茶？
@@ -164,7 +164,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小明：照得不错，你们都是一个`},{b:3},{t:`的吗？
 马可：不是。那个`},{b:4},{t:`高又漂亮的女孩儿是二年级的。
 小明：旁边那个拿着书笑的人是谁？
-马可：那是我！`}],answers:["比赛","照片","年级","又"]},grammar:{before:`小明：这是你们比赛的照片吗？
+马可：那是我！`}],answers:["比赛","照片","年级","又"],tiles:{比赛:{py:"bǐsài",en:"competition; match"},照片:{py:"zhàopiàn",en:"photo"},年级:{py:"niánjí",en:"grade; year in school"},又:{py:"yòu",en:"again; also"}}},grammar:{before:`小明：这是你们比赛的照片吗？
 马可：是，这是我们比赛后照的。
 小明：照得不错，你们都是一个年级的吗？
 马可：不是。那个`,after:`的女孩儿是二年级的。
@@ -179,7 +179,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：我看她`},{b:4},{t:`笑着回答老师的问题。
 同学：她对每个人都笑，也常常对我笑。
 小丽：你是不是喜欢她啊？
-同学：喜欢她的人太多了，你看那些拿着鲜花站在门口的，都是等她的。`}],answers:["聪明","热情","努力","总是"]},grammar:{before:`小丽：你觉得小红怎么样？
+同学：喜欢她的人太多了，你看那些拿着鲜花站在门口的，都是等她的。`}],answers:["聪明","热情","努力","总是"],tiles:{聪明:{py:"cōngming",en:"smart; clever"},热情:{py:"rèqíng",en:"warm; enthusiastic"},努力:{py:"nǔlì",en:"hardworking; to work hard"},总是:{py:"zǒngshì",en:"always"}}},grammar:{before:`小丽：你觉得小红怎么样？
 同学：她又聪明又热情，也很努力。
 小丽：我看她总是笑着回答老师的问题。
 同学：她对每个人都笑，也常常对我笑。
@@ -192,7 +192,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：好啊，这家超市的`},{b:3},{t:`又便宜又好吃，一块只要2.99元。
 小刚：我们买两块，回家吃着蛋糕看电视，怎么样？
 小丽：好啊，我再去买一些喝的。
-小刚：喝着咖啡吃蛋糕，太好了！`}],answers:["饿","超市","蛋糕"]},grammar:{before:`小刚：我有点儿饿了，我们进超市买点儿东西吧。
+小刚：喝着咖啡吃蛋糕，太好了！`}],answers:["饿","超市","蛋糕"],tiles:{饿:{py:"è",en:"hungry"},超市:{py:"chāoshì",en:"supermarket"},蛋糕:{py:"dàngāo",en:"cake"}}},grammar:{before:`小刚：我有点儿饿了，我们进超市买点儿东西吧。
 小丽：好啊，这家超市的蛋糕又便宜又好吃，一块只要2.99元。
 小刚：我们买两块，回家`,after:`，怎么样？
 小丽：好啊，我再去买一些喝的。
@@ -208,7 +208,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 客人：她工作又`},{b:2},{t:`又热情。
 经理：您能再说说吗？
 客人：她总是笑着跟客人说话。
-经理：啊，我知道了，你说的是李小美吧？`}],answers:["年轻","认真","客人"]},grammar:{before:`经理：您好！您找谁？
+经理：啊，我知道了，你说的是李小美吧？`}],answers:["年轻","认真","客人"],tiles:{年轻:{py:"niánqīng",en:"young"},认真:{py:"rènzhēn",en:"serious; conscientious"},客人:{py:"kèrén",en:"guest; customer"}}},grammar:{before:`经理：您好！您找谁？
 客人：你们这儿是不是有一个又年轻又漂亮的服务员？
 经理：我们这儿年轻、漂亮的服务员有很多。
 客人：她工作又认真又热情。
@@ -224,7 +224,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 朋友：喝杯茶吧，这是我`},{b:2},{t:`你买的绿茶，很不错。
 小丽：谢谢，我要吃药，不喝茶了。
 朋友：那喝杯水吧。
-小丽：好的。`}],answers:["发烧","为"]},grammar:{before:`朋友：我听说你身体不舒服，怎么了？
+小丽：好的。`}],answers:["发烧","为"],tiles:{发烧:{py:"fāshāo",en:"to have a fever"},为:{py:"wéi",en:"to become"}}},grammar:{before:`朋友：我听说你身体不舒服，怎么了？
 小丽：前几天有点儿发烧，`,after:`。
 朋友：喝杯茶吧，这是我为你买的绿茶，很不错。
 小丽：谢谢，我要吃药，不喝茶了。
@@ -239,7 +239,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周太太：我儿子生病了，我要在家`},{b:1},{t:`他。
 张太太：他吃药了吗？要不要去医院？
 周太太：不用去医院，昨天吃了`},{b:2},{t:`药，现在好一些了。
-张太太：那我们下次再一起出去玩儿吧。`}],answers:["照顾","感冒"]},grammar:{before:"周太太：对不起，",after:`。
+张太太：那我们下次再一起出去玩儿吧。`}],answers:["照顾","感冒"],tiles:{照顾:{py:"zhàogù",en:"to take care of"},感冒:{py:"gǎnmào",en:"to catch a cold; cold"}}},grammar:{before:"周太太：对不起，",after:`。
 张太太：为什么？怎么了？
 周太太：我儿子生病了，我要在家照顾他。
 张太太：他吃药了吗？要不要去医院？
@@ -254,7 +254,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：我最喜欢`},{b:3},{t:"，因为我可以穿漂亮的"},{b:4},{t:`了。
 小刚：那我也喜欢夏天了。
 小丽：怎么？你也有漂亮的裙子？
-小刚：不，我喜欢看你穿漂亮的裙子。`}],answers:["季节","当然","夏天","裙子"]},grammar:{before:`小丽：你最喜欢哪个季节？
+小刚：不，我喜欢看你穿漂亮的裙子。`}],answers:["季节","当然","夏天","裙子"],tiles:{季节:{py:"jìjié",en:"season"},当然:{py:"dāngrán",en:"of course"},夏天:{py:"xiàtiān",en:"summer"},裙子:{py:"qúnzi",en:"skirt; dress"}}},grammar:{before:`小丽：你最喜欢哪个季节？
 小刚：当然是春天，天气不那么冷了，草和树都绿了，`,after:`。
 小丽：我最喜欢夏天，因为我可以穿漂亮的裙子了。
 小刚：那我也喜欢夏天了。
@@ -267,7 +267,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：谁说的？我觉得你越来越漂亮了。
 小丽：你看，这条裙子是去年买的，今年就不能穿了。
 小刚：那是因为你吃得太多了，少吃点儿吧。
-小丽：我做的饭越来越好吃，我能少吃吗？`}],answers:["最近","越"]},grammar:{before:"小丽：",after:`。
+小丽：我做的饭越来越好吃，我能少吃吗？`}],answers:["最近","越"],tiles:{最近:{py:"zuìjìn",en:"recently"},越:{py:"yuè",en:"the more...; increasingly"}}},grammar:{before:"小丽：",after:`。
 小刚：谁说的？我觉得你越来越漂亮了。
 小丽：你看，这条裙子是去年买的，今年就不能穿了。
 小刚：那是因为你吃得太多了，少吃点儿吧。
@@ -281,7 +281,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周明：我离不开眼镜，没有眼镜，我一个字也看不`},{b:3},{t:`。
 周太太：你去房间找找，是不是`},{b:4},{t:`放在桌子上了？
 周明：我怎么看得到啊？你快过来`},{b:5},{t:`啊。
-周太太：好吧，我帮你去找找。`}],answers:["眼镜","突然","清楚","刚才","帮忙"]},grammar:{before:`周明：我的眼镜呢？怎么突然找不到了？你看见了吗？
+周太太：好吧，我帮你去找找。`}],answers:["眼镜","突然","清楚","刚才","帮忙"],tiles:{眼镜:{py:"yǎnjìng",en:"glasses"},突然:{py:"tūrán",en:"suddenly"},清楚:{py:"qīngchu",en:"clear; clearly"},刚才:{py:"gāngcái",en:"just now"},帮忙:{py:"bāngmáng",en:"to help; do a favor"}}},grammar:{before:`周明：我的眼镜呢？怎么突然找不到了？你看见了吗？
 周太太：我没看见啊。
 周明：我离不开眼镜，没有眼镜，`,after:`。
 周太太：你去房间找找，是不是刚才放在桌子上了？
@@ -294,7 +294,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 儿子：刚做完，你呢？
 同学：今天这些题`},{b:1},{t:`难，我看不懂，不会做，你能帮我吗？
 儿子：电话里`},{b:2},{t:"不"},{b:3},{t:`，你来我家吧，我给你讲讲。
-同学：好啊，我`},{b:4},{t:"完了就过去。"}],answers:["特别","讲","明白","锻炼"]},grammar:{before:`同学：今天的作业你做完了吗？
+同学：好啊，我`},{b:4},{t:"完了就过去。"}],answers:["特别","讲","明白","锻炼"],tiles:{特别:{py:"tèbié",en:"especially; special"},讲:{py:"jiǎng",en:"to speak; to explain; to tell"},明白:{py:"míngbai",en:"to understand; clear"},锻炼:{py:"duànliàn",en:"to exercise"}}},grammar:{before:`同学：今天的作业你做完了吗？
 儿子：`,after:`，你呢？
 同学：今天这些题特别难，我看不懂，不会做，你能帮我吗？
 儿子：电话里讲不明白，你来我家吧，我给你讲讲。
@@ -308,7 +308,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：那你请她听`},{b:1},{t:`会吧，她喜欢听音乐。
 小刚：音乐会人太多，买不到票。
 同事：那去`},{b:2},{t:"走走，聊"},{b:3},{t:`吧。
-小刚：公园太大，多累啊。`}],answers:["音乐","公园","聊天儿"]},grammar:{before:`同事：你怎么有点儿不高兴？
+小刚：公园太大，多累啊。`}],answers:["音乐","公园","聊天儿"],tiles:{音乐:{py:"yīnyuè",en:"music"},公园:{py:"gōngyuán",en:"park"},聊天儿:{py:"liáotiānr",en:"to chat"}}},grammar:{before:`同事：你怎么有点儿不高兴？
 小刚：我想请小丽吃饭，但是找不到好饭馆。
 同事：那你请她听音乐会吧，她喜欢听音乐。
 小刚：音乐会人太多，`,after:`。
@@ -325,7 +325,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周明：没事，我只喝一杯。
 周太太：你还是喝杯`},{b:2},{t:"吧，可以睡得"},{b:3},{t:`好些。
 周明：好吧，牛奶呢？
-周太太：还没买呢。`}],answers:["咖啡","牛奶","更"]},grammar:{before:`周太太：你怎么还喝咖啡？
+周太太：还没买呢。`}],answers:["咖啡","牛奶","更"],tiles:{咖啡:{py:"kāfēi",en:"coffee"},牛奶:{py:"niúnǎi",en:"milk"},更:{py:"gèng",en:"more; even more"}}},grammar:{before:`周太太：你怎么还喝咖啡？
 周明：怎么了？
 周太太：你不是说晚上睡不着觉吗？
 周明：没事，我只喝一杯。
@@ -341,7 +341,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：她刚来北京吗？
 小刚：不，她在北京工作三年了。
 同事：`},{b:2},{t:`她在哪儿工作？
-小刚：她在`},{b:3},{t:"工作了两年以后来的我们公司。"}],answers:["同事","以前","银行"]},grammar:{before:`同事：那个漂亮的新同事是谁？
+小刚：她在`},{b:3},{t:"工作了两年以后来的我们公司。"}],answers:["同事","以前","银行"],tiles:{同事:{py:"tóngshì",en:"colleague"},以前:{py:"yǐqián",en:"before; formerly"},银行:{py:"yínháng",en:"bank"}}},grammar:{before:`同事：那个漂亮的新同事是谁？
 小刚：那是小丽。
 同事：她刚来北京吗？
 小刚：不，她`,after:`。
@@ -356,7 +356,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：你们唱了多`},{b:1},{t:`？
 小刚：我们唱了两个小时歌，晚上还去听音乐会了。
 同事：你们都对音乐`},{b:2},{t:`吗？
-小刚：她对音乐感兴趣，我对她更感兴趣。`}],answers:["久","感兴趣"]},grammar:{before:`同事：周末你跟小丽去哪儿玩儿了？
+小刚：她对音乐感兴趣，我对她更感兴趣。`}],answers:["久","感兴趣"],tiles:{久:{py:"jiǔ",en:"long time"},感兴趣:{py:"gǎn xìngqù",en:"to be interested in"}}},grammar:{before:`同事：周末你跟小丽去哪儿玩儿了？
 小刚：我们去唱歌了。
 同事：你们唱了多久？
 小刚：我们唱了两个小时歌，晚上还去听音乐会了。
@@ -371,7 +371,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：对啊，突然吗？
 同事：你们不是刚认识吗？
 小刚：我跟她都认识五年了。
-同事：你跟她结婚，那我怎么办啊？`}],answers:["结婚","欢迎"]},grammar:{before:`小刚：我跟小丽下个月结婚，到时候欢迎你来。
+同事：你跟她结婚，那我怎么办啊？`}],answers:["结婚","欢迎"],tiles:{结婚:{py:"jiéhūn",en:"to get married"},欢迎:{py:"huānyíng",en:"to welcome; welcome"}}},grammar:{before:`小刚：我跟小丽下个月结婚，到时候欢迎你来。
 同事：什么？结婚？
 小刚：对啊，突然吗？
 同事：你们不是刚认识吗？
@@ -386,7 +386,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：你不是说七点`},{b:2},{t:"来"},{b:3},{t:"我吗？你迟到了一"},{b:4},{t:`钟。
 小刚：现在不是七点半吗？
 小丽：已经`},{b:5},{t:`一刻八点了！我都在这儿坐了半个小时了。
-小刚：不是我迟到了，是你的表快了一刻钟。`}],answers:["迟到","半","接","刻","差"]},grammar:{before:`小丽：你看看手表，怎么迟到了？
+小刚：不是我迟到了，是你的表快了一刻钟。`}],answers:["迟到","半","接","刻","差"],tiles:{迟到:{py:"chídào",en:"to be late"},半:{py:"bàn",en:"half"},接:{py:"jiē",en:"to receive; to pick up"},刻:{py:"kè",en:"quarter of an hour"},差:{py:"chà",en:"to be short of; minus (time)"}}},grammar:{before:`小丽：你看看手表，怎么迟到了？
 小刚：没迟到啊。
 小丽：你不是说七点半来接我吗？你迟到了一刻钟。
 小刚：现在不是七点半吗？
@@ -401,7 +401,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：都不`},{b:2},{t:`吗？
 小丽：一个没有`},{b:3},{t:"，不方便。一个有电梯，但是在二十"},{b:4},{t:`。
 同事：二十层怎么了？
-小丽：太高了，往下看多`},{b:5},{t:"啊！"}],answers:["又","满意","电梯","层","害怕"]},grammar:{before:`同事：听说你最近打算买房子？
+小丽：太高了，往下看多`},{b:5},{t:"啊！"}],answers:["又","满意","电梯","层","害怕"],tiles:{又:{py:"yòu",en:"again; also"},满意:{py:"mǎnyì",en:"satisfied"},电梯:{py:"diàntī",en:"elevator"},层:{py:"céng",en:"floor; layer"},害怕:{py:"hàipà",en:"afraid; scared"}}},grammar:{before:`同事：听说你最近打算买房子？
 小丽：是，昨天去看了看，`,after:`。
 同事：都不满意吗？
 小丽：一个没有电梯，不方便。一个有电梯，但是在二十层。
@@ -416,7 +416,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小明：我下星期不在北京，不能去机场送你了。
 马可：没关系，你忙吧。
 小明：这个小`},{b:1},{t:`送给你，欢迎你以后再到中国来。
-马可：谢谢。希望以后能再`},{b:2},{t:"。"}],answers:["熊猫","见面"]},grammar:{before:`小明：听说你下个星期就要回国了？
+马可：谢谢。希望以后能再`},{b:2},{t:"。"}],answers:["熊猫","见面"],tiles:{熊猫:{py:"xióngmāo",en:"panda"},见面:{py:"jiànmiàn",en:"to meet"}}},grammar:{before:`小明：听说你下个星期就要回国了？
 马可：是啊，真不想离开北京。
 小明：我下星期不在北京，不能去机场送你了。
 马可：没关系，你忙吧。
@@ -433,7 +433,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：你喝什么我就喝什么。
 小丽：喝`},{b:2},{t:"吧。你等我"},{b:3},{t:"，我"},{b:4},{t:`回来。
 小刚：小丽，你去哪儿？你去哪儿我就去哪儿。
-小丽：我去`},{b:5},{t:"。"}],answers:["安静","可乐","一会儿","马上","洗手间"]},grammar:{before:`小丽：小刚，我们坐哪儿？
+小丽：我去`},{b:5},{t:"。"}],answers:["安静","可乐","一会儿","马上","洗手间"],tiles:{安静:{py:"ānjìng",en:"quiet"},可乐:{py:"kělè",en:"cola"},一会儿:{py:"yíhuìr",en:"a while; a moment"},马上:{py:"mǎshàng",en:"right away; immediately"},洗手间:{py:"xǐshǒujiān",en:"restroom; washroom"}}},grammar:{before:`小丽：小刚，我们坐哪儿？
 小刚：`,after:`。
 小丽：坐这儿吧，这儿安静。你想喝什么饮料？
 小刚：你喝什么我就喝什么。
@@ -449,7 +449,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 老同学：`},{b:4},{t:"最"},{b:5},{t:`，胖瘦没关系。
 周太太：是呀，想吃什么就吃什么。
 老同学：你做饭还是周明做饭？
-周太太：我做，我想吃什么就做什么，想吃多少就做多少。`}],answers:["老","几乎","变化","健康","重要"]},grammar:{before:`老同学：快五年了，你几乎没变化。
+周太太：我做，我想吃什么就做什么，想吃多少就做多少。`}],answers:["老","几乎","变化","健康","重要"],tiles:{老:{py:"lǎo",en:"old; aged"},几乎:{py:"jīhū",en:"almost"},变化:{py:"biànhuà",en:"change"},健康:{py:"jiànkāng",en:"healthy; health"},重要:{py:"zhòngyào",en:"important"}}},grammar:{before:`老同学：快五年了，你几乎没变化。
 周太太：谁说的？我胖了，以前的衣服都不能穿了。
 老同学：健康最重要，胖瘦没关系。
 周太太：是呀，`,after:`。
@@ -464,7 +464,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 大山：怎么好？
 马可：她的汉语说得跟中国人`},{b:3},{t:`好。
 大山：李静？我怎么没听说过这个名字？
-马可：她是我们的汉语老师。`}],answers:["中文","班","一样"]},grammar:{before:`大山：马可，你的中文越说越好了！
+马可：她是我们的汉语老师。`}],answers:["中文","班","一样"],tiles:{中文:{py:"Zhōngwén",en:"Chinese language"},班:{py:"bān",en:"class; group"},一样:{py:"yíyàng",en:"same; alike"}}},grammar:{before:`大山：马可，你的中文越说越好了！
 马可：哪里哪里，我们班李静说得更好。
 大山：怎么好？
 马可：她的汉语说得`,after:`。
@@ -479,7 +479,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：你总是吃甜的东西，会越吃越胖。
 小刚：你`},{b:2},{t:"，我"},{b:3},{t:`不会变胖。
 小丽：为什么？
-小刚：我们家的人都很瘦，吃不胖。`}],answers:["最后","放心","一定"]},grammar:{before:`小丽：别吃了，你已经吃了三块蛋糕了。
+小刚：我们家的人都很瘦，吃不胖。`}],answers:["最后","放心","一定"],tiles:{最后:{py:"zuìhòu",en:"last; finally"},放心:{py:"fàngxīn",en:"to feel relieved; don't worry"},一定:{py:"yídìng",en:"certainly; must"}}},grammar:{before:`小丽：别吃了，你已经吃了三块蛋糕了。
 小刚：这是最后一块。
 小丽：你总是吃甜的东西，`,after:`。
 小刚：你放心，我一定不会变胖。
@@ -494,7 +494,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：山越高，路越难走。我也越爬越冷。
 小刚：不用`},{b:1},{t:"，有我呢，我对这儿"},{b:2},{b:3},{t:`。
 小丽：那我们`},{b:4},{t:`休息一下，一会儿再爬。
-小刚：好，一会儿我们可以从`},{b:5},{t:"这条路上去。"}],answers:["担心","比较","了解","先","中间"]},grammar:{before:`小丽：我有点儿害怕。
+小刚：好，一会儿我们可以从`},{b:5},{t:"这条路上去。"}],answers:["担心","比较","了解","先","中间"],tiles:{担心:{py:"dānxīn",en:"to worry"},比较:{py:"bǐjiào",en:"comparatively; to compare"},了解:{py:"liǎojiě",en:"to understand; to know about"},先:{py:"xiān",en:"first; before"},中间:{py:"zhōngjiān",en:"middle; between"}}},grammar:{before:`小丽：我有点儿害怕。
 小刚：怎么了？
 小丽：`,after:`。我也越爬越冷。
 小刚：不用担心，有我呢，我对这儿比较了解。
@@ -509,7 +509,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同学：去医院了吗？医生说什么？
 小明：他让我多休息。休息得越多，好得越快。
 同学：下个月的篮球比赛，你能`},{b:1},{t:`吗？
-小明：一定能参加，一点儿`},{b:2},{t:"也没有。"}],answers:["参加","影响"]},grammar:{before:`同学：小明，你的眼睛怎么跟大熊猫一样了？
+小明：一定能参加，一点儿`},{b:2},{t:"也没有。"}],answers:["参加","影响"],tiles:{参加:{py:"cānjiā",en:"to participate in"},影响:{py:"yǐngxiǎng",en:"to influence; effect"}}},grammar:{before:`同学：小明，你的眼睛怎么跟大熊猫一样了？
 小明：我这几天脚疼，没休息好。
 同学：去医院了吗？医生说什么？
 小明：他让我多休息。`,after:`。
@@ -524,7 +524,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 朋友：那你们谁大？
 大山：我比马可大两岁。
 朋友：你们谁的汉语说得更好？
-大山：马可比我说得好一些，我的汉语没有他好。`}],answers:["个子","矮"]},grammar:{before:`朋友：大山，你和马可谁个子高？
+大山：马可比我说得好一些，我的汉语没有他好。`}],answers:["个子","矮"],tiles:{个子:{py:"gèzi",en:"height; stature"},矮:{py:"ǎi",en:"short (height)"}}},grammar:{before:`朋友：大山，你和马可谁个子高？
 大山：`,after:`。
 朋友：那你们谁大？
 大山：我比马可大两岁。
@@ -539,7 +539,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小明：我觉得数学比历史难多了，我听不懂。
 同学：别担心，我可以帮你。
 小明：好啊，我们每天学多长时间？
-同学：一两个小时吧。`}],answers:["历史","体育","数学"]},grammar:{before:`小明：我喜欢历史课、体育课，不喜欢数学课。
+同学：一两个小时吧。`}],answers:["历史","体育","数学"],tiles:{历史:{py:"lìshǐ",en:"history"},体育:{py:"tǐyù",en:"physical education; sports"},数学:{py:"shùxué",en:"mathematics"}}},grammar:{before:`小明：我喜欢历史课、体育课，不喜欢数学课。
 同学：为什么？数学也很有意思啊。
 小明：我觉得`,after:`，我听不懂。
 同学：别担心，我可以帮你。
@@ -554,7 +554,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：那很`},{b:1},{t:`啊。
 小丽：我还打算买辆`},{b:2},{t:"，"},{b:3},{t:`车七八分钟就能到。
 同事：你不是有一辆吗？
-小丽：那辆太`},{b:4},{t:"了，要"},{b:5},{t:"一辆，很便宜，两三百块钱。"}],answers:["方便","自行车","骑","旧","换"]},grammar:{before:`同事：你最近比以前来得早多了，搬家了？
+小丽：那辆太`},{b:4},{t:"了，要"},{b:5},{t:"一辆，很便宜，两三百块钱。"}],answers:["方便","自行车","骑","旧","换"],tiles:{方便:{py:"fāngbiàn",en:"convenient"},自行车:{py:"zìxíngchē",en:"bicycle"},骑:{py:"qí",en:"to ride"},旧:{py:"jiù",en:"old; used"},换:{py:"huàn",en:"to change; to exchange"}}},grammar:{before:`同事：你最近比以前来得早多了，搬家了？
 小丽：是啊，你不知道？我上个月就搬家了，走路二十分钟就到。
 同事：那很方便啊。
 小丽：我还打算买辆自行车，`,after:`。
@@ -569,7 +569,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 大山：大小没关系，`},{b:3},{t:"是"},{b:4},{t:`，哪个更安静？
 中介：学校里边的没有学校外边的那么安静。
 大山：哪个方便一些呢？
-中介：学校里边比学校外边方便，`},{b:5},{t:"有三四个车站。"}],answers:["地方","中介","主要","环境","附近"]},grammar:{before:`大山：这两个地方的房子一样吗？
+中介：学校里边比学校外边方便，`},{b:5},{t:"有三四个车站。"}],answers:["地方","中介","主要","环境","附近"],tiles:{地方:{py:"dìfang",en:"place"},中介:{py:"zhōngjiè",en:"agent; intermediary"},主要:{py:"zhǔyào",en:"main; mainly"},环境:{py:"huánjìng",en:"environment; surroundings"},附近:{py:"fùjìn",en:"nearby; vicinity"}}},grammar:{before:`大山：这两个地方的房子一样吗？
 中介：不一样。您看，`,after:`。
 大山：大小没关系，主要是环境，哪个更安静？
 中介：学校里边的没有学校外边的那么安静。
@@ -584,7 +584,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小明：我去`},{b:1},{b:2},{t:`本书。
 同学：帮我把这本`},{b:3},{b:4},{t:`了吧。
 小明：好，等一会儿你离开教室的时候，记得把`},{b:5},{t:`关了。
-同学：好的，放心吧。`}],answers:["图书馆","借","词典","还","灯"]},grammar:{before:`小明：我先走了。
+同学：好的，放心吧。`}],answers:["图书馆","借","词典","还","灯"],tiles:{图书馆:{py:"túshūguǎn",en:"library"},借:{py:"jiè",en:"to borrow; to lend"},词典:{py:"cídiǎn",en:"dictionary"},还:{py:"huán",en:"to return; to give back"},灯:{py:"dēng",en:"lamp; light"}}},grammar:{before:`小明：我先走了。
 同学：你去哪儿？
 小明：我去图书馆借本书。
 同学：`,after:`。
@@ -597,7 +597,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：好的。王经理两点左右来了个电话。
 周明：他已经到北京了？
 小丽：是的，他正坐`},{b:5},{t:`来我们公司呢。
-周明：等他到了就告诉我。`}],answers:["会议","结束","忘记","空调","地铁"]},grammar:{before:"周明：会议结束后，",after:`。
+周明：等他到了就告诉我。`}],answers:["会议","结束","忘记","空调","地铁"],tiles:{会议:{py:"huìyì",en:"meeting; conference"},结束:{py:"jiéshù",en:"to end; to finish"},忘记:{py:"wàngjì",en:"to forget"},空调:{py:"kōngtiáo",en:"air conditioner"},地铁:{py:"dìtiě",en:"subway"}}},grammar:{before:"周明：会议结束后，",after:`。
 小丽：好的。王经理两点左右来了个电话。
 周明：他已经到北京了？
 小丽：是的，他正坐地铁来我们公司呢。
@@ -609,11 +609,11 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 儿子：今天怎么做了这么多菜？
 妈妈：今天是你爸爸的生日。
 儿子：真的啊？我把爸爸的生日忘了。那我们今天喝点儿`},{b:3},{t:`吧。
-妈妈：医生说你爸爸一口酒都不能喝，别让他看见酒`},{b:4},{t:"。"}],answers:["双","筷子","啤酒","瓶子"]},grammar:{before:`妈妈：还差一双筷子，你去拿一下。
+妈妈：医生说你爸爸一口酒都不能喝，别让他看见酒`},{b:4},{t:"。"}],answers:["双","筷子","啤酒","瓶子"],tiles:{双:{py:"shuāng",en:"pair; measure word for pairs"},筷子:{py:"kuàizi",en:"chopsticks"},啤酒:{py:"píjiǔ",en:"beer"},瓶子:{py:"píngzi",en:"bottle"}}},grammar:{before:`妈妈：还差一双筷子，你去拿一下。
 儿子：今天怎么做了这么多菜？
 妈妈：今天是你爸爸的生日。
 儿子：真的啊？`,after:`。那我们今天喝点儿啤酒吧。
-妈妈：医生说你爸爸一口酒都不能喝，别让他看见酒瓶子。`,answer:"我把爸爸的生日忘了",tokens:["我","把","爸爸","的","生日","忘","了"]},sentences:[{speaker:"妈妈",text:"还差一双筷子，你去拿一下。",tokens:["还","差","一","双","筷子","你","去","拿","一下"]},{speaker:"儿子",text:"今天怎么做了这么多菜？",tokens:["今天","怎么","做","了","这么","多","菜"]},{speaker:"妈妈",text:"今天是你爸爸的生日。",tokens:["今天","是","你","爸爸","的","生日"]},{speaker:"儿子",text:"真的啊？我把爸爸的生日忘了。那我们今天喝点儿啤酒吧。",tokens:["真","的","啊","我","把","爸爸","的","生日","忘","了","那","我们","今天","喝","点儿","啤酒","吧"]},{speaker:"妈妈",text:"医生说你爸爸一口酒都不能喝，别让他看见酒瓶子。",tokens:["医生","说","你","爸爸","一","口","酒","都","不能","喝","别","让","他","看见","酒","瓶子"]}],note:"“把”字句1：A 把 B + V + ……；概数2：“左右”表示大约"},{n:4,title:"课文4",original:"这个笔记本电脑我去年买的时候要五千块左右，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看电子邮件。我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？",lines:[{name:"",zh:"这个笔记本电脑我去年买的时候要五千块左右，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看电子邮件。我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？",py:"Zhège bǐjìběn diànnǎo wǒ qùnián mǎi de shíhou yào wǔqiān kuài zuǒyòu, xiànzài piányi duō le. Wǒ xiǎng bǎ zhège diànnǎo mài le, zài mǎi yí ge gèng hǎo de. Xiànzài wǒ měi tiān qǐchuáng hòu de dì-yī jiàn shì jiù shì dǎkāi diànnǎo, kàn diànzǐ yóujiàn. Wǒ yǐjīng hěn shǎo xiě xìn, yě hěn shǎo yòng bǐ xiě zì, yǐjīng xíguàn yòng diànnǎo lái xuéxí hé gōngzuò le. Nǎ yì tiān tūrán méiyǒu le diànnǎo, wǒmen zěnme bàn ne?",en:"When I bought this laptop last year it cost around five thousand yuan; now it's much cheaper. I want to sell it and buy a better one. These days the first thing I do after getting up is open the computer and check my email. I rarely write letters or write by hand anymore—I've gotten used to studying and working on the computer. If one day the computer were suddenly gone, what would we do?"}],vocab:{seg:[{t:"这个"},{b:1},{t:"我去年买的时候要五千块左右，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看"},{b:2},{t:"。我已经很少写信，也很少用笔写字，已经"},{b:3},{t:"用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？"}],answers:["笔记本电脑","电子邮件","习惯"]},grammar:{before:"这个笔记本电脑我去年买的时候要",after:"，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看电子邮件。我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？",answer:"五千块左右",tokens:["五千","块","左右"]},sentences:[{speaker:"",text:"这个笔记本电脑我去年买的时候要五千块左右，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看电子邮件。我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？",tokens:["这个","笔记本电脑","我","去年","买","的","时候","要","五千","块","左右","现在","便宜","多","了","我","想","把","这个","电脑","卖","了","再","买","一个","更","好","的","现在","我","每天","起床","后","的","第一","件","事","就是","打开","电脑","看","电子邮件","我","已经","很","少","写","信","也","很","少","用","笔","写","字","已经","习惯","用","电脑","来","学习","和","工作","了","哪","一","天","突然","没有","了","电脑","我们","怎么办","呢"]}],note:"“把”字句1：A 把 B + V + ……；概数2：“左右”表示大约"}]},{num:12,name:"把重要的东西放在我这儿吧",texts:[{n:1,title:"课文1",original:`小丽：今天太阳从西边出来了吗？
+妈妈：医生说你爸爸一口酒都不能喝，别让他看见酒瓶子。`,answer:"我把爸爸的生日忘了",tokens:["我","把","爸爸","的","生日","忘","了"]},sentences:[{speaker:"妈妈",text:"还差一双筷子，你去拿一下。",tokens:["还","差","一","双","筷子","你","去","拿","一下"]},{speaker:"儿子",text:"今天怎么做了这么多菜？",tokens:["今天","怎么","做","了","这么","多","菜"]},{speaker:"妈妈",text:"今天是你爸爸的生日。",tokens:["今天","是","你","爸爸","的","生日"]},{speaker:"儿子",text:"真的啊？我把爸爸的生日忘了。那我们今天喝点儿啤酒吧。",tokens:["真","的","啊","我","把","爸爸","的","生日","忘","了","那","我们","今天","喝","点儿","啤酒","吧"]},{speaker:"妈妈",text:"医生说你爸爸一口酒都不能喝，别让他看见酒瓶子。",tokens:["医生","说","你","爸爸","一","口","酒","都","不能","喝","别","让","他","看见","酒","瓶子"]}],note:"“把”字句1：A 把 B + V + ……；概数2：“左右”表示大约"},{n:4,title:"课文4",original:"这个笔记本电脑我去年买的时候要五千块左右，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看电子邮件。我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？",lines:[{name:"",zh:"这个笔记本电脑我去年买的时候要五千块左右，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看电子邮件。我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？",py:"Zhège bǐjìběn diànnǎo wǒ qùnián mǎi de shíhou yào wǔqiān kuài zuǒyòu, xiànzài piányi duō le. Wǒ xiǎng bǎ zhège diànnǎo mài le, zài mǎi yí ge gèng hǎo de. Xiànzài wǒ měi tiān qǐchuáng hòu de dì-yī jiàn shì jiù shì dǎkāi diànnǎo, kàn diànzǐ yóujiàn. Wǒ yǐjīng hěn shǎo xiě xìn, yě hěn shǎo yòng bǐ xiě zì, yǐjīng xíguàn yòng diànnǎo lái xuéxí hé gōngzuò le. Nǎ yì tiān tūrán méiyǒu le diànnǎo, wǒmen zěnme bàn ne?",en:"When I bought this laptop last year it cost around five thousand yuan; now it's much cheaper. I want to sell it and buy a better one. These days the first thing I do after getting up is open the computer and check my email. I rarely write letters or write by hand anymore—I've gotten used to studying and working on the computer. If one day the computer were suddenly gone, what would we do?"}],vocab:{seg:[{t:"这个"},{b:1},{t:"我去年买的时候要五千块左右，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看"},{b:2},{t:"。我已经很少写信，也很少用笔写字，已经"},{b:3},{t:"用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？"}],answers:["笔记本电脑","电子邮件","习惯"],tiles:{笔记本电脑:{py:"bǐjìběn diànnǎo",en:"laptop"},电子邮件:{py:"diànzǐ yóujiàn",en:"email"},习惯:{py:"xíguàn",en:"habit; to be used to"}}},grammar:{before:"这个笔记本电脑我去年买的时候要",after:"，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看电子邮件。我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？",answer:"五千块左右",tokens:["五千","块","左右"]},sentences:[{speaker:"",text:"这个笔记本电脑我去年买的时候要五千块左右，现在便宜多了。我想把这个电脑卖了，再买一个更好的。现在我每天起床后的第一件事就是打开电脑，看电子邮件。我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。哪一天突然没有了电脑，我们怎么办呢？",tokens:["这个","笔记本电脑","我","去年","买","的","时候","要","五千","块","左右","现在","便宜","多","了","我","想","把","这个","电脑","卖","了","再","买","一个","更","好","的","现在","我","每天","起床","后","的","第一","件","事","就是","打开","电脑","看","电子邮件","我","已经","很","少","写","信","也","很","少","用","笔","写","字","已经","习惯","用","电脑","来","学习","和","工作","了","哪","一","天","突然","没有","了","电脑","我们","怎么办","呢"]}],note:"“把”字句1：A 把 B + V + ……；概数2：“左右”表示大约"}]},{num:12,name:"把重要的东西放在我这儿吧",texts:[{n:1,title:"课文1",original:`小丽：今天太阳从西边出来了吗？
 小刚：怎么了？
 小丽：你怎么这么早就要睡觉了？以前都要12点以后才睡觉。
 小刚：我明天8点就要到公司。
@@ -623,7 +623,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：你怎么这么早就要睡觉了？以前都要12点以后才睡觉。
 小刚：我明天8点就要到公司。
 小丽：有事吗？
-小刚：经理`},{b:3},{t:"了，他告诉我，明天8点不到，以后就别来了。"}],answers:["太阳","西","生气"]},grammar:{before:`小丽：今天太阳从西边出来了吗？
+小刚：经理`},{b:3},{t:"了，他告诉我，明天8点不到，以后就别来了。"}],answers:["太阳","西","生气"],tiles:{太阳:{py:"tàiyáng",en:"sun"},西:{py:"xī",en:"west"},生气:{py:"shēngqì",en:"angry; to get angry"}}},grammar:{before:`小丽：今天太阳从西边出来了吗？
 小刚：怎么了？
 小丽：你怎么这么早就要睡觉了？`,after:`。
 小刚：我明天8点就要到公司。
@@ -638,7 +638,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：一个星期就回来。
 小丽：啊？一个星期以后才回来？
 小刚：你要`},{b:2},{t:`照顾好自己，我已经给你准备好吃的和喝的了。
-小丽：好吧。我已经把我的照片放在你的`},{b:3},{t:"里了。"}],answers:["行李箱","自己","包"]},grammar:{before:`小刚：我要跟周经理去外地办事，明天的飞机。
+小丽：好吧。我已经把我的照片放在你的`},{b:3},{t:"里了。"}],answers:["行李箱","自己","包"],tiles:{行李箱:{py:"xínglixiāng",en:"suitcase"},自己:{py:"zìjǐ",en:"oneself; self"},包:{py:"bāo",en:"bag; package"}}},grammar:{before:`小刚：我要跟周经理去外地办事，明天的飞机。
 小丽：那我`,after:`吧。什么时候回来？
 小刚：一个星期就回来。
 小丽：啊？一个星期以后才回来？
@@ -651,11 +651,11 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：对不起，周经理，来机场的路上我才`},{b:1},{t:"忘带"},{b:2},{t:`了。
 周明：快点吧，飞机就要`},{b:3},{t:`了。
 小刚：您有钱吗？`},{b:4},{t:`把我送到机场的时候，我才发现忘记带钱包了。
-周明：我看你还是把重要的东西放在我这儿吧。`}],answers:["发现","护照","起飞","司机"]},grammar:{before:`周明：你怎么才来？
+周明：我看你还是把重要的东西放在我这儿吧。`}],answers:["发现","护照","起飞","司机"],tiles:{发现:{py:"fāxiàn",en:"to discover; to find"},护照:{py:"hùzhào",en:"passport"},起飞:{py:"qǐfēi",en:"to take off (aircraft)"},司机:{py:"sījī",en:"driver"}}},grammar:{before:`周明：你怎么才来？
 小刚：对不起，周经理，来机场的路上`,after:`。
 周明：快点吧，飞机就要起飞了。
 小刚：您有钱吗？司机把我送到机场的时候，我才发现忘记带钱包了。
-周明：我看你还是把重要的东西放在我这儿吧。`,answer:"我才发现忘带护照了",tokens:["我","才","发现","忘带","护照","了"]},sentences:[{speaker:"周明",text:"你怎么才来？",tokens:["你","怎么","才","来"]},{speaker:"小刚",text:"对不起，周经理，来机场的路上我才发现忘带护照了。",tokens:["对不起","周","经理","来","机场","的","路上","我","才","发现","忘带","护照","了"]},{speaker:"周明",text:"快点吧，飞机就要起飞了。",tokens:["快","点","吧","飞机","就要","起飞","了"]},{speaker:"小刚",text:"您有钱吗？司机把我送到机场的时候，我才发现忘记带钱包了。",tokens:["您","有钱","吗","司机","把","我","送","到","机场","的","时候","我","才","发现","忘记","带","钱","包","了"]},{speaker:"周明",text:"我看你还是把重要的东西放在我这儿吧。",tokens:["我","看","你","还是","把","重要","的","东西","放","在","我","这儿","吧"]}],note:"“才”和“就”的区别；“把”字句2：把 B + V + 在/到/给……"},{n:4,title:"课文4",original:"我是一个中学老师，教学生画画儿。每次下课前，我都会把下次学生需要带的东西写在黑板上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",lines:[{name:"",zh:"我是一个中学老师，教学生画画儿。每次下课前，我都会把下次学生需要带的东西写在黑板上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",py:"Wǒ shì yí ge zhōngxué lǎoshī, jiāo xuésheng huà huàr. Měi cì xiàkè qián, wǒ dōu huì bǎ xià cì xuésheng xūyào dài de dōngxi xiě zài hēibǎn shàng, dànshì měi cì shàngkè shí, zǒng huì yǒu xuésheng wàng le ná qiānbǐ, suǒyǐ wǒ yǒudiǎnr shēngqì, bú shì yīnwèi tāmen méi dài qiānbǐ, shì yīnwèi tāmen méiyǒu hǎo de xuéxí xíguàn.",en:"I'm a middle-school teacher; I teach students to draw. Before each class ends, I write on the blackboard what they need to bring next time, but every class some student forgets to bring a pencil. So I get a bit annoyed—not because they forgot pencils, but because they lack good study habits."}],vocab:{seg:[{t:"我是一个中学老师，"},{b:1},{t:"学生"},{b:2},{t:"画儿。每次下课前，我都会把下次学生"},{b:3},{t:"带的东西写在"},{b:4},{t:"上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。"}],answers:["教","画","需要","黑板"]},grammar:{before:"我是一个中学老师，教学生画画儿。每次下课前，我都会",after:"，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",answer:"把下次学生需要带的东西写在黑板上",tokens:["把","下次","学生","需要","带","的","东西","写","在","黑板","上"]},sentences:[{speaker:"",text:"我是一个中学老师，教学生画画儿。每次下课前，我都会把下次学生需要带的东西写在黑板上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",tokens:["我","是","一个","中学","老师","教","学生","画","画","儿","每","次","下课","前","我","都","会","把","下次","学生","需要","带","的","东西","写","在","黑板","上","但是","每","次","上课","时","总","会","有","学生","忘","了","拿","铅笔","所以","我","有点儿","生气","不是","因为","他们","没","带","铅笔","是","因为","他们","没有","好","的","学习","习惯"]}],note:"“才”和“就”的区别；“把”字句2：把 B + V + 在/到/给……"}]},{num:13,name:"我是走回来的",texts:[{n:1,title:"课文1",original:`小丽：你终于回来了！从哪儿买回来这么多东西啊？
+周明：我看你还是把重要的东西放在我这儿吧。`,answer:"我才发现忘带护照了",tokens:["我","才","发现","忘带","护照","了"]},sentences:[{speaker:"周明",text:"你怎么才来？",tokens:["你","怎么","才","来"]},{speaker:"小刚",text:"对不起，周经理，来机场的路上我才发现忘带护照了。",tokens:["对不起","周","经理","来","机场","的","路上","我","才","发现","忘带","护照","了"]},{speaker:"周明",text:"快点吧，飞机就要起飞了。",tokens:["快","点","吧","飞机","就要","起飞","了"]},{speaker:"小刚",text:"您有钱吗？司机把我送到机场的时候，我才发现忘记带钱包了。",tokens:["您","有钱","吗","司机","把","我","送","到","机场","的","时候","我","才","发现","忘记","带","钱","包","了"]},{speaker:"周明",text:"我看你还是把重要的东西放在我这儿吧。",tokens:["我","看","你","还是","把","重要","的","东西","放","在","我","这儿","吧"]}],note:"“才”和“就”的区别；“把”字句2：把 B + V + 在/到/给……"},{n:4,title:"课文4",original:"我是一个中学老师，教学生画画儿。每次下课前，我都会把下次学生需要带的东西写在黑板上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",lines:[{name:"",zh:"我是一个中学老师，教学生画画儿。每次下课前，我都会把下次学生需要带的东西写在黑板上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",py:"Wǒ shì yí ge zhōngxué lǎoshī, jiāo xuésheng huà huàr. Měi cì xiàkè qián, wǒ dōu huì bǎ xià cì xuésheng xūyào dài de dōngxi xiě zài hēibǎn shàng, dànshì měi cì shàngkè shí, zǒng huì yǒu xuésheng wàng le ná qiānbǐ, suǒyǐ wǒ yǒudiǎnr shēngqì, bú shì yīnwèi tāmen méi dài qiānbǐ, shì yīnwèi tāmen méiyǒu hǎo de xuéxí xíguàn.",en:"I'm a middle-school teacher; I teach students to draw. Before each class ends, I write on the blackboard what they need to bring next time, but every class some student forgets to bring a pencil. So I get a bit annoyed—not because they forgot pencils, but because they lack good study habits."}],vocab:{seg:[{t:"我是一个中学老师，"},{b:1},{t:"学生"},{b:2},{t:"画儿。每次下课前，我都会把下次学生"},{b:3},{t:"带的东西写在"},{b:4},{t:"上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。"}],answers:["教","画","需要","黑板"],tiles:{教:{py:"jiāo",en:"to teach"},画:{py:"huà",en:"to draw; picture"},需要:{py:"xūyào",en:"to need"},黑板:{py:"hēibǎn",en:"blackboard"}}},grammar:{before:"我是一个中学老师，教学生画画儿。每次下课前，我都会",after:"，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",answer:"把下次学生需要带的东西写在黑板上",tokens:["把","下次","学生","需要","带","的","东西","写","在","黑板","上"]},sentences:[{speaker:"",text:"我是一个中学老师，教学生画画儿。每次下课前，我都会把下次学生需要带的东西写在黑板上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",tokens:["我","是","一个","中学","老师","教","学生","画","画","儿","每","次","下课","前","我","都","会","把","下次","学生","需要","带","的","东西","写","在","黑板","上","但是","每","次","上课","时","总","会","有","学生","忘","了","拿","铅笔","所以","我","有点儿","生气","不是","因为","他们","没","带","铅笔","是","因为","他们","没有","好","的","学习","习惯"]}],note:"“才”和“就”的区别；“把”字句2：把 B + V + 在/到/给……"}]},{num:13,name:"我是走回来的",texts:[{n:1,title:"课文1",original:`小丽：你终于回来了！从哪儿买回来这么多东西啊？
 小刚：都是从那边的商店买回来的。
 小丽：怎么还买红酒回来了？谁喝啊？
 小刚：这是给爷爷的礼物，明天我们一起送过去，看看爷爷奶奶。
@@ -665,7 +665,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：怎么还买红酒回来了？谁喝啊？
 小刚：这是给`},{b:2},{t:"的"},{b:3},{t:"，明天我们一起送过去，看看爷爷"},{b:4},{t:`。
 小丽：那我的礼物呢？快拿出来让我看看。
-小刚：我不是已经回来了吗？`}],answers:["终于","爷爷","礼物","奶奶"]},grammar:{before:"小丽：你终于回来了！",after:`？
+小刚：我不是已经回来了吗？`}],answers:["终于","爷爷","礼物","奶奶"],tiles:{终于:{py:"zhōngyú",en:"finally"},爷爷:{py:"yéye",en:"grandfather (paternal)"},礼物:{py:"lǐwù",en:"gift; present"},奶奶:{py:"nǎinai",en:"grandmother (paternal)"}}},grammar:{before:"小丽：你终于回来了！",after:`？
 小刚：都是从那边的商店买回来的。
 小丽：怎么还买红酒回来了？谁喝啊？
 小刚：这是给爷爷的礼物，明天我们一起送过去，看看爷爷奶奶。
@@ -680,7 +680,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：你们就一起去喝咖啡了？
 小刚：是啊，`},{b:2},{t:"喝咖啡一边说了些"},{b:3},{t:`的事。
 小丽：你回来得这么晚，是说了很多过去的事吗？
-小刚：不是。没有公共汽车了，我是走回来的。`}],answers:["遇到","一边","过去"]},grammar:{before:`小丽：我今天看见你和一个女的进了咖啡店，她是谁啊？
+小刚：不是。没有公共汽车了，我是走回来的。`}],answers:["遇到","一边","过去"],tiles:{遇到:{py:"yùdào",en:"to meet; to run into"},一边:{py:"yìbiān",en:"one side; while doing"},过去:{py:"guòqù",en:"past; formerly; to go over"}}},grammar:{before:`小丽：我今天看见你和一个女的进了咖啡店，她是谁啊？
 小刚：她是我今天在路上遇到的一个老同学。
 小丽：你们就一起去喝咖啡了？
 小刚：是啊，`,after:`。
@@ -695,12 +695,12 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：看电视有什么意思啊？
 小丽：可以一边吃一边看，坐久了还可以站`},{b:3},{t:`休息一会儿。
 同事：你`},{b:4},{t:"多出去走走，这样你们的"},{b:5},{t:`会更有意思。
-小丽：有他在，我的生活已经很有意思了。`}],answers:["一般","愿意","起来","应该","生活"]},grammar:{before:`同事：小丽，周末你一般跟小刚出去看电影吗？
+小丽：有他在，我的生活已经很有意思了。`}],answers:["一般","愿意","起来","应该","生活"],tiles:{一般:{py:"yìbān",en:"generally; ordinary"},愿意:{py:"yuànyì",en:"to be willing; would like"},起来:{py:"qǐlai",en:"to get up; directional/result complement"},应该:{py:"yīnggāi",en:"should; ought to"},生活:{py:"shēnghuó",en:"life; to live"}}},grammar:{before:`同事：小丽，周末你一般跟小刚出去看电影吗？
 小丽：我很少去电影院看电影，我更愿意在家看电视。
 同事：看电视有什么意思啊？
 小丽：`,after:`，坐久了还可以站起来休息一会儿。
 同事：你应该多出去走走，这样你们的生活会更有意思。
-小丽：有他在，我的生活已经很有意思了。`,answer:"可以一边吃一边看",tokens:["可以","一边","吃","一边","看"]},sentences:[{speaker:"同事",text:"小丽，周末你一般跟小刚出去看电影吗？",tokens:["小","丽","周末","你","一般","跟","小刚","出去","看","电影","吗"]},{speaker:"小丽",text:"我很少去电影院看电影，我更愿意在家看电视。",tokens:["我","很","少","去","电影院","看","电影","我","更","愿意","在","家","看","电视"]},{speaker:"同事",text:"看电视有什么意思啊？",tokens:["看","电视","有","什么","意思","啊"]},{speaker:"小丽",text:"可以一边吃一边看，坐久了还可以站起来休息一会儿。",tokens:["可以","一边","吃","一边","看","坐","久","了","还可以","站","起来","休息","一会儿"]},{speaker:"同事",text:"你应该多出去走走，这样你们的生活会更有意思。",tokens:["你","应该","多","出去","走","走","这样","你们","的","生活","会","更","有意思"]},{speaker:"小丽",text:"有他在，我的生活已经很有意思了。",tokens:["有","他","在","我","的","生活","已经","很","有意思","了"]}],note:"复合趋向补语；“一边……一边……”表示同时做两件事"},{n:4,title:"课文4",original:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，一边吃早饭一边看报纸。十年过去了，现在他已经是校长了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累坏了。希望他能少一些会议，多一些休息，可以经常和我还有孩子在一起。",lines:[{name:"",zh:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，一边吃早饭一边看报纸。十年过去了，现在他已经是校长了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累坏了。希望他能少一些会议，多一些休息，可以经常和我还有孩子在一起。",py:"Gāng jiéhūn de shíhou, wǒ zhàngfu shì zhōngxué lǎoshī, tā xǐhuan měi tiān zǎoshang qǐchuáng hòu, yìbiān chī zǎofàn yìbiān kàn bàozhǐ. Shí nián guòqu le, xiànzài tā yǐjīng shì xiàozhǎng le, yīnwèi tài máng, měi tiān zǎoshang wǒ qǐchuáng hòu dōu kànbudào tā, wǎnshang hěn wǎn tā cái huí dào jiā. Wǒ zhēn pà tā lèihuài le. Xīwàng tā néng shǎo yìxiē huìyì, duō yìxiē xiūxi, kěyǐ jīngcháng hé wǒ háiyǒu háizi zài yìqǐ.",en:"When we first married, my husband was a middle-school teacher who liked to read the paper over breakfast every morning. Ten years have passed, and now he's a principal. He's so busy that I don't see him when I get up in the morning, and he gets home very late at night. I really worry he'll wear himself out. I hope he can have fewer meetings and more rest, and spend more time with me and the kids."}],vocab:{seg:[{t:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，一边吃早饭一边看报纸。十年过去了，现在他已经是"},{b:1},{t:"了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累"},{b:2},{t:"了。希望他能少一些会议，多一些休息，可以"},{b:3},{t:"和我还有孩子在一起。"}],answers:["校长","坏","经常"]},grammar:{before:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，",after:"。十年过去了，现在他已经是校长了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累坏了。希望他能少一些会议，多一些休息，可以经常和我还有孩子在一起。",answer:"一边吃早饭一边看报纸",tokens:["一边","吃","早饭","一边","看","报纸"]},sentences:[{speaker:"",text:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，一边吃早饭一边看报纸。十年过去了，现在他已经是校长了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累坏了。希望他能少一些会议，多一些休息，可以经常和我还有孩子在一起。",tokens:["刚","结婚","的","时候","我","丈夫","是","中学","老师","他","喜欢","每天","早上","起床","后","一边","吃","早饭","一边","看","报纸","十","年","过去","了","现在","他","已经","是","校长","了","因为","太","忙","每天","早上","我","起床","后","都","看","不到","他","晚上","很","晚","他","才","回","到","家","我","真","怕","他","累","坏","了","希望","他","能","少","一些","会议","多","一些","休息","可以","经常","和","我","还有","孩子","在","一起"]}],note:"复合趋向补语；“一边……一边……”表示同时做两件事"}]},{num:14,name:"你把水果拿过来",texts:[{n:1,title:"课文1",original:`周太太：客人就要来了，你怎么还不打扫房间啊？
+小丽：有他在，我的生活已经很有意思了。`,answer:"可以一边吃一边看",tokens:["可以","一边","吃","一边","看"]},sentences:[{speaker:"同事",text:"小丽，周末你一般跟小刚出去看电影吗？",tokens:["小","丽","周末","你","一般","跟","小刚","出去","看","电影","吗"]},{speaker:"小丽",text:"我很少去电影院看电影，我更愿意在家看电视。",tokens:["我","很","少","去","电影院","看","电影","我","更","愿意","在","家","看","电视"]},{speaker:"同事",text:"看电视有什么意思啊？",tokens:["看","电视","有","什么","意思","啊"]},{speaker:"小丽",text:"可以一边吃一边看，坐久了还可以站起来休息一会儿。",tokens:["可以","一边","吃","一边","看","坐","久","了","还可以","站","起来","休息","一会儿"]},{speaker:"同事",text:"你应该多出去走走，这样你们的生活会更有意思。",tokens:["你","应该","多","出去","走","走","这样","你们","的","生活","会","更","有意思"]},{speaker:"小丽",text:"有他在，我的生活已经很有意思了。",tokens:["有","他","在","我","的","生活","已经","很","有意思","了"]}],note:"复合趋向补语；“一边……一边……”表示同时做两件事"},{n:4,title:"课文4",original:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，一边吃早饭一边看报纸。十年过去了，现在他已经是校长了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累坏了。希望他能少一些会议，多一些休息，可以经常和我还有孩子在一起。",lines:[{name:"",zh:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，一边吃早饭一边看报纸。十年过去了，现在他已经是校长了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累坏了。希望他能少一些会议，多一些休息，可以经常和我还有孩子在一起。",py:"Gāng jiéhūn de shíhou, wǒ zhàngfu shì zhōngxué lǎoshī, tā xǐhuan měi tiān zǎoshang qǐchuáng hòu, yìbiān chī zǎofàn yìbiān kàn bàozhǐ. Shí nián guòqu le, xiànzài tā yǐjīng shì xiàozhǎng le, yīnwèi tài máng, měi tiān zǎoshang wǒ qǐchuáng hòu dōu kànbudào tā, wǎnshang hěn wǎn tā cái huí dào jiā. Wǒ zhēn pà tā lèihuài le. Xīwàng tā néng shǎo yìxiē huìyì, duō yìxiē xiūxi, kěyǐ jīngcháng hé wǒ háiyǒu háizi zài yìqǐ.",en:"When we first married, my husband was a middle-school teacher who liked to read the paper over breakfast every morning. Ten years have passed, and now he's a principal. He's so busy that I don't see him when I get up in the morning, and he gets home very late at night. I really worry he'll wear himself out. I hope he can have fewer meetings and more rest, and spend more time with me and the kids."}],vocab:{seg:[{t:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，一边吃早饭一边看报纸。十年过去了，现在他已经是"},{b:1},{t:"了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累"},{b:2},{t:"了。希望他能少一些会议，多一些休息，可以"},{b:3},{t:"和我还有孩子在一起。"}],answers:["校长","坏","经常"],tiles:{校长:{py:"xiàozhǎng",en:"school principal"},坏:{py:"huài",en:"bad; broken"},经常:{py:"jīngcháng",en:"often"}}},grammar:{before:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，",after:"。十年过去了，现在他已经是校长了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累坏了。希望他能少一些会议，多一些休息，可以经常和我还有孩子在一起。",answer:"一边吃早饭一边看报纸",tokens:["一边","吃","早饭","一边","看","报纸"]},sentences:[{speaker:"",text:"刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，一边吃早饭一边看报纸。十年过去了，现在他已经是校长了，因为太忙，每天早上我起床后都看不到他，晚上很晚他才回到家。我真怕他累坏了。希望他能少一些会议，多一些休息，可以经常和我还有孩子在一起。",tokens:["刚","结婚","的","时候","我","丈夫","是","中学","老师","他","喜欢","每天","早上","起床","后","一边","吃","早饭","一边","看","报纸","十","年","过去","了","现在","他","已经","是","校长","了","因为","太","忙","每天","早上","我","起床","后","都","看","不到","他","晚上","很","晚","他","才","回","到","家","我","真","怕","他","累","坏","了","希望","他","能","少","一些","会议","多","一些","休息","可以","经常","和","我","还有","孩子","在","一起"]}],note:"复合趋向补语；“一边……一边……”表示同时做两件事"}]},{num:14,name:"你把水果拿过来",texts:[{n:1,title:"课文1",original:`周太太：客人就要来了，你怎么还不打扫房间啊？
 周明：别着急，我让孩子们打扫呢，客人来的时候，他们会把房间打扫干净。
 周太太：那你也不能看电视啊。
 周明：你让我做什么？
@@ -710,7 +710,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周太太：那你也不能看电视啊。
 周明：你让我做什么？
 周太太：先把茶和杯子放好，`},{b:3},{t:"把"},{b:4},{t:`里的西瓜拿出来。
-周明：太热了，我还是先把空调打开吧。`}],answers:["打扫","干净","然后","冰箱"]},grammar:{before:`周太太：客人就要来了，你怎么还不打扫房间啊？
+周明：太热了，我还是先把空调打开吧。`}],answers:["打扫","干净","然后","冰箱"],tiles:{打扫:{py:"dǎsǎo",en:"to clean; to sweep"},干净:{py:"gānjìng",en:"clean"},然后:{py:"ránhòu",en:"then; after that"},冰箱:{py:"bīngxiāng",en:"refrigerator"}}},grammar:{before:`周太太：客人就要来了，你怎么还不打扫房间啊？
 周明：别着急，我让孩子们打扫呢，客人来的时候，他们会把房间打扫干净。
 周太太：那你也不能看电视啊。
 周明：你让我做什么？
@@ -723,7 +723,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小刚：对不起，我刚洗了个`},{b:1},{t:`，没听见。有什么事吗？
 同事：我想问问你公司里的一些事情。
 小刚：你先等一下，我去把电视关了。
-同事：没关系，你先把电视`},{b:2},{t:"看完吧，然后再给我回电话。"}],answers:["澡","节目"]},grammar:{before:`同事：你在忙什么呢？刚才打你的手机你也不接。
+同事：没关系，你先把电视`},{b:2},{t:"看完吧，然后再给我回电话。"}],answers:["澡","节目"],tiles:{澡:{py:"zǎo",en:"bath"},节目:{py:"jiémù",en:"program; show"}}},grammar:{before:`同事：你在忙什么呢？刚才打你的手机你也不接。
 小刚：对不起，我刚洗了个澡，没听见。有什么事吗？
 同事：我想问问你公司里的一些事情。
 小刚：你先等一下，我去把电视关了。
@@ -735,11 +735,11 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小明：是啊，外边也不`},{b:4},{t:`，我们坐在外边一边看月亮一边吃东西，怎么样？
 同学：好啊，我先把桌椅搬出去，然后你把水果拿过来，我们听叔叔阿姨讲讲他们年轻时候的故事。
 小明：太好了！记得给大山打个电话，让他马上过来。
-同学：不用打了，你听外边的`},{b:5},{t:"，一定是大山。"}],answers:["月亮","像","盘子","刮风","声音"]},grammar:{before:`同学：今晚的月亮真漂亮，像白色的盘子一样。
+同学：不用打了，你听外边的`},{b:5},{t:"，一定是大山。"}],answers:["月亮","像","盘子","刮风","声音"],tiles:{月亮:{py:"yuèliang",en:"moon"},像:{py:"xiàng",en:"to resemble; like"},盘子:{py:"pánzi",en:"plate"},刮风:{py:"guāfēng",en:"to be windy"},声音:{py:"shēngyīn",en:"sound; voice"}}},grammar:{before:`同学：今晚的月亮真漂亮，像白色的盘子一样。
 小明：是啊，外边也不刮风，我们坐在外边一边看月亮一边吃东西，怎么样？
 同学：好啊，我`,after:`，我们听叔叔阿姨讲讲他们年轻时候的故事。
 小明：太好了！记得给大山打个电话，让他马上过来。
-同学：不用打了，你听外边的声音，一定是大山。`,answer:"先把桌椅搬出去，然后你把水果拿过来",tokens:["先","把","桌椅","搬出去","然后","你","把","水果","拿","过来"]},sentences:[{speaker:"同学",text:"今晚的月亮真漂亮，像白色的盘子一样。",tokens:["今","晚","的","月亮","真","漂亮","像","白色","的","盘子","一样"]},{speaker:"小明",text:"是啊，外边也不刮风，我们坐在外边一边看月亮一边吃东西，怎么样？",tokens:["是","啊","外边","也","不","刮风","我们","坐","在","外边","一边","看","月亮","一边","吃","东西","怎么样"]},{speaker:"同学",text:"好啊，我先把桌椅搬出去，然后你把水果拿过来，我们听叔叔阿姨讲讲他们年轻时候的故事。",tokens:["好","啊","我","先","把","桌椅","搬出去","然后","你","把","水果","拿","过来","我们","听","叔叔","阿姨","讲","讲","他们","年轻","时候","的","故事"]},{speaker:"小明",text:"太好了！记得给大山打个电话，让他马上过来。",tokens:["太","好","了","记得","给","大","山","打","个","电话","让","他","马上","过来"]},{speaker:"同学",text:"不用打了，你听外边的声音，一定是大山。",tokens:["不用","打","了","你","听","外边","的","声音","一定","是","大","山"]}],note:"“把”字句3：把 B + V + 结果/趋向补语；“先……，再/又……，然后……”表示动作顺序"},{n:4,title:"课文4",original:"你吃过水果饭吗？你在饭馆的菜单上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很简单，先把米饭做好，然后再把一块块新鲜的水果放进去，水果饭就做好了。你可以做苹果饭、香蕉饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。",lines:[{name:"",zh:"你吃过水果饭吗？你在饭馆的菜单上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很简单，先把米饭做好，然后再把一块块新鲜的水果放进去，水果饭就做好了。你可以做苹果饭、香蕉饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。",py:"Nǐ chīguo shuǐguǒ fàn ma? Nǐ zài fànguǎn de càidān shàng jiànguo shuǐguǒ fàn ma? Nǐ xiǎng xuézhe zuò shuǐguǒ fàn ma? Qíshí zuò shuǐguǒ fàn hěn jiǎndān, xiān bǎ mǐfàn zuò hǎo, ránhòu zài bǎ yí kuài kuài xīnxiān de shuǐguǒ fàng jìnqu, shuǐguǒ fàn jiù zuò hǎo le. Nǐ kěyǐ zuò píngguǒ fàn, xiāngjiāo fàn, yàoshi nǐ yuànyì, hái kěyǐ zuò xīguā fàn. Duō chī xīnxiān shuǐguǒ duì shēntǐ hǎo.",en:"Have you ever had fruit rice? Have you seen fruit rice on a restaurant menu? Would you like to learn to make it? It's actually simple: first cook the rice, then add pieces of fresh fruit, and the fruit rice is done. You can make apple rice or banana rice, and if you like, even watermelon rice. Eating plenty of fresh fruit is good for your health."}],vocab:{seg:[{t:"你吃过水果饭吗？你在饭馆的"},{b:1},{t:"上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很"},{b:2},{t:"，先把米饭做好，然后再把一块块新鲜的水果放进去，水果饭就做好了。你可以做苹果饭、"},{b:3},{t:"饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。"}],answers:["菜单","简单","香蕉"]},grammar:{before:"你吃过水果饭吗？你在饭馆的菜单上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很简单，",after:"，水果饭就做好了。你可以做苹果饭、香蕉饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。",answer:"先把米饭做好，然后再把一块块新鲜的水果放进去",tokens:["先","把","米饭","做好","然后","再","把","一块块","新鲜","的","水果","放进去"]},sentences:[{speaker:"",text:"你吃过水果饭吗？你在饭馆的菜单上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很简单，先把米饭做好，然后再把一块块新鲜的水果放进去，水果饭就做好了。你可以做苹果饭、香蕉饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。",tokens:["你","吃","过","水果","饭","吗","你","在","饭馆","的","菜单","上","见","过","水果","饭","吗","你","想","学","着","做","水果","饭","吗","其实","做","水果","饭","很","简单","先","把","米饭","做好","然后","再","把","一块块","新鲜","的","水果","放进去","水果","饭","就","做好","了","你","可以","做","苹果","饭","香蕉","饭","要是","你","愿意","还可以","做","西瓜","饭","多","吃","新鲜","水果","对","身体","好"]}],note:"“把”字句3：把 B + V + 结果/趋向补语；“先……，再/又……，然后……”表示动作顺序"}]},{num:15,name:"其他都没什么问题",texts:[{n:1,title:"课文1",original:`大山：老师，我来中国留学两年了，但是我的汉语水平提高得一点儿也不快啊。
+同学：不用打了，你听外边的声音，一定是大山。`,answer:"先把桌椅搬出去，然后你把水果拿过来",tokens:["先","把","桌椅","搬出去","然后","你","把","水果","拿","过来"]},sentences:[{speaker:"同学",text:"今晚的月亮真漂亮，像白色的盘子一样。",tokens:["今","晚","的","月亮","真","漂亮","像","白色","的","盘子","一样"]},{speaker:"小明",text:"是啊，外边也不刮风，我们坐在外边一边看月亮一边吃东西，怎么样？",tokens:["是","啊","外边","也","不","刮风","我们","坐","在","外边","一边","看","月亮","一边","吃","东西","怎么样"]},{speaker:"同学",text:"好啊，我先把桌椅搬出去，然后你把水果拿过来，我们听叔叔阿姨讲讲他们年轻时候的故事。",tokens:["好","啊","我","先","把","桌椅","搬出去","然后","你","把","水果","拿","过来","我们","听","叔叔","阿姨","讲","讲","他们","年轻","时候","的","故事"]},{speaker:"小明",text:"太好了！记得给大山打个电话，让他马上过来。",tokens:["太","好","了","记得","给","大","山","打","个","电话","让","他","马上","过来"]},{speaker:"同学",text:"不用打了，你听外边的声音，一定是大山。",tokens:["不用","打","了","你","听","外边","的","声音","一定","是","大","山"]}],note:"“把”字句3：把 B + V + 结果/趋向补语；“先……，再/又……，然后……”表示动作顺序"},{n:4,title:"课文4",original:"你吃过水果饭吗？你在饭馆的菜单上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很简单，先把米饭做好，然后再把一块块新鲜的水果放进去，水果饭就做好了。你可以做苹果饭、香蕉饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。",lines:[{name:"",zh:"你吃过水果饭吗？你在饭馆的菜单上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很简单，先把米饭做好，然后再把一块块新鲜的水果放进去，水果饭就做好了。你可以做苹果饭、香蕉饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。",py:"Nǐ chīguo shuǐguǒ fàn ma? Nǐ zài fànguǎn de càidān shàng jiànguo shuǐguǒ fàn ma? Nǐ xiǎng xuézhe zuò shuǐguǒ fàn ma? Qíshí zuò shuǐguǒ fàn hěn jiǎndān, xiān bǎ mǐfàn zuò hǎo, ránhòu zài bǎ yí kuài kuài xīnxiān de shuǐguǒ fàng jìnqu, shuǐguǒ fàn jiù zuò hǎo le. Nǐ kěyǐ zuò píngguǒ fàn, xiāngjiāo fàn, yàoshi nǐ yuànyì, hái kěyǐ zuò xīguā fàn. Duō chī xīnxiān shuǐguǒ duì shēntǐ hǎo.",en:"Have you ever had fruit rice? Have you seen fruit rice on a restaurant menu? Would you like to learn to make it? It's actually simple: first cook the rice, then add pieces of fresh fruit, and the fruit rice is done. You can make apple rice or banana rice, and if you like, even watermelon rice. Eating plenty of fresh fruit is good for your health."}],vocab:{seg:[{t:"你吃过水果饭吗？你在饭馆的"},{b:1},{t:"上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很"},{b:2},{t:"，先把米饭做好，然后再把一块块新鲜的水果放进去，水果饭就做好了。你可以做苹果饭、"},{b:3},{t:"饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。"}],answers:["菜单","简单","香蕉"],tiles:{菜单:{py:"càidān",en:"menu"},简单:{py:"jiǎndān",en:"simple; easy"},香蕉:{py:"xiāngjiāo",en:"banana"}}},grammar:{before:"你吃过水果饭吗？你在饭馆的菜单上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很简单，",after:"，水果饭就做好了。你可以做苹果饭、香蕉饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。",answer:"先把米饭做好，然后再把一块块新鲜的水果放进去",tokens:["先","把","米饭","做好","然后","再","把","一块块","新鲜","的","水果","放进去"]},sentences:[{speaker:"",text:"你吃过水果饭吗？你在饭馆的菜单上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很简单，先把米饭做好，然后再把一块块新鲜的水果放进去，水果饭就做好了。你可以做苹果饭、香蕉饭，要是你愿意，还可以做西瓜饭。多吃新鲜水果对身体好。",tokens:["你","吃","过","水果","饭","吗","你","在","饭馆","的","菜单","上","见","过","水果","饭","吗","你","想","学","着","做","水果","饭","吗","其实","做","水果","饭","很","简单","先","把","米饭","做好","然后","再","把","一块块","新鲜","的","水果","放进去","水果","饭","就","做好","了","你","可以","做","苹果","饭","香蕉","饭","要是","你","愿意","还可以","做","西瓜","饭","多","吃","新鲜","水果","对","身体","好"]}],note:"“把”字句3：把 B + V + 结果/趋向补语；“先……，再/又……，然后……”表示动作顺序"}]},{num:15,name:"其他都没什么问题",texts:[{n:1,title:"课文1",original:`大山：老师，我来中国留学两年了，但是我的汉语水平提高得一点儿也不快啊。
 老师：你每天认真学习，做练习、完成作业，一直不错啊。
 大山：这是我昨天的作业，您帮我看看对不对。
 老师：写得不错，除了这个句子意思有些不清楚外，其他都没什么问题。
@@ -749,7 +749,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 大山：这是我昨天的作业，您帮我看看对不对。
 老师：写得不错，除了这个`},{b:4},{t:`意思有些不清楚外，其他都没什么问题。
 大山：谢谢老师！
-老师：以后有什么不明白的地方，可以给我打电话或者发电子邮件。`}],answers:["留学","水平","提高","句子"]},grammar:{before:`大山：老师，我来中国留学两年了，但是我的汉语水平提高得一点儿也不快啊。
+老师：以后有什么不明白的地方，可以给我打电话或者发电子邮件。`}],answers:["留学","水平","提高","句子"],tiles:{留学:{py:"liúxué",en:"to study abroad"},水平:{py:"shuǐpíng",en:"level; standard"},提高:{py:"tígāo",en:"to improve; to raise"},句子:{py:"jùzi",en:"sentence"}}},grammar:{before:`大山：老师，我来中国留学两年了，但是我的汉语水平提高得一点儿也不快啊。
 老师：你每天认真学习，做练习、完成作业，一直不错啊。
 大山：这是我昨天的作业，您帮我看看对不对。
 老师：写得不错，`,after:`。
@@ -762,7 +762,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 老师：比赛马上就要开始了，小云怎么还没来？
 学生：刚才给她打电话了，她在路上呢。
 老师：不等她了，我先给大家讲讲这次比赛的`},{b:1},{t:"和一些需要"},{b:2},{t:`的地方。
-学生：老师，您放心，今天的比赛我们一定能拿第一。`}],answers:["要求","注意"]},grammar:{before:"学生：老师，",after:`。
+学生：老师，您放心，今天的比赛我们一定能拿第一。`}],answers:["要求","注意"],tiles:{要求:{py:"yāoqiú",en:"requirement; to require"},注意:{py:"zhùyì",en:"to pay attention; be careful"}}},grammar:{before:"学生：老师，",after:`。
 老师：比赛马上就要开始了，小云怎么还没来？
 学生：刚才给她打电话了，她在路上呢。
 老师：不等她了，我先给大家讲讲这次比赛的要求和一些需要注意的地方。
@@ -776,12 +776,12 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：对了，你从网上买的那件衣服呢？怎么没见你穿？
 小刚：那件衣服我穿着有点儿小，给我弟弟了。
 同事：他满意吗？
-小刚：不用`},{b:3},{t:"钱，还有新衣服穿，他满意"},{b:4},{t:"。"}],answers:["上网","新闻","花","极了"]},grammar:{before:`同事：现在用电脑上网真方便啊！
+小刚：不用`},{b:3},{t:"钱，还有新衣服穿，他满意"},{b:4},{t:"。"}],answers:["上网","新闻","花","极了"],tiles:{上网:{py:"shàngwǎng",en:"to go online"},新闻:{py:"xīnwén",en:"news"},花:{py:"huā",en:"flower"},极了:{py:"jí le",en:"extremely"}}},grammar:{before:`同事：现在用电脑上网真方便啊！
 小刚：是啊，`,after:`。
 同事：对了，你从网上买的那件衣服呢？怎么没见你穿？
 小刚：那件衣服我穿着有点儿小，给我弟弟了。
 同事：他满意吗？
-小刚：不用花钱，还有新衣服穿，他满意极了。`,answer:"除了看新闻，人们还可以在网上听歌、看电影、买东西",tokens:["除了","看","新闻","人们","还","可以","在","网上","听歌","看","电影","买","东西"]},sentences:[{speaker:"同事",text:"现在用电脑上网真方便啊！",tokens:["现在","用","电脑","上网","真","方便","啊"]},{speaker:"小刚",text:"是啊，除了看新闻，人们还可以在网上听歌、看电影、买东西。",tokens:["是","啊","除了","看","新闻","人们","还可以","在","网上","听歌","看","电影","买","东西"]},{speaker:"同事",text:"对了，你从网上买的那件衣服呢？怎么没见你穿？",tokens:["对了","你","从","网上","买","的","那","件","衣服","呢","怎么","没","见","你","穿"]},{speaker:"小刚",text:"那件衣服我穿着有点儿小，给我弟弟了。",tokens:["那","件","衣服","我","穿着","有点儿","小","给","我","弟弟","了"]},{speaker:"同事",text:"他满意吗？",tokens:["他","满意","吗"]},{speaker:"小刚",text:"不用花钱，还有新衣服穿，他满意极了。",tokens:["不用","花","钱","还有","新","衣服","穿","他","满意","极了"]}],note:"“除了……以外，都/还/也……”表示范围；疑问代词活用2：“什么”表示不确定的人或事物；“极了”表示程度很高"},{n:4,title:"课文4",original:"除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。这个地方每年夏天都要举行一次啤酒节。在啤酒节上，你可以喝到世界上不同地方的啤酒。除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒文化？来这里的啤酒节看看吧。",lines:[{name:"",zh:"除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。这个地方每年夏天都要举行一次啤酒节。在啤酒节上，你可以喝到世界上不同地方的啤酒。除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒文化？来这里的啤酒节看看吧。",py:"Chúle Chūnjié, Zhōngqiūjié yǐwài, píjiǔjié yě shì zhèlǐ hěn zhòngyào de yí ge jiérì. Zhège dìfang měi nián xiàtiān dōu yào jǔxíng yí cì píjiǔjié. Zài píjiǔjié shàng, nǐ kěyǐ hē dào shìjiè shàng bùtóng dìfang de píjiǔ. Chúle hē píjiǔ, nǐ hái kěyǐ zài jiēdào liǎngbiān kàn dào shìjiè shàng bùtóng dìfang de gēwǔ. Nǐ xiǎng bu xiǎng liǎojiě shìjiè gège dìfang de píjiǔ wénhuà? Lái zhèlǐ de píjiǔjié kànkan ba.",en:"Besides the Spring Festival and Mid-Autumn Festival, the Beer Festival is also an important holiday here. This place holds a beer festival every summer. At the festival, you can drink beers from different parts of the world. Besides drinking beer, you can also see song and dance from around the world on both sides of the streets. Want to learn about beer cultures from all over the world? Come check out the beer festival here."}],vocab:{seg:[{t:"除了春节、中秋节以外，啤酒节也是这里很重要的一个"},{b:1},{t:"。这个地方每年夏天都要"},{b:2},{t:"一次啤酒节。在啤酒节上，你可以喝到"},{b:3},{t:"上不同地方的啤酒。除了喝啤酒，你还可以在"},{b:4},{t:"两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒"},{b:5},{t:"？来这里的啤酒节看看吧。"}],answers:["节日","举行","世界","街道","文化"]},grammar:{before:"",after:"。这个地方每年夏天都要举行一次啤酒节。在啤酒节上，你可以喝到世界上不同地方的啤酒。除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒文化？来这里的啤酒节看看吧。",answer:"除了春节、中秋节以外，啤酒节也是这里很重要的一个节日",tokens:["除了","春节","中秋节","以外","啤酒节","也","是","这里","很","重要","的","一个","节日"]},sentences:[{speaker:"",text:"除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。这个地方每年夏天都要举行一次啤酒节。在啤酒节上，你可以喝到世界上不同地方的啤酒。除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒文化？来这里的啤酒节看看吧。",tokens:["除了","春节","中秋节","以外","啤酒节","也","是","这里","很","重要","的","一个","节日","这个","地方","每","年","夏天","都","要","举行","一次","啤酒节","在","啤酒节","上","你","可以","喝","到","世界","上","不同","地方","的","啤酒","除了","喝","啤酒","你","还可以","在","街道","两","边","看到","世界","上","不同","地方","的","歌","舞","你","想","不","想","了解","世界","各","个","地方","的","啤酒","文化","来","这里","的","啤酒节","看看","吧"]}],note:"“除了……以外，都/还/也……”表示范围；疑问代词活用2：“什么”表示不确定的人或事物；“极了”表示程度很高"}]},{num:16,name:"我现在累得下了班就想睡觉",texts:[{n:1,title:"课文1",original:`小丽：我不喜欢一直住在同一个城市，想去其他城市看一看。
+小刚：不用花钱，还有新衣服穿，他满意极了。`,answer:"除了看新闻，人们还可以在网上听歌、看电影、买东西",tokens:["除了","看","新闻","人们","还","可以","在","网上","听歌","看","电影","买","东西"]},sentences:[{speaker:"同事",text:"现在用电脑上网真方便啊！",tokens:["现在","用","电脑","上网","真","方便","啊"]},{speaker:"小刚",text:"是啊，除了看新闻，人们还可以在网上听歌、看电影、买东西。",tokens:["是","啊","除了","看","新闻","人们","还可以","在","网上","听歌","看","电影","买","东西"]},{speaker:"同事",text:"对了，你从网上买的那件衣服呢？怎么没见你穿？",tokens:["对了","你","从","网上","买","的","那","件","衣服","呢","怎么","没","见","你","穿"]},{speaker:"小刚",text:"那件衣服我穿着有点儿小，给我弟弟了。",tokens:["那","件","衣服","我","穿着","有点儿","小","给","我","弟弟","了"]},{speaker:"同事",text:"他满意吗？",tokens:["他","满意","吗"]},{speaker:"小刚",text:"不用花钱，还有新衣服穿，他满意极了。",tokens:["不用","花","钱","还有","新","衣服","穿","他","满意","极了"]}],note:"“除了……以外，都/还/也……”表示范围；疑问代词活用2：“什么”表示不确定的人或事物；“极了”表示程度很高"},{n:4,title:"课文4",original:"除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。这个地方每年夏天都要举行一次啤酒节。在啤酒节上，你可以喝到世界上不同地方的啤酒。除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒文化？来这里的啤酒节看看吧。",lines:[{name:"",zh:"除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。这个地方每年夏天都要举行一次啤酒节。在啤酒节上，你可以喝到世界上不同地方的啤酒。除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒文化？来这里的啤酒节看看吧。",py:"Chúle Chūnjié, Zhōngqiūjié yǐwài, píjiǔjié yě shì zhèlǐ hěn zhòngyào de yí ge jiérì. Zhège dìfang měi nián xiàtiān dōu yào jǔxíng yí cì píjiǔjié. Zài píjiǔjié shàng, nǐ kěyǐ hē dào shìjiè shàng bùtóng dìfang de píjiǔ. Chúle hē píjiǔ, nǐ hái kěyǐ zài jiēdào liǎngbiān kàn dào shìjiè shàng bùtóng dìfang de gēwǔ. Nǐ xiǎng bu xiǎng liǎojiě shìjiè gège dìfang de píjiǔ wénhuà? Lái zhèlǐ de píjiǔjié kànkan ba.",en:"Besides the Spring Festival and Mid-Autumn Festival, the Beer Festival is also an important holiday here. This place holds a beer festival every summer. At the festival, you can drink beers from different parts of the world. Besides drinking beer, you can also see song and dance from around the world on both sides of the streets. Want to learn about beer cultures from all over the world? Come check out the beer festival here."}],vocab:{seg:[{t:"除了春节、中秋节以外，啤酒节也是这里很重要的一个"},{b:1},{t:"。这个地方每年夏天都要"},{b:2},{t:"一次啤酒节。在啤酒节上，你可以喝到"},{b:3},{t:"上不同地方的啤酒。除了喝啤酒，你还可以在"},{b:4},{t:"两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒"},{b:5},{t:"？来这里的啤酒节看看吧。"}],answers:["节日","举行","世界","街道","文化"],tiles:{节日:{py:"jiérì",en:"festival; holiday"},举行:{py:"jǔxíng",en:"to hold (an event)"},世界:{py:"shìjiè",en:"world"},街道:{py:"jiēdào",en:"street"},文化:{py:"wénhuà",en:"culture"}}},grammar:{before:"",after:"。这个地方每年夏天都要举行一次啤酒节。在啤酒节上，你可以喝到世界上不同地方的啤酒。除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒文化？来这里的啤酒节看看吧。",answer:"除了春节、中秋节以外，啤酒节也是这里很重要的一个节日",tokens:["除了","春节","中秋节","以外","啤酒节","也","是","这里","很","重要","的","一个","节日"]},sentences:[{speaker:"",text:"除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。这个地方每年夏天都要举行一次啤酒节。在啤酒节上，你可以喝到世界上不同地方的啤酒。除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。你想不想了解世界各个地方的啤酒文化？来这里的啤酒节看看吧。",tokens:["除了","春节","中秋节","以外","啤酒节","也","是","这里","很","重要","的","一个","节日","这个","地方","每","年","夏天","都","要","举行","一次","啤酒节","在","啤酒节","上","你","可以","喝","到","世界","上","不同","地方","的","啤酒","除了","喝","啤酒","你","还可以","在","街道","两","边","看到","世界","上","不同","地方","的","歌","舞","你","想","不","想","了解","世界","各","个","地方","的","啤酒","文化","来","这里","的","啤酒节","看看","吧"]}],note:"“除了……以外，都/还/也……”表示范围；疑问代词活用2：“什么”表示不确定的人或事物；“极了”表示程度很高"}]},{num:16,name:"我现在累得下了班就想睡觉",texts:[{n:1,title:"课文1",original:`小丽：我不喜欢一直住在同一个城市，想去其他城市看一看。
 周明：我年轻的时候也这么想，但是那时候没有钱，如果有钱，就去了。
 小丽：那您现在为什么不去？
 周明：现在钱不是问题了，主要是没有时间。
@@ -791,7 +791,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：那您现在为什么不去？
 周明：现在钱不是问题了，主要是没有时间。
 小丽：我`},{b:3},{t:`现在您有时间也不会出去玩儿。
-周明：你说得对，我现在累得下了班就想睡觉。`}],answers:["城市","如果","认为"]},grammar:{before:`小丽：我不喜欢一直住在同一个城市，想去其他城市看一看。
+周明：你说得对，我现在累得下了班就想睡觉。`}],answers:["城市","如果","认为"],tiles:{城市:{py:"chéngshì",en:"city"},如果:{py:"rúguǒ",en:"if"},认为:{py:"rènwéi",en:"to think; to believe"}}},grammar:{before:`小丽：我不喜欢一直住在同一个城市，想去其他城市看一看。
 周明：我年轻的时候也这么想，但是那时候没有钱，`,after:`。
 小丽：那您现在为什么不去？
 周明：现在钱不是问题了，主要是没有时间。
@@ -804,7 +804,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：别客气，你女儿长得白白的、胖胖的，真`},{b:3},{t:`！现在多高了？
 同事：快1米了，25`},{b:4},{t:`。
 小丽：你看她`},{b:5},{t:`小小的，头发黑黑的，长得像谁？
-同事：像她爸爸，刚出生时她爸爸高兴得一个晚上都没睡着。`}],answers:["皮鞋","帽子","可爱","公斤","鼻子"]},grammar:{before:`同事：谢谢你们来看我女儿。你送的小皮鞋和小帽子真漂亮！
+同事：像她爸爸，刚出生时她爸爸高兴得一个晚上都没睡着。`}],answers:["皮鞋","帽子","可爱","公斤","鼻子"],tiles:{皮鞋:{py:"píxié",en:"leather shoes"},帽子:{py:"màozi",en:"hat; cap"},可爱:{py:"kě'ài",en:"cute; lovely"},公斤:{py:"gōngjīn",en:"kilogram"},鼻子:{py:"bízi",en:"nose"}}},grammar:{before:`同事：谢谢你们来看我女儿。你送的小皮鞋和小帽子真漂亮！
 小丽：别客气，你女儿长得`,after:`，真可爱！现在多高了？
 同事：快1米了，25公斤。
 小丽：你看她鼻子小小的，头发黑黑的，长得像谁？
@@ -816,11 +816,11 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：如果不舒服，就去医院`},{b:1},{t:`一下吧。
 小刚：检查好几次了，但是没什么用。
 同事：大夫怎么说的？
-小刚：每次医生都告诉我，回家好好儿`},{b:2},{t:"。"}],answers:["检查","刷牙"]},grammar:{before:`小刚：我的牙还是很疼。
+小刚：每次医生都告诉我，回家好好儿`},{b:2},{t:"。"}],answers:["检查","刷牙"],tiles:{检查:{py:"jiǎnchá",en:"to check; to examine"},刷牙:{py:"shuāyá",en:"to brush teeth"}}},grammar:{before:`小刚：我的牙还是很疼。
 同事：`,after:`。
 小刚：检查好几次了，但是没什么用。
 同事：大夫怎么说的？
-小刚：每次医生都告诉我，回家好好儿刷牙。`,answer:"如果不舒服，就去医院检查一下吧",tokens:["如果","不","舒服","就","去","医院","检查","一下","吧"]},sentences:[{speaker:"小刚",text:"我的牙还是很疼。",tokens:["我","的","牙","还是","很","疼"]},{speaker:"同事",text:"如果不舒服，就去医院检查一下吧。",tokens:["如果","不","舒服","就","去","医院","检查","一下","吧"]},{speaker:"小刚",text:"检查好几次了，但是没什么用。",tokens:["检查","好几","次","了","但是","没什么","用"]},{speaker:"同事",text:"大夫怎么说的？",tokens:["大夫","怎么","说","的"]},{speaker:"小刚",text:"每次医生都告诉我，回家好好儿刷牙。",tokens:["每","次","医生","都","告诉","我","回家","好好","儿","刷牙"]}],note:"“如果……（的话），就……”表示条件；复杂的状态补语：“形容词/动词 + 得 + 动词词组”；单音节形容词重叠：“AA的”"},{n:4,title:"课文4",original:"很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。",lines:[{name:"",zh:"很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。",py:'Hěn duō rén dōu juéde xiànzài rén hé rén de guānxi lěnglěng de, zhè kěnéng shì yīnwèi gōngzuò tài máng, máng de méi shíjiān gēn biéren jiànmiàn, lèi de bú yuànyì hé biéren duō shuōhuà. Qíshí, wǒmen yīnggāi duō duì biéren xiàoxiao, shuōhuà shí rúguǒ néng duō yòng yìxiē "nín hǎo" "xièxie" zhèyàng de cíyǔ, hé biéren de guānxi jiù huì biàn de gèng hǎo.',en:`Many people feel that relationships between people are cold these days. This may be because work is too busy—so busy there's no time to meet others, and so tiring that people don't want to talk much. Actually, we should smile at others more, and if we use words like "hello" and "thank you" more when we speak, our relationships will get better.`}],vocab:{seg:[{t:"很多人都觉得现在人和人的"},{b:1},{t:"冷冷的，这可能是因为工作太忙，忙得没时间跟"},{b:2},{t:"见面，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的"},{b:3},{t:"，和别人的关系就会变得更好。"}],answers:["关系","别人","词语"]},grammar:{before:"很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，",after:"，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。",answer:"忙得没时间跟别人见面",tokens:["忙","得","没","时间","跟","别人","见面"]},sentences:[{speaker:"",text:"很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。",tokens:["很多","人","都","觉得","现在","人","和","人","的","关系","冷","冷","的","这","可能","是","因为","工作","太","忙","忙","得","没","时间","跟","别人","见面","累","得","不","愿意","和","别人","多","说话","其实","我们","应该","多","对","别人","笑","笑","说话","时","如果","能","多","用","一些","“","您好","”","“","谢谢","”","这样","的","词语","和","别人","的","关系","就","会","变","得","更","好"]}],note:"“如果……（的话），就……”表示条件；复杂的状态补语：“形容词/动词 + 得 + 动词词组”；单音节形容词重叠：“AA的”"}]},{num:17,name:"谁都有办法看好你的“病”",texts:[{n:1,title:"课文1",original:`小丽：周经理，下个星期我可以请几天假吗？
+小刚：每次医生都告诉我，回家好好儿刷牙。`,answer:"如果不舒服，就去医院检查一下吧",tokens:["如果","不","舒服","就","去","医院","检查","一下","吧"]},sentences:[{speaker:"小刚",text:"我的牙还是很疼。",tokens:["我","的","牙","还是","很","疼"]},{speaker:"同事",text:"如果不舒服，就去医院检查一下吧。",tokens:["如果","不","舒服","就","去","医院","检查","一下","吧"]},{speaker:"小刚",text:"检查好几次了，但是没什么用。",tokens:["检查","好几","次","了","但是","没什么","用"]},{speaker:"同事",text:"大夫怎么说的？",tokens:["大夫","怎么","说","的"]},{speaker:"小刚",text:"每次医生都告诉我，回家好好儿刷牙。",tokens:["每","次","医生","都","告诉","我","回家","好好","儿","刷牙"]}],note:"“如果……（的话），就……”表示条件；复杂的状态补语：“形容词/动词 + 得 + 动词词组”；单音节形容词重叠：“AA的”"},{n:4,title:"课文4",original:"很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。",lines:[{name:"",zh:"很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。",py:'Hěn duō rén dōu juéde xiànzài rén hé rén de guānxi lěnglěng de, zhè kěnéng shì yīnwèi gōngzuò tài máng, máng de méi shíjiān gēn biéren jiànmiàn, lèi de bú yuànyì hé biéren duō shuōhuà. Qíshí, wǒmen yīnggāi duō duì biéren xiàoxiao, shuōhuà shí rúguǒ néng duō yòng yìxiē "nín hǎo" "xièxie" zhèyàng de cíyǔ, hé biéren de guānxi jiù huì biàn de gèng hǎo.',en:`Many people feel that relationships between people are cold these days. This may be because work is too busy—so busy there's no time to meet others, and so tiring that people don't want to talk much. Actually, we should smile at others more, and if we use words like "hello" and "thank you" more when we speak, our relationships will get better.`}],vocab:{seg:[{t:"很多人都觉得现在人和人的"},{b:1},{t:"冷冷的，这可能是因为工作太忙，忙得没时间跟"},{b:2},{t:"见面，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的"},{b:3},{t:"，和别人的关系就会变得更好。"}],answers:["关系","别人","词语"],tiles:{关系:{py:"guānxi",en:"relationship; relation"},别人:{py:"biérén",en:"other people; others"},词语:{py:"cíyǔ",en:"word; expression"}}},grammar:{before:"很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，",after:"，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。",answer:"忙得没时间跟别人见面",tokens:["忙","得","没","时间","跟","别人","见面"]},sentences:[{speaker:"",text:"很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话。其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。",tokens:["很多","人","都","觉得","现在","人","和","人","的","关系","冷","冷","的","这","可能","是","因为","工作","太","忙","忙","得","没","时间","跟","别人","见面","累","得","不","愿意","和","别人","多","说话","其实","我们","应该","多","对","别人","笑","笑","说话","时","如果","能","多","用","一些","“","您好","”","“","谢谢","”","这样","的","词语","和","别人","的","关系","就","会","变","得","更","好"]}],note:"“如果……（的话），就……”表示条件；复杂的状态补语：“形容词/动词 + 得 + 动词词组”；单音节形容词重叠：“AA的”"}]},{num:17,name:"谁都有办法看好你的“病”",texts:[{n:1,title:"课文1",original:`小丽：周经理，下个星期我可以请几天假吗？
 周明：你有什么事？
 小丽：我的一个老朋友结婚，我跟他两年没见了。
 周明：你一共想请几天假？
@@ -828,7 +828,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周明：你有什么事？
 小丽：我的一个老朋友结婚，我跟他两年没见了。
 周明：你`},{b:2},{t:`想请几天假？
-小丽：三天。`}],answers:["假","一共"]},grammar:{before:`小丽：周经理，下个星期我可以请几天假吗？
+小丽：三天。`}],answers:["假","一共"],tiles:{假:{py:"jiǎ",en:"fake; false"},一共:{py:"yígòng",en:"altogether; in total"}}},grammar:{before:`小丽：周经理，下个星期我可以请几天假吗？
 周明：你有什么事？
 小丽：我的一个老朋友结婚，我跟他两年没见了。
 周明：`,after:`？
@@ -842,7 +842,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：他一般喜欢做什么？
 小丽：他有很多`},{b:3},{t:`，唱歌、画画儿、踢足球，什么都会。
 同事：真的？那你介绍我们认识认识吧。
-小丽：不行，现在他是我丈夫。`}],answers:["邻居","后来","爱好"]},grammar:{before:`同事：小丽，那个高高的男人是你们公司的吗？你对他了解吗？
+小丽：不行，现在他是我丈夫。`}],answers:["邻居","后来","爱好"],tiles:{邻居:{py:"línjū",en:"neighbor"},后来:{py:"hòulái",en:"later; afterwards"},爱好:{py:"àihào",en:"hobby; interest"}}},grammar:{before:`同事：小丽，那个高高的男人是你们公司的吗？你对他了解吗？
 小丽：我们过去是邻居，后来是大学同学，关系一直很不错。
 同事：他一般喜欢做什么？
 小丽：他有很多爱好，唱歌、画画儿、踢足球，什么都会。
@@ -855,11 +855,11 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周明：不用去医院，谁都有`},{b:1},{t:`看好你的“病”。我问你，你多久没运动了？
 周太太：我三年没运动了。
 周明：谁都知道运动对身体好。但是你吃`},{b:2},{t:`了就睡。
-周太太：`},{b:3},{t:"健康，我真应该多锻炼锻炼了。从明天起，我"},{b:4},{t:"每天去长跑。"}],answers:["办法","饱","为了","决定"]},grammar:{before:"周太太：最近我觉得",after:`，你带我去医院检查检查吧。
+周太太：`},{b:3},{t:"健康，我真应该多锻炼锻炼了。从明天起，我"},{b:4},{t:"每天去长跑。"}],answers:["办法","饱","为了","决定"],tiles:{办法:{py:"bànfǎ",en:"way; method"},饱:{py:"bǎo",en:"full (after eating)"},为了:{py:"wèile",en:"in order to; for"},决定:{py:"juédìng",en:"to decide; decision"}}},grammar:{before:"周太太：最近我觉得",after:`，你带我去医院检查检查吧。
 周明：不用去医院，谁都有办法看好你的“病”。我问你，你多久没运动了？
 周太太：我三年没运动了。
 周明：谁都知道运动对身体好。但是你吃饱了就睡。
-周太太：为了健康，我真应该多锻炼锻炼了。从明天起，我决定每天去长跑。`,answer:"哪儿都不舒服",tokens:["哪儿","都","不","舒服"]},sentences:[{speaker:"周太太",text:"最近我觉得哪儿都不舒服，你带我去医院检查检查吧。",tokens:["最近","我","觉得","哪儿","都","不","舒服","你","带","我","去","医院","检查","检查","吧"]},{speaker:"周明",text:"不用去医院，谁都有办法看好你的“病”。我问你，你多久没运动了？",tokens:["不用","去","医院","谁","都","有","办法","看","好","你","的","“","病","”","我","问","你","你","多","久","没","运动","了"]},{speaker:"周太太",text:"我三年没运动了。",tokens:["我","三年","没","运动","了"]},{speaker:"周明",text:"谁都知道运动对身体好。但是你吃饱了就睡。",tokens:["谁","都","知道","运动","对","身体","好","但是","你","吃","饱","了","就","睡"]},{speaker:"周太太",text:"为了健康，我真应该多锻炼锻炼了。从明天起，我决定每天去长跑。",tokens:["为了","健康","我","真","应该","多","锻炼","锻炼","了","从","明天","起","我","决定","每天","去","长","跑"]}],note:"双音节动词重叠：“ABAB”；疑问代词活用3：疑问代词 + 都/也……表示任指"},{n:4,title:"课文4",original:"“运动很重要”这句话谁都懂。但是你知道怎么运动吗？第一，要选择“对”的时间。一般来说，早上9点是最好的时间，冬天要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，必须要根据自己的健康情况运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口渴的时候，不要马上喝水。",lines:[{name:"",zh:"“运动很重要”这句话谁都懂。但是你知道怎么运动吗？第一，要选择“对”的时间。一般来说，早上9点是最好的时间，冬天要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，必须要根据自己的健康情况运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口渴的时候，不要马上喝水。",py:'"Yùndòng hěn zhòngyào" zhè jù huà shéi dōu dǒng. Dànshì nǐ zhīdào zěnme yùndòng ma? Dì-yī, yào xuǎnzé "duì" de shíjiān. Yìbān lái shuō, zǎoshang jiǔ diǎn shì zuì hǎo de shíjiān, dōngtiān yào zài wǎn yìxiē. Dì-èr, yào xuǎnzé "duì" de dìdiǎn, gōngyuán, shān shàng, yóuyǒngguǎn, zhèxiē dìfang dōu kěyǐ yùndòng. Dì-sān, bìxū yào gēnjù zìjǐ de jiànkāng qíngkuàng yùndòng. Rúguǒ nǐ hěn jiǔ méi pá shān huòzhě yóuyǒng le, yùndòng yíhuìr jiù yídìng yào xiūxi xiūxi. Hái yào jìde gāng yùndòng wán kǒukě de shíhou, bú yào mǎshàng hē shuǐ.',en:`Everyone understands the phrase "exercise is important." But do you know how to exercise? First, choose the "right" time. Generally, 9 a.m. is best, a bit later in winter. Second, choose the "right" place—parks, hills, swimming pools are all fine. Third, you must exercise according to your own health. If you haven't hiked or swum in a long time, be sure to rest after a little exercise. Also remember not to drink water right away when you're thirsty just after exercising.`}],vocab:{seg:[{t:"“运动很重要”这句话谁都懂。但是你知道怎么运动吗？第一，要"},{b:1},{t:"“对”的时间。一般来说，早上9点是最好的时间，"},{b:2},{t:"要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，"},{b:3},{t:"要"},{b:4},{t:"自己的健康"},{b:5},{t:"运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口"},{b:6},{t:"的时候，不要马上喝水。"}],answers:["选择","冬天","必须","根据","情况","渴"]},grammar:{before:"“运动很重要”",after:"。但是你知道怎么运动吗？第一，要选择“对”的时间。一般来说，早上9点是最好的时间，冬天要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，必须要根据自己的健康情况运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口渴的时候，不要马上喝水。",answer:"这句话谁都懂",tokens:["这","句","话","谁","都","懂"]},sentences:[{speaker:"",text:"“运动很重要”这句话谁都懂。但是你知道怎么运动吗？第一，要选择“对”的时间。一般来说，早上9点是最好的时间，冬天要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，必须要根据自己的健康情况运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口渴的时候，不要马上喝水。",tokens:["“","运动","很","重要","”","这","句","话","谁","都","懂","但是","你","知道","怎么","运动","吗","第一","要","选择","“","对","”","的","时间","一般来说","早上","9","点","是","最好","的","时间","冬天","要","再","晚","一些","第二","要","选择","“","对","”","的","地点","公园","山","上","游泳","馆","这些","地方","都","可以","运动","第","三","必须","要","根据","自己","的","健康","情况","运动","如果","你","很","久","没","爬山","或者","游泳","了","运动","一会儿","就","一定","要","休息","休息","还要","记得","刚","运动","完","口","渴","的","时候","不要","马上","喝","水"]}],note:"双音节动词重叠：“ABAB”；疑问代词活用3：疑问代词 + 都/也……表示任指"}]},{num:18,name:"我相信他们会同意的",texts:[{n:1,title:"课文1",original:`朋友：老周，我打算买房子了，想向你借点儿钱。
+周太太：为了健康，我真应该多锻炼锻炼了。从明天起，我决定每天去长跑。`,answer:"哪儿都不舒服",tokens:["哪儿","都","不","舒服"]},sentences:[{speaker:"周太太",text:"最近我觉得哪儿都不舒服，你带我去医院检查检查吧。",tokens:["最近","我","觉得","哪儿","都","不","舒服","你","带","我","去","医院","检查","检查","吧"]},{speaker:"周明",text:"不用去医院，谁都有办法看好你的“病”。我问你，你多久没运动了？",tokens:["不用","去","医院","谁","都","有","办法","看","好","你","的","“","病","”","我","问","你","你","多","久","没","运动","了"]},{speaker:"周太太",text:"我三年没运动了。",tokens:["我","三年","没","运动","了"]},{speaker:"周明",text:"谁都知道运动对身体好。但是你吃饱了就睡。",tokens:["谁","都","知道","运动","对","身体","好","但是","你","吃","饱","了","就","睡"]},{speaker:"周太太",text:"为了健康，我真应该多锻炼锻炼了。从明天起，我决定每天去长跑。",tokens:["为了","健康","我","真","应该","多","锻炼","锻炼","了","从","明天","起","我","决定","每天","去","长","跑"]}],note:"双音节动词重叠：“ABAB”；疑问代词活用3：疑问代词 + 都/也……表示任指"},{n:4,title:"课文4",original:"“运动很重要”这句话谁都懂。但是你知道怎么运动吗？第一，要选择“对”的时间。一般来说，早上9点是最好的时间，冬天要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，必须要根据自己的健康情况运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口渴的时候，不要马上喝水。",lines:[{name:"",zh:"“运动很重要”这句话谁都懂。但是你知道怎么运动吗？第一，要选择“对”的时间。一般来说，早上9点是最好的时间，冬天要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，必须要根据自己的健康情况运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口渴的时候，不要马上喝水。",py:'"Yùndòng hěn zhòngyào" zhè jù huà shéi dōu dǒng. Dànshì nǐ zhīdào zěnme yùndòng ma? Dì-yī, yào xuǎnzé "duì" de shíjiān. Yìbān lái shuō, zǎoshang jiǔ diǎn shì zuì hǎo de shíjiān, dōngtiān yào zài wǎn yìxiē. Dì-èr, yào xuǎnzé "duì" de dìdiǎn, gōngyuán, shān shàng, yóuyǒngguǎn, zhèxiē dìfang dōu kěyǐ yùndòng. Dì-sān, bìxū yào gēnjù zìjǐ de jiànkāng qíngkuàng yùndòng. Rúguǒ nǐ hěn jiǔ méi pá shān huòzhě yóuyǒng le, yùndòng yíhuìr jiù yídìng yào xiūxi xiūxi. Hái yào jìde gāng yùndòng wán kǒukě de shíhou, bú yào mǎshàng hē shuǐ.',en:`Everyone understands the phrase "exercise is important." But do you know how to exercise? First, choose the "right" time. Generally, 9 a.m. is best, a bit later in winter. Second, choose the "right" place—parks, hills, swimming pools are all fine. Third, you must exercise according to your own health. If you haven't hiked or swum in a long time, be sure to rest after a little exercise. Also remember not to drink water right away when you're thirsty just after exercising.`}],vocab:{seg:[{t:"“运动很重要”这句话谁都懂。但是你知道怎么运动吗？第一，要"},{b:1},{t:"“对”的时间。一般来说，早上9点是最好的时间，"},{b:2},{t:"要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，"},{b:3},{t:"要"},{b:4},{t:"自己的健康"},{b:5},{t:"运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口"},{b:6},{t:"的时候，不要马上喝水。"}],answers:["选择","冬天","必须","根据","情况","渴"],tiles:{选择:{py:"xuǎnzé",en:"to choose; choice"},冬天:{py:"dōngtiān",en:"winter"},必须:{py:"bìxū",en:"must; have to"},根据:{py:"gēnjù",en:"according to; based on"},情况:{py:"qíngkuàng",en:"situation; condition"},渴:{py:"kě",en:"thirsty"}}},grammar:{before:"“运动很重要”",after:"。但是你知道怎么运动吗？第一，要选择“对”的时间。一般来说，早上9点是最好的时间，冬天要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，必须要根据自己的健康情况运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口渴的时候，不要马上喝水。",answer:"这句话谁都懂",tokens:["这","句","话","谁","都","懂"]},sentences:[{speaker:"",text:"“运动很重要”这句话谁都懂。但是你知道怎么运动吗？第一，要选择“对”的时间。一般来说，早上9点是最好的时间，冬天要再晚一些。第二，要选择“对”的地点，公园、山上、游泳馆，这些地方都可以运动。第三，必须要根据自己的健康情况运动。如果你很久没爬山或者游泳了，运动一会儿就一定要休息休息。还要记得刚运动完口渴的时候，不要马上喝水。",tokens:["“","运动","很","重要","”","这","句","话","谁","都","懂","但是","你","知道","怎么","运动","吗","第一","要","选择","“","对","”","的","时间","一般来说","早上","9","点","是","最好","的","时间","冬天","要","再","晚","一些","第二","要","选择","“","对","”","的","地点","公园","山","上","游泳","馆","这些","地方","都","可以","运动","第","三","必须","要","根据","自己","的","健康","情况","运动","如果","你","很","久","没","爬山","或者","游泳","了","运动","一会儿","就","一定","要","休息","休息","还要","记得","刚","运动","完","口","渴","的","时候","不要","马上","喝","水"]}],note:"双音节动词重叠：“ABAB”；疑问代词活用3：疑问代词 + 都/也……表示任指"}]},{num:18,name:"我相信他们会同意的",texts:[{n:1,title:"课文1",original:`朋友：老周，我打算买房子了，想向你借点儿钱。
 周明：没问题，只要我有，就一定会借给你的。还差多少？
 朋友：还差5万块钱。
 周明：好，钱下午打给你。你打算在哪儿买房？
@@ -869,7 +869,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 朋友：还差5`},{b:2},{t:`块钱。
 周明：好，钱下午打给你。你打算在哪儿买房？
 朋友：就在我们医院前面。
-周明：那你以后去医院就方便了。`}],answers:["向","万"]},grammar:{before:`朋友：老周，我打算买房子了，想向你借点儿钱。
+周明：那你以后去医院就方便了。`}],answers:["向","万"],tiles:{向:{py:"xiàng",en:"toward; to"},万:{py:"wàn",en:"ten thousand"}}},grammar:{before:`朋友：老周，我打算买房子了，想向你借点儿钱。
 周明：没问题，`,after:`。还差多少？
 朋友：还差5万块钱。
 周明：好，钱下午打给你。你打算在哪儿买房？
@@ -882,7 +882,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 妈妈：`},{b:3},{t:`和小孩儿一样，都需要人照顾。买回家去，谁照顾它啊？
 小明：我照顾啊。
 妈妈：这`},{b:4},{t:`时间你自己的衣服都没洗，你能照顾好它吗？
-小明：只要你给我买，我就能照顾好它。`}],answers:["只","嘴","动物","段"]},grammar:{before:`小明：妈妈，你看那只狗多可爱，眼睛大大的，嘴小小的，我们买回去吧。
+小明：只要你给我买，我就能照顾好它。`}],answers:["只","嘴","动物","段"],tiles:{只:{py:"zhǐ",en:"only; just"},嘴:{py:"zuǐ",en:"mouth"},动物:{py:"dòngwù",en:"animal"},段:{py:"duàn",en:"section; period; stretch (measure word)"}}},grammar:{before:`小明：妈妈，你看那只狗多可爱，眼睛大大的，嘴小小的，我们买回去吧。
 妈妈：动物和小孩儿一样，都需要人照顾。买回家去，谁照顾它啊？
 小明：我照顾啊。
 妈妈：这段时间你自己的衣服都没洗，你能照顾好它吗？
@@ -896,12 +896,12 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 经理：做这个工作有点儿累，需要经常去外地。你家人`},{b:2},{t:`吗？
 学生：只要我愿意，我`},{b:3},{t:`他们就会同意的。
 经理：好，那你明天来上班吧。`},{b:4},{t:`这个工作，还有什么问题吗？
-学生：没有了，谢谢您给我这个`},{b:5},{t:"，我会努力的。"}],answers:["有名","同意","相信","关于","机会"]},grammar:{before:`经理：说说你为什么选择来我们公司工作。
+学生：没有了，谢谢您给我这个`},{b:5},{t:"，我会努力的。"}],answers:["有名","同意","相信","关于","机会"],tiles:{有名:{py:"yǒumíng",en:"famous"},同意:{py:"tóngyì",en:"to agree"},相信:{py:"xiāngxìn",en:"to believe; to trust"},关于:{py:"guānyú",en:"about; regarding"},机会:{py:"jīhuì",en:"opportunity; chance"}}},grammar:{before:`经理：说说你为什么选择来我们公司工作。
 学生：贵公司不但很有名，而且工作环境好。
 经理：做这个工作有点儿累，需要经常去外地。你家人同意吗？
 学生：只要我愿意，我相信他们就会同意的。
 经理：好，那你明天来上班吧。`,after:`，还有什么问题吗？
-学生：没有了，谢谢您给我这个机会，我会努力的。`,answer:"关于这个工作",tokens:["关于","这个","工作"]},sentences:[{speaker:"经理",text:"说说你为什么选择来我们公司工作。",tokens:["说","说","你","为什么","选择","来","我们","公司","工作"]},{speaker:"学生",text:"贵公司不但很有名，而且工作环境好。",tokens:["贵","公司","不但","很","有名","而且","工作","环境","好"]},{speaker:"经理",text:"做这个工作有点儿累，需要经常去外地。你家人同意吗？",tokens:["做","这个","工作","有点儿","累","需要","经常","去","外地","你家","人","同意","吗"]},{speaker:"学生",text:"只要我愿意，我相信他们就会同意的。",tokens:["只要","我","愿意","我","相信","他们","就","会","同意","的"]},{speaker:"经理",text:"好，那你明天来上班吧。关于这个工作，还有什么问题吗？",tokens:["好","那","你","明天","来","上班","吧","关于","这个","工作","还有","什么","问题","吗"]},{speaker:"学生",text:"没有了，谢谢您给我这个机会，我会努力的。",tokens:["没有","了","谢谢","您","给","我","这个","机会","我","会","努力","的"]}],note:"“只要……，就……”表示充分条件；介词“关于”表示“关于/有关”"},{n:4,title:"课文4",original:"不同的国家有不同的文化，每种文化都有自己的特点。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。",lines:[{name:"",zh:"不同的国家有不同的文化，每种文化都有自己的特点。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。",py:"Bùtóng de guójiā yǒu bùtóng de wénhuà, měi zhǒng wénhuà dōu yǒu zìjǐ de tèdiǎn. Dào le yí ge xīn huánjìng, nǐ huì juéde shénme dōu hěn xīnxiān, érqiě hái huì juéde yǒudiǎn qíguài: yǒuxiē guójiā de rénmíng xiě zài xìng qiánmiàn, yǒuxiē guójiā de rénmíng xiě zài xìng hòumiàn, dànshì zhǐyào jīngguò yí duàn shíjiān, jiù huì mànmàn de xíguàn.",en:"Different countries have different cultures, and each culture has its own features. In a new environment, everything feels fresh, and a bit strange too: in some countries the given name is written before the surname, in others after. But as long as some time passes, you'll gradually get used to it."}],vocab:{seg:[{t:"不同的"},{b:1},{t:"有不同的文化，每"},{b:2},{t:"文化都有自己的"},{b:3},{t:"。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点"},{b:4},{t:"：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。"}],answers:["国家","种","特点","奇怪"]},grammar:{before:"不同的国家有不同的文化，每种文化都有自己的特点。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是",after:"。",answer:"只要经过一段时间，就会慢慢地习惯",tokens:["只要","经过","一段时间","就","会","慢慢","地","习惯"]},sentences:[{speaker:"",text:"不同的国家有不同的文化，每种文化都有自己的特点。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。",tokens:["不同","的","国家","有","不同","的","文化","每","种","文化","都","有","自己","的","特点","到","了","一个","新","环境","你","会","觉得","什么","都","很","新鲜","而且","还","会","觉得","有","点","奇怪","有些","国家","的","人","名","写","在","姓","前面","有些","国家","的","人","名","写","在","姓","后面","但是","只要","经过","一段时间","就","会","慢慢","地","习惯"]}],note:"“只要……，就……”表示充分条件；介词“关于”表示“关于/有关”"}]},{num:19,name:"你没看出来吗？",texts:[{n:1,title:"课文1",original:`爸爸：女儿最近喜欢把头发放在耳朵后面，你知道为什么吗？
+学生：没有了，谢谢您给我这个机会，我会努力的。`,answer:"关于这个工作",tokens:["关于","这个","工作"]},sentences:[{speaker:"经理",text:"说说你为什么选择来我们公司工作。",tokens:["说","说","你","为什么","选择","来","我们","公司","工作"]},{speaker:"学生",text:"贵公司不但很有名，而且工作环境好。",tokens:["贵","公司","不但","很","有名","而且","工作","环境","好"]},{speaker:"经理",text:"做这个工作有点儿累，需要经常去外地。你家人同意吗？",tokens:["做","这个","工作","有点儿","累","需要","经常","去","外地","你家","人","同意","吗"]},{speaker:"学生",text:"只要我愿意，我相信他们就会同意的。",tokens:["只要","我","愿意","我","相信","他们","就","会","同意","的"]},{speaker:"经理",text:"好，那你明天来上班吧。关于这个工作，还有什么问题吗？",tokens:["好","那","你","明天","来","上班","吧","关于","这个","工作","还有","什么","问题","吗"]},{speaker:"学生",text:"没有了，谢谢您给我这个机会，我会努力的。",tokens:["没有","了","谢谢","您","给","我","这个","机会","我","会","努力","的"]}],note:"“只要……，就……”表示充分条件；介词“关于”表示“关于/有关”"},{n:4,title:"课文4",original:"不同的国家有不同的文化，每种文化都有自己的特点。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。",lines:[{name:"",zh:"不同的国家有不同的文化，每种文化都有自己的特点。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。",py:"Bùtóng de guójiā yǒu bùtóng de wénhuà, měi zhǒng wénhuà dōu yǒu zìjǐ de tèdiǎn. Dào le yí ge xīn huánjìng, nǐ huì juéde shénme dōu hěn xīnxiān, érqiě hái huì juéde yǒudiǎn qíguài: yǒuxiē guójiā de rénmíng xiě zài xìng qiánmiàn, yǒuxiē guójiā de rénmíng xiě zài xìng hòumiàn, dànshì zhǐyào jīngguò yí duàn shíjiān, jiù huì mànmàn de xíguàn.",en:"Different countries have different cultures, and each culture has its own features. In a new environment, everything feels fresh, and a bit strange too: in some countries the given name is written before the surname, in others after. But as long as some time passes, you'll gradually get used to it."}],vocab:{seg:[{t:"不同的"},{b:1},{t:"有不同的文化，每"},{b:2},{t:"文化都有自己的"},{b:3},{t:"。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点"},{b:4},{t:"：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。"}],answers:["国家","种","特点","奇怪"],tiles:{国家:{py:"guójiā",en:"country"},种:{py:"zhǒng",en:"kind; type (measure word)"},特点:{py:"tèdiǎn",en:"feature; characteristic"},奇怪:{py:"qíguài",en:"strange; odd"}}},grammar:{before:"不同的国家有不同的文化，每种文化都有自己的特点。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是",after:"。",answer:"只要经过一段时间，就会慢慢地习惯",tokens:["只要","经过","一段时间","就","会","慢慢","地","习惯"]},sentences:[{speaker:"",text:"不同的国家有不同的文化，每种文化都有自己的特点。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。",tokens:["不同","的","国家","有","不同","的","文化","每","种","文化","都","有","自己","的","特点","到","了","一个","新","环境","你","会","觉得","什么","都","很","新鲜","而且","还","会","觉得","有","点","奇怪","有些","国家","的","人","名","写","在","姓","前面","有些","国家","的","人","名","写","在","姓","后面","但是","只要","经过","一段时间","就","会","慢慢","地","习惯"]}],note:"“只要……，就……”表示充分条件；介词“关于”表示“关于/有关”"}]},{num:19,name:"你没看出来吗？",texts:[{n:1,title:"课文1",original:`爸爸：女儿最近喜欢把头发放在耳朵后面，你知道为什么吗？
 妈妈：这样可以使她的脸看上去漂亮一些。
 爸爸：我最近觉得她和以前不太一样了。
 妈妈：女儿变化不小，她小时候喜欢短头发，像男孩子一样。
@@ -909,7 +909,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 妈妈：这样可以使她的`},{b:2},{t:`看上去漂亮一些。
 爸爸：我最近觉得她和以前不太一样了。
 妈妈：女儿变化不小，她小时候喜欢`},{b:3},{t:`头发，像男孩子一样。
-爸爸：我也想起来了。她现在慢慢地开始像个女孩子了。`}],answers:["耳朵","脸","短"]},grammar:{before:`爸爸：女儿最近喜欢把头发放在耳朵后面，你知道为什么吗？
+爸爸：我也想起来了。她现在慢慢地开始像个女孩子了。`}],answers:["耳朵","脸","短"],tiles:{耳朵:{py:"ěrduo",en:"ear; ears"},脸:{py:"liǎn",en:"face"},短:{py:"duǎn",en:"short"}}},grammar:{before:`爸爸：女儿最近喜欢把头发放在耳朵后面，你知道为什么吗？
 妈妈：这样可以使她的脸看上去漂亮一些。
 爸爸：我最近觉得她和以前不太一样了。
 妈妈：女儿变化不小，她小时候喜欢短头发，像男孩子一样。
@@ -923,7 +923,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小丽：你没看出来吗？他是小刚啊。
 同事：怎么看上去跟现在不太一样？
 小丽：他上班穿西服、衬衫，比赛的时候穿的是运动服。
-同事：他今天穿`},{b:4},{t:"西服，看上去像40多岁，还是穿运动服让他更年轻。"}],answers:["马","张","位","蓝"]},grammar:{before:`小丽：上次我们参加骑马比赛的照片，我选了几张洗出来了。
+同事：他今天穿`},{b:4},{t:"西服，看上去像40多岁，还是穿运动服让他更年轻。"}],answers:["马","张","位","蓝"],tiles:{马:{py:"mǎ",en:"horse"},张:{py:"zhāng",en:"measure word for flat objects"},位:{py:"wèi",en:"polite measure word for people"},蓝:{py:"lán",en:"blue"}}},grammar:{before:`小丽：上次我们参加骑马比赛的照片，我选了几张洗出来了。
 同事：快给我看看。骑得最快的这位是谁？
 小丽：`,after:`？他是小刚啊。
 同事：怎么看上去跟现在不太一样？
@@ -938,12 +938,12 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 朋友：她去年`},{b:1},{t:"出生的，刚"},{b:2},{t:`完一岁生日。
 小丽：她喜欢什么？我送给她。
 朋友：她就喜欢听她爸爸学`},{b:3},{t:"叫。"},{b:4},{t:`的时候，只要他爸爸学小鸟叫，她马上就安静下来了。
-小丽：啊？这个礼物我没办法送。`}],answers:["秋天","过","鸟","哭"]},grammar:{before:`朋友：我们一年没见面了吧？
+小丽：啊？这个礼物我没办法送。`}],answers:["秋天","过","鸟","哭"],tiles:{秋天:{py:"qiūtiān",en:"autumn; fall"},过:{py:"guò",en:"to spend; to pass; experiential particle"},鸟:{py:"niǎo",en:"bird"},哭:{py:"kū",en:"to cry"}}},grammar:{before:`朋友：我们一年没见面了吧？
 小丽：听说你都有女儿了？她多大了？
 朋友：她去年秋天出生的，刚过完一岁生日。
 小丽：她喜欢什么？我送给她。
 朋友：她就喜欢听她爸爸学鸟叫。哭的时候，只要他爸爸学小鸟叫，`,after:`。
-小丽：啊？这个礼物我没办法送。`,answer:"她马上就安静下来了",tokens:["她","马上","就","安静","下来","了"]},sentences:[{speaker:"朋友",text:"我们一年没见面了吧？",tokens:["我们","一年","没","见面","了","吧"]},{speaker:"小丽",text:"听说你都有女儿了？她多大了？",tokens:["听说","你","都","有","女儿","了","她","多大","了"]},{speaker:"朋友",text:"她去年秋天出生的，刚过完一岁生日。",tokens:["她","去年","秋天","出生","的","刚","过","完","一","岁","生日"]},{speaker:"小丽",text:"她喜欢什么？我送给她。",tokens:["她","喜欢","什么","我","送给","她"]},{speaker:"朋友",text:"她就喜欢听她爸爸学鸟叫。哭的时候，只要他爸爸学小鸟叫，她马上就安静下来了。",tokens:["她","就","喜欢","听","她","爸爸","学","鸟","叫","哭","的","时候","只要","他","爸爸","学","小","鸟","叫","她","马上","就","安静","下来","了"]},{speaker:"小丽",text:"啊？这个礼物我没办法送。",tokens:["啊","这个","礼物","我","没","办法","送"]}],note:"趋向补语的引申义：“出来 / 下来 / 起来”；“使、叫、让”表示致使"},{n:4,title:"课文4",original:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。一路上经过了很多地方，每个地方都不一样。我想快点儿把照片发给大家，叫朋友们也高兴高兴。",lines:[{name:"",zh:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。一路上经过了很多地方，每个地方都不一样。我想快点儿把照片发给大家，叫朋友们也高兴高兴。",py:"Zhè cì lǚyóu, wǒ qù le bù shǎo dìfang, měi ge dìfang dōu ràng wǒ fēicháng nánwàng. Wǒ xiān qù kàn le Huáng Hé, Huáng Hé shì Zhōngguó yǒumíng de dà hé, wǒ zuò zài chuán shàng, yìbiān kàn yìbiān zhàoxiàng. Yílù shàng jīngguò le hěn duō dìfang, měi ge dìfang dōu bù yíyàng. Wǒ xiǎng kuài diǎnr bǎ zhàopiàn fā gěi dàjiā, jiào péngyoumen yě gāoxìng gāoxìng.",en:"On this trip I visited many places, each one unforgettable. First I went to see the Yellow River, a famous great river in China; sitting on a boat, I looked and took photos. Along the way I passed many places, each different. I want to hurry and send everyone the photos so my friends can enjoy them too."}],vocab:{seg:[{t:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了"},{b:1},{t:"，黄河是中国有名的大河，我坐在"},{b:2},{t:"上，一边看一边照相。一路上"},{b:3},{t:"了很多地方，每个地方都不一样。我想快点儿把照片发给大家，叫朋友们也高兴高兴。"}],answers:["黄河","船","经过"]},grammar:{before:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。一路上经过了很多地方，每个地方都不一样。我想快点儿把照片发给大家，",after:"。",answer:"叫朋友们也高兴高兴",tokens:["叫","朋友","们","也","高兴","高兴"]},sentences:[{speaker:"",text:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。一路上经过了很多地方，每个地方都不一样。我想快点儿把照片发给大家，叫朋友们也高兴高兴。",tokens:["这","次","旅游","我","去","了","不少","地方","每","个","地方","都","让","我","非常","难","忘","我","先","去","看","了","黄河","黄河","是","中国","有名","的","大","河","我","坐","在","船","上","一边","看","一边","照相","一","路上","经过","了","很多","地方","每","个","地方","都","不","一样","我","想","快","点儿","把","照片","发","给","大家","叫","朋友","们","也","高兴","高兴"]}],note:"趋向补语的引申义：“出来 / 下来 / 起来”；“使、叫、让”表示致使"}]},{num:20,name:"我被他影响了",texts:[{n:1,title:"课文1",original:`小丽：我的照相机被谁拿走了？怎么找不到了？
+小丽：啊？这个礼物我没办法送。`,answer:"她马上就安静下来了",tokens:["她","马上","就","安静","下来","了"]},sentences:[{speaker:"朋友",text:"我们一年没见面了吧？",tokens:["我们","一年","没","见面","了","吧"]},{speaker:"小丽",text:"听说你都有女儿了？她多大了？",tokens:["听说","你","都","有","女儿","了","她","多大","了"]},{speaker:"朋友",text:"她去年秋天出生的，刚过完一岁生日。",tokens:["她","去年","秋天","出生","的","刚","过","完","一","岁","生日"]},{speaker:"小丽",text:"她喜欢什么？我送给她。",tokens:["她","喜欢","什么","我","送给","她"]},{speaker:"朋友",text:"她就喜欢听她爸爸学鸟叫。哭的时候，只要他爸爸学小鸟叫，她马上就安静下来了。",tokens:["她","就","喜欢","听","她","爸爸","学","鸟","叫","哭","的","时候","只要","他","爸爸","学","小","鸟","叫","她","马上","就","安静","下来","了"]},{speaker:"小丽",text:"啊？这个礼物我没办法送。",tokens:["啊","这个","礼物","我","没","办法","送"]}],note:"趋向补语的引申义：“出来 / 下来 / 起来”；“使、叫、让”表示致使"},{n:4,title:"课文4",original:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。一路上经过了很多地方，每个地方都不一样。我想快点儿把照片发给大家，叫朋友们也高兴高兴。",lines:[{name:"",zh:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。一路上经过了很多地方，每个地方都不一样。我想快点儿把照片发给大家，叫朋友们也高兴高兴。",py:"Zhè cì lǚyóu, wǒ qù le bù shǎo dìfang, měi ge dìfang dōu ràng wǒ fēicháng nánwàng. Wǒ xiān qù kàn le Huáng Hé, Huáng Hé shì Zhōngguó yǒumíng de dà hé, wǒ zuò zài chuán shàng, yìbiān kàn yìbiān zhàoxiàng. Yílù shàng jīngguò le hěn duō dìfang, měi ge dìfang dōu bù yíyàng. Wǒ xiǎng kuài diǎnr bǎ zhàopiàn fā gěi dàjiā, jiào péngyoumen yě gāoxìng gāoxìng.",en:"On this trip I visited many places, each one unforgettable. First I went to see the Yellow River, a famous great river in China; sitting on a boat, I looked and took photos. Along the way I passed many places, each different. I want to hurry and send everyone the photos so my friends can enjoy them too."}],vocab:{seg:[{t:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了"},{b:1},{t:"，黄河是中国有名的大河，我坐在"},{b:2},{t:"上，一边看一边照相。一路上"},{b:3},{t:"了很多地方，每个地方都不一样。我想快点儿把照片发给大家，叫朋友们也高兴高兴。"}],answers:["黄河","船","经过"],tiles:{黄河:{py:"Huáng Hé",en:"Yellow River"},船:{py:"chuán",en:"boat; ship"},经过:{py:"jīngguò",en:"to pass by; through"}}},grammar:{before:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。一路上经过了很多地方，每个地方都不一样。我想快点儿把照片发给大家，",after:"。",answer:"叫朋友们也高兴高兴",tokens:["叫","朋友","们","也","高兴","高兴"]},sentences:[{speaker:"",text:"这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。一路上经过了很多地方，每个地方都不一样。我想快点儿把照片发给大家，叫朋友们也高兴高兴。",tokens:["这","次","旅游","我","去","了","不少","地方","每","个","地方","都","让","我","非常","难","忘","我","先","去","看","了","黄河","黄河","是","中国","有名","的","大","河","我","坐","在","船","上","一边","看","一边","照相","一","路上","经过","了","很多","地方","每","个","地方","都","不","一样","我","想","快","点儿","把","照片","发","给","大家","叫","朋友","们","也","高兴","高兴"]}],note:"趋向补语的引申义：“出来 / 下来 / 起来”；“使、叫、让”表示致使"}]},{num:20,name:"我被他影响了",texts:[{n:1,title:"课文1",original:`小丽：我的照相机被谁拿走了？怎么找不到了？
 同事：你再找找。是不是没带来？
 小丽：我找了，没找到啊。
 同事：别难过，再买一个吧，公司东门外不就有一个大商场吗？
@@ -951,7 +951,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：你再找找。是不是没带来？
 小丽：我找了，没找到啊。
 同事：别`},{b:3},{t:"，再买一个吧，公司"},{b:4},{t:`门外不就有一个大商场吗？
-小丽：但是我这个月`},{b:5},{t:"里的钱已经花得差不多了。"}],answers:["照相机","被","难过","东","信用卡"]},grammar:{before:"小丽：",after:`？怎么找不到了？
+小丽：但是我这个月`},{b:5},{t:"里的钱已经花得差不多了。"}],answers:["照相机","被","难过","东","信用卡"],tiles:{照相机:{py:"zhàoxiàngjī",en:"camera"},被:{py:"bèi",en:"passive marker; by"},难过:{py:"nánguò",en:"sad; upset"},东:{py:"dōng",en:"east"},信用卡:{py:"xìnyòngkǎ",en:"credit card"}}},grammar:{before:"小丽：",after:`？怎么找不到了？
 同事：你再找找。是不是没带来？
 小丽：我找了，没找到啊。
 同事：别难过，再买一个吧，公司东门外不就有一个大商场吗？
@@ -965,7 +965,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 小明：看来只有爱，才能让人有变化。
 朋友：是啊，为了和他的爱好一样，我天天看球赛。
 小明：除了足球，他还影响你什么了？
-朋友：我最近天天上网玩儿游戏，我的`},{b:2},{t:"差极了。"}],answers:["关心","成绩"]},grammar:{before:`小明：你怎么突然关心起体育来了？
+朋友：我最近天天上网玩儿游戏，我的`},{b:2},{t:"差极了。"}],answers:["关心","成绩"],tiles:{关心:{py:"guānxīn",en:"to care about; be concerned about"},成绩:{py:"chéngjì",en:"grade; result; achievement"}}},grammar:{before:`小明：你怎么突然关心起体育来了？
 朋友：我的男朋友喜欢看足球比赛，我被他影响的。
 小明：看来`,after:`。
 朋友：是啊，为了和他的爱好一样，我天天看球赛。
@@ -980,9 +980,9 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 朋友：只有你们的爸爸妈妈才能`},{b:2},{t:`出来哪个是哥哥，哪个是弟弟吧。
 大卫：除了父母以外，还有我们自己也能啊。
 朋友：你们两个除了长得像，还有什么相同的地方？
-大卫：我们住在同一个楼、同一个房间……`}],answers:["碗","分"]},grammar:{before:`朋友：那个拿着碗吃饭的人是你哥哥吗？他和你长得真像。
+大卫：我们住在同一个楼、同一个房间……`}],answers:["碗","分"],tiles:{碗:{py:"wǎn",en:"bowl"},分:{py:"fēn",en:"minute"}}},grammar:{before:`朋友：那个拿着碗吃饭的人是你哥哥吗？他和你长得真像。
 大卫：`,after:`。
 朋友：只有你们的爸爸妈妈才能分出来哪个是哥哥，哪个是弟弟吧。
 大卫：除了父母以外，还有我们自己也能啊。
 朋友：你们两个除了长得像，还有什么相同的地方？
-大卫：我们住在同一个楼、同一个房间……`,answer:"我们经常被别人认错",tokens:["我们","经常","被","别人","认错"]},sentences:[{speaker:"朋友",text:"那个拿着碗吃饭的人是你哥哥吗？他和你长得真像。",tokens:["那个","拿","着","碗","吃饭","的","人","是","你","哥哥","吗","他","和","你","长","得","真","像"]},{speaker:"大卫",text:"我们经常被别人认错。",tokens:["我们","经常","被","别人","认错"]},{speaker:"朋友",text:"只有你们的爸爸妈妈才能分出来哪个是哥哥，哪个是弟弟吧。",tokens:["只有","你们","的","爸爸","妈妈","才能","分","出来","哪个","是","哥哥","哪个","是","弟弟","吧"]},{speaker:"大卫",text:"除了父母以外，还有我们自己也能啊。",tokens:["除了","父","母","以外","还有","我们","自己","也","能","啊"]},{speaker:"朋友",text:"你们两个除了长得像，还有什么相同的地方？",tokens:["你们","两个","除了","长","得","像","还有","什么","相同","的","地方"]},{speaker:"大卫",text:"我们住在同一个楼、同一个房间……",tokens:["我们","住","在","同","一个","楼","同","一个","房间"]}],note:"“被”字句表示被动；“只有……，才……”表示必要条件"},{n:4,title:"课文4",original:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的解决办法。有些问题看上去很难，但是做起来非常简单，所以得试着做做。有些问题看上去虽然简单，但是解决起来难极了。所以只有真正做事情的时候，才能了解有多难。不过，我们一定要相信：多么难的问题，都会被解决的。",lines:[{name:"",zh:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的解决办法。有些问题看上去很难，但是做起来非常简单，所以得试着做做。有些问题看上去虽然简单，但是解决起来难极了。所以只有真正做事情的时候，才能了解有多难。不过，我们一定要相信：多么难的问题，都会被解决的。",py:"Niánqīng rén yùdào nántí, chángcháng hěn zháojí, bù zhīdào zěnme bàn. Qíshí, bùtóng de wèntí yǒu bùtóng de jiějué bànfǎ. Yǒuxiē wèntí kàn shàngqu hěn nán, dànshì zuò qǐlai fēicháng jiǎndān, suǒyǐ děi shìzhe zuòzuo. Yǒuxiē wèntí kàn shàngqu suīrán jiǎndān, dànshì jiějué qǐlai nán jí le. Suǒyǐ zhǐyǒu zhēnzhèng zuò shìqing de shíhou, cái néng liǎojiě yǒu duō nán. Búguò, wǒmen yídìng yào xiāngxìn: duōme nán de wèntí, dōu huì bèi jiějué de.",en:"When young people run into tough problems, they often get anxious and don't know what to do. Actually, different problems have different solutions. Some problems look hard but are very simple to do, so you have to try. Some look simple but are extremely hard to solve. So only when you actually do something can you understand how hard it is. Still, we must believe: no matter how hard a problem is, it can be solved."}],vocab:{seg:[{t:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的"},{b:1},{t:"办法。有些问题看上去很难，但是做起来非常简单，所以得"},{b:2},{t:"着做做。有些问题看上去虽然简单，但是解决起来难极了。所以只有"},{b:3},{t:"做事情的时候，才能了解有多难。不过，我们一定要相信："},{b:4},{t:"难的问题，都会被解决的。"}],answers:["解决","试","真正","多么"]},grammar:{before:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的解决办法。有些问题看上去很难，但是做起来非常简单，所以得试着做做。有些问题看上去虽然简单，但是解决起来难极了。所以",after:"。不过，我们一定要相信：多么难的问题，都会被解决的。",answer:"只有真正做事情的时候，才能了解有多难",tokens:["只有","真正","做","事情","的","时候","才能","了解","有","多难"]},sentences:[{speaker:"",text:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的解决办法。有些问题看上去很难，但是做起来非常简单，所以得试着做做。有些问题看上去虽然简单，但是解决起来难极了。所以只有真正做事情的时候，才能了解有多难。不过，我们一定要相信：多么难的问题，都会被解决的。",tokens:["年轻人","遇到","难题","常常","很","着急","不","知道","怎么办","其实","不同","的","问题","有","不同","的","解决","办法","有些","问题","看上去","很","难","但是","做","起来","非常","简单","所以","得","试","着","做","做","有些","问题","看上去","虽然","简单","但是","解决","起来","难","极了","所以","只有","真正","做事","情","的","时候","才能","了解","有","多难","不过","我们","一定","要","相信","多么","难","的","问题","都","会","被","解决","的"]}],note:"“被”字句表示被动；“只有……，才……”表示必要条件"}]}],a={series:e,unit:3,lessons:n};export{a as default,n as lessons,e as series,t as unit};
+大卫：我们住在同一个楼、同一个房间……`,answer:"我们经常被别人认错",tokens:["我们","经常","被","别人","认错"]},sentences:[{speaker:"朋友",text:"那个拿着碗吃饭的人是你哥哥吗？他和你长得真像。",tokens:["那个","拿","着","碗","吃饭","的","人","是","你","哥哥","吗","他","和","你","长","得","真","像"]},{speaker:"大卫",text:"我们经常被别人认错。",tokens:["我们","经常","被","别人","认错"]},{speaker:"朋友",text:"只有你们的爸爸妈妈才能分出来哪个是哥哥，哪个是弟弟吧。",tokens:["只有","你们","的","爸爸","妈妈","才能","分","出来","哪个","是","哥哥","哪个","是","弟弟","吧"]},{speaker:"大卫",text:"除了父母以外，还有我们自己也能啊。",tokens:["除了","父","母","以外","还有","我们","自己","也","能","啊"]},{speaker:"朋友",text:"你们两个除了长得像，还有什么相同的地方？",tokens:["你们","两个","除了","长","得","像","还有","什么","相同","的","地方"]},{speaker:"大卫",text:"我们住在同一个楼、同一个房间……",tokens:["我们","住","在","同","一个","楼","同","一个","房间"]}],note:"“被”字句表示被动；“只有……，才……”表示必要条件"},{n:4,title:"课文4",original:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的解决办法。有些问题看上去很难，但是做起来非常简单，所以得试着做做。有些问题看上去虽然简单，但是解决起来难极了。所以只有真正做事情的时候，才能了解有多难。不过，我们一定要相信：多么难的问题，都会被解决的。",lines:[{name:"",zh:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的解决办法。有些问题看上去很难，但是做起来非常简单，所以得试着做做。有些问题看上去虽然简单，但是解决起来难极了。所以只有真正做事情的时候，才能了解有多难。不过，我们一定要相信：多么难的问题，都会被解决的。",py:"Niánqīng rén yùdào nántí, chángcháng hěn zháojí, bù zhīdào zěnme bàn. Qíshí, bùtóng de wèntí yǒu bùtóng de jiějué bànfǎ. Yǒuxiē wèntí kàn shàngqu hěn nán, dànshì zuò qǐlai fēicháng jiǎndān, suǒyǐ děi shìzhe zuòzuo. Yǒuxiē wèntí kàn shàngqu suīrán jiǎndān, dànshì jiějué qǐlai nán jí le. Suǒyǐ zhǐyǒu zhēnzhèng zuò shìqing de shíhou, cái néng liǎojiě yǒu duō nán. Búguò, wǒmen yídìng yào xiāngxìn: duōme nán de wèntí, dōu huì bèi jiějué de.",en:"When young people run into tough problems, they often get anxious and don't know what to do. Actually, different problems have different solutions. Some problems look hard but are very simple to do, so you have to try. Some look simple but are extremely hard to solve. So only when you actually do something can you understand how hard it is. Still, we must believe: no matter how hard a problem is, it can be solved."}],vocab:{seg:[{t:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的"},{b:1},{t:"办法。有些问题看上去很难，但是做起来非常简单，所以得"},{b:2},{t:"着做做。有些问题看上去虽然简单，但是解决起来难极了。所以只有"},{b:3},{t:"做事情的时候，才能了解有多难。不过，我们一定要相信："},{b:4},{t:"难的问题，都会被解决的。"}],answers:["解决","试","真正","多么"],tiles:{解决:{py:"jiějué",en:"to solve; to resolve"},试:{py:"shì",en:"to try"},真正:{py:"zhēnzhèng",en:"real; truly"},多么:{py:"duōme",en:"how; what (exclamation)"}}},grammar:{before:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的解决办法。有些问题看上去很难，但是做起来非常简单，所以得试着做做。有些问题看上去虽然简单，但是解决起来难极了。所以",after:"。不过，我们一定要相信：多么难的问题，都会被解决的。",answer:"只有真正做事情的时候，才能了解有多难",tokens:["只有","真正","做","事情","的","时候","才能","了解","有","多难"]},sentences:[{speaker:"",text:"年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的解决办法。有些问题看上去很难，但是做起来非常简单，所以得试着做做。有些问题看上去虽然简单，但是解决起来难极了。所以只有真正做事情的时候，才能了解有多难。不过，我们一定要相信：多么难的问题，都会被解决的。",tokens:["年轻人","遇到","难题","常常","很","着急","不","知道","怎么办","其实","不同","的","问题","有","不同","的","解决","办法","有些","问题","看上去","很","难","但是","做","起来","非常","简单","所以","得","试","着","做","做","有些","问题","看上去","虽然","简单","但是","解决","起来","难","极了","所以","只有","真正","做事","情","的","时候","才能","了解","有","多难","不过","我们","一定","要","相信","多么","难","的","问题","都","会","被","解决","的"]}],note:"“被”字句表示被动；“只有……，才……”表示必要条件"}]}],a={series:e,unit:3,lessons:n};export{a as default,n as lessons,e as series,t as unit};
