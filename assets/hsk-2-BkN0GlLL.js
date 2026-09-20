@@ -25,7 +25,7 @@ A：明天下午怎么样？你明天几点能回来？
 B：三点多。`}],answers:["要","新"],tiles:{要:{py:"yào",en:"to want; need"},新:{py:"xīn",en:"new"}}},grammar:{before:"A：我们",after:`买几个新的椅子？
 B：好啊。什么时候去买？
 A：明天下午怎么样？你明天几点能回来？
-B：三点多。`,answer:"要不要",tokens:["要","不要"]},sentences:[{speaker:"A",text:"我们要不要买几个新的椅子？",tokens:["我们","要不","要","买","几","个","新","的","椅子"]},{speaker:"B",text:"好啊。什么时候去买？",tokens:["好","啊","什么","时候","去","买"]},{speaker:"A",text:"明天下午怎么样？你明天几点能回来？",tokens:["明天","下午","怎么样","你","明天","几","点","能","回来"]},{speaker:"B",text:"三点多。",tokens:["三","点","多"]}],note:"助动词“要”；程度副词“最”；概数的表达：“几”“多”"},{n:4,title:"课文4",original:`A：桌子下面有个猫。
+B：三点多。`,answer:"要不要",tokens:["要","不要"]},sentences:[{speaker:"A",text:"我们要不要买几个新的椅子？",tokens:["我们","要不","要","买","几","个","新","的","椅子"]},{speaker:"B",text:"好啊。",tokens:["好","啊"]},{speaker:"B",text:"什么时候去买？",tokens:["什么","时候","去","买"]},{speaker:"A",text:"明天下午怎么样？",tokens:["明天","下午","怎么样"]},{speaker:"A",text:"你明天几点能回来？",tokens:["你","明天","几","点","能","回来"]},{speaker:"B",text:"三点多。",tokens:["三","点","多"]}],note:"助动词“要”；程度副词“最”；概数的表达：“几”“多”"},{n:4,title:"课文4",original:`A：桌子下面有个猫。
 B：那是我的猫，它叫花花。
 A：它很漂亮。
 B：是啊，我觉得它的眼睛最漂亮。
@@ -40,7 +40,7 @@ B：那是我的猫，它叫花花。
 A：它很漂亮。
 B：是啊，我觉得它的眼睛最漂亮。
 A：它多大了？
-B：`,after:"。",answer:"六个多月",tokens:["六","个","多","月"]},sentences:[{speaker:"A",text:"桌子下面有个猫。",tokens:["桌子","下面","有","个","猫"]},{speaker:"B",text:"那是我的猫，它叫花花。",tokens:["那","是","我","的","猫","它","叫","花","花"]},{speaker:"A",text:"它很漂亮。",tokens:["它","很","漂亮"]},{speaker:"B",text:"是啊，我觉得它的眼睛最漂亮。",tokens:["是","啊","我","觉得","它","的","眼睛","最","漂亮"]},{speaker:"A",text:"它多大了？",tokens:["它","多大","了"]},{speaker:"B",text:"六个多月。",tokens:["六","个","多","月"]}],note:"助动词“要”；程度副词“最”；概数的表达：“几”“多”"}]},{num:2,name:"我每天六点起床",texts:[{n:1,title:"课文1",original:`A：你很少生病，是不是喜欢运动？
+B：`,after:"。",answer:"六个多月",tokens:["六","个","多","月"]},sentences:[{speaker:"B",text:"那是我的猫，它叫花花。",tokens:["那","是","我","的","猫","它","叫","花","花"]},{speaker:"A",text:"它很漂亮。",tokens:["它","很","漂亮"]},{speaker:"B",text:"是啊，我觉得它的眼睛最漂亮。",tokens:["是","啊","我","觉得","它","的","眼睛","最","漂亮"]},{speaker:"A",text:"它多大了？",tokens:["它","多大","了"]},{speaker:"B",text:"六个多月。",tokens:["六","个","多","月"]},{speaker:"A",text:"桌子下面有个猫。",tokens:["桌子","下面","有","个","猫"]}],note:"助动词“要”；程度副词“最”；概数的表达：“几”“多”"}]},{num:2,name:"我每天六点起床",texts:[{n:1,title:"课文1",original:`A：你很少生病，是不是喜欢运动？
 B：是啊，我每天早上都要出去跑步。
 A：你每天几点起床？
 B：我每天六点起床。`,lines:[{name:"A",zh:"你很少生病，是不是喜欢运动？",py:"Nǐ hěn shǎo shēngbìng, shì bu shì xǐhuan yùndòng?",en:"You rarely get sick—do you like exercising?"},{name:"B",zh:"是啊，我每天早上都要出去跑步。",py:"Shì a, wǒ měi tiān zǎoshang dōu yào chūqu pǎobù.",en:"Yeah, I go out running every morning."},{name:"A",zh:"你每天几点起床？",py:"Nǐ měi tiān jǐ diǎn qǐchuáng?",en:"What time do you get up every day?"},{name:"B",zh:"我每天六点起床。",py:"Wǒ měi tiān liù diǎn qǐchuáng.",en:"I get up at six every day."}],vocab:{seg:[{t:"A：你很少"},{b:1},{t:`，是不是喜欢运动？
@@ -58,7 +58,7 @@ A：什么时候能`},{b:3},{t:`？
 B：医生说下个星期。`}],answers:["药","身体","出院"],tiles:{药:{py:"yào",en:"medicine"},身体:{py:"shēntǐ",en:"body; health"},出院:{py:"chūyuàn",en:"to leave the hospital"}}},grammar:{before:"A：吃药了吗？",after:`？
 B：吃了。现在好多了。
 A：什么时候能出院？
-B：医生说下个星期。`,answer:"现在身体怎么样",tokens:["现在","身体","怎么样"]},sentences:[{speaker:"A",text:"吃药了吗？现在身体怎么样？",tokens:["吃","药","了","吗","现在","身体","怎么样"]},{speaker:"B",text:"吃了。现在好多了。",tokens:["吃","了","现在","好多","了"]},{speaker:"A",text:"什么时候能出院？",tokens:["什么","时候","能","出院"]},{speaker:"B",text:"医生说下个星期。",tokens:["医生","说","下","个","星期"]}],note:"用“是不是”的问句；代词“每”；疑问代词“多”"},{n:3,title:"课文3",original:`A：大卫今年多大？
+B：医生说下个星期。`,answer:"现在身体怎么样",tokens:["现在","身体","怎么样"]},sentences:[{speaker:"A",text:"吃药了吗？",tokens:["吃","药","了","吗"]},{speaker:"A",text:"现在身体怎么样？",tokens:["现在","身体","怎么样"]},{speaker:"A",text:"什么时候能出院？",tokens:["什么","时候","能","出院"]},{speaker:"B",text:"吃了。",tokens:["吃","了"]},{speaker:"B",text:"现在好多了。",tokens:["现在","好多","了"]},{speaker:"B",text:"医生说下个星期。",tokens:["医生","说","下","个","星期"]}],note:"用“是不是”的问句；代词“每”；疑问代词“多”"},{n:3,title:"课文3",original:`A：大卫今年多大？
 B：二十多岁。
 A：他多高？
 B：一米八几。
@@ -73,7 +73,7 @@ B：二十多岁。
 A：他多高？
 B：一米八几。
 A：你怎么知道这么多啊？
-B：他是我同学。`,answer:"多大",tokens:["多大"]},sentences:[{speaker:"A",text:"大卫今年多大？",tokens:["大卫","今年","多大"]},{speaker:"B",text:"二十多岁。",tokens:["二","十","多","岁"]},{speaker:"A",text:"他多高？",tokens:["他","多","高"]},{speaker:"B",text:"一米八几。",tokens:["一","米","八","几"]},{speaker:"A",text:"你怎么知道这么多啊？",tokens:["你","怎么","知道","这么","多","啊"]},{speaker:"B",text:"他是我同学。",tokens:["他","是","我","同学"]}],note:"用“是不是”的问句；代词“每”；疑问代词“多”"},{n:4,title:"课文4",original:`A：张老师星期六也不休息啊？
+B：他是我同学。`,answer:"多大",tokens:["多大"]},sentences:[{speaker:"A",text:"他多高？",tokens:["他","多","高"]},{speaker:"B",text:"一米八几。",tokens:["一","米","八","几"]},{speaker:"A",text:"你怎么知道这么多啊？",tokens:["你","怎么","知道","这么","多","啊"]},{speaker:"A",text:"大卫今年多大？",tokens:["大卫","今年","多大"]},{speaker:"B",text:"二十多岁。",tokens:["二","十","多","岁"]},{speaker:"B",text:"他是我同学。",tokens:["他","是","我","同学"]}],note:"用“是不是”的问句；代词“每”；疑问代词“多”"},{n:4,title:"课文4",original:`A：张老师星期六也不休息啊？
 B：是啊，他这几天很忙，没有时间休息。
 A：那会很累吧？
 B：他每天回来都很累。`,lines:[{name:"A",zh:"张老师星期六也不休息啊？",py:"Zhāng lǎoshī xīngqīliù yě bù xiūxi a?",en:"Teacher Zhang doesn't rest on Saturdays either?"},{name:"B",zh:"是啊，他这几天很忙，没有时间休息。",py:"Shì a, tā zhè jǐ tiān hěn máng, méiyǒu shíjiān xiūxi.",en:"Yeah, he's been busy these days and has no time to rest."},{name:"A",zh:"那会很累吧？",py:"Nà huì hěn lèi ba?",en:"That must be tiring, right?"},{name:"B",zh:"他每天回来都很累。",py:"Tā měi tiān huílai dōu hěn lèi.",en:"He comes back exhausted every day."}],vocab:{seg:[{t:"A：张老师星期六也不"},{b:1},{t:`啊？
@@ -91,7 +91,7 @@ A：多少钱买的？
 B：三`},{b:2},{t:"多块。"}],answers:["手表","千"],tiles:{手表:{py:"shǒubiǎo",en:"wristwatch"},千:{py:"qiān",en:"thousand"}}},grammar:{before:`A：这块手表是你的吗？
 B：不是我的，是`,after:`。
 A：多少钱买的？
-B：三千多块。`,answer:"我爸爸的",tokens:["我","爸爸","的"]},sentences:[{speaker:"A",text:"这块手表是你的吗？",tokens:["这","块","手表","是","你","的","吗"]},{speaker:"B",text:"不是我的，是我爸爸的。",tokens:["不是","我","的","是","我","爸爸","的"]},{speaker:"A",text:"多少钱买的？",tokens:["多少","钱","买","的"]},{speaker:"B",text:"三千多块。",tokens:["三","千","多","块"]}],note:"“的”字短语；数量词“一下”；语气副词“真”"},{n:2,title:"课文2",original:`A：这是今天早上的报纸吗？
+B：三千多块。`,answer:"我爸爸的",tokens:["我","爸爸","的"]},sentences:[{speaker:"A",text:"这块手表是你的吗？",tokens:["这","块","手表","是","你","的","吗"]},{speaker:"B",text:"三千多块。",tokens:["三","千","多","块"]},{speaker:"B",text:"不是我的，是我爸爸的。",tokens:["不是","我","的","是","我","爸爸","的"]},{speaker:"A",text:"多少钱买的？",tokens:["多少","钱","买","的"]}],note:"“的”字短语；数量词“一下”；语气副词“真”"},{n:2,title:"课文2",original:`A：这是今天早上的报纸吗？
 B：不是，是昨天的。
 A：你听，是不是送报纸的来了？
 B：我看一下。不是，是送牛奶的。`,lines:[{name:"A",zh:"这是今天早上的报纸吗？",py:"Zhè shì jīntiān zǎoshang de bàozhǐ ma?",en:"Is this this morning's newspaper?"},{name:"B",zh:"不是，是昨天的。",py:"Bú shì, shì zuótiān de.",en:"No, it's yesterday's."},{name:"A",zh:"你听，是不是送报纸的来了？",py:"Nǐ tīng, shì bu shì sòng bàozhǐ de lái le?",en:"Listen, is that the newspaper delivery?"},{name:"B",zh:"我看一下。不是，是送牛奶的。",py:"Wǒ kàn yíxià. Bú shì, shì sòng niúnǎi de.",en:"Let me check. No, it's the milk delivery."}],vocab:{seg:[{t:"A：这是今天早上的"},{b:1},{t:`吗？
@@ -100,7 +100,7 @@ A：你听，是不是`},{b:2},{t:`报纸的来了？
 B：我看`},{b:3},{t:"。不是，是送"},{b:4},{t:"的。"}],answers:["报纸","送","一下","牛奶"],tiles:{报纸:{py:"bàozhǐ",en:"newspaper"},送:{py:"sòng",en:"to accompany; give as a gift"},一下:{py:"yíxià",en:"a little; once"},牛奶:{py:"niúnǎi",en:"milk"}}},grammar:{before:`A：这是今天早上的报纸吗？
 B：不是，是昨天的。
 A：你听，是不是送报纸的来了？
-B：我看`,after:"。不是，是送牛奶的。",answer:"一下",tokens:["一下"]},sentences:[{speaker:"A",text:"这是今天早上的报纸吗？",tokens:["这","是","今天","早上","的","报纸","吗"]},{speaker:"B",text:"不是，是昨天的。",tokens:["不是","是","昨天","的"]},{speaker:"A",text:"你听，是不是送报纸的来了？",tokens:["你","听","是不是","送","报纸","的","来","了"]},{speaker:"B",text:"我看一下。不是，是送牛奶的。",tokens:["我","看","一下","不是","是","送","牛奶","的"]}],note:"“的”字短语；数量词“一下”；语气副词“真”"},{n:3,title:"课文3",original:`A：这是谁的房间？
+B：我看`,after:"。不是，是送牛奶的。",answer:"一下",tokens:["一下"]},sentences:[{speaker:"A",text:"这是今天早上的报纸吗？",tokens:["这","是","今天","早上","的","报纸","吗"]},{speaker:"A",text:"你听，是不是送报纸的来了？",tokens:["你","听","是不是","送","报纸","的","来","了"]},{speaker:"B",text:"我看一下。",tokens:["我","看","一下"]},{speaker:"B",text:"不是，是送牛奶的。",tokens:["不是","是","送","牛奶","的"]},{speaker:"B",text:"不是，是昨天的。",tokens:["不是","是","昨天","的"]}],note:"“的”字短语；数量词“一下”；语气副词“真”"},{n:3,title:"课文3",original:`A：这是谁的房间？
 B：这是我和我丈夫的，旁边那个小的房间是我女儿的。
 A：你女儿的房间真漂亮！都是粉色的。
 B：是啊，粉色是我女儿最喜欢的颜色。`,lines:[{name:"A",zh:"这是谁的房间？",py:"Zhè shì shéi de fángjiān?",en:"Whose room is this?"},{name:"B",zh:"这是我和我丈夫的，旁边那个小的房间是我女儿的。",py:"Zhè shì wǒ hé wǒ zhàngfu de, pángbiān nàge xiǎo de fángjiān shì wǒ nǚ'ér de.",en:"This is my husband's and mine; the small room next door is my daughter's."},{name:"A",zh:"你女儿的房间真漂亮！都是粉色的。",py:"Nǐ nǚ'ér de fángjiān zhēn piàoliang! Dōu shì fěnsè de.",en:"Your daughter's room is so pretty! It's all pink."},{name:"B",zh:"是啊，粉色是我女儿最喜欢的颜色。",py:"Shì a, fěnsè shì wǒ nǚ'ér zuì xǐhuan de yánsè.",en:"Yeah, pink is my daughter's favorite color."}],vocab:{seg:[{t:"A：这是谁的"},{b:1},{t:`？
@@ -109,7 +109,7 @@ A：你女儿的房间真漂亮！都是`},{b:4},{t:`的。
 B：是啊，粉色是我女儿最喜欢的`},{b:5},{t:"。"}],answers:["房间","丈夫","旁边","粉色","颜色"],tiles:{房间:{py:"fángjiān",en:"room"},丈夫:{py:"zhàngfu",en:"husband"},旁边:{py:"pángbiān",en:"beside; next to"},粉色:{py:"fěnsè",en:"pink"},颜色:{py:"yánsè",en:"color"}}},grammar:{before:`A：这是谁的房间？
 B：这是我和我丈夫的，旁边那个小的房间是我女儿的。
 A：你女儿的房间`,after:`！都是粉色的。
-B：是啊，粉色是我女儿最喜欢的颜色。`,answer:"真漂亮",tokens:["真","漂亮"]},sentences:[{speaker:"A",text:"这是谁的房间？",tokens:["这","是","谁","的","房间"]},{speaker:"B",text:"这是我和我丈夫的，旁边那个小的房间是我女儿的。",tokens:["这","是","我","和","我","丈夫","的","旁边","那个","小","的","房间","是","我","女儿","的"]},{speaker:"A",text:"你女儿的房间真漂亮！都是粉色的。",tokens:["你","女儿","的","房间","真","漂亮","都","是","粉色","的"]},{speaker:"B",text:"是啊，粉色是我女儿最喜欢的颜色。",tokens:["是","啊","粉色","是","我","女儿","最","喜欢","的","颜色"]}],note:"“的”字短语；数量词“一下”；语气副词“真”"},{n:4,title:"课文4",original:`A：你看见我的杯子了吗？
+B：是啊，粉色是我女儿最喜欢的颜色。`,answer:"真漂亮",tokens:["真","漂亮"]},sentences:[{speaker:"A",text:"这是谁的房间？",tokens:["这","是","谁","的","房间"]},{speaker:"A",text:"你女儿的房间真漂亮！",tokens:["你","女儿","的","房间","真","漂亮"]},{speaker:"A",text:"都是粉色的。",tokens:["都","是","粉色","的"]},{speaker:"B",text:"是啊，粉色是我女儿最喜欢的颜色。",tokens:["是","啊","粉色","是","我","女儿","最","喜欢","的","颜色"]}],note:"“的”字短语；数量词“一下”；语气副词“真”"},{n:4,title:"课文4",original:`A：你看见我的杯子了吗？
 B：这里有几个杯子，哪个是你的？
 A：左边那个红色的是我的。
 B：给你。`,lines:[{name:"A",zh:"你看见我的杯子了吗？",py:"Nǐ kànjiàn wǒ de bēizi le ma?",en:"Have you seen my cup?"},{name:"B",zh:"这里有几个杯子，哪个是你的？",py:"Zhèli yǒu jǐ ge bēizi, nǎge shì nǐ de?",en:"There are several cups here—which one is yours?"},{name:"A",zh:"左边那个红色的是我的。",py:"Zuǒbian nàge hóngsè de shì wǒ de.",en:"The red one on the left is mine."},{name:"B",zh:"给你。",py:"Gěi nǐ.",en:"Here you go."}],vocab:{seg:[{t:`A：你看见我的杯子了吗？
@@ -118,7 +118,7 @@ A：`},{b:1},{t:"那个"},{b:2},{t:`的是我的。
 B：给你。`}],answers:["左边","红色"],tiles:{左边:{py:"zuǒbian",en:"left side"},红色:{py:"hóngsè",en:"red"}}},grammar:{before:`A：你看见我的杯子了吗？
 B：这里有几个杯子，哪个是你的？
 A：`,after:`是我的。
-B：给你。`,answer:"左边那个红色的",tokens:["左边","那个","红色","的"]},sentences:[{speaker:"A",text:"你看见我的杯子了吗？",tokens:["你","看见","我","的","杯子","了","吗"]},{speaker:"B",text:"这里有几个杯子，哪个是你的？",tokens:["这里","有","几","个","杯子","哪个","是","你","的"]},{speaker:"A",text:"左边那个红色的是我的。",tokens:["左边","那个","红色","的","是","我","的"]},{speaker:"B",text:"给你。",tokens:["给","你"]}],note:"“的”字短语；数量词“一下”；语气副词“真”"}]},{num:4,name:"这个工作是他帮我介绍的",texts:[{n:1,title:"课文1",original:`A：生日快乐！这是送给你的！
+B：给你。`,answer:"左边那个红色的",tokens:["左边","那个","红色","的"]},sentences:[{speaker:"A",text:"左边那个红色的是我的。",tokens:["左边","那个","红色","的","是","我","的"]},{speaker:"A",text:"你看见我的杯子了吗？",tokens:["你","看见","我","的","杯子","了","吗"]},{speaker:"B",text:"这里有几个杯子，哪个是你的？",tokens:["这里","有","几","个","杯子","哪个","是","你","的"]},{speaker:"B",text:"给你。",tokens:["给","你"]}],note:"“的”字短语；数量词“一下”；语气副词“真”"}]},{num:4,name:"这个工作是他帮我介绍的",texts:[{n:1,title:"课文1",original:`A：生日快乐！这是送给你的！
 B：是什么？是一本书吗？
 A：对，这本书是我写的。
 B：太谢谢你了！`,lines:[{name:"A",zh:"生日快乐！这是送给你的！",py:"Shēngrì kuàilè! Zhè shì sòng gěi nǐ de!",en:"Happy birthday! This is for you!"},{name:"B",zh:"是什么？是一本书吗？",py:"Shì shénme? Shì yì běn shū ma?",en:"What is it? Is it a book?"},{name:"A",zh:"对，这本书是我写的。",py:"Duì, zhè běn shū shì wǒ xiě de.",en:"Yes, I wrote this book."},{name:"B",zh:"太谢谢你了！",py:"Tài xièxie nǐ le!",en:"Thank you so much!"}],vocab:{seg:[{t:"A："},{b:1},{b:2},{t:"！这是送"},{b:3},{t:`你的！
@@ -127,7 +127,7 @@ A：对，这本书是我写的。
 B：太谢谢你了！`}],answers:["生日","快乐","给"],tiles:{生日:{py:"shēngrì",en:"birthday"},快乐:{py:"kuàilè",en:"happy"},给:{py:"gěi",en:"to; for; to give"}}},grammar:{before:`A：生日快乐！这是送给你的！
 B：是什么？是一本书吗？
 A：对，`,after:`。
-B：太谢谢你了！`,answer:"这本书是我写的",tokens:["这","本","书","是","我","写","的"]},sentences:[{speaker:"A",text:"生日快乐！这是送给你的！",tokens:["生日","快乐","这","是","送给","你","的"]},{speaker:"B",text:"是什么？是一本书吗？",tokens:["是","什么","是","一","本","书","吗"]},{speaker:"A",text:"对，这本书是我写的。",tokens:["对","这","本","书","是","我","写","的"]},{speaker:"B",text:"太谢谢你了！",tokens:["太","谢谢","你","了"]}],note:"“是……的”句（强调施事）；表示时间：“……的时候”；时间副词“已经”"},{n:2,title:"课文2",original:`A：早上有你一个电话。
+B：太谢谢你了！`,answer:"这本书是我写的",tokens:["这","本","书","是","我","写","的"]},sentences:[{speaker:"A",text:"生日快乐！",tokens:["生日","快乐"]},{speaker:"A",text:"这是送给你的！",tokens:["这","是","送给","你","的"]},{speaker:"B",text:"是什么？",tokens:["是","什么"]},{speaker:"B",text:"是一本书吗？",tokens:["是","一","本","书","吗"]},{speaker:"A",text:"对，这本书是我写的。",tokens:["对","这","本","书","是","我","写","的"]},{speaker:"B",text:"太谢谢你了！",tokens:["太","谢谢","你","了"]}],note:"“是……的”句（强调施事）；表示时间：“……的时候”；时间副词“已经”"},{n:2,title:"课文2",original:`A：早上有你一个电话。
 B：电话是谁打的？
 A：不知道，是儿子接的。
 B：好，晚上我问一下儿子。`,lines:[{name:"A",zh:"早上有你一个电话。",py:"Zǎoshang yǒu nǐ yí ge diànhuà.",en:"There was a phone call for you this morning."},{name:"B",zh:"电话是谁打的？",py:"Diànhuà shì shéi dǎ de?",en:"Who called?"},{name:"A",zh:"不知道，是儿子接的。",py:"Bù zhīdào, shì érzi jiē de.",en:"I don't know; our son answered."},{name:"B",zh:"好，晚上我问一下儿子。",py:"Hǎo, wǎnshang wǒ wèn yíxià érzi.",en:"Okay, I'll ask him tonight."}],vocab:{seg:[{t:`A：早上有你一个电话。
@@ -136,7 +136,7 @@ A：不知道，是儿子`},{b:1},{t:`的。
 B：好，`},{b:2},{t:"我"},{b:3},{t:"一下儿子。"}],answers:["接","晚上","问"],tiles:{接:{py:"jiē",en:"to receive; to pick up"},晚上:{py:"wǎnshang",en:"evening; night"},问:{py:"wèn",en:"to ask"}}},grammar:{before:`A：早上有你一个电话。
 B：电话是谁打的？
 A：不知道，`,after:`。
-B：好，晚上我问一下儿子。`,answer:"是儿子接的",tokens:["是","儿子","接","的"]},sentences:[{speaker:"A",text:"早上有你一个电话。",tokens:["早上","有","你","一个","电话"]},{speaker:"B",text:"电话是谁打的？",tokens:["电话","是","谁","打","的"]},{speaker:"A",text:"不知道，是儿子接的。",tokens:["不","知道","是","儿子","接","的"]},{speaker:"B",text:"好，晚上我问一下儿子。",tokens:["好","晚上","我","问","一下","儿子"]}],note:"“是……的”句（强调施事）；表示时间：“……的时候”；时间副词“已经”"},{n:3,title:"课文3",original:`A：你喜欢踢足球吗？
+B：好，晚上我问一下儿子。`,answer:"是儿子接的",tokens:["是","儿子","接","的"]},sentences:[{speaker:"A",text:"不知道，是儿子接的。",tokens:["不","知道","是","儿子","接","的"]},{speaker:"B",text:"好，晚上我问一下儿子。",tokens:["好","晚上","我","问","一下","儿子"]},{speaker:"A",text:"早上有你一个电话。",tokens:["早上","有","你","一个","电话"]},{speaker:"B",text:"电话是谁打的？",tokens:["电话","是","谁","打","的"]}],note:"“是……的”句（强调施事）；表示时间：“……的时候”；时间副词“已经”"},{n:3,title:"课文3",original:`A：你喜欢踢足球吗？
 B：非常喜欢。
 A：你是什么时候开始踢足球的？
 B：我十一岁的时候开始踢足球，已经踢了十年了。`,lines:[{name:"A",zh:"你喜欢踢足球吗？",py:"Nǐ xǐhuan tī zúqiú ma?",en:"Do you like playing soccer?"},{name:"B",zh:"非常喜欢。",py:"Fēicháng xǐhuan.",en:"I love it."},{name:"A",zh:"你是什么时候开始踢足球的？",py:"Nǐ shì shénme shíhou kāishǐ tī zúqiú de?",en:"When did you start playing soccer?"},{name:"B",zh:"我十一岁的时候开始踢足球，已经踢了十年了。",py:"Wǒ shíyī suì de shíhou kāishǐ tī zúqiú, yǐjīng tī le shí nián le.",en:"I started playing soccer at eleven; I've been playing for ten years now."}],vocab:{seg:[{t:`A：你喜欢踢足球吗？
@@ -145,7 +145,7 @@ A：你是什么时候`},{b:2},{t:`踢足球的？
 B：我十一岁的时候开始踢足球，`},{b:3},{t:"踢了十年了。"}],answers:["非常","开始","已经"],tiles:{非常:{py:"fēicháng",en:"very; extremely"},开始:{py:"kāishǐ",en:"to begin; beginning"},已经:{py:"yǐjīng",en:"already"}}},grammar:{before:`A：你喜欢踢足球吗？
 B：非常喜欢。
 A：你是什么时候开始踢足球的？
-B：我`,after:"开始踢足球，已经踢了十年了。",answer:"十一岁的时候",tokens:["十一岁","的","时候"]},sentences:[{speaker:"A",text:"你喜欢踢足球吗？",tokens:["你","喜欢","踢足球","吗"]},{speaker:"B",text:"非常喜欢。",tokens:["非常","喜欢"]},{speaker:"A",text:"你是什么时候开始踢足球的？",tokens:["你","是","什么","时候","开始","踢足球","的"]},{speaker:"B",text:"我十一岁的时候开始踢足球，已经踢了十年了。",tokens:["我","十一岁","的","时候","开始","踢足球","已经","踢","了","十","年","了"]}],note:"“是……的”句（强调施事）；表示时间：“……的时候”；时间副词“已经”"},{n:4,title:"课文4",original:`A：你在这儿工作多长时间了？
+B：我`,after:"开始踢足球，已经踢了十年了。",answer:"十一岁的时候",tokens:["十一岁","的","时候"]},sentences:[{speaker:"B",text:"非常喜欢。",tokens:["非常","喜欢"]},{speaker:"A",text:"你是什么时候开始踢足球的？",tokens:["你","是","什么","时候","开始","踢足球","的"]},{speaker:"B",text:"我十一岁的时候开始踢足球，已经踢了十年了。",tokens:["我","十一岁","的","时候","开始","踢足球","已经","踢","了","十","年","了"]},{speaker:"A",text:"你喜欢踢足球吗？",tokens:["你","喜欢","踢足球","吗"]}],note:"“是……的”句（强调施事）；表示时间：“……的时候”；时间副词“已经”"},{n:4,title:"课文4",original:`A：你在这儿工作多长时间了？
 B：已经两年多了，我是2011年来的。
 A：你认识谢先生吗？
 B：认识，我们是大学同学，这个工作是他帮我介绍的。`,lines:[{name:"A",zh:"你在这儿工作多长时间了？",py:"Nǐ zài zhèr gōngzuò duō cháng shíjiān le?",en:"How long have you worked here?"},{name:"B",zh:"已经两年多了，我是2011年来的。",py:"Yǐjīng liǎng nián duō le, wǒ shì èr líng yī yī nián lái de.",en:"Over two years now; I came in 2011."},{name:"A",zh:"你认识谢先生吗？",py:"Nǐ rènshi Xiè xiānsheng ma?",en:"Do you know Mr. Xie?"},{name:"B",zh:"认识，我们是大学同学，这个工作是他帮我介绍的。",py:"Rènshi, wǒmen shì dàxué tóngxué, zhège gōngzuò shì tā bāng wǒ jièshào de.",en:"Yes, we're college classmates; he helped get me this job."}],vocab:{seg:[{t:`A：你在这儿工作多长时间了？
@@ -154,7 +154,7 @@ A：你认识谢先生吗？
 B：认识，我们是大学同学，这个工作是他`},{b:2},{t:"我"},{b:3},{t:"的。"}],answers:["已经","帮","介绍"],tiles:{已经:{py:"yǐjīng",en:"already"},帮:{py:"bāng",en:"to help"},介绍:{py:"jièshào",en:"to introduce"}}},grammar:{before:`A：你在这儿工作多长时间了？
 B：`,after:`，我是2011年来的。
 A：你认识谢先生吗？
-B：认识，我们是大学同学，这个工作是他帮我介绍的。`,answer:"已经两年多了",tokens:["已经","两年","多","了"]},sentences:[{speaker:"A",text:"你在这儿工作多长时间了？",tokens:["你","在","这儿","工作","多","长","时间","了"]},{speaker:"B",text:"已经两年多了，我是2011年来的。",tokens:["已经","两年","多","了","我","是","2011","年","来","的"]},{speaker:"A",text:"你认识谢先生吗？",tokens:["你","认识","谢","先生","吗"]},{speaker:"B",text:"认识，我们是大学同学，这个工作是他帮我介绍的。",tokens:["认识","我们","是","大学","同学","这个","工作","是","他","帮","我","介绍","的"]}],note:"“是……的”句（强调施事）；表示时间：“……的时候”；时间副词“已经”"}]},{num:5,name:"就买这件吧",texts:[{n:1,title:"课文1",original:`A：晚上我们去饭馆吃饭，怎么样？
+B：认识，我们是大学同学，这个工作是他帮我介绍的。`,answer:"已经两年多了",tokens:["已经","两年","多","了"]},sentences:[{speaker:"B",text:"已经两年多了，我是2011年来的。",tokens:["已经","两年","多","了","我","是","2011","年","来","的"]},{speaker:"B",text:"认识，我们是大学同学，这个工作是他帮我介绍的。",tokens:["认识","我们","是","大学","同学","这个","工作","是","他","帮","我","介绍","的"]},{speaker:"A",text:"你在这儿工作多长时间了？",tokens:["你","在","这儿","工作","多","长","时间","了"]},{speaker:"A",text:"你认识谢先生吗？",tokens:["你","认识","谢","先生","吗"]}],note:"“是……的”句（强调施事）；表示时间：“……的时候”；时间副词“已经”"}]},{num:5,name:"就买这件吧",texts:[{n:1,title:"课文1",original:`A：晚上我们去饭馆吃饭，怎么样？
 B：我不想去外面吃，我想在家吃。
 A：那你准备做什么呢？
 B：就做你爱吃的鱼吧。`,lines:[{name:"A",zh:"晚上我们去饭馆吃饭，怎么样？",py:"Wǎnshang wǒmen qù fànguǎn chī fàn, zěnmeyàng?",en:"How about we eat out at a restaurant tonight?"},{name:"B",zh:"我不想去外面吃，我想在家吃。",py:"Wǒ bù xiǎng qù wàimiàn chī, wǒ xiǎng zài jiā chī.",en:"I don't want to eat out; I'd rather eat at home."},{name:"A",zh:"那你准备做什么呢？",py:"Nà nǐ zhǔnbèi zuò shénme ne?",en:"Then what are you going to make?"},{name:"B",zh:"就做你爱吃的鱼吧。",py:"Jiù zuò nǐ ài chī de yú ba.",en:"I'll make the fish you like."}],vocab:{seg:[{t:`A：晚上我们去饭馆吃饭，怎么样？
@@ -163,7 +163,7 @@ A：那你`},{b:2},{t:`做什么呢？
 B：就做你爱吃的`},{b:3},{t:"吧。"}],answers:["外面","准备","鱼"],tiles:{外面:{py:"wàimiàn",en:"outside"},准备:{py:"zhǔnbèi",en:"to prepare"},鱼:{py:"yú",en:"fish"}}},grammar:{before:`A：晚上我们去饭馆吃饭，怎么样？
 B：我不想去外面吃，我想在家吃。
 A：那你准备做什么呢？
-B：`,after:"你爱吃的鱼吧。",answer:"就做",tokens:["就","做"]},sentences:[{speaker:"A",text:"晚上我们去饭馆吃饭，怎么样？",tokens:["晚上","我们","去","饭馆","吃饭","怎么样"]},{speaker:"B",text:"我不想去外面吃，我想在家吃。",tokens:["我","不","想","去","外面","吃","我","想","在","家","吃"]},{speaker:"A",text:"那你准备做什么呢？",tokens:["那","你","准备","做","什么","呢"]},{speaker:"B",text:"就做你爱吃的鱼吧。",tokens:["就","做","你","爱","吃","的","鱼","吧"]}],note:"副词“就”；语气副词“还”（1）；程度副词“有点儿”"},{n:2,title:"课文2",original:`A：帮我看一下这件衣服怎么样？
+B：`,after:"你爱吃的鱼吧。",answer:"就做",tokens:["就","做"]},sentences:[{speaker:"B",text:"我不想去外面吃，我想在家吃。",tokens:["我","不","想","去","外面","吃","我","想","在","家","吃"]},{speaker:"A",text:"那你准备做什么呢？",tokens:["那","你","准备","做","什么","呢"]},{speaker:"B",text:"就做你爱吃的鱼吧。",tokens:["就","做","你","爱","吃","的","鱼","吧"]},{speaker:"A",text:"晚上我们去饭馆吃饭，怎么样？",tokens:["晚上","我们","去","饭馆","吃饭","怎么样"]}],note:"副词“就”；语气副词“还”（1）；程度副词“有点儿”"},{n:2,title:"课文2",original:`A：帮我看一下这件衣服怎么样？
 B：颜色还可以，就是有点儿大。
 A：这件小的怎么样？
 B：这件不错，就买这件吧。`,lines:[{name:"A",zh:"帮我看一下这件衣服怎么样？",py:"Bāng wǒ kàn yíxià zhè jiàn yīfu zěnmeyàng?",en:"Can you tell me how this piece of clothing looks?"},{name:"B",zh:"颜色还可以，就是有点儿大。",py:"Yánsè hái kěyǐ, jiù shì yǒudiǎnr dà.",en:"The color's fine; it's just a bit big."},{name:"A",zh:"这件小的怎么样？",py:"Zhè jiàn xiǎo de zěnmeyàng?",en:"How about this smaller one?"},{name:"B",zh:"这件不错，就买这件吧。",py:"Zhè jiàn búcuò, jiù mǎi zhè jiàn ba.",en:"This one's nice; let's buy this one."}],vocab:{seg:[{t:"A：帮我看一下这"},{b:1},{t:`衣服怎么样？
@@ -181,7 +181,7 @@ A：你在做什么呢？是在想昨天的`},{b:1},{t:`吗？
 B：是啊，我觉得听和说`},{b:2},{t:"可以，读和写不好，很多字我都不知道是什么"},{b:3},{t:"。"}],answers:["考试","还","意思"],tiles:{考试:{py:"kǎoshì",en:"to take an exam; exam"},还:{py:"huán",en:"to return; to give back"},意思:{py:"yìsi",en:"meaning; idea"}}},grammar:{before:`A：今天去不去打球？
 B：这两天有点儿累，不去打球了。
 A：你在做什么呢？是在想昨天的考试吗？
-B：是啊，我觉得听和说`,after:"，读和写不好，很多字我都不知道是什么意思。",answer:"还可以",tokens:["还","可以"]},sentences:[{speaker:"A",text:"今天去不去打球？",tokens:["今天","去","不","去","打","球"]},{speaker:"B",text:"这两天有点儿累，不去打球了。",tokens:["这","两天","有点儿","累","不","去","打","球","了"]},{speaker:"A",text:"你在做什么呢？是在想昨天的考试吗？",tokens:["你","在","做","什么","呢","是","在","想","昨天","的","考试","吗"]},{speaker:"B",text:"是啊，我觉得听和说还可以，读和写不好，很多字我都不知道是什么意思。",tokens:["是","啊","我","觉得","听","和","说","还可以","读","和","写","不","好","很多","字","我","都","不","知道","是","什么","意思"]}],note:"副词“就”；语气副词“还”（1）；程度副词“有点儿”"},{n:4,title:"课文4",original:`A：休息一下吧，喝咖啡吗？
+B：是啊，我觉得听和说`,after:"，读和写不好，很多字我都不知道是什么意思。",answer:"还可以",tokens:["还","可以"]},sentences:[{speaker:"A",text:"是在想昨天的考试吗？",tokens:["是","在","想","昨天","的","考试","吗"]},{speaker:"A",text:"今天去不去打球？",tokens:["今天","去","不","去","打","球"]},{speaker:"B",text:"这两天有点儿累，不去打球了。",tokens:["这","两天","有点儿","累","不","去","打","球","了"]},{speaker:"A",text:"你在做什么呢？",tokens:["你","在","做","什么","呢"]}],note:"副词“就”；语气副词“还”（1）；程度副词“有点儿”"},{n:4,title:"课文4",original:`A：休息一下吧，喝咖啡吗？
 B：不喝了，我已经喝两杯了。
 A：是啊，咖啡喝多了对身体不好。
 B：以后我少喝一点儿，每天喝一杯。`,lines:[{name:"A",zh:"休息一下吧，喝咖啡吗？",py:"Xiūxi yíxià ba, hē kāfēi ma?",en:"Take a break—want some coffee?"},{name:"B",zh:"不喝了，我已经喝两杯了。",py:"Bù hē le, wǒ yǐjīng hē liǎng bēi le.",en:"No thanks, I've already had two cups."},{name:"A",zh:"是啊，咖啡喝多了对身体不好。",py:"Shì a, kāfēi hē duō le duì shēntǐ bù hǎo.",en:"Right, drinking too much coffee is bad for your health."},{name:"B",zh:"以后我少喝一点儿，每天喝一杯。",py:"Yǐhòu wǒ shǎo hē yìdiǎnr, měi tiān hē yì bēi.",en:"I'll drink less from now on—one cup a day."}],vocab:{seg:[{t:"A：休息一下吧，喝"},{b:1},{t:`吗？
@@ -190,7 +190,7 @@ A：是啊，咖啡喝多了`},{b:2},{t:`身体不好。
 B：`},{b:3},{t:"我少喝一点儿，每天喝一杯。"}],answers:["咖啡","对","以后"],tiles:{咖啡:{py:"kāfēi",en:"coffee"},对:{py:"duì",en:"correct; right"},以后:{py:"yǐhòu",en:"after; later; in the future"}}},grammar:{before:`A：休息一下吧，喝咖啡吗？
 B：不喝了，我已经喝两杯了。
 A：是啊，咖啡喝多了对身体不好。
-B：`,after:"，每天喝一杯。",answer:"以后我少喝一点儿",tokens:["以后","我","少","喝","一点儿"]},sentences:[{speaker:"A",text:"休息一下吧，喝咖啡吗？",tokens:["休息","一下","吧","喝","咖啡","吗"]},{speaker:"B",text:"不喝了，我已经喝两杯了。",tokens:["不","喝","了","我","已经","喝","两","杯","了"]},{speaker:"A",text:"是啊，咖啡喝多了对身体不好。",tokens:["是","啊","咖啡","喝","多","了","对","身体","不","好"]},{speaker:"B",text:"以后我少喝一点儿，每天喝一杯。",tokens:["以后","我","少","喝","一点儿","每天","喝","一杯"]}],note:"副词“就”；语气副词“还”（1）；程度副词“有点儿”"}]},{num:6,name:"你怎么不吃了",texts:[{n:1,title:"课文1",original:`A：你知道小王今天什么时候来学校吗？
+B：`,after:"，每天喝一杯。",answer:"以后我少喝一点儿",tokens:["以后","我","少","喝","一点儿"]},sentences:[{speaker:"A",text:"休息一下吧，喝咖啡吗？",tokens:["休息","一下","吧","喝","咖啡","吗"]},{speaker:"A",text:"是啊，咖啡喝多了对身体不好。",tokens:["是","啊","咖啡","喝","多","了","对","身体","不","好"]},{speaker:"B",text:"以后我少喝一点儿，每天喝一杯。",tokens:["以后","我","少","喝","一点儿","每天","喝","一杯"]},{speaker:"B",text:"不喝了，我已经喝两杯了。",tokens:["不","喝","了","我","已经","喝","两","杯","了"]}],note:"副词“就”；语气副词“还”（1）；程度副词“有点儿”"}]},{num:6,name:"你怎么不吃了",texts:[{n:1,title:"课文1",original:`A：你知道小王今天什么时候来学校吗？
 B：他已经来了。
 A：你怎么知道他来了？
 B：我在门外看见他的自行车了。`,lines:[{name:"A",zh:"你知道小王今天什么时候来学校吗？",py:"Nǐ zhīdào Xiǎo Wáng jīntiān shénme shíhou lái xuéxiào ma?",en:"Do you know when Xiao Wang is coming to school today?"},{name:"B",zh:"他已经来了。",py:"Tā yǐjīng lái le.",en:"He's already here."},{name:"A",zh:"你怎么知道他来了？",py:"Nǐ zěnme zhīdào tā lái le?",en:"How do you know he's here?"},{name:"B",zh:"我在门外看见他的自行车了。",py:"Wǒ zài mén wài kànjiàn tā de zìxíngchē le.",en:"I saw his bicycle outside the door."}],vocab:{seg:[{t:`A：你知道小王今天什么时候来学校吗？
@@ -199,7 +199,7 @@ A：你怎么知道他来了？
 B：我在`},{b:1},{t:"看见他的"},{b:2},{t:"了。"}],answers:["门外","自行车"],tiles:{门外:{py:"mén wài",en:"outside the door"},自行车:{py:"zìxíngchē",en:"bicycle"}}},grammar:{before:`A：你知道小王今天什么时候来学校吗？
 B：他已经来了。
 A：`,after:`？
-B：我在门外看见他的自行车了。`,answer:"你怎么知道他来了",tokens:["你","怎么","知道","他","来","了"]},sentences:[{speaker:"A",text:"你知道小王今天什么时候来学校吗？",tokens:["你","知道","小","王","今天","什么","时候","来","学校","吗"]},{speaker:"B",text:"他已经来了。",tokens:["他","已经","来","了"]},{speaker:"A",text:"你怎么知道他来了？",tokens:["你","怎么","知道","他","来","了"]},{speaker:"B",text:"我在门外看见他的自行车了。",tokens:["我","在","门外","看见","他","的","自行车","了"]}],note:"疑问代词“怎么”；量词的重叠；关联词“因为……，所以……”"},{n:2,title:"课文2",original:`A：今天的羊肉很好吃，你怎么不吃了？
+B：我在门外看见他的自行车了。`,answer:"你怎么知道他来了",tokens:["你","怎么","知道","他","来","了"]},sentences:[{speaker:"B",text:"我在门外看见他的自行车了。",tokens:["我","在","门外","看见","他","的","自行车","了"]},{speaker:"A",text:"你知道小王今天什么时候来学校吗？",tokens:["你","知道","小","王","今天","什么","时候","来","学校","吗"]},{speaker:"B",text:"他已经来了。",tokens:["他","已经","来","了"]},{speaker:"A",text:"你怎么知道他来了？",tokens:["你","怎么","知道","他","来","了"]}],note:"疑问代词“怎么”；量词的重叠；关联词“因为……，所以……”"},{n:2,title:"课文2",original:`A：今天的羊肉很好吃，你怎么不吃了？
 B：这个星期天天都吃羊肉，不想吃了。
 A：那你还想吃什么？
 B：来一点儿面条吧。`,lines:[{name:"A",zh:"今天的羊肉很好吃，你怎么不吃了？",py:"Jīntiān de yángròu hěn hǎochī, nǐ zěnme bù chī le?",en:"Today's lamb is delicious—why aren't you eating?"},{name:"B",zh:"这个星期天天都吃羊肉，不想吃了。",py:"Zhège xīngqī tiāntiān dōu chī yángròu, bù xiǎng chī le.",en:"We've had lamb every day this week; I don't feel like it anymore."},{name:"A",zh:"那你还想吃什么？",py:"Nà nǐ hái xiǎng chī shénme?",en:"Then what else would you like to eat?"},{name:"B",zh:"来一点儿面条吧。",py:"Lái yìdiǎnr miàntiáo ba.",en:"I'll have some noodles."}],vocab:{seg:[{t:"A：今天的"},{b:1},{t:"很"},{b:2},{t:`，你怎么不吃了？
@@ -208,7 +208,7 @@ A：那你还想吃什么？
 B：来一点儿`},{b:3},{t:"吧。"}],answers:["羊肉","好吃","面条"],tiles:{羊肉:{py:"yángròu",en:"mutton; lamb"},好吃:{py:"hǎochī",en:"delicious; tasty"},面条:{py:"miàntiáo",en:"noodles"}}},grammar:{before:`A：今天的羊肉很好吃，你怎么不吃了？
 B：这个星期`,after:`都吃羊肉，不想吃了。
 A：那你还想吃什么？
-B：来一点儿面条吧。`,answer:"天天",tokens:["天天"]},sentences:[{speaker:"A",text:"今天的羊肉很好吃，你怎么不吃了？",tokens:["今天","的","羊肉","很","好吃","你","怎么","不","吃","了"]},{speaker:"B",text:"这个星期天天都吃羊肉，不想吃了。",tokens:["这个","星期天","天","都","吃","羊肉","不","想","吃","了"]},{speaker:"A",text:"那你还想吃什么？",tokens:["那","你","还","想","吃","什么"]},{speaker:"B",text:"来一点儿面条吧。",tokens:["来","一点儿","面条","吧"]}],note:"疑问代词“怎么”；量词的重叠；关联词“因为……，所以……”"},{n:3,title:"课文3",original:`A：昨天你们怎么都没去打篮球？
+B：来一点儿面条吧。`,answer:"天天",tokens:["天天"]},sentences:[{speaker:"A",text:"今天的羊肉很好吃，你怎么不吃了？",tokens:["今天","的","羊肉","很","好吃","你","怎么","不","吃","了"]},{speaker:"B",text:"这个星期天天都吃羊肉，不想吃了。",tokens:["这个","星期天","天","都","吃","羊肉","不","想","吃","了"]},{speaker:"B",text:"来一点儿面条吧。",tokens:["来","一点儿","面条","吧"]},{speaker:"A",text:"那你还想吃什么？",tokens:["那","你","还","想","吃","什么"]}],note:"疑问代词“怎么”；量词的重叠；关联词“因为……，所以……”"},{n:3,title:"课文3",original:`A：昨天你们怎么都没去打篮球？
 B：因为昨天下雨，所以我们都没去。我去游泳了。
 A：你经常游泳吗？
 B：这个月我天天游泳，我现在七十公斤了。`,lines:[{name:"A",zh:"昨天你们怎么都没去打篮球？",py:"Zuótiān nǐmen zěnme dōu méi qù dǎ lánqiú?",en:"Why didn't any of you go play basketball yesterday?"},{name:"B",zh:"因为昨天下雨，所以我们都没去。我去游泳了。",py:"Yīnwèi zuótiān xià yǔ, suǒyǐ wǒmen dōu méi qù. Wǒ qù yóuyǒng le.",en:"Because it rained yesterday, none of us went. I went swimming."},{name:"A",zh:"你经常游泳吗？",py:"Nǐ jīngcháng yóuyǒng ma?",en:"Do you swim often?"},{name:"B",zh:"这个月我天天游泳，我现在七十公斤了。",py:"Zhège yuè wǒ tiāntiān yóuyǒng, wǒ xiànzài qīshí gōngjīn le.",en:"I've been swimming every day this month; I'm seventy kilos now."}],vocab:{seg:[{t:"A：昨天你们怎么都没去"},{b:1},{t:`？
@@ -217,7 +217,7 @@ A：你`},{b:3},{t:`游泳吗？
 B：这个月我天天游泳，我现在七十`},{b:4},{t:"了。"}],answers:["打篮球","游泳","经常","公斤"],tiles:{打篮球:{py:"dǎ lánqiú",en:"to play basketball"},游泳:{py:"yóuyǒng",en:"to swim"},经常:{py:"jīngcháng",en:"often"},公斤:{py:"gōngjīn",en:"kilogram"}}},grammar:{before:`A：昨天你们怎么都没去打篮球？
 B：`,after:`。我去游泳了。
 A：你经常游泳吗？
-B：这个月我天天游泳，我现在七十公斤了。`,answer:"因为昨天下雨，所以我们都没去",tokens:["因为","昨天","下雨","所以","我们","都","没","去"]},sentences:[{speaker:"A",text:"昨天你们怎么都没去打篮球？",tokens:["昨天","你们","怎么","都","没","去","打篮球"]},{speaker:"B",text:"因为昨天下雨，所以我们都没去。我去游泳了。",tokens:["因为","昨天","下雨","所以","我们","都","没","去","我","去","游泳","了"]},{speaker:"A",text:"你经常游泳吗？",tokens:["你","经常","游泳","吗"]},{speaker:"B",text:"这个月我天天游泳，我现在七十公斤了。",tokens:["这个","月","我","天天","游泳","我","现在","七","十","公斤","了"]}],note:"疑问代词“怎么”；量词的重叠；关联词“因为……，所以……”"},{n:4,title:"课文4",original:`A：这两天怎么没看见小张？
+B：这个月我天天游泳，我现在七十公斤了。`,answer:"因为昨天下雨，所以我们都没去",tokens:["因为","昨天","下雨","所以","我们","都","没","去"]},sentences:[{speaker:"A",text:"昨天你们怎么都没去打篮球？",tokens:["昨天","你们","怎么","都","没","去","打篮球"]},{speaker:"B",text:"我去游泳了。",tokens:["我","去","游泳","了"]},{speaker:"A",text:"你经常游泳吗？",tokens:["你","经常","游泳","吗"]},{speaker:"B",text:"这个月我天天游泳，我现在七十公斤了。",tokens:["这个","月","我","天天","游泳","我","现在","七","十","公斤","了"]},{speaker:"B",text:"因为昨天下雨，所以我们都没去。",tokens:["因为","昨天","下雨","所以","我们","都","没","去"]}],note:"疑问代词“怎么”；量词的重叠；关联词“因为……，所以……”"},{n:4,title:"课文4",original:`A：这两天怎么没看见小张？
 B：他去北京了。
 A：去北京了？是去旅游吗？
 B：不是，听说是去看他姐姐。`,lines:[{name:"A",zh:"这两天怎么没看见小张？",py:"Zhè liǎng tiān zěnme méi kànjiàn Xiǎo Zhāng?",en:"Why haven't I seen Xiao Zhang these last couple of days?"},{name:"B",zh:"他去北京了。",py:"Tā qù Běijīng le.",en:"He went to Beijing."},{name:"A",zh:"去北京了？是去旅游吗？",py:"Qù Běijīng le? Shì qù lǚyóu ma?",en:"Went to Beijing? To travel?"},{name:"B",zh:"不是，听说是去看他姐姐。",py:"Bú shì, tīngshuō shì qù kàn tā jiějie.",en:"No, I heard he went to visit his sister."}],vocab:{seg:[{t:`A：这两天怎么没看见小张？
@@ -226,7 +226,7 @@ A：去北京了？是去旅游吗？
 B：不是，听说是去看他`},{b:1},{t:"。"}],answers:["姐姐"],tiles:{姐姐:{py:"jiějie",en:"older sister"}}},grammar:{before:"A：",after:`？
 B：他去北京了。
 A：去北京了？是去旅游吗？
-B：不是，听说是去看他姐姐。`,answer:"这两天怎么没看见小张",tokens:["这","两天","怎么","没","看见","小张"]},sentences:[{speaker:"A",text:"这两天怎么没看见小张？",tokens:["这","两天","怎么","没","看见","小张"]},{speaker:"B",text:"他去北京了。",tokens:["他","去","北京","了"]},{speaker:"A",text:"去北京了？是去旅游吗？",tokens:["去","北京","了","是","去","旅游","吗"]},{speaker:"B",text:"不是，听说是去看他姐姐。",tokens:["不是","听说","是","去","看","他","姐姐"]}],note:"疑问代词“怎么”；量词的重叠；关联词“因为……，所以……”"}]},{num:7,name:"你家离公司远吗",texts:[{n:1,title:"课文1",original:`A：大卫回来了吗？
+B：不是，听说是去看他姐姐。`,answer:"这两天怎么没看见小张",tokens:["这","两天","怎么","没","看见","小张"]},sentences:[{speaker:"B",text:"不是，听说是去看他姐姐。",tokens:["不是","听说","是","去","看","他","姐姐"]},{speaker:"A",text:"这两天怎么没看见小张？",tokens:["这","两天","怎么","没","看见","小张"]},{speaker:"B",text:"他去北京了。",tokens:["他","去","北京","了"]},{speaker:"A",text:"去北京了？",tokens:["去","北京","了"]},{speaker:"A",text:"是去旅游吗？",tokens:["是","去","旅游","吗"]}],note:"疑问代词“怎么”；量词的重叠；关联词“因为……，所以……”"}]},{num:7,name:"你家离公司远吗",texts:[{n:1,title:"课文1",original:`A：大卫回来了吗？
 B：没有，他还在教室学习呢。
 A：已经九点多了，他怎么还在学习？
 B：明天有考试，他说今天要好好准备。`,lines:[{name:"A",zh:"大卫回来了吗？",py:"Dàwèi huílai le ma?",en:"Is David back?"},{name:"B",zh:"没有，他还在教室学习呢。",py:"Méiyǒu, tā hái zài jiàoshì xuéxí ne.",en:"No, he's still studying in the classroom."},{name:"A",zh:"已经九点多了，他怎么还在学习？",py:"Yǐjīng jiǔ diǎn duō le, tā zěnme hái zài xuéxí?",en:"It's already past nine—why is he still studying?"},{name:"B",zh:"明天有考试，他说今天要好好准备。",py:"Míngtiān yǒu kǎoshì, tā shuō jīntiān yào hǎohǎo zhǔnbèi.",en:"There's an exam tomorrow; he says he wants to prepare well today."}],vocab:{seg:[{t:`A：大卫回来了吗？
@@ -235,7 +235,7 @@ A：已经九点多了，他怎么还在学习？
 B：明天有考试，他说今天要好好准备。`}],answers:["教室"],tiles:{教室:{py:"jiàoshì",en:"classroom"}}},grammar:{before:`A：大卫回来了吗？
 B：没有，他`,after:`。
 A：已经九点多了，他怎么还在学习？
-B：明天有考试，他说今天要好好准备。`,answer:"还在教室学习呢",tokens:["还","在","教室","学习","呢"]},sentences:[{speaker:"A",text:"大卫回来了吗？",tokens:["大卫","回来","了","吗"]},{speaker:"B",text:"没有，他还在教室学习呢。",tokens:["没有","他","还","在","教室","学习","呢"]},{speaker:"A",text:"已经九点多了，他怎么还在学习？",tokens:["已经","九","点","多","了","他","怎么","还","在","学习"]},{speaker:"B",text:"明天有考试，他说今天要好好准备。",tokens:["明天","有","考试","他","说","今天","要","好好","准备"]}],note:"语气副词“还”（2）；时间副词“就”；动词“离”；语气助词“呢”"},{n:2,title:"课文2",original:`A：你现在在哪儿呢？
+B：明天有考试，他说今天要好好准备。`,answer:"还在教室学习呢",tokens:["还","在","教室","学习","呢"]},sentences:[{speaker:"B",text:"没有，他还在教室学习呢。",tokens:["没有","他","还","在","教室","学习","呢"]},{speaker:"A",text:"大卫回来了吗？",tokens:["大卫","回来","了","吗"]},{speaker:"A",text:"已经九点多了，他怎么还在学习？",tokens:["已经","九","点","多","了","他","怎么","还","在","学习"]},{speaker:"B",text:"明天有考试，他说今天要好好准备。",tokens:["明天","有","考试","他","说","今天","要","好好","准备"]}],note:"语气副词“还”（2）；时间副词“就”；动词“离”；语气助词“呢”"},{n:2,title:"课文2",original:`A：你现在在哪儿呢？
 B：在去机场的路上。你已经到了？
 A：我下飞机了。你还有多长时间能到这儿？
 B：二十分钟就到。`,lines:[{name:"A",zh:"你现在在哪儿呢？",py:"Nǐ xiànzài zài nǎr ne?",en:"Where are you right now?"},{name:"B",zh:"在去机场的路上。你已经到了？",py:"Zài qù jīchǎng de lù shàng. Nǐ yǐjīng dào le?",en:"On the way to the airport. Are you there already?"},{name:"A",zh:"我下飞机了。你还有多长时间能到这儿？",py:"Wǒ xià fēijī le. Nǐ hái yǒu duō cháng shíjiān néng dào zhèr?",en:"I've gotten off the plane. How much longer until you get here?"},{name:"B",zh:"二十分钟就到。",py:"Èrshí fēnzhōng jiù dào.",en:"I'll be there in twenty minutes."}],vocab:{seg:[{t:`A：你现在在哪儿呢？
@@ -244,7 +244,7 @@ A：我下飞机了。你还有多长时间能到这儿？
 B：二十分钟就到。`}],answers:["机场","路上","到"],tiles:{机场:{py:"jīchǎng",en:"airport"},路上:{py:"lùshang",en:"on the road; on the way"},到:{py:"dào",en:"to arrive; to reach"}}},grammar:{before:`A：你现在在哪儿呢？
 B：在去机场的路上。你已经到了？
 A：我下飞机了。你还有多长时间能到这儿？
-B：`,after:"。",answer:"二十分钟就到",tokens:["二十分钟","就","到"]},sentences:[{speaker:"A",text:"你现在在哪儿呢？",tokens:["你","现在","在","哪儿","呢"]},{speaker:"B",text:"在去机场的路上。你已经到了？",tokens:["在","去","机场","的","路上","你","已经","到","了"]},{speaker:"A",text:"我下飞机了。你还有多长时间能到这儿？",tokens:["我","下","飞机","了","你","还有","多","长","时间","能","到","这儿"]},{speaker:"B",text:"二十分钟就到。",tokens:["二十分钟","就","到"]}],note:"语气副词“还”（2）；时间副词“就”；动词“离”；语气助词“呢”"},{n:3,title:"课文3",original:`A：你家离公司远吗？
+B：`,after:"。",answer:"二十分钟就到",tokens:["二十分钟","就","到"]},sentences:[{speaker:"B",text:"在去机场的路上。",tokens:["在","去","机场","的","路上"]},{speaker:"B",text:"你已经到了？",tokens:["你","已经","到","了"]},{speaker:"A",text:"你还有多长时间能到这儿？",tokens:["你","还有","多","长","时间","能","到","这儿"]},{speaker:"B",text:"二十分钟就到。",tokens:["二十分钟","就","到"]},{speaker:"A",text:"你现在在哪儿呢？",tokens:["你","现在","在","哪儿","呢"]},{speaker:"A",text:"我下飞机了。",tokens:["我","下","飞机","了"]}],note:"语气副词“还”（2）；时间副词“就”；动词“离”；语气助词“呢”"},{n:3,title:"课文3",original:`A：你家离公司远吗？
 B：很远，坐公共汽车要一个多小时呢！
 A：坐公共汽车太慢了，你怎么不开车？
 B：开车也不快，路上车太多了！`,lines:[{name:"A",zh:"你家离公司远吗？",py:"Nǐ jiā lí gōngsī yuǎn ma?",en:"Is your home far from the office?"},{name:"B",zh:"很远，坐公共汽车要一个多小时呢！",py:"Hěn yuǎn, zuò gōnggòng qìchē yào yí ge duō xiǎoshí ne!",en:"Very far—it takes over an hour by bus!"},{name:"A",zh:"坐公共汽车太慢了，你怎么不开车？",py:"Zuò gōnggòng qìchē tài màn le, nǐ zěnme bù kāichē?",en:"The bus is too slow—why don't you drive?"},{name:"B",zh:"开车也不快，路上车太多了！",py:"Kāichē yě bú kuài, lù shàng chē tài duō le!",en:"Driving isn't fast either—there are too many cars on the road!"}],vocab:{seg:[{t:"A：你家"},{b:1},{b:2},{b:3},{t:`吗？
@@ -262,7 +262,7 @@ A：下个星期我要去北京，今天过吧。
 B：好吧，离这儿不远有一个中国饭馆，`},{b:2},{t:"几分钟就"},{b:3},{t:"了。"}],answers:["过生日","走","到"],tiles:{过生日:{py:"guò shēngrì",en:"to celebrate a birthday"},走:{py:"zǒu",en:"to walk; to go"},到:{py:"dào",en:"to arrive; to reach"}}},grammar:{before:`A：今天晚上我们一起吃饭吧，给你过生日。
 B：今天？离我的生日还有一个多星期呢！
 A：下个星期我要去北京，今天过吧。
-B：好吧，离这儿不远有一个中国饭馆，`,after:"。",answer:"走几分钟就到了",tokens:["走","几分钟","就","到","了"]},sentences:[{speaker:"A",text:"今天晚上我们一起吃饭吧，给你过生日。",tokens:["今天","晚上","我们","一起","吃饭","吧","给","你","过生日"]},{speaker:"B",text:"今天？离我的生日还有一个多星期呢！",tokens:["今天","离","我","的","生日","还有","一个","多","星期","呢"]},{speaker:"A",text:"下个星期我要去北京，今天过吧。",tokens:["下","个","星期","我","要","去","北京","今天","过","吧"]},{speaker:"B",text:"好吧，离这儿不远有一个中国饭馆，走几分钟就到了。",tokens:["好","吧","离","这儿","不","远","有","一个","中国","饭馆","走","几分钟","就","到","了"]}],note:"语气副词“还”（2）；时间副词“就”；动词“离”；语气助词“呢”"}]},{num:8,name:"让我想想再告诉你",texts:[{n:1,title:"课文1",original:`A：我们下午去看电影，好吗？
+B：好吧，离这儿不远有一个中国饭馆，`,after:"。",answer:"走几分钟就到了",tokens:["走","几分钟","就","到","了"]},sentences:[{speaker:"A",text:"今天晚上我们一起吃饭吧，给你过生日。",tokens:["今天","晚上","我们","一起","吃饭","吧","给","你","过生日"]},{speaker:"B",text:"好吧，离这儿不远有一个中国饭馆，走几分钟就到了。",tokens:["好","吧","离","这儿","不","远","有","一个","中国","饭馆","走","几分钟","就","到","了"]},{speaker:"B",text:"离我的生日还有一个多星期呢！",tokens:["离","我","的","生日","还有","一个","多","星期","呢"]},{speaker:"A",text:"下个星期我要去北京，今天过吧。",tokens:["下","个","星期","我","要","去","北京","今天","过","吧"]}],note:"语气副词“还”（2）；时间副词“就”；动词“离”；语气助词“呢”"}]},{num:8,name:"让我想想再告诉你",texts:[{n:1,title:"课文1",original:`A：我们下午去看电影，好吗？
 B：今天下午我没有时间，明天下午再去吧。
 A：你想看什么电影？
 B：让我想想再告诉你。`,lines:[{name:"A",zh:"我们下午去看电影，好吗？",py:"Wǒmen xiàwǔ qù kàn diànyǐng, hǎo ma?",en:"Shall we go see a movie this afternoon?"},{name:"B",zh:"今天下午我没有时间，明天下午再去吧。",py:"Jīntiān xiàwǔ wǒ méiyǒu shíjiān, míngtiān xiàwǔ zài qù ba.",en:"I don't have time this afternoon; let's go tomorrow afternoon instead."},{name:"A",zh:"你想看什么电影？",py:"Nǐ xiǎng kàn shénme diànyǐng?",en:"What movie do you want to see?"},{name:"B",zh:"让我想想再告诉你。",py:"Ràng wǒ xiǎngxiang zài gàosu nǐ.",en:"Let me think about it and tell you."}],vocab:{seg:[{t:`A：我们下午去看电影，好吗？
@@ -271,7 +271,7 @@ A：你想看什么电影？
 B：让我想想再`},{b:2},{t:"你。"}],answers:["再","告诉"],tiles:{再:{py:"zài",en:"again; then"},告诉:{py:"gàosu",en:"to tell"}}},grammar:{before:`A：我们下午去看电影，好吗？
 B：今天下午我没有时间，`,after:`。
 A：你想看什么电影？
-B：让我想想再告诉你。`,answer:"明天下午再去吧",tokens:["明天","下午","再","去","吧"]},sentences:[{speaker:"A",text:"我们下午去看电影，好吗？",tokens:["我们","下午","去","看","电影","好","吗"]},{speaker:"B",text:"今天下午我没有时间，明天下午再去吧。",tokens:["今天","下午","我","没有","时间","明天","下午","再","去","吧"]},{speaker:"A",text:"你想看什么电影？",tokens:["你","想","看","什么","电影"]},{speaker:"B",text:"让我想想再告诉你。",tokens:["让","我","想","想","再","告诉","你"]}],note:"疑问句“……，好吗？”；副词“再”；兼语句；动词重叠"},{n:2,title:"课文2",original:`A：外边天气很好，我们出去运动运动吧。
+B：让我想想再告诉你。`,answer:"明天下午再去吧",tokens:["明天","下午","再","去","吧"]},sentences:[{speaker:"B",text:"今天下午我没有时间，明天下午再去吧。",tokens:["今天","下午","我","没有","时间","明天","下午","再","去","吧"]},{speaker:"B",text:"让我想想再告诉你。",tokens:["让","我","想","想","再","告诉","你"]},{speaker:"A",text:"我们下午去看电影，好吗？",tokens:["我们","下午","去","看","电影","好","吗"]},{speaker:"A",text:"你想看什么电影？",tokens:["你","想","看","什么","电影"]}],note:"疑问句“……，好吗？”；副词“再”；兼语句；动词重叠"},{n:2,title:"课文2",original:`A：外边天气很好，我们出去运动运动吧。
 B：你等等我，好吗？王老师让我给大卫打个电话。
 A：回来再打吧。找大卫有什么事情吗？
 B：听说大卫病了，我想找时间去看看他。`,lines:[{name:"A",zh:"外边天气很好，我们出去运动运动吧。",py:"Wàibian tiānqì hěn hǎo, wǒmen chūqu yùndòng yùndòng ba.",en:"The weather's nice outside; let's go out and get some exercise."},{name:"B",zh:"你等等我，好吗？王老师让我给大卫打个电话。",py:"Nǐ děngdeng wǒ, hǎo ma? Wáng lǎoshī ràng wǒ gěi Dàwèi dǎ ge diànhuà.",en:"Wait for me, okay? Teacher Wang asked me to give David a call."},{name:"A",zh:"回来再打吧。找大卫有什么事情吗？",py:"Huílai zài dǎ ba. Zhǎo Dàwèi yǒu shénme shìqing ma?",en:"Call when you get back. What do you need David for?"},{name:"B",zh:"听说大卫病了，我想找时间去看看他。",py:"Tīngshuō Dàwèi bìng le, wǒ xiǎng zhǎo shíjiān qù kànkan tā.",en:"I heard David is sick; I want to find time to go visit him."}],vocab:{seg:[{t:`A：外边天气很好，我们出去运动运动吧。
@@ -280,7 +280,7 @@ A：回来再打吧。`},{b:2},{t:"大卫有什么"},{b:3},{t:`吗？
 B：听说大卫病了，我想找时间去看看他。`}],answers:["等","找","事情"],tiles:{等:{py:"děng",en:"to wait for"},找:{py:"zhǎo",en:"to look for"},事情:{py:"shìqing",en:"matter; affair"}}},grammar:{before:`A：外边天气很好，我们出去运动运动吧。
 B：你等等我，好吗？`,after:`。
 A：回来再打吧。找大卫有什么事情吗？
-B：听说大卫病了，我想找时间去看看他。`,answer:"王老师让我给大卫打个电话",tokens:["王老师","让","我","给","大卫","打","个","电话"]},sentences:[{speaker:"A",text:"外边天气很好，我们出去运动运动吧。",tokens:["外边","天气","很","好","我们","出去","运动","运动","吧"]},{speaker:"B",text:"你等等我，好吗？王老师让我给大卫打个电话。",tokens:["你","等","等","我","好","吗","王老师","让","我","给","大卫","打","个","电话"]},{speaker:"A",text:"回来再打吧。找大卫有什么事情吗？",tokens:["回来","再","打","吧","找","大卫","有","什么","事情","吗"]},{speaker:"B",text:"听说大卫病了，我想找时间去看看他。",tokens:["听说","大卫","病","了","我","想","找","时间","去","看看","他"]}],note:"疑问句“……，好吗？”；副词“再”；兼语句；动词重叠"},{n:3,title:"课文3",original:`A：服务员，我房间的门打不开了。
+B：听说大卫病了，我想找时间去看看他。`,answer:"王老师让我给大卫打个电话",tokens:["王老师","让","我","给","大卫","打","个","电话"]},sentences:[{speaker:"B",text:"你等等我，好吗？",tokens:["你","等","等","我","好","吗"]},{speaker:"A",text:"找大卫有什么事情吗？",tokens:["找","大卫","有","什么","事情","吗"]},{speaker:"B",text:"听说大卫病了，我想找时间去看看他。",tokens:["听说","大卫","病","了","我","想","找","时间","去","看看","他"]},{speaker:"A",text:"外边天气很好，我们出去运动运动吧。",tokens:["外边","天气","很","好","我们","出去","运动","运动","吧"]},{speaker:"B",text:"王老师让我给大卫打个电话。",tokens:["王老师","让","我","给","大卫","打","个","电话"]},{speaker:"A",text:"回来再打吧。",tokens:["回来","再","打","吧"]}],note:"疑问句“……，好吗？”；副词“再”；兼语句；动词重叠"},{n:3,title:"课文3",original:`A：服务员，我房间的门打不开了。
 B：您住哪个房间？
 A：317。
 B：好的，我叫人去看看。`,lines:[{name:"A",zh:"服务员，我房间的门打不开了。",py:"Fúwùyuán, wǒ fángjiān de mén dǎ bu kāi le.",en:"Excuse me, I can't get my room door open."},{name:"B",zh:"您住哪个房间？",py:"Nín zhù nǎge fángjiān?",en:"Which room are you staying in?"},{name:"A",zh:"317。",py:"Sān yāo qī.",en:"Room 317."},{name:"B",zh:"好的，我叫人去看看。",py:"Hǎo de, wǒ jiào rén qù kànkan.",en:"Okay, I'll send someone to check."}],vocab:{seg:[{t:"A："},{b:1},{t:`，我房间的门打不开了。
@@ -298,13 +298,13 @@ A：这件红的呢？这是今天新来的。
 B：让我`},{b:4},{t:"看看。"}],answers:["白","黑","贵","再"],tiles:{白:{py:"bái",en:"white"},黑:{py:"hēi",en:"black"},贵:{py:"guì",en:"expensive"},再:{py:"zài",en:"again; then"}}},grammar:{before:`A：你看看这几件衣服怎么样。
 B：这件白的有点儿长，那件黑的有点儿贵。
 A：这件红的呢？这是今天新来的。
-B：`,after:"。",answer:"让我再看看",tokens:["让","我","再","看看"]},sentences:[{speaker:"A",text:"你看看这几件衣服怎么样。",tokens:["你","看看","这","几","件","衣服","怎么样"]},{speaker:"B",text:"这件白的有点儿长，那件黑的有点儿贵。",tokens:["这件","白","的","有点儿","长","那","件","黑","的","有点儿","贵"]},{speaker:"A",text:"这件红的呢？这是今天新来的。",tokens:["这件","红","的","呢","这","是","今天","新","来","的"]},{speaker:"B",text:"让我再看看。",tokens:["让","我","再","看看"]}],note:"疑问句“……，好吗？”；副词“再”；兼语句；动词重叠"}]},{num:9,name:"题太多，我没做完",texts:[{n:1,title:"课文1",original:`A：你好！请问张欢在吗？
+B：`,after:"。",answer:"让我再看看",tokens:["让","我","再","看看"]},sentences:[{speaker:"B",text:"这件白的有点儿长，那件黑的有点儿贵。",tokens:["这件","白","的","有点儿","长","那","件","黑","的","有点儿","贵"]},{speaker:"B",text:"让我再看看。",tokens:["让","我","再","看看"]},{speaker:"A",text:"你看看这几件衣服怎么样。",tokens:["你","看看","这","几","件","衣服","怎么样"]},{speaker:"A",text:"这件红的呢？",tokens:["这件","红","的","呢"]},{speaker:"A",text:"这是今天新来的。",tokens:["这","是","今天","新","来","的"]}],note:"疑问句“……，好吗？”；副词“再”；兼语句；动词重叠"}]},{num:9,name:"题太多，我没做完",texts:[{n:1,title:"课文1",original:`A：你好！请问张欢在吗？
 B：你打错了，我们这儿没有叫张欢的。
 A：对不起。`,lines:[{name:"A",zh:"你好！请问张欢在吗？",py:"Nǐ hǎo! Qǐngwèn Zhāng Huān zài ma?",en:"Hello! Is Zhang Huan there?"},{name:"B",zh:"你打错了，我们这儿没有叫张欢的。",py:"Nǐ dǎ cuò le, wǒmen zhèr méiyǒu jiào Zhāng Huān de.",en:"You've got the wrong number; there's no one named Zhang Huan here."},{name:"A",zh:"对不起。",py:"Duìbuqǐ.",en:"Sorry."}],vocab:{seg:[{t:`A：你好！请问张欢在吗？
 B：你打`},{b:1},{t:`了，我们这儿没有叫张欢的。
 A：对不起。`}],answers:["错"],tiles:{错:{py:"cuò",en:"wrong; mistaken"}}},grammar:{before:`A：你好！请问张欢在吗？
 B：你`,after:`，我们这儿没有叫张欢的。
-A：对不起。`,answer:"打错了",tokens:["打错","了"]},sentences:[{speaker:"A",text:"你好！请问张欢在吗？",tokens:["你好","请问","张","欢","在","吗"]},{speaker:"B",text:"你打错了，我们这儿没有叫张欢的。",tokens:["你","打错","了","我们","这儿","没有","叫","张","欢","的"]}],note:"结果补语；介词“从”；“第～”表示顺序"},{n:2,title:"课文2",original:`A：您从几岁开始学习跳舞？
+A：对不起。`,answer:"打错了",tokens:["打错","了"]},sentences:[{speaker:"B",text:"你打错了，我们这儿没有叫张欢的。",tokens:["你","打错","了","我们","这儿","没有","叫","张","欢","的"]},{speaker:"A",text:"请问张欢在吗？",tokens:["请问","张","欢","在","吗"]}],note:"结果补语；介词“从”；“第～”表示顺序"},{n:2,title:"课文2",original:`A：您从几岁开始学习跳舞？
 B：我第一次跳舞是在七岁的时候。
 A：我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？
 B：没问题，非常欢迎。`,lines:[{name:"A",zh:"您从几岁开始学习跳舞？",py:"Nín cóng jǐ suì kāishǐ xuéxí tiàowǔ?",en:"At what age did you start learning to dance?"},{name:"B",zh:"我第一次跳舞是在七岁的时候。",py:"Wǒ dì-yī cì tiàowǔ shì zài qī suì de shíhou.",en:"I danced for the first time when I was seven."},{name:"A",zh:"我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？",py:"Wǒ nǚ'ér jīnnián yě qī suì le. Wǒ xīwàng tā néng gēn nín xué tiàowǔ, kěyǐ ma?",en:"My daughter is also seven this year. I hope she can learn to dance with you—would that be okay?"},{name:"B",zh:"没问题，非常欢迎。",py:"Méi wèntí, fēicháng huānyíng.",en:"No problem, she's very welcome."}],vocab:{seg:[{t:"A：您"},{b:1},{t:"几岁开始学习"},{b:2},{t:`？
@@ -313,7 +313,7 @@ A：我女儿今年也七岁了。我`},{b:3},{t:`她能跟您学跳舞，可以
 B：没问题，非常`},{b:4},{t:"。"}],answers:["从","跳舞","希望","欢迎"],tiles:{从:{py:"cóng",en:"from"},跳舞:{py:"tiàowǔ",en:"to dance"},希望:{py:"xīwàng",en:"to hope; hope"},欢迎:{py:"huānyíng",en:"to welcome; welcome"}}},grammar:{before:"A：您",after:`学习跳舞？
 B：我第一次跳舞是在七岁的时候。
 A：我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？
-B：没问题，非常欢迎。`,answer:"从几岁开始",tokens:["从","几岁","开始"]},sentences:[{speaker:"A",text:"您从几岁开始学习跳舞？",tokens:["您","从","几岁","开始","学习","跳舞"]},{speaker:"B",text:"我第一次跳舞是在七岁的时候。",tokens:["我","第一","次","跳舞","是","在","七","岁","的","时候"]},{speaker:"A",text:"我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？",tokens:["我","女儿","今年","也","七","岁","了","我","希望","她","能","跟","您","学","跳舞","可以","吗"]},{speaker:"B",text:"没问题，非常欢迎。",tokens:["没问题","非常","欢迎"]}],note:"结果补语；介词“从”；“第～”表示顺序"},{n:3,title:"课文3",original:`A：你知道吗？大卫找到工作了。
+B：没问题，非常欢迎。`,answer:"从几岁开始",tokens:["从","几岁","开始"]},sentences:[{speaker:"A",text:"您从几岁开始学习跳舞？",tokens:["您","从","几岁","开始","学习","跳舞"]},{speaker:"B",text:"我第一次跳舞是在七岁的时候。",tokens:["我","第一","次","跳舞","是","在","七","岁","的","时候"]},{speaker:"A",text:"我希望她能跟您学跳舞，可以吗？",tokens:["我","希望","她","能","跟","您","学","跳舞","可以","吗"]},{speaker:"B",text:"没问题，非常欢迎。",tokens:["没问题","非常","欢迎"]},{speaker:"A",text:"我女儿今年也七岁了。",tokens:["我","女儿","今年","也","七","岁","了"]}],note:"结果补语；介词“从”；“第～”表示顺序"},{n:3,title:"课文3",original:`A：你知道吗？大卫找到工作了。
 B：太好了！他从什么时候开始上班？
 A：从下个星期一开始。
 B：这是他的第一个工作，希望他能喜欢。`,lines:[{name:"A",zh:"你知道吗？大卫找到工作了。",py:"Nǐ zhīdào ma? Dàwèi zhǎodào gōngzuò le.",en:"Did you know? David found a job."},{name:"B",zh:"太好了！他从什么时候开始上班？",py:"Tài hǎo le! Tā cóng shénme shíhou kāishǐ shàngbān?",en:"Great! When does he start work?"},{name:"A",zh:"从下个星期一开始。",py:"Cóng xià ge xīngqīyī kāishǐ.",en:"Starting next Monday."},{name:"B",zh:"这是他的第一个工作，希望他能喜欢。",py:"Zhè shì tā de dì-yī ge gōngzuò, xīwàng tā néng xǐhuan.",en:"It's his first job; I hope he'll like it."}],vocab:{seg:[{t:`A：你知道吗？大卫找到工作了。
@@ -322,7 +322,7 @@ A：从下个星期一开始。
 B：这是他的`},{b:2},{t:"个工作，"},{b:3},{t:"他能喜欢。"}],answers:["上班","第一","希望"],tiles:{上班:{py:"shàngbān",en:"to go to work; start work"},第一:{py:"dì-yī",en:"first"},希望:{py:"xīwàng",en:"to hope; hope"}}},grammar:{before:`A：你知道吗？大卫找到工作了。
 B：太好了！他从什么时候开始上班？
 A：从下个星期一开始。
-B：这是他的`,after:"，希望他能喜欢。",answer:"第一个工作",tokens:["第一个","工作"]},sentences:[{speaker:"A",text:"你知道吗？大卫找到工作了。",tokens:["你","知道","吗","大卫","找","到","工作","了"]},{speaker:"B",text:"太好了！他从什么时候开始上班？",tokens:["太","好","了","他","从","什么","时候","开始","上班"]},{speaker:"A",text:"从下个星期一开始。",tokens:["从","下","个","星期","一","开始"]},{speaker:"B",text:"这是他的第一个工作，希望他能喜欢。",tokens:["这","是","他","的","第一个","工作","希望","他","能","喜欢"]}],note:"结果补语；介词“从”；“第～”表示顺序"},{n:4,title:"课文4",original:`A：昨天的考试怎么样？你都听懂了吗？
+B：这是他的`,after:"，希望他能喜欢。",answer:"第一个工作",tokens:["第一个","工作"]},sentences:[{speaker:"B",text:"他从什么时候开始上班？",tokens:["他","从","什么","时候","开始","上班"]},{speaker:"B",text:"这是他的第一个工作，希望他能喜欢。",tokens:["这","是","他","的","第一个","工作","希望","他","能","喜欢"]},{speaker:"A",text:"你知道吗？",tokens:["你","知道","吗"]},{speaker:"A",text:"大卫找到工作了。",tokens:["大卫","找","到","工作","了"]},{speaker:"B",text:"太好了！",tokens:["太","好","了"]},{speaker:"A",text:"从下个星期一开始。",tokens:["从","下","个","星期","一","开始"]}],note:"结果补语；介词“从”；“第～”表示顺序"},{n:4,title:"课文4",original:`A：昨天的考试怎么样？你都听懂了吗？
 B：听懂了。
 A：你都做完了没有？
 B：题太多，我没做完。`,lines:[{name:"A",zh:"昨天的考试怎么样？你都听懂了吗？",py:"Zuótiān de kǎoshì zěnmeyàng? Nǐ dōu tīngdǒng le ma?",en:"How was yesterday's exam? Did you understand it all?"},{name:"B",zh:"听懂了。",py:"Tīngdǒng le.",en:"Yes, I understood."},{name:"A",zh:"你都做完了没有？",py:"Nǐ dōu zuòwán le méiyǒu?",en:"Did you finish it all?"},{name:"B",zh:"题太多，我没做完。",py:"Tí tài duō, wǒ méi zuòwán.",en:"There were too many questions; I didn't finish."}],vocab:{seg:[{t:"A：昨天的考试怎么样？你都听"},{b:1},{t:`了吗？
@@ -331,7 +331,7 @@ A：你都做`},{b:2},{t:`了没有？
 B：`},{b:3},{t:"太多，我没做完。"}],answers:["懂","完","题"],tiles:{懂:{py:"dǒng",en:"to understand; know"},完:{py:"wán",en:"to finish; complete"},题:{py:"tí",en:"question; problem"}}},grammar:{before:`A：昨天的考试怎么样？你都听懂了吗？
 B：听懂了。
 A：你都`,after:`了没有？
-B：题太多，我没做完。`,answer:"做完",tokens:["做","完"]},sentences:[{speaker:"A",text:"昨天的考试怎么样？你都听懂了吗？",tokens:["昨天","的","考试","怎么样","你","都","听","懂","了","吗"]},{speaker:"B",text:"听懂了。",tokens:["听","懂","了"]},{speaker:"A",text:"你都做完了没有？",tokens:["你","都","做","完","了","没有"]},{speaker:"B",text:"题太多，我没做完。",tokens:["题","太","多","我","没","做","完"]}],note:"结果补语；介词“从”；“第～”表示顺序"}]},{num:10,name:"别找了，手机在桌子上呢",texts:[{n:1,title:"课文1",original:`A：不要看电视了，明天上午还有汉语课呢。
+B：题太多，我没做完。`,answer:"做完",tokens:["做","完"]},sentences:[{speaker:"A",text:"你都听懂了吗？",tokens:["你","都","听","懂","了","吗"]},{speaker:"B",text:"听懂了。",tokens:["听","懂","了"]},{speaker:"A",text:"你都做完了没有？",tokens:["你","都","做","完","了","没有"]},{speaker:"B",text:"题太多，我没做完。",tokens:["题","太","多","我","没","做","完"]},{speaker:"A",text:"昨天的考试怎么样？",tokens:["昨天","的","考试","怎么样"]}],note:"结果补语；介词“从”；“第～”表示顺序"}]},{num:10,name:"别找了，手机在桌子上呢",texts:[{n:1,title:"课文1",original:`A：不要看电视了，明天上午还有汉语课呢。
 B：看电视对学汉语有帮助。
 A：明天的课你都准备好了吗？
 B：都准备好了。`,lines:[{name:"A",zh:"不要看电视了，明天上午还有汉语课呢。",py:"Bú yào kàn diànshì le, míngtiān shàngwǔ hái yǒu Hànyǔ kè ne.",en:"Stop watching TV—you have Chinese class tomorrow morning."},{name:"B",zh:"看电视对学汉语有帮助。",py:"Kàn diànshì duì xué Hànyǔ yǒu bāngzhù.",en:"Watching TV helps with learning Chinese."},{name:"A",zh:"明天的课你都准备好了吗？",py:"Míngtiān de kè nǐ dōu zhǔnbèi hǎo le ma?",en:"Have you prepared everything for tomorrow's class?"},{name:"B",zh:"都准备好了。",py:"Dōu zhǔnbèi hǎo le.",en:"Yes, all prepared."}],vocab:{seg:[{t:"A：不要看电视了，明天上午还有汉语"},{b:1},{t:`呢。
@@ -352,7 +352,7 @@ A：医生让你听我的。`}],answers:["别"],tiles:{别:{py:"bié",en:"don't;
 B：好，不看了。给我一杯茶吧。
 A：医生说吃药后两个小时`,after:`。
 B：医生还说什么了？
-A：医生让你听我的。`,answer:"不要喝茶",tokens:["不要","喝茶"]},sentences:[{speaker:"A",text:"别看报纸了，医生说你要多休息。",tokens:["别","看","报纸","了","医生","说","你","要","多","休息"]},{speaker:"B",text:"好，不看了。给我一杯茶吧。",tokens:["好","不","看","了","给","我","一杯","茶","吧"]},{speaker:"A",text:"医生说吃药后两个小时不要喝茶。",tokens:["医生","说","吃","药","后","两个","小时","不要","喝茶"]},{speaker:"B",text:"医生还说什么了？",tokens:["医生","还","说","什么","了"]},{speaker:"A",text:"医生让你听我的。",tokens:["医生","让","你","听","我","的"]}],note:"祈使句：不要……了；别……了；介词“对”"},{n:3,title:"课文3",original:`A：你怎么买了这么多东西啊？
+A：医生让你听我的。`,answer:"不要喝茶",tokens:["不要","喝茶"]},sentences:[{speaker:"A",text:"别看报纸了，医生说你要多休息。",tokens:["别","看","报纸","了","医生","说","你","要","多","休息"]},{speaker:"B",text:"好，不看了。",tokens:["好","不","看","了"]},{speaker:"B",text:"给我一杯茶吧。",tokens:["给","我","一杯","茶","吧"]},{speaker:"A",text:"医生说吃药后两个小时不要喝茶。",tokens:["医生","说","吃","药","后","两个","小时","不要","喝茶"]},{speaker:"B",text:"医生还说什么了？",tokens:["医生","还","说","什么","了"]},{speaker:"A",text:"医生让你听我的。",tokens:["医生","让","你","听","我","的"]}],note:"祈使句：不要……了；别……了；介词“对”"},{n:3,title:"课文3",original:`A：你怎么买了这么多东西啊？
 B：哥哥今天中午回来吃饭。
 A：我看看买什么了。羊肉、鸡蛋、面条、西瓜……真不少！妈妈呢？
 B：正在准备午饭呢！`,lines:[{name:"A",zh:"你怎么买了这么多东西啊？",py:"Nǐ zěnme mǎi le zhème duō dōngxi a?",en:"Why did you buy so much stuff?"},{name:"B",zh:"哥哥今天中午回来吃饭。",py:"Gēge jīntiān zhōngwǔ huílai chī fàn.",en:"My older brother is coming home for lunch today."},{name:"A",zh:"我看看买什么了。羊肉、鸡蛋、面条、西瓜……真不少！妈妈呢？",py:"Wǒ kànkan mǎi shénme le. Yángròu, jīdàn, miàntiáo, xīguā…… zhēn bù shǎo! Māma ne?",en:"Let me see what you bought. Lamb, eggs, noodles, watermelon… that's a lot! Where's Mom?"},{name:"B",zh:"正在准备午饭呢！",py:"Zhèngzài zhǔnbèi wǔfàn ne!",en:"She's making lunch!"}],vocab:{seg:[{t:`A：你怎么买了这么多东西啊？
@@ -361,7 +361,7 @@ A：我看看买什么了。羊肉、`},{b:2},{t:"、面条、"},{b:3},{t:`…�
 B：`},{b:4},{t:"准备午饭呢！"}],answers:["哥哥","鸡蛋","西瓜","正在"],tiles:{哥哥:{py:"gēge",en:"older brother"},鸡蛋:{py:"jīdàn",en:"egg"},西瓜:{py:"xīguā",en:"watermelon"},正在:{py:"zhèngzài",en:"in the process of; currently"}}},grammar:{before:`A：你怎么买了这么多东西啊？
 B：哥哥今天中午回来吃饭。
 A：我看看买什么了。羊肉、鸡蛋、面条、西瓜……真不少！妈妈呢？
-B：`,after:"！",answer:"正在准备午饭呢",tokens:["正在","准备","午饭","呢"]},sentences:[{speaker:"A",text:"你怎么买了这么多东西啊？",tokens:["你","怎么","买","了","这么","多","东西","啊"]},{speaker:"B",text:"哥哥今天中午回来吃饭。",tokens:["哥哥","今天","中午","回来","吃饭"]},{speaker:"A",text:"我看看买什么了。羊肉、鸡蛋、面条、西瓜……真不少！妈妈呢？",tokens:["我","看看","买","什么","了","羊肉","鸡蛋","面条","西瓜","真","不少","妈妈","呢"]},{speaker:"B",text:"正在准备午饭呢！",tokens:["正在","准备","午饭","呢"]}],note:"祈使句：不要……了；别……了；介词“对”"},{n:4,title:"课文4",original:`A：你在找什么？
+B：`,after:"！",answer:"正在准备午饭呢",tokens:["正在","准备","午饭","呢"]},sentences:[{speaker:"B",text:"哥哥今天中午回来吃饭。",tokens:["哥哥","今天","中午","回来","吃饭"]},{speaker:"A",text:"羊肉、鸡蛋、面条、西瓜……真不少！",tokens:["羊肉","鸡蛋","面条","西瓜","真","不少"]},{speaker:"B",text:"正在准备午饭呢！",tokens:["正在","准备","午饭","呢"]},{speaker:"A",text:"你怎么买了这么多东西啊？",tokens:["你","怎么","买","了","这么","多","东西","啊"]},{speaker:"A",text:"我看看买什么了。",tokens:["我","看看","买","什么","了"]},{speaker:"A",text:"妈妈呢？",tokens:["妈妈","呢"]}],note:"祈使句：不要……了；别……了；介词“对”"},{n:4,title:"课文4",original:`A：你在找什么？
 B：你看见我的手机了吗？白色的。
 A：别找了，手机在桌子上呢，电脑旁边。
 B：你看见我的衣服了吗？红色的那件。
@@ -373,7 +373,7 @@ A：那件衣服我帮你`},{b:2},{t:"了，在外边呢。"}],answers:["手机"
 B：你看见我的手机了吗？白色的。
 A：`,after:`，手机在桌子上呢，电脑旁边。
 B：你看见我的衣服了吗？红色的那件。
-A：那件衣服我帮你洗了，在外边呢。`,answer:"别找了",tokens:["别","找","了"]},sentences:[{speaker:"A",text:"你在找什么？",tokens:["你","在","找","什么"]},{speaker:"B",text:"你看见我的手机了吗？白色的。",tokens:["你","看见","我","的","手机","了","吗","白色","的"]},{speaker:"A",text:"别找了，手机在桌子上呢，电脑旁边。",tokens:["别","找","了","手机","在","桌子","上","呢","电脑","旁边"]},{speaker:"B",text:"你看见我的衣服了吗？红色的那件。",tokens:["你","看见","我","的","衣服","了","吗","红色","的","那","件"]},{speaker:"A",text:"那件衣服我帮你洗了，在外边呢。",tokens:["那","件","衣服","我","帮","你","洗","了","在","外边","呢"]}],note:"祈使句：不要……了；别……了；介词“对”"}]},{num:11,name:"他比我大三岁",texts:[{n:1,title:"课文1",original:`A：王方，昨天和你一起唱歌的人是谁？
+A：那件衣服我帮你洗了，在外边呢。`,answer:"别找了",tokens:["别","找","了"]},sentences:[{speaker:"B",text:"你看见我的手机了吗？",tokens:["你","看见","我","的","手机","了","吗"]},{speaker:"A",text:"别找了，手机在桌子上呢，电脑旁边。",tokens:["别","找","了","手机","在","桌子","上","呢","电脑","旁边"]},{speaker:"A",text:"那件衣服我帮你洗了，在外边呢。",tokens:["那","件","衣服","我","帮","你","洗","了","在","外边","呢"]},{speaker:"A",text:"你在找什么？",tokens:["你","在","找","什么"]},{speaker:"B",text:"白色的。",tokens:["白色","的"]},{speaker:"B",text:"你看见我的衣服了吗？",tokens:["你","看见","我","的","衣服","了","吗"]},{speaker:"B",text:"红色的那件。",tokens:["红色","的","那","件"]}],note:"祈使句：不要……了；别……了；介词“对”"}]},{num:11,name:"他比我大三岁",texts:[{n:1,title:"课文1",original:`A：王方，昨天和你一起唱歌的人是谁？
 B：一个朋友。
 A：什么朋友？是不是男朋友？
 B：不是不是，我同学介绍的，昨天第一次见。`,lines:[{name:"A",zh:"王方，昨天和你一起唱歌的人是谁？",py:"Wáng Fāng, zuótiān hé nǐ yìqǐ chànggē de rén shì shéi?",en:"Wang Fang, who was that person singing with you yesterday?"},{name:"B",zh:"一个朋友。",py:"Yí ge péngyou.",en:"A friend."},{name:"A",zh:"什么朋友？是不是男朋友？",py:"Shénme péngyou? Shì bu shì nánpéngyou?",en:"What kind of friend? Is he your boyfriend?"},{name:"B",zh:"不是不是，我同学介绍的，昨天第一次见。",py:"Bú shì bú shì, wǒ tóngxué jièshào de, zuótiān dì-yī cì jiàn.",en:"No, no—a classmate introduced us; yesterday was the first time we met."}],vocab:{seg:[{t:"A：王方，昨天和你一起"},{b:1},{t:`的人是谁？
@@ -382,7 +382,7 @@ A：什么朋友？是不是`},{b:2},{t:`？
 B：不是不是，我同学介绍的，昨天第一次见。`}],answers:["唱歌","男朋友"],tiles:{唱歌:{py:"chànggē",en:"to sing"},男朋友:{py:"nánpéngyou",en:"boyfriend"}}},grammar:{before:"A：王方，昨天",after:`人是谁？
 B：一个朋友。
 A：什么朋友？是不是男朋友？
-B：不是不是，我同学介绍的，昨天第一次见。`,answer:"和你一起唱歌的",tokens:["和","你","一起","唱歌","的"]},sentences:[{speaker:"A",text:"王方，昨天和你一起唱歌的人是谁？",tokens:["王","方","昨天","和","你","一起","唱歌","的","人","是","谁"]},{speaker:"B",text:"一个朋友。",tokens:["一个","朋友"]},{speaker:"A",text:"什么朋友？是不是男朋友？",tokens:["什么","朋友","是不是","男朋友"]},{speaker:"B",text:"不是不是，我同学介绍的，昨天第一次见。",tokens:["不是","不是","我","同学","介绍","的","昨天","第一","次","见"]}],note:"动词短语做定语；“比”字句（1）；助动词“可能”"},{n:2,title:"课文2",original:`A：左边这个看报纸的女孩子是你姐姐吗？
+B：不是不是，我同学介绍的，昨天第一次见。`,answer:"和你一起唱歌的",tokens:["和","你","一起","唱歌","的"]},sentences:[{speaker:"A",text:"王方，昨天和你一起唱歌的人是谁？",tokens:["王","方","昨天","和","你","一起","唱歌","的","人","是","谁"]},{speaker:"A",text:"是不是男朋友？",tokens:["是不是","男朋友"]},{speaker:"B",text:"一个朋友。",tokens:["一个","朋友"]},{speaker:"A",text:"什么朋友？",tokens:["什么","朋友"]},{speaker:"B",text:"不是不是，我同学介绍的，昨天第一次见。",tokens:["不是","不是","我","同学","介绍","的","昨天","第一","次","见"]}],note:"动词短语做定语；“比”字句（1）；助动词“可能”"},{n:2,title:"课文2",original:`A：左边这个看报纸的女孩子是你姐姐吗？
 B：是，右边写字的那个人是我哥哥。
 A：你哥哥多大？
 B：25岁，他比我大三岁。`,lines:[{name:"A",zh:"左边这个看报纸的女孩子是你姐姐吗？",py:"Zuǒbian zhège kàn bàozhǐ de nǚ háizi shì nǐ jiějie ma?",en:"Is the girl on the left reading the newspaper your sister?"},{name:"B",zh:"是，右边写字的那个人是我哥哥。",py:"Shì, yòubian xiě zì de nàge rén shì wǒ gēge.",en:"Yes, and the person writing on the right is my older brother."},{name:"A",zh:"你哥哥多大？",py:"Nǐ gēge duō dà?",en:"How old is your brother?"},{name:"B",zh:"25岁，他比我大三岁。",py:"Èrshíwǔ suì, tā bǐ wǒ dà sān suì.",en:"Twenty-five; he's three years older than me."}],vocab:{seg:[{t:"A：左边这个看报纸的"},{b:1},{t:`是你姐姐吗？
@@ -400,7 +400,7 @@ A：比昨天`},{b:1},{t:`。
 B：是，苹果也比昨天便宜一些。您来点儿吧。`}],answers:["便宜"],tiles:{便宜:{py:"piányi",en:"cheap"}}},grammar:{before:`A：今天的西瓜怎么卖？
 B：三块五一斤。
 A：比昨天便宜。
-B：是，苹果也`,after:"。您来点儿吧。",answer:"比昨天便宜一些",tokens:["比","昨天","便宜","一些"]},sentences:[{speaker:"A",text:"今天的西瓜怎么卖？",tokens:["今天","的","西瓜","怎么","卖"]},{speaker:"B",text:"三块五一斤。",tokens:["三","块","五","一","斤"]},{speaker:"A",text:"比昨天便宜。",tokens:["比","昨天","便宜"]},{speaker:"B",text:"是，苹果也比昨天便宜一些。您来点儿吧。",tokens:["是","苹果","也","比","昨天","便宜","一些","您","来","点儿","吧"]}],note:"动词短语做定语；“比”字句（1）；助动词“可能”"},{n:4,title:"课文4",original:`A：前边说话的那个人就是我的汉语老师。你可能不认识她。
+B：是，苹果也`,after:"。您来点儿吧。",answer:"比昨天便宜一些",tokens:["比","昨天","便宜","一些"]},sentences:[{speaker:"A",text:"比昨天便宜。",tokens:["比","昨天","便宜"]},{speaker:"B",text:"是，苹果也比昨天便宜一些。",tokens:["是","苹果","也","比","昨天","便宜","一些"]},{speaker:"A",text:"今天的西瓜怎么卖？",tokens:["今天","的","西瓜","怎么","卖"]},{speaker:"B",text:"三块五一斤。",tokens:["三","块","五","一","斤"]},{speaker:"B",text:"您来点儿吧。",tokens:["您","来","点儿","吧"]}],note:"动词短语做定语；“比”字句（1）；助动词“可能”"},{n:4,title:"课文4",original:`A：前边说话的那个人就是我的汉语老师。你可能不认识她。
 B：是新来的汉语老师吗？
 A：是去年来的，她姓王，28岁。
 B：她比我们老师小两岁。`,lines:[{name:"A",zh:"前边说话的那个人就是我的汉语老师。你可能不认识她。",py:"Qiánbian shuōhuà de nàge rén jiù shì wǒ de Hànyǔ lǎoshī. Nǐ kěnéng bú rènshi tā.",en:"The person talking up front is my Chinese teacher. You probably don't know her."},{name:"B",zh:"是新来的汉语老师吗？",py:"Shì xīn lái de Hànyǔ lǎoshī ma?",en:"Is she the new Chinese teacher?"},{name:"A",zh:"是去年来的，她姓王，28岁。",py:"Shì qùnián lái de, tā xìng Wáng, èrshíbā suì.",en:"She came last year; her surname is Wang, and she's twenty-eight."},{name:"B",zh:"她比我们老师小两岁。",py:"Tā bǐ wǒmen lǎoshī xiǎo liǎng suì.",en:"She's two years younger than our teacher."}],vocab:{seg:[{t:"A：前边"},{b:1},{t:"的那个人就是我的汉语老师。你"},{b:2},{t:`不认识她。
@@ -409,7 +409,7 @@ A：是`},{b:3},{t:"来的，她"},{b:4},{t:`王，28岁。
 B：她比我们老师小两岁。`}],answers:["说话","可能","去年","姓"],tiles:{说话:{py:"shuōhuà",en:"to talk"},可能:{py:"kěnéng",en:"may; might; possible"},去年:{py:"qùnián",en:"last year"},姓:{py:"xìng",en:"to be surnamed"}}},grammar:{before:"A：前边说话的那个人就是我的汉语老师。你",after:`。
 B：是新来的汉语老师吗？
 A：是去年来的，她姓王，28岁。
-B：她比我们老师小两岁。`,answer:"可能不认识她",tokens:["可能","不","认识","她"]},sentences:[{speaker:"A",text:"前边说话的那个人就是我的汉语老师。你可能不认识她。",tokens:["前边","说话","的","那个","人","就是","我","的","汉语","老师","你","可能","不","认识","她"]},{speaker:"B",text:"是新来的汉语老师吗？",tokens:["是","新","来","的","汉语","老师","吗"]},{speaker:"A",text:"是去年来的，她姓王，28岁。",tokens:["是","去年","来","的","她","姓","王","2","8","岁"]},{speaker:"B",text:"她比我们老师小两岁。",tokens:["她","比","我们","老师","小","两","岁"]}],note:"动词短语做定语；“比”字句（1）；助动词“可能”"}]},{num:12,name:"你穿得太少了",texts:[{n:1,title:"课文1",original:`A：你每天早上几点起床？
+B：她比我们老师小两岁。`,answer:"可能不认识她",tokens:["可能","不","认识","她"]},sentences:[{speaker:"A",text:"前边说话的那个人就是我的汉语老师。",tokens:["前边","说话","的","那个","人","就是","我","的","汉语","老师"]},{speaker:"A",text:"你可能不认识她。",tokens:["你","可能","不","认识","她"]},{speaker:"A",text:"是去年来的，她姓王，28岁。",tokens:["是","去年","来","的","她","姓","王","2","8","岁"]},{speaker:"B",text:"是新来的汉语老师吗？",tokens:["是","新","来","的","汉语","老师","吗"]},{speaker:"B",text:"她比我们老师小两岁。",tokens:["她","比","我们","老师","小","两","岁"]}],note:"动词短语做定语；“比”字句（1）；助动词“可能”"}]},{num:12,name:"你穿得太少了",texts:[{n:1,title:"课文1",original:`A：你每天早上几点起床？
 B：六点多。
 A：你比我早起一个小时。
 B：我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。`,lines:[{name:"A",zh:"你每天早上几点起床？",py:"Nǐ měi tiān zǎoshang jǐ diǎn qǐchuáng?",en:"What time do you get up every morning?"},{name:"B",zh:"六点多。",py:"Liù diǎn duō.",en:"A little after six."},{name:"A",zh:"你比我早起一个小时。",py:"Nǐ bǐ wǒ zǎo qǐ yí ge xiǎoshí.",en:"You get up an hour earlier than me."},{name:"B",zh:"我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。",py:"Wǒ shuì de yě zǎo, wǒ měi tiān wǎnshang shí diǎn jiù shuìjiào. Zǎo shuì zǎo qǐ shēntǐ hǎo.",en:"I go to bed early too—I sleep at ten every night. Early to bed and early to rise is good for your health."}],vocab:{seg:[{t:`A：你每天早上几点起床？
@@ -418,7 +418,7 @@ A：你比我早起一个小时。
 B：我睡`},{b:1},{t:"也早，我每天晚上十点就睡觉。早睡早起身体好。"}],answers:["得"],tiles:{得:{py:"de",en:"particle before a complement"}}},grammar:{before:`A：你每天早上几点起床？
 B：六点多。
 A：你`,after:`。
-B：我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。`,answer:"比我早起一个小时",tokens:["比","我","早起","一个","小时"]},sentences:[{speaker:"A",text:"你每天早上几点起床？",tokens:["你","每天","早上","几","点","起床"]},{speaker:"B",text:"六点多。",tokens:["六","点","多"]},{speaker:"A",text:"你比我早起一个小时。",tokens:["你","比","我","早起","一个","小时"]},{speaker:"B",text:"我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。",tokens:["我","睡","得","也","早","我","每天","晚上","十点","就","睡觉","早","睡","早起","身体","好"]}],note:"程度补语；“比”字句（2）"},{n:2,title:"课文2",original:`A：再来点儿米饭吧，你吃得太少了。
+B：我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。`,answer:"比我早起一个小时",tokens:["比","我","早起","一个","小时"]},sentences:[{speaker:"B",text:"我睡得也早，我每天晚上十点就睡觉。",tokens:["我","睡","得","也","早","我","每天","晚上","十点","就","睡觉"]},{speaker:"A",text:"你每天早上几点起床？",tokens:["你","每天","早上","几","点","起床"]},{speaker:"B",text:"六点多。",tokens:["六","点","多"]},{speaker:"A",text:"你比我早起一个小时。",tokens:["你","比","我","早起","一个","小时"]},{speaker:"B",text:"早睡早起身体好。",tokens:["早","睡","早起","身体","好"]}],note:"程度补语；“比”字句（2）"},{n:2,title:"课文2",original:`A：再来点儿米饭吧，你吃得太少了。
 B：不少了，今天吃得很好，太谢谢你了。
 A：你做饭做得怎么样？
 B：不怎么样，我妻子比我做得好。`,lines:[{name:"A",zh:"再来点儿米饭吧，你吃得太少了。",py:"Zài lái diǎnr mǐfàn ba, nǐ chī de tài shǎo le.",en:"Have some more rice—you've eaten too little."},{name:"B",zh:"不少了，今天吃得很好，太谢谢你了。",py:"Bù shǎo le, jīntiān chī de hěn hǎo, tài xièxie nǐ le.",en:"That's plenty; I ate very well today. Thank you so much."},{name:"A",zh:"你做饭做得怎么样？",py:"Nǐ zuò fàn zuò de zěnmeyàng?",en:"How well do you cook?"},{name:"B",zh:"不怎么样，我妻子比我做得好。",py:"Bù zěnmeyàng, wǒ qīzi bǐ wǒ zuò de hǎo.",en:"Not that well; my wife cooks better than I do."}],vocab:{seg:[{t:`A：再来点儿米饭吧，你吃得太少了。
@@ -427,7 +427,7 @@ A：你做饭做得怎么样？
 B：不怎么样，我`},{b:1},{t:"比我做得好。"}],answers:["妻子"],tiles:{妻子:{py:"qīzi",en:"wife"}}},grammar:{before:"A：再来点儿米饭吧，你",after:`。
 B：不少了，今天吃得很好，太谢谢你了。
 A：你做饭做得怎么样？
-B：不怎么样，我妻子比我做得好。`,answer:"吃得太少了",tokens:["吃","得","太少","了"]},sentences:[{speaker:"A",text:"再来点儿米饭吧，你吃得太少了。",tokens:["再","来","点儿","米饭","吧","你","吃","得","太少","了"]},{speaker:"B",text:"不少了，今天吃得很好，太谢谢你了。",tokens:["不少","了","今天","吃","得","很","好","太","谢谢","你","了"]},{speaker:"A",text:"你做饭做得怎么样？",tokens:["你","做饭","做","得","怎么样"]},{speaker:"B",text:"不怎么样，我妻子比我做得好。",tokens:["不","怎么样","我","妻子","比","我","做","得","好"]}],note:"程度补语；“比”字句（2）"},{n:3,title:"课文3",original:`A：下雪了，今天真冷。
+B：不怎么样，我妻子比我做得好。`,answer:"吃得太少了",tokens:["吃","得","太少","了"]},sentences:[{speaker:"B",text:"不怎么样，我妻子比我做得好。",tokens:["不","怎么样","我","妻子","比","我","做","得","好"]},{speaker:"A",text:"再来点儿米饭吧，你吃得太少了。",tokens:["再","来","点儿","米饭","吧","你","吃","得","太少","了"]},{speaker:"B",text:"不少了，今天吃得很好，太谢谢你了。",tokens:["不少","了","今天","吃","得","很","好","太","谢谢","你","了"]},{speaker:"A",text:"你做饭做得怎么样？",tokens:["你","做饭","做","得","怎么样"]}],note:"程度补语；“比”字句（2）"},{n:3,title:"课文3",original:`A：下雪了，今天真冷。
 B：有零下10度吧？
 A：是啊，你穿得太少了，我们进房间吧。
 B：好吧。`,lines:[{name:"A",zh:"下雪了，今天真冷。",py:"Xià xuě le, jīntiān zhēn lěng.",en:"It's snowing; it's really cold today."},{name:"B",zh:"有零下10度吧？",py:"Yǒu língxià shí dù ba?",en:"It must be minus ten degrees, right?"},{name:"A",zh:"是啊，你穿得太少了，我们进房间吧。",py:"Shì a, nǐ chuān de tài shǎo le, wǒmen jìn fángjiān ba.",en:"Yeah, you're dressed too lightly; let's go inside."},{name:"B",zh:"好吧。",py:"Hǎo ba.",en:"Okay."}],vocab:{seg:[{t:"A：下"},{b:1},{t:`了，今天真冷。
@@ -445,7 +445,7 @@ A：住得远真的很累！
 B：是啊，他也希望能住得`},{b:2},{t:"一点儿。"}],answers:["弟弟","近"],tiles:{弟弟:{py:"dìdi",en:"younger brother"},近:{py:"jìn",en:"near; close"}}},grammar:{before:`A：你在忙什么呢？
 B：我弟弟让我帮他找个房子，现在他家离公司有点儿远。
 A：住得远真的很累！
-B：是啊，他也希望能`,after:"。",answer:"住得近一点儿",tokens:["住","得","近","一点儿"]},sentences:[{speaker:"A",text:"你在忙什么呢？",tokens:["你","在","忙","什么","呢"]},{speaker:"B",text:"我弟弟让我帮他找个房子，现在他家离公司有点儿远。",tokens:["我","弟弟","让","我","帮","他","找","个","房子","现在","他","家","离","公司","有点儿","远"]},{speaker:"A",text:"住得远真的很累！",tokens:["住","得","远","真","的","很","累"]},{speaker:"B",text:"是啊，他也希望能住得近一点儿。",tokens:["是","啊","他","也","希望","能","住","得","近","一点儿"]}],note:"程度补语；“比”字句（2）"}]},{num:13,name:"门开着呢",texts:[{n:1,title:"课文1",original:`A：门开着呢，请进。
+B：是啊，他也希望能`,after:"。",answer:"住得近一点儿",tokens:["住","得","近","一点儿"]},sentences:[{speaker:"B",text:"是啊，他也希望能住得近一点儿。",tokens:["是","啊","他","也","希望","能","住","得","近","一点儿"]},{speaker:"A",text:"你在忙什么呢？",tokens:["你","在","忙","什么","呢"]},{speaker:"A",text:"住得远真的很累！",tokens:["住","得","远","真","的","很","累"]}],note:"程度补语；“比”字句（2）"}]},{num:13,name:"门开着呢",texts:[{n:1,title:"课文1",original:`A：门开着呢，请进。
 B：请问，张先生在吗？
 A：他出去了。你下午再来吧。
 B：好的，谢谢！`,lines:[{name:"A",zh:"门开着呢，请进。",py:"Mén kāizhe ne, qǐng jìn.",en:"The door's open; come in."},{name:"B",zh:"请问，张先生在吗？",py:"Qǐngwèn, Zhāng xiānsheng zài ma?",en:"Excuse me, is Mr. Zhang in?"},{name:"A",zh:"他出去了。你下午再来吧。",py:"Tā chūqu le. Nǐ xiàwǔ zài lái ba.",en:"He's out. Come back this afternoon."},{name:"B",zh:"好的，谢谢！",py:"Hǎo de, xièxie!",en:"Okay, thanks!"}],vocab:{seg:[{t:"A：门开"},{b:1},{t:`呢，请进。
@@ -454,7 +454,7 @@ A：他出去了。你下午再来吧。
 B：好的，谢谢！`}],answers:["着"],tiles:{着:{py:"zhe",en:"aspect particle indicating continuation"}}},grammar:{before:"A：",after:`，请进。
 B：请问，张先生在吗？
 A：他出去了。你下午再来吧。
-B：好的，谢谢！`,answer:"门开着呢",tokens:["门","开","着","呢"]},sentences:[{speaker:"A",text:"门开着呢，请进。",tokens:["门","开","着","呢","请","进"]},{speaker:"B",text:"请问，张先生在吗？",tokens:["请问","张","先生","在","吗"]},{speaker:"A",text:"他出去了。你下午再来吧。",tokens:["他","出去","了","你","下午","再","来","吧"]},{speaker:"B",text:"好的，谢谢！",tokens:["好","的","谢谢"]}],note:"结构助词“着”；反问句“不是……吗”；介词“往”"},{n:2,title:"课文2",original:`A：那个正在说话的女孩儿是谁？
+B：好的，谢谢！`,answer:"门开着呢",tokens:["门","开","着","呢"]},sentences:[{speaker:"A",text:"门开着呢，请进。",tokens:["门","开","着","呢","请","进"]},{speaker:"B",text:"请问，张先生在吗？",tokens:["请问","张","先生","在","吗"]},{speaker:"A",text:"他出去了。",tokens:["他","出去","了"]},{speaker:"A",text:"你下午再来吧。",tokens:["你","下午","再","来","吧"]},{speaker:"B",text:"好的，谢谢！",tokens:["好","的","谢谢"]}],note:"结构助词“着”；反问句“不是……吗”；介词“往”"},{n:2,title:"课文2",original:`A：那个正在说话的女孩儿是谁？
 B：我知道她的名字，她姓杨，叫杨笑笑，她姐姐是我同学。
 A：那个手里拿着铅笔的呢？
 B：我不认识。`,lines:[{name:"A",zh:"那个正在说话的女孩儿是谁？",py:"Nàge zhèngzài shuōhuà de nǚháir shì shéi?",en:"Who's that girl who's talking?"},{name:"B",zh:"我知道她的名字，她姓杨，叫杨笑笑，她姐姐是我同学。",py:"Wǒ zhīdào tā de míngzi, tā xìng Yáng, jiào Yáng Xiàoxiao, tā jiějie shì wǒ tóngxué.",en:"I know her name—her surname is Yang, she's called Yang Xiaoxiao, and her sister is my classmate."},{name:"A",zh:"那个手里拿着铅笔的呢？",py:"Nàge shǒu lǐ názhe qiānbǐ de ne?",en:"What about the one holding a pencil?"},{name:"B",zh:"我不认识。",py:"Wǒ bú rènshi.",en:"I don't know them."}],vocab:{seg:[{t:`A：那个正在说话的女孩儿是谁？
@@ -463,7 +463,7 @@ A：那个`},{b:1},{t:"里"},{b:2},{t:"着"},{b:3},{t:`的呢？
 B：我不认识。`}],answers:["手","拿","铅笔"],tiles:{手:{py:"shǒu",en:"hand"},拿:{py:"ná",en:"to take; to hold"},铅笔:{py:"qiānbǐ",en:"pencil"}}},grammar:{before:`A：那个正在说话的女孩儿是谁？
 B：我知道她的名字，她姓杨，叫杨笑笑，她姐姐是我同学。
 A：那个`,after:`呢？
-B：我不认识。`,answer:"手里拿着铅笔的",tokens:["手里","拿","着","铅笔","的"]},sentences:[{speaker:"A",text:"那个正在说话的女孩儿是谁？",tokens:["那个","正在","说话","的","女孩儿","是","谁"]},{speaker:"B",text:"我知道她的名字，她姓杨，叫杨笑笑，她姐姐是我同学。",tokens:["我","知道","她","的","名字","她","姓","杨","叫","杨","笑","笑","她","姐姐","是","我","同学"]},{speaker:"A",text:"那个手里拿着铅笔的呢？",tokens:["那个","手里","拿","着","铅笔","的","呢"]},{speaker:"B",text:"我不认识。",tokens:["我","不","认识"]}],note:"结构助词“着”；反问句“不是……吗”；介词“往”"},{n:3,title:"课文3",original:`A：听说你有女朋友了？我认识她吗？
+B：我不认识。`,answer:"手里拿着铅笔的",tokens:["手里","拿","着","铅笔","的"]},sentences:[{speaker:"A",text:"那个手里拿着铅笔的呢？",tokens:["那个","手里","拿","着","铅笔","的","呢"]},{speaker:"A",text:"那个正在说话的女孩儿是谁？",tokens:["那个","正在","说话","的","女孩儿","是","谁"]},{speaker:"B",text:"我不认识。",tokens:["我","不","认识"]}],note:"结构助词“着”；反问句“不是……吗”；介词“往”"},{n:3,title:"课文3",original:`A：听说你有女朋友了？我认识她吗？
 B：就是我们班那个长着两个大眼睛、非常爱笑的女孩儿。
 A：她不是有男朋友吗？
 B：那个已经是她的前男友了。`,lines:[{name:"A",zh:"听说你有女朋友了？我认识她吗？",py:"Tīngshuō nǐ yǒu nǚpéngyou le? Wǒ rènshi tā ma?",en:"I heard you have a girlfriend now? Do I know her?"},{name:"B",zh:"就是我们班那个长着两个大眼睛、非常爱笑的女孩儿。",py:"Jiù shì wǒmen bān nàge zhǎngzhe liǎng ge dà yǎnjing, fēicháng ài xiào de nǚháir.",en:"She's the girl in our class with the big eyes who loves to smile."},{name:"A",zh:"她不是有男朋友吗？",py:"Tā bú shì yǒu nánpéngyou ma?",en:"Doesn't she have a boyfriend?"},{name:"B",zh:"那个已经是她的前男友了。",py:"Nàge yǐjīng shì tā de qián nányǒu le.",en:"That guy is already her ex-boyfriend."}],vocab:{seg:[{t:`A：听说你有女朋友了？我认识她吗？
@@ -472,7 +472,7 @@ A：她不是有男朋友吗？
 B：那个已经是她的前男友了。`}],answers:["班","长","笑"],tiles:{班:{py:"bān",en:"class; group"},长:{py:"zhǎng",en:"to grow; to develop"},笑:{py:"xiào",en:"to smile; laugh"}}},grammar:{before:`A：听说你有女朋友了？我认识她吗？
 B：就是我们班那个长着两个大眼睛、非常爱笑的女孩儿。
 A：`,after:`？
-B：那个已经是她的前男友了。`,answer:"她不是有男朋友吗",tokens:["她","不是","有","男朋友","吗"]},sentences:[{speaker:"A",text:"听说你有女朋友了？我认识她吗？",tokens:["听说","你","有","女朋友","了","我","认识","她","吗"]},{speaker:"B",text:"就是我们班那个长着两个大眼睛、非常爱笑的女孩儿。",tokens:["就是","我们","班","那个","长","着","两个","大","眼睛","非常","爱","笑","的","女孩儿"]},{speaker:"A",text:"她不是有男朋友吗？",tokens:["她","不是","有","男朋友","吗"]},{speaker:"B",text:"那个已经是她的前男友了。",tokens:["那个","已经","是","她","的","前","男","友","了"]}],note:"结构助词“着”；反问句“不是……吗”；介词“往”"},{n:4,title:"课文4",original:`A：请问，这儿离新京宾馆远吗？
+B：那个已经是她的前男友了。`,answer:"她不是有男朋友吗",tokens:["她","不是","有","男朋友","吗"]},sentences:[{speaker:"B",text:"就是我们班那个长着两个大眼睛、非常爱笑的女孩儿。",tokens:["就是","我们","班","那个","长","着","两个","大","眼睛","非常","爱","笑","的","女孩儿"]},{speaker:"A",text:"听说你有女朋友了？",tokens:["听说","你","有","女朋友","了"]},{speaker:"A",text:"我认识她吗？",tokens:["我","认识","她","吗"]},{speaker:"A",text:"她不是有男朋友吗？",tokens:["她","不是","有","男朋友","吗"]},{speaker:"B",text:"那个已经是她的前男友了。",tokens:["那个","已经","是","她","的","前","男","友","了"]}],note:"结构助词“着”；反问句“不是……吗”；介词“往”"},{n:4,title:"课文4",original:`A：请问，这儿离新京宾馆远吗？
 B：不远，走路二十分钟就到。
 A：你能告诉我怎么走吗？
 B：从这儿一直往前走，到了前面的路口再往右走。`,lines:[{name:"A",zh:"请问，这儿离新京宾馆远吗？",py:"Qǐngwèn, zhèr lí Xīnjīng bīnguǎn yuǎn ma?",en:"Excuse me, is the Xinjing Hotel far from here?"},{name:"B",zh:"不远，走路二十分钟就到。",py:"Bù yuǎn, zǒulù èrshí fēnzhōng jiù dào.",en:"Not far—about twenty minutes on foot."},{name:"A",zh:"你能告诉我怎么走吗？",py:"Nǐ néng gàosu wǒ zěnme zǒu ma?",en:"Can you tell me how to get there?"},{name:"B",zh:"从这儿一直往前走，到了前面的路口再往右走。",py:"Cóng zhèr yìzhí wǎng qián zǒu, dào le qiánmiàn de lùkǒu zài wǎng yòu zǒu.",en:"Go straight ahead from here, and turn right at the intersection up front."}],vocab:{seg:[{t:"A：请问，这儿离新京"},{b:1},{t:`远吗？
@@ -481,7 +481,7 @@ A：你能告诉我怎么走吗？
 B：从这儿`},{b:2},{b:3},{t:"前走，到了前面的"},{b:4},{t:"再往右走。"}],answers:["宾馆","一直","往","路口"],tiles:{宾馆:{py:"bīnguǎn",en:"hotel"},一直:{py:"yìzhí",en:"straight; continuously"},往:{py:"wǎng",en:"toward"},路口:{py:"lùkǒu",en:"intersection; crossing"}}},grammar:{before:`A：请问，这儿离新京宾馆远吗？
 B：不远，走路二十分钟就到。
 A：你能告诉我怎么走吗？
-B：从这儿一直`,after:"，到了前面的路口再往右走。",answer:"往前走",tokens:["往","前","走"]},sentences:[{speaker:"A",text:"请问，这儿离新京宾馆远吗？",tokens:["请问","这儿","离","新","京","宾馆","远","吗"]},{speaker:"B",text:"不远，走路二十分钟就到。",tokens:["不","远","走路","二十分钟","就","到"]},{speaker:"A",text:"你能告诉我怎么走吗？",tokens:["你","能","告诉","我","怎么","走","吗"]},{speaker:"B",text:"从这儿一直往前走，到了前面的路口再往右走。",tokens:["从","这儿","一直","往","前","走","到","了","前面","的","路口","再","往","右","走"]}],note:"结构助词“着”；反问句“不是……吗”；介词“往”"}]},{num:14,name:"你看过那个电影吗",texts:[{n:1,title:"课文1",original:`A：你看过那个电影没有？
+B：从这儿一直`,after:"，到了前面的路口再往右走。",answer:"往前走",tokens:["往","前","走"]},sentences:[{speaker:"A",text:"请问，这儿离新京宾馆远吗？",tokens:["请问","这儿","离","新","京","宾馆","远","吗"]},{speaker:"B",text:"从这儿一直往前走，到了前面的路口再往右走。",tokens:["从","这儿","一直","往","前","走","到","了","前面","的","路口","再","往","右","走"]},{speaker:"B",text:"不远，走路二十分钟就到。",tokens:["不","远","走路","二十分钟","就","到"]},{speaker:"A",text:"你能告诉我怎么走吗？",tokens:["你","能","告诉","我","怎么","走","吗"]}],note:"结构助词“着”；反问句“不是……吗”；介词“往”"}]},{num:14,name:"你看过那个电影吗",texts:[{n:1,title:"课文1",original:`A：你看过那个电影没有？
 B：没看过，听说很有意思。
 A：那我们下个星期一起去看吧？
 B：可以，但是我女朋友也想去。`,lines:[{name:"A",zh:"你看过那个电影没有？",py:"Nǐ kànguo nàge diànyǐng méiyǒu?",en:"Have you seen that movie?"},{name:"B",zh:"没看过，听说很有意思。",py:"Méi kànguo, tīngshuō hěn yǒu yìsi.",en:"No, I haven't; I hear it's very interesting."},{name:"A",zh:"那我们下个星期一起去看吧？",py:"Nà wǒmen xià ge xīngqī yìqǐ qù kàn ba?",en:"Then let's go see it together next week?"},{name:"B",zh:"可以，但是我女朋友也想去。",py:"Kěyǐ, dànshì wǒ nǚpéngyou yě xiǎng qù.",en:"Sure, but my girlfriend wants to go too."}],vocab:{seg:[{t:`A：你看过那个电影没有？
@@ -490,7 +490,7 @@ A：那我们下个星期一起去看吧？
 B：可以，`},{b:2},{t:"我女朋友也想去。"}],answers:["有意思","但是"],tiles:{有意思:{py:"yǒuyìsi",en:"interesting"},但是:{py:"dànshì",en:"but; yet"}}},grammar:{before:"A：你",after:`那个电影没有？
 B：没看过，听说很有意思。
 A：那我们下个星期一起去看吧？
-B：可以，但是我女朋友也想去。`,answer:"看过",tokens:["看过"]},sentences:[{speaker:"A",text:"你看过那个电影没有？",tokens:["你","看过","那个","电影","没有"]},{speaker:"B",text:"没看过，听说很有意思。",tokens:["没","看过","听说","很","有意思"]},{speaker:"A",text:"那我们下个星期一起去看吧？",tokens:["那","我们","下","个","星期","一起","去","看","吧"]},{speaker:"B",text:"可以，但是我女朋友也想去。",tokens:["可以","但是","我","女朋友","也","想","去"]}],note:"结构助词“过”；关联词“虽然……，但是……”；动量补语“次”"},{n:2,title:"课文2",original:`A：听说你去过中国，还想去吗？
+B：可以，但是我女朋友也想去。`,answer:"看过",tokens:["看过"]},sentences:[{speaker:"B",text:"没看过，听说很有意思。",tokens:["没","看过","听说","很","有意思"]},{speaker:"B",text:"可以，但是我女朋友也想去。",tokens:["可以","但是","我","女朋友","也","想","去"]},{speaker:"A",text:"你看过那个电影没有？",tokens:["你","看过","那个","电影","没有"]},{speaker:"A",text:"那我们下个星期一起去看吧？",tokens:["那","我们","下","个","星期","一起","去","看","吧"]}],note:"结构助词“过”；关联词“虽然……，但是……”；动量补语“次”"},{n:2,title:"课文2",original:`A：听说你去过中国，还想去吗？
 B：我虽然去过好几次，但是还想再去玩儿玩儿。
 A：那我们一起去吧。
 B：好啊，到时候我给你打电话。`,lines:[{name:"A",zh:"听说你去过中国，还想去吗？",py:"Tīngshuō nǐ qùguo Zhōngguó, hái xiǎng qù ma?",en:"I heard you've been to China—do you want to go again?"},{name:"B",zh:"我虽然去过好几次，但是还想再去玩儿玩儿。",py:"Wǒ suīrán qùguo hǎojǐ cì, dànshì hái xiǎng zài qù wánrwánr.",en:"Even though I've been several times, I'd still like to go again for fun."},{name:"A",zh:"那我们一起去吧。",py:"Nà wǒmen yìqǐ qù ba.",en:"Then let's go together."},{name:"B",zh:"好啊，到时候我给你打电话。",py:"Hǎo a, dào shíhou wǒ gěi nǐ dǎ diànhuà.",en:"Sure, I'll call you when the time comes."}],vocab:{seg:[{t:`A：听说你去过中国，还想去吗？
@@ -499,7 +499,7 @@ A：那我们一起去吧。
 B：好啊，到时候我给你打电话。`}],answers:["虽然","次","玩儿"],tiles:{虽然:{py:"suīrán",en:"although"},次:{py:"cì",en:"time; occurrence"},玩儿:{py:"wánr",en:"to play; to have fun"}}},grammar:{before:`A：听说你去过中国，还想去吗？
 B：我`,after:`还想再去玩儿玩儿。
 A：那我们一起去吧。
-B：好啊，到时候我给你打电话。`,answer:"虽然去过好几次，但是",tokens:["虽然","去过","好","几次","但是"]},sentences:[{speaker:"A",text:"听说你去过中国，还想去吗？",tokens:["听说","你","去过","中国","还","想","去","吗"]},{speaker:"B",text:"我虽然去过好几次，但是还想再去玩儿玩儿。",tokens:["我","虽然","去过","好几","次","但是","还","想","再","去","玩儿","玩儿"]},{speaker:"A",text:"那我们一起去吧。",tokens:["那","我们","一起","去","吧"]},{speaker:"B",text:"好啊，到时候我给你打电话。",tokens:["好","啊","到","时候","我","给","你","打电话"]}],note:"结构助词“过”；关联词“虽然……，但是……”；动量补语“次”"},{n:3,title:"课文3",original:`A：明天天气怎么样？
+B：好啊，到时候我给你打电话。`,answer:"虽然去过好几次，但是",tokens:["虽然","去过","好","几次","但是"]},sentences:[{speaker:"B",text:"我虽然去过好几次，但是还想再去玩儿玩儿。",tokens:["我","虽然","去过","好几","次","但是","还","想","再","去","玩儿","玩儿"]},{speaker:"A",text:"听说你去过中国，还想去吗？",tokens:["听说","你","去过","中国","还","想","去","吗"]},{speaker:"A",text:"那我们一起去吧。",tokens:["那","我们","一起","去","吧"]},{speaker:"B",text:"好啊，到时候我给你打电话。",tokens:["好","啊","到","时候","我","给","你","打电话"]}],note:"结构助词“过”；关联词“虽然……，但是……”；动量补语“次”"},{n:3,title:"课文3",original:`A：明天天气怎么样？
 B：虽然是晴天，但是很冷。
 A：那还能去跑步吗？
 B：可以，但是你自己去吧，我还有很多事情要做。`,lines:[{name:"A",zh:"明天天气怎么样？",py:"Míngtiān tiānqì zěnmeyàng?",en:"How's the weather tomorrow?"},{name:"B",zh:"虽然是晴天，但是很冷。",py:"Suīrán shì qíngtiān, dànshì hěn lěng.",en:"Although it'll be sunny, it'll be cold."},{name:"A",zh:"那还能去跑步吗？",py:"Nà hái néng qù pǎobù ma?",en:"Can we still go running then?"},{name:"B",zh:"可以，但是你自己去吧，我还有很多事情要做。",py:"Kěyǐ, dànshì nǐ zìjǐ qù ba, wǒ hái yǒu hěn duō shìqing yào zuò.",en:"You can, but go by yourself—I still have a lot to do."}],vocab:{seg:[{t:`A：明天天气怎么样？
@@ -508,7 +508,7 @@ A：那还能去跑步吗？
 B：可以，但是你自己去吧，我还有很多事情要做。`}],answers:["晴","但是"],tiles:{晴:{py:"qíng",en:"sunny"},但是:{py:"dànshì",en:"but; yet"}}},grammar:{before:`A：明天天气怎么样？
 B：`,after:`。
 A：那还能去跑步吗？
-B：可以，但是你自己去吧，我还有很多事情要做。`,answer:"虽然是晴天，但是很冷",tokens:["虽然","是","晴天","但是","很","冷"]},sentences:[{speaker:"A",text:"明天天气怎么样？",tokens:["明天","天气","怎么样"]},{speaker:"B",text:"虽然是晴天，但是很冷。",tokens:["虽然","是","晴天","但是","很","冷"]},{speaker:"A",text:"那还能去跑步吗？",tokens:["那","还","能","去","跑步","吗"]},{speaker:"B",text:"可以，但是你自己去吧，我还有很多事情要做。",tokens:["可以","但是","你","自己","去","吧","我","还有","很多","事情","要","做"]}],note:"结构助词“过”；关联词“虽然……，但是……”；动量补语“次”"},{n:4,title:"课文4",original:`A：你在这个商店买过东西没有？
+B：可以，但是你自己去吧，我还有很多事情要做。`,answer:"虽然是晴天，但是很冷",tokens:["虽然","是","晴天","但是","很","冷"]},sentences:[{speaker:"B",text:"虽然是晴天，但是很冷。",tokens:["虽然","是","晴天","但是","很","冷"]},{speaker:"B",text:"可以，但是你自己去吧，我还有很多事情要做。",tokens:["可以","但是","你","自己","去","吧","我","还有","很多","事情","要","做"]},{speaker:"A",text:"明天天气怎么样？",tokens:["明天","天气","怎么样"]},{speaker:"A",text:"那还能去跑步吗？",tokens:["那","还","能","去","跑步","吗"]}],note:"结构助词“过”；关联词“虽然……，但是……”；动量补语“次”"},{n:4,title:"课文4",original:`A：你在这个商店买过东西没有？
 B：买过一次，这儿的东西还可以，就是不便宜。
 A：我喜欢这件衣服，但是觉得有点儿贵。
 B：两百块还可以，喜欢就买吧。`,lines:[{name:"A",zh:"你在这个商店买过东西没有？",py:"Nǐ zài zhège shāngdiàn mǎiguo dōngxi méiyǒu?",en:"Have you ever shopped at this store?"},{name:"B",zh:"买过一次，这儿的东西还可以，就是不便宜。",py:"Mǎiguo yí cì, zhèr de dōngxi hái kěyǐ, jiù shì bù piányi.",en:"Once; the stuff here is okay, just not cheap."},{name:"A",zh:"我喜欢这件衣服，但是觉得有点儿贵。",py:"Wǒ xǐhuan zhè jiàn yīfu, dànshì juéde yǒudiǎnr guì.",en:"I like this piece of clothing, but I think it's a bit expensive."},{name:"B",zh:"两百块还可以，喜欢就买吧。",py:"Liǎngbǎi kuài hái kěyǐ, xǐhuan jiù mǎi ba.",en:"Two hundred yuan is fine—if you like it, buy it."}],vocab:{seg:[{t:`A：你在这个商店买过东西没有？
@@ -517,7 +517,7 @@ A：我喜欢这件衣服，`},{b:1},{t:`觉得有点儿贵。
 B：两`},{b:2},{t:"块还可以，喜欢就买吧。"}],answers:["但是","百"],tiles:{但是:{py:"dànshì",en:"but; yet"},百:{py:"bǎi",en:"hundred"}}},grammar:{before:`A：你在这个商店买过东西没有？
 B：`,after:`，这儿的东西还可以，就是不便宜。
 A：我喜欢这件衣服，但是觉得有点儿贵。
-B：两百块还可以，喜欢就买吧。`,answer:"买过一次",tokens:["买过","一次"]},sentences:[{speaker:"A",text:"你在这个商店买过东西没有？",tokens:["你","在","这个","商店","买过","东西","没有"]},{speaker:"B",text:"买过一次，这儿的东西还可以，就是不便宜。",tokens:["买过","一次","这儿","的","东西","还可以","就是","不","便宜"]},{speaker:"A",text:"我喜欢这件衣服，但是觉得有点儿贵。",tokens:["我","喜欢","这件","衣服","但是","觉得","有点儿","贵"]},{speaker:"B",text:"两百块还可以，喜欢就买吧。",tokens:["两","百","块","还可以","喜欢","就","买","吧"]}],note:"结构助词“过”；关联词“虽然……，但是……”；动量补语“次”"}]},{num:15,name:"新年就要到了",texts:[{n:1,title:"课文1",original:`A：今天是12月20日，新年就要到了。
+B：两百块还可以，喜欢就买吧。`,answer:"买过一次",tokens:["买过","一次"]},sentences:[{speaker:"A",text:"我喜欢这件衣服，但是觉得有点儿贵。",tokens:["我","喜欢","这件","衣服","但是","觉得","有点儿","贵"]},{speaker:"B",text:"两百块还可以，喜欢就买吧。",tokens:["两","百","块","还可以","喜欢","就","买","吧"]},{speaker:"A",text:"你在这个商店买过东西没有？",tokens:["你","在","这个","商店","买过","东西","没有"]},{speaker:"B",text:"买过一次，这儿的东西还可以，就是不便宜。",tokens:["买过","一次","这儿","的","东西","还可以","就是","不","便宜"]}],note:"结构助词“过”；关联词“虽然……，但是……”；动量补语“次”"}]},{num:15,name:"新年就要到了",texts:[{n:1,title:"课文1",original:`A：今天是12月20日，新年就要到了。
 B：新年你准备做什么？
 A：我想去北京旅游，北京很不错，我去过一次。
 B：你买票了吗？
@@ -529,13 +529,13 @@ A：还没有呢，明天就去`},{b:3},{t:"买票。"}],answers:["新年","票"
 B：新年你准备做什么？
 A：我想去北京旅游，北京很不错，我去过一次。
 B：你买票了吗？
-A：还没有呢，明天就去火车站买票。`,answer:"新年就要到了",tokens:["新年","就要","到","了"]},sentences:[{speaker:"A",text:"今天是12月20日，新年就要到了。",tokens:["今天","是","12","月","2","0","日","新年","就要","到","了"]},{speaker:"B",text:"新年你准备做什么？",tokens:["新年","你","准备","做","什么"]},{speaker:"A",text:"我想去北京旅游，北京很不错，我去过一次。",tokens:["我","想","去","北京","旅游","北京","很","不错","我","去过","一次"]},{speaker:"B",text:"你买票了吗？",tokens:["你","买","票","了","吗"]},{speaker:"A",text:"还没有呢，明天就去火车站买票。",tokens:["还","没有","呢","明天","就","去","火车站","买","票"]}],note:"动作状态：“要……了”；“都……了”"},{n:2,title:"课文2",original:`A：时间过得真快，新的一年快要到了！
+A：还没有呢，明天就去火车站买票。`,answer:"新年就要到了",tokens:["新年","就要","到","了"]},sentences:[{speaker:"A",text:"今天是12月20日，新年就要到了。",tokens:["今天","是","12","月","2","0","日","新年","就要","到","了"]},{speaker:"B",text:"新年你准备做什么？",tokens:["新年","你","准备","做","什么"]},{speaker:"B",text:"你买票了吗？",tokens:["你","买","票","了","吗"]},{speaker:"A",text:"还没有呢，明天就去火车站买票。",tokens:["还","没有","呢","明天","就","去","火车站","买","票"]},{speaker:"A",text:"我想去北京旅游，北京很不错，我去过一次。",tokens:["我","想","去","北京","旅游","北京","很","不错","我","去过","一次"]}],note:"动作状态：“要……了”；“都……了”"},{n:2,title:"课文2",original:`A：时间过得真快，新的一年快要到了！
 B：是啊，谢谢大家这一年对我的帮助！
 C：希望我们的公司明年更好！`,lines:[{name:"A",zh:"时间过得真快，新的一年快要到了！",py:"Shíjiān guò de zhēn kuài, xīn de yì nián kuài yào dào le!",en:"Time flies—a new year is almost here!"},{name:"B",zh:"是啊，谢谢大家这一年对我的帮助！",py:"Shì a, xièxie dàjiā zhè yì nián duì wǒ de bāngzhù!",en:"Yeah, thank you all for your help this year!"},{name:"C",zh:"希望我们的公司明年更好！",py:"Xīwàng wǒmen de gōngsī míngnián gèng hǎo!",en:"I hope our company does even better next year!"}],vocab:{seg:[{t:`A：时间过得真快，新的一年快要到了！
 B：是啊，谢谢`},{b:1},{t:`这一年对我的帮助！
 C：希望我们的公司明年`},{b:2},{t:"好！"}],answers:["大家","更"],tiles:{大家:{py:"dàjiā",en:"everyone"},更:{py:"gèng",en:"more; even more"}}},grammar:{before:"A：时间过得真快，",after:`！
 B：是啊，谢谢大家这一年对我的帮助！
-C：希望我们的公司明年更好！`,answer:"新的一年快要到了",tokens:["新","的","一年","快要","到","了"]},sentences:[{speaker:"A",text:"时间过得真快，新的一年快要到了！",tokens:["时间","过","得","真","快","新","的","一年","快要","到","了"]},{speaker:"B",text:"是啊，谢谢大家这一年对我的帮助！",tokens:["是","啊","谢谢","大家","这","一年","对","我","的","帮助"]},{speaker:"C",text:"希望我们的公司明年更好！",tokens:["希望","我们","的","公司","明年","更","好"]}],note:"动作状态：“要……了”；“都……了”"},{n:3,title:"课文3",original:`A：你妹妹怎么还没来？都八点四十了！
+C：希望我们的公司明年更好！`,answer:"新的一年快要到了",tokens:["新","的","一年","快要","到","了"]},sentences:[{speaker:"B",text:"是啊，谢谢大家这一年对我的帮助！",tokens:["是","啊","谢谢","大家","这","一年","对","我","的","帮助"]},{speaker:"C",text:"希望我们的公司明年更好！",tokens:["希望","我们","的","公司","明年","更","好"]},{speaker:"A",text:"时间过得真快，新的一年快要到了！",tokens:["时间","过","得","真","快","新","的","一年","快要","到","了"]}],note:"动作状态：“要……了”；“都……了”"},{n:3,title:"课文3",original:`A：你妹妹怎么还没来？都八点四十了！
 B：我们再等她几分钟吧。
 A：都等她半个小时了！
 B：她来了，我听见她说话了。`,lines:[{name:"A",zh:"你妹妹怎么还没来？都八点四十了！",py:"Nǐ mèimei zěnme hái méi lái? Dōu bā diǎn sìshí le!",en:"Why isn't your sister here yet? It's already 8:40!"},{name:"B",zh:"我们再等她几分钟吧。",py:"Wǒmen zài děng tā jǐ fēnzhōng ba.",en:"Let's wait a few more minutes for her."},{name:"A",zh:"都等她半个小时了！",py:"Dōu děng tā bàn ge xiǎoshí le!",en:"We've been waiting half an hour for her!"},{name:"B",zh:"她来了，我听见她说话了。",py:"Tā lái le, wǒ tīngjiàn tā shuōhuà le.",en:"She's here—I heard her voice."}],vocab:{seg:[{t:"A：你"},{b:1},{t:`怎么还没来？都八点四十了！
@@ -544,7 +544,7 @@ A：都等她半个小时了！
 B：她来了，我听见她说话了。`}],answers:["妹妹"],tiles:{妹妹:{py:"mèimei",en:"younger sister"}}},grammar:{before:`A：你妹妹怎么还没来？都八点四十了！
 B：我们再等她几分钟吧。
 A：`,after:`！
-B：她来了，我听见她说话了。`,answer:"都等她半个小时了",tokens:["都","等","她","半个","小时","了"]},sentences:[{speaker:"A",text:"你妹妹怎么还没来？都八点四十了！",tokens:["你","妹妹","怎么","还","没","来","都","八点","四","十","了"]},{speaker:"B",text:"我们再等她几分钟吧。",tokens:["我们","再","等","她","几分钟","吧"]},{speaker:"A",text:"都等她半个小时了！",tokens:["都","等","她","半个","小时","了"]},{speaker:"B",text:"她来了，我听见她说话了。",tokens:["她","来","了","我","听见","她","说话","了"]}],note:"动作状态：“要……了”；“都……了”"},{n:4,title:"课文4",original:`A：天阴了，我要回去了。
+B：她来了，我听见她说话了。`,answer:"都等她半个小时了",tokens:["都","等","她","半个","小时","了"]},sentences:[{speaker:"A",text:"你妹妹怎么还没来？",tokens:["你","妹妹","怎么","还","没","来"]},{speaker:"A",text:"都八点四十了！",tokens:["都","八点","四","十","了"]},{speaker:"B",text:"我们再等她几分钟吧。",tokens:["我们","再","等","她","几分钟","吧"]},{speaker:"A",text:"都等她半个小时了！",tokens:["都","等","她","半个","小时","了"]},{speaker:"B",text:"她来了，我听见她说话了。",tokens:["她","来","了","我","听见","她","说话","了"]}],note:"动作状态：“要……了”；“都……了”"},{n:4,title:"课文4",original:`A：天阴了，我要回去了。
 B：好的，快要下雨了，你路上慢点儿。
 A：没关系，我坐公共汽车。
 B：好的。再见。`,lines:[{name:"A",zh:"天阴了，我要回去了。",py:"Tiān yīn le, wǒ yào huíqu le.",en:"It's getting cloudy; I'm heading back."},{name:"B",zh:"好的，快要下雨了，你路上慢点儿。",py:"Hǎo de, kuài yào xià yǔ le, nǐ lù shàng màn diǎnr.",en:"Okay, it's about to rain—take it easy on the way."},{name:"A",zh:"没关系，我坐公共汽车。",py:"Méi guānxi, wǒ zuò gōnggòng qìchē.",en:"It's fine, I'm taking the bus."},{name:"B",zh:"好的。再见。",py:"Hǎo de. Zàijiàn.",en:"Okay. Goodbye."}],vocab:{seg:[{t:"A：天"},{b:1},{t:`了，我要回去了。
@@ -553,4 +553,4 @@ A：没关系，我坐公共汽车。
 B：好的。再见。`}],answers:["阴"],tiles:{阴:{py:"yīn",en:"cloudy"}}},grammar:{before:`A：天阴了，我要回去了。
 B：好的，`,after:`，你路上慢点儿。
 A：没关系，我坐公共汽车。
-B：好的。再见。`,answer:"快要下雨了",tokens:["快要","下雨","了"]},sentences:[{speaker:"A",text:"天阴了，我要回去了。",tokens:["天","阴","了","我","要","回去","了"]},{speaker:"B",text:"好的，快要下雨了，你路上慢点儿。",tokens:["好","的","快要","下雨","了","你","路上","慢","点儿"]},{speaker:"A",text:"没关系，我坐公共汽车。",tokens:["没关系","我","坐","公共汽车"]},{speaker:"B",text:"好的。再见。",tokens:["好","的","再见"]}],note:"动作状态：“要……了”；“都……了”"}]}],s={series:e,unit:2,lessons:n};export{s as default,n as lessons,e as series,t as unit};
+B：好的。再见。`,answer:"快要下雨了",tokens:["快要","下雨","了"]},sentences:[{speaker:"A",text:"天阴了，我要回去了。",tokens:["天","阴","了","我","要","回去","了"]},{speaker:"B",text:"好的，快要下雨了，你路上慢点儿。",tokens:["好","的","快要","下雨","了","你","路上","慢","点儿"]},{speaker:"A",text:"没关系，我坐公共汽车。",tokens:["没关系","我","坐","公共汽车"]},{speaker:"B",text:"好的。",tokens:["好","的"]}],note:"动作状态：“要……了”；“都……了”"}]}],s={series:e,unit:2,lessons:n};export{s as default,n as lessons,e as series,t as unit};
