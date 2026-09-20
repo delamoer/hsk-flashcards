@@ -29,6 +29,7 @@ OUT = ROOT / "src" / "data" / "texts"
 DATA = ROOT / "src" / "data"
 SEG_FILE = ROOT / "scripts" / "grammar_segments.tsv"
 GLOSS_FILE = ROOT / "scripts" / "text_gloss.tsv"
+WORD_GLOSS_FILE = ROOT / "scripts" / "word_gloss.tsv"
 MAX_WORD = 6  # longest word to try in max-match segmentation
 
 # (filename, series, unit) — teacher sheet "教师答案版" is the complete one.
@@ -79,6 +80,35 @@ def load_gloss() -> dict:
             zh, py, en = parts[0], parts[1].strip(), parts[2].strip()
             gloss[zh] = {"py": py, "en": en}
     return gloss
+
+
+def load_word_map() -> dict:
+    """hanzi -> {py, en} for the 生词挖空 word-bank tiles. Built from EVERY
+    flashcard word (all units), so a cloze answer taught in any lesson shows its
+    pinyin + English. scripts/word_gloss.tsv hand-fills the few answers that
+    aren't standalone flashcard entries (compounds, single chars, phrases)."""
+    m = {}
+    for f in DATA.glob("*-*.json"):  # flashcard unit files (texts/ is a subdir)
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if not isinstance(d, dict) or "lessons" not in d:
+            continue
+        for lesson in d["lessons"]:
+            for w in lesson["words"]:
+                h = (w.get("hanzi") or "").strip()
+                if h and h not in m:
+                    m[h] = {"py": w.get("pinyin") or "", "en": w.get("meaning") or ""}
+    if WORD_GLOSS_FILE.exists():  # hand overrides/supplements win
+        for line in WORD_GLOSS_FILE.read_text(encoding="utf-8").splitlines():
+            if not line.strip() or line.lstrip().startswith("#"):
+                continue
+            parts = line.split("\t")
+            if len(parts) < 3:
+                continue
+            m[parts[0]] = {"py": parts[1].strip(), "en": parts[2].strip()}
+    return m
 
 
 def load_lexicon(segmap: dict) -> set:
@@ -232,7 +262,7 @@ def build_lines(original: str, gloss: dict):
     return out
 
 
-def convert(fname, series, unit, segmap, lex, gloss):
+def convert(fname, series, unit, segmap, lex, gloss, wordmap):
     wb = openpyxl.load_workbook(ROOT / "sources" / fname, read_only=True, data_only=True)
     ws = wb[SHEET]
     rows = list(ws.iter_rows(values_only=True))
@@ -248,6 +278,14 @@ def convert(fname, series, unit, segmap, lex, gloss):
             lessons[ln] = {"num": ln, "name": clean(r[C_NAME]) or "", "texts": []}
             order.append(ln)
         vocab = parse_vocab(clean(r[C_VCLOZE]), clean(r[C_VANS]))
+        if vocab:  # bake per-answer pinyin + English for the word-bank tiles
+            tiles = {}
+            for a in vocab["answers"]:
+                a = (a or "").strip()
+                if a and a in wordmap and a not in tiles:
+                    tiles[a] = wordmap[a]
+            if tiles:
+                vocab["tiles"] = tiles
         # augment the lexicon with this text's own vocab answers so they tile whole
         seg_lex = lex
         if vocab:
@@ -276,11 +314,12 @@ def main():
     segmap = load_segments()
     lex = load_lexicon(segmap)
     gloss = load_gloss()
+    wordmap = load_word_map()
     meta = {}
-    print(f"Segmentation table: {len(segmap)} clauses · lexicon: {len(lex)} words · gloss: {len(gloss)} lines")
+    print(f"Segmentation table: {len(segmap)} clauses · lexicon: {len(lex)} words · gloss: {len(gloss)} lines · wordmap: {len(wordmap)} words")
     print("Converted 课文:")
     for fname, series, unit, in SOURCES:
-        data, n_lessons, n_texts = convert(fname, series, unit, segmap, lex, gloss)
+        data, n_lessons, n_texts = convert(fname, series, unit, segmap, lex, gloss, wordmap)
         key = f"{series}-{unit}"
         (OUT / f"{key}.json").write_text(
             json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8"

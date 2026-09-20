@@ -71,7 +71,25 @@
        "觉得",
        "最",
        "也"
-      ]
+      ],
+      "tiles": {
+       "旅游": {
+        "py": "lǚyóu",
+        "en": "to travel; make a tour"
+       },
+       "觉得": {
+        "py": "juéde",
+        "en": "to feel; think"
+       },
+       "最": {
+        "py": "zuì",
+        "en": "most"
+       },
+       "也": {
+        "py": "yě",
+        "en": "also; too"
+       }
+      }
      },
      "grammar": {
       "before": "A：我想去北京旅游，你觉得",
@@ -191,7 +209,21 @@
        "运动",
        "最",
        "踢足球"
-      ]
+      ],
+      "tiles": {
+       "运动": {
+        "py": "yùndòng",
+        "en": "sport; to exercise"
+       },
+       "最": {
+        "py": "zuì",
+        "en": "most"
+       },
+       "踢足球": {
+        "py": "tī zúqiú",
+        "en": "to play football/soccer"
+       }
+      }
      },
      "grammar": {
       "before": "A：你喜欢什么运动？\nB：我",
@@ -296,7 +328,17 @@
       "answers": [
        "要",
        "新"
-      ]
+      ],
+      "tiles": {
+       "要": {
+        "py": "yào",
+        "en": "to want; need"
+       },
+       "新": {
+        "py": "xīn",
+        "en": "new"
+       }
+      }
      },
      "grammar": {
       "before": "A：我们",
@@ -432,7 +474,21 @@
        "它",
        "眼睛",
        "多"
-      ]
+      ],
+      "tiles": {
+       "它": {
+        "py": "tā",
+        "en": "it"
+       },
+       "眼睛": {
+        "py": "yǎnjing",
+        "en": "eye; eyes"
+       },
+       "多": {
+        "py": "duō",
+        "en": "many; much; how (with adjective)"
+       }
+      }
      },
      "grammar": {
       "before": "A：桌子下面有个猫。\nB：那是我的猫，它叫花花。\nA：它很漂亮。\nB：是啊，我觉得它的眼睛最漂亮。\nA：它多大了？\nB：",
@@ -593,7 +649,29 @@
        "早上",
        "跑步",
        "起床"
-      ]
+      ],
+      "tiles": {
+       "生病": {
+        "py": "shēngbìng",
+        "en": "to get sick"
+       },
+       "每天": {
+        "py": "měi tiān",
+        "en": "every day"
+       },
+       "早上": {
+        "py": "zǎoshang",
+        "en": "morning"
+       },
+       "跑步": {
+        "py": "pǎobù",
+        "en": "to run; jog"
+       },
+       "起床": {
+        "py": "qǐchuáng",
+        "en": "to get up"
+       }
+      }
      },
      "grammar": {
       "before": "A：你很少生病，",
@@ -717,7 +795,21 @@
        "药",
        "身体",
        "出院"
-      ]
+      ],
+      "tiles": {
+       "药": {
+        "py": "yào",
+        "en": "medicine"
+       },
+       "身体": {
+        "py": "shēntǐ",
+        "en": "body; health"
+       },
+       "出院": {
+        "py": "chūyuàn",
+        "en": "to leave the hospital"
+       }
+      }
      },
      "grammar": {
       "before": "A：吃药了吗？",
@@ -848,7 +940,21 @@
        "高",
        "米",
        "知道"
-      ]
+      ],
+      "tiles": {
+       "高": {
+        "py": "gāo",
+        "en": "tall; high"
+       },
+       "米": {
+        "py": "mǐ",
+        "en": "meter"
+       },
+       "知道": {
+        "py": "zhīdào",
+        "en": "to know"
+       }
+      }
      },
      "grammar": {
       "before": "A：大卫今年",
@@ -980,7 +1086,21 @@
        "休息",
        "忙",
        "时间"
-      ]
+      ],
+      "tiles": {
+       "休息": {
+        "py": "xiūxi",
+        "en": "to rest"
+       },
+       "忙": {
+        "py": "máng",
+        "en": "busy"
+       },
+       "时间": {
+        "py": "shíjiān",
+        "en": "time"
+       }
+      }
      },
      "grammar": {
       "before": "A：张老师星期六也不休息啊？\nB：是啊，他这几天很忙，没有时间休息。\nA：那会很累吧？\nB：他",
@@ -1104,7 +1224,17 @@
       "answers": [
        "手表",
        "千"
-      ]
+      ],
+      "tiles": {
+       "手表": {
+        "py": "shǒubiǎo",
+        "en": "wristwatch"
+       },
+       "千": {
+        "py": "qiān",
+        "en": "thousand"
+       }
+      }
      },
      "grammar": {
       "before": "A：这块手表是你的吗？\nB：不是我的，是",
@@ -1231,7 +1361,25 @@
        "送",
        "一下",
        "牛奶"
-      ]
+      ],
+      "tiles": {
+       "报纸": {
+        "py": "bàozhǐ",
+        "en": "newspaper"
+       },
+       "送": {
+        "py": "sòng",
+        "en": "to accompany; give as a gift"
+       },
+       "一下": {
+        "py": "yíxià",
+        "en": "a little; once"
+       },
+       "牛奶": {
+        "py": "niúnǎi",
+        "en": "milk"
+       }
+      }
      },
      "grammar": {
       "before": "A：这是今天早上的报纸吗？\nB：不是，是昨天的。\nA：你听，是不是送报纸的来了？\nB：我看",
@@ -1368,7 +1516,29 @@
        "旁边",
        "粉色",
        "颜色"
-      ]
+      ],
+      "tiles": {
+       "房间": {
+        "py": "fángjiān",
+        "en": "room"
+       },
+       "丈夫": {
+        "py": "zhàngfu",
+        "en": "husband"
+       },
+       "旁边": {
+        "py": "pángbiān",
+        "en": "beside; next to"
+       },
+       "粉色": {
+        "py": "fěnsè",
+        "en": "pink"
+       },
+       "颜色": {
+        "py": "yánsè",
+        "en": "color"
+       }
+      }
      },
      "grammar": {
       "before": "A：这是谁的房间？\nB：这是我和我丈夫的，旁边那个小的房间是我女儿的。\nA：你女儿的房间",
@@ -1499,7 +1669,17 @@
       "answers": [
        "左边",
        "红色"
-      ]
+      ],
+      "tiles": {
+       "左边": {
+        "py": "zuǒbian",
+        "en": "left side"
+       },
+       "红色": {
+        "py": "hóngsè",
+        "en": "red"
+       }
+      }
      },
      "grammar": {
       "before": "A：你看见我的杯子了吗？\nB：这里有几个杯子，哪个是你的？\nA：",
@@ -1626,7 +1806,21 @@
        "生日",
        "快乐",
        "给"
-      ]
+      ],
+      "tiles": {
+       "生日": {
+        "py": "shēngrì",
+        "en": "birthday"
+       },
+       "快乐": {
+        "py": "kuàilè",
+        "en": "happy"
+       },
+       "给": {
+        "py": "gěi",
+        "en": "to; for; to give"
+       }
+      }
      },
      "grammar": {
       "before": "A：生日快乐！这是送给你的！\nB：是什么？是一本书吗？\nA：对，",
@@ -1754,7 +1948,21 @@
        "接",
        "晚上",
        "问"
-      ]
+      ],
+      "tiles": {
+       "接": {
+        "py": "jiē",
+        "en": "to receive; to pick up"
+       },
+       "晚上": {
+        "py": "wǎnshang",
+        "en": "evening; night"
+       },
+       "问": {
+        "py": "wèn",
+        "en": "to ask"
+       }
+      }
      },
      "grammar": {
       "before": "A：早上有你一个电话。\nB：电话是谁打的？\nA：不知道，",
@@ -1875,7 +2083,21 @@
        "非常",
        "开始",
        "已经"
-      ]
+      ],
+      "tiles": {
+       "非常": {
+        "py": "fēicháng",
+        "en": "very; extremely"
+       },
+       "开始": {
+        "py": "kāishǐ",
+        "en": "to begin; beginning"
+       },
+       "已经": {
+        "py": "yǐjīng",
+        "en": "already"
+       }
+      }
      },
      "grammar": {
       "before": "A：你喜欢踢足球吗？\nB：非常喜欢。\nA：你是什么时候开始踢足球的？\nB：我",
@@ -1998,7 +2220,21 @@
        "已经",
        "帮",
        "介绍"
-      ]
+      ],
+      "tiles": {
+       "已经": {
+        "py": "yǐjīng",
+        "en": "already"
+       },
+       "帮": {
+        "py": "bāng",
+        "en": "to help"
+       },
+       "介绍": {
+        "py": "jièshào",
+        "en": "to introduce"
+       }
+      }
      },
      "grammar": {
       "before": "A：你在这儿工作多长时间了？\nB：",
@@ -2139,7 +2375,21 @@
        "外面",
        "准备",
        "鱼"
-      ]
+      ],
+      "tiles": {
+       "外面": {
+        "py": "wàimiàn",
+        "en": "outside"
+       },
+       "准备": {
+        "py": "zhǔnbèi",
+        "en": "to prepare"
+       },
+       "鱼": {
+        "py": "yú",
+        "en": "fish"
+       }
+      }
      },
      "grammar": {
       "before": "A：晚上我们去饭馆吃饭，怎么样？\nB：我不想去外面吃，我想在家吃。\nA：那你准备做什么呢？\nB：",
@@ -2271,7 +2521,25 @@
        "还",
        "可以",
        "不错"
-      ]
+      ],
+      "tiles": {
+       "件": {
+        "py": "jiàn",
+        "en": "measure word for clothes/items"
+       },
+       "还": {
+        "py": "huán",
+        "en": "to return; to give back"
+       },
+       "可以": {
+        "py": "kěyǐ",
+        "en": "can; may"
+       },
+       "不错": {
+        "py": "búcuò",
+        "en": "not bad; pretty good"
+       }
+      }
      },
      "grammar": {
       "before": "A：帮我看一下这件衣服怎么样？\nB：颜色还可以，就是",
@@ -2390,7 +2658,21 @@
        "考试",
        "还",
        "意思"
-      ]
+      ],
+      "tiles": {
+       "考试": {
+        "py": "kǎoshì",
+        "en": "to take an exam; exam"
+       },
+       "还": {
+        "py": "huán",
+        "en": "to return; to give back"
+       },
+       "意思": {
+        "py": "yìsi",
+        "en": "meaning; idea"
+       }
+      }
      },
      "grammar": {
       "before": "A：今天去不去打球？\nB：这两天有点儿累，不去打球了。\nA：你在做什么呢？是在想昨天的考试吗？\nB：是啊，我觉得听和说",
@@ -2536,7 +2818,21 @@
        "咖啡",
        "对",
        "以后"
-      ]
+      ],
+      "tiles": {
+       "咖啡": {
+        "py": "kāfēi",
+        "en": "coffee"
+       },
+       "对": {
+        "py": "duì",
+        "en": "correct; right"
+       },
+       "以后": {
+        "py": "yǐhòu",
+        "en": "after; later; in the future"
+       }
+      }
      },
      "grammar": {
       "before": "A：休息一下吧，喝咖啡吗？\nB：不喝了，我已经喝两杯了。\nA：是啊，咖啡喝多了对身体不好。\nB：",
@@ -2668,7 +2964,17 @@
       "answers": [
        "门外",
        "自行车"
-      ]
+      ],
+      "tiles": {
+       "门外": {
+        "py": "mén wài",
+        "en": "outside the door"
+       },
+       "自行车": {
+        "py": "zìxíngchē",
+        "en": "bicycle"
+       }
+      }
      },
      "grammar": {
       "before": "A：你知道小王今天什么时候来学校吗？\nB：他已经来了。\nA：",
@@ -2797,7 +3103,21 @@
        "羊肉",
        "好吃",
        "面条"
-      ]
+      ],
+      "tiles": {
+       "羊肉": {
+        "py": "yángròu",
+        "en": "mutton; lamb"
+       },
+       "好吃": {
+        "py": "hǎochī",
+        "en": "delicious; tasty"
+       },
+       "面条": {
+        "py": "miàntiáo",
+        "en": "noodles"
+       }
+      }
      },
      "grammar": {
       "before": "A：今天的羊肉很好吃，你怎么不吃了？\nB：这个星期",
@@ -2930,7 +3250,25 @@
        "游泳",
        "经常",
        "公斤"
-      ]
+      ],
+      "tiles": {
+       "打篮球": {
+        "py": "dǎ lánqiú",
+        "en": "to play basketball"
+       },
+       "游泳": {
+        "py": "yóuyǒng",
+        "en": "to swim"
+       },
+       "经常": {
+        "py": "jīngcháng",
+        "en": "often"
+       },
+       "公斤": {
+        "py": "gōngjīn",
+        "en": "kilogram"
+       }
+      }
      },
      "grammar": {
       "before": "A：昨天你们怎么都没去打篮球？\nB：",
@@ -3053,7 +3391,13 @@
       ],
       "answers": [
        "姐姐"
-      ]
+      ],
+      "tiles": {
+       "姐姐": {
+        "py": "jiějie",
+        "en": "older sister"
+       }
+      }
      },
      "grammar": {
       "before": "A：",
@@ -3170,7 +3514,13 @@
       ],
       "answers": [
        "教室"
-      ]
+      ],
+      "tiles": {
+       "教室": {
+        "py": "jiàoshì",
+        "en": "classroom"
+       }
+      }
      },
      "grammar": {
       "before": "A：大卫回来了吗？\nB：没有，他",
@@ -3300,7 +3650,21 @@
        "机场",
        "路上",
        "到"
-      ]
+      ],
+      "tiles": {
+       "机场": {
+        "py": "jīchǎng",
+        "en": "airport"
+       },
+       "路上": {
+        "py": "lùshang",
+        "en": "on the road; on the way"
+       },
+       "到": {
+        "py": "dào",
+        "en": "to arrive; to reach"
+       }
+      }
      },
      "grammar": {
       "before": "A：你现在在哪儿呢？\nB：在去机场的路上。你已经到了？\nA：我下飞机了。你还有多长时间能到这儿？\nB：",
@@ -3442,7 +3806,33 @@
        "公共汽车",
        "小时",
        "慢"
-      ]
+      ],
+      "tiles": {
+       "离": {
+        "py": "lí",
+        "en": "to be away from"
+       },
+       "公司": {
+        "py": "gōngsī",
+        "en": "company"
+       },
+       "远": {
+        "py": "yuǎn",
+        "en": "far away"
+       },
+       "公共汽车": {
+        "py": "gōnggòng qìchē",
+        "en": "bus"
+       },
+       "小时": {
+        "py": "xiǎoshí",
+        "en": "hour"
+       },
+       "慢": {
+        "py": "màn",
+        "en": "slow"
+       }
+      }
      },
      "grammar": {
       "before": "A：",
@@ -3574,7 +3964,21 @@
        "过生日",
        "走",
        "到"
-      ]
+      ],
+      "tiles": {
+       "过生日": {
+        "py": "guò shēngrì",
+        "en": "to celebrate a birthday"
+       },
+       "走": {
+        "py": "zǒu",
+        "en": "to walk; to go"
+       },
+       "到": {
+        "py": "dào",
+        "en": "to arrive; to reach"
+       }
+      }
      },
      "grammar": {
       "before": "A：今天晚上我们一起吃饭吧，给你过生日。\nB：今天？离我的生日还有一个多星期呢！\nA：下个星期我要去北京，今天过吧。\nB：好吧，离这儿不远有一个中国饭馆，",
@@ -3717,7 +4121,17 @@
       "answers": [
        "再",
        "告诉"
-      ]
+      ],
+      "tiles": {
+       "再": {
+        "py": "zài",
+        "en": "again; then"
+       },
+       "告诉": {
+        "py": "gàosu",
+        "en": "to tell"
+       }
+      }
      },
      "grammar": {
       "before": "A：我们下午去看电影，好吗？\nB：今天下午我没有时间，",
@@ -3846,7 +4260,21 @@
        "等",
        "找",
        "事情"
-      ]
+      ],
+      "tiles": {
+       "等": {
+        "py": "děng",
+        "en": "to wait for"
+       },
+       "找": {
+        "py": "zhǎo",
+        "en": "to look for"
+       },
+       "事情": {
+        "py": "shìqing",
+        "en": "matter; affair"
+       }
+      }
      },
      "grammar": {
       "before": "A：外边天气很好，我们出去运动运动吧。\nB：你等等我，好吗？",
@@ -3979,7 +4407,13 @@
       ],
       "answers": [
        "服务员"
-      ]
+      ],
+      "tiles": {
+       "服务员": {
+        "py": "fúwùyuán",
+        "en": "waiter; waitress; attendant"
+       }
+      }
      },
      "grammar": {
       "before": "A：服务员，我房间的门打不开了。\nB：您住哪个房间？\nA：317。\nB：好的，",
@@ -4109,7 +4543,25 @@
        "黑",
        "贵",
        "再"
-      ]
+      ],
+      "tiles": {
+       "白": {
+        "py": "bái",
+        "en": "white"
+       },
+       "黑": {
+        "py": "hēi",
+        "en": "black"
+       },
+       "贵": {
+        "py": "guì",
+        "en": "expensive"
+       },
+       "再": {
+        "py": "zài",
+        "en": "again; then"
+       }
+      }
      },
      "grammar": {
       "before": "A：你看看这几件衣服怎么样。\nB：这件白的有点儿长，那件黑的有点儿贵。\nA：这件红的呢？这是今天新来的。\nB：",
@@ -4226,7 +4678,13 @@
       ],
       "answers": [
        "错"
-      ]
+      ],
+      "tiles": {
+       "错": {
+        "py": "cuò",
+        "en": "wrong; mistaken"
+       }
+      }
      },
      "grammar": {
       "before": "A：你好！请问张欢在吗？\nB：你",
@@ -4334,7 +4792,25 @@
        "跳舞",
        "希望",
        "欢迎"
-      ]
+      ],
+      "tiles": {
+       "从": {
+        "py": "cóng",
+        "en": "from"
+       },
+       "跳舞": {
+        "py": "tiàowǔ",
+        "en": "to dance"
+       },
+       "希望": {
+        "py": "xīwàng",
+        "en": "to hope; hope"
+       },
+       "欢迎": {
+        "py": "huānyíng",
+        "en": "to welcome; welcome"
+       }
+      }
      },
      "grammar": {
       "before": "A：您",
@@ -4468,7 +4944,21 @@
        "上班",
        "第一",
        "希望"
-      ]
+      ],
+      "tiles": {
+       "上班": {
+        "py": "shàngbān",
+        "en": "to go to work; start work"
+       },
+       "第一": {
+        "py": "dì-yī",
+        "en": "first"
+       },
+       "希望": {
+        "py": "xīwàng",
+        "en": "to hope; hope"
+       }
+      }
      },
      "grammar": {
       "before": "A：你知道吗？大卫找到工作了。\nB：太好了！他从什么时候开始上班？\nA：从下个星期一开始。\nB：这是他的",
@@ -4598,7 +5088,21 @@
        "懂",
        "完",
        "题"
-      ]
+      ],
+      "tiles": {
+       "懂": {
+        "py": "dǒng",
+        "en": "to understand; know"
+       },
+       "完": {
+        "py": "wán",
+        "en": "to finish; complete"
+       },
+       "题": {
+        "py": "tí",
+        "en": "question; problem"
+       }
+      }
      },
      "grammar": {
       "before": "A：昨天的考试怎么样？你都听懂了吗？\nB：听懂了。\nA：你都",
@@ -4720,7 +5224,17 @@
       "answers": [
        "课",
        "帮助"
-      ]
+      ],
+      "tiles": {
+       "课": {
+        "py": "kè",
+        "en": "class; lesson"
+       },
+       "帮助": {
+        "py": "bāngzhù",
+        "en": "to help; help"
+       }
+      }
      },
      "grammar": {
       "before": "A：",
@@ -4841,7 +5355,13 @@
       ],
       "answers": [
        "别"
-      ]
+      ],
+      "tiles": {
+       "别": {
+        "py": "bié",
+        "en": "don't; had better not"
+       }
+      }
      },
      "grammar": {
       "before": "A：别看报纸了，医生说你要多休息。\nB：好，不看了。给我一杯茶吧。\nA：医生说吃药后两个小时",
@@ -4990,7 +5510,25 @@
        "鸡蛋",
        "西瓜",
        "正在"
-      ]
+      ],
+      "tiles": {
+       "哥哥": {
+        "py": "gēge",
+        "en": "older brother"
+       },
+       "鸡蛋": {
+        "py": "jīdàn",
+        "en": "egg"
+       },
+       "西瓜": {
+        "py": "xīguā",
+        "en": "watermelon"
+       },
+       "正在": {
+        "py": "zhèngzài",
+        "en": "in the process of; currently"
+       }
+      }
      },
      "grammar": {
       "before": "A：你怎么买了这么多东西啊？\nB：哥哥今天中午回来吃饭。\nA：我看看买什么了。羊肉、鸡蛋、面条、西瓜……真不少！妈妈呢？\nB：",
@@ -5118,7 +5656,17 @@
       "answers": [
        "手机",
        "洗"
-      ]
+      ],
+      "tiles": {
+       "手机": {
+        "py": "shǒujī",
+        "en": "mobile phone"
+       },
+       "洗": {
+        "py": "xǐ",
+        "en": "to wash"
+       }
+      }
      },
      "grammar": {
       "before": "A：你在找什么？\nB：你看见我的手机了吗？白色的。\nA：",
@@ -5266,7 +5814,17 @@
       "answers": [
        "唱歌",
        "男朋友"
-      ]
+      ],
+      "tiles": {
+       "唱歌": {
+        "py": "chànggē",
+        "en": "to sing"
+       },
+       "男朋友": {
+        "py": "nánpéngyou",
+        "en": "boyfriend"
+       }
+      }
      },
      "grammar": {
       "before": "A：王方，昨天",
@@ -5386,7 +5944,17 @@
       "answers": [
        "女孩子",
        "右边"
-      ]
+      ],
+      "tiles": {
+       "女孩子": {
+        "py": "nǚ háizi",
+        "en": "girl"
+       },
+       "右边": {
+        "py": "yòubian",
+        "en": "right side"
+       }
+      }
      },
      "grammar": {
       "before": "A：左边这个看报纸的女孩子是你姐姐吗？\nB：是，右边写字的那个人是我哥哥。\nA：你哥哥多大？\nB：25岁，",
@@ -5503,7 +6071,13 @@
       ],
       "answers": [
        "便宜"
-      ]
+      ],
+      "tiles": {
+       "便宜": {
+        "py": "piányi",
+        "en": "cheap"
+       }
+      }
      },
      "grammar": {
       "before": "A：今天的西瓜怎么卖？\nB：三块五一斤。\nA：比昨天便宜。\nB：是，苹果也",
@@ -5633,7 +6207,25 @@
        "可能",
        "去年",
        "姓"
-      ]
+      ],
+      "tiles": {
+       "说话": {
+        "py": "shuōhuà",
+        "en": "to talk"
+       },
+       "可能": {
+        "py": "kěnéng",
+        "en": "may; might; possible"
+       },
+       "去年": {
+        "py": "qùnián",
+        "en": "last year"
+       },
+       "姓": {
+        "py": "xìng",
+        "en": "to be surnamed"
+       }
+      }
      },
      "grammar": {
       "before": "A：前边说话的那个人就是我的汉语老师。你",
@@ -5763,7 +6355,13 @@
       ],
       "answers": [
        "得"
-      ]
+      ],
+      "tiles": {
+       "得": {
+        "py": "de",
+        "en": "particle before a complement"
+       }
+      }
      },
      "grammar": {
       "before": "A：你每天早上几点起床？\nB：六点多。\nA：你",
@@ -5880,7 +6478,13 @@
       ],
       "answers": [
        "妻子"
-      ]
+      ],
+      "tiles": {
+       "妻子": {
+        "py": "qīzi",
+        "en": "wife"
+       }
+      }
      },
      "grammar": {
       "before": "A：再来点儿米饭吧，你",
@@ -6028,7 +6632,29 @@
        "度",
        "穿",
        "进"
-      ]
+      ],
+      "tiles": {
+       "雪": {
+        "py": "xuě",
+        "en": "snow"
+       },
+       "零": {
+        "py": "líng",
+        "en": "zero"
+       },
+       "度": {
+        "py": "dù",
+        "en": "degree"
+       },
+       "穿": {
+        "py": "chuān",
+        "en": "to wear"
+       },
+       "进": {
+        "py": "jìn",
+        "en": "to enter; come in"
+       }
+      }
      },
      "grammar": {
       "before": "A：下雪了，今天真冷。\nB：有零下10度吧？\nA：是啊，你",
@@ -6145,7 +6771,17 @@
       "answers": [
        "弟弟",
        "近"
-      ]
+      ],
+      "tiles": {
+       "弟弟": {
+        "py": "dìdi",
+        "en": "younger brother"
+       },
+       "近": {
+        "py": "jìn",
+        "en": "near; close"
+       }
+      }
      },
      "grammar": {
       "before": "A：你在忙什么呢？\nB：我弟弟让我帮他找个房子，现在他家离公司有点儿远。\nA：住得远真的很累！\nB：是啊，他也希望能",
@@ -6274,7 +6910,13 @@
       ],
       "answers": [
        "着"
-      ]
+      ],
+      "tiles": {
+       "着": {
+        "py": "zhe",
+        "en": "aspect particle indicating continuation"
+       }
+      }
      },
      "grammar": {
       "before": "A：",
@@ -6395,7 +7037,21 @@
        "手",
        "拿",
        "铅笔"
-      ]
+      ],
+      "tiles": {
+       "手": {
+        "py": "shǒu",
+        "en": "hand"
+       },
+       "拿": {
+        "py": "ná",
+        "en": "to take; to hold"
+       },
+       "铅笔": {
+        "py": "qiānbǐ",
+        "en": "pencil"
+       }
+      }
      },
      "grammar": {
       "before": "A：那个正在说话的女孩儿是谁？\nB：我知道她的名字，她姓杨，叫杨笑笑，她姐姐是我同学。\nA：那个",
@@ -6529,7 +7185,21 @@
        "班",
        "长",
        "笑"
-      ]
+      ],
+      "tiles": {
+       "班": {
+        "py": "bān",
+        "en": "class; group"
+       },
+       "长": {
+        "py": "zhǎng",
+        "en": "to grow; to develop"
+       },
+       "笑": {
+        "py": "xiào",
+        "en": "to smile; laugh"
+       }
+      }
      },
      "grammar": {
       "before": "A：听说你有女朋友了？我认识她吗？\nB：就是我们班那个长着两个大眼睛、非常爱笑的女孩儿。\nA：",
@@ -6670,7 +7340,25 @@
        "一直",
        "往",
        "路口"
-      ]
+      ],
+      "tiles": {
+       "宾馆": {
+        "py": "bīnguǎn",
+        "en": "hotel"
+       },
+       "一直": {
+        "py": "yìzhí",
+        "en": "straight; continuously"
+       },
+       "往": {
+        "py": "wǎng",
+        "en": "toward"
+       },
+       "路口": {
+        "py": "lùkǒu",
+        "en": "intersection; crossing"
+       }
+      }
      },
      "grammar": {
       "before": "A：请问，这儿离新京宾馆远吗？\nB：不远，走路二十分钟就到。\nA：你能告诉我怎么走吗？\nB：从这儿一直",
@@ -6803,7 +7491,17 @@
       "answers": [
        "有意思",
        "但是"
-      ]
+      ],
+      "tiles": {
+       "有意思": {
+        "py": "yǒuyìsi",
+        "en": "interesting"
+       },
+       "但是": {
+        "py": "dànshì",
+        "en": "but; yet"
+       }
+      }
      },
      "grammar": {
       "before": "A：你",
@@ -6925,7 +7623,21 @@
        "虽然",
        "次",
        "玩儿"
-      ]
+      ],
+      "tiles": {
+       "虽然": {
+        "py": "suīrán",
+        "en": "although"
+       },
+       "次": {
+        "py": "cì",
+        "en": "time; occurrence"
+       },
+       "玩儿": {
+        "py": "wánr",
+        "en": "to play; to have fun"
+       }
+      }
      },
      "grammar": {
       "before": "A：听说你去过中国，还想去吗？\nB：我",
@@ -7051,7 +7763,17 @@
       "answers": [
        "晴",
        "但是"
-      ]
+      ],
+      "tiles": {
+       "晴": {
+        "py": "qíng",
+        "en": "sunny"
+       },
+       "但是": {
+        "py": "dànshì",
+        "en": "but; yet"
+       }
+      }
      },
      "grammar": {
       "before": "A：明天天气怎么样？\nB：",
@@ -7172,7 +7894,17 @@
       "answers": [
        "但是",
        "百"
-      ]
+      ],
+      "tiles": {
+       "但是": {
+        "py": "dànshì",
+        "en": "but; yet"
+       },
+       "百": {
+        "py": "bǎi",
+        "en": "hundred"
+       }
+      }
      },
      "grammar": {
       "before": "A：你在这个商店买过东西没有？\nB：",
@@ -7313,7 +8045,21 @@
        "新年",
        "票",
        "火车站"
-      ]
+      ],
+      "tiles": {
+       "新年": {
+        "py": "xīnnián",
+        "en": "New Year"
+       },
+       "票": {
+        "py": "piào",
+        "en": "ticket"
+       },
+       "火车站": {
+        "py": "huǒchēzhàn",
+        "en": "train station"
+       }
+      }
      },
      "grammar": {
       "before": "A：今天是12月20日，",
@@ -7446,7 +8192,17 @@
       "answers": [
        "大家",
        "更"
-      ]
+      ],
+      "tiles": {
+       "大家": {
+        "py": "dàjiā",
+        "en": "everyone"
+       },
+       "更": {
+        "py": "gèng",
+        "en": "more; even more"
+       }
+      }
      },
      "grammar": {
       "before": "A：时间过得真快，",
@@ -7555,7 +8311,13 @@
       ],
       "answers": [
        "妹妹"
-      ]
+      ],
+      "tiles": {
+       "妹妹": {
+        "py": "mèimei",
+        "en": "younger sister"
+       }
+      }
      },
      "grammar": {
       "before": "A：你妹妹怎么还没来？都八点四十了！\nB：我们再等她几分钟吧。\nA：",
@@ -7673,7 +8435,13 @@
       ],
       "answers": [
        "阴"
-      ]
+      ],
+      "tiles": {
+       "阴": {
+        "py": "yīn",
+        "en": "cloudy"
+       }
+      }
      },
      "grammar": {
       "before": "A：天阴了，我要回去了。\nB：好的，",

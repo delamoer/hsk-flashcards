@@ -63,7 +63,17 @@
       "answers": [
        "周末",
        "打算"
-      ]
+      ],
+      "tiles": {
+       "周末": {
+        "py": "zhōumò",
+        "en": "weekend"
+       },
+       "打算": {
+        "py": "dǎsuàn",
+        "en": "to plan; plan"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：周末你有什么打算？\n小刚：我早就",
@@ -222,7 +232,25 @@
        "游戏",
        "作业",
        "着急"
-      ]
+      ],
+      "tiles": {
+       "一直": {
+        "py": "yìzhí",
+        "en": "straight; continuously"
+       },
+       "游戏": {
+        "py": "yóuxì",
+        "en": "game"
+       },
+       "作业": {
+        "py": "zuòyè",
+        "en": "homework"
+       },
+       "着急": {
+        "py": "zháojí",
+        "en": "worried; anxious"
+       }
+      }
      },
      "grammar": {
       "before": "妈妈：你一直玩儿电脑游戏，作业写完了吗？\n儿子：都写完了。\n妈妈：明天不是有考试吗？你怎么",
@@ -357,7 +385,17 @@
       "answers": [
        "南方",
        "北方"
-      ]
+      ],
+      "tiles": {
+       "南方": {
+        "py": "nánfāng",
+        "en": "south; southern part"
+       },
+       "北方": {
+        "py": "běifāng",
+        "en": "north; northern part"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：下个月我去旅游，你能跟我一起去吗？\n",
@@ -513,7 +551,25 @@
        "带",
        "地图",
        "搬"
-      ]
+      ],
+      "tiles": {
+       "面包": {
+        "py": "miànbāo",
+        "en": "bread"
+       },
+       "带": {
+        "py": "dài",
+        "en": "to bring; to take; to carry"
+       },
+       "地图": {
+        "py": "dìtú",
+        "en": "map"
+       },
+       "搬": {
+        "py": "bān",
+        "en": "to move; to carry"
+       }
+      }
      },
      "grammar": {
       "before": "小刚：水果、面包、茶都",
@@ -686,7 +742,25 @@
        "疼",
        "脚",
        "容易"
-      ]
+      ],
+      "tiles": {
+       "腿": {
+        "py": "tuǐ",
+        "en": "leg"
+       },
+       "疼": {
+        "py": "téng",
+        "en": "to hurt; painful"
+       },
+       "脚": {
+        "py": "jiǎo",
+        "en": "foot"
+       },
+       "容易": {
+        "py": "róngyì",
+        "en": "easy"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：休息一下吧。\n",
@@ -855,7 +929,25 @@
        "秘书",
        "经理",
        "办公室"
-      ]
+      ],
+      "tiles": {
+       "太太": {
+        "py": "tàitai",
+        "en": "wife; Mrs."
+       },
+       "秘书": {
+        "py": "mìshū",
+        "en": "secretary"
+       },
+       "经理": {
+        "py": "jīnglǐ",
+        "en": "manager"
+       },
+       "办公室": {
+        "py": "bàngōngshì",
+        "en": "office"
+       }
+      }
      },
      "grammar": {
       "before": "周太太：喂，你好，请问周明在吗？\n秘书：周经理出去了，不在办公室。\n周太太：他去哪儿了？什么时候回来？\n秘书：他出去办事了，下午回来。\n周太太：",
@@ -1030,7 +1122,25 @@
        "楼",
        "拿",
        "把"
-      ]
+      ],
+      "tiles": {
+       "辆": {
+        "py": "liàng",
+        "en": "measure word for vehicles"
+       },
+       "楼": {
+        "py": "lóu",
+        "en": "building; floor"
+       },
+       "拿": {
+        "py": "ná",
+        "en": "to take; to hold"
+       },
+       "把": {
+        "py": "bǎ",
+        "en": "measure word for handled objects; disposal marker"
+       }
+      }
      },
      "grammar": {
       "before": "小刚：雨下得真大。",
@@ -1199,7 +1309,25 @@
        "胖",
        "其实",
        "瘦"
-      ]
+      ],
+      "tiles": {
+       "太太": {
+        "py": "tàitai",
+        "en": "wife; Mrs."
+       },
+       "胖": {
+        "py": "pàng",
+        "en": "fat; overweight"
+       },
+       "其实": {
+        "py": "qíshí",
+        "en": "actually; in fact"
+       },
+       "瘦": {
+        "py": "shòu",
+        "en": "thin; slim"
+       }
+      }
      },
      "grammar": {
       "before": "周太太：你看，我这么胖，怎么办呢？\n周明：你每天晚上",
@@ -1358,7 +1486,17 @@
       "answers": [
        "还是",
        "小心"
-      ]
+      ],
+      "tiles": {
+       "还是": {
+        "py": "háishi",
+        "en": "or; still"
+       },
+       "小心": {
+        "py": "xiǎoxīn",
+        "en": "careful; be careful"
+       }
+      }
      },
      "grammar": {
       "before": "小刚：明天是",
@@ -1521,7 +1659,21 @@
        "周太太",
        "那我们再",
        "元"
-      ]
+      ],
+      "tiles": {
+       "周太太": {
+        "py": "Zhōu tàitai",
+        "en": "Mrs. Zhou"
+       },
+       "那我们再": {
+        "py": "nà wǒmen zài",
+        "en": "then let's … (do sth) again"
+       },
+       "元": {
+        "py": "yuán",
+        "en": "yuan"
+       }
+      }
      },
      "grammar": {
       "before": "周太太：你觉得这条裤子怎么样？\n周明：我记得你已经有两条这样的裤子了。\n周太太：那我们再看看别的。\n周明：这件衬衫怎么样？\n周太太：还不错，多少钱？\n周明：这",
@@ -1674,7 +1826,17 @@
       "answers": [
        "甜",
        "只"
-      ]
+      ],
+      "tiles": {
+       "甜": {
+        "py": "tián",
+        "en": "sweet"
+       },
+       "只": {
+        "py": "zhǐ",
+        "en": "only; just"
+       }
+      }
      },
      "grammar": {
       "before": "周太太：这些水果真新鲜，我们买西瓜还是苹果？\n周明：西瓜吧。你看，这",
@@ -1837,7 +1999,25 @@
        "饮料",
        "或者",
        "舒服"
-      ]
+      ],
+      "tiles": {
+       "放": {
+        "py": "fàng",
+        "en": "to put; to place"
+       },
+       "饮料": {
+        "py": "yǐnliào",
+        "en": "drink; beverage"
+       },
+       "或者": {
+        "py": "huòzhě",
+        "en": "or (in statements)"
+       },
+       "舒服": {
+        "py": "shūfu",
+        "en": "comfortable; well"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：",
@@ -2025,7 +2205,25 @@
        "照片",
        "年级",
        "又"
-      ]
+      ],
+      "tiles": {
+       "比赛": {
+        "py": "bǐsài",
+        "en": "competition; match"
+       },
+       "照片": {
+        "py": "zhàopiàn",
+        "en": "photo"
+       },
+       "年级": {
+        "py": "niánjí",
+        "en": "grade; year in school"
+       },
+       "又": {
+        "py": "yòu",
+        "en": "again; also"
+       }
+      }
      },
      "grammar": {
       "before": "小明：这是你们比赛的照片吗？\n马可：是，这是我们比赛后照的。\n小明：照得不错，你们都是一个年级的吗？\n马可：不是。那个",
@@ -2205,7 +2403,25 @@
        "热情",
        "努力",
        "总是"
-      ]
+      ],
+      "tiles": {
+       "聪明": {
+        "py": "cōngming",
+        "en": "smart; clever"
+       },
+       "热情": {
+        "py": "rèqíng",
+        "en": "warm; enthusiastic"
+       },
+       "努力": {
+        "py": "nǔlì",
+        "en": "hardworking; to work hard"
+       },
+       "总是": {
+        "py": "zǒngshì",
+        "en": "always"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：你觉得小红怎么样？\n同学：她又聪明又热情，也很努力。\n小丽：我看她总是笑着回答老师的问题。\n同学：她对每个人都笑，也常常对我笑。\n小丽：你是不是喜欢她啊？\n同学：喜欢她的人太多了，你看那些",
@@ -2385,7 +2601,21 @@
        "饿",
        "超市",
        "蛋糕"
-      ]
+      ],
+      "tiles": {
+       "饿": {
+        "py": "è",
+        "en": "hungry"
+       },
+       "超市": {
+        "py": "chāoshì",
+        "en": "supermarket"
+       },
+       "蛋糕": {
+        "py": "dàngāo",
+        "en": "cake"
+       }
+      }
      },
      "grammar": {
       "before": "小刚：我有点儿饿了，我们进超市买点儿东西吧。\n小丽：好啊，这家超市的蛋糕又便宜又好吃，一块只要2.99元。\n小刚：我们买两块，回家",
@@ -2565,7 +2795,21 @@
        "年轻",
        "认真",
        "客人"
-      ]
+      ],
+      "tiles": {
+       "年轻": {
+        "py": "niánqīng",
+        "en": "young"
+       },
+       "认真": {
+        "py": "rènzhēn",
+        "en": "serious; conscientious"
+       },
+       "客人": {
+        "py": "kèrén",
+        "en": "guest; customer"
+       }
+      }
      },
      "grammar": {
       "before": "经理：您好！您找谁？\n客人：你们这儿是不是有一个又年轻又漂亮的服务员？\n经理：我们这儿年轻、漂亮的服务员有很多。\n客人：她工作又认真又热情。\n经理：您能再说说吗？\n客人：她总是",
@@ -2747,7 +2991,17 @@
       "answers": [
        "发烧",
        "为"
-      ]
+      ],
+      "tiles": {
+       "发烧": {
+        "py": "fāshāo",
+        "en": "to have a fever"
+       },
+       "为": {
+        "py": "wéi",
+        "en": "to become"
+       }
+      }
      },
      "grammar": {
       "before": "朋友：我听说你身体不舒服，怎么了？\n小丽：前几天有点儿发烧，",
@@ -2908,7 +3162,17 @@
       "answers": [
        "照顾",
        "感冒"
-      ]
+      ],
+      "tiles": {
+       "照顾": {
+        "py": "zhàogù",
+        "en": "to take care of"
+       },
+       "感冒": {
+        "py": "gǎnmào",
+        "en": "to catch a cold; cold"
+       }
+      }
      },
      "grammar": {
       "before": "周太太：对不起，",
@@ -3093,7 +3357,25 @@
        "当然",
        "夏天",
        "裙子"
-      ]
+      ],
+      "tiles": {
+       "季节": {
+        "py": "jìjié",
+        "en": "season"
+       },
+       "当然": {
+        "py": "dāngrán",
+        "en": "of course"
+       },
+       "夏天": {
+        "py": "xiàtiān",
+        "en": "summer"
+       },
+       "裙子": {
+        "py": "qúnzi",
+        "en": "skirt; dress"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：你最喜欢哪个季节？\n小刚：当然是春天，天气不那么冷了，草和树都绿了，",
@@ -3257,7 +3539,17 @@
       "answers": [
        "最近",
        "越"
-      ]
+      ],
+      "tiles": {
+       "最近": {
+        "py": "zuìjìn",
+        "en": "recently"
+       },
+       "越": {
+        "py": "yuè",
+        "en": "the more...; increasingly"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：",
@@ -3447,7 +3739,29 @@
        "清楚",
        "刚才",
        "帮忙"
-      ]
+      ],
+      "tiles": {
+       "眼镜": {
+        "py": "yǎnjìng",
+        "en": "glasses"
+       },
+       "突然": {
+        "py": "tūrán",
+        "en": "suddenly"
+       },
+       "清楚": {
+        "py": "qīngchu",
+        "en": "clear; clearly"
+       },
+       "刚才": {
+        "py": "gāngcái",
+        "en": "just now"
+       },
+       "帮忙": {
+        "py": "bāngmáng",
+        "en": "to help; do a favor"
+       }
+      }
      },
      "grammar": {
       "before": "周明：我的眼镜呢？怎么突然找不到了？你看见了吗？\n周太太：我没看见啊。\n周明：我离不开眼镜，没有眼镜，",
@@ -3631,7 +3945,25 @@
        "讲",
        "明白",
        "锻炼"
-      ]
+      ],
+      "tiles": {
+       "特别": {
+        "py": "tèbié",
+        "en": "especially; special"
+       },
+       "讲": {
+        "py": "jiǎng",
+        "en": "to speak; to explain; to tell"
+       },
+       "明白": {
+        "py": "míngbai",
+        "en": "to understand; clear"
+       },
+       "锻炼": {
+        "py": "duànliàn",
+        "en": "to exercise"
+       }
+      }
      },
      "grammar": {
       "before": "同学：今天的作业你做完了吗？\n儿子：",
@@ -3798,7 +4130,21 @@
        "音乐",
        "公园",
        "聊天儿"
-      ]
+      ],
+      "tiles": {
+       "音乐": {
+        "py": "yīnyuè",
+        "en": "music"
+       },
+       "公园": {
+        "py": "gōngyuán",
+        "en": "park"
+       },
+       "聊天儿": {
+        "py": "liáotiānr",
+        "en": "to chat"
+       }
+      }
      },
      "grammar": {
       "before": "同事：你怎么有点儿不高兴？\n小刚：我想请小丽吃饭，但是找不到好饭馆。\n同事：那你请她听音乐会吧，她喜欢听音乐。\n小刚：音乐会人太多，",
@@ -3972,7 +4318,21 @@
        "咖啡",
        "牛奶",
        "更"
-      ]
+      ],
+      "tiles": {
+       "咖啡": {
+        "py": "kāfēi",
+        "en": "coffee"
+       },
+       "牛奶": {
+        "py": "niúnǎi",
+        "en": "milk"
+       },
+       "更": {
+        "py": "gèng",
+        "en": "more; even more"
+       }
+      }
      },
      "grammar": {
       "before": "周太太：你怎么还喝咖啡？\n周明：怎么了？\n周太太：你不是说晚上睡不着觉吗？\n周明：没事，我只喝一杯。\n周太太：你还是喝杯牛奶吧，可以睡得更好些。\n周明：好吧，",
@@ -4143,7 +4503,21 @@
        "同事",
        "以前",
        "银行"
-      ]
+      ],
+      "tiles": {
+       "同事": {
+        "py": "tóngshì",
+        "en": "colleague"
+       },
+       "以前": {
+        "py": "yǐqián",
+        "en": "before; formerly"
+       },
+       "银行": {
+        "py": "yínháng",
+        "en": "bank"
+       }
+      }
      },
      "grammar": {
       "before": "同事：那个漂亮的新同事是谁？\n小刚：那是小丽。\n同事：她刚来北京吗？\n小刚：不，她",
@@ -4299,7 +4673,17 @@
       "answers": [
        "久",
        "感兴趣"
-      ]
+      ],
+      "tiles": {
+       "久": {
+        "py": "jiǔ",
+        "en": "long time"
+       },
+       "感兴趣": {
+        "py": "gǎn xìngqù",
+        "en": "to be interested in"
+       }
+      }
      },
      "grammar": {
       "before": "同事：周末你跟小丽去哪儿玩儿了？\n小刚：我们去唱歌了。\n同事：你们唱了多久？\n小刚：我们唱了两个小时歌，晚上还去听音乐会了。\n同事：你们都",
@@ -4459,7 +4843,17 @@
       "answers": [
        "结婚",
        "欢迎"
-      ]
+      ],
+      "tiles": {
+       "结婚": {
+        "py": "jiéhūn",
+        "en": "to get married"
+       },
+       "欢迎": {
+        "py": "huānyíng",
+        "en": "to welcome; welcome"
+       }
+      }
      },
      "grammar": {
       "before": "小刚：我跟小丽下个月结婚，到时候欢迎你来。\n同事：什么？结婚？\n小刚：对啊，突然吗？\n同事：你们不是刚认识吗？\n小刚：",
@@ -4636,7 +5030,29 @@
        "接",
        "刻",
        "差"
-      ]
+      ],
+      "tiles": {
+       "迟到": {
+        "py": "chídào",
+        "en": "to be late"
+       },
+       "半": {
+        "py": "bàn",
+        "en": "half"
+       },
+       "接": {
+        "py": "jiē",
+        "en": "to receive; to pick up"
+       },
+       "刻": {
+        "py": "kè",
+        "en": "quarter of an hour"
+       },
+       "差": {
+        "py": "chà",
+        "en": "to be short of; minus (time)"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：你看看手表，怎么迟到了？\n小刚：没迟到啊。\n小丽：你不是说七点半来接我吗？你迟到了一刻钟。\n小刚：现在不是七点半吗？\n小丽：",
@@ -4836,7 +5252,29 @@
        "电梯",
        "层",
        "害怕"
-      ]
+      ],
+      "tiles": {
+       "又": {
+        "py": "yòu",
+        "en": "again; also"
+       },
+       "满意": {
+        "py": "mǎnyì",
+        "en": "satisfied"
+       },
+       "电梯": {
+        "py": "diàntī",
+        "en": "elevator"
+       },
+       "层": {
+        "py": "céng",
+        "en": "floor; layer"
+       },
+       "害怕": {
+        "py": "hàipà",
+        "en": "afraid; scared"
+       }
+      }
      },
      "grammar": {
       "before": "同事：听说你最近打算买房子？\n小丽：是，昨天去看了看，",
@@ -5013,7 +5451,17 @@
       "answers": [
        "熊猫",
        "见面"
-      ]
+      ],
+      "tiles": {
+       "熊猫": {
+        "py": "xióngmāo",
+        "en": "panda"
+       },
+       "见面": {
+        "py": "jiànmiàn",
+        "en": "to meet"
+       }
+      }
      },
      "grammar": {
       "before": "小明：听说你下个星期就要回国了？\n马可：是啊，真不想离开北京。\n小明：我下星期不在北京，不能去机场送你了。\n马可：没关系，你忙吧。\n小明：这个小熊猫送给你，",
@@ -5208,7 +5656,29 @@
        "一会儿",
        "马上",
        "洗手间"
-      ]
+      ],
+      "tiles": {
+       "安静": {
+        "py": "ānjìng",
+        "en": "quiet"
+       },
+       "可乐": {
+        "py": "kělè",
+        "en": "cola"
+       },
+       "一会儿": {
+        "py": "yíhuìr",
+        "en": "a while; a moment"
+       },
+       "马上": {
+        "py": "mǎshàng",
+        "en": "right away; immediately"
+       },
+       "洗手间": {
+        "py": "xǐshǒujiān",
+        "en": "restroom; washroom"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：小刚，我们坐哪儿？\n小刚：",
@@ -5404,7 +5874,29 @@
        "变化",
        "健康",
        "重要"
-      ]
+      ],
+      "tiles": {
+       "老": {
+        "py": "lǎo",
+        "en": "old; aged"
+       },
+       "几乎": {
+        "py": "jīhū",
+        "en": "almost"
+       },
+       "变化": {
+        "py": "biànhuà",
+        "en": "change"
+       },
+       "健康": {
+        "py": "jiànkāng",
+        "en": "healthy; health"
+       },
+       "重要": {
+        "py": "zhòngyào",
+        "en": "important"
+       }
+      }
      },
      "grammar": {
       "before": "老同学：快五年了，你几乎没变化。\n周太太：谁说的？我胖了，以前的衣服都不能穿了。\n老同学：健康最重要，胖瘦没关系。\n周太太：是呀，",
@@ -5590,7 +6082,21 @@
        "中文",
        "班",
        "一样"
-      ]
+      ],
+      "tiles": {
+       "中文": {
+        "py": "Zhōngwén",
+        "en": "Chinese language"
+       },
+       "班": {
+        "py": "bān",
+        "en": "class; group"
+       },
+       "一样": {
+        "py": "yíyàng",
+        "en": "same; alike"
+       }
+      }
      },
      "grammar": {
       "before": "大山：马可，你的中文越说越好了！\n马可：哪里哪里，我们班李静说得更好。\n大山：怎么好？\n马可：她的汉语说得",
@@ -5760,7 +6266,21 @@
        "最后",
        "放心",
        "一定"
-      ]
+      ],
+      "tiles": {
+       "最后": {
+        "py": "zuìhòu",
+        "en": "last; finally"
+       },
+       "放心": {
+        "py": "fàngxīn",
+        "en": "to feel relieved; don't worry"
+       },
+       "一定": {
+        "py": "yídìng",
+        "en": "certainly; must"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：别吃了，你已经吃了三块蛋糕了。\n小刚：这是最后一块。\n小丽：你总是吃甜的东西，",
@@ -5933,7 +6453,29 @@
        "了解",
        "先",
        "中间"
-      ]
+      ],
+      "tiles": {
+       "担心": {
+        "py": "dānxīn",
+        "en": "to worry"
+       },
+       "比较": {
+        "py": "bǐjiào",
+        "en": "comparatively; to compare"
+       },
+       "了解": {
+        "py": "liǎojiě",
+        "en": "to understand; to know about"
+       },
+       "先": {
+        "py": "xiān",
+        "en": "first; before"
+       },
+       "中间": {
+        "py": "zhōngjiān",
+        "en": "middle; between"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：我有点儿害怕。\n小刚：怎么了？\n小丽：",
@@ -6098,7 +6640,17 @@
       "answers": [
        "参加",
        "影响"
-      ]
+      ],
+      "tiles": {
+       "参加": {
+        "py": "cānjiā",
+        "en": "to participate in"
+       },
+       "影响": {
+        "py": "yǐngxiǎng",
+        "en": "to influence; effect"
+       }
+      }
      },
      "grammar": {
       "before": "同学：小明，你的眼睛怎么跟大熊猫一样了？\n小明：我这几天脚疼，没休息好。\n同学：去医院了吗？医生说什么？\n小明：他让我多休息。",
@@ -6277,7 +6829,17 @@
       "answers": [
        "个子",
        "矮"
-      ]
+      ],
+      "tiles": {
+       "个子": {
+        "py": "gèzi",
+        "en": "height; stature"
+       },
+       "矮": {
+        "py": "ǎi",
+        "en": "short (height)"
+       }
+      }
      },
      "grammar": {
       "before": "朋友：大山，你和马可谁个子高？\n大山：",
@@ -6453,7 +7015,21 @@
        "历史",
        "体育",
        "数学"
-      ]
+      ],
+      "tiles": {
+       "历史": {
+        "py": "lìshǐ",
+        "en": "history"
+       },
+       "体育": {
+        "py": "tǐyù",
+        "en": "physical education; sports"
+       },
+       "数学": {
+        "py": "shùxué",
+        "en": "mathematics"
+       }
+      }
      },
      "grammar": {
       "before": "小明：我喜欢历史课、体育课，不喜欢数学课。\n同学：为什么？数学也很有意思啊。\n小明：我觉得",
@@ -6638,7 +7214,29 @@
        "骑",
        "旧",
        "换"
-      ]
+      ],
+      "tiles": {
+       "方便": {
+        "py": "fāngbiàn",
+        "en": "convenient"
+       },
+       "自行车": {
+        "py": "zìxíngchē",
+        "en": "bicycle"
+       },
+       "骑": {
+        "py": "qí",
+        "en": "to ride"
+       },
+       "旧": {
+        "py": "jiù",
+        "en": "old; used"
+       },
+       "换": {
+        "py": "huàn",
+        "en": "to change; to exchange"
+       }
+      }
      },
      "grammar": {
       "before": "同事：你最近比以前来得早多了，搬家了？\n小丽：是啊，你不知道？我上个月就搬家了，走路二十分钟就到。\n同事：那很方便啊。\n小丽：我还打算买辆自行车，",
@@ -6840,7 +7438,29 @@
        "主要",
        "环境",
        "附近"
-      ]
+      ],
+      "tiles": {
+       "地方": {
+        "py": "dìfang",
+        "en": "place"
+       },
+       "中介": {
+        "py": "zhōngjiè",
+        "en": "agent; intermediary"
+       },
+       "主要": {
+        "py": "zhǔyào",
+        "en": "main; mainly"
+       },
+       "环境": {
+        "py": "huánjìng",
+        "en": "environment; surroundings"
+       },
+       "附近": {
+        "py": "fùjìn",
+        "en": "nearby; vicinity"
+       }
+      }
      },
      "grammar": {
       "before": "大山：这两个地方的房子一样吗？\n中介：不一样。您看，",
@@ -7037,7 +7657,29 @@
        "词典",
        "还",
        "灯"
-      ]
+      ],
+      "tiles": {
+       "图书馆": {
+        "py": "túshūguǎn",
+        "en": "library"
+       },
+       "借": {
+        "py": "jiè",
+        "en": "to borrow; to lend"
+       },
+       "词典": {
+        "py": "cídiǎn",
+        "en": "dictionary"
+       },
+       "还": {
+        "py": "huán",
+        "en": "to return; to give back"
+       },
+       "灯": {
+        "py": "dēng",
+        "en": "lamp; light"
+       }
+      }
      },
      "grammar": {
       "before": "小明：我先走了。\n同学：你去哪儿？\n小明：我去图书馆借本书。\n同学：",
@@ -7209,7 +7851,29 @@
        "忘记",
        "空调",
        "地铁"
-      ]
+      ],
+      "tiles": {
+       "会议": {
+        "py": "huìyì",
+        "en": "meeting; conference"
+       },
+       "结束": {
+        "py": "jiéshù",
+        "en": "to end; to finish"
+       },
+       "忘记": {
+        "py": "wàngjì",
+        "en": "to forget"
+       },
+       "空调": {
+        "py": "kōngtiáo",
+        "en": "air conditioner"
+       },
+       "地铁": {
+        "py": "dìtiě",
+        "en": "subway"
+       }
+      }
      },
      "grammar": {
       "before": "周明：会议结束后，",
@@ -7367,7 +8031,25 @@
        "筷子",
        "啤酒",
        "瓶子"
-      ]
+      ],
+      "tiles": {
+       "双": {
+        "py": "shuāng",
+        "en": "pair; measure word for pairs"
+       },
+       "筷子": {
+        "py": "kuàizi",
+        "en": "chopsticks"
+       },
+       "啤酒": {
+        "py": "píjiǔ",
+        "en": "beer"
+       },
+       "瓶子": {
+        "py": "píngzi",
+        "en": "bottle"
+       }
+      }
      },
      "grammar": {
       "before": "妈妈：还差一双筷子，你去拿一下。\n儿子：今天怎么做了这么多菜？\n妈妈：今天是你爸爸的生日。\n儿子：真的啊？",
@@ -7512,7 +8194,21 @@
        "笔记本电脑",
        "电子邮件",
        "习惯"
-      ]
+      ],
+      "tiles": {
+       "笔记本电脑": {
+        "py": "bǐjìběn diànnǎo",
+        "en": "laptop"
+       },
+       "电子邮件": {
+        "py": "diànzǐ yóujiàn",
+        "en": "email"
+       },
+       "习惯": {
+        "py": "xíguàn",
+        "en": "habit; to be used to"
+       }
+      }
      },
      "grammar": {
       "before": "这个笔记本电脑我去年买的时候要",
@@ -7684,7 +8380,21 @@
        "太阳",
        "西",
        "生气"
-      ]
+      ],
+      "tiles": {
+       "太阳": {
+        "py": "tàiyáng",
+        "en": "sun"
+       },
+       "西": {
+        "py": "xī",
+        "en": "west"
+       },
+       "生气": {
+        "py": "shēngqì",
+        "en": "angry; to get angry"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：今天太阳从西边出来了吗？\n小刚：怎么了？\n小丽：你怎么这么早就要睡觉了？",
@@ -7860,7 +8570,21 @@
        "行李箱",
        "自己",
        "包"
-      ]
+      ],
+      "tiles": {
+       "行李箱": {
+        "py": "xínglixiāng",
+        "en": "suitcase"
+       },
+       "自己": {
+        "py": "zìjǐ",
+        "en": "oneself; self"
+       },
+       "包": {
+        "py": "bāo",
+        "en": "bag; package"
+       }
+      }
      },
      "grammar": {
       "before": "小刚：我要跟周经理去外地办事，明天的飞机。\n小丽：那我",
@@ -8054,7 +8778,25 @@
        "护照",
        "起飞",
        "司机"
-      ]
+      ],
+      "tiles": {
+       "发现": {
+        "py": "fāxiàn",
+        "en": "to discover; to find"
+       },
+       "护照": {
+        "py": "hùzhào",
+        "en": "passport"
+       },
+       "起飞": {
+        "py": "qǐfēi",
+        "en": "to take off (aircraft)"
+       },
+       "司机": {
+        "py": "sījī",
+        "en": "driver"
+       }
+      }
      },
      "grammar": {
       "before": "周明：你怎么才来？\n小刚：对不起，周经理，来机场的路上",
@@ -8206,7 +8948,25 @@
        "画",
        "需要",
        "黑板"
-      ]
+      ],
+      "tiles": {
+       "教": {
+        "py": "jiāo",
+        "en": "to teach"
+       },
+       "画": {
+        "py": "huà",
+        "en": "to draw; picture"
+       },
+       "需要": {
+        "py": "xūyào",
+        "en": "to need"
+       },
+       "黑板": {
+        "py": "hēibǎn",
+        "en": "blackboard"
+       }
+      }
      },
      "grammar": {
       "before": "我是一个中学老师，教学生画画儿。每次下课前，我都会",
@@ -8378,7 +9138,25 @@
        "爷爷",
        "礼物",
        "奶奶"
-      ]
+      ],
+      "tiles": {
+       "终于": {
+        "py": "zhōngyú",
+        "en": "finally"
+       },
+       "爷爷": {
+        "py": "yéye",
+        "en": "grandfather (paternal)"
+       },
+       "礼物": {
+        "py": "lǐwù",
+        "en": "gift; present"
+       },
+       "奶奶": {
+        "py": "nǎinai",
+        "en": "grandmother (paternal)"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：你终于回来了！",
@@ -8564,7 +9342,21 @@
        "遇到",
        "一边",
        "过去"
-      ]
+      ],
+      "tiles": {
+       "遇到": {
+        "py": "yùdào",
+        "en": "to meet; to run into"
+       },
+       "一边": {
+        "py": "yìbiān",
+        "en": "one side; while doing"
+       },
+       "过去": {
+        "py": "guòqù",
+        "en": "past; formerly; to go over"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：我今天看见你和一个女的进了咖啡店，她是谁啊？\n小刚：她是我今天在路上遇到的一个老同学。\n小丽：你们就一起去喝咖啡了？\n小刚：是啊，",
@@ -8774,7 +9566,29 @@
        "起来",
        "应该",
        "生活"
-      ]
+      ],
+      "tiles": {
+       "一般": {
+        "py": "yìbān",
+        "en": "generally; ordinary"
+       },
+       "愿意": {
+        "py": "yuànyì",
+        "en": "to be willing; would like"
+       },
+       "起来": {
+        "py": "qǐlai",
+        "en": "to get up; directional/result complement"
+       },
+       "应该": {
+        "py": "yīnggāi",
+        "en": "should; ought to"
+       },
+       "生活": {
+        "py": "shēnghuó",
+        "en": "life; to live"
+       }
+      }
      },
      "grammar": {
       "before": "同事：小丽，周末你一般跟小刚出去看电影吗？\n小丽：我很少去电影院看电影，我更愿意在家看电视。\n同事：看电视有什么意思啊？\n小丽：",
@@ -8935,7 +9749,21 @@
        "校长",
        "坏",
        "经常"
-      ]
+      ],
+      "tiles": {
+       "校长": {
+        "py": "xiàozhǎng",
+        "en": "school principal"
+       },
+       "坏": {
+        "py": "huài",
+        "en": "bad; broken"
+       },
+       "经常": {
+        "py": "jīngcháng",
+        "en": "often"
+       }
+      }
      },
      "grammar": {
       "before": "刚结婚的时候，我丈夫是中学老师，他喜欢每天早上起床后，",
@@ -9118,7 +9946,25 @@
        "干净",
        "然后",
        "冰箱"
-      ]
+      ],
+      "tiles": {
+       "打扫": {
+        "py": "dǎsǎo",
+        "en": "to clean; to sweep"
+       },
+       "干净": {
+        "py": "gānjìng",
+        "en": "clean"
+       },
+       "然后": {
+        "py": "ránhòu",
+        "en": "then; after that"
+       },
+       "冰箱": {
+        "py": "bīngxiāng",
+        "en": "refrigerator"
+       }
+      }
      },
      "grammar": {
       "before": "周太太：客人就要来了，你怎么还不打扫房间啊？\n周明：别着急，我让孩子们打扫呢，客人来的时候，他们会把房间打扫干净。\n周太太：那你也不能看电视啊。\n周明：你让我做什么？\n周太太：",
@@ -9305,7 +10151,17 @@
       "answers": [
        "澡",
        "节目"
-      ]
+      ],
+      "tiles": {
+       "澡": {
+        "py": "zǎo",
+        "en": "bath"
+       },
+       "节目": {
+        "py": "jiémù",
+        "en": "program; show"
+       }
+      }
      },
      "grammar": {
       "before": "同事：你在忙什么呢？刚才打你的手机你也不接。\n小刚：对不起，我刚洗了个澡，没听见。有什么事吗？\n同事：我想问问你公司里的一些事情。\n小刚：你先等一下，我去把电视关了。\n同事：没关系，你",
@@ -9499,7 +10355,29 @@
        "盘子",
        "刮风",
        "声音"
-      ]
+      ],
+      "tiles": {
+       "月亮": {
+        "py": "yuèliang",
+        "en": "moon"
+       },
+       "像": {
+        "py": "xiàng",
+        "en": "to resemble; like"
+       },
+       "盘子": {
+        "py": "pánzi",
+        "en": "plate"
+       },
+       "刮风": {
+        "py": "guāfēng",
+        "en": "to be windy"
+       },
+       "声音": {
+        "py": "shēngyīn",
+        "en": "sound; voice"
+       }
+      }
      },
      "grammar": {
       "before": "同学：今晚的月亮真漂亮，像白色的盘子一样。\n小明：是啊，外边也不刮风，我们坐在外边一边看月亮一边吃东西，怎么样？\n同学：好啊，我",
@@ -9670,7 +10548,21 @@
        "菜单",
        "简单",
        "香蕉"
-      ]
+      ],
+      "tiles": {
+       "菜单": {
+        "py": "càidān",
+        "en": "menu"
+       },
+       "简单": {
+        "py": "jiǎndān",
+        "en": "simple; easy"
+       },
+       "香蕉": {
+        "py": "xiāngjiāo",
+        "en": "banana"
+       }
+      }
      },
      "grammar": {
       "before": "你吃过水果饭吗？你在饭馆的菜单上见过水果饭吗？你想学着做水果饭吗？其实做水果饭很简单，",
@@ -9850,7 +10742,25 @@
        "水平",
        "提高",
        "句子"
-      ]
+      ],
+      "tiles": {
+       "留学": {
+        "py": "liúxué",
+        "en": "to study abroad"
+       },
+       "水平": {
+        "py": "shuǐpíng",
+        "en": "level; standard"
+       },
+       "提高": {
+        "py": "tígāo",
+        "en": "to improve; to raise"
+       },
+       "句子": {
+        "py": "jùzi",
+        "en": "sentence"
+       }
+      }
      },
      "grammar": {
       "before": "大山：老师，我来中国留学两年了，但是我的汉语水平提高得一点儿也不快啊。\n老师：你每天认真学习，做练习、完成作业，一直不错啊。\n大山：这是我昨天的作业，您帮我看看对不对。\n老师：写得不错，",
@@ -10042,7 +10952,17 @@
       "answers": [
        "要求",
        "注意"
-      ]
+      ],
+      "tiles": {
+       "要求": {
+        "py": "yāoqiú",
+        "en": "requirement; to require"
+       },
+       "注意": {
+        "py": "zhùyì",
+        "en": "to pay attention; be careful"
+       }
+      }
      },
      "grammar": {
       "before": "学生：老师，",
@@ -10226,7 +11146,25 @@
        "新闻",
        "花",
        "极了"
-      ]
+      ],
+      "tiles": {
+       "上网": {
+        "py": "shàngwǎng",
+        "en": "to go online"
+       },
+       "新闻": {
+        "py": "xīnwén",
+        "en": "news"
+       },
+       "花": {
+        "py": "huā",
+        "en": "flower"
+       },
+       "极了": {
+        "py": "jí le",
+        "en": "extremely"
+       }
+      }
      },
      "grammar": {
       "before": "同事：现在用电脑上网真方便啊！\n小刚：是啊，",
@@ -10402,7 +11340,29 @@
        "世界",
        "街道",
        "文化"
-      ]
+      ],
+      "tiles": {
+       "节日": {
+        "py": "jiérì",
+        "en": "festival; holiday"
+       },
+       "举行": {
+        "py": "jǔxíng",
+        "en": "to hold (an event)"
+       },
+       "世界": {
+        "py": "shìjiè",
+        "en": "world"
+       },
+       "街道": {
+        "py": "jiēdào",
+        "en": "street"
+       },
+       "文化": {
+        "py": "wénhuà",
+        "en": "culture"
+       }
+      }
      },
      "grammar": {
       "before": "",
@@ -10581,7 +11541,21 @@
        "城市",
        "如果",
        "认为"
-      ]
+      ],
+      "tiles": {
+       "城市": {
+        "py": "chéngshì",
+        "en": "city"
+       },
+       "如果": {
+        "py": "rúguǒ",
+        "en": "if"
+       },
+       "认为": {
+        "py": "rènwéi",
+        "en": "to think; to believe"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：我不喜欢一直住在同一个城市，想去其他城市看一看。\n周明：我年轻的时候也这么想，但是那时候没有钱，",
@@ -10785,7 +11759,29 @@
        "可爱",
        "公斤",
        "鼻子"
-      ]
+      ],
+      "tiles": {
+       "皮鞋": {
+        "py": "píxié",
+        "en": "leather shoes"
+       },
+       "帽子": {
+        "py": "màozi",
+        "en": "hat; cap"
+       },
+       "可爱": {
+        "py": "kě'ài",
+        "en": "cute; lovely"
+       },
+       "公斤": {
+        "py": "gōngjīn",
+        "en": "kilogram"
+       },
+       "鼻子": {
+        "py": "bízi",
+        "en": "nose"
+       }
+      }
      },
      "grammar": {
       "before": "同事：谢谢你们来看我女儿。你送的小皮鞋和小帽子真漂亮！\n小丽：别客气，你女儿长得",
@@ -10954,7 +11950,17 @@
       "answers": [
        "检查",
        "刷牙"
-      ]
+      ],
+      "tiles": {
+       "检查": {
+        "py": "jiǎnchá",
+        "en": "to check; to examine"
+       },
+       "刷牙": {
+        "py": "shuāyá",
+        "en": "to brush teeth"
+       }
+      }
      },
      "grammar": {
       "before": "小刚：我的牙还是很疼。\n同事：",
@@ -11082,7 +12088,21 @@
        "关系",
        "别人",
        "词语"
-      ]
+      ],
+      "tiles": {
+       "关系": {
+        "py": "guānxi",
+        "en": "relationship; relation"
+       },
+       "别人": {
+        "py": "biérén",
+        "en": "other people; others"
+       },
+       "词语": {
+        "py": "cíyǔ",
+        "en": "word; expression"
+       }
+      }
      },
      "grammar": {
       "before": "很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，",
@@ -11240,7 +12260,17 @@
       "answers": [
        "假",
        "一共"
-      ]
+      ],
+      "tiles": {
+       "假": {
+        "py": "jiǎ",
+        "en": "fake; false"
+       },
+       "一共": {
+        "py": "yígòng",
+        "en": "altogether; in total"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：周经理，下个星期我可以请几天假吗？\n周明：你有什么事？\n小丽：我的一个老朋友结婚，我跟他两年没见了。\n周明：",
@@ -11395,7 +12425,21 @@
        "邻居",
        "后来",
        "爱好"
-      ]
+      ],
+      "tiles": {
+       "邻居": {
+        "py": "línjū",
+        "en": "neighbor"
+       },
+       "后来": {
+        "py": "hòulái",
+        "en": "later; afterwards"
+       },
+       "爱好": {
+        "py": "àihào",
+        "en": "hobby; interest"
+       }
+      }
      },
      "grammar": {
       "before": "同事：小丽，那个高高的男人是你们公司的吗？你对他了解吗？\n小丽：我们过去是邻居，后来是大学同学，关系一直很不错。\n同事：他一般喜欢做什么？\n小丽：他有很多爱好，唱歌、画画儿、踢足球，什么都会。\n同事：真的？那你介绍我们",
@@ -11580,7 +12624,25 @@
        "饱",
        "为了",
        "决定"
-      ]
+      ],
+      "tiles": {
+       "办法": {
+        "py": "bànfǎ",
+        "en": "way; method"
+       },
+       "饱": {
+        "py": "bǎo",
+        "en": "full (after eating)"
+       },
+       "为了": {
+        "py": "wèile",
+        "en": "in order to; for"
+       },
+       "决定": {
+        "py": "juédìng",
+        "en": "to decide; decision"
+       }
+      }
      },
      "grammar": {
       "before": "周太太：最近我觉得",
@@ -11763,7 +12825,33 @@
        "根据",
        "情况",
        "渴"
-      ]
+      ],
+      "tiles": {
+       "选择": {
+        "py": "xuǎnzé",
+        "en": "to choose; choice"
+       },
+       "冬天": {
+        "py": "dōngtiān",
+        "en": "winter"
+       },
+       "必须": {
+        "py": "bìxū",
+        "en": "must; have to"
+       },
+       "根据": {
+        "py": "gēnjù",
+        "en": "according to; based on"
+       },
+       "情况": {
+        "py": "qíngkuàng",
+        "en": "situation; condition"
+       },
+       "渴": {
+        "py": "kě",
+        "en": "thirsty"
+       }
+      }
      },
      "grammar": {
       "before": "“运动很重要”",
@@ -11952,7 +13040,17 @@
       "answers": [
        "向",
        "万"
-      ]
+      ],
+      "tiles": {
+       "向": {
+        "py": "xiàng",
+        "en": "toward; to"
+       },
+       "万": {
+        "py": "wàn",
+        "en": "ten thousand"
+       }
+      }
      },
      "grammar": {
       "before": "朋友：老周，我打算买房子了，想向你借点儿钱。\n周明：没问题，",
@@ -12138,7 +13236,25 @@
        "嘴",
        "动物",
        "段"
-      ]
+      ],
+      "tiles": {
+       "只": {
+        "py": "zhǐ",
+        "en": "only; just"
+       },
+       "嘴": {
+        "py": "zuǐ",
+        "en": "mouth"
+       },
+       "动物": {
+        "py": "dòngwù",
+        "en": "animal"
+       },
+       "段": {
+        "py": "duàn",
+        "en": "section; period; stretch (measure word)"
+       }
+      }
      },
      "grammar": {
       "before": "小明：妈妈，你看那只狗多可爱，眼睛大大的，嘴小小的，我们买回去吧。\n妈妈：动物和小孩儿一样，都需要人照顾。买回家去，谁照顾它啊？\n小明：我照顾啊。\n妈妈：这段时间你自己的衣服都没洗，你能照顾好它吗？\n小明：",
@@ -12339,7 +13455,29 @@
        "相信",
        "关于",
        "机会"
-      ]
+      ],
+      "tiles": {
+       "有名": {
+        "py": "yǒumíng",
+        "en": "famous"
+       },
+       "同意": {
+        "py": "tóngyì",
+        "en": "to agree"
+       },
+       "相信": {
+        "py": "xiāngxìn",
+        "en": "to believe; to trust"
+       },
+       "关于": {
+        "py": "guānyú",
+        "en": "about; regarding"
+       },
+       "机会": {
+        "py": "jīhuì",
+        "en": "opportunity; chance"
+       }
+      }
      },
      "grammar": {
       "before": "经理：说说你为什么选择来我们公司工作。\n学生：贵公司不但很有名，而且工作环境好。\n经理：做这个工作有点儿累，需要经常去外地。你家人同意吗？\n学生：只要我愿意，我相信他们就会同意的。\n经理：好，那你明天来上班吧。",
@@ -12505,7 +13643,25 @@
        "种",
        "特点",
        "奇怪"
-      ]
+      ],
+      "tiles": {
+       "国家": {
+        "py": "guójiā",
+        "en": "country"
+       },
+       "种": {
+        "py": "zhǒng",
+        "en": "kind; type (measure word)"
+       },
+       "特点": {
+        "py": "tèdiǎn",
+        "en": "feature; characteristic"
+       },
+       "奇怪": {
+        "py": "qíguài",
+        "en": "strange; odd"
+       }
+      }
      },
      "grammar": {
       "before": "不同的国家有不同的文化，每种文化都有自己的特点。到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是",
@@ -12663,7 +13819,21 @@
        "耳朵",
        "脸",
        "短"
-      ]
+      ],
+      "tiles": {
+       "耳朵": {
+        "py": "ěrduo",
+        "en": "ear; ears"
+       },
+       "脸": {
+        "py": "liǎn",
+        "en": "face"
+       },
+       "短": {
+        "py": "duǎn",
+        "en": "short"
+       }
+      }
      },
      "grammar": {
       "before": "爸爸：女儿最近喜欢把头发放在耳朵后面，你知道为什么吗？\n妈妈：这样可以使她的脸看上去漂亮一些。\n爸爸：我最近觉得她和以前不太一样了。\n妈妈：女儿变化不小，她小时候喜欢短头发，像男孩子一样。\n爸爸：",
@@ -12847,7 +14017,25 @@
        "张",
        "位",
        "蓝"
-      ]
+      ],
+      "tiles": {
+       "马": {
+        "py": "mǎ",
+        "en": "horse"
+       },
+       "张": {
+        "py": "zhāng",
+        "en": "measure word for flat objects"
+       },
+       "位": {
+        "py": "wèi",
+        "en": "polite measure word for people"
+       },
+       "蓝": {
+        "py": "lán",
+        "en": "blue"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：上次我们参加骑马比赛的照片，我选了几张洗出来了。\n同事：快给我看看。骑得最快的这位是谁？\n小丽：",
@@ -13055,7 +14243,25 @@
        "过",
        "鸟",
        "哭"
-      ]
+      ],
+      "tiles": {
+       "秋天": {
+        "py": "qiūtiān",
+        "en": "autumn; fall"
+       },
+       "过": {
+        "py": "guò",
+        "en": "to spend; to pass; experiential particle"
+       },
+       "鸟": {
+        "py": "niǎo",
+        "en": "bird"
+       },
+       "哭": {
+        "py": "kū",
+        "en": "to cry"
+       }
+      }
      },
      "grammar": {
       "before": "朋友：我们一年没见面了吧？\n小丽：听说你都有女儿了？她多大了？\n朋友：她去年秋天出生的，刚过完一岁生日。\n小丽：她喜欢什么？我送给她。\n朋友：她就喜欢听她爸爸学鸟叫。哭的时候，只要他爸爸学小鸟叫，",
@@ -13214,7 +14420,21 @@
        "黄河",
        "船",
        "经过"
-      ]
+      ],
+      "tiles": {
+       "黄河": {
+        "py": "Huáng Hé",
+        "en": "Yellow River"
+       },
+       "船": {
+        "py": "chuán",
+        "en": "boat; ship"
+       },
+       "经过": {
+        "py": "jīngguò",
+        "en": "to pass by; through"
+       }
+      }
      },
      "grammar": {
       "before": "这次旅游，我去了不少地方，每个地方都让我非常难忘。我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。一路上经过了很多地方，每个地方都不一样。我想快点儿把照片发给大家，",
@@ -13386,7 +14606,29 @@
        "难过",
        "东",
        "信用卡"
-      ]
+      ],
+      "tiles": {
+       "照相机": {
+        "py": "zhàoxiàngjī",
+        "en": "camera"
+       },
+       "被": {
+        "py": "bèi",
+        "en": "passive marker; by"
+       },
+       "难过": {
+        "py": "nánguò",
+        "en": "sad; upset"
+       },
+       "东": {
+        "py": "dōng",
+        "en": "east"
+       },
+       "信用卡": {
+        "py": "xìnyòngkǎ",
+        "en": "credit card"
+       }
+      }
      },
      "grammar": {
       "before": "小丽：",
@@ -13555,7 +14797,17 @@
       "answers": [
        "关心",
        "成绩"
-      ]
+      ],
+      "tiles": {
+       "关心": {
+        "py": "guānxīn",
+        "en": "to care about; be concerned about"
+       },
+       "成绩": {
+        "py": "chéngjì",
+        "en": "grade; result; achievement"
+       }
+      }
      },
      "grammar": {
       "before": "小明：你怎么突然关心起体育来了？\n朋友：我的男朋友喜欢看足球比赛，我被他影响的。\n小明：看来",
@@ -13734,7 +14986,17 @@
       "answers": [
        "碗",
        "分"
-      ]
+      ],
+      "tiles": {
+       "碗": {
+        "py": "wǎn",
+        "en": "bowl"
+       },
+       "分": {
+        "py": "fēn",
+        "en": "minute"
+       }
+      }
      },
      "grammar": {
       "before": "朋友：那个拿着碗吃饭的人是你哥哥吗？他和你长得真像。\n大卫：",
@@ -13903,7 +15165,25 @@
        "试",
        "真正",
        "多么"
-      ]
+      ],
+      "tiles": {
+       "解决": {
+        "py": "jiějué",
+        "en": "to solve; to resolve"
+       },
+       "试": {
+        "py": "shì",
+        "en": "to try"
+       },
+       "真正": {
+        "py": "zhēnzhèng",
+        "en": "real; truly"
+       },
+       "多么": {
+        "py": "duōme",
+        "en": "how; what (exclamation)"
+       }
+      }
      },
      "grammar": {
       "before": "年轻人遇到难题，常常很着急，不知道怎么办。其实，不同的问题有不同的解决办法。有些问题看上去很难，但是做起来非常简单，所以得试着做做。有些问题看上去虽然简单，但是解决起来难极了。所以",

@@ -69,7 +69,17 @@
       "answers": [
        "姐姐",
        "接"
-      ]
+      ],
+      "tiles": {
+       "姐姐": {
+        "py": "jiějie",
+        "en": "older sister"
+       },
+       "接": {
+        "py": "jiē",
+        "en": "to receive; to pick up"
+       }
+      }
      },
      "grammar": {
       "before": "白家月：请问，您是王一飞老师的姐姐吗？\n王一雪：是的，",
@@ -226,7 +236,17 @@
       "answers": [
        "第一次",
        "旅游"
-      ]
+      ],
+      "tiles": {
+       "第一次": {
+        "py": "dì-yī cì",
+        "en": "the first time"
+       },
+       "旅游": {
+        "py": "lǚyóu",
+        "en": "to travel; make a tour"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：你们是第一次来北京吗？\n白家月：是的，我们都是第一次来。\n王一雪：",
@@ -394,7 +414,21 @@
        "帮个忙",
        "不好意思",
        "已经"
-      ]
+      ],
+      "tiles": {
+       "帮个忙": {
+        "py": "bāng ge máng",
+        "en": "to do (sb) a favor"
+       },
+       "不好意思": {
+        "py": "bù hǎoyìsi",
+        "en": "to feel embarrassed; excuse me"
+       },
+       "已经": {
+        "py": "yǐjīng",
+        "en": "already"
+       }
+      }
      },
      "grammar": {
       "before": "陈天中：喂，家月，你明天有时间吗？",
@@ -553,7 +587,25 @@
        "有时",
        "懂",
        "意思"
-      ]
+      ],
+      "tiles": {
+       "介绍": {
+        "py": "jièshào",
+        "en": "to introduce"
+       },
+       "有时": {
+        "py": "yǒushí",
+        "en": "sometimes"
+       },
+       "懂": {
+        "py": "dǒng",
+        "en": "to understand; know"
+       },
+       "意思": {
+        "py": "yìsi",
+        "en": "meaning; idea"
+       }
+      }
      },
      "grammar": {
       "before": "王老师，我们已经到北京了，",
@@ -692,7 +744,21 @@
        "公交车",
        "车站",
        "打车"
-      ]
+      ],
+      "tiles": {
+       "公交车": {
+        "py": "gōngjiāochē",
+        "en": "bus"
+       },
+       "车站": {
+        "py": "chēzhàn",
+        "en": "station; bus stop"
+       },
+       "打车": {
+        "py": "dǎchē",
+        "en": "to take/hail a taxi"
+       }
+      }
      },
      "grammar": {
       "before": "白家月：请问，这儿有到北京大学的公交车吗？\n服务员：有，但车站有点儿远。\n白家月：这儿好打车吗？\n服务员：好打车。\n白家月：谢谢。安妮，",
@@ -859,7 +925,29 @@
        "网上",
        "外国",
        "教室"
-      ]
+      ],
+      "tiles": {
+       "万": {
+        "py": "wàn",
+        "en": "ten thousand"
+       },
+       "名": {
+        "py": "míng",
+        "en": "measure word for people; name"
+       },
+       "网上": {
+        "py": "wǎngshàng",
+        "en": "online"
+       },
+       "外国": {
+        "py": "wàiguó",
+        "en": "foreign country"
+       },
+       "教室": {
+        "py": "jiàoshì",
+        "en": "classroom"
+       }
+      }
      },
      "grammar": {
       "before": "安妮：学校里人真多啊！\n白家月：是啊，北京大学有",
@@ -1043,7 +1131,25 @@
        "电影票",
        "便宜",
        "本身"
-      ]
+      ],
+      "tiles": {
+       "电影院": {
+        "py": "diànyǐngyuàn",
+        "en": "cinema"
+       },
+       "电影票": {
+        "py": "diànyǐngpiào",
+        "en": "movie ticket"
+       },
+       "便宜": {
+        "py": "piányi",
+        "en": "cheap"
+       },
+       "本身": {
+        "py": "běnshēn",
+        "en": "itself; oneself"
+       }
+      }
      },
      "grammar": {
       "before": "安妮：家月，你看，学校里有家电影院！\n白家月：是啊，电影院还不小。\n安妮：",
@@ -1187,7 +1293,21 @@
        "漂亮",
        "电影院",
        "电影票"
-      ]
+      ],
+      "tiles": {
+       "漂亮": {
+        "py": "piàoliang",
+        "en": "beautiful; pretty"
+       },
+       "电影院": {
+        "py": "diànyǐngyuàn",
+        "en": "cinema"
+       },
+       "电影票": {
+        "py": "diànyǐngpiào",
+        "en": "movie ticket"
+       }
+      }
      },
      "grammar": {
       "before": "北京大学很大，",
@@ -1312,7 +1432,21 @@
        "回来",
        "下班",
        "休息"
-      ]
+      ],
+      "tiles": {
+       "回来": {
+        "py": "huílai",
+        "en": "to come back; return"
+       },
+       "下班": {
+        "py": "xiàbān",
+        "en": "to finish work"
+       },
+       "休息": {
+        "py": "xiūxi",
+        "en": "to rest"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：今天回来这么晚啊！\n刘明：工作太多了，下班的时候",
@@ -1450,7 +1584,21 @@
        "旅游",
        "一起",
        "出去"
-      ]
+      ],
+      "tiles": {
+       "旅游": {
+        "py": "lǚyóu",
+        "en": "to travel; make a tour"
+       },
+       "一起": {
+        "py": "yìqǐ",
+        "en": "together"
+       },
+       "出去": {
+        "py": "chūqù",
+        "en": "to go out"
+       }
+      }
      },
      "grammar": {
       "before": "刘明：我们找个时间去旅游，怎么样？\n王一雪：好啊，我也很想一起出去玩儿。\n刘明：你想去哪儿？\n王一雪：我还没想好呢。\n刘明：那你",
@@ -1612,7 +1760,29 @@
        "拿",
        "介绍",
        "不错"
-      ]
+      ],
+      "tiles": {
+       "洗": {
+        "py": "xǐ",
+        "en": "to wash"
+       },
+       "自己": {
+        "py": "zìjǐ",
+        "en": "oneself; self"
+       },
+       "拿": {
+        "py": "ná",
+        "en": "to take; to hold"
+       },
+       "介绍": {
+        "py": "jièshào",
+        "en": "to introduce"
+       },
+       "不错": {
+        "py": "búcuò",
+        "en": "not bad; pretty good"
+       }
+      }
      },
      "grammar": {
       "before": "刘明：吃个苹果吧，我都洗好了。\n王一雪：好的。\n刘明：就在桌子上，你自己拿。\n王一雪：",
@@ -1751,7 +1921,21 @@
        "开车",
        "医院",
        "累"
-      ]
+      ],
+      "tiles": {
+       "开车": {
+        "py": "kāichē",
+        "en": "to drive"
+       },
+       "医院": {
+        "py": "yīyuàn",
+        "en": "hospital"
+       },
+       "累": {
+        "py": "lèi",
+        "en": "tired; weary"
+       }
+      }
      },
      "grammar": {
       "before": "早上，刘明开车送孩子去学校，送完孩子回家后，医院就来电话了，让他回去上班。我觉得他这个月每天都很累，真想让他",
@@ -1885,7 +2069,21 @@
        "商场",
        "进去",
        "裤子"
-      ]
+      ],
+      "tiles": {
+       "商场": {
+        "py": "shāngchǎng",
+        "en": "shopping mall; department store"
+       },
+       "进去": {
+        "py": "jìnqù",
+        "en": "to go in"
+       },
+       "裤子": {
+        "py": "kùzi",
+        "en": "pants; trousers"
+       }
+      }
      },
      "grammar": {
       "before": "刘小雪：妈妈，我们",
@@ -2038,7 +2236,25 @@
        "因为",
        "试试",
        "红色"
-      ]
+      ],
+      "tiles": {
+       "白色": {
+        "py": "báisè",
+        "en": "white"
+       },
+       "因为": {
+        "py": "yīnwèi",
+        "en": "because"
+       },
+       "试试": {
+        "py": "shìshi",
+        "en": "to try (out)"
+       },
+       "红色": {
+        "py": "hóngsè",
+        "en": "red"
+       }
+      }
      },
      "grammar": {
       "before": "刘小雪：妈妈，我想买这条白色的裤子。\n王一雪：你有很多白色的衣服，为什么还买白色的？\n刘小雪：因为我喜欢白色的呀！\n王一雪：我觉得这条白色的不太好看，你试试那条红色的吧。\n刘小雪：我没穿过红色的裤子，您觉得我穿红色的好看吗？\n王一雪：",
@@ -2235,7 +2451,25 @@
        "过去",
        "绿色",
        "更"
-      ]
+      ],
+      "tiles": {
+       "书包": {
+        "py": "shūbāo",
+        "en": "schoolbag"
+       },
+       "过去": {
+        "py": "guòqù",
+        "en": "past; formerly; to go over"
+       },
+       "绿色": {
+        "py": "lǜsè",
+        "en": "green"
+       },
+       "更": {
+        "py": "gèng",
+        "en": "more; even more"
+       }
+      }
      },
      "grammar": {
       "before": "刘小雪：妈妈，我想买个新书包。\n王一雪：好，那边有",
@@ -2370,7 +2604,21 @@
        "商场",
        "便宜",
        "颜色"
-      ]
+      ],
+      "tiles": {
+       "商场": {
+        "py": "shāngchǎng",
+        "en": "shopping mall; department store"
+       },
+       "便宜": {
+        "py": "piányi",
+        "en": "cheap"
+       },
+       "颜色": {
+        "py": "yánsè",
+        "en": "color"
+       }
+      }
      },
      "grammar": {
       "before": "我和妈妈去了一家商场。因为是新开的，所以这几天东西很便宜。商场里的衣服颜色很多。我",
@@ -2519,7 +2767,25 @@
        "上来",
        "下面",
        "等"
-      ]
+      ],
+      "tiles": {
+       "下来": {
+        "py": "xiàlái",
+        "en": "to come down"
+       },
+       "上来": {
+        "py": "shànglái",
+        "en": "to come up"
+       },
+       "下面": {
+        "py": "xiàmiàn",
+        "en": "below; under"
+       },
+       "等": {
+        "py": "děng",
+        "en": "to wait for"
+       }
+      }
      },
      "grammar": {
       "before": "安妮：家月，",
@@ -2703,7 +2969,25 @@
        "介绍",
        "礼物",
        "准备"
-      ]
+      ],
+      "tiles": {
+       "进来": {
+        "py": "jìnlái",
+        "en": "to come in"
+       },
+       "介绍": {
+        "py": "jièshào",
+        "en": "to introduce"
+       },
+       "礼物": {
+        "py": "lǐwù",
+        "en": "gift; present"
+       },
+       "准备": {
+        "py": "zhǔnbèi",
+        "en": "to prepare"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：家月、安妮，",
@@ -2892,7 +3176,21 @@
        "奶茶",
        "好喝",
        "商场"
-      ]
+      ],
+      "tiles": {
+       "奶茶": {
+        "py": "nǎichá",
+        "en": "bubble tea"
+       },
+       "好喝": {
+        "py": "hǎohē",
+        "en": "tasty; good to drink"
+       },
+       "商场": {
+        "py": "shāngchǎng",
+        "en": "shopping mall; department store"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：",
@@ -3058,7 +3356,21 @@
        "回国",
        "奶茶",
        "酒店"
-      ]
+      ],
+      "tiles": {
+       "回国": {
+        "py": "huíguó",
+        "en": "to return to one's home country"
+       },
+       "奶茶": {
+        "py": "nǎichá",
+        "en": "bubble tea"
+       },
+       "酒店": {
+        "py": "jiǔdiàn",
+        "en": "hotel"
+       }
+      }
      },
      "grammar": {
       "before": "回国前一天，我们去一雪姐家了。到她家的时候，",
@@ -3212,7 +3524,29 @@
        "画画",
        "画笔",
        "蛋糕"
-      ]
+      ],
+      "tiles": {
+       "生日": {
+        "py": "shēngrì",
+        "en": "birthday"
+       },
+       "忘": {
+        "py": "wàng",
+        "en": "to forget"
+       },
+       "画画": {
+        "py": "huà huà",
+        "en": "to draw; to paint"
+       },
+       "画笔": {
+        "py": "huàbǐ",
+        "en": "paintbrush; colored pen"
+       },
+       "蛋糕": {
+        "py": "dàngāo",
+        "en": "cake"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：明天就是女儿的生日了。\n刘明：你不说，我还真忘了。我们给她准备个什么礼物呢？\n王一雪：她喜欢画画，你觉得画笔怎么样？\n刘明：就送画笔吧！\n王一雪：那我明天上午就去买。\n刘明：好！我再给她买个",
@@ -3401,7 +3735,25 @@
        "打开",
        "画笔",
        "弟弟"
-      ]
+      ],
+      "tiles": {
+       "生日": {
+        "py": "shēngrì",
+        "en": "birthday"
+       },
+       "打开": {
+        "py": "dǎkāi",
+        "en": "to open"
+       },
+       "画笔": {
+        "py": "huàbǐ",
+        "en": "paintbrush; colored pen"
+       },
+       "弟弟": {
+        "py": "dìdi",
+        "en": "younger brother"
+       }
+      }
      },
      "grammar": {
       "before": "刘明：小雪，生日快乐！\n刘小明：姐姐，生日快乐！\n王一雪：小雪，这是爸爸、妈妈送你的礼物。\n刘明：你打开看看喜欢不喜欢。\n刘小雪：画笔！我很喜欢！\n王一雪：你想画什么？\n刘小雪：画我们的家！有爸爸、妈妈、弟弟，还有黑色的狗、",
@@ -3606,7 +3958,25 @@
        "蛋糕",
        "肉",
        "弟弟"
-      ]
+      ],
+      "tiles": {
+       "面条儿": {
+        "py": "miàntiáor",
+        "en": "noodles"
+       },
+       "蛋糕": {
+        "py": "dàngāo",
+        "en": "cake"
+       },
+       "肉": {
+        "py": "ròu",
+        "en": "meat"
+       },
+       "弟弟": {
+        "py": "dìdi",
+        "en": "younger brother"
+       }
+      }
      },
      "grammar": {
       "before": "刘明：小雪，看看今天有什么好吃的。\n刘小雪：长长的面条儿，大大的蛋糕。\n刘明：你看，还有鱼啊肉啊什么的，都是你喜欢吃的。\n刘小雪：谢谢爸爸、妈妈！\n王一雪：快去叫弟弟过来吃饭吧，吃完饭我们还要出去玩呢。\n刘小雪：生日真好啊！\n王一雪：是的，过生日就要吃好吃的，还要",
@@ -3766,7 +4136,21 @@
        "舒服",
        "起床",
        "快乐"
-      ]
+      ],
+      "tiles": {
+       "舒服": {
+        "py": "shūfu",
+        "en": "comfortable; well"
+       },
+       "起床": {
+        "py": "qǐchuáng",
+        "en": "to get up"
+       },
+       "快乐": {
+        "py": "kuàilè",
+        "en": "happy"
+       }
+      }
      },
      "grammar": {
       "before": "今天是女儿的生日。我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。吃完晚饭，一家人去看了个电影。回家后，孩子们早早地就上床了。明天不上学，他们说要",
@@ -3928,7 +4312,21 @@
        "回来",
        "往外",
        "打篮球"
-      ]
+      ],
+      "tiles": {
+       "回来": {
+        "py": "huílai",
+        "en": "to come back; return"
+       },
+       "往外": {
+        "py": "wǎng wài",
+        "en": "outward; toward the outside"
+       },
+       "打篮球": {
+        "py": "dǎ lánqiú",
+        "en": "to play basketball"
+       }
+      }
      },
      "grammar": {
       "before": "陈天中：安妮，你是什么时候从北京回来的？\n安妮：昨天下午。天中，你怎么",
@@ -4078,7 +4476,17 @@
       "answers": [
        "运动",
        "踢足球"
-      ]
+      ],
+      "tiles": {
+       "运动": {
+        "py": "yùndòng",
+        "en": "sport; to exercise"
+       },
+       "踢足球": {
+        "py": "tī zúqiú",
+        "en": "to play football/soccer"
+       }
+      }
      },
      "grammar": {
       "before": "安妮：天中，你是不是很喜欢打篮球？\n陈天中：没错。\n安妮：你还喜欢什么运动？\n陈天中：我还喜欢踢足球，一到星期天就跟朋友们一起踢。\n安妮：",
@@ -4236,7 +4644,21 @@
        "篮球",
        "跑步",
        "游泳"
-      ]
+      ],
+      "tiles": {
+       "篮球": {
+        "py": "lánqiú",
+        "en": "basketball"
+       },
+       "跑步": {
+        "py": "pǎobù",
+        "en": "to run; jog"
+       },
+       "游泳": {
+        "py": "yóuyǒng",
+        "en": "to swim"
+       }
+      }
      },
      "grammar": {
       "before": "陈天中：",
@@ -4373,7 +4795,25 @@
        "运动",
        "足球",
        "游泳"
-      ]
+      ],
+      "tiles": {
+       "爱好": {
+        "py": "àihào",
+        "en": "hobby; interest"
+       },
+       "运动": {
+        "py": "yùndòng",
+        "en": "sport; to exercise"
+       },
+       "足球": {
+        "py": "zúqiú",
+        "en": "football; soccer"
+       },
+       "游泳": {
+        "py": "yóuyǒng",
+        "en": "to swim"
+       }
+      }
      },
      "grammar": {
       "before": "我的爱好是运动。从上小学开始，我每天都跟爸爸去运动。现在我篮球打得很好，足球踢得不错，",
@@ -4521,7 +4961,25 @@
        "左边",
        "右边",
        "便宜"
-      ]
+      ],
+      "tiles": {
+       "手表": {
+        "py": "shǒubiǎo",
+        "en": "wristwatch"
+       },
+       "左边": {
+        "py": "zuǒbian",
+        "en": "left side"
+       },
+       "右边": {
+        "py": "yòubian",
+        "en": "right side"
+       },
+       "便宜": {
+        "py": "piányi",
+        "en": "cheap"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：你看，这两块手表怎么样？\n刘明：都不错！\n王一雪：我喜欢左边这个。\n刘明：我也觉得",
@@ -4687,7 +5145,25 @@
        "爱情片",
        "网上",
        "便宜"
-      ]
+      ],
+      "tiles": {
+       "电影": {
+        "py": "diànyǐng",
+        "en": "movie; film"
+       },
+       "爱情片": {
+        "py": "àiqíngpiàn",
+        "en": "romantic movie"
+       },
+       "网上": {
+        "py": "wǎngshàng",
+        "en": "online"
+       },
+       "便宜": {
+        "py": "piányi",
+        "en": "cheap"
+       }
+      }
      },
      "grammar": {
       "before": "刘明：今天有不少电影，我们看个电影吧。\n王一雪：好啊！我们看哪个？\n刘明：我记得你喜欢看爱情片，我们看那个爱情片，怎么样？\n王一雪：还是看这个吧，我看网上说",
@@ -4883,7 +5359,25 @@
        "生日",
        "快乐",
        "手表"
-      ]
+      ],
+      "tiles": {
+       "菜": {
+        "py": "cài",
+        "en": "dish; vegetable"
+       },
+       "生日": {
+        "py": "shēngrì",
+        "en": "birthday"
+       },
+       "快乐": {
+        "py": "kuàilè",
+        "en": "happy"
+       },
+       "手表": {
+        "py": "shǒubiǎo",
+        "en": "wristwatch"
+       }
+      }
      },
      "grammar": {
       "before": "刘明：您好！就要这几个菜吧，谢谢！\n王一雪：怎么点这么多菜？\n刘明：你想想，今天是几月几号？\n王一雪：8月27号。啊！我的生日！\n刘明：生日快乐！虽然你忘了，但是我记得。看看这是什么？\n王一雪：手表！吃饭、看电影、买手表，今天花了不少钱吧？\n刘明：",
@@ -5059,7 +5553,25 @@
        "丈夫",
        "饭馆",
        "电影院"
-      ]
+      ],
+      "tiles": {
+       "妻子": {
+        "py": "qīzi",
+        "en": "wife"
+       },
+       "丈夫": {
+        "py": "zhàngfu",
+        "en": "husband"
+       },
+       "饭馆": {
+        "py": "fànguǎn",
+        "en": "restaurant"
+       },
+       "电影院": {
+        "py": "diànyǐngyuàn",
+        "en": "cinema"
+       }
+      }
      },
      "grammar": {
       "before": "",
@@ -5209,7 +5721,21 @@
        "裤子",
        "旁边",
        "个子"
-      ]
+      ],
+      "tiles": {
+       "裤子": {
+        "py": "kùzi",
+        "en": "pants; trousers"
+       },
+       "旁边": {
+        "py": "pángbiān",
+        "en": "beside; next to"
+       },
+       "个子": {
+        "py": "gèzi",
+        "en": "height; stature"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：儿子的裤子坏了，我们给他买条新的吧。\n刘明：好。\n王一雪：你看这条黑色的怎么样？\n刘明：没有你上次买的那条好看。\n王一雪：旁边那个男孩儿就穿了这样的裤子，我觉得很好看啊！\n刘明：儿子的个子",
@@ -5400,7 +5926,21 @@
        "奶茶店",
        "咖啡店",
        "远"
-      ]
+      ],
+      "tiles": {
+       "奶茶店": {
+        "py": "nǎichádiàn",
+        "en": "milk tea shop"
+       },
+       "咖啡店": {
+        "py": "kāfēidiàn",
+        "en": "coffee shop"
+       },
+       "远": {
+        "py": "yuǎn",
+        "en": "far away"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：门口有家奶茶店。你想喝杯奶茶吗？\n刘明：我想喝咖啡，我们去咖啡店吧。\n王一雪：",
@@ -5588,7 +6128,25 @@
        "走路",
        "小时",
        "运动"
-      ]
+      ],
+      "tiles": {
+       "打车": {
+        "py": "dǎchē",
+        "en": "to take/hail a taxi"
+       },
+       "走路": {
+        "py": "zǒulù",
+        "en": "to walk"
+       },
+       "小时": {
+        "py": "xiǎoshí",
+        "en": "hour"
+       },
+       "运动": {
+        "py": "yùndòng",
+        "en": "sport; to exercise"
+       }
+      }
      },
      "grammar": {
       "before": "刘明：我们打车回去吧。\n王一雪：这里离家很近，还是走路吧。\n刘明：要走多长时间？\n王一雪：",
@@ -5710,7 +6268,21 @@
        "商店",
        "咖啡店",
        "运动"
-      ]
+      ],
+      "tiles": {
+       "商店": {
+        "py": "shāngdiàn",
+        "en": "shop; store"
+       },
+       "咖啡店": {
+        "py": "kāfēidiàn",
+        "en": "coffee shop"
+       },
+       "运动": {
+        "py": "yùndòng",
+        "en": "sport; to exercise"
+       }
+      }
      },
      "grammar": {
       "before": "这周刘明休息，我下班后跟他去了一家商店。",
@@ -5887,7 +6459,25 @@
        "书包",
        "床",
        "桌子"
-      ]
+      ],
+      "tiles": {
+       "开学": {
+        "py": "kāixué",
+        "en": "school begins"
+       },
+       "书包": {
+        "py": "shūbāo",
+        "en": "schoolbag"
+       },
+       "床": {
+        "py": "chuáng",
+        "en": "bed"
+       },
+       "桌子": {
+        "py": "zhuōzi",
+        "en": "table; desk"
+       }
+      }
      },
      "grammar": {
       "before": "刘明：小明，你们明天开学，你准备好了吗？\n刘小明：明天就开学啊？爸爸，",
@@ -6086,7 +6676,25 @@
        "意思",
        "做错",
        "题"
-      ]
+      ],
+      "tiles": {
+       "考试": {
+        "py": "kǎoshì",
+        "en": "to take an exam; exam"
+       },
+       "意思": {
+        "py": "yìsi",
+        "en": "meaning; idea"
+       },
+       "做错": {
+        "py": "zuòcuò",
+        "en": "to do (sth) wrong"
+       },
+       "题": {
+        "py": "tí",
+        "en": "question; problem"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：小雪，你在做什么呢？\n刘小雪：",
@@ -6277,7 +6885,25 @@
        "考试",
        "第一名",
        "洗完"
-      ]
+      ],
+      "tiles": {
+       "奶茶": {
+        "py": "nǎichá",
+        "en": "bubble tea"
+       },
+       "考试": {
+        "py": "kǎoshì",
+        "en": "to take an exam; exam"
+       },
+       "第一名": {
+        "py": "dì-yī míng",
+        "en": "first place"
+       },
+       "洗完": {
+        "py": "xǐ wán",
+        "en": "to finish washing"
+       }
+      }
      },
      "grammar": {
       "before": "刘小雪：妈妈，我回来了！\n王一雪：我买了奶茶，就在桌子上，自己去拿吧。\n刘小雪：谢谢妈妈！\n王一雪：今天考试考得怎么样？\n刘小雪：我觉得比上次好。\n王一雪：真不错！",
@@ -6439,7 +7065,21 @@
        "开学",
        "书包",
        "考试"
-      ]
+      ],
+      "tiles": {
+       "开学": {
+        "py": "kāixué",
+        "en": "school begins"
+       },
+       "书包": {
+        "py": "shūbāo",
+        "en": "schoolbag"
+       },
+       "考试": {
+        "py": "kǎoshì",
+        "en": "to take an exam; exam"
+       }
+      }
      },
      "grammar": {
       "before": "",
@@ -6589,7 +7229,21 @@
        "头疼",
        "医院",
        "休息"
-      ]
+      ],
+      "tiles": {
+       "头疼": {
+        "py": "tóu téng",
+        "en": "headache; to have a headache"
+       },
+       "医院": {
+        "py": "yīyuàn",
+        "en": "hospital"
+       },
+       "休息": {
+        "py": "xiūxi",
+        "en": "to rest"
+       }
+      }
      },
      "grammar": {
       "before": "王一飞：家月，都下课了，你怎么还不回家？\n白家月：我头疼，不太舒服。\n王一飞：你这几天经常头疼，去医院看看吧。\n白家月：我想休息一下，现在不能动，一动就疼。\n王一飞：那",
@@ -6769,7 +7423,21 @@
        "雪",
        "接",
        "医院"
-      ]
+      ],
+      "tiles": {
+       "雪": {
+        "py": "xuě",
+        "en": "snow"
+       },
+       "接": {
+        "py": "jiē",
+        "en": "to receive; to pick up"
+       },
+       "医院": {
+        "py": "yīyuàn",
+        "en": "hospital"
+       }
+      }
      },
      "grammar": {
       "before": "王一飞：现在路上车多，",
@@ -6988,7 +7656,25 @@
        "身体",
        "最",
        "中国菜"
-      ]
+      ],
+      "tiles": {
+       "药": {
+        "py": "yào",
+        "en": "medicine"
+       },
+       "身体": {
+        "py": "shēntǐ",
+        "en": "body; health"
+       },
+       "最": {
+        "py": "zuì",
+        "en": "most"
+       },
+       "中国菜": {
+        "py": "Zhōngguó cài",
+        "en": "Chinese food"
+       }
+      }
      },
      "grammar": {
       "before": "白家月：李文，快请进！\n李文：家月，你怎么样了？头还疼吗？\n白家月：不那么疼了。医生开了一些药，吃完就好多了。\n李文：那就好！\n王一飞：家月，你想不想吃点儿东西？\n李文：吃点儿吧，身体不舒服时更要好好吃饭。\n白家月：吃点儿什么呢？\n王一飞：",
@@ -7177,7 +7863,25 @@
        "药店",
        "医院",
        "睡觉"
-      ]
+      ],
+      "tiles": {
+       "头疼": {
+        "py": "tóu téng",
+        "en": "headache; to have a headache"
+       },
+       "药店": {
+        "py": "yàodiàn",
+        "en": "pharmacy"
+       },
+       "医院": {
+        "py": "yīyuàn",
+        "en": "hospital"
+       },
+       "睡觉": {
+        "py": "shuìjiào",
+        "en": "to sleep; go to bed"
+       }
+      }
      },
      "grammar": {
       "before": "我这几天经常头疼，从药店买了点儿药，没去医院。今天下课后，王老师看我不舒服，就送我去医院了。从医院回来，李文也来看我了。现在他们都回去了，",
@@ -7331,7 +8035,25 @@
        "天气",
        "晴天",
        "冷"
-      ]
+      ],
+      "tiles": {
+       "雪": {
+        "py": "xuě",
+        "en": "snow"
+       },
+       "天气": {
+        "py": "tiānqì",
+        "en": "weather"
+       },
+       "晴天": {
+        "py": "qíngtiān",
+        "en": "sunny day"
+       },
+       "冷": {
+        "py": "lěng",
+        "en": "cold"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：喂，家月，是你啊！有什么事情吗？\n白家月：没什么事，就想跟您说说话。\n王一雪：好啊。你今天没课吗？\n白家月：下午有课。您那里天气怎么样？\n王一雪：北京这几天虽然是晴天，但是有点儿冷。\n白家月：",
@@ -7518,7 +8240,21 @@
        "下雪",
        "衣服",
        "网上"
-      ]
+      ],
+      "tiles": {
+       "下雪": {
+        "py": "xià xuě",
+        "en": "to snow"
+       },
+       "衣服": {
+        "py": "yīfu",
+        "en": "clothes"
+       },
+       "网上": {
+        "py": "wǎngshàng",
+        "en": "online"
+       }
+      }
      },
      "grammar": {
       "before": "王一雪：喂，一飞，听家月说你那边下雪了，下得大不大？\n王一飞：今天不大，",
@@ -7734,7 +8470,21 @@
        "跑步",
        "慢慢",
        "地铁"
-      ]
+      ],
+      "tiles": {
+       "跑步": {
+        "py": "pǎobù",
+        "en": "to run; jog"
+       },
+       "慢慢": {
+        "py": "mànmàn",
+        "en": "slowly"
+       },
+       "地铁": {
+        "py": "dìtiě",
+        "en": "subway"
+       }
+      }
      },
      "grammar": {
       "before": "李文：喂，家月，今天天气不错，我们去跑步吧！\n白家月：",
@@ -7896,7 +8646,21 @@
        "地铁",
        "晴天",
        "跑步"
-      ]
+      ],
+      "tiles": {
+       "地铁": {
+        "py": "dìtiě",
+        "en": "subway"
+       },
+       "晴天": {
+        "py": "qíngtiān",
+        "en": "sunny day"
+       },
+       "跑步": {
+        "py": "pǎobù",
+        "en": "to run; jog"
+       }
+      }
      },
      "grammar": {
       "before": "前几天天气不好，我没走路，每天坐两站地铁去学校。今天是个大晴天，李文让我跟他去外面跑步。他小时候经常跑步，",
@@ -8053,7 +8817,25 @@
        "教",
        "花",
        "希望"
-      ]
+      ],
+      "tiles": {
+       "新年": {
+        "py": "xīnnián",
+        "en": "New Year"
+       },
+       "教": {
+        "py": "jiāo",
+        "en": "to teach"
+       },
+       "花": {
+        "py": "huā",
+        "en": "flower"
+       },
+       "希望": {
+        "py": "xīwàng",
+        "en": "to hope; hope"
+       }
+      }
      },
      "grammar": {
       "before": "白家月：时间过得真快啊！新年就要到了。\n陈天中：这一年王老师教我们中文，每天工作都很累。\n白家月：是啊，她教得很好。因为她，我们都非常爱上中文课。\n陈天中：我们给她准备个新年礼物吧。你觉得送给她什么好呢？\n白家月：王老师喜欢花，",
@@ -8275,7 +9057,25 @@
        "洗手间",
        "里面",
        "笔"
-      ]
+      ],
+      "tiles": {
+       "上面": {
+        "py": "shàngmiàn",
+        "en": "on; above; top"
+       },
+       "洗手间": {
+        "py": "xǐshǒujiān",
+        "en": "restroom; washroom"
+       },
+       "里面": {
+        "py": "lǐmiàn",
+        "en": "inside"
+       },
+       "笔": {
+        "py": "bǐ",
+        "en": "pen; pencil"
+       }
+      }
      },
      "grammar": {
       "before": "白家月：王老师，",
@@ -8510,7 +9310,25 @@
        "上网",
        "咖啡杯",
        "那样"
-      ]
+      ],
+      "tiles": {
+       "可能": {
+        "py": "kěnéng",
+        "en": "may; might; possible"
+       },
+       "上网": {
+        "py": "shàngwǎng",
+        "en": "to go online"
+       },
+       "咖啡杯": {
+        "py": "kāfēibēi",
+        "en": "coffee cup; mug"
+       },
+       "那样": {
+        "py": "nàyàng",
+        "en": "like that; that way"
+       }
+      }
      },
      "grammar": {
       "before": "安妮：家月，你觉得这个本子怎么样？\n白家月：很漂亮，多少钱一个？\n安妮：",
@@ -8687,7 +9505,21 @@
        "新年",
        "告诉",
        "班"
-      ]
+      ],
+      "tiles": {
+       "新年": {
+        "py": "xīnnián",
+        "en": "New Year"
+       },
+       "告诉": {
+        "py": "gàosu",
+        "en": "to tell"
+       },
+       "班": {
+        "py": "bān",
+        "en": "class; group"
+       }
+      }
      },
      "grammar": {
       "before": "新年就要到了，安妮送给我一个新本子。她告诉我是在网上买的，",
@@ -8823,7 +9655,21 @@
        "站",
        "裤子",
        "包"
-      ]
+      ],
+      "tiles": {
+       "站": {
+        "py": "zhàn",
+        "en": "to stand; station"
+       },
+       "裤子": {
+        "py": "kùzi",
+        "en": "pants; trousers"
+       },
+       "包": {
+        "py": "bāo",
+        "en": "bag; package"
+       }
+      }
      },
      "grammar": {
       "before": "李文：王老师，",
@@ -8994,7 +9840,25 @@
        "没意思",
        "位",
        "前面"
-      ]
+      ],
+      "tiles": {
+       "过年": {
+        "py": "guònián",
+        "en": "to celebrate Spring Festival"
+       },
+       "没意思": {
+        "py": "méiyìsi",
+        "en": "boring; uninteresting"
+       },
+       "位": {
+        "py": "wèi",
+        "en": "polite measure word for people"
+       },
+       "前面": {
+        "py": "qiánmiàn",
+        "en": "in front; ahead"
+       }
+      }
      },
      "grammar": {
       "before": "王一飞：同乐，真是你啊！上次打电话，你说有时间过来看我，没想到这么快就来了！\n杨同乐：就要过年了，",
@@ -9228,7 +10092,21 @@
        "房子",
        "小孩儿",
        "女孩儿"
-      ]
+      ],
+      "tiles": {
+       "房子": {
+        "py": "fángzi",
+        "en": "house; apartment"
+       },
+       "小孩儿": {
+        "py": "xiǎoháir",
+        "en": "child; kid"
+       },
+       "女孩儿": {
+        "py": "nǚháir",
+        "en": "girl"
+       }
+      }
      },
      "grammar": {
       "before": "杨同乐：一飞，你住的房子真不错，很大，离学校也不远。\n王一飞：是啊！我楼下还住着一家中国人，他们人很好。\n杨同乐：这样你有事情就可以找他们帮忙。\n王一飞：对，我也帮他们家的小孩儿学中文。\n杨同乐：我记得你跟我说过，是个女孩儿，学得也很好。\n王一飞：没错，",
@@ -9414,7 +10292,21 @@
        "姓",
        "眼睛",
        "跳舞"
-      ]
+      ],
+      "tiles": {
+       "姓": {
+        "py": "xìng",
+        "en": "to be surnamed"
+       },
+       "眼睛": {
+        "py": "yǎnjing",
+        "en": "eye; eyes"
+       },
+       "跳舞": {
+        "py": "tiàowǔ",
+        "en": "to dance"
+       }
+      }
      },
      "grammar": {
       "before": "我男朋友姓杨，叫杨同乐。他高个子、大眼睛，唱歌唱得很好，跳舞跳得也不错。他和我姐姐一起工作，是姐姐介绍我们认识的。他告诉我，从见到我的第一天开始，",
@@ -9559,7 +10451,13 @@
       ],
       "answers": [
        "姓名"
-      ]
+      ],
+      "tiles": {
+       "姓名": {
+        "py": "xìngmíng",
+        "en": "full name"
+       }
+      }
      },
      "grammar": {
       "before": "王一飞：考试就要开始了，请大家写上姓名，写好后就可以做题了。\n……\n白家月：老师，我做完了。\n陈天中：老师，我也做完了。\n王一飞：……对了，你们考完试想做什么？\n白家月：我很想去中国，",
@@ -9780,7 +10678,29 @@
        "高中",
        "出门",
        "路"
-      ]
+      ],
+      "tiles": {
+       "出国": {
+        "py": "chūguó",
+        "en": "to go abroad"
+       },
+       "门票": {
+        "py": "ménpiào",
+        "en": "entrance ticket"
+       },
+       "高中": {
+        "py": "gāozhōng",
+        "en": "high school"
+       },
+       "出门": {
+        "py": "chūmén",
+        "en": "to leave home; go out"
+       },
+       "路": {
+        "py": "lù",
+        "en": "road; way"
+       }
+      }
      },
      "grammar": {
       "before": "白家月：考完试了，我现在可以出国旅游了。\n李文：你要去哪儿？\n白家月：我要再去一次北京。\n李文：为什么还去北京？\n白家月：因为我想",
@@ -10043,7 +10963,33 @@
        "机票",
        "便宜",
        "飞"
-      ]
+      ],
+      "tiles": {
+       "回国": {
+        "py": "huíguó",
+        "en": "to return to one's home country"
+       },
+       "六月": {
+        "py": "liù yuè",
+        "en": "June"
+       },
+       "机场": {
+        "py": "jīchǎng",
+        "en": "airport"
+       },
+       "机票": {
+        "py": "jīpiào",
+        "en": "air ticket"
+       },
+       "便宜": {
+        "py": "piányi",
+        "en": "cheap"
+       },
+       "飞": {
+        "py": "fēi",
+        "en": "to fly"
+       }
+      }
      },
      "grammar": {
       "before": "白家月：李文，你",
@@ -10226,7 +11172,29 @@
        "过年",
        "好像",
        "小鸟"
-      ]
+      ],
+      "tiles": {
+       "半年": {
+        "py": "bàn nián",
+        "en": "half a year"
+       },
+       "想家": {
+        "py": "xiǎng jiā",
+        "en": "to be homesick"
+       },
+       "过年": {
+        "py": "guònián",
+        "en": "to celebrate Spring Festival"
+       },
+       "好像": {
+        "py": "hǎoxiàng",
+        "en": "to seem; be like"
+       },
+       "小鸟": {
+        "py": "xiǎo niǎo",
+        "en": "little bird"
+       }
+      }
      },
      "grammar": {
       "before": "六月的时候回过一次北京，现在",
