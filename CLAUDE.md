@@ -78,11 +78,18 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   two off-by-default 拼音/En reveal pills in 读原文 (only when that text has gloss). Roll out to more units
   by appending rows to the TSV (dedup is automatic — identical lines across courses share one entry) and
   re-running `npm run convert`; now covers all six 课文 units (hsk-1/2/3 + newhsk3-1/2/3, ~1697 lines).
-  The **生词挖空 word-bank tiles** show pinyin + English too, via `vocab.tiles` (`{word:{py,en}}`) baked in
+  The **生词挖空 word-bank tiles** carry pinyin + English too, via `vocab.tiles` (`{word:{py,en}}`) baked in
   by `convert_texts.py` from the full flashcard vocab (all units) + the hand-owned `scripts/word_gloss.tsv`
-  (fills the ~55 cloze answers that aren't standalone flashcard entries — compounds/single chars/phrases).
-  Both 读原文 and 生词挖空 have the off-by-default 拼音/En reveal pills (vocab mode toggles the tiles, not the
-  cloze text, so answers aren't spoiled). **连词成句
+  (fills the ~55 cloze answers that aren't standalone flashcard entries — compounds/single chars/phrases);
+  tiles surface it as a hover tooltip (`拼音 · English`), not inline. Both 读原文 and 生词挖空 have the
+  off-by-default 拼音/En reveal pills; in 生词挖空 they reveal the **cloze 课文正文** per line (rendered in the
+  same speaker|speech two-column layout as 读原文, via `TextView.splitSpeaker`). The pinyin of each blanked
+  answer is masked to `____` (`TextView.clozePyHtml`, tone-insensitive match so sandhi/caps align) so the
+  拼音 pill doesn't spoil answers; English is shown whole (sentence-level gloss can't be aligned to a blank).
+  **`convert_texts.py` never blanks a speaker name** (`heal_name_blanks`): the source cloze blanks the FIRST
+  occurrence of an answer, which sometimes lands in a name (王一[雪]：, 周[太太]：) — that blank is un-blanked
+  there and either relocated to the word's speech-body occurrence or, if the word only ever appears as a name,
+  dropped entirely (blanks then renumbered). **连词成句
   tokenization uses NO jieba**: `convert_texts.py` max-matches against a lexicon built from the flashcard
   vocabulary + the hand-vetted `scripts/grammar_segments.tsv` (358 grammar clauses, manually segmented —
   edit the TSV, not generated output). 课文 audio (dialogue lines) is generated via

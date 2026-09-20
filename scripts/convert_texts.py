@@ -197,6 +197,90 @@ def parse_vocab(cloze: str, ans: str):
     return {"seg": seg, "answers": answers}
 
 
+def heal_name_blanks(vocab):
+    """Never blank the speaker name. The source cloze blanks the FIRST occurrence
+    of each answer word, which sometimes lands inside a speaker name (王一[雪]：,
+    周[太太]：, [老]同学：). For every blank that falls in a speaker-name prefix
+    (before a short ≤8-char colon), un-blank it there; if the same word also occurs
+    in the speech body, move the blank to that occurrence, otherwise drop the blank
+    entirely (the word is only ever a name — nothing to practise). Blanks are then
+    renumbered in reading order. Returns a new vocab dict, or None if no blanks
+    survive."""
+    seg, answers = vocab["seg"], vocab["answers"]
+    atoms = []
+    for p in seg:
+        if "t" in p:
+            atoms += [{"c": ch} for ch in p["t"]]
+        else:
+            a = answers[p["b"] - 1] if p["b"] - 1 < len(answers) else ""
+            atoms.append({"blank": True, "answer": a})
+
+    # Per-line: mark the speaker-name region (before a short colon) and the body.
+    lines = [[]]
+    for at in atoms:
+        (lines.append([]) if at.get("c") == "\n" else lines[-1].append(at))
+    for line in lines:
+        colon = next((i for i, at in enumerate(line) if at.get("c") in ("：", ":")), None)
+        if colon is None:
+            for at in line:
+                at["inbody"] = True
+            continue
+        pref = sum(1 if "c" in at else (len(at["answer"] or " ") or 1) for at in line[:colon])
+        if pref > 8:  # colon is mid-sentence (narrative), not a speaker delimiter
+            for at in line:
+                at["inbody"] = True
+            continue
+        for i, at in enumerate(line):
+            at["inbody"] = i > colon
+            if i < colon and at.get("blank"):
+                at["name"] = True
+
+    body_text = "".join(
+        (at["answer"] if at.get("blank") else at["c"])
+        for at in atoms
+        if at.get("c") != "\n" and at.get("inbody")
+    )
+
+    # Un-blank name blanks (restore the word as plain chars); queue relocations.
+    out, reloc = [], []
+    for at in atoms:
+        if at.get("blank") and at.get("name"):
+            out += [{"c": ch, "inbody": False} for ch in at["answer"]]
+            if at["answer"] and at["answer"] in body_text:
+                reloc.append(at["answer"])
+        else:
+            out.append(at)
+    atoms = out
+
+    # Relocate: blank the first body occurrence (a contiguous run of body chars).
+    for a in reloc:
+        n = len(a)
+        pos = [i for i, at in enumerate(atoms) if at.get("inbody") and "c" in at]
+        for k in range(len(pos) - n + 1):
+            idxs = pos[k:k + n]
+            if idxs == list(range(idxs[0], idxs[0] + n)) and "".join(atoms[j]["c"] for j in idxs) == a:
+                atoms = atoms[:idxs[0]] + [{"blank": True, "answer": a}] + atoms[idxs[-1] + 1:]
+                break
+
+    # Rebuild seg with blanks renumbered in reading order.
+    seg_out, ans_out, buf, num = [], [], [], 0
+    for at in atoms:
+        if at.get("blank"):
+            if buf:
+                seg_out.append({"t": "".join(buf)})
+                buf = []
+            num += 1
+            seg_out.append({"b": num})
+            ans_out.append(at["answer"])
+        else:
+            buf.append(at["c"])
+    if buf:
+        seg_out.append({"t": "".join(buf)})
+    if num == 0:
+        return None
+    return {"seg": seg_out, "answers": ans_out}
+
+
 def strip_punct(tokens):
     return [t for t in tokens if t and t not in PUNCT]
 
@@ -278,6 +362,8 @@ def convert(fname, series, unit, segmap, lex, gloss, wordmap):
             lessons[ln] = {"num": ln, "name": clean(r[C_NAME]) or "", "texts": []}
             order.append(ln)
         vocab = parse_vocab(clean(r[C_VCLOZE]), clean(r[C_VANS]))
+        if vocab:  # never blank a speaker name (relocate to body or drop the blank)
+            vocab = heal_name_blanks(vocab)
         if vocab:  # bake per-answer pinyin + English for the word-bank tiles
             tiles = {}
             for a in vocab["answers"]:
