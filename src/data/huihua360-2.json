@@ -353,7 +353,7 @@
      "hanzi": "点儿",
      "pinyin": "diǎnr",
      "meaning": "a little; a bit",
-     "pos": null,
+     "pos": "mw",
      "type": null,
      "note": null,
      "examples": [
@@ -900,7 +900,7 @@
      "hanzi": "对了",
      "pinyin": "duìle",
      "meaning": "by the way",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -1527,7 +1527,7 @@
      "hanzi": "还可以",
      "pinyin": "hái kěyǐ",
      "meaning": "fairly good; okay",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -2041,7 +2041,7 @@
      "hanzi": "跟",
      "pinyin": "gēn",
      "meaning": "with",
-     "pos": null,
+     "pos": "prep",
      "type": null,
      "note": null,
      "examples": [
@@ -2241,7 +2241,7 @@
      "hanzi": "就行",
      "pinyin": "jiù xíng",
      "meaning": "will do; is enough",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -3375,7 +3375,7 @@
      "hanzi": "不好意思",
      "pinyin": "bù hǎoyìsi",
      "meaning": "sorry; excuse me",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -3395,7 +3395,7 @@
      "hanzi": "不行",
      "pinyin": "bùxíng",
      "meaning": "cannot; won't do",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -3922,7 +3922,7 @@
      "hanzi": "怎么办",
      "pinyin": "zěnme bàn",
      "meaning": "what to do; what should one do",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [

@@ -4688,7 +4688,7 @@
      "hanzi": "大不了",
      "pinyin": "dàbuliǎo",
      "meaning": "at worst; at most",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -5215,7 +5215,7 @@
      "hanzi": "伤脑筋",
      "pinyin": "shāngnǎojīn",
      "meaning": "troublesome; cause a headache",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -7529,7 +7529,7 @@
      "hanzi": "要命",
      "pinyin": "yàomìng",
      "meaning": "terribly; extremely; deadly",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -8436,7 +8436,7 @@
      "hanzi": "凡是",
      "pinyin": "fánshì",
      "meaning": "all; every; whenever",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -10050,7 +10050,7 @@
      "hanzi": "不得已",
      "pinyin": "bùdéyǐ",
      "meaning": "as a last resort; have no choice",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -18126,7 +18126,7 @@
      "hanzi": "咋",
      "pinyin": "zǎ",
      "meaning": "how; why",
-     "pos": null,
+     "pos": "pron",
      "type": null,
      "note": "口语",
      "examples": [
@@ -20120,7 +20120,7 @@
      "hanzi": "丙",
      "pinyin": "bǐng",
      "meaning": "third; Bing",
-     "pos": null,
+     "pos": "num",
      "type": null,
      "note": "本课作序号/分项标记",
      "examples": [
@@ -20280,7 +20280,7 @@
      "hanzi": "丁",
      "pinyin": "dīng",
      "meaning": "fourth; Ding",
-     "pos": null,
+     "pos": "num",
      "type": null,
      "note": "本课作序号/分项标记",
      "examples": [
@@ -23888,7 +23888,7 @@
      "hanzi": "不堪",
      "pinyin": "bùkān",
      "meaning": "unable to bear; unbearable",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -26582,7 +26582,7 @@
      "hanzi": "不止",
      "pinyin": "bùzhǐ",
      "meaning": "more than; not only",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -28863,7 +28863,7 @@
      "hanzi": "不敢当",
      "pinyin": "bùgǎndāng",
      "meaning": "you flatter me; I don't deserve the praise",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -30977,7 +30977,7 @@
      "hanzi": "为期",
      "pinyin": "wéiqī",
      "meaning": "lasting for; for a period of",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -31297,7 +31297,7 @@
      "hanzi": "久违",
      "pinyin": "jiǔwéi",
      "meaning": "long-awaited; long-lost",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -37479,7 +37479,7 @@
      "hanzi": "任意",
      "pinyin": "rènyì",
      "meaning": "any; at will",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [

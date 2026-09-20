@@ -2248,7 +2248,7 @@
      "hanzi": "当",
      "pinyin": "dāng",
      "meaning": "to be; serve as",
-     "pos": null,
+     "pos": "prep",
      "type": null,
      "note": "本课读 dāng",
      "examples": [
@@ -3122,7 +3122,7 @@
      "hanzi": "越……越……",
      "pinyin": "yuè...yuè...",
      "meaning": "the more...the more...",
-     "pos": null,
+     "pos": "conj",
      "type": null,
      "note": "固定结构",
      "examples": [

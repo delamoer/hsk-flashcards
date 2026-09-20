@@ -13,7 +13,7 @@
      "hanzi": "不客气",
      "pinyin": "bú kèqi",
      "meaning": "you're welcome",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -113,7 +113,7 @@
      "hanzi": "你好",
      "pinyin": "nǐ hǎo",
      "meaning": "hello",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -233,7 +233,7 @@
      "hanzi": "再见",
      "pinyin": "zàijiàn",
      "meaning": "goodbye",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -280,7 +280,7 @@
      "hanzi": "对不起",
      "pinyin": "duìbuqǐ",
      "meaning": "sorry",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -360,7 +360,7 @@
      "hanzi": "没关系",
      "pinyin": "méi guānxi",
      "meaning": "never mind; it's okay",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -380,7 +380,7 @@
      "hanzi": "没事",
      "pinyin": "méishì",
      "meaning": "it's okay; nothing is wrong",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -2021,7 +2021,7 @@
      "hanzi": "一些",
      "pinyin": "yìxiē",
      "meaning": "some; a few",
-     "pos": null,
+     "pos": "mw",
      "type": null,
      "note": null,
      "examples": [
@@ -2368,7 +2368,7 @@
      "hanzi": "那边",
      "pinyin": "nàbiān",
      "meaning": "over there",
-     "pos": null,
+     "pos": "pron",
      "type": null,
      "note": null,
      "examples": [
@@ -2468,7 +2468,7 @@
      "hanzi": "些",
      "pinyin": "xiē",
      "meaning": "some; a few",
-     "pos": null,
+     "pos": "mw",
      "type": null,
      "note": null,
      "examples": [
@@ -3669,7 +3669,7 @@
      "hanzi": "上",
      "pinyin": "shàng",
      "meaning": "up; on; to go up",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": "教材词语表另见：第14课",
      "examples": [
@@ -4156,7 +4156,7 @@
      "hanzi": "这边",
      "pinyin": "zhèbiān",
      "meaning": "here; this side",
-     "pos": null,
+     "pos": "pron",
      "type": null,
      "note": null,
      "examples": [
@@ -4990,7 +4990,7 @@
      "hanzi": "一点儿",
      "pinyin": "yìdiǎnr",
      "meaning": "a little; a bit",
-     "pos": null,
+     "pos": "mw",
      "type": null,
      "note": null,
      "examples": [
@@ -5357,7 +5357,7 @@
      "hanzi": "一下",
      "pinyin": "yíxià",
      "meaning": "once; a little",
-     "pos": null,
+     "pos": "mw",
      "type": null,
      "note": null,
      "examples": [
@@ -5784,7 +5784,7 @@
      "hanzi": "有些",
      "pinyin": "yǒuxiē",
      "meaning": "some; somewhat",
-     "pos": null,
+     "pos": "pron",
      "type": null,
      "note": null,
      "examples": [

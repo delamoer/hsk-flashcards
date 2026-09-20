@@ -113,7 +113,7 @@
      "hanzi": "当",
      "pinyin": "dāng",
      "meaning": "to work as; serve as",
-     "pos": null,
+     "pos": "prep",
      "type": null,
      "note": null,
      "examples": [
@@ -393,7 +393,7 @@
      "hanzi": "另",
      "pinyin": "lìng",
      "meaning": "another; other",
-     "pos": null,
+     "pos": "pron",
      "type": null,
      "note": null,
      "examples": [
@@ -1380,7 +1380,7 @@
      "hanzi": "同时",
      "pinyin": "tóngshí",
      "meaning": "at the same time; meanwhile",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -1887,7 +1887,7 @@
      "hanzi": "能否",
      "pinyin": "néngfǒu",
      "meaning": "whether one can",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -2874,7 +2874,7 @@
      "hanzi": "再说",
      "pinyin": "zàishuō",
      "meaning": "besides; moreover; talk later",
-     "pos": null,
+     "pos": "conj",
      "type": null,
      "note": null,
      "examples": [
@@ -5035,7 +5035,7 @@
      "hanzi": "一下",
      "pinyin": "yíxià",
      "meaning": "a little; once",
-     "pos": null,
+     "pos": "mw",
      "type": null,
      "note": null,
      "examples": [
@@ -5702,7 +5702,7 @@
      "hanzi": "与",
      "pinyin": "yǔ",
      "meaning": "and; with",
-     "pos": null,
+     "pos": "prep",
      "type": null,
      "note": null,
      "examples": [
@@ -6636,7 +6636,7 @@
      "hanzi": "各种",
      "pinyin": "gèzhǒng",
      "meaning": "various; all kinds of",
-     "pos": null,
+     "pos": "pron",
      "type": null,
      "note": null,
      "examples": [
@@ -7096,7 +7096,7 @@
      "hanzi": "受不了",
      "pinyin": "shòubuliǎo",
      "meaning": "cannot stand; cannot bear",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [

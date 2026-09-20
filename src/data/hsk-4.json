@@ -680,7 +680,7 @@
      "hanzi": "当",
      "pinyin": "dāng",
      "meaning": "when; at the time of",
-     "pos": null,
+     "pos": "prep",
      "type": null,
      "note": null,
      "examples": [
@@ -1507,7 +1507,7 @@
      "hanzi": "另外",
      "pinyin": "lìngwài",
      "meaning": "besides; in addition",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -1647,7 +1647,7 @@
      "hanzi": "其次",
      "pinyin": "qícì",
      "meaning": "second; next",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -1807,7 +1807,7 @@
      "hanzi": "与",
      "pinyin": "yǔ",
      "meaning": "with; and",
-     "pos": null,
+     "pos": "prep",
      "type": null,
      "note": null,
      "examples": [
@@ -6283,7 +6283,7 @@
      "hanzi": "连",
      "pinyin": "lián",
      "meaning": "even",
-     "pos": null,
+     "pos": "prep",
      "type": null,
      "note": null,
      "examples": [
@@ -6403,7 +6403,7 @@
      "hanzi": "同时",
      "pinyin": "tóngshí",
      "meaning": "at the same time",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -6890,7 +6890,7 @@
      "hanzi": "全部",
      "pinyin": "quánbù",
      "meaning": "all; whole",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -10772,7 +10772,7 @@
      "hanzi": "受不了",
      "pinyin": "shòubuliǎo",
      "meaning": "cannot stand; cannot bear",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [

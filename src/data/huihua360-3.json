@@ -660,7 +660,7 @@
      "hanzi": "一下",
      "pinyin": "yíxià",
      "meaning": "once; a little while",
-     "pos": null,
+     "pos": "mw",
      "type": null,
      "note": null,
      "examples": [
@@ -740,7 +740,7 @@
      "hanzi": "一点儿",
      "pinyin": "yìdiǎnr",
      "meaning": "a little; a bit",
-     "pos": null,
+     "pos": "mw",
      "type": null,
      "note": null,
      "examples": [
@@ -1080,7 +1080,7 @@
      "hanzi": "一些",
      "pinyin": "yìxiē",
      "meaning": "some; a few",
-     "pos": null,
+     "pos": "mw",
      "type": null,
      "note": null,
      "examples": [
@@ -2214,7 +2214,7 @@
      "hanzi": "算了",
      "pinyin": "suànle",
      "meaning": "forget it; let it go",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": "口语",
      "examples": [
@@ -3208,7 +3208,7 @@
      "hanzi": "不到",
      "pinyin": "bú dào",
      "meaning": "less than; not reach",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -3268,7 +3268,7 @@
      "hanzi": "上",
      "pinyin": "shàng",
      "meaning": "in; on; at",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": "本课见“路上”等处所表达",
      "examples": [
@@ -3415,7 +3415,7 @@
      "hanzi": "别提",
      "pinyin": "biétí",
      "meaning": "don’t mention it",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": "口语",
      "examples": [
@@ -3555,7 +3555,7 @@
      "hanzi": "上",
      "pinyin": "shàng",
      "meaning": "to get on; board",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": "本课作动词",
      "examples": [
@@ -3802,7 +3802,7 @@
      "hanzi": "没问题",
      "pinyin": "méi wèntí",
      "meaning": "no problem",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [

@@ -153,7 +153,7 @@
      "hanzi": "不好意思",
      "pinyin": "bù hǎoyìsi",
      "meaning": "to feel embarrassed; excuse me",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [
@@ -1561,7 +1561,7 @@
      "hanzi": "跟",
      "pinyin": "gēn",
      "meaning": "with; and",
-     "pos": null,
+     "pos": "prep",
      "type": null,
      "note": null,
      "examples": [

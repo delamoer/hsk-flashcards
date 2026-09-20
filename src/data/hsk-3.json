@@ -73,7 +73,7 @@
      "hanzi": "跟",
      "pinyin": "gēn",
      "meaning": "with; and; to follow",
-     "pos": null,
+     "pos": "prep",
      "type": null,
      "note": null,
      "examples": [
@@ -1094,7 +1094,7 @@
      "hanzi": "又……又……",
      "pinyin": "yòu…yòu…",
      "meaning": "both…and…",
-     "pos": null,
+     "pos": "conj",
      "type": null,
      "note": null,
      "examples": [
@@ -4017,7 +4017,7 @@
      "hanzi": "一边",
      "pinyin": "yìbiān",
      "meaning": "one side; while doing",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -5652,7 +5652,7 @@
      "hanzi": "不但……而且……",
      "pinyin": "búdàn…érqiě…",
      "meaning": "not only…but also…",
-     "pos": null,
+     "pos": "conj",
      "type": null,
      "note": null,
      "examples": [
@@ -6286,7 +6286,7 @@
      "hanzi": "只有……才……",
      "pinyin": "zhǐyǒu…cái…",
      "meaning": "only if…then/can…",
-     "pos": null,
+     "pos": "conj",
      "type": null,
      "note": null,
      "examples": [

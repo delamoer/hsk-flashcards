@@ -620,7 +620,7 @@
      "hanzi": "不得了",
      "pinyin": "bùdéliǎo",
      "meaning": "extremely; terribly",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -880,7 +880,7 @@
      "hanzi": "临",
      "pinyin": "lín",
      "meaning": "just before; about to",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -2074,7 +2074,7 @@
      "hanzi": "不行",
      "pinyin": "bùxíng",
      "meaning": "terribly; extremely",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -4315,7 +4315,7 @@
      "hanzi": "不要紧",
      "pinyin": "bùyàojǐn",
      "meaning": "it doesn't matter",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -7583,7 +7583,7 @@
      "hanzi": "数",
      "pinyin": "shù",
      "meaning": "several",
-     "pos": null,
+     "pos": "num",
      "type": null,
      "note": null,
      "examples": [
@@ -8757,7 +8757,7 @@
      "hanzi": "甲",
      "pinyin": "jiǎ",
      "meaning": "first; A",
-     "pos": null,
+     "pos": "num",
      "type": null,
      "note": null,
      "examples": [
@@ -8997,7 +8997,7 @@
      "hanzi": "乙",
      "pinyin": "yǐ",
      "meaning": "second; B",
-     "pos": null,
+     "pos": "num",
      "type": null,
      "note": null,
      "examples": [
@@ -9164,7 +9164,7 @@
      "hanzi": "方",
      "pinyin": "fāng",
      "meaning": "square",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [
@@ -10558,7 +10558,7 @@
      "hanzi": "即",
      "pinyin": "jí",
      "meaning": "namely; that is",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -14987,7 +14987,7 @@
      "hanzi": "忍不住",
      "pinyin": "rěnbuzhù",
      "meaning": "cannot help doing",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -22118,7 +22118,7 @@
      "hanzi": "劳驾",
      "pinyin": "láojià",
      "meaning": "excuse me; may I trouble you",
-     "pos": null,
+     "pos": "intj",
      "type": null,
      "note": null,
      "examples": [

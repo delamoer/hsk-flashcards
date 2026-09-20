@@ -5743,7 +5743,7 @@
      "hanzi": "只能",
      "pinyin": "zhǐnéng",
      "meaning": "can only; have no choice but to",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -6917,7 +6917,7 @@
      "hanzi": "一边",
      "pinyin": "yìbiān",
      "meaning": "one side; while doing",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -7404,7 +7404,7 @@
      "hanzi": "怎么办",
      "pinyin": "zěnmebàn",
      "meaning": "what to do; what should one do",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -7464,7 +7464,7 @@
      "hanzi": "有些",
      "pinyin": "yǒuxiē",
      "meaning": "some; a few",
-     "pos": null,
+     "pos": "pron",
      "type": null,
      "note": null,
      "examples": [
@@ -8458,7 +8458,7 @@
      "hanzi": "全",
      "pinyin": "quán",
      "meaning": "all; whole",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -8945,7 +8945,7 @@
      "hanzi": "有关",
      "pinyin": "yǒuguān",
      "meaning": "related to; about",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
