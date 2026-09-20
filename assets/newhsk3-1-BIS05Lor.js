@@ -223,11 +223,11 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 胡医生：是的。我爸爸也在医院工作，他也非常忙。
 刘明：你家有两个医生？
 胡医生：对。`,lines:[{name:"刘明",zh:"小胡，还没吃饭呢？",py:"Xiǎo Hú, hái méi chī fàn ne?",en:"Xiao Hu, haven't you eaten yet?"},{name:"胡医生",zh:"没吃呢。",py:"Méi chī ne.",en:"Not yet."},{name:"刘明",zh:"大医院病人多，医生非常忙。",py:"Dà yīyuàn bìngrén duō, yīshēng fēicháng máng.",en:"Big hospitals have lots of patients, and the doctors are very busy."},{name:"胡医生",zh:"是的。我爸爸也在医院工作，他也非常忙。",py:"Shì de. Wǒ bàba yě zài yīyuàn gōngzuò, tā yě fēicháng máng.",en:"Yes. My dad works at a hospital too, and he's very busy as well."},{name:"刘明",zh:"你家有两个医生？",py:"Nǐ jiā yǒu liǎng ge yīshēng?",en:"Your family has two doctors?"},{name:"胡医生",zh:"对。",py:"Duì.",en:"Right."}],vocab:{seg:[{t:"刘明：小胡，还没吃"},{b:1},{t:`呢？
-胡`},{b:2},{t:`：没吃呢。
-刘明：`},{b:3},{t:"医院"},{b:4},{t:`多，医生非常忙。
+胡医生：没吃呢。
+刘明：`},{b:2},{t:"医院"},{b:3},{t:"多，"},{b:4},{t:`非常忙。
 胡医生：是的。我爸爸也在医院`},{b:5},{t:`，他也非常忙。
 刘明：你家有两个医生？
-胡医生：对。`}],answers:["饭","医生","大","病人","工作"],tiles:{饭:{py:"fàn",en:"meal; cooked rice"},医生:{py:"yīshēng",en:"doctor"},大:{py:"dà",en:"big; old (age)"},病人:{py:"bìngrén",en:"patient; sick person"},工作:{py:"gōngzuò",en:"to work; work"}}},grammar:{before:`刘明：小胡，还没吃饭呢？
+胡医生：对。`}],answers:["饭","大","病人","医生","工作"],tiles:{饭:{py:"fàn",en:"meal; cooked rice"},大:{py:"dà",en:"big; old (age)"},病人:{py:"bìngrén",en:"patient; sick person"},医生:{py:"yīshēng",en:"doctor"},工作:{py:"gōngzuò",en:"to work; work"}}},grammar:{before:`刘明：小胡，还没吃饭呢？
 胡医生：没吃呢。
 刘明：大医院病人多，医生非常忙。
 胡医生：是的。`,after:`，他也非常忙。
@@ -270,10 +270,10 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一雪：多少钱一个？
 售货员：这些五块钱一个，那些十块钱一个。
 王一雪：我买这个吧。`,lines:[{name:"王一雪",zh:"请问，有杯子吗？",py:"Qǐngwèn, yǒu bēizi ma?",en:"Excuse me, do you have cups?"},{name:"售货员",zh:"有，杯子在这边。",py:"Yǒu, bēizi zài zhèbiān.",en:"Yes, the cups are over here."},{name:"王一雪",zh:"多少钱一个？",py:"Duōshao qián yí ge?",en:"How much for one?"},{name:"售货员",zh:"这些五块钱一个，那些十块钱一个。",py:"Zhèxiē wǔ kuài qián yí ge, nàxiē shí kuài qián yí ge.",en:"These are five yuan each, those are ten yuan each."},{name:"王一雪",zh:"我买这个吧。",py:"Wǒ mǎi zhège ba.",en:"I'll take this one."}],vocab:{seg:[{t:"王一雪：请问，有"},{b:1},{t:`吗？
-`},{b:2},{t:"：有，杯子在"},{b:3},{t:`。
-王一雪：多少`},{b:4},{t:`一个？
-售货员：`},{b:5},{t:"五块钱一个，"},{b:6},{t:`十块钱一个。
-王一雪：我买这个吧。`}],answers:["杯子","售货员","这边","钱","这些","那些"],tiles:{杯子:{py:"bēizi",en:"cup; glass"},售货员:{py:"shòuhuòyuán",en:"salesperson"},这边:{py:"zhèbiān",en:"here; this side"},钱:{py:"qián",en:"money"},这些:{py:"zhèxiē",en:"these"},那些:{py:"nàxiē",en:"those"}}},grammar:{before:`王一雪：请问，有杯子吗？
+售货员：有，杯子在`},{b:2},{t:`。
+王一雪：多少`},{b:3},{t:`一个？
+售货员：`},{b:4},{t:"五块钱一个，"},{b:5},{t:`十块钱一个。
+王一雪：我买这个吧。`}],answers:["杯子","这边","钱","这些","那些"],tiles:{杯子:{py:"bēizi",en:"cup; glass"},这边:{py:"zhèbiān",en:"here; this side"},钱:{py:"qián",en:"money"},这些:{py:"zhèxiē",en:"these"},那些:{py:"nàxiē",en:"those"}}},grammar:{before:`王一雪：请问，有杯子吗？
 售货员：有，杯子在这边。
 王一雪：`,after:`？
 售货员：这些五块钱一个，那些十块钱一个。
@@ -349,7 +349,7 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一飞：有点儿大，我觉得很冷。`,answer:"下雨了",tokens:["下雨","了"]},sentences:[{speaker:"王一雪",text:"今天天气怎么样？",tokens:["今天","天气","怎么样"]},{speaker:"王一飞",text:"这里的天不太好，下雨了。",tokens:["这里","的","天","不太","好","下雨","了"]},{speaker:"王一雪",text:"雨大吗？",tokens:["雨","大","吗"]},{speaker:"王一飞",text:"有点儿大，我觉得很冷。",tokens:["有点儿","大","我","觉得","很","冷"]}],note:"非主谓句；语气助词“了”（1）；“太……了”格式"},{n:2,title:"课文2",original:`王一雪：昨天下雪了。
 杨同乐：是的，太冷了。
 王一雪：你昨天没来公司，生病了？
-杨同乐：对，我昨天去医院看病了。`,lines:[{name:"王一雪",zh:"昨天下雪了。",py:"Zuótiān xià xuě le.",en:"It snowed yesterday."},{name:"杨同乐",zh:"是的，太冷了。",py:"Shì de, tài lěng le.",en:"Yes, it was too cold."},{name:"王一雪",zh:"你昨天没来公司，生病了？",py:"Nǐ zuótiān méi lái gōngsī, shēngbìng le?",en:"You didn't come to the office yesterday—were you sick?"},{name:"杨同乐",zh:"对，我昨天去医院看病了。",py:"Duì, wǒ zuótiān qù yīyuàn kànbìng le.",en:"Yes, I went to the hospital to see a doctor yesterday."}],vocab:{seg:[{t:"王一"},{b:1},{t:`：昨天下雪了。
+杨同乐：对，我昨天去医院看病了。`,lines:[{name:"王一雪",zh:"昨天下雪了。",py:"Zuótiān xià xuě le.",en:"It snowed yesterday."},{name:"杨同乐",zh:"是的，太冷了。",py:"Shì de, tài lěng le.",en:"Yes, it was too cold."},{name:"王一雪",zh:"你昨天没来公司，生病了？",py:"Nǐ zuótiān méi lái gōngsī, shēngbìng le?",en:"You didn't come to the office yesterday—were you sick?"},{name:"杨同乐",zh:"对，我昨天去医院看病了。",py:"Duì, wǒ zuótiān qù yīyuàn kànbìng le.",en:"Yes, I went to the hospital to see a doctor yesterday."}],vocab:{seg:[{t:"王一雪：昨天下"},{b:1},{t:`了。
 杨同乐：是的，太冷了。
 王一雪：你昨天没来`},{b:2},{t:"，"},{b:3},{t:`了？
 杨同乐：对，我昨天去医院`},{b:4},{t:"了。"}],answers:["雪","公司","生病","看病"],tiles:{雪:{py:"xuě",en:"snow"},公司:{py:"gōngsī",en:"company"},生病:{py:"shēngbìng",en:"to get sick"},看病:{py:"kànbìng",en:"to see a doctor; get medical treatment"}}},grammar:{before:`王一雪：昨天下雪了。
@@ -382,10 +382,10 @@ const e="newhsk3",t=1,n=[{num:1,name:"AI小语，你好！",texts:[{n:1,title:"�
 王一飞：我不知道。你可以打电话问一下。`,answer:"我可以再问您一个问题吗",tokens:["我","可以","再","问","您","一个","问题","吗"]},sentences:[{speaker:"白家月",text:"王老师，我可以再问您一个问题吗？",tokens:["王老师","我","可以","再","问","您","一个","问题","吗"]},{speaker:"王一飞",text:"可以。你有什么问题？",tokens:["可以","你","有","什么","问题"]},{speaker:"白家月",text:"那个小店卖不卖手机？",tokens:["那个","小","店","卖","不","卖","手机"]},{speaker:"王一飞",text:"我不知道。你可以打电话问一下。",tokens:["我","不","知道","你","可以","打电话","问","一下"]}],note:"能愿动词“可以”；“动词+一下”结构；双宾语句（1）"},{n:2,title:"课文2",original:`服务员：女士，请坐！您喝什么？
 王一雪：我看一下。请给我一杯牛奶。
 服务员：好的。您还要什么？
-王一雪：我还没吃早饭，再要这个面包和鸡蛋吧。`,lines:[{name:"服务员",zh:"女士，请坐！您喝什么？",py:"Nǚshì, qǐng zuò! Nín hē shénme?",en:"Please have a seat, ma'am! What would you like to drink?"},{name:"王一雪",zh:"我看一下。请给我一杯牛奶。",py:"Wǒ kàn yíxià. Qǐng gěi wǒ yì bēi niúnǎi.",en:"Let me have a look. A glass of milk, please."},{name:"服务员",zh:"好的。您还要什么？",py:"Hǎo de. Nín hái yào shénme?",en:"Okay. Anything else?"},{name:"王一雪",zh:"我还没吃早饭，再要这个面包和鸡蛋吧。",py:"Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba.",en:"I haven't had breakfast yet, so I'll also have this bread and egg."}],vocab:{seg:[{b:1},{t:"："},{b:2},{t:`，请坐！您喝什么？
-王一雪：我看一下。请给我一杯`},{b:3},{t:`。
+王一雪：我还没吃早饭，再要这个面包和鸡蛋吧。`,lines:[{name:"服务员",zh:"女士，请坐！您喝什么？",py:"Nǚshì, qǐng zuò! Nín hē shénme?",en:"Please have a seat, ma'am! What would you like to drink?"},{name:"王一雪",zh:"我看一下。请给我一杯牛奶。",py:"Wǒ kàn yíxià. Qǐng gěi wǒ yì bēi niúnǎi.",en:"Let me have a look. A glass of milk, please."},{name:"服务员",zh:"好的。您还要什么？",py:"Hǎo de. Nín hái yào shénme?",en:"Okay. Anything else?"},{name:"王一雪",zh:"我还没吃早饭，再要这个面包和鸡蛋吧。",py:"Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba.",en:"I haven't had breakfast yet, so I'll also have this bread and egg."}],vocab:{seg:[{t:"服务员："},{b:1},{t:`，请坐！您喝什么？
+王一雪：我看一下。请给我一杯`},{b:2},{t:`。
 服务员：好的。您还要什么？
-王一雪：我还没吃`},{b:4},{t:"，再要这个"},{b:5},{t:"和"},{b:6},{t:"吧。"}],answers:["服务员","女士","牛奶","早饭","面包","鸡蛋"],tiles:{服务员:{py:"fúwùyuán",en:"waiter; waitress; attendant"},女士:{py:"nǚshì",en:"lady; madam"},牛奶:{py:"niúnǎi",en:"milk"},早饭:{py:"zǎofàn",en:"breakfast"},面包:{py:"miànbāo",en:"bread"},鸡蛋:{py:"jīdàn",en:"egg"}}},grammar:{before:`服务员：女士，请坐！您喝什么？
+王一雪：我还没吃`},{b:3},{t:"，再要这个"},{b:4},{t:"和"},{b:5},{t:"吧。"}],answers:["女士","牛奶","早饭","面包","鸡蛋"],tiles:{女士:{py:"nǚshì",en:"lady; madam"},牛奶:{py:"niúnǎi",en:"milk"},早饭:{py:"zǎofàn",en:"breakfast"},面包:{py:"miànbāo",en:"bread"},鸡蛋:{py:"jīdàn",en:"egg"}}},grammar:{before:`服务员：女士，请坐！您喝什么？
 王一雪：`,after:`。请给我一杯牛奶。
 服务员：好的。您还要什么？
 王一雪：我还没吃早饭，再要这个面包和鸡蛋吧。`,answer:"我看一下",tokens:["我","看","一下"]},sentences:[{speaker:"服务员",text:"女士，请坐！您喝什么？",tokens:["女士","请","坐","您","喝","什么"]},{speaker:"王一雪",text:"我看一下。请给我一杯牛奶。",tokens:["我","看","一下","请","给","我","一杯","牛奶"]},{speaker:"服务员",text:"好的。您还要什么？",tokens:["好","的","您","还要","什么"]},{speaker:"王一雪",text:"我还没吃早饭，再要这个面包和鸡蛋吧。",tokens:["我","还","没","吃","早饭","再","要","这个","面包","和","鸡蛋","吧"]}],note:"能愿动词“可以”；“动词+一下”结构；双宾语句（1）"},{n:3,title:"课文3",original:`服务员：先生，请坐！您要什么？

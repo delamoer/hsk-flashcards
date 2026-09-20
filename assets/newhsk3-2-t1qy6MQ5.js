@@ -534,12 +534,12 @@ const e="newhsk3",t=2,n=[{num:1,name:"她请我们吃了北京烤鸭",texts:[{n:
 王一雪：好啊。你今天没课吗？
 白家月：下午有课。您那里天气怎么样？
 王一雪：北京这几天虽然是晴天，但是有点儿冷。
-白家月：我这里比北京冷多了，外边还正下着雪呢！`,lines:[{name:"王一雪",zh:"喂，家月，是你啊！有什么事情吗？",py:"Wéi, Jiāyuè, shì nǐ a! Yǒu shénme shìqing ma?",en:"Hello, Jiayue, it's you! Is something up?"},{name:"白家月",zh:"没什么事，就想跟您说说话。",py:"Méi shénme shì, jiù xiǎng gēn nín shuōshuo huà.",en:"Nothing much—I just wanted to chat with you."},{name:"王一雪",zh:"好啊。你今天没课吗？",py:"Hǎo a. Nǐ jīntiān méi kè ma?",en:"Sure. Don't you have class today?"},{name:"白家月",zh:"下午有课。您那里天气怎么样？",py:"Xiàwǔ yǒu kè. Nín nàli tiānqì zěnmeyàng?",en:"I have class in the afternoon. How's the weather where you are?"},{name:"王一雪",zh:"北京这几天虽然是晴天，但是有点儿冷。",py:"Běijīng zhè jǐ tiān suīrán shì qíngtiān, dànshì yǒudiǎnr lěng.",en:"Beijing has been sunny these days, but a bit cold."},{name:"白家月",zh:"我这里比北京冷多了，外边还正下着雪呢！",py:"Wǒ zhèlǐ bǐ Běijīng lěng duō le, wàibian hái zhèng xiàzhe xuě ne!",en:"It's much colder here than in Beijing—it's even snowing outside right now!"}],vocab:{seg:[{t:"王一"},{b:1},{t:`：喂，家月，是你啊！有什么事情吗？
+白家月：我这里比北京冷多了，外边还正下着雪呢！`,lines:[{name:"王一雪",zh:"喂，家月，是你啊！有什么事情吗？",py:"Wéi, Jiāyuè, shì nǐ a! Yǒu shénme shìqing ma?",en:"Hello, Jiayue, it's you! Is something up?"},{name:"白家月",zh:"没什么事，就想跟您说说话。",py:"Méi shénme shì, jiù xiǎng gēn nín shuōshuo huà.",en:"Nothing much—I just wanted to chat with you."},{name:"王一雪",zh:"好啊。你今天没课吗？",py:"Hǎo a. Nǐ jīntiān méi kè ma?",en:"Sure. Don't you have class today?"},{name:"白家月",zh:"下午有课。您那里天气怎么样？",py:"Xiàwǔ yǒu kè. Nín nàli tiānqì zěnmeyàng?",en:"I have class in the afternoon. How's the weather where you are?"},{name:"王一雪",zh:"北京这几天虽然是晴天，但是有点儿冷。",py:"Běijīng zhè jǐ tiān suīrán shì qíngtiān, dànshì yǒudiǎnr lěng.",en:"Beijing has been sunny these days, but a bit cold."},{name:"白家月",zh:"我这里比北京冷多了，外边还正下着雪呢！",py:"Wǒ zhèlǐ bǐ Běijīng lěng duō le, wàibian hái zhèng xiàzhe xuě ne!",en:"It's much colder here than in Beijing—it's even snowing outside right now!"}],vocab:{seg:[{t:`王一雪：喂，家月，是你啊！有什么事情吗？
 白家月：没什么事，就想跟您说说话。
 王一雪：好啊。你今天没课吗？
-白家月：下午有课。您那里`},{b:2},{t:`怎么样？
-王一雪：北京这几天虽然是`},{b:3},{t:"，但是有点儿"},{b:4},{t:`。
-白家月：我这里比北京冷多了，外边还正下着雪呢！`}],answers:["雪","天气","晴天","冷"],tiles:{雪:{py:"xuě",en:"snow"},天气:{py:"tiānqì",en:"weather"},晴天:{py:"qíngtiān",en:"sunny day"},冷:{py:"lěng",en:"cold"}}},grammar:{before:`王一雪：喂，家月，是你啊！有什么事情吗？
+白家月：下午有课。您那里`},{b:1},{t:`怎么样？
+王一雪：北京这几天虽然是`},{b:2},{t:"，但是有点儿"},{b:3},{t:`。
+白家月：我这里比北京冷多了，外边还正下着`},{b:4},{t:"呢！"}],answers:["天气","晴天","冷","雪"],tiles:{天气:{py:"tiānqì",en:"weather"},晴天:{py:"qíngtiān",en:"sunny day"},冷:{py:"lěng",en:"cold"},雪:{py:"xuě",en:"snow"}}},grammar:{before:`王一雪：喂，家月，是你啊！有什么事情吗？
 白家月：没什么事，就想跟您说说话。
 王一雪：好啊。你今天没课吗？
 白家月：下午有课。您那里天气怎么样？

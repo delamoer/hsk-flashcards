@@ -348,11 +348,11 @@ const e="newhsk3",t=3,n=[{num:1,name:"我们去机场接你们",texts:[{n:1,titl
 王一雪：我买了这么多，便宜点儿吧。
 店员：您给我五十五吧，不能再便宜了。`,lines:[{name:"店员",zh:"西瓜又大又新鲜，不甜不要钱！",py:"Xīguā yòu dà yòu xīnxiān, bù tián bú yào qián!",en:"The watermelons are big and fresh—if they're not sweet, they're free!"},{name:"王一雪",zh:"西瓜看起来不错，怎么卖？",py:"Xīguā kàn qǐlai búcuò, zěnme mài?",en:"The watermelon looks good—how much?"},{name:"店员",zh:"五块钱一公斤。来，您先尝尝这块冰西瓜，甜极了！",py:"Wǔ kuài qián yì gōngjīn. Lái, nín xiān chángchang zhè kuài bīng xīguā, tián jí le!",en:"Five yuan a kilo. Here, try this chilled slice first—it's super sweet!"},{name:"王一雪",zh:"是挺甜的！帮我选个大点儿的，再来两斤香蕉。",py:"Shì tǐng tián de! Bāng wǒ xuǎn ge dà diǎnr de, zài lái liǎng jīn xiāngjiāo.",en:"It really is sweet! Pick me a bigger one, and add two jin of bananas."},{name:"店员",zh:"一共五十八块五毛。",py:"Yígòng wǔshíbā kuài wǔ máo.",en:"That's 58.5 yuan in total."},{name:"王一雪",zh:"我买了这么多，便宜点儿吧。",py:"Wǒ mǎi le zhème duō, piányi diǎnr ba.",en:"I bought so much—give me a little discount."},{name:"店员",zh:"您给我五十五吧，不能再便宜了。",py:"Nín gěi wǒ wǔshíwǔ ba, bù néng zài piányi le.",en:"Make it 55—I can't go any lower."}],vocab:{seg:[{t:"店员："},{b:1},{t:"又大又"},{b:2},{t:"，不"},{b:3},{t:`不要钱！
 王一雪：西瓜看起来不错，怎么卖？
-店员：五块钱一`},{b:4},{t:"。来，您先尝尝这块冰西瓜，甜"},{b:6},{t:`了！
-王一雪：是挺甜的！帮我选个大点儿的，再来两`},{b:5},{t:`香蕉。
+店员：五块钱一`},{b:4},{t:"。来，您先尝尝这块冰西瓜，甜"},{b:5},{t:`了！
+王一雪：是挺甜的！帮我选个大点儿的，再来两`},{b:6},{t:`香蕉。
 店员：一共五十八块五毛。
 王一雪：我买了这么多，便宜点儿吧。
-店员：您给我五十五吧，不能再便宜了。`}],answers:["西瓜","新鲜","甜","公斤","斤","极"],tiles:{西瓜:{py:"xīguā",en:"watermelon"},新鲜:{py:"xīnxiān",en:"fresh"},甜:{py:"tián",en:"sweet"},公斤:{py:"gōngjīn",en:"kilogram"},斤:{py:"jīn",en:"jin; 500 grams"},极:{py:"jí",en:"extremely; very"}}},grammar:{before:`店员：西瓜又大又新鲜，不甜不要钱！
+店员：您给我五十五吧，不能再便宜了。`}],answers:["西瓜","新鲜","甜","公斤","极","斤"],tiles:{西瓜:{py:"xīguā",en:"watermelon"},新鲜:{py:"xīnxiān",en:"fresh"},甜:{py:"tián",en:"sweet"},公斤:{py:"gōngjīn",en:"kilogram"},极:{py:"jí",en:"extremely; very"},斤:{py:"jīn",en:"jin; 500 grams"}}},grammar:{before:`店员：西瓜又大又新鲜，不甜不要钱！
 王一雪：西瓜看起来不错，怎么卖？
 店员：五块钱一公斤。来，您先尝尝这块冰西瓜，`,after:`！
 王一雪：是挺甜的！帮我选个大点儿的，再来两斤香蕉。
@@ -679,10 +679,10 @@ const e="newhsk3",t=3,n=[{num:1,name:"我们去机场接你们",texts:[{n:1,titl
 王一雪：好，那我们就等客人来吧。`,lines:[{name:"王一雪",zh:"第一次请新邻居来做客，总是担心有什么没准备好。",py:"Dì-yī cì qǐng xīn línjū lái zuòkè, zǒngshì dānxīn yǒu shénme méi zhǔnbèi hǎo.",en:"It's the first time inviting the new neighbors over—I keep worrying something isn't ready."},{name:"刘明",zh:"放心吧，我都准备了，都已经准备好了。",py:"Fàngxīn ba, wǒ dōu zhǔnbèi le, dōu yǐjīng zhǔnbèi hǎo le.",en:"Relax—I've prepared everything; it's all ready."},{name:"王一雪",zh:"我记得刚才已经把饮料拿出来了，怎么不见了？",py:"Wǒ jìde gāngcái yǐjīng bǎ yǐnliào ná chūlai le, zěnme bú jiàn le?",en:"I remember I took the drinks out just now—how come they're gone?"},{name:"刘明",zh:"我把饮料和酒都放进冰箱里了，客人来了再拿出来。",py:"Wǒ bǎ yǐnliào hé jiǔ dōu fàng jìn bīngxiāng li le, kèrén lái le zài ná chūlai.",en:"I put the drinks and wine back in the fridge—I'll take them out when the guests arrive."},{name:"王一雪",zh:"音乐的声音合适吗？",py:"Yīnyuè de shēngyīn héshì ma?",en:"Is the music volume okay?"},{name:"刘明",zh:"你把声音开得太大了，我去关小一点儿。",py:"Nǐ bǎ shēngyīn kāi de tài dà le, wǒ qù guān xiǎo yìdiǎnr.",en:"You've got the volume too loud—I'll go turn it down a bit."},{name:"王一雪",zh:"好，那我们就等客人来吧。",py:"Hǎo, nà wǒmen jiù děng kèrén lái ba.",en:"Okay, then let's wait for the guests to arrive."}],vocab:{seg:[{t:"王一雪：第一次请新"},{b:1},{t:`来做客，总是担心有什么没准备好。
 刘明：`},{b:2},{t:`吧，我都准备了，都已经准备好了。
 王一雪：我记得刚才已经把饮料拿出来了，怎么不见了？
-刘明：我把饮料和`},{b:4},{t:"都"},{b:3},{t:"进冰箱里了，"},{b:5},{t:`来了再拿出来。
+刘明：我把饮料和`},{b:3},{t:"都"},{b:4},{t:"进冰箱里了，"},{b:5},{t:`来了再拿出来。
 王一雪：音乐的声音合适吗？
 刘明：你把声音开得太大了，我去关小一点儿。
-王一雪：好，那我们就等客人来吧。`}],answers:["邻居","放心","放","酒","客人"],tiles:{邻居:{py:"línjū",en:"neighbor"},放心:{py:"fàngxīn",en:"to feel relieved; don't worry"},放:{py:"fàng",en:"to put; to place"},酒:{py:"jiǔ",en:"alcoholic drink; wine"},客人:{py:"kèrén",en:"guest; customer"}}},grammar:{before:`王一雪：第一次请新邻居来做客，总是担心有什么没准备好。
+王一雪：好，那我们就等客人来吧。`}],answers:["邻居","放心","酒","放","客人"],tiles:{邻居:{py:"línjū",en:"neighbor"},放心:{py:"fàngxīn",en:"to feel relieved; don't worry"},酒:{py:"jiǔ",en:"alcoholic drink; wine"},放:{py:"fàng",en:"to put; to place"},客人:{py:"kèrén",en:"guest; customer"}}},grammar:{before:`王一雪：第一次请新邻居来做客，总是担心有什么没准备好。
 刘明：放心吧，我都准备了，都已经准备好了。
 王一雪：我记得刚才已经把饮料拿出来了，怎么不见了？
 刘明：`,after:`，客人来了再拿出来。

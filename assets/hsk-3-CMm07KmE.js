@@ -63,12 +63,12 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周太太：他去哪儿了？什么时候回来？
 秘书：他出去办事了，下午回来。
 周太太：回来了就让他给我打个电话。
-秘书：好的，他到了办公室我就告诉他。`,lines:[{name:"周太太",zh:"喂，你好，请问周明在吗？",py:"Wéi, nǐ hǎo, qǐngwèn Zhōu Míng zài ma?",en:"Hello, is Zhou Ming there?"},{name:"秘书",zh:"周经理出去了，不在办公室。",py:"Zhōu jīnglǐ chūqu le, bú zài bàngōngshì.",en:"Manager Zhou is out; he's not in the office."},{name:"周太太",zh:"他去哪儿了？什么时候回来？",py:"Tā qù nǎr le? Shénme shíhou huílai?",en:"Where did he go? When will he be back?"},{name:"秘书",zh:"他出去办事了，下午回来。",py:"Tā chūqu bànshì le, xiàwǔ huílai.",en:"He went out on business; he'll be back in the afternoon."},{name:"周太太",zh:"回来了就让他给我打个电话。",py:"Huílai le jiù ràng tā gěi wǒ dǎ ge diànhuà.",en:"When he's back, have him give me a call."},{name:"秘书",zh:"好的，他到了办公室我就告诉他。",py:"Hǎo de, tā dào le bàngōngshì wǒ jiù gàosu tā.",en:"Okay, I'll tell him as soon as he gets to the office."}],vocab:{seg:[{t:"周"},{b:1},{t:`：喂，你好，请问周明在吗？
-`},{b:2},{t:"：周"},{b:3},{t:"出去了，不在"},{b:4},{t:`。
+秘书：好的，他到了办公室我就告诉他。`,lines:[{name:"周太太",zh:"喂，你好，请问周明在吗？",py:"Wéi, nǐ hǎo, qǐngwèn Zhōu Míng zài ma?",en:"Hello, is Zhou Ming there?"},{name:"秘书",zh:"周经理出去了，不在办公室。",py:"Zhōu jīnglǐ chūqu le, bú zài bàngōngshì.",en:"Manager Zhou is out; he's not in the office."},{name:"周太太",zh:"他去哪儿了？什么时候回来？",py:"Tā qù nǎr le? Shénme shíhou huílai?",en:"Where did he go? When will he be back?"},{name:"秘书",zh:"他出去办事了，下午回来。",py:"Tā chūqu bànshì le, xiàwǔ huílai.",en:"He went out on business; he'll be back in the afternoon."},{name:"周太太",zh:"回来了就让他给我打个电话。",py:"Huílai le jiù ràng tā gěi wǒ dǎ ge diànhuà.",en:"When he's back, have him give me a call."},{name:"秘书",zh:"好的，他到了办公室我就告诉他。",py:"Hǎo de, tā dào le bàngōngshì wǒ jiù gàosu tā.",en:"Okay, I'll tell him as soon as he gets to the office."}],vocab:{seg:[{t:`周太太：喂，你好，请问周明在吗？
+秘书：周`},{b:1},{t:"出去了，不在"},{b:2},{t:`。
 周太太：他去哪儿了？什么时候回来？
 秘书：他出去办事了，下午回来。
 周太太：回来了就让他给我打个电话。
-秘书：好的，他到了办公室我就告诉他。`}],answers:["太太","秘书","经理","办公室"],tiles:{太太:{py:"tàitai",en:"wife; Mrs."},秘书:{py:"mìshū",en:"secretary"},经理:{py:"jīnglǐ",en:"manager"},办公室:{py:"bàngōngshì",en:"office"}}},grammar:{before:`周太太：喂，你好，请问周明在吗？
+秘书：好的，他到了办公室我就告诉他。`}],answers:["经理","办公室"],tiles:{经理:{py:"jīnglǐ",en:"manager"},办公室:{py:"bàngōngshì",en:"office"}}},grammar:{before:`周太太：喂，你好，请问周明在吗？
 秘书：周经理出去了，不在办公室。
 周太太：他去哪儿了？什么时候回来？
 秘书：他出去办事了，下午回来。
@@ -89,11 +89,11 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周明：你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？
 周太太：其实我每天都运动。
 周明：但是你一点儿也没瘦！你做什么运动了？
-周太太：做饭啊。`,lines:[{name:"周太太",zh:"你看，我这么胖，怎么办呢？",py:"Nǐ kàn, wǒ zhème pàng, zěnme bàn ne?",en:"Look, I'm so fat—what should I do?"},{name:"周明",zh:"你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？",py:"Nǐ měi tiān wǎnshang chī le fàn jiù shuìjiào, yě bù chūqu zǒuzou, néng bú pàng ma?",en:"You go to sleep right after dinner every night and never go out for a walk—how could you not get fat?"},{name:"周太太",zh:"其实我每天都运动。",py:"Qíshí wǒ měi tiān dōu yùndòng.",en:"Actually, I exercise every day."},{name:"周明",zh:"但是你一点儿也没瘦！你做什么运动了？",py:"Dànshì nǐ yìdiǎnr yě méi shòu! Nǐ zuò shénme yùndòng le?",en:"But you haven't gotten any thinner! What exercise did you do?"},{name:"周太太",zh:"做饭啊。",py:"Zuò fàn a.",en:"Cooking."}],vocab:{seg:[{t:"周"},{b:1},{t:"：你看，我这么"},{b:2},{t:`，怎么办呢？
+周太太：做饭啊。`,lines:[{name:"周太太",zh:"你看，我这么胖，怎么办呢？",py:"Nǐ kàn, wǒ zhème pàng, zěnme bàn ne?",en:"Look, I'm so fat—what should I do?"},{name:"周明",zh:"你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？",py:"Nǐ měi tiān wǎnshang chī le fàn jiù shuìjiào, yě bù chūqu zǒuzou, néng bú pàng ma?",en:"You go to sleep right after dinner every night and never go out for a walk—how could you not get fat?"},{name:"周太太",zh:"其实我每天都运动。",py:"Qíshí wǒ měi tiān dōu yùndòng.",en:"Actually, I exercise every day."},{name:"周明",zh:"但是你一点儿也没瘦！你做什么运动了？",py:"Dànshì nǐ yìdiǎnr yě méi shòu! Nǐ zuò shénme yùndòng le?",en:"But you haven't gotten any thinner! What exercise did you do?"},{name:"周太太",zh:"做饭啊。",py:"Zuò fàn a.",en:"Cooking."}],vocab:{seg:[{t:"周太太：你看，我这么"},{b:1},{t:`，怎么办呢？
 周明：你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？
-周太太：`},{b:3},{t:`我每天都运动。
-周明：但是你一点儿也没`},{b:4},{t:`！你做什么运动了？
-周太太：做饭啊。`}],answers:["太太","胖","其实","瘦"],tiles:{太太:{py:"tàitai",en:"wife; Mrs."},胖:{py:"pàng",en:"fat; overweight"},其实:{py:"qíshí",en:"actually; in fact"},瘦:{py:"shòu",en:"thin; slim"}}},grammar:{before:`周太太：你看，我这么胖，怎么办呢？
+周太太：`},{b:2},{t:`我每天都运动。
+周明：但是你一点儿也没`},{b:3},{t:`！你做什么运动了？
+周太太：做饭啊。`}],answers:["胖","其实","瘦"],tiles:{胖:{py:"pàng",en:"fat; overweight"},其实:{py:"qíshí",en:"actually; in fact"},瘦:{py:"shòu",en:"thin; slim"}}},grammar:{before:`周太太：你看，我这么胖，怎么办呢？
 周明：你每天晚上`,after:`，也不出去走走，能不胖吗？
 周太太：其实我每天都运动。
 周明：但是你一点儿也没瘦！你做什么运动了？
@@ -118,13 +118,13 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 周明：这件衬衫怎么样？
 周太太：还不错，多少钱？
 周明：这上面写着320元。
-周太太：买一件。`,lines:[{name:"周太太",zh:"你觉得这条裤子怎么样？",py:"Nǐ juéde zhè tiáo kùzi zěnmeyàng?",en:"What do you think of these pants?"},{name:"周明",zh:"我记得你已经有两条这样的裤子了。",py:"Wǒ jìde nǐ yǐjīng yǒu liǎng tiáo zhèyàng de kùzi le.",en:"I remember you already have two pairs of pants like these."},{name:"周太太",zh:"那我们再看看别的。",py:"Nà wǒmen zài kànkan biéde.",en:"Then let's look at something else."},{name:"周明",zh:"这件衬衫怎么样？",py:"Zhè jiàn chènshān zěnmeyàng?",en:"How about this shirt?"},{name:"周太太",zh:"还不错，多少钱？",py:"Hái búcuò, duōshao qián?",en:"Not bad—how much?"},{name:"周明",zh:"这上面写着320元。",py:"Zhè shàngmiàn xiězhe sānbǎi èrshí yuán.",en:"It says 320 yuan here."},{name:"周太太",zh:"买一件。",py:"Mǎi yí jiàn.",en:"I'll buy one."}],vocab:{seg:[{b:1},{t:`：你觉得这条裤子怎么样？
+周太太：买一件。`,lines:[{name:"周太太",zh:"你觉得这条裤子怎么样？",py:"Nǐ juéde zhè tiáo kùzi zěnmeyàng?",en:"What do you think of these pants?"},{name:"周明",zh:"我记得你已经有两条这样的裤子了。",py:"Wǒ jìde nǐ yǐjīng yǒu liǎng tiáo zhèyàng de kùzi le.",en:"I remember you already have two pairs of pants like these."},{name:"周太太",zh:"那我们再看看别的。",py:"Nà wǒmen zài kànkan biéde.",en:"Then let's look at something else."},{name:"周明",zh:"这件衬衫怎么样？",py:"Zhè jiàn chènshān zěnmeyàng?",en:"How about this shirt?"},{name:"周太太",zh:"还不错，多少钱？",py:"Hái búcuò, duōshao qián?",en:"Not bad—how much?"},{name:"周明",zh:"这上面写着320元。",py:"Zhè shàngmiàn xiězhe sānbǎi èrshí yuán.",en:"It says 320 yuan here."},{name:"周太太",zh:"买一件。",py:"Mǎi yí jiàn.",en:"I'll buy one."}],vocab:{seg:[{t:`周太太：你觉得这条裤子怎么样？
 周明：我记得你已经有两条这样的裤子了。
-周太太：`},{b:2},{t:`看看别的。
+周太太：`},{b:1},{t:`看看别的。
 周明：这件衬衫怎么样？
 周太太：还不错，多少钱？
-周明：这上面写着320`},{b:3},{t:`。
-周太太：买一件。`}],answers:["周太太","那我们再","元"],tiles:{周太太:{py:"Zhōu tàitai",en:"Mrs. Zhou"},那我们再:{py:"nà wǒmen zài",en:"then let's … (do sth) again"},元:{py:"yuán",en:"yuan"}}},grammar:{before:`周太太：你觉得这条裤子怎么样？
+周明：这上面写着320`},{b:2},{t:`。
+周太太：买一件。`}],answers:["那我们再","元"],tiles:{那我们再:{py:"nà wǒmen zài",en:"then let's … (do sth) again"},元:{py:"yuán",en:"yuan"}}},grammar:{before:`周太太：你觉得这条裤子怎么样？
 周明：我记得你已经有两条这样的裤子了。
 周太太：那我们再看看别的。
 周明：这件衬衫怎么样？
@@ -203,11 +203,11 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 经理：您能再说说吗？
 客人：她总是笑着跟客人说话。
 经理：啊，我知道了，你说的是李小美吧？`,lines:[{name:"经理",zh:"您好！您找谁？",py:"Nín hǎo! Nín zhǎo shéi?",en:"Hello! Who are you looking for?"},{name:"客人",zh:"你们这儿是不是有一个又年轻又漂亮的服务员？",py:"Nǐmen zhèr shì bu shì yǒu yí ge yòu niánqīng yòu piàoliang de fúwùyuán?",en:"Do you have a young, pretty waitress here?"},{name:"经理",zh:"我们这儿年轻、漂亮的服务员有很多。",py:"Wǒmen zhèr niánqīng, piàoliang de fúwùyuán yǒu hěn duō.",en:"We have lots of young, pretty waitresses here."},{name:"客人",zh:"她工作又认真又热情。",py:"Tā gōngzuò yòu rènzhēn yòu rèqíng.",en:"She works both conscientiously and warmly."},{name:"经理",zh:"您能再说说吗？",py:"Nín néng zài shuōshuo ma?",en:"Could you say more?"},{name:"客人",zh:"她总是笑着跟客人说话。",py:"Tā zǒngshì xiàozhe gēn kèrén shuōhuà.",en:"She always talks to customers with a smile."},{name:"经理",zh:"啊，我知道了，你说的是李小美吧？",py:"À, wǒ zhīdào le, nǐ shuō de shì Lǐ Xiǎoměi ba?",en:"Ah, I know—you mean Li Xiaomei, right?"}],vocab:{seg:[{t:`经理：您好！您找谁？
-`},{b:3},{t:"：你们这儿是不是有一个又"},{b:1},{t:`又漂亮的服务员？
+客人：你们这儿是不是有一个又`},{b:1},{t:`又漂亮的服务员？
 经理：我们这儿年轻、漂亮的服务员有很多。
 客人：她工作又`},{b:2},{t:`又热情。
 经理：您能再说说吗？
-客人：她总是笑着跟客人说话。
+客人：她总是笑着跟`},{b:3},{t:`说话。
 经理：啊，我知道了，你说的是李小美吧？`}],answers:["年轻","认真","客人"],tiles:{年轻:{py:"niánqīng",en:"young"},认真:{py:"rènzhēn",en:"serious; conscientious"},客人:{py:"kèrén",en:"guest; customer"}}},grammar:{before:`经理：您好！您找谁？
 客人：你们这儿是不是有一个又年轻又漂亮的服务员？
 经理：我们这儿年轻、漂亮的服务员有很多。
@@ -336,7 +336,7 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 同事：她刚来北京吗？
 小刚：不，她在北京工作三年了。
 同事：以前她在哪儿工作？
-小刚：她在银行工作了两年以后来的我们公司。`,lines:[{name:"同事",zh:"那个漂亮的新同事是谁？",py:"Nàge piàoliang de xīn tóngshì shì shéi?",en:"Who's that pretty new colleague?"},{name:"小刚",zh:"那是小丽。",py:"Nà shì Xiǎo Lì.",en:"That's Xiao Li."},{name:"同事",zh:"她刚来北京吗？",py:"Tā gāng lái Běijīng ma?",en:"Did she just come to Beijing?"},{name:"小刚",zh:"不，她在北京工作三年了。",py:"Bù, tā zài Běijīng gōngzuò sān nián le.",en:"No, she's worked in Beijing for three years."},{name:"同事",zh:"以前她在哪儿工作？",py:"Yǐqián tā zài nǎr gōngzuò?",en:"Where did she work before?"},{name:"小刚",zh:"她在银行工作了两年以后来的我们公司。",py:"Tā zài yínháng gōngzuò le liǎng nián yǐhòu lái de wǒmen gōngsī.",en:"She worked at a bank for two years and then joined our company."}],vocab:{seg:[{b:1},{t:`：那个漂亮的新同事是谁？
+小刚：她在银行工作了两年以后来的我们公司。`,lines:[{name:"同事",zh:"那个漂亮的新同事是谁？",py:"Nàge piàoliang de xīn tóngshì shì shéi?",en:"Who's that pretty new colleague?"},{name:"小刚",zh:"那是小丽。",py:"Nà shì Xiǎo Lì.",en:"That's Xiao Li."},{name:"同事",zh:"她刚来北京吗？",py:"Tā gāng lái Běijīng ma?",en:"Did she just come to Beijing?"},{name:"小刚",zh:"不，她在北京工作三年了。",py:"Bù, tā zài Běijīng gōngzuò sān nián le.",en:"No, she's worked in Beijing for three years."},{name:"同事",zh:"以前她在哪儿工作？",py:"Yǐqián tā zài nǎr gōngzuò?",en:"Where did she work before?"},{name:"小刚",zh:"她在银行工作了两年以后来的我们公司。",py:"Tā zài yínháng gōngzuò le liǎng nián yǐhòu lái de wǒmen gōngsī.",en:"She worked at a bank for two years and then joined our company."}],vocab:{seg:[{t:"同事：那个漂亮的新"},{b:1},{t:`是谁？
 小刚：那是小丽。
 同事：她刚来北京吗？
 小刚：不，她在北京工作三年了。
@@ -444,12 +444,12 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 老同学：健康最重要，胖瘦没关系。
 周太太：是呀，想吃什么就吃什么。
 老同学：你做饭还是周明做饭？
-周太太：我做，我想吃什么就做什么，想吃多少就做多少。`,lines:[{name:"老同学",zh:"快五年了，你几乎没变化。",py:"Kuài wǔ nián le, nǐ jīhū méi biànhuà.",en:"It's been almost five years, and you've hardly changed."},{name:"周太太",zh:"谁说的？我胖了，以前的衣服都不能穿了。",py:"Shéi shuō de? Wǒ pàng le, yǐqián de yīfu dōu bù néng chuān le.",en:"Says who? I've gotten fat—none of my old clothes fit anymore."},{name:"老同学",zh:"健康最重要，胖瘦没关系。",py:"Jiànkāng zuì zhòngyào, pàng shòu méi guānxi.",en:"Health matters most; fat or thin doesn't matter."},{name:"周太太",zh:"是呀，想吃什么就吃什么。",py:"Shì ya, xiǎng chī shénme jiù chī shénme.",en:"Right—eat whatever you want."},{name:"老同学",zh:"你做饭还是周明做饭？",py:"Nǐ zuò fàn háishi Zhōu Míng zuò fàn?",en:"Do you cook, or does Zhou Ming?"},{name:"周太太",zh:"我做，我想吃什么就做什么，想吃多少就做多少。",py:"Wǒ zuò, wǒ xiǎng chī shénme jiù zuò shénme, xiǎng chī duōshao jiù zuò duōshao.",en:"I do—I make whatever I want to eat, and as much as I want."}],vocab:{seg:[{b:1},{t:"同学：快五年了，你"},{b:2},{t:"没"},{b:3},{t:`。
+周太太：我做，我想吃什么就做什么，想吃多少就做多少。`,lines:[{name:"老同学",zh:"快五年了，你几乎没变化。",py:"Kuài wǔ nián le, nǐ jīhū méi biànhuà.",en:"It's been almost five years, and you've hardly changed."},{name:"周太太",zh:"谁说的？我胖了，以前的衣服都不能穿了。",py:"Shéi shuō de? Wǒ pàng le, yǐqián de yīfu dōu bù néng chuān le.",en:"Says who? I've gotten fat—none of my old clothes fit anymore."},{name:"老同学",zh:"健康最重要，胖瘦没关系。",py:"Jiànkāng zuì zhòngyào, pàng shòu méi guānxi.",en:"Health matters most; fat or thin doesn't matter."},{name:"周太太",zh:"是呀，想吃什么就吃什么。",py:"Shì ya, xiǎng chī shénme jiù chī shénme.",en:"Right—eat whatever you want."},{name:"老同学",zh:"你做饭还是周明做饭？",py:"Nǐ zuò fàn háishi Zhōu Míng zuò fàn?",en:"Do you cook, or does Zhou Ming?"},{name:"周太太",zh:"我做，我想吃什么就做什么，想吃多少就做多少。",py:"Wǒ zuò, wǒ xiǎng chī shénme jiù zuò shénme, xiǎng chī duōshao jiù zuò duōshao.",en:"I do—I make whatever I want to eat, and as much as I want."}],vocab:{seg:[{t:"老同学：快五年了，你"},{b:1},{t:"没"},{b:2},{t:`。
 周太太：谁说的？我胖了，以前的衣服都不能穿了。
-老同学：`},{b:4},{t:"最"},{b:5},{t:`，胖瘦没关系。
+老同学：`},{b:3},{t:"最"},{b:4},{t:`，胖瘦没关系。
 周太太：是呀，想吃什么就吃什么。
 老同学：你做饭还是周明做饭？
-周太太：我做，我想吃什么就做什么，想吃多少就做多少。`}],answers:["老","几乎","变化","健康","重要"],tiles:{老:{py:"lǎo",en:"old; aged"},几乎:{py:"jīhū",en:"almost"},变化:{py:"biànhuà",en:"change"},健康:{py:"jiànkāng",en:"healthy; health"},重要:{py:"zhòngyào",en:"important"}}},grammar:{before:`老同学：快五年了，你几乎没变化。
+周太太：我做，我想吃什么就做什么，想吃多少就做多少。`}],answers:["几乎","变化","健康","重要"],tiles:{几乎:{py:"jīhū",en:"almost"},变化:{py:"biànhuà",en:"change"},健康:{py:"jiànkāng",en:"healthy; health"},重要:{py:"zhòngyào",en:"important"}}},grammar:{before:`老同学：快五年了，你几乎没变化。
 周太太：谁说的？我胖了，以前的衣服都不能穿了。
 老同学：健康最重要，胖瘦没关系。
 周太太：是呀，`,after:`。
@@ -565,11 +565,11 @@ const e="hsk",t=3,n=[{num:1,name:"周末你有什么打算",texts:[{n:1,title:"�
 中介：学校里边的没有学校外边的那么安静。
 大山：哪个方便一些呢？
 中介：学校里边比学校外边方便，附近有三四个车站。`,lines:[{name:"大山",zh:"这两个地方的房子一样吗？",py:"Zhè liǎng ge dìfang de fángzi yíyàng ma?",en:"Are the houses in these two places the same?"},{name:"中介",zh:"不一样。您看，学校外边的房子比学校里边的大一些。",py:"Bù yíyàng. Nín kàn, xuéxiào wàibian de fángzi bǐ xuéxiào lǐbian de dà yìxiē.",en:"No. See, the houses outside the school are a bit bigger than those inside."},{name:"大山",zh:"大小没关系，主要是环境，哪个更安静？",py:"Dàxiǎo méi guānxi, zhǔyào shì huánjìng, nǎge gèng ānjìng?",en:"Size doesn't matter; it's mainly the surroundings—which is quieter?"},{name:"中介",zh:"学校里边的没有学校外边的那么安静。",py:"Xuéxiào lǐbian de méiyǒu xuéxiào wàibian de nàme ānjìng.",en:"The ones inside the school aren't as quiet as those outside."},{name:"大山",zh:"哪个方便一些呢？",py:"Nǎge fāngbiàn yìxiē ne?",en:"Which is more convenient?"},{name:"中介",zh:"学校里边比学校外边方便，附近有三四个车站。",py:"Xuéxiào lǐbian bǐ xuéxiào wàibian fāngbiàn, fùjìn yǒu sān-sì ge chēzhàn.",en:"Inside the school is more convenient—there are three or four bus stops nearby."}],vocab:{seg:[{t:"大山：这两个"},{b:1},{t:`的房子一样吗？
-`},{b:2},{t:`：不一样。您看，学校外边的房子比学校里边的大一些。
-大山：大小没关系，`},{b:3},{t:"是"},{b:4},{t:`，哪个更安静？
+中介：不一样。您看，学校外边的房子比学校里边的大一些。
+大山：大小没关系，`},{b:2},{t:"是"},{b:3},{t:`，哪个更安静？
 中介：学校里边的没有学校外边的那么安静。
 大山：哪个方便一些呢？
-中介：学校里边比学校外边方便，`},{b:5},{t:"有三四个车站。"}],answers:["地方","中介","主要","环境","附近"],tiles:{地方:{py:"dìfang",en:"place"},中介:{py:"zhōngjiè",en:"agent; intermediary"},主要:{py:"zhǔyào",en:"main; mainly"},环境:{py:"huánjìng",en:"environment; surroundings"},附近:{py:"fùjìn",en:"nearby; vicinity"}}},grammar:{before:`大山：这两个地方的房子一样吗？
+中介：学校里边比学校外边方便，`},{b:4},{t:"有三四个车站。"}],answers:["地方","主要","环境","附近"],tiles:{地方:{py:"dìfang",en:"place"},主要:{py:"zhǔyào",en:"main; mainly"},环境:{py:"huánjìng",en:"environment; surroundings"},附近:{py:"fùjìn",en:"nearby; vicinity"}}},grammar:{before:`大山：这两个地方的房子一样吗？
 中介：不一样。您看，`,after:`。
 大山：大小没关系，主要是环境，哪个更安静？
 中介：学校里边的没有学校外边的那么安静。
