@@ -28,6 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "data" / "texts"
 DATA = ROOT / "src" / "data"
 SEG_FILE = ROOT / "scripts" / "grammar_segments.tsv"
+GLOSS_FILE = ROOT / "scripts" / "text_gloss.tsv"
 MAX_WORD = 6  # longest word to try in max-match segmentation
 
 # (filename, series, unit) — teacher sheet "教师答案版" is the complete one.
@@ -60,6 +61,24 @@ def load_segments() -> dict:
             clause, toks = line.split("\t", 1)
             seg[clause] = [t for t in toks.split(" ") if t.strip()]
     return seg
+
+
+def load_gloss() -> dict:
+    """Hand-authored pinyin + English per dialogue line (scripts/text_gloss.tsv).
+    Keyed by the exact speech text (speaker stripped) — same key the reader shows
+    and gen_audio speaks. Lines absent here simply carry no py/en (front-end hides
+    the row). Edit the TSV, not the generated JSON."""
+    gloss = {}
+    if GLOSS_FILE.exists():
+        for line in GLOSS_FILE.read_text(encoding="utf-8").splitlines():
+            if not line.strip() or line.lstrip().startswith("#"):
+                continue
+            parts = line.split("\t")
+            if len(parts) < 3:
+                continue
+            zh, py, en = parts[0], parts[1].strip(), parts[2].strip()
+            gloss[zh] = {"py": py, "en": en}
+    return gloss
 
 
 def load_lexicon(segmap: dict) -> set:
@@ -197,7 +216,23 @@ def build_sentences(original: str, segmap: dict, lex: set):
     return out
 
 
-def convert(fname, series, unit, segmap, lex):
+def build_lines(original: str, gloss: dict):
+    """Per-line reading view: speaker + speech + hand-authored pinyin/English.
+    Derived from `original` so the source stays the single dialogue string."""
+    out = []
+    for raw in (original or "").split("\n"):
+        line = raw.strip()
+        if not line:
+            continue
+        m = SPEAKER_RE.match(line)
+        name = m.group(1) if m else ""
+        speech = (m.group(2).strip() if m else line)
+        g = gloss.get(speech, {})
+        out.append({"name": name, "zh": speech, "py": g.get("py", ""), "en": g.get("en", "")})
+    return out
+
+
+def convert(fname, series, unit, segmap, lex, gloss):
     wb = openpyxl.load_workbook(ROOT / "sources" / fname, read_only=True, data_only=True)
     ws = wb[SHEET]
     rows = list(ws.iter_rows(values_only=True))
@@ -224,6 +259,7 @@ def convert(fname, series, unit, segmap, lex):
             "n": len(lessons[ln]["texts"]) + 1,
             "title": clean(r[C_TITLE]) or f"课文{len(lessons[ln]['texts']) + 1}",
             "original": original,
+            "lines": build_lines(original, gloss),
             "vocab": vocab,
             "grammar": parse_grammar(clean(r[C_GCLOZE]), clean(r[C_GANS]), segmap),
             "sentences": build_sentences(original, segmap, seg_lex),
@@ -239,11 +275,12 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     segmap = load_segments()
     lex = load_lexicon(segmap)
+    gloss = load_gloss()
     meta = {}
-    print(f"Segmentation table: {len(segmap)} clauses · lexicon: {len(lex)} words")
+    print(f"Segmentation table: {len(segmap)} clauses · lexicon: {len(lex)} words · gloss: {len(gloss)} lines")
     print("Converted 课文:")
     for fname, series, unit, in SOURCES:
-        data, n_lessons, n_texts = convert(fname, series, unit, segmap, lex)
+        data, n_lessons, n_texts = convert(fname, series, unit, segmap, lex, gloss)
         key = f"{series}-{unit}"
         (OUT / f"{key}.json").write_text(
             json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8"

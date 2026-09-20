@@ -47,8 +47,20 @@
     <!-- ============ ① READ ============ -->
     <div v-if="mode === 'read'" class="panel read" :class="{ solo: !noteItems.length }">
       <div class="col-text paper-bg">
-        <div class="kicker">对话 · Dialogue</div>
-        <h2>{{ text.title }}</h2>
+        <div class="read-head">
+          <div>
+            <div class="kicker">对话 · Dialogue</div>
+            <h2>{{ text.title }}</h2>
+          </div>
+          <div class="rtoggles" v-if="hasPy || hasEn">
+            <button v-if="hasPy" class="rt" :class="{ on: showPy }" @click="showPy = !showPy">
+              拼音<small>Pinyin</small>
+            </button>
+            <button v-if="hasEn" class="rt" :class="{ on: showEn }" @click="showEn = !showEn">
+              En<small>English</small>
+            </button>
+          </div>
+        </div>
         <div class="divider"></div>
 
         <div class="line" v-for="(d, i) in dialogue" :key="i">
@@ -58,6 +70,8 @@
               {{ d.speech }}
               <button class="spk" @click="say(d.speech)" title="朗读">🔊</button>
             </div>
+            <div v-if="showPy && d.py" class="py-line" v-html="pyHtml(d.py)"></div>
+            <div v-if="showEn && d.en" class="tr-line">{{ d.en }}</div>
           </div>
         </div>
       </div>
@@ -263,17 +277,35 @@ function tileMeaning(word) {
   return flashMap.value[word]?.meaning || "";
 }
 
-// Split each original line "说话人：内容" into a speaker + speech pair.
-const dialogue = computed(() =>
-  (text.value?.original || "")
+// Per-line reading view. Prefer the generated `lines` (speaker + speech +
+// hand-authored pinyin/English from scripts/text_gloss.tsv); fall back to
+// splitting `original` for texts not yet glossed.
+const dialogue = computed(() => {
+  const t = text.value;
+  if (!t) return [];
+  if (t.lines?.length) {
+    return t.lines.map((l) => ({ name: l.name, speech: l.zh, py: l.py, en: l.en }));
+  }
+  return (t.original || "")
     .split("\n")
     .map((s) => s.trim())
     .filter(Boolean)
     .map((line) => {
       const m = line.match(/^([^：:]{1,8})[：:](.*)$/);
-      return m ? { name: m[1], speech: m[2].trim() } : { name: "", speech: line };
-    })
-);
+      return m
+        ? { name: m[1], speech: m[2].trim(), py: "", en: "" }
+        : { name: "", speech: line, py: "", en: "" };
+    });
+});
+
+// Pinyin / English reveal toggles (off by default — the reader chooses).
+const showPy = ref(false);
+const showEn = ref(false);
+const hasPy = computed(() => dialogue.value.some((d) => d.py));
+const hasEn = computed(() => dialogue.value.some((d) => d.en));
+function pyHtml(py) {
+  return settings.toneColors ? colorPinyin(py) : py;
+}
 
 // Grammar points are a WHOLE-LESSON list (identical across all 课文 of a lesson
 // in the source) — shown as a shared reference, not tied to this specific text.
@@ -671,6 +703,44 @@ watch(
 .col-text {
   padding: 40px 48px 36px;
 }
+.read-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+.rtoggles {
+  flex: none;
+  display: inline-flex;
+  gap: 6px;
+}
+.rt {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.05;
+  font-family: var(--han);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--muted);
+  background: var(--card);
+  border: 1.5px solid var(--hairline);
+  border-radius: var(--r-pill);
+  padding: 6px 14px;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.rt small {
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.rt.on {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
 .kicker {
   font-size: 11px;
   font-weight: 800;
@@ -728,6 +798,21 @@ watch(
   line-height: 1.85;
   color: var(--ink);
   letter-spacing: 0.5px;
+}
+.py-line {
+  font-family: var(--ui, "Nunito", sans-serif);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--primary-strong);
+  margin-top: 4px;
+  letter-spacing: 0.2px;
+}
+.tr-line {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-top: 3px;
+  line-height: 1.5;
 }
 .spk {
   display: inline-flex;

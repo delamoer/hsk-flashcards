@@ -10,6 +10,20 @@
      "n": 1,
      "title": "课文1",
      "original": "王一飞：AI小语，你好！\n小语：王老师，你好！",
+     "lines": [
+      {
+       "name": "王一飞",
+       "zh": "AI小语，你好！",
+       "py": "AI Xiǎoyǔ, nǐ hǎo!",
+       "en": "AI Xiaoyu, hello!"
+      },
+      {
+       "name": "小语",
+       "zh": "王老师，你好！",
+       "py": "Wáng lǎoshī, nǐ hǎo!",
+       "en": "Hello, Teacher Wang!"
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -68,6 +82,32 @@
      "n": 2,
      "title": "课文2",
      "original": "王一飞：大家好！\n陈天中：老师，您好！\n小语：你好！\n陈天中：你好，小语！",
+     "lines": [
+      {
+       "name": "王一飞",
+       "zh": "大家好！",
+       "py": "Dàjiā hǎo!",
+       "en": "Hello, everyone!"
+      },
+      {
+       "name": "陈天中",
+       "zh": "老师，您好！",
+       "py": "Lǎoshī, nín hǎo!",
+       "en": "Hello, Teacher!"
+      },
+      {
+       "name": "小语",
+       "zh": "你好！",
+       "py": "Nǐ hǎo!",
+       "en": "Hello!"
+      },
+      {
+       "name": "陈天中",
+       "zh": "你好，小语！",
+       "py": "Nǐ hǎo, Xiǎoyǔ!",
+       "en": "Hello, Xiaoyu!"
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -139,6 +179,32 @@
      "n": 3,
      "title": "课文3",
      "original": "学生们：谢谢！\n小语：不客气！\n王一飞：同学们，再见！\n学生们：老师，再见！",
+     "lines": [
+      {
+       "name": "学生们",
+       "zh": "谢谢！",
+       "py": "Xièxie!",
+       "en": "Thank you!"
+      },
+      {
+       "name": "小语",
+       "zh": "不客气！",
+       "py": "Bú kèqi!",
+       "en": "You're welcome!"
+      },
+      {
+       "name": "王一飞",
+       "zh": "同学们，再见！",
+       "py": "Tóngxuémen, zàijiàn!",
+       "en": "Goodbye, students!"
+      },
+      {
+       "name": "学生们",
+       "zh": "老师，再见！",
+       "py": "Lǎoshī, zàijiàn!",
+       "en": "Goodbye, Teacher!"
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -215,6 +281,20 @@
      "n": 1,
      "title": "课文1",
      "original": "王一飞：请问，你叫什么名字？\n陈天中：我叫陈天中。",
+     "lines": [
+      {
+       "name": "王一飞",
+       "zh": "请问，你叫什么名字？",
+       "py": "Qǐngwèn, nǐ jiào shénme míngzi?",
+       "en": "Excuse me, what's your name?"
+      },
+      {
+       "name": "陈天中",
+       "zh": "我叫陈天中。",
+       "py": "Wǒ jiào Chén Tiānzhōng.",
+       "en": "My name is Chen Tianzhong."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -287,6 +367,32 @@
      "n": 2,
      "title": "课文2",
      "original": "陈天中：你好，安妮！\n白家月：你好，陈天中！我不是安妮，我是白家月。\n陈天中：对不起！\n白家月：没关系！",
+     "lines": [
+      {
+       "name": "陈天中",
+       "zh": "你好，安妮！",
+       "py": "Nǐ hǎo, Ānnī!",
+       "en": "Hello, Annie!"
+      },
+      {
+       "name": "白家月",
+       "zh": "你好，陈天中！我不是安妮，我是白家月。",
+       "py": "Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè.",
+       "en": "Hello, Chen Tianzhong! I'm not Annie, I'm Bai Jiayue."
+      },
+      {
+       "name": "陈天中",
+       "zh": "对不起！",
+       "py": "Duìbuqǐ!",
+       "en": "Sorry!"
+      },
+      {
+       "name": "白家月",
+       "zh": "没关系！",
+       "py": "Méi guānxi!",
+       "en": "It's okay!"
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -362,6 +468,32 @@
      "n": 3,
      "title": "课文3",
      "original": "李文：你好！我叫李文。\n白家月：你好！我叫白家月。\n李文：很高兴认识你。\n白家月：认识你我也很高兴。",
+     "lines": [
+      {
+       "name": "李文",
+       "zh": "你好！我叫李文。",
+       "py": "Nǐ hǎo! Wǒ jiào Lǐ Wén.",
+       "en": "Hello! My name is Li Wen."
+      },
+      {
+       "name": "白家月",
+       "zh": "你好！我叫白家月。",
+       "py": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè.",
+       "en": "Hello! My name is Bai Jiayue."
+      },
+      {
+       "name": "李文",
+       "zh": "很高兴认识你。",
+       "py": "Hěn gāoxìng rènshi nǐ.",
+       "en": "Nice to meet you."
+      },
+      {
+       "name": "白家月",
+       "zh": "认识你我也很高兴。",
+       "py": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+       "en": "Nice to meet you too."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -448,6 +580,20 @@
      "n": 1,
      "title": "课文1",
      "original": "李文：我是中国人。\n白家月：我是法国人。我的中文老师也是中国人。",
+     "lines": [
+      {
+       "name": "李文",
+       "zh": "我是中国人。",
+       "py": "Wǒ shì Zhōngguórén.",
+       "en": "I'm Chinese."
+      },
+      {
+       "name": "白家月",
+       "zh": "我是法国人。我的中文老师也是中国人。",
+       "py": "Wǒ shì Fǎguórén. Wǒ de Zhōngwén lǎoshī yě shì Zhōngguórén.",
+       "en": "I'm French. My Chinese teacher is Chinese too."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -526,6 +672,32 @@
      "n": 2,
      "title": "课文2",
      "original": "安妮：这是谁？\n陈天中：这是我女朋友。\n安妮：你女朋友是哪国人？\n陈天中：她也是泰国人。",
+     "lines": [
+      {
+       "name": "安妮",
+       "zh": "这是谁？",
+       "py": "Zhè shì shéi?",
+       "en": "Who is this?"
+      },
+      {
+       "name": "陈天中",
+       "zh": "这是我女朋友。",
+       "py": "Zhè shì wǒ nǚpéngyou.",
+       "en": "This is my girlfriend."
+      },
+      {
+       "name": "安妮",
+       "zh": "你女朋友是哪国人？",
+       "py": "Nǐ nǚpéngyou shì nǎ guó rén?",
+       "en": "What country is your girlfriend from?"
+      },
+      {
+       "name": "陈天中",
+       "zh": "她也是泰国人。",
+       "py": "Tā yě shì Tàiguórén.",
+       "en": "She's Thai too."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -623,6 +795,44 @@
      "n": 3,
      "title": "课文3",
      "original": "王一雪：喂，一飞！\n王一飞：姐姐！\n王一雪：你工作还忙吗？\n王一飞：对。还很忙。你也很忙吗？\n王一雪：我不太忙。我们很想你。\n王一飞：我也想你们。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "喂，一飞！",
+       "py": "Wéi, Yīfēi!",
+       "en": "Hello, Yifei!"
+      },
+      {
+       "name": "王一飞",
+       "zh": "姐姐！",
+       "py": "Jiějie!",
+       "en": "Sis!"
+      },
+      {
+       "name": "王一雪",
+       "zh": "你工作还忙吗？",
+       "py": "Nǐ gōngzuò hái máng ma?",
+       "en": "Is work still busy for you?"
+      },
+      {
+       "name": "王一飞",
+       "zh": "对。还很忙。你也很忙吗？",
+       "py": "Duì. Hái hěn máng. Nǐ yě hěn máng ma?",
+       "en": "Yes. Still very busy. Are you busy too?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "我不太忙。我们很想你。",
+       "py": "Wǒ bú tài máng. Wǒmen hěn xiǎng nǐ.",
+       "en": "I'm not too busy. We miss you."
+      },
+      {
+       "name": "王一飞",
+       "zh": "我也想你们。",
+       "py": "Wǒ yě xiǎng nǐmen.",
+       "en": "I miss you too."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -744,6 +954,32 @@
      "n": 1,
      "title": "课文1",
      "original": "刘明：一飞忙吗？\n王一雪：她很忙。\n刘明：她有多少个学生？\n王一雪：她有二十个学生。",
+     "lines": [
+      {
+       "name": "刘明",
+       "zh": "一飞忙吗？",
+       "py": "Yīfēi máng ma?",
+       "en": "Is Yifei busy?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "她很忙。",
+       "py": "Tā hěn máng.",
+       "en": "She's very busy."
+      },
+      {
+       "name": "刘明",
+       "zh": "她有多少个学生？",
+       "py": "Tā yǒu duōshao ge xuésheng?",
+       "en": "How many students does she have?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "她有二十个学生。",
+       "py": "Tā yǒu èrshí ge xuésheng.",
+       "en": "She has twenty students."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -833,6 +1069,32 @@
      "n": 2,
      "title": "课文2",
      "original": "王一雪：我有两个哥哥。你呢？\n杨同乐：我没有哥哥。\n王一雪：你家有几口人？\n杨同乐：我家有四口人，爸爸、妈妈、妹妹和我。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "我有两个哥哥。你呢？",
+       "py": "Wǒ yǒu liǎng ge gēge. Nǐ ne?",
+       "en": "I have two older brothers. How about you?"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "我没有哥哥。",
+       "py": "Wǒ méiyǒu gēge.",
+       "en": "I don't have any older brothers."
+      },
+      {
+       "name": "王一雪",
+       "zh": "你家有几口人？",
+       "py": "Nǐ jiā yǒu jǐ kǒu rén?",
+       "en": "How many people are in your family?"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "我家有四口人，爸爸、妈妈、妹妹和我。",
+       "py": "Wǒ jiā yǒu sì kǒu rén, bàba, māma, mèimei hé wǒ.",
+       "en": "There are four people in my family: dad, mom, little sister, and me."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -942,6 +1204,44 @@
      "n": 3,
      "title": "课文3",
      "original": "杨同乐：这是您儿子吗？\n王一雪：是的。我有两个孩子，一个儿子，一个女儿。\n杨同乐：您儿子几岁？\n王一雪：他今年五岁。\n杨同乐：您女儿多大？\n王一雪：她今年十二。",
+     "lines": [
+      {
+       "name": "杨同乐",
+       "zh": "这是您儿子吗？",
+       "py": "Zhè shì nín érzi ma?",
+       "en": "Is this your son?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "是的。我有两个孩子，一个儿子，一个女儿。",
+       "py": "Shì de. Wǒ yǒu liǎng ge háizi, yí ge érzi, yí ge nǚ'ér.",
+       "en": "Yes. I have two children, a son and a daughter."
+      },
+      {
+       "name": "杨同乐",
+       "zh": "您儿子几岁？",
+       "py": "Nín érzi jǐ suì?",
+       "en": "How old is your son?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "他今年五岁。",
+       "py": "Tā jīnnián wǔ suì.",
+       "en": "He's five this year."
+      },
+      {
+       "name": "杨同乐",
+       "zh": "您女儿多大？",
+       "py": "Nín nǚ'ér duō dà?",
+       "en": "How old is your daughter?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "她今年十二。",
+       "py": "Tā jīnnián shí'èr.",
+       "en": "She's twelve this year."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -1082,6 +1382,32 @@
      "n": 1,
      "title": "课文1",
      "original": "王一雪：今天几号？\n刘明：今天9月8号。\n王一雪：星期几？\n刘明：星期日。今天我休息。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "今天几号？",
+       "py": "Jīntiān jǐ hào?",
+       "en": "What's the date today?"
+      },
+      {
+       "name": "刘明",
+       "zh": "今天9月8号。",
+       "py": "Jīntiān jiǔ yuè bā hào.",
+       "en": "Today is September 8th."
+      },
+      {
+       "name": "王一雪",
+       "zh": "星期几？",
+       "py": "Xīngqī jǐ?",
+       "en": "What day of the week is it?"
+      },
+      {
+       "name": "刘明",
+       "zh": "星期日。今天我休息。",
+       "py": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+       "en": "Sunday. I'm off today."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -1176,6 +1502,32 @@
      "n": 2,
      "title": "课文2",
      "original": "王一雪：你会做饭吗？\n杨同乐：我会做。\n王一雪：你会做什么？\n杨同乐：我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "你会做饭吗？",
+       "py": "Nǐ huì zuò fàn ma?",
+       "en": "Can you cook?"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "我会做。",
+       "py": "Wǒ huì zuò.",
+       "en": "Yes, I can."
+      },
+      {
+       "name": "王一雪",
+       "zh": "你会做什么？",
+       "py": "Nǐ huì zuò shénme?",
+       "en": "What can you cook?"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+       "py": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+       "en": "I can make noodles and dumplings, and some dishes too. I cook on Sundays as well."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -1285,6 +1637,44 @@
      "n": 3,
      "title": "课文3",
      "original": "王一雪：同乐，下班吗？\n杨同乐：下班。\n王一雪：这是你的新电脑吗？\n杨同乐：是的，是我的新电脑。\n王一雪：真好看！\n杨同乐：我也很喜欢它。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "同乐，下班吗？",
+       "py": "Tónglè, xiàbān ma?",
+       "en": "Tongle, are you getting off work?"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "下班。",
+       "py": "Xiàbān.",
+       "en": "Yes, getting off."
+      },
+      {
+       "name": "王一雪",
+       "zh": "这是你的新电脑吗？",
+       "py": "Zhè shì nǐ de xīn diànnǎo ma?",
+       "en": "Is this your new computer?"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "是的，是我的新电脑。",
+       "py": "Shì de, shì wǒ de xīn diànnǎo.",
+       "en": "Yes, it's my new computer."
+      },
+      {
+       "name": "王一雪",
+       "zh": "真好看！",
+       "py": "Zhēn hǎokàn!",
+       "en": "It looks great!"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "我也很喜欢它。",
+       "py": "Wǒ yě hěn xǐhuan tā.",
+       "en": "I really like it too."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -1409,6 +1799,32 @@
      "n": 1,
      "title": "课文1",
      "original": "李文：家月，你的手机号是多少？\n白家月：我的手机号是+33 601493190。\n李文：我的手机号是+86 13552721160。\n白家月：好的。",
+     "lines": [
+      {
+       "name": "李文",
+       "zh": "家月，你的手机号是多少？",
+       "py": "Jiāyuè, nǐ de shǒujī hào shì duōshao?",
+       "en": "Jiayue, what's your phone number?"
+      },
+      {
+       "name": "白家月",
+       "zh": "我的手机号是+33 601493190。",
+       "py": "Wǒ de shǒujī hào shì +33 601493190.",
+       "en": "My phone number is +33 601493190."
+      },
+      {
+       "name": "李文",
+       "zh": "我的手机号是+86 13552721160。",
+       "py": "Wǒ de shǒujī hào shì +86 13552721160.",
+       "en": "My phone number is +86 13552721160."
+      },
+      {
+       "name": "白家月",
+       "zh": "好的。",
+       "py": "Hǎo de.",
+       "en": "Okay."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -1516,6 +1932,32 @@
      "n": 2,
      "title": "课文2",
      "original": "陈天中：家月，明天你去哪儿？\n白家月：我想去超市买东西。\n陈天中：你去超市买什么？\n白家月：我想买些牛奶。",
+     "lines": [
+      {
+       "name": "陈天中",
+       "zh": "家月，明天你去哪儿？",
+       "py": "Jiāyuè, míngtiān nǐ qù nǎr?",
+       "en": "Jiayue, where are you going tomorrow?"
+      },
+      {
+       "name": "白家月",
+       "zh": "我想去超市买东西。",
+       "py": "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+       "en": "I want to go to the supermarket to buy some things."
+      },
+      {
+       "name": "陈天中",
+       "zh": "你去超市买什么？",
+       "py": "Nǐ qù chāoshì mǎi shénme?",
+       "en": "What are you going to buy at the supermarket?"
+      },
+      {
+       "name": "白家月",
+       "zh": "我想买些牛奶。",
+       "py": "Wǒ xiǎng mǎi xiē niúnǎi.",
+       "en": "I want to buy some milk."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -1621,6 +2063,44 @@
      "n": 3,
      "title": "课文3",
      "original": "王一雪：星期天我们去哪儿吃晚饭？\n刘明：我还想去西安饭店。\n刘小雪：那边的包子非常好吃，我想吃包子。\n刘小明：妈妈，我想吃米饭，不想吃包子。\n王一雪：好的。我们怎么去？\n刘明：坐出租车去。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "星期天我们去哪儿吃晚饭？",
+       "py": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
+       "en": "Where should we go for dinner on Sunday?"
+      },
+      {
+       "name": "刘明",
+       "zh": "我还想去西安饭店。",
+       "py": "Wǒ hái xiǎng qù Xī'ān fàndiàn.",
+       "en": "I'd like to go to the Xi'an Restaurant."
+      },
+      {
+       "name": "刘小雪",
+       "zh": "那边的包子非常好吃，我想吃包子。",
+       "py": "Nàbiān de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi.",
+       "en": "The baozi there are really delicious; I want to eat baozi."
+      },
+      {
+       "name": "刘小明",
+       "zh": "妈妈，我想吃米饭，不想吃包子。",
+       "py": "Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi.",
+       "en": "Mom, I want to eat rice, not baozi."
+      },
+      {
+       "name": "王一雪",
+       "zh": "好的。我们怎么去？",
+       "py": "Hǎo de. Wǒmen zěnme qù?",
+       "en": "Okay. How do we get there?"
+      },
+      {
+       "name": "刘明",
+       "zh": "坐出租车去。",
+       "py": "Zuò chūzūchē qù.",
+       "en": "We'll go by taxi."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -1764,6 +2244,32 @@
      "n": 1,
      "title": "课文1",
      "original": "白家月：现在几点？\n安妮：早上八点四十。\n白家月：我上午十点十分有课。\n安妮：好的，我们下午两点见吧。",
+     "lines": [
+      {
+       "name": "白家月",
+       "zh": "现在几点？",
+       "py": "Xiànzài jǐ diǎn?",
+       "en": "What time is it now?"
+      },
+      {
+       "name": "安妮",
+       "zh": "早上八点四十。",
+       "py": "Zǎoshang bā diǎn sìshí.",
+       "en": "8:40 in the morning."
+      },
+      {
+       "name": "白家月",
+       "zh": "我上午十点十分有课。",
+       "py": "Wǒ shàngwǔ shí diǎn shí fēn yǒu kè.",
+       "en": "I have class at 10:10 a.m."
+      },
+      {
+       "name": "安妮",
+       "zh": "好的，我们下午两点见吧。",
+       "py": "Hǎo de, wǒmen xiàwǔ liǎng diǎn jiàn ba.",
+       "en": "Okay, let's meet at 2 p.m."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -1879,6 +2385,32 @@
      "n": 2,
      "title": "课文2",
      "original": "李文：下午我想去电影院看电影，你去吗？\n白家月：我不想去，下午还有事。\n李文：好的。明天呢？\n白家月：我明天下午两点还上课呢，四点半下课。",
+     "lines": [
+      {
+       "name": "李文",
+       "zh": "下午我想去电影院看电影，你去吗？",
+       "py": "Xiàwǔ wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng, nǐ qù ma?",
+       "en": "I want to go to the cinema to watch a movie this afternoon; are you coming?"
+      },
+      {
+       "name": "白家月",
+       "zh": "我不想去，下午还有事。",
+       "py": "Wǒ bù xiǎng qù, xiàwǔ hái yǒu shì.",
+       "en": "I don't want to go; I have things to do this afternoon."
+      },
+      {
+       "name": "李文",
+       "zh": "好的。明天呢？",
+       "py": "Hǎo de. Míngtiān ne?",
+       "en": "Okay. How about tomorrow?"
+      },
+      {
+       "name": "白家月",
+       "zh": "我明天下午两点还上课呢，四点半下课。",
+       "py": "Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne, sì diǎn bàn xiàkè.",
+       "en": "I still have class at 2 p.m. tomorrow, and it ends at 4:30."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -2000,6 +2532,44 @@
      "n": 3,
      "title": "课文3",
      "original": "王一雪：喂，你在哪儿呢？\n刘明：我在家里呢。\n王一雪：我晚上六点半下班。\n刘明：我八点去医院上班。\n王一雪：好的，你去店里买些菜吧。\n刘明：好，我十分钟后去。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "喂，你在哪儿呢？",
+       "py": "Wéi, nǐ zài nǎr ne?",
+       "en": "Hello, where are you?"
+      },
+      {
+       "name": "刘明",
+       "zh": "我在家里呢。",
+       "py": "Wǒ zài jiā li ne.",
+       "en": "I'm at home."
+      },
+      {
+       "name": "王一雪",
+       "zh": "我晚上六点半下班。",
+       "py": "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+       "en": "I get off work at 6:30 in the evening."
+      },
+      {
+       "name": "刘明",
+       "zh": "我八点去医院上班。",
+       "py": "Wǒ bā diǎn qù yīyuàn shàngbān.",
+       "en": "I go to work at the hospital at eight."
+      },
+      {
+       "name": "王一雪",
+       "zh": "好的，你去店里买些菜吧。",
+       "py": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba.",
+       "en": "Okay, go buy some vegetables at the store."
+      },
+      {
+       "name": "刘明",
+       "zh": "好，我十分钟后去。",
+       "py": "Hǎo, wǒ shí fēnzhōng hòu qù.",
+       "en": "Sure, I'll go in ten minutes."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -2143,6 +2713,32 @@
      "n": 1,
      "title": "课文1",
      "original": "白家月：房间外有一只小猫。\n陈天中：我没看见，它在哪儿呢？\n白家月：它在桌子下呢。\n陈天中：这只小猫真漂亮！",
+     "lines": [
+      {
+       "name": "白家月",
+       "zh": "房间外有一只小猫。",
+       "py": "Fángjiān wài yǒu yì zhī xiǎo māo.",
+       "en": "There's a kitten outside the room."
+      },
+      {
+       "name": "陈天中",
+       "zh": "我没看见，它在哪儿呢？",
+       "py": "Wǒ méi kànjiàn, tā zài nǎr ne?",
+       "en": "I don't see it; where is it?"
+      },
+      {
+       "name": "白家月",
+       "zh": "它在桌子下呢。",
+       "py": "Tā zài zhuōzi xià ne.",
+       "en": "It's under the table."
+      },
+      {
+       "name": "陈天中",
+       "zh": "这只小猫真漂亮！",
+       "py": "Zhè zhī xiǎo māo zhēn piàoliang!",
+       "en": "This kitten is so pretty!"
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -2255,6 +2851,32 @@
      "n": 2,
      "title": "课文2",
      "original": "白家月：我们在哪儿见呢？\n李文：在学校书店前见吧。\n白家月：好的。下午两点你能到吗？\n李文：我能到。我在学校吃午饭。",
+     "lines": [
+      {
+       "name": "白家月",
+       "zh": "我们在哪儿见呢？",
+       "py": "Wǒmen zài nǎr jiàn ne?",
+       "en": "Where should we meet?"
+      },
+      {
+       "name": "李文",
+       "zh": "在学校书店前见吧。",
+       "py": "Zài xuéxiào shūdiàn qián jiàn ba.",
+       "en": "Let's meet in front of the school bookstore."
+      },
+      {
+       "name": "白家月",
+       "zh": "好的。下午两点你能到吗？",
+       "py": "Hǎo de. Xiàwǔ liǎng diǎn nǐ néng dào ma?",
+       "en": "Okay. Can you get there by 2 p.m.?"
+      },
+      {
+       "name": "李文",
+       "zh": "我能到。我在学校吃午饭。",
+       "py": "Wǒ néng dào. Wǒ zài xuéxiào chī wǔfàn.",
+       "en": "I can. I'll have lunch at school."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -2365,6 +2987,44 @@
      "n": 3,
      "title": "课文3",
      "original": "刘明：小胡，还没吃饭呢？\n胡医生：没吃呢。\n刘明：大医院病人多，医生非常忙。\n胡医生：是的。我爸爸也在医院工作，他也非常忙。\n刘明：你家有两个医生？\n胡医生：对。",
+     "lines": [
+      {
+       "name": "刘明",
+       "zh": "小胡，还没吃饭呢？",
+       "py": "Xiǎo Hú, hái méi chī fàn ne?",
+       "en": "Xiao Hu, haven't you eaten yet?"
+      },
+      {
+       "name": "胡医生",
+       "zh": "没吃呢。",
+       "py": "Méi chī ne.",
+       "en": "Not yet."
+      },
+      {
+       "name": "刘明",
+       "zh": "大医院病人多，医生非常忙。",
+       "py": "Dà yīyuàn bìngrén duō, yīshēng fēicháng máng.",
+       "en": "Big hospitals have lots of patients, and the doctors are very busy."
+      },
+      {
+       "name": "胡医生",
+       "zh": "是的。我爸爸也在医院工作，他也非常忙。",
+       "py": "Shì de. Wǒ bàba yě zài yīyuàn gōngzuò, tā yě fēicháng máng.",
+       "en": "Yes. My dad works at a hospital too, and he's very busy as well."
+      },
+      {
+       "name": "刘明",
+       "zh": "你家有两个医生？",
+       "py": "Nǐ jiā yǒu liǎng ge yīshēng?",
+       "en": "Your family has two doctors?"
+      },
+      {
+       "name": "胡医生",
+       "zh": "对。",
+       "py": "Duì.",
+       "en": "Right."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -2498,6 +3158,32 @@
      "n": 1,
      "title": "课文1",
      "original": "李文：学校前边有一家电影院。\n白家月：对。我们晚上去那个电影院看电影吧。\n李文：好！我们七点在电影院外边见，好吗？\n白家月：好的，晚上七点见！",
+     "lines": [
+      {
+       "name": "李文",
+       "zh": "学校前边有一家电影院。",
+       "py": "Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn.",
+       "en": "There's a cinema in front of the school."
+      },
+      {
+       "name": "白家月",
+       "zh": "对。我们晚上去那个电影院看电影吧。",
+       "py": "Duì. Wǒmen wǎnshang qù nàge diànyǐngyuàn kàn diànyǐng ba.",
+       "en": "Right. Let's go watch a movie at that cinema tonight."
+      },
+      {
+       "name": "李文",
+       "zh": "好！我们七点在电影院外边见，好吗？",
+       "py": "Hǎo! Wǒmen qī diǎn zài diànyǐngyuàn wàibian jiàn, hǎo ma?",
+       "en": "Great! Let's meet outside the cinema at seven, okay?"
+      },
+      {
+       "name": "白家月",
+       "zh": "好的，晚上七点见！",
+       "py": "Hǎo de, wǎnshang qī diǎn jiàn!",
+       "en": "Okay, see you at seven tonight!"
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -2602,6 +3288,32 @@
      "n": 2,
      "title": "课文2",
      "original": "白家月：椅子上有一本中文书，那是谁的书？\n陈天中：是我的书，谢谢。这是我的第二本中文书。\n白家月：不客气。你明天上午在哪儿？\n陈天中：我明天上午在学校学习。",
+     "lines": [
+      {
+       "name": "白家月",
+       "zh": "椅子上有一本中文书，那是谁的书？",
+       "py": "Yǐzi shàng yǒu yì běn Zhōngwén shū, nà shì shéi de shū?",
+       "en": "There's a Chinese book on the chair; whose book is that?"
+      },
+      {
+       "name": "陈天中",
+       "zh": "是我的书，谢谢。这是我的第二本中文书。",
+       "py": "Shì wǒ de shū, xièxie. Zhè shì wǒ de dì-èr běn Zhōngwén shū.",
+       "en": "It's my book, thanks. This is my second Chinese book."
+      },
+      {
+       "name": "白家月",
+       "zh": "不客气。你明天上午在哪儿？",
+       "py": "Bú kèqi. Nǐ míngtiān shàngwǔ zài nǎr?",
+       "en": "You're welcome. Where will you be tomorrow morning?"
+      },
+      {
+       "name": "陈天中",
+       "zh": "我明天上午在学校学习。",
+       "py": "Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.",
+       "en": "I'll be studying at school tomorrow morning."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -2730,6 +3442,44 @@
      "n": 3,
      "title": "课文3",
      "original": "王一雪：明天星期六，你做什么？\n杨同乐：我白天在家里读书，晚上和朋友们去外边唱歌。\n王一雪：你唱歌很好听。\n杨同乐：谢谢！您星期六做什么？\n王一雪：我在家里做饭、看电视，和孩子们、小狗玩。\n杨同乐：我也有一只小狗。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "明天星期六，你做什么？",
+       "py": "Míngtiān xīngqīliù, nǐ zuò shénme?",
+       "en": "Tomorrow is Saturday; what are you doing?"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "我白天在家里读书，晚上和朋友们去外边唱歌。",
+       "py": "Wǒ báitiān zài jiā li dúshū, wǎnshang hé péngyoumen qù wàibian chànggē.",
+       "en": "During the day I read at home, and in the evening I go out singing with friends."
+      },
+      {
+       "name": "王一雪",
+       "zh": "你唱歌很好听。",
+       "py": "Nǐ chànggē hěn hǎotīng.",
+       "en": "You sing very well."
+      },
+      {
+       "name": "杨同乐",
+       "zh": "谢谢！您星期六做什么？",
+       "py": "Xièxie! Nín xīngqīliù zuò shénme?",
+       "en": "Thanks! What do you do on Saturdays?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "我在家里做饭、看电视，和孩子们、小狗玩。",
+       "py": "Wǒ zài jiā li zuò fàn, kàn diànshì, hé háizimen, xiǎo gǒu wán.",
+       "en": "I cook, watch TV, and play with the kids and the dog at home."
+      },
+      {
+       "name": "杨同乐",
+       "zh": "我也有一只小狗。",
+       "py": "Wǒ yě yǒu yì zhī xiǎo gǒu.",
+       "en": "I have a dog too."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -2897,6 +3647,38 @@
      "n": 1,
      "title": "课文1",
      "original": "王一雪：请问，有杯子吗？\n售货员：有，杯子在这边。\n王一雪：多少钱一个？\n售货员：这些五块钱一个，那些十块钱一个。\n王一雪：我买这个吧。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "请问，有杯子吗？",
+       "py": "Qǐngwèn, yǒu bēizi ma?",
+       "en": "Excuse me, do you have cups?"
+      },
+      {
+       "name": "售货员",
+       "zh": "有，杯子在这边。",
+       "py": "Yǒu, bēizi zài zhèbiān.",
+       "en": "Yes, the cups are over here."
+      },
+      {
+       "name": "王一雪",
+       "zh": "多少钱一个？",
+       "py": "Duōshao qián yí ge?",
+       "en": "How much for one?"
+      },
+      {
+       "name": "售货员",
+       "zh": "这些五块钱一个，那些十块钱一个。",
+       "py": "Zhèxiē wǔ kuài qián yí ge, nàxiē shí kuài qián yí ge.",
+       "en": "These are five yuan each, those are ten yuan each."
+      },
+      {
+       "name": "王一雪",
+       "zh": "我买这个吧。",
+       "py": "Wǒ mǎi zhège ba.",
+       "en": "I'll take this one."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -3021,6 +3803,38 @@
      "n": 2,
      "title": "课文2",
      "original": "王一雪：这儿的水果真不少！\n售货员：您想买什么？\n王一雪：我想买两斤苹果。\n售货员：苹果三块五一斤。这些七块二，七块钱吧。\n王一雪：好的，这儿的苹果真便宜！",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "这儿的水果真不少！",
+       "py": "Zhèr de shuǐguǒ zhēn bù shǎo!",
+       "en": "There's really a lot of fruit here!"
+      },
+      {
+       "name": "售货员",
+       "zh": "您想买什么？",
+       "py": "Nín xiǎng mǎi shénme?",
+       "en": "What would you like to buy?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "我想买两斤苹果。",
+       "py": "Wǒ xiǎng mǎi liǎng jīn píngguǒ.",
+       "en": "I'd like to buy two jin of apples."
+      },
+      {
+       "name": "售货员",
+       "zh": "苹果三块五一斤。这些七块二，七块钱吧。",
+       "py": "Píngguǒ sān kuài wǔ yì jīn. Zhèxiē qī kuài èr, qī kuài qián ba.",
+       "en": "Apples are 3.5 yuan a jin. These come to 7.2; let's call it 7 yuan."
+      },
+      {
+       "name": "王一雪",
+       "zh": "好的，这儿的苹果真便宜！",
+       "py": "Hǎo de, zhèr de píngguǒ zhēn piányi!",
+       "en": "Okay, the apples here are really cheap!"
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -3148,6 +3962,44 @@
      "n": 3,
      "title": "课文3",
      "original": "王一雪：这家商店衣服真多！这件一百元，怎么样？\n刘明：好看，也不贵。\n王一雪：小雪能穿，买一件吧。\n刘明：好的。小明能穿吗？\n王一雪：不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。\n刘明：好的。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "这家商店衣服真多！这件一百元，怎么样？",
+       "py": "Zhè jiā shāngdiàn yīfu zhēn duō! Zhè jiàn yìbǎi yuán, zěnmeyàng?",
+       "en": "This store has so many clothes! This one is a hundred yuan; what do you think?"
+      },
+      {
+       "name": "刘明",
+       "zh": "好看，也不贵。",
+       "py": "Hǎokàn, yě bú guì.",
+       "en": "It looks nice, and it's not expensive."
+      },
+      {
+       "name": "王一雪",
+       "zh": "小雪能穿，买一件吧。",
+       "py": "Xiǎoxuě néng chuān, mǎi yí jiàn ba.",
+       "en": "It'll fit Xiaoxue; let's buy one."
+      },
+      {
+       "name": "刘明",
+       "zh": "好的。小明能穿吗？",
+       "py": "Hǎo de. Xiǎomíng néng chuān ma?",
+       "en": "Okay. Will it fit Xiaoming?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。",
+       "py": "Bù néng. Zhèxiē shì nǚ háizi chuān de yīfu, nán háizi de yīfu zài nàr.",
+       "en": "No. These are girls' clothes; the boys' clothes are over there."
+      },
+      {
+       "name": "刘明",
+       "zh": "好的。",
+       "py": "Hǎo de.",
+       "en": "Okay."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -3298,6 +4150,32 @@
      "n": 1,
      "title": "课文1",
      "original": "王一飞：喂，李文，你什么时候能到饭店？\n李文：还不知道，正在找呢。它是不是在超市后边？\n王一飞：是的。你开车没开车？\n李文：我没开车，坐车呢。",
+     "lines": [
+      {
+       "name": "王一飞",
+       "zh": "喂，李文，你什么时候能到饭店？",
+       "py": "Wéi, Lǐ Wén, nǐ shénme shíhou néng dào fàndiàn?",
+       "en": "Hello, Li Wen, when can you get to the restaurant?"
+      },
+      {
+       "name": "李文",
+       "zh": "还不知道，正在找呢。它是不是在超市后边？",
+       "py": "Hái bù zhīdào, zhèngzài zhǎo ne. Tā shì bu shì zài chāoshì hòubian?",
+       "en": "I'm not sure yet, still looking. Is it behind the supermarket?"
+      },
+      {
+       "name": "王一飞",
+       "zh": "是的。你开车没开车？",
+       "py": "Shì de. Nǐ kāichē méi kāichē?",
+       "en": "Yes. Are you driving?"
+      },
+      {
+       "name": "李文",
+       "zh": "我没开车，坐车呢。",
+       "py": "Wǒ méi kāichē, zuòchē ne.",
+       "en": "I'm not driving; I'm taking the bus."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -3420,6 +4298,32 @@
      "n": 2,
      "title": "课文2",
      "original": "王一飞：你还在读大学吗？\n李文：对，我读大学呢，还是大学生。\n王一飞：你们学习忙不忙？\n李文：非常忙，我学医，我们的课很多。",
+     "lines": [
+      {
+       "name": "王一飞",
+       "zh": "你还在读大学吗？",
+       "py": "Nǐ hái zài dú dàxué ma?",
+       "en": "Are you still in college?"
+      },
+      {
+       "name": "李文",
+       "zh": "对，我读大学呢，还是大学生。",
+       "py": "Duì, wǒ dú dàxué ne, hái shì dàxuéshēng.",
+       "en": "Yes, I'm in college; I'm still a college student."
+      },
+      {
+       "name": "王一飞",
+       "zh": "你们学习忙不忙？",
+       "py": "Nǐmen xuéxí máng bu máng?",
+       "en": "Are your studies keeping you busy?"
+      },
+      {
+       "name": "李文",
+       "zh": "非常忙，我学医，我们的课很多。",
+       "py": "Fēicháng máng, wǒ xué yī, wǒmen de kè hěn duō.",
+       "en": "Very busy. I study medicine, and we have a lot of classes."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -3533,6 +4437,44 @@
      "n": 3,
      "title": "课文3",
      "original": "刘明：弟弟起床没起床呢？\n刘小雪：没起床呢，还在睡觉。\n刘明：还睡呢？他今天去不去那里？\n刘小雪：去哪里？\n刘明：去超市。\n刘小雪：我昨天问他，他对我说，他不去，他今天要和小朋友玩。",
+     "lines": [
+      {
+       "name": "刘明",
+       "zh": "弟弟起床没起床呢？",
+       "py": "Dìdi qǐchuáng méi qǐchuáng ne?",
+       "en": "Has little brother gotten up yet?"
+      },
+      {
+       "name": "刘小雪",
+       "zh": "没起床呢，还在睡觉。",
+       "py": "Méi qǐchuáng ne, hái zài shuìjiào.",
+       "en": "Not yet; he's still sleeping."
+      },
+      {
+       "name": "刘明",
+       "zh": "还睡呢？他今天去不去那里？",
+       "py": "Hái shuì ne? Tā jīntiān qù bu qù nàli?",
+       "en": "Still sleeping? Is he going there today?"
+      },
+      {
+       "name": "刘小雪",
+       "zh": "去哪里？",
+       "py": "Qù nǎli?",
+       "en": "Going where?"
+      },
+      {
+       "name": "刘明",
+       "zh": "去超市。",
+       "py": "Qù chāoshì.",
+       "en": "To the supermarket."
+      },
+      {
+       "name": "刘小雪",
+       "zh": "我昨天问他，他对我说，他不去，他今天要和小朋友玩。",
+       "py": "Wǒ zuótiān wèn tā, tā duì wǒ shuō, tā bú qù, tā jīntiān yào hé xiǎopéngyou wán.",
+       "en": "I asked him yesterday, and he told me he's not going—he wants to play with friends today."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -3682,6 +4624,32 @@
      "n": 1,
      "title": "课文1",
      "original": "王一雪：今天天气怎么样？\n王一飞：这里的天不太好，下雨了。\n王一雪：雨大吗？\n王一飞：有点儿大，我觉得很冷。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "今天天气怎么样？",
+       "py": "Jīntiān tiānqì zěnmeyàng?",
+       "en": "How's the weather today?"
+      },
+      {
+       "name": "王一飞",
+       "zh": "这里的天不太好，下雨了。",
+       "py": "Zhèli de tiān bú tài hǎo, xià yǔ le.",
+       "en": "The weather here isn't great; it's raining."
+      },
+      {
+       "name": "王一雪",
+       "zh": "雨大吗？",
+       "py": "Yǔ dà ma?",
+       "en": "Is the rain heavy?"
+      },
+      {
+       "name": "王一飞",
+       "zh": "有点儿大，我觉得很冷。",
+       "py": "Yǒudiǎnr dà, wǒ juéde hěn lěng.",
+       "en": "A bit heavy; I feel quite cold."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -3779,6 +4747,32 @@
      "n": 2,
      "title": "课文2",
      "original": "王一雪：昨天下雪了。\n杨同乐：是的，太冷了。\n王一雪：你昨天没来公司，生病了？\n杨同乐：对，我昨天去医院看病了。",
+     "lines": [
+      {
+       "name": "王一雪",
+       "zh": "昨天下雪了。",
+       "py": "Zuótiān xià xuě le.",
+       "en": "It snowed yesterday."
+      },
+      {
+       "name": "杨同乐",
+       "zh": "是的，太冷了。",
+       "py": "Shì de, tài lěng le.",
+       "en": "Yes, it was too cold."
+      },
+      {
+       "name": "王一雪",
+       "zh": "你昨天没来公司，生病了？",
+       "py": "Nǐ zuótiān méi lái gōngsī, shēngbìng le?",
+       "en": "You didn't come to the office yesterday—were you sick?"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "对，我昨天去医院看病了。",
+       "py": "Duì, wǒ zuótiān qù yīyuàn kànbìng le.",
+       "en": "Yes, I went to the hospital to see a doctor yesterday."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -3881,6 +4875,44 @@
      "n": 3,
      "title": "课文3",
      "original": "杨同乐：医生，我病了。\n胡医生：我看看。你觉得怎么样？\n杨同乐：我很冷。\n胡医生：好的，吃一点儿药，今天休息半天吧。\n杨同乐：好的。\n胡医生：回家后再喝些热水。",
+     "lines": [
+      {
+       "name": "杨同乐",
+       "zh": "医生，我病了。",
+       "py": "Yīshēng, wǒ bìng le.",
+       "en": "Doctor, I'm ill."
+      },
+      {
+       "name": "胡医生",
+       "zh": "我看看。你觉得怎么样？",
+       "py": "Wǒ kànkan. Nǐ juéde zěnmeyàng?",
+       "en": "Let me take a look. How do you feel?"
+      },
+      {
+       "name": "杨同乐",
+       "zh": "我很冷。",
+       "py": "Wǒ hěn lěng.",
+       "en": "I feel very cold."
+      },
+      {
+       "name": "胡医生",
+       "zh": "好的，吃一点儿药，今天休息半天吧。",
+       "py": "Hǎo de, chī yìdiǎnr yào, jīntiān xiūxi bàntiān ba.",
+       "en": "Okay, take some medicine and rest for half the day today."
+      },
+      {
+       "name": "杨同乐",
+       "zh": "好的。",
+       "py": "Hǎo de.",
+       "en": "Okay."
+      },
+      {
+       "name": "胡医生",
+       "zh": "回家后再喝些热水。",
+       "py": "Huí jiā hòu zài hē xiē rè shuǐ.",
+       "en": "Drink some hot water after you get home."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -4019,6 +5051,32 @@
      "n": 1,
      "title": "课文1",
      "original": "白家月：王老师，我可以再问您一个问题吗？\n王一飞：可以。你有什么问题？\n白家月：那个小店卖不卖手机？\n王一飞：我不知道。你可以打电话问一下。",
+     "lines": [
+      {
+       "name": "白家月",
+       "zh": "王老师，我可以再问您一个问题吗？",
+       "py": "Wáng lǎoshī, wǒ kěyǐ zài wèn nín yí ge wèntí ma?",
+       "en": "Teacher Wang, may I ask you another question?"
+      },
+      {
+       "name": "王一飞",
+       "zh": "可以。你有什么问题？",
+       "py": "Kěyǐ. Nǐ yǒu shénme wèntí?",
+       "en": "Sure. What's your question?"
+      },
+      {
+       "name": "白家月",
+       "zh": "那个小店卖不卖手机？",
+       "py": "Nàge xiǎo diàn mài bu mài shǒujī?",
+       "en": "Does that little shop sell phones?"
+      },
+      {
+       "name": "王一飞",
+       "zh": "我不知道。你可以打电话问一下。",
+       "py": "Wǒ bù zhīdào. Nǐ kěyǐ dǎ diànhuà wèn yíxià.",
+       "en": "I don't know. You can call and ask."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -4132,6 +5190,32 @@
      "n": 2,
      "title": "课文2",
      "original": "服务员：女士，请坐！您喝什么？\n王一雪：我看一下。请给我一杯牛奶。\n服务员：好的。您还要什么？\n王一雪：我还没吃早饭，再要这个面包和鸡蛋吧。",
+     "lines": [
+      {
+       "name": "服务员",
+       "zh": "女士，请坐！您喝什么？",
+       "py": "Nǚshì, qǐng zuò! Nín hē shénme?",
+       "en": "Please have a seat, ma'am! What would you like to drink?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "我看一下。请给我一杯牛奶。",
+       "py": "Wǒ kàn yíxià. Qǐng gěi wǒ yì bēi niúnǎi.",
+       "en": "Let me have a look. A glass of milk, please."
+      },
+      {
+       "name": "服务员",
+       "zh": "好的。您还要什么？",
+       "py": "Hǎo de. Nín hái yào shénme?",
+       "en": "Okay. Anything else?"
+      },
+      {
+       "name": "王一雪",
+       "zh": "我还没吃早饭，再要这个面包和鸡蛋吧。",
+       "py": "Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba.",
+       "en": "I haven't had breakfast yet, so I'll also have this bread and egg."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -4253,6 +5337,44 @@
      "n": 3,
      "title": "课文3",
      "original": "服务员：先生，请坐！您要什么？\n刘明：我要一斤饺子。\n服务员：好的。一斤饺子40个。\n刘明：40个太多了，我要一半吧。\n服务员：半斤20个。您想喝什么？\n刘明：请给我一杯茶吧。",
+     "lines": [
+      {
+       "name": "服务员",
+       "zh": "先生，请坐！您要什么？",
+       "py": "Xiānsheng, qǐng zuò! Nín yào shénme?",
+       "en": "Please have a seat, sir! What would you like?"
+      },
+      {
+       "name": "刘明",
+       "zh": "我要一斤饺子。",
+       "py": "Wǒ yào yì jīn jiǎozi.",
+       "en": "I'll have a jin of dumplings."
+      },
+      {
+       "name": "服务员",
+       "zh": "好的。一斤饺子40个。",
+       "py": "Hǎo de. Yì jīn jiǎozi sìshí ge.",
+       "en": "Okay. A jin is forty dumplings."
+      },
+      {
+       "name": "刘明",
+       "zh": "40个太多了，我要一半吧。",
+       "py": "Sìshí ge tài duō le, wǒ yào yíbàn ba.",
+       "en": "Forty is too many; I'll have half."
+      },
+      {
+       "name": "服务员",
+       "zh": "半斤20个。您想喝什么？",
+       "py": "Bàn jīn èrshí ge. Nín xiǎng hē shénme?",
+       "en": "Half a jin is twenty. What would you like to drink?"
+      },
+      {
+       "name": "刘明",
+       "zh": "请给我一杯茶吧。",
+       "py": "Qǐng gěi wǒ yì bēi chá ba.",
+       "en": "A cup of tea, please."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -4395,6 +5517,32 @@
      "n": 1,
      "title": "课文1",
      "original": "白家月：你们上火车后看见王老师了吗？\n陈天中：没看见。中午车开后，有些人在看书，有些人睡觉了。\n白家月：你呢？\n陈天中：我看了一个电影。",
+     "lines": [
+      {
+       "name": "白家月",
+       "zh": "你们上火车后看见王老师了吗？",
+       "py": "Nǐmen shàng huǒchē hòu kànjiàn Wáng lǎoshī le ma?",
+       "en": "Did you see Teacher Wang after you got on the train?"
+      },
+      {
+       "name": "陈天中",
+       "zh": "没看见。中午车开后，有些人在看书，有些人睡觉了。",
+       "py": "Méi kànjiàn. Zhōngwǔ chē kāi hòu, yǒuxiē rén zài kàn shū, yǒuxiē rén shuìjiào le.",
+       "en": "No. After the train left at noon, some people were reading and some went to sleep."
+      },
+      {
+       "name": "白家月",
+       "zh": "你呢？",
+       "py": "Nǐ ne?",
+       "en": "And you?"
+      },
+      {
+       "name": "陈天中",
+       "zh": "我看了一个电影。",
+       "py": "Wǒ kàn le yí ge diànyǐng.",
+       "en": "I watched a movie."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -4505,6 +5653,38 @@
      "n": 2,
      "title": "课文2",
      "original": "王一飞：你们会说汉语了，也会写汉字了吗？\n白家月：我们都会写了。\n陈天中：老师，我听不见。\n王一飞：请大家不要说话！请听老师的问题：你们都会写哪些汉字了？\n陈天中：我会写这些字了，您看！",
+     "lines": [
+      {
+       "name": "王一飞",
+       "zh": "你们会说汉语了，也会写汉字了吗？",
+       "py": "Nǐmen huì shuō Hànyǔ le, yě huì xiě Hànzì le ma?",
+       "en": "You can speak Chinese now—can you write Chinese characters too?"
+      },
+      {
+       "name": "白家月",
+       "zh": "我们都会写了。",
+       "py": "Wǒmen dōu huì xiě le.",
+       "en": "We can all write now."
+      },
+      {
+       "name": "陈天中",
+       "zh": "老师，我听不见。",
+       "py": "Lǎoshī, wǒ tīng bu jiàn.",
+       "en": "Teacher, I can't hear."
+      },
+      {
+       "name": "王一飞",
+       "zh": "请大家不要说话！请听老师的问题：你们都会写哪些汉字了？",
+       "py": "Qǐng dàjiā bú yào shuōhuà! Qǐng tīng lǎoshī de wèntí: nǐmen dōu huì xiě nǎxiē Hànzì le?",
+       "en": "Everyone, please stop talking! Listen to the teacher's question: which characters can you all write now?"
+      },
+      {
+       "name": "陈天中",
+       "zh": "我会写这些字了，您看！",
+       "py": "Wǒ huì xiě zhèxiē zì le, nín kàn!",
+       "en": "I can write these characters now—look!"
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -4647,6 +5827,44 @@
      "n": 3,
      "title": "课文3",
      "original": "刘明：明年女儿上中学。\n王一雪：对。儿子也上小学了。\n刘明：我们家有了一个中学生。\n王一雪：还有了一个小学生。\n刘明：上学后，他们都忙了。\n王一雪：是的。太晚了，睡觉吧。",
+     "lines": [
+      {
+       "name": "刘明",
+       "zh": "明年女儿上中学。",
+       "py": "Míngnián nǚ'ér shàng zhōngxué.",
+       "en": "Next year my daughter starts middle school."
+      },
+      {
+       "name": "王一雪",
+       "zh": "对。儿子也上小学了。",
+       "py": "Duì. Érzi yě shàng xiǎoxué le.",
+       "en": "Right. My son has started elementary school too."
+      },
+      {
+       "name": "刘明",
+       "zh": "我们家有了一个中学生。",
+       "py": "Wǒmen jiā yǒu le yí ge zhōngxuéshēng.",
+       "en": "Our family now has a middle school student."
+      },
+      {
+       "name": "王一雪",
+       "zh": "还有了一个小学生。",
+       "py": "Hái yǒu le yí ge xiǎoxuéshēng.",
+       "en": "And an elementary school student too."
+      },
+      {
+       "name": "刘明",
+       "zh": "上学后，他们都忙了。",
+       "py": "Shàngxué hòu, tāmen dōu máng le.",
+       "en": "Once school started, they both got busy."
+      },
+      {
+       "name": "王一雪",
+       "zh": "是的。太晚了，睡觉吧。",
+       "py": "Shì de. Tài wǎn le, shuìjiào ba.",
+       "en": "Yes. It's too late; let's go to bed."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -4794,6 +6012,32 @@
      "n": 1,
      "title": "课文1",
      "original": "李文：你们爱吃哪个菜？\n白家月：我喜欢这个，也喜欢那个。\n陈天中：这些菜都好吃，还很好看。\n李文：我爱吃中国菜，也喜欢做。大家多吃点儿。",
+     "lines": [
+      {
+       "name": "李文",
+       "zh": "你们爱吃哪个菜？",
+       "py": "Nǐmen ài chī nǎge cài?",
+       "en": "Which dish do you like?"
+      },
+      {
+       "name": "白家月",
+       "zh": "我喜欢这个，也喜欢那个。",
+       "py": "Wǒ xǐhuan zhège, yě xǐhuan nàge.",
+       "en": "I like this one, and that one too."
+      },
+      {
+       "name": "陈天中",
+       "zh": "这些菜都好吃，还很好看。",
+       "py": "Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.",
+       "en": "These dishes are all delicious, and they look great too."
+      },
+      {
+       "name": "李文",
+       "zh": "我爱吃中国菜，也喜欢做。大家多吃点儿。",
+       "py": "Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò. Dàjiā duō chī diǎnr.",
+       "en": "I love Chinese food, and I like cooking it too. Everyone, help yourselves."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -4892,6 +6136,32 @@
      "n": 2,
      "title": "课文2",
      "original": "李文：你们都想去哪儿？\n安妮：去年我和男朋友去了西安，今年我想去北京。\n白家月：前几年我去了西安，非常好玩儿。今年我也想去北京。\n李文：我和王老师都是北京人，北京非常漂亮。",
+     "lines": [
+      {
+       "name": "李文",
+       "zh": "你们都想去哪儿？",
+       "py": "Nǐmen dōu xiǎng qù nǎr?",
+       "en": "Where do you all want to go?"
+      },
+      {
+       "name": "安妮",
+       "zh": "去年我和男朋友去了西安，今年我想去北京。",
+       "py": "Qùnián wǒ hé nánpéngyou qù le Xī'ān, jīnnián wǒ xiǎng qù Běijīng.",
+       "en": "Last year my boyfriend and I went to Xi'an; this year I want to go to Beijing."
+      },
+      {
+       "name": "白家月",
+       "zh": "前几年我去了西安，非常好玩儿。今年我也想去北京。",
+       "py": "Qián jǐ nián wǒ qù le Xī'ān, fēicháng hǎowánr. Jīnnián wǒ yě xiǎng qù Běijīng.",
+       "en": "A few years ago I went to Xi'an—it was great fun. This year I want to go to Beijing too."
+      },
+      {
+       "name": "李文",
+       "zh": "我和王老师都是北京人，北京非常漂亮。",
+       "py": "Wǒ hé Wáng lǎoshī dōu shì Běijīngrén, Běijīng fēicháng piàoliang.",
+       "en": "Teacher Wang and I are both from Beijing; Beijing is very beautiful."
+      }
+     ],
      "vocab": {
       "seg": [
        {
@@ -5018,6 +6288,44 @@
      "n": 3,
      "title": "课文3",
      "original": "王一飞：你们的飞机到北京要几个小时？\n白家月：九个小时。\n王一飞：我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。\n安妮：我们星期日早上八点到大兴机场，早不早？\n王一飞：不早。\n白家月：谢谢老师！那我们和您姐姐在大兴机场见！",
+     "lines": [
+      {
+       "name": "王一飞",
+       "zh": "你们的飞机到北京要几个小时？",
+       "py": "Nǐmen de fēijī dào Běijīng yào jǐ ge xiǎoshí?",
+       "en": "How many hours does your flight to Beijing take?"
+      },
+      {
+       "name": "白家月",
+       "zh": "九个小时。",
+       "py": "Jiǔ ge xiǎoshí.",
+       "en": "Nine hours."
+      },
+      {
+       "name": "王一飞",
+       "zh": "我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。",
+       "py": "Wǒ jiārén dōu zài Běijīng, xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā.",
+       "en": "My family is all in Beijing. My sister is free on Sunday too, so she can pick you up at the airport, and you can stay at my place."
+      },
+      {
+       "name": "安妮",
+       "zh": "我们星期日早上八点到大兴机场，早不早？",
+       "py": "Wǒmen xīngqīrì zǎoshang bā diǎn dào Dàxīng jīchǎng, zǎo bu zǎo?",
+       "en": "We arrive at Daxing Airport at 8 a.m. Sunday—is that early?"
+      },
+      {
+       "name": "王一飞",
+       "zh": "不早。",
+       "py": "Bù zǎo.",
+       "en": "Not early."
+      },
+      {
+       "name": "白家月",
+       "zh": "谢谢老师！那我们和您姐姐在大兴机场见！",
+       "py": "Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng jīchǎng jiàn!",
+       "en": "Thank you, Teacher! Then we'll meet your sister at Daxing Airport!"
+      }
+     ],
      "vocab": {
       "seg": [
        {

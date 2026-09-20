@@ -1,0 +1,205 @@
+# 课文对话行的拼音 + 英文翻译（手工源，convert_texts.py 回灌到 lines[]）
+# 格式: 汉字<TAB>拼音<TAB>英文  —— 按去重后的对话行（说话人已去掉）
+# 拼音为 tone-marked，不/一 采用变调写法；数字读作汉字处已转拼音，电话号码保留原样。
+# 目前覆盖 newhsk3 第 1 单元（试水）。
+AI小语，你好！	AI Xiǎoyǔ, nǐ hǎo!	AI Xiaoyu, hello!
+王老师，你好！	Wáng lǎoshī, nǐ hǎo!	Hello, Teacher Wang!
+大家好！	Dàjiā hǎo!	Hello, everyone!
+老师，您好！	Lǎoshī, nín hǎo!	Hello, Teacher!
+你好！	Nǐ hǎo!	Hello!
+你好，小语！	Nǐ hǎo, Xiǎoyǔ!	Hello, Xiaoyu!
+谢谢！	Xièxie!	Thank you!
+不客气！	Bú kèqi!	You're welcome!
+同学们，再见！	Tóngxuémen, zàijiàn!	Goodbye, students!
+老师，再见！	Lǎoshī, zàijiàn!	Goodbye, Teacher!
+请问，你叫什么名字？	Qǐngwèn, nǐ jiào shénme míngzi?	Excuse me, what's your name?
+我叫陈天中。	Wǒ jiào Chén Tiānzhōng.	My name is Chen Tianzhong.
+你好，安妮！	Nǐ hǎo, Ānnī!	Hello, Annie!
+你好，陈天中！我不是安妮，我是白家月。	Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè.	Hello, Chen Tianzhong! I'm not Annie, I'm Bai Jiayue.
+对不起！	Duìbuqǐ!	Sorry!
+没关系！	Méi guānxi!	It's okay!
+你好！我叫李文。	Nǐ hǎo! Wǒ jiào Lǐ Wén.	Hello! My name is Li Wen.
+你好！我叫白家月。	Nǐ hǎo! Wǒ jiào Bái Jiāyuè.	Hello! My name is Bai Jiayue.
+很高兴认识你。	Hěn gāoxìng rènshi nǐ.	Nice to meet you.
+认识你我也很高兴。	Rènshi nǐ wǒ yě hěn gāoxìng.	Nice to meet you too.
+我是中国人。	Wǒ shì Zhōngguórén.	I'm Chinese.
+我是法国人。我的中文老师也是中国人。	Wǒ shì Fǎguórén. Wǒ de Zhōngwén lǎoshī yě shì Zhōngguórén.	I'm French. My Chinese teacher is Chinese too.
+这是谁？	Zhè shì shéi?	Who is this?
+这是我女朋友。	Zhè shì wǒ nǚpéngyou.	This is my girlfriend.
+你女朋友是哪国人？	Nǐ nǚpéngyou shì nǎ guó rén?	What country is your girlfriend from?
+她也是泰国人。	Tā yě shì Tàiguórén.	She's Thai too.
+喂，一飞！	Wéi, Yīfēi!	Hello, Yifei!
+姐姐！	Jiějie!	Sis!
+你工作还忙吗？	Nǐ gōngzuò hái máng ma?	Is work still busy for you?
+对。还很忙。你也很忙吗？	Duì. Hái hěn máng. Nǐ yě hěn máng ma?	Yes. Still very busy. Are you busy too?
+我不太忙。我们很想你。	Wǒ bú tài máng. Wǒmen hěn xiǎng nǐ.	I'm not too busy. We miss you.
+我也想你们。	Wǒ yě xiǎng nǐmen.	I miss you too.
+一飞忙吗？	Yīfēi máng ma?	Is Yifei busy?
+她很忙。	Tā hěn máng.	She's very busy.
+她有多少个学生？	Tā yǒu duōshao ge xuésheng?	How many students does she have?
+她有二十个学生。	Tā yǒu èrshí ge xuésheng.	She has twenty students.
+我有两个哥哥。你呢？	Wǒ yǒu liǎng ge gēge. Nǐ ne?	I have two older brothers. How about you?
+我没有哥哥。	Wǒ méiyǒu gēge.	I don't have any older brothers.
+你家有几口人？	Nǐ jiā yǒu jǐ kǒu rén?	How many people are in your family?
+我家有四口人，爸爸、妈妈、妹妹和我。	Wǒ jiā yǒu sì kǒu rén, bàba, māma, mèimei hé wǒ.	There are four people in my family: dad, mom, little sister, and me.
+这是您儿子吗？	Zhè shì nín érzi ma?	Is this your son?
+是的。我有两个孩子，一个儿子，一个女儿。	Shì de. Wǒ yǒu liǎng ge háizi, yí ge érzi, yí ge nǚ'ér.	Yes. I have two children, a son and a daughter.
+您儿子几岁？	Nín érzi jǐ suì?	How old is your son?
+他今年五岁。	Tā jīnnián wǔ suì.	He's five this year.
+您女儿多大？	Nín nǚ'ér duō dà?	How old is your daughter?
+她今年十二。	Tā jīnnián shí'èr.	She's twelve this year.
+今天几号？	Jīntiān jǐ hào?	What's the date today?
+今天9月8号。	Jīntiān jiǔ yuè bā hào.	Today is September 8th.
+星期几？	Xīngqī jǐ?	What day of the week is it?
+星期日。今天我休息。	Xīngqīrì. Jīntiān wǒ xiūxi.	Sunday. I'm off today.
+你会做饭吗？	Nǐ huì zuò fàn ma?	Can you cook?
+我会做。	Wǒ huì zuò.	Yes, I can.
+你会做什么？	Nǐ huì zuò shénme?	What can you cook?
+我会做面条儿、饺子，也会做一些菜。星期天我也做饭。	Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.	I can make noodles and dumplings, and some dishes too. I cook on Sundays as well.
+同乐，下班吗？	Tónglè, xiàbān ma?	Tongle, are you getting off work?
+下班。	Xiàbān.	Yes, getting off.
+这是你的新电脑吗？	Zhè shì nǐ de xīn diànnǎo ma?	Is this your new computer?
+是的，是我的新电脑。	Shì de, shì wǒ de xīn diànnǎo.	Yes, it's my new computer.
+真好看！	Zhēn hǎokàn!	It looks great!
+我也很喜欢它。	Wǒ yě hěn xǐhuan tā.	I really like it too.
+家月，你的手机号是多少？	Jiāyuè, nǐ de shǒujī hào shì duōshao?	Jiayue, what's your phone number?
+我的手机号是+33 601493190。	Wǒ de shǒujī hào shì +33 601493190.	My phone number is +33 601493190.
+我的手机号是+86 13552721160。	Wǒ de shǒujī hào shì +86 13552721160.	My phone number is +86 13552721160.
+好的。	Hǎo de.	Okay.
+家月，明天你去哪儿？	Jiāyuè, míngtiān nǐ qù nǎr?	Jiayue, where are you going tomorrow?
+我想去超市买东西。	Wǒ xiǎng qù chāoshì mǎi dōngxi.	I want to go to the supermarket to buy some things.
+你去超市买什么？	Nǐ qù chāoshì mǎi shénme?	What are you going to buy at the supermarket?
+我想买些牛奶。	Wǒ xiǎng mǎi xiē niúnǎi.	I want to buy some milk.
+星期天我们去哪儿吃晚饭？	Xīngqītiān wǒmen qù nǎr chī wǎnfàn?	Where should we go for dinner on Sunday?
+我还想去西安饭店。	Wǒ hái xiǎng qù Xī'ān fàndiàn.	I'd like to go to the Xi'an Restaurant.
+那边的包子非常好吃，我想吃包子。	Nàbiān de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi.	The baozi there are really delicious; I want to eat baozi.
+妈妈，我想吃米饭，不想吃包子。	Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi.	Mom, I want to eat rice, not baozi.
+好的。我们怎么去？	Hǎo de. Wǒmen zěnme qù?	Okay. How do we get there?
+坐出租车去。	Zuò chūzūchē qù.	We'll go by taxi.
+现在几点？	Xiànzài jǐ diǎn?	What time is it now?
+早上八点四十。	Zǎoshang bā diǎn sìshí.	8:40 in the morning.
+我上午十点十分有课。	Wǒ shàngwǔ shí diǎn shí fēn yǒu kè.	I have class at 10:10 a.m.
+好的，我们下午两点见吧。	Hǎo de, wǒmen xiàwǔ liǎng diǎn jiàn ba.	Okay, let's meet at 2 p.m.
+下午我想去电影院看电影，你去吗？	Xiàwǔ wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng, nǐ qù ma?	I want to go to the cinema to watch a movie this afternoon; are you coming?
+我不想去，下午还有事。	Wǒ bù xiǎng qù, xiàwǔ hái yǒu shì.	I don't want to go; I have things to do this afternoon.
+好的。明天呢？	Hǎo de. Míngtiān ne?	Okay. How about tomorrow?
+我明天下午两点还上课呢，四点半下课。	Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne, sì diǎn bàn xiàkè.	I still have class at 2 p.m. tomorrow, and it ends at 4:30.
+喂，你在哪儿呢？	Wéi, nǐ zài nǎr ne?	Hello, where are you?
+我在家里呢。	Wǒ zài jiā li ne.	I'm at home.
+我晚上六点半下班。	Wǒ wǎnshang liù diǎn bàn xiàbān.	I get off work at 6:30 in the evening.
+我八点去医院上班。	Wǒ bā diǎn qù yīyuàn shàngbān.	I go to work at the hospital at eight.
+好的，你去店里买些菜吧。	Hǎo de, nǐ qù diàn li mǎi xiē cài ba.	Okay, go buy some vegetables at the store.
+好，我十分钟后去。	Hǎo, wǒ shí fēnzhōng hòu qù.	Sure, I'll go in ten minutes.
+房间外有一只小猫。	Fángjiān wài yǒu yì zhī xiǎo māo.	There's a kitten outside the room.
+我没看见，它在哪儿呢？	Wǒ méi kànjiàn, tā zài nǎr ne?	I don't see it; where is it?
+它在桌子下呢。	Tā zài zhuōzi xià ne.	It's under the table.
+这只小猫真漂亮！	Zhè zhī xiǎo māo zhēn piàoliang!	This kitten is so pretty!
+我们在哪儿见呢？	Wǒmen zài nǎr jiàn ne?	Where should we meet?
+在学校书店前见吧。	Zài xuéxiào shūdiàn qián jiàn ba.	Let's meet in front of the school bookstore.
+好的。下午两点你能到吗？	Hǎo de. Xiàwǔ liǎng diǎn nǐ néng dào ma?	Okay. Can you get there by 2 p.m.?
+我能到。我在学校吃午饭。	Wǒ néng dào. Wǒ zài xuéxiào chī wǔfàn.	I can. I'll have lunch at school.
+小胡，还没吃饭呢？	Xiǎo Hú, hái méi chī fàn ne?	Xiao Hu, haven't you eaten yet?
+没吃呢。	Méi chī ne.	Not yet.
+大医院病人多，医生非常忙。	Dà yīyuàn bìngrén duō, yīshēng fēicháng máng.	Big hospitals have lots of patients, and the doctors are very busy.
+是的。我爸爸也在医院工作，他也非常忙。	Shì de. Wǒ bàba yě zài yīyuàn gōngzuò, tā yě fēicháng máng.	Yes. My dad works at a hospital too, and he's very busy as well.
+你家有两个医生？	Nǐ jiā yǒu liǎng ge yīshēng?	Your family has two doctors?
+对。	Duì.	Right.
+学校前边有一家电影院。	Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn.	There's a cinema in front of the school.
+对。我们晚上去那个电影院看电影吧。	Duì. Wǒmen wǎnshang qù nàge diànyǐngyuàn kàn diànyǐng ba.	Right. Let's go watch a movie at that cinema tonight.
+好！我们七点在电影院外边见，好吗？	Hǎo! Wǒmen qī diǎn zài diànyǐngyuàn wàibian jiàn, hǎo ma?	Great! Let's meet outside the cinema at seven, okay?
+好的，晚上七点见！	Hǎo de, wǎnshang qī diǎn jiàn!	Okay, see you at seven tonight!
+椅子上有一本中文书，那是谁的书？	Yǐzi shàng yǒu yì běn Zhōngwén shū, nà shì shéi de shū?	There's a Chinese book on the chair; whose book is that?
+是我的书，谢谢。这是我的第二本中文书。	Shì wǒ de shū, xièxie. Zhè shì wǒ de dì-èr běn Zhōngwén shū.	It's my book, thanks. This is my second Chinese book.
+不客气。你明天上午在哪儿？	Bú kèqi. Nǐ míngtiān shàngwǔ zài nǎr?	You're welcome. Where will you be tomorrow morning?
+我明天上午在学校学习。	Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.	I'll be studying at school tomorrow morning.
+明天星期六，你做什么？	Míngtiān xīngqīliù, nǐ zuò shénme?	Tomorrow is Saturday; what are you doing?
+我白天在家里读书，晚上和朋友们去外边唱歌。	Wǒ báitiān zài jiā li dúshū, wǎnshang hé péngyoumen qù wàibian chànggē.	During the day I read at home, and in the evening I go out singing with friends.
+你唱歌很好听。	Nǐ chànggē hěn hǎotīng.	You sing very well.
+谢谢！您星期六做什么？	Xièxie! Nín xīngqīliù zuò shénme?	Thanks! What do you do on Saturdays?
+我在家里做饭、看电视，和孩子们、小狗玩。	Wǒ zài jiā li zuò fàn, kàn diànshì, hé háizimen, xiǎo gǒu wán.	I cook, watch TV, and play with the kids and the dog at home.
+我也有一只小狗。	Wǒ yě yǒu yì zhī xiǎo gǒu.	I have a dog too.
+请问，有杯子吗？	Qǐngwèn, yǒu bēizi ma?	Excuse me, do you have cups?
+有，杯子在这边。	Yǒu, bēizi zài zhèbiān.	Yes, the cups are over here.
+多少钱一个？	Duōshao qián yí ge?	How much for one?
+这些五块钱一个，那些十块钱一个。	Zhèxiē wǔ kuài qián yí ge, nàxiē shí kuài qián yí ge.	These are five yuan each, those are ten yuan each.
+我买这个吧。	Wǒ mǎi zhège ba.	I'll take this one.
+这儿的水果真不少！	Zhèr de shuǐguǒ zhēn bù shǎo!	There's really a lot of fruit here!
+您想买什么？	Nín xiǎng mǎi shénme?	What would you like to buy?
+我想买两斤苹果。	Wǒ xiǎng mǎi liǎng jīn píngguǒ.	I'd like to buy two jin of apples.
+苹果三块五一斤。这些七块二，七块钱吧。	Píngguǒ sān kuài wǔ yì jīn. Zhèxiē qī kuài èr, qī kuài qián ba.	Apples are 3.5 yuan a jin. These come to 7.2; let's call it 7 yuan.
+好的，这儿的苹果真便宜！	Hǎo de, zhèr de píngguǒ zhēn piányi!	Okay, the apples here are really cheap!
+这家商店衣服真多！这件一百元，怎么样？	Zhè jiā shāngdiàn yīfu zhēn duō! Zhè jiàn yìbǎi yuán, zěnmeyàng?	This store has so many clothes! This one is a hundred yuan; what do you think?
+好看，也不贵。	Hǎokàn, yě bú guì.	It looks nice, and it's not expensive.
+小雪能穿，买一件吧。	Xiǎoxuě néng chuān, mǎi yí jiàn ba.	It'll fit Xiaoxue; let's buy one.
+好的。小明能穿吗？	Hǎo de. Xiǎomíng néng chuān ma?	Okay. Will it fit Xiaoming?
+不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。	Bù néng. Zhèxiē shì nǚ háizi chuān de yīfu, nán háizi de yīfu zài nàr.	No. These are girls' clothes; the boys' clothes are over there.
+喂，李文，你什么时候能到饭店？	Wéi, Lǐ Wén, nǐ shénme shíhou néng dào fàndiàn?	Hello, Li Wen, when can you get to the restaurant?
+还不知道，正在找呢。它是不是在超市后边？	Hái bù zhīdào, zhèngzài zhǎo ne. Tā shì bu shì zài chāoshì hòubian?	I'm not sure yet, still looking. Is it behind the supermarket?
+是的。你开车没开车？	Shì de. Nǐ kāichē méi kāichē?	Yes. Are you driving?
+我没开车，坐车呢。	Wǒ méi kāichē, zuòchē ne.	I'm not driving; I'm taking the bus.
+你还在读大学吗？	Nǐ hái zài dú dàxué ma?	Are you still in college?
+对，我读大学呢，还是大学生。	Duì, wǒ dú dàxué ne, hái shì dàxuéshēng.	Yes, I'm in college; I'm still a college student.
+你们学习忙不忙？	Nǐmen xuéxí máng bu máng?	Are your studies keeping you busy?
+非常忙，我学医，我们的课很多。	Fēicháng máng, wǒ xué yī, wǒmen de kè hěn duō.	Very busy. I study medicine, and we have a lot of classes.
+弟弟起床没起床呢？	Dìdi qǐchuáng méi qǐchuáng ne?	Has little brother gotten up yet?
+没起床呢，还在睡觉。	Méi qǐchuáng ne, hái zài shuìjiào.	Not yet; he's still sleeping.
+还睡呢？他今天去不去那里？	Hái shuì ne? Tā jīntiān qù bu qù nàli?	Still sleeping? Is he going there today?
+去哪里？	Qù nǎli?	Going where?
+去超市。	Qù chāoshì.	To the supermarket.
+我昨天问他，他对我说，他不去，他今天要和小朋友玩。	Wǒ zuótiān wèn tā, tā duì wǒ shuō, tā bú qù, tā jīntiān yào hé xiǎopéngyou wán.	I asked him yesterday, and he told me he's not going—he wants to play with friends today.
+今天天气怎么样？	Jīntiān tiānqì zěnmeyàng?	How's the weather today?
+这里的天不太好，下雨了。	Zhèli de tiān bú tài hǎo, xià yǔ le.	The weather here isn't great; it's raining.
+雨大吗？	Yǔ dà ma?	Is the rain heavy?
+有点儿大，我觉得很冷。	Yǒudiǎnr dà, wǒ juéde hěn lěng.	A bit heavy; I feel quite cold.
+昨天下雪了。	Zuótiān xià xuě le.	It snowed yesterday.
+是的，太冷了。	Shì de, tài lěng le.	Yes, it was too cold.
+你昨天没来公司，生病了？	Nǐ zuótiān méi lái gōngsī, shēngbìng le?	You didn't come to the office yesterday—were you sick?
+对，我昨天去医院看病了。	Duì, wǒ zuótiān qù yīyuàn kànbìng le.	Yes, I went to the hospital to see a doctor yesterday.
+医生，我病了。	Yīshēng, wǒ bìng le.	Doctor, I'm ill.
+我看看。你觉得怎么样？	Wǒ kànkan. Nǐ juéde zěnmeyàng?	Let me take a look. How do you feel?
+我很冷。	Wǒ hěn lěng.	I feel very cold.
+好的，吃一点儿药，今天休息半天吧。	Hǎo de, chī yìdiǎnr yào, jīntiān xiūxi bàntiān ba.	Okay, take some medicine and rest for half the day today.
+回家后再喝些热水。	Huí jiā hòu zài hē xiē rè shuǐ.	Drink some hot water after you get home.
+王老师，我可以再问您一个问题吗？	Wáng lǎoshī, wǒ kěyǐ zài wèn nín yí ge wèntí ma?	Teacher Wang, may I ask you another question?
+可以。你有什么问题？	Kěyǐ. Nǐ yǒu shénme wèntí?	Sure. What's your question?
+那个小店卖不卖手机？	Nàge xiǎo diàn mài bu mài shǒujī?	Does that little shop sell phones?
+我不知道。你可以打电话问一下。	Wǒ bù zhīdào. Nǐ kěyǐ dǎ diànhuà wèn yíxià.	I don't know. You can call and ask.
+女士，请坐！您喝什么？	Nǚshì, qǐng zuò! Nín hē shénme?	Please have a seat, ma'am! What would you like to drink?
+我看一下。请给我一杯牛奶。	Wǒ kàn yíxià. Qǐng gěi wǒ yì bēi niúnǎi.	Let me have a look. A glass of milk, please.
+好的。您还要什么？	Hǎo de. Nín hái yào shénme?	Okay. Anything else?
+我还没吃早饭，再要这个面包和鸡蛋吧。	Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba.	I haven't had breakfast yet, so I'll also have this bread and egg.
+先生，请坐！您要什么？	Xiānsheng, qǐng zuò! Nín yào shénme?	Please have a seat, sir! What would you like?
+我要一斤饺子。	Wǒ yào yì jīn jiǎozi.	I'll have a jin of dumplings.
+好的。一斤饺子40个。	Hǎo de. Yì jīn jiǎozi sìshí ge.	Okay. A jin is forty dumplings.
+40个太多了，我要一半吧。	Sìshí ge tài duō le, wǒ yào yíbàn ba.	Forty is too many; I'll have half.
+半斤20个。您想喝什么？	Bàn jīn èrshí ge. Nín xiǎng hē shénme?	Half a jin is twenty. What would you like to drink?
+请给我一杯茶吧。	Qǐng gěi wǒ yì bēi chá ba.	A cup of tea, please.
+你们上火车后看见王老师了吗？	Nǐmen shàng huǒchē hòu kànjiàn Wáng lǎoshī le ma?	Did you see Teacher Wang after you got on the train?
+没看见。中午车开后，有些人在看书，有些人睡觉了。	Méi kànjiàn. Zhōngwǔ chē kāi hòu, yǒuxiē rén zài kàn shū, yǒuxiē rén shuìjiào le.	No. After the train left at noon, some people were reading and some went to sleep.
+你呢？	Nǐ ne?	And you?
+我看了一个电影。	Wǒ kàn le yí ge diànyǐng.	I watched a movie.
+你们会说汉语了，也会写汉字了吗？	Nǐmen huì shuō Hànyǔ le, yě huì xiě Hànzì le ma?	You can speak Chinese now—can you write Chinese characters too?
+我们都会写了。	Wǒmen dōu huì xiě le.	We can all write now.
+老师，我听不见。	Lǎoshī, wǒ tīng bu jiàn.	Teacher, I can't hear.
+请大家不要说话！请听老师的问题：你们都会写哪些汉字了？	Qǐng dàjiā bú yào shuōhuà! Qǐng tīng lǎoshī de wèntí: nǐmen dōu huì xiě nǎxiē Hànzì le?	Everyone, please stop talking! Listen to the teacher's question: which characters can you all write now?
+我会写这些字了，您看！	Wǒ huì xiě zhèxiē zì le, nín kàn!	I can write these characters now—look!
+明年女儿上中学。	Míngnián nǚ'ér shàng zhōngxué.	Next year my daughter starts middle school.
+对。儿子也上小学了。	Duì. Érzi yě shàng xiǎoxué le.	Right. My son has started elementary school too.
+我们家有了一个中学生。	Wǒmen jiā yǒu le yí ge zhōngxuéshēng.	Our family now has a middle school student.
+还有了一个小学生。	Hái yǒu le yí ge xiǎoxuéshēng.	And an elementary school student too.
+上学后，他们都忙了。	Shàngxué hòu, tāmen dōu máng le.	Once school started, they both got busy.
+是的。太晚了，睡觉吧。	Shì de. Tài wǎn le, shuìjiào ba.	Yes. It's too late; let's go to bed.
+你们爱吃哪个菜？	Nǐmen ài chī nǎge cài?	Which dish do you like?
+我喜欢这个，也喜欢那个。	Wǒ xǐhuan zhège, yě xǐhuan nàge.	I like this one, and that one too.
+这些菜都好吃，还很好看。	Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.	These dishes are all delicious, and they look great too.
+我爱吃中国菜，也喜欢做。大家多吃点儿。	Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò. Dàjiā duō chī diǎnr.	I love Chinese food, and I like cooking it too. Everyone, help yourselves.
+你们都想去哪儿？	Nǐmen dōu xiǎng qù nǎr?	Where do you all want to go?
+去年我和男朋友去了西安，今年我想去北京。	Qùnián wǒ hé nánpéngyou qù le Xī'ān, jīnnián wǒ xiǎng qù Běijīng.	Last year my boyfriend and I went to Xi'an; this year I want to go to Beijing.
+前几年我去了西安，非常好玩儿。今年我也想去北京。	Qián jǐ nián wǒ qù le Xī'ān, fēicháng hǎowánr. Jīnnián wǒ yě xiǎng qù Běijīng.	A few years ago I went to Xi'an—it was great fun. This year I want to go to Beijing too.
+我和王老师都是北京人，北京非常漂亮。	Wǒ hé Wáng lǎoshī dōu shì Běijīngrén, Běijīng fēicháng piàoliang.	Teacher Wang and I are both from Beijing; Beijing is very beautiful.
+你们的飞机到北京要几个小时？	Nǐmen de fēijī dào Běijīng yào jǐ ge xiǎoshí?	How many hours does your flight to Beijing take?
+九个小时。	Jiǔ ge xiǎoshí.	Nine hours.
+我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。	Wǒ jiārén dōu zài Běijīng, xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā.	My family is all in Beijing. My sister is free on Sunday too, so she can pick you up at the airport, and you can stay at my place.
+我们星期日早上八点到大兴机场，早不早？	Wǒmen xīngqīrì zǎoshang bā diǎn dào Dàxīng jīchǎng, zǎo bu zǎo?	We arrive at Daxing Airport at 8 a.m. Sunday—is that early?
+不早。	Bù zǎo.	Not early.
+谢谢老师！那我们和您姐姐在大兴机场见！	Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng jīchǎng jiàn!	Thank you, Teacher! Then we'll meet your sister at Daxing Airport!
