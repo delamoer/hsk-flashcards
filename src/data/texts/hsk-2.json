@@ -14,26 +14,26 @@
       {
        "name": "A",
        "zh": "我想去北京旅游，你觉得什么时候去最好？",
-       "py": "",
-       "en": ""
+       "py": "Wǒ xiǎng qù Běijīng lǚyóu, nǐ juéde shénme shíhou qù zuì hǎo?",
+       "en": "I want to travel to Beijing—when do you think is the best time to go?"
       },
       {
        "name": "B",
        "zh": "九月去北京旅游最好。",
-       "py": "",
-       "en": ""
+       "py": "Jiǔ yuè qù Běijīng lǚyóu zuì hǎo.",
+       "en": "September is the best time to travel to Beijing."
       },
       {
        "name": "A",
        "zh": "为什么？",
-       "py": "",
-       "en": ""
+       "py": "Wèishénme?",
+       "en": "Why?"
       },
       {
        "name": "B",
        "zh": "九月的北京天气不冷也不热。",
-       "py": "",
-       "en": ""
+       "py": "Jiǔ yuè de Běijīng tiānqì bù lěng yě bú rè.",
+       "en": "In September, Beijing's weather is neither cold nor hot."
       }
      ],
      "vocab": {
@@ -141,26 +141,26 @@
       {
        "name": "A",
        "zh": "你喜欢什么运动？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ xǐhuan shénme yùndòng?",
+       "en": "What sports do you like?"
       },
       {
        "name": "B",
        "zh": "我最喜欢踢足球。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ zuì xǐhuan tī zúqiú.",
+       "en": "I like playing soccer the most."
       },
       {
        "name": "A",
        "zh": "下午我们一起去踢足球吧。",
-       "py": "",
-       "en": ""
+       "py": "Xiàwǔ wǒmen yìqǐ qù tī zúqiú ba.",
+       "en": "Let's go play soccer together this afternoon."
       },
       {
        "name": "B",
        "zh": "好啊！",
-       "py": "",
-       "en": ""
+       "py": "Hǎo a!",
+       "en": "Sure!"
       }
      ],
      "vocab": {
@@ -253,26 +253,26 @@
       {
        "name": "A",
        "zh": "我们要不要买几个新的椅子？",
-       "py": "",
-       "en": ""
+       "py": "Wǒmen yào bu yào mǎi jǐ ge xīn de yǐzi?",
+       "en": "Should we buy a few new chairs?"
       },
       {
        "name": "B",
        "zh": "好啊。什么时候去买？",
-       "py": "",
-       "en": ""
+       "py": "Hǎo a. Shénme shíhou qù mǎi?",
+       "en": "Sure. When should we go buy them?"
       },
       {
        "name": "A",
        "zh": "明天下午怎么样？你明天几点能回来？",
-       "py": "",
-       "en": ""
+       "py": "Míngtiān xiàwǔ zěnmeyàng? Nǐ míngtiān jǐ diǎn néng huílai?",
+       "en": "How about tomorrow afternoon? What time can you be back tomorrow?"
       },
       {
        "name": "B",
        "zh": "三点多。",
-       "py": "",
-       "en": ""
+       "py": "Sān diǎn duō.",
+       "en": "A little after three."
       }
      ],
      "vocab": {
@@ -370,38 +370,38 @@
       {
        "name": "A",
        "zh": "桌子下面有个猫。",
-       "py": "",
-       "en": ""
+       "py": "Zhuōzi xiàmiàn yǒu ge māo.",
+       "en": "There's a cat under the table."
       },
       {
        "name": "B",
        "zh": "那是我的猫，它叫花花。",
-       "py": "",
-       "en": ""
+       "py": "Nà shì wǒ de māo, tā jiào Huāhua.",
+       "en": "That's my cat; its name is Huahua."
       },
       {
        "name": "A",
        "zh": "它很漂亮。",
-       "py": "",
-       "en": ""
+       "py": "Tā hěn piàoliang.",
+       "en": "It's pretty."
       },
       {
        "name": "B",
        "zh": "是啊，我觉得它的眼睛最漂亮。",
-       "py": "",
-       "en": ""
+       "py": "Shì a, wǒ juéde tā de yǎnjing zuì piàoliang.",
+       "en": "Yeah, I think its eyes are the prettiest."
       },
       {
        "name": "A",
        "zh": "它多大了？",
-       "py": "",
-       "en": ""
+       "py": "Tā duō dà le?",
+       "en": "How old is it?"
       },
       {
        "name": "B",
        "zh": "六个多月。",
-       "py": "",
-       "en": ""
+       "py": "Liù ge duō yuè.",
+       "en": "A little over six months."
       }
      ],
      "vocab": {
@@ -532,26 +532,26 @@
       {
        "name": "A",
        "zh": "你很少生病，是不是喜欢运动？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ hěn shǎo shēngbìng, shì bu shì xǐhuan yùndòng?",
+       "en": "You rarely get sick—do you like exercising?"
       },
       {
        "name": "B",
        "zh": "是啊，我每天早上都要出去跑步。",
-       "py": "",
-       "en": ""
+       "py": "Shì a, wǒ měi tiān zǎoshang dōu yào chūqu pǎobù.",
+       "en": "Yeah, I go out running every morning."
       },
       {
        "name": "A",
        "zh": "你每天几点起床？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ měi tiān jǐ diǎn qǐchuáng?",
+       "en": "What time do you get up every day?"
       },
       {
        "name": "B",
        "zh": "我每天六点起床。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ měi tiān liù diǎn qǐchuáng.",
+       "en": "I get up at six every day."
       }
      ],
      "vocab": {
@@ -667,26 +667,26 @@
       {
        "name": "A",
        "zh": "吃药了吗？现在身体怎么样？",
-       "py": "",
-       "en": ""
+       "py": "Chī yào le ma? Xiànzài shēntǐ zěnmeyàng?",
+       "en": "Have you taken your medicine? How do you feel now?"
       },
       {
        "name": "B",
        "zh": "吃了。现在好多了。",
-       "py": "",
-       "en": ""
+       "py": "Chī le. Xiànzài hǎo duō le.",
+       "en": "I have. I'm much better now."
       },
       {
        "name": "A",
        "zh": "什么时候能出院？",
-       "py": "",
-       "en": ""
+       "py": "Shénme shíhou néng chūyuàn?",
+       "en": "When can you be discharged?"
       },
       {
        "name": "B",
        "zh": "医生说下个星期。",
-       "py": "",
-       "en": ""
+       "py": "Yīshēng shuō xià ge xīngqī.",
+       "en": "The doctor says next week."
       }
      ],
      "vocab": {
@@ -786,38 +786,38 @@
       {
        "name": "A",
        "zh": "大卫今年多大？",
-       "py": "",
-       "en": ""
+       "py": "Dàwèi jīnnián duō dà?",
+       "en": "How old is David this year?"
       },
       {
        "name": "B",
        "zh": "二十多岁。",
-       "py": "",
-       "en": ""
+       "py": "Èrshí duō suì.",
+       "en": "In his twenties."
       },
       {
        "name": "A",
        "zh": "他多高？",
-       "py": "",
-       "en": ""
+       "py": "Tā duō gāo?",
+       "en": "How tall is he?"
       },
       {
        "name": "B",
        "zh": "一米八几。",
-       "py": "",
-       "en": ""
+       "py": "Yì mǐ bā jǐ.",
+       "en": "One meter eighty-something."
       },
       {
        "name": "A",
        "zh": "你怎么知道这么多啊？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zěnme zhīdào zhème duō a?",
+       "en": "How do you know so much?"
       },
       {
        "name": "B",
        "zh": "他是我同学。",
-       "py": "",
-       "en": ""
+       "py": "Tā shì wǒ tóngxué.",
+       "en": "He's my classmate."
       }
      ],
      "vocab": {
@@ -930,26 +930,26 @@
       {
        "name": "A",
        "zh": "张老师星期六也不休息啊？",
-       "py": "",
-       "en": ""
+       "py": "Zhāng lǎoshī xīngqīliù yě bù xiūxi a?",
+       "en": "Teacher Zhang doesn't rest on Saturdays either?"
       },
       {
        "name": "B",
        "zh": "是啊，他这几天很忙，没有时间休息。",
-       "py": "",
-       "en": ""
+       "py": "Shì a, tā zhè jǐ tiān hěn máng, méiyǒu shíjiān xiūxi.",
+       "en": "Yeah, he's been busy these days and has no time to rest."
       },
       {
        "name": "A",
        "zh": "那会很累吧？",
-       "py": "",
-       "en": ""
+       "py": "Nà huì hěn lèi ba?",
+       "en": "That must be tiring, right?"
       },
       {
        "name": "B",
        "zh": "他每天回来都很累。",
-       "py": "",
-       "en": ""
+       "py": "Tā měi tiān huílai dōu hěn lèi.",
+       "en": "He comes back exhausted every day."
       }
      ],
      "vocab": {
@@ -1061,26 +1061,26 @@
       {
        "name": "A",
        "zh": "这块手表是你的吗？",
-       "py": "",
-       "en": ""
+       "py": "Zhè kuài shǒubiǎo shì nǐ de ma?",
+       "en": "Is this watch yours?"
       },
       {
        "name": "B",
        "zh": "不是我的，是我爸爸的。",
-       "py": "",
-       "en": ""
+       "py": "Bú shì wǒ de, shì wǒ bàba de.",
+       "en": "It's not mine; it's my dad's."
       },
       {
        "name": "A",
        "zh": "多少钱买的？",
-       "py": "",
-       "en": ""
+       "py": "Duōshao qián mǎi de?",
+       "en": "How much did it cost?"
       },
       {
        "name": "B",
        "zh": "三千多块。",
-       "py": "",
-       "en": ""
+       "py": "Sānqiān duō kuài.",
+       "en": "Over three thousand yuan."
       }
      ],
      "vocab": {
@@ -1174,26 +1174,26 @@
       {
        "name": "A",
        "zh": "这是今天早上的报纸吗？",
-       "py": "",
-       "en": ""
+       "py": "Zhè shì jīntiān zǎoshang de bàozhǐ ma?",
+       "en": "Is this this morning's newspaper?"
       },
       {
        "name": "B",
        "zh": "不是，是昨天的。",
-       "py": "",
-       "en": ""
+       "py": "Bú shì, shì zuótiān de.",
+       "en": "No, it's yesterday's."
       },
       {
        "name": "A",
        "zh": "你听，是不是送报纸的来了？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ tīng, shì bu shì sòng bàozhǐ de lái le?",
+       "en": "Listen, is that the newspaper delivery?"
       },
       {
        "name": "B",
        "zh": "我看一下。不是，是送牛奶的。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ kàn yíxià. Bú shì, shì sòng niúnǎi de.",
+       "en": "Let me check. No, it's the milk delivery."
       }
      ],
      "vocab": {
@@ -1304,26 +1304,26 @@
       {
        "name": "A",
        "zh": "这是谁的房间？",
-       "py": "",
-       "en": ""
+       "py": "Zhè shì shéi de fángjiān?",
+       "en": "Whose room is this?"
       },
       {
        "name": "B",
        "zh": "这是我和我丈夫的，旁边那个小的房间是我女儿的。",
-       "py": "",
-       "en": ""
+       "py": "Zhè shì wǒ hé wǒ zhàngfu de, pángbiān nàge xiǎo de fángjiān shì wǒ nǚ'ér de.",
+       "en": "This is my husband's and mine; the small room next door is my daughter's."
       },
       {
        "name": "A",
        "zh": "你女儿的房间真漂亮！都是粉色的。",
-       "py": "",
-       "en": ""
+       "py": "Nǐ nǚ'ér de fángjiān zhēn piàoliang! Dōu shì fěnsè de.",
+       "en": "Your daughter's room is so pretty! It's all pink."
       },
       {
        "name": "B",
        "zh": "是啊，粉色是我女儿最喜欢的颜色。",
-       "py": "",
-       "en": ""
+       "py": "Shì a, fěnsè shì wǒ nǚ'ér zuì xǐhuan de yánsè.",
+       "en": "Yeah, pink is my daughter's favorite color."
       }
      ],
      "vocab": {
@@ -1456,26 +1456,26 @@
       {
        "name": "A",
        "zh": "你看见我的杯子了吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ kànjiàn wǒ de bēizi le ma?",
+       "en": "Have you seen my cup?"
       },
       {
        "name": "B",
        "zh": "这里有几个杯子，哪个是你的？",
-       "py": "",
-       "en": ""
+       "py": "Zhèli yǒu jǐ ge bēizi, nǎge shì nǐ de?",
+       "en": "There are several cups here—which one is yours?"
       },
       {
        "name": "A",
        "zh": "左边那个红色的是我的。",
-       "py": "",
-       "en": ""
+       "py": "Zuǒbian nàge hóngsè de shì wǒ de.",
+       "en": "The red one on the left is mine."
       },
       {
        "name": "B",
        "zh": "给你。",
-       "py": "",
-       "en": ""
+       "py": "Gěi nǐ.",
+       "en": "Here you go."
       }
      ],
      "vocab": {
@@ -1579,26 +1579,26 @@
       {
        "name": "A",
        "zh": "生日快乐！这是送给你的！",
-       "py": "",
-       "en": ""
+       "py": "Shēngrì kuàilè! Zhè shì sòng gěi nǐ de!",
+       "en": "Happy birthday! This is for you!"
       },
       {
        "name": "B",
        "zh": "是什么？是一本书吗？",
-       "py": "",
-       "en": ""
+       "py": "Shì shénme? Shì yì běn shū ma?",
+       "en": "What is it? Is it a book?"
       },
       {
        "name": "A",
        "zh": "对，这本书是我写的。",
-       "py": "",
-       "en": ""
+       "py": "Duì, zhè běn shū shì wǒ xiě de.",
+       "en": "Yes, I wrote this book."
       },
       {
        "name": "B",
        "zh": "太谢谢你了！",
-       "py": "",
-       "en": ""
+       "py": "Tài xièxie nǐ le!",
+       "en": "Thank you so much!"
       }
      ],
      "vocab": {
@@ -1704,26 +1704,26 @@
       {
        "name": "A",
        "zh": "早上有你一个电话。",
-       "py": "",
-       "en": ""
+       "py": "Zǎoshang yǒu nǐ yí ge diànhuà.",
+       "en": "There was a phone call for you this morning."
       },
       {
        "name": "B",
        "zh": "电话是谁打的？",
-       "py": "",
-       "en": ""
+       "py": "Diànhuà shì shéi dǎ de?",
+       "en": "Who called?"
       },
       {
        "name": "A",
        "zh": "不知道，是儿子接的。",
-       "py": "",
-       "en": ""
+       "py": "Bù zhīdào, shì érzi jiē de.",
+       "en": "I don't know; our son answered."
       },
       {
        "name": "B",
        "zh": "好，晚上我问一下儿子。",
-       "py": "",
-       "en": ""
+       "py": "Hǎo, wǎnshang wǒ wèn yíxià érzi.",
+       "en": "Okay, I'll ask him tonight."
       }
      ],
      "vocab": {
@@ -1825,26 +1825,26 @@
       {
        "name": "A",
        "zh": "你喜欢踢足球吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ xǐhuan tī zúqiú ma?",
+       "en": "Do you like playing soccer?"
       },
       {
        "name": "B",
        "zh": "非常喜欢。",
-       "py": "",
-       "en": ""
+       "py": "Fēicháng xǐhuan.",
+       "en": "I love it."
       },
       {
        "name": "A",
        "zh": "你是什么时候开始踢足球的？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ shì shénme shíhou kāishǐ tī zúqiú de?",
+       "en": "When did you start playing soccer?"
       },
       {
        "name": "B",
        "zh": "我十一岁的时候开始踢足球，已经踢了十年了。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ shíyī suì de shíhou kāishǐ tī zúqiú, yǐjīng tī le shí nián le.",
+       "en": "I started playing soccer at eleven; I've been playing for ten years now."
       }
      ],
      "vocab": {
@@ -1948,26 +1948,26 @@
       {
        "name": "A",
        "zh": "你在这儿工作多长时间了？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zài zhèr gōngzuò duō cháng shíjiān le?",
+       "en": "How long have you worked here?"
       },
       {
        "name": "B",
        "zh": "已经两年多了，我是2011年来的。",
-       "py": "",
-       "en": ""
+       "py": "Yǐjīng liǎng nián duō le, wǒ shì èr líng yī yī nián lái de.",
+       "en": "Over two years now; I came in 2011."
       },
       {
        "name": "A",
        "zh": "你认识谢先生吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ rènshi Xiè xiānsheng ma?",
+       "en": "Do you know Mr. Xie?"
       },
       {
        "name": "B",
        "zh": "认识，我们是大学同学，这个工作是他帮我介绍的。",
-       "py": "",
-       "en": ""
+       "py": "Rènshi, wǒmen shì dàxué tóngxué, zhège gōngzuò shì tā bāng wǒ jièshào de.",
+       "en": "Yes, we're college classmates; he helped get me this job."
       }
      ],
      "vocab": {
@@ -2089,26 +2089,26 @@
       {
        "name": "A",
        "zh": "晚上我们去饭馆吃饭，怎么样？",
-       "py": "",
-       "en": ""
+       "py": "Wǎnshang wǒmen qù fànguǎn chī fàn, zěnmeyàng?",
+       "en": "How about we eat out at a restaurant tonight?"
       },
       {
        "name": "B",
        "zh": "我不想去外面吃，我想在家吃。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ bù xiǎng qù wàimiàn chī, wǒ xiǎng zài jiā chī.",
+       "en": "I don't want to eat out; I'd rather eat at home."
       },
       {
        "name": "A",
        "zh": "那你准备做什么呢？",
-       "py": "",
-       "en": ""
+       "py": "Nà nǐ zhǔnbèi zuò shénme ne?",
+       "en": "Then what are you going to make?"
       },
       {
        "name": "B",
        "zh": "就做你爱吃的鱼吧。",
-       "py": "",
-       "en": ""
+       "py": "Jiù zuò nǐ ài chī de yú ba.",
+       "en": "I'll make the fish you like."
       }
      ],
      "vocab": {
@@ -2217,26 +2217,26 @@
       {
        "name": "A",
        "zh": "帮我看一下这件衣服怎么样？",
-       "py": "",
-       "en": ""
+       "py": "Bāng wǒ kàn yíxià zhè jiàn yīfu zěnmeyàng?",
+       "en": "Can you tell me how this piece of clothing looks?"
       },
       {
        "name": "B",
        "zh": "颜色还可以，就是有点儿大。",
-       "py": "",
-       "en": ""
+       "py": "Yánsè hái kěyǐ, jiù shì yǒudiǎnr dà.",
+       "en": "The color's fine; it's just a bit big."
       },
       {
        "name": "A",
        "zh": "这件小的怎么样？",
-       "py": "",
-       "en": ""
+       "py": "Zhè jiàn xiǎo de zěnmeyàng?",
+       "en": "How about this smaller one?"
       },
       {
        "name": "B",
        "zh": "这件不错，就买这件吧。",
-       "py": "",
-       "en": ""
+       "py": "Zhè jiàn búcuò, jiù mǎi zhè jiàn ba.",
+       "en": "This one's nice; let's buy this one."
       }
      ],
      "vocab": {
@@ -2340,26 +2340,26 @@
       {
        "name": "A",
        "zh": "今天去不去打球？",
-       "py": "",
-       "en": ""
+       "py": "Jīntiān qù bu qù dǎ qiú?",
+       "en": "Are we going to play ball today?"
       },
       {
        "name": "B",
        "zh": "这两天有点儿累，不去打球了。",
-       "py": "",
-       "en": ""
+       "py": "Zhè liǎng tiān yǒudiǎnr lèi, bú qù dǎ qiú le.",
+       "en": "I've been a bit tired these days; I won't go play ball."
       },
       {
        "name": "A",
        "zh": "你在做什么呢？是在想昨天的考试吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zài zuò shénme ne? Shì zài xiǎng zuótiān de kǎoshì ma?",
+       "en": "What are you doing? Thinking about yesterday's exam?"
       },
       {
        "name": "B",
        "zh": "是啊，我觉得听和说还可以，读和写不好，很多字我都不知道是什么意思。",
-       "py": "",
-       "en": ""
+       "py": "Shì a, wǒ juéde tīng hé shuō hái kěyǐ, dú hé xiě bù hǎo, hěn duō zì wǒ dōu bù zhīdào shì shénme yìsi.",
+       "en": "Yeah, I think my listening and speaking are okay, but reading and writing aren't good—I don't know what a lot of the characters mean."
       }
      ],
      "vocab": {
@@ -2486,26 +2486,26 @@
       {
        "name": "A",
        "zh": "休息一下吧，喝咖啡吗？",
-       "py": "",
-       "en": ""
+       "py": "Xiūxi yíxià ba, hē kāfēi ma?",
+       "en": "Take a break—want some coffee?"
       },
       {
        "name": "B",
        "zh": "不喝了，我已经喝两杯了。",
-       "py": "",
-       "en": ""
+       "py": "Bù hē le, wǒ yǐjīng hē liǎng bēi le.",
+       "en": "No thanks, I've already had two cups."
       },
       {
        "name": "A",
        "zh": "是啊，咖啡喝多了对身体不好。",
-       "py": "",
-       "en": ""
+       "py": "Shì a, kāfēi hē duō le duì shēntǐ bù hǎo.",
+       "en": "Right, drinking too much coffee is bad for your health."
       },
       {
        "name": "B",
        "zh": "以后我少喝一点儿，每天喝一杯。",
-       "py": "",
-       "en": ""
+       "py": "Yǐhòu wǒ shǎo hē yìdiǎnr, měi tiān hē yì bēi.",
+       "en": "I'll drink less from now on—one cup a day."
       }
      ],
      "vocab": {
@@ -2625,26 +2625,26 @@
       {
        "name": "A",
        "zh": "你知道小王今天什么时候来学校吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zhīdào Xiǎo Wáng jīntiān shénme shíhou lái xuéxiào ma?",
+       "en": "Do you know when Xiao Wang is coming to school today?"
       },
       {
        "name": "B",
        "zh": "他已经来了。",
-       "py": "",
-       "en": ""
+       "py": "Tā yǐjīng lái le.",
+       "en": "He's already here."
       },
       {
        "name": "A",
        "zh": "你怎么知道他来了？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zěnme zhīdào tā lái le?",
+       "en": "How do you know he's here?"
       },
       {
        "name": "B",
        "zh": "我在门外看见他的自行车了。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ zài mén wài kànjiàn tā de zìxíngchē le.",
+       "en": "I saw his bicycle outside the door."
       }
      ],
      "vocab": {
@@ -2747,26 +2747,26 @@
       {
        "name": "A",
        "zh": "今天的羊肉很好吃，你怎么不吃了？",
-       "py": "",
-       "en": ""
+       "py": "Jīntiān de yángròu hěn hǎochī, nǐ zěnme bù chī le?",
+       "en": "Today's lamb is delicious—why aren't you eating?"
       },
       {
        "name": "B",
        "zh": "这个星期天天都吃羊肉，不想吃了。",
-       "py": "",
-       "en": ""
+       "py": "Zhège xīngqī tiāntiān dōu chī yángròu, bù xiǎng chī le.",
+       "en": "We've had lamb every day this week; I don't feel like it anymore."
       },
       {
        "name": "A",
        "zh": "那你还想吃什么？",
-       "py": "",
-       "en": ""
+       "py": "Nà nǐ hái xiǎng chī shénme?",
+       "en": "Then what else would you like to eat?"
       },
       {
        "name": "B",
        "zh": "来一点儿面条吧。",
-       "py": "",
-       "en": ""
+       "py": "Lái yìdiǎnr miàntiáo ba.",
+       "en": "I'll have some noodles."
       }
      ],
      "vocab": {
@@ -2873,26 +2873,26 @@
       {
        "name": "A",
        "zh": "昨天你们怎么都没去打篮球？",
-       "py": "",
-       "en": ""
+       "py": "Zuótiān nǐmen zěnme dōu méi qù dǎ lánqiú?",
+       "en": "Why didn't any of you go play basketball yesterday?"
       },
       {
        "name": "B",
        "zh": "因为昨天下雨，所以我们都没去。我去游泳了。",
-       "py": "",
-       "en": ""
+       "py": "Yīnwèi zuótiān xià yǔ, suǒyǐ wǒmen dōu méi qù. Wǒ qù yóuyǒng le.",
+       "en": "Because it rained yesterday, none of us went. I went swimming."
       },
       {
        "name": "A",
        "zh": "你经常游泳吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ jīngcháng yóuyǒng ma?",
+       "en": "Do you swim often?"
       },
       {
        "name": "B",
        "zh": "这个月我天天游泳，我现在七十公斤了。",
-       "py": "",
-       "en": ""
+       "py": "Zhège yuè wǒ tiāntiān yóuyǒng, wǒ xiànzài qīshí gōngjīn le.",
+       "en": "I've been swimming every day this month; I'm seventy kilos now."
       }
      ],
      "vocab": {
@@ -3017,26 +3017,26 @@
       {
        "name": "A",
        "zh": "这两天怎么没看见小张？",
-       "py": "",
-       "en": ""
+       "py": "Zhè liǎng tiān zěnme méi kànjiàn Xiǎo Zhāng?",
+       "en": "Why haven't I seen Xiao Zhang these last couple of days?"
       },
       {
        "name": "B",
        "zh": "他去北京了。",
-       "py": "",
-       "en": ""
+       "py": "Tā qù Běijīng le.",
+       "en": "He went to Beijing."
       },
       {
        "name": "A",
        "zh": "去北京了？是去旅游吗？",
-       "py": "",
-       "en": ""
+       "py": "Qù Běijīng le? Shì qù lǚyóu ma?",
+       "en": "Went to Beijing? To travel?"
       },
       {
        "name": "B",
        "zh": "不是，听说是去看他姐姐。",
-       "py": "",
-       "en": ""
+       "py": "Bú shì, tīngshuō shì qù kàn tā jiějie.",
+       "en": "No, I heard he went to visit his sister."
       }
      ],
      "vocab": {
@@ -3134,26 +3134,26 @@
       {
        "name": "A",
        "zh": "大卫回来了吗？",
-       "py": "",
-       "en": ""
+       "py": "Dàwèi huílai le ma?",
+       "en": "Is David back?"
       },
       {
        "name": "B",
        "zh": "没有，他还在教室学习呢。",
-       "py": "",
-       "en": ""
+       "py": "Méiyǒu, tā hái zài jiàoshì xuéxí ne.",
+       "en": "No, he's still studying in the classroom."
       },
       {
        "name": "A",
        "zh": "已经九点多了，他怎么还在学习？",
-       "py": "",
-       "en": ""
+       "py": "Yǐjīng jiǔ diǎn duō le, tā zěnme hái zài xuéxí?",
+       "en": "It's already past nine—why is he still studying?"
       },
       {
        "name": "B",
        "zh": "明天有考试，他说今天要好好准备。",
-       "py": "",
-       "en": ""
+       "py": "Míngtiān yǒu kǎoshì, tā shuō jīntiān yào hǎohǎo zhǔnbèi.",
+       "en": "There's an exam tomorrow; he says he wants to prepare well today."
       }
      ],
      "vocab": {
@@ -3250,26 +3250,26 @@
       {
        "name": "A",
        "zh": "你现在在哪儿呢？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ xiànzài zài nǎr ne?",
+       "en": "Where are you right now?"
       },
       {
        "name": "B",
        "zh": "在去机场的路上。你已经到了？",
-       "py": "",
-       "en": ""
+       "py": "Zài qù jīchǎng de lù shàng. Nǐ yǐjīng dào le?",
+       "en": "On the way to the airport. Are you there already?"
       },
       {
        "name": "A",
        "zh": "我下飞机了。你还有多长时间能到这儿？",
-       "py": "",
-       "en": ""
+       "py": "Wǒ xià fēijī le. Nǐ hái yǒu duō cháng shíjiān néng dào zhèr?",
+       "en": "I've gotten off the plane. How much longer until you get here?"
       },
       {
        "name": "B",
        "zh": "二十分钟就到。",
-       "py": "",
-       "en": ""
+       "py": "Èrshí fēnzhōng jiù dào.",
+       "en": "I'll be there in twenty minutes."
       }
      ],
      "vocab": {
@@ -3377,26 +3377,26 @@
       {
        "name": "A",
        "zh": "你家离公司远吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ jiā lí gōngsī yuǎn ma?",
+       "en": "Is your home far from the office?"
       },
       {
        "name": "B",
        "zh": "很远，坐公共汽车要一个多小时呢！",
-       "py": "",
-       "en": ""
+       "py": "Hěn yuǎn, zuò gōnggòng qìchē yào yí ge duō xiǎoshí ne!",
+       "en": "Very far—it takes over an hour by bus!"
       },
       {
        "name": "A",
        "zh": "坐公共汽车太慢了，你怎么不开车？",
-       "py": "",
-       "en": ""
+       "py": "Zuò gōnggòng qìchē tài màn le, nǐ zěnme bù kāichē?",
+       "en": "The bus is too slow—why don't you drive?"
       },
       {
        "name": "B",
        "zh": "开车也不快，路上车太多了！",
-       "py": "",
-       "en": ""
+       "py": "Kāichē yě bú kuài, lù shàng chē tài duō le!",
+       "en": "Driving isn't fast either—there are too many cars on the road!"
       }
      ],
      "vocab": {
@@ -3524,26 +3524,26 @@
       {
        "name": "A",
        "zh": "今天晚上我们一起吃饭吧，给你过生日。",
-       "py": "",
-       "en": ""
+       "py": "Jīntiān wǎnshang wǒmen yìqǐ chī fàn ba, gěi nǐ guò shēngrì.",
+       "en": "Let's have dinner together tonight to celebrate your birthday."
       },
       {
        "name": "B",
        "zh": "今天？离我的生日还有一个多星期呢！",
-       "py": "",
-       "en": ""
+       "py": "Jīntiān? Lí wǒ de shēngrì hái yǒu yí ge duō xīngqī ne!",
+       "en": "Today? My birthday is still over a week away!"
       },
       {
        "name": "A",
        "zh": "下个星期我要去北京，今天过吧。",
-       "py": "",
-       "en": ""
+       "py": "Xià ge xīngqī wǒ yào qù Běijīng, jīntiān guò ba.",
+       "en": "I'm going to Beijing next week, so let's celebrate today."
       },
       {
        "name": "B",
        "zh": "好吧，离这儿不远有一个中国饭馆，走几分钟就到了。",
-       "py": "",
-       "en": ""
+       "py": "Hǎo ba, lí zhèr bù yuǎn yǒu yí ge Zhōngguó fànguǎn, zǒu jǐ fēnzhōng jiù dào le.",
+       "en": "All right, there's a Chinese restaurant not far from here—just a few minutes' walk."
       }
      ],
      "vocab": {
@@ -3674,26 +3674,26 @@
       {
        "name": "A",
        "zh": "我们下午去看电影，好吗？",
-       "py": "",
-       "en": ""
+       "py": "Wǒmen xiàwǔ qù kàn diànyǐng, hǎo ma?",
+       "en": "Shall we go see a movie this afternoon?"
       },
       {
        "name": "B",
        "zh": "今天下午我没有时间，明天下午再去吧。",
-       "py": "",
-       "en": ""
+       "py": "Jīntiān xiàwǔ wǒ méiyǒu shíjiān, míngtiān xiàwǔ zài qù ba.",
+       "en": "I don't have time this afternoon; let's go tomorrow afternoon instead."
       },
       {
        "name": "A",
        "zh": "你想看什么电影？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ xiǎng kàn shénme diànyǐng?",
+       "en": "What movie do you want to see?"
       },
       {
        "name": "B",
        "zh": "让我想想再告诉你。",
-       "py": "",
-       "en": ""
+       "py": "Ràng wǒ xiǎngxiang zài gàosu nǐ.",
+       "en": "Let me think about it and tell you."
       }
      ],
      "vocab": {
@@ -3796,26 +3796,26 @@
       {
        "name": "A",
        "zh": "外边天气很好，我们出去运动运动吧。",
-       "py": "",
-       "en": ""
+       "py": "Wàibian tiānqì hěn hǎo, wǒmen chūqu yùndòng yùndòng ba.",
+       "en": "The weather's nice outside; let's go out and get some exercise."
       },
       {
        "name": "B",
        "zh": "你等等我，好吗？王老师让我给大卫打个电话。",
-       "py": "",
-       "en": ""
+       "py": "Nǐ děngdeng wǒ, hǎo ma? Wáng lǎoshī ràng wǒ gěi Dàwèi dǎ ge diànhuà.",
+       "en": "Wait for me, okay? Teacher Wang asked me to give David a call."
       },
       {
        "name": "A",
        "zh": "回来再打吧。找大卫有什么事情吗？",
-       "py": "",
-       "en": ""
+       "py": "Huílai zài dǎ ba. Zhǎo Dàwèi yǒu shénme shìqing ma?",
+       "en": "Call when you get back. What do you need David for?"
       },
       {
        "name": "B",
        "zh": "听说大卫病了，我想找时间去看看他。",
-       "py": "",
-       "en": ""
+       "py": "Tīngshuō Dàwèi bìng le, wǒ xiǎng zhǎo shíjiān qù kànkan tā.",
+       "en": "I heard David is sick; I want to find time to go visit him."
       }
      ],
      "vocab": {
@@ -3943,26 +3943,26 @@
       {
        "name": "A",
        "zh": "服务员，我房间的门打不开了。",
-       "py": "",
-       "en": ""
+       "py": "Fúwùyuán, wǒ fángjiān de mén dǎ bu kāi le.",
+       "en": "Excuse me, I can't get my room door open."
       },
       {
        "name": "B",
        "zh": "您住哪个房间？",
-       "py": "",
-       "en": ""
+       "py": "Nín zhù nǎge fángjiān?",
+       "en": "Which room are you staying in?"
       },
       {
        "name": "A",
        "zh": "317。",
-       "py": "",
-       "en": ""
+       "py": "Sān yāo qī.",
+       "en": "Room 317."
       },
       {
        "name": "B",
        "zh": "好的，我叫人去看看。",
-       "py": "",
-       "en": ""
+       "py": "Hǎo de, wǒ jiào rén qù kànkan.",
+       "en": "Okay, I'll send someone to check."
       }
      ],
      "vocab": {
@@ -4052,26 +4052,26 @@
       {
        "name": "A",
        "zh": "你看看这几件衣服怎么样。",
-       "py": "",
-       "en": ""
+       "py": "Nǐ kànkan zhè jǐ jiàn yīfu zěnmeyàng.",
+       "en": "Take a look at these clothes and see what you think."
       },
       {
        "name": "B",
        "zh": "这件白的有点儿长，那件黑的有点儿贵。",
-       "py": "",
-       "en": ""
+       "py": "Zhè jiàn bái de yǒudiǎnr cháng, nà jiàn hēi de yǒudiǎnr guì.",
+       "en": "The white one is a bit long, and the black one is a bit expensive."
       },
       {
        "name": "A",
        "zh": "这件红的呢？这是今天新来的。",
-       "py": "",
-       "en": ""
+       "py": "Zhè jiàn hóng de ne? Zhè shì jīntiān xīn lái de.",
+       "en": "How about this red one? It just came in today."
       },
       {
        "name": "B",
        "zh": "让我再看看。",
-       "py": "",
-       "en": ""
+       "py": "Ràng wǒ zài kànkan.",
+       "en": "Let me have another look."
       }
      ],
      "vocab": {
@@ -4196,20 +4196,20 @@
       {
        "name": "A",
        "zh": "你好！请问张欢在吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ hǎo! Qǐngwèn Zhāng Huān zài ma?",
+       "en": "Hello! Is Zhang Huan there?"
       },
       {
        "name": "B",
        "zh": "你打错了，我们这儿没有叫张欢的。",
-       "py": "",
-       "en": ""
+       "py": "Nǐ dǎ cuò le, wǒmen zhèr méiyǒu jiào Zhāng Huān de.",
+       "en": "You've got the wrong number; there's no one named Zhang Huan here."
       },
       {
        "name": "A",
        "zh": "对不起。",
-       "py": "",
-       "en": ""
+       "py": "Duìbuqǐ.",
+       "en": "Sorry."
       }
      ],
      "vocab": {
@@ -4277,26 +4277,26 @@
       {
        "name": "A",
        "zh": "您从几岁开始学习跳舞？",
-       "py": "",
-       "en": ""
+       "py": "Nín cóng jǐ suì kāishǐ xuéxí tiàowǔ?",
+       "en": "At what age did you start learning to dance?"
       },
       {
        "name": "B",
        "zh": "我第一次跳舞是在七岁的时候。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ dì-yī cì tiàowǔ shì zài qī suì de shíhou.",
+       "en": "I danced for the first time when I was seven."
       },
       {
        "name": "A",
        "zh": "我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？",
-       "py": "",
-       "en": ""
+       "py": "Wǒ nǚ'ér jīnnián yě qī suì le. Wǒ xīwàng tā néng gēn nín xué tiàowǔ, kěyǐ ma?",
+       "en": "My daughter is also seven this year. I hope she can learn to dance with you—would that be okay?"
       },
       {
        "name": "B",
        "zh": "没问题，非常欢迎。",
-       "py": "",
-       "en": ""
+       "py": "Méi wèntí, fēicháng huānyíng.",
+       "en": "No problem, she's very welcome."
       }
      ],
      "vocab": {
@@ -4418,26 +4418,26 @@
       {
        "name": "A",
        "zh": "你知道吗？大卫找到工作了。",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zhīdào ma? Dàwèi zhǎodào gōngzuò le.",
+       "en": "Did you know? David found a job."
       },
       {
        "name": "B",
        "zh": "太好了！他从什么时候开始上班？",
-       "py": "",
-       "en": ""
+       "py": "Tài hǎo le! Tā cóng shénme shíhou kāishǐ shàngbān?",
+       "en": "Great! When does he start work?"
       },
       {
        "name": "A",
        "zh": "从下个星期一开始。",
-       "py": "",
-       "en": ""
+       "py": "Cóng xià ge xīngqīyī kāishǐ.",
+       "en": "Starting next Monday."
       },
       {
        "name": "B",
        "zh": "这是他的第一个工作，希望他能喜欢。",
-       "py": "",
-       "en": ""
+       "py": "Zhè shì tā de dì-yī ge gōngzuò, xīwàng tā néng xǐhuan.",
+       "en": "It's his first job; I hope he'll like it."
       }
      ],
      "vocab": {
@@ -4548,26 +4548,26 @@
       {
        "name": "A",
        "zh": "昨天的考试怎么样？你都听懂了吗？",
-       "py": "",
-       "en": ""
+       "py": "Zuótiān de kǎoshì zěnmeyàng? Nǐ dōu tīngdǒng le ma?",
+       "en": "How was yesterday's exam? Did you understand it all?"
       },
       {
        "name": "B",
        "zh": "听懂了。",
-       "py": "",
-       "en": ""
+       "py": "Tīngdǒng le.",
+       "en": "Yes, I understood."
       },
       {
        "name": "A",
        "zh": "你都做完了没有？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ dōu zuòwán le méiyǒu?",
+       "en": "Did you finish it all?"
       },
       {
        "name": "B",
        "zh": "题太多，我没做完。",
-       "py": "",
-       "en": ""
+       "py": "Tí tài duō, wǒ méi zuòwán.",
+       "en": "There were too many questions; I didn't finish."
       }
      ],
      "vocab": {
@@ -4677,26 +4677,26 @@
       {
        "name": "A",
        "zh": "不要看电视了，明天上午还有汉语课呢。",
-       "py": "",
-       "en": ""
+       "py": "Bú yào kàn diànshì le, míngtiān shàngwǔ hái yǒu Hànyǔ kè ne.",
+       "en": "Stop watching TV—you have Chinese class tomorrow morning."
       },
       {
        "name": "B",
        "zh": "看电视对学汉语有帮助。",
-       "py": "",
-       "en": ""
+       "py": "Kàn diànshì duì xué Hànyǔ yǒu bāngzhù.",
+       "en": "Watching TV helps with learning Chinese."
       },
       {
        "name": "A",
        "zh": "明天的课你都准备好了吗？",
-       "py": "",
-       "en": ""
+       "py": "Míngtiān de kè nǐ dōu zhǔnbèi hǎo le ma?",
+       "en": "Have you prepared everything for tomorrow's class?"
       },
       {
        "name": "B",
        "zh": "都准备好了。",
-       "py": "",
-       "en": ""
+       "py": "Dōu zhǔnbèi hǎo le.",
+       "en": "Yes, all prepared."
       }
      ],
      "vocab": {
@@ -4799,32 +4799,32 @@
       {
        "name": "A",
        "zh": "别看报纸了，医生说你要多休息。",
-       "py": "",
-       "en": ""
+       "py": "Bié kàn bàozhǐ le, yīshēng shuō nǐ yào duō xiūxi.",
+       "en": "Stop reading the newspaper—the doctor says you need more rest."
       },
       {
        "name": "B",
        "zh": "好，不看了。给我一杯茶吧。",
-       "py": "",
-       "en": ""
+       "py": "Hǎo, bú kàn le. Gěi wǒ yì bēi chá ba.",
+       "en": "Okay, I'll stop. Get me a cup of tea, please."
       },
       {
        "name": "A",
        "zh": "医生说吃药后两个小时不要喝茶。",
-       "py": "",
-       "en": ""
+       "py": "Yīshēng shuō chī yào hòu liǎng ge xiǎoshí bú yào hē chá.",
+       "en": "The doctor said not to drink tea for two hours after taking medicine."
       },
       {
        "name": "B",
        "zh": "医生还说什么了？",
-       "py": "",
-       "en": ""
+       "py": "Yīshēng hái shuō shénme le?",
+       "en": "What else did the doctor say?"
       },
       {
        "name": "A",
        "zh": "医生让你听我的。",
-       "py": "",
-       "en": ""
+       "py": "Yīshēng ràng nǐ tīng wǒ de.",
+       "en": "The doctor said you should listen to me."
       }
      ],
      "vocab": {
@@ -4933,26 +4933,26 @@
       {
        "name": "A",
        "zh": "你怎么买了这么多东西啊？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zěnme mǎi le zhème duō dōngxi a?",
+       "en": "Why did you buy so much stuff?"
       },
       {
        "name": "B",
        "zh": "哥哥今天中午回来吃饭。",
-       "py": "",
-       "en": ""
+       "py": "Gēge jīntiān zhōngwǔ huílai chī fàn.",
+       "en": "My older brother is coming home for lunch today."
       },
       {
        "name": "A",
        "zh": "我看看买什么了。羊肉、鸡蛋、面条、西瓜……真不少！妈妈呢？",
-       "py": "",
-       "en": ""
+       "py": "Wǒ kànkan mǎi shénme le. Yángròu, jīdàn, miàntiáo, xīguā…… zhēn bù shǎo! Māma ne?",
+       "en": "Let me see what you bought. Lamb, eggs, noodles, watermelon… that's a lot! Where's Mom?"
       },
       {
        "name": "B",
        "zh": "正在准备午饭呢！",
-       "py": "",
-       "en": ""
+       "py": "Zhèngzài zhǔnbèi wǔfàn ne!",
+       "en": "She's making lunch!"
       }
      ],
      "vocab": {
@@ -5069,32 +5069,32 @@
       {
        "name": "A",
        "zh": "你在找什么？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zài zhǎo shénme?",
+       "en": "What are you looking for?"
       },
       {
        "name": "B",
        "zh": "你看见我的手机了吗？白色的。",
-       "py": "",
-       "en": ""
+       "py": "Nǐ kànjiàn wǒ de shǒujī le ma? Báisè de.",
+       "en": "Have you seen my phone? The white one."
       },
       {
        "name": "A",
        "zh": "别找了，手机在桌子上呢，电脑旁边。",
-       "py": "",
-       "en": ""
+       "py": "Bié zhǎo le, shǒujī zài zhuōzi shàng ne, diànnǎo pángbiān.",
+       "en": "Stop looking—the phone's on the table, next to the computer."
       },
       {
        "name": "B",
        "zh": "你看见我的衣服了吗？红色的那件。",
-       "py": "",
-       "en": ""
+       "py": "Nǐ kànjiàn wǒ de yīfu le ma? Hóngsè de nà jiàn.",
+       "en": "Have you seen my clothes? The red one."
       },
       {
        "name": "A",
        "zh": "那件衣服我帮你洗了，在外边呢。",
-       "py": "",
-       "en": ""
+       "py": "Nà jiàn yīfu wǒ bāng nǐ xǐ le, zài wàibian ne.",
+       "en": "I washed that one for you; it's outside."
       }
      ],
      "vocab": {
@@ -5223,26 +5223,26 @@
       {
        "name": "A",
        "zh": "王方，昨天和你一起唱歌的人是谁？",
-       "py": "",
-       "en": ""
+       "py": "Wáng Fāng, zuótiān hé nǐ yìqǐ chànggē de rén shì shéi?",
+       "en": "Wang Fang, who was that person singing with you yesterday?"
       },
       {
        "name": "B",
        "zh": "一个朋友。",
-       "py": "",
-       "en": ""
+       "py": "Yí ge péngyou.",
+       "en": "A friend."
       },
       {
        "name": "A",
        "zh": "什么朋友？是不是男朋友？",
-       "py": "",
-       "en": ""
+       "py": "Shénme péngyou? Shì bu shì nánpéngyou?",
+       "en": "What kind of friend? Is he your boyfriend?"
       },
       {
        "name": "B",
        "zh": "不是不是，我同学介绍的，昨天第一次见。",
-       "py": "",
-       "en": ""
+       "py": "Bú shì bú shì, wǒ tóngxué jièshào de, zuótiān dì-yī cì jiàn.",
+       "en": "No, no—a classmate introduced us; yesterday was the first time we met."
       }
      ],
      "vocab": {
@@ -5343,26 +5343,26 @@
       {
        "name": "A",
        "zh": "左边这个看报纸的女孩子是你姐姐吗？",
-       "py": "",
-       "en": ""
+       "py": "Zuǒbian zhège kàn bàozhǐ de nǚ háizi shì nǐ jiějie ma?",
+       "en": "Is the girl on the left reading the newspaper your sister?"
       },
       {
        "name": "B",
        "zh": "是，右边写字的那个人是我哥哥。",
-       "py": "",
-       "en": ""
+       "py": "Shì, yòubian xiě zì de nàge rén shì wǒ gēge.",
+       "en": "Yes, and the person writing on the right is my older brother."
       },
       {
        "name": "A",
        "zh": "你哥哥多大？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ gēge duō dà?",
+       "en": "How old is your brother?"
       },
       {
        "name": "B",
        "zh": "25岁，他比我大三岁。",
-       "py": "",
-       "en": ""
+       "py": "Èrshíwǔ suì, tā bǐ wǒ dà sān suì.",
+       "en": "Twenty-five; he's three years older than me."
       }
      ],
      "vocab": {
@@ -5467,26 +5467,26 @@
       {
        "name": "A",
        "zh": "今天的西瓜怎么卖？",
-       "py": "",
-       "en": ""
+       "py": "Jīntiān de xīguā zěnme mài?",
+       "en": "How much is the watermelon today?"
       },
       {
        "name": "B",
        "zh": "三块五一斤。",
-       "py": "",
-       "en": ""
+       "py": "Sān kuài wǔ yì jīn.",
+       "en": "Three-fifty a jin."
       },
       {
        "name": "A",
        "zh": "比昨天便宜。",
-       "py": "",
-       "en": ""
+       "py": "Bǐ zuótiān piányi.",
+       "en": "Cheaper than yesterday."
       },
       {
        "name": "B",
        "zh": "是，苹果也比昨天便宜一些。您来点儿吧。",
-       "py": "",
-       "en": ""
+       "py": "Shì, píngguǒ yě bǐ zuótiān piányi yìxiē. Nín lái diǎnr ba.",
+       "en": "Yes, the apples are a bit cheaper than yesterday too. Have some."
       }
      ],
      "vocab": {
@@ -5576,26 +5576,26 @@
       {
        "name": "A",
        "zh": "前边说话的那个人就是我的汉语老师。你可能不认识她。",
-       "py": "",
-       "en": ""
+       "py": "Qiánbian shuōhuà de nàge rén jiù shì wǒ de Hànyǔ lǎoshī. Nǐ kěnéng bú rènshi tā.",
+       "en": "The person talking up front is my Chinese teacher. You probably don't know her."
       },
       {
        "name": "B",
        "zh": "是新来的汉语老师吗？",
-       "py": "",
-       "en": ""
+       "py": "Shì xīn lái de Hànyǔ lǎoshī ma?",
+       "en": "Is she the new Chinese teacher?"
       },
       {
        "name": "A",
        "zh": "是去年来的，她姓王，28岁。",
-       "py": "",
-       "en": ""
+       "py": "Shì qùnián lái de, tā xìng Wáng, èrshíbā suì.",
+       "en": "She came last year; her surname is Wang, and she's twenty-eight."
       },
       {
        "name": "B",
        "zh": "她比我们老师小两岁。",
-       "py": "",
-       "en": ""
+       "py": "Tā bǐ wǒmen lǎoshī xiǎo liǎng suì.",
+       "en": "She's two years younger than our teacher."
       }
      ],
      "vocab": {
@@ -5727,26 +5727,26 @@
       {
        "name": "A",
        "zh": "你每天早上几点起床？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ měi tiān zǎoshang jǐ diǎn qǐchuáng?",
+       "en": "What time do you get up every morning?"
       },
       {
        "name": "B",
        "zh": "六点多。",
-       "py": "",
-       "en": ""
+       "py": "Liù diǎn duō.",
+       "en": "A little after six."
       },
       {
        "name": "A",
        "zh": "你比我早起一个小时。",
-       "py": "",
-       "en": ""
+       "py": "Nǐ bǐ wǒ zǎo qǐ yí ge xiǎoshí.",
+       "en": "You get up an hour earlier than me."
       },
       {
        "name": "B",
        "zh": "我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ shuì de yě zǎo, wǒ měi tiān wǎnshang shí diǎn jiù shuìjiào. Zǎo shuì zǎo qǐ shēntǐ hǎo.",
+       "en": "I go to bed early too—I sleep at ten every night. Early to bed and early to rise is good for your health."
       }
      ],
      "vocab": {
@@ -5844,26 +5844,26 @@
       {
        "name": "A",
        "zh": "再来点儿米饭吧，你吃得太少了。",
-       "py": "",
-       "en": ""
+       "py": "Zài lái diǎnr mǐfàn ba, nǐ chī de tài shǎo le.",
+       "en": "Have some more rice—you've eaten too little."
       },
       {
        "name": "B",
        "zh": "不少了，今天吃得很好，太谢谢你了。",
-       "py": "",
-       "en": ""
+       "py": "Bù shǎo le, jīntiān chī de hěn hǎo, tài xièxie nǐ le.",
+       "en": "That's plenty; I ate very well today. Thank you so much."
       },
       {
        "name": "A",
        "zh": "你做饭做得怎么样？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zuò fàn zuò de zěnmeyàng?",
+       "en": "How well do you cook?"
       },
       {
        "name": "B",
        "zh": "不怎么样，我妻子比我做得好。",
-       "py": "",
-       "en": ""
+       "py": "Bù zěnmeyàng, wǒ qīzi bǐ wǒ zuò de hǎo.",
+       "en": "Not that well; my wife cooks better than I do."
       }
      ],
      "vocab": {
@@ -5964,26 +5964,26 @@
       {
        "name": "A",
        "zh": "下雪了，今天真冷。",
-       "py": "",
-       "en": ""
+       "py": "Xià xuě le, jīntiān zhēn lěng.",
+       "en": "It's snowing; it's really cold today."
       },
       {
        "name": "B",
        "zh": "有零下10度吧？",
-       "py": "",
-       "en": ""
+       "py": "Yǒu língxià shí dù ba?",
+       "en": "It must be minus ten degrees, right?"
       },
       {
        "name": "A",
        "zh": "是啊，你穿得太少了，我们进房间吧。",
-       "py": "",
-       "en": ""
+       "py": "Shì a, nǐ chuān de tài shǎo le, wǒmen jìn fángjiān ba.",
+       "en": "Yeah, you're dressed too lightly; let's go inside."
       },
       {
        "name": "B",
        "zh": "好吧。",
-       "py": "",
-       "en": ""
+       "py": "Hǎo ba.",
+       "en": "Okay."
       }
      ],
      "vocab": {
@@ -6102,26 +6102,26 @@
       {
        "name": "A",
        "zh": "你在忙什么呢？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zài máng shénme ne?",
+       "en": "What are you busy with?"
       },
       {
        "name": "B",
        "zh": "我弟弟让我帮他找个房子，现在他家离公司有点儿远。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ dìdi ràng wǒ bāng tā zhǎo ge fángzi, xiànzài tā jiā lí gōngsī yǒudiǎnr yuǎn.",
+       "en": "My younger brother asked me to help him find a place; his home is a bit far from the office now."
       },
       {
        "name": "A",
        "zh": "住得远真的很累！",
-       "py": "",
-       "en": ""
+       "py": "Zhù de yuǎn zhēn de hěn lèi!",
+       "en": "Living far away is really tiring!"
       },
       {
        "name": "B",
        "zh": "是啊，他也希望能住得近一点儿。",
-       "py": "",
-       "en": ""
+       "py": "Shì a, tā yě xīwàng néng zhù de jìn yìdiǎnr.",
+       "en": "Yeah, he also hopes to live a bit closer."
       }
      ],
      "vocab": {
@@ -6238,26 +6238,26 @@
       {
        "name": "A",
        "zh": "门开着呢，请进。",
-       "py": "",
-       "en": ""
+       "py": "Mén kāizhe ne, qǐng jìn.",
+       "en": "The door's open; come in."
       },
       {
        "name": "B",
        "zh": "请问，张先生在吗？",
-       "py": "",
-       "en": ""
+       "py": "Qǐngwèn, Zhāng xiānsheng zài ma?",
+       "en": "Excuse me, is Mr. Zhang in?"
       },
       {
        "name": "A",
        "zh": "他出去了。你下午再来吧。",
-       "py": "",
-       "en": ""
+       "py": "Tā chūqu le. Nǐ xiàwǔ zài lái ba.",
+       "en": "He's out. Come back this afternoon."
       },
       {
        "name": "B",
        "zh": "好的，谢谢！",
-       "py": "",
-       "en": ""
+       "py": "Hǎo de, xièxie!",
+       "en": "Okay, thanks!"
       }
      ],
      "vocab": {
@@ -6345,26 +6345,26 @@
       {
        "name": "A",
        "zh": "那个正在说话的女孩儿是谁？",
-       "py": "",
-       "en": ""
+       "py": "Nàge zhèngzài shuōhuà de nǚháir shì shéi?",
+       "en": "Who's that girl who's talking?"
       },
       {
        "name": "B",
        "zh": "我知道她的名字，她姓杨，叫杨笑笑，她姐姐是我同学。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ zhīdào tā de míngzi, tā xìng Yáng, jiào Yáng Xiàoxiao, tā jiějie shì wǒ tóngxué.",
+       "en": "I know her name—her surname is Yang, she's called Yang Xiaoxiao, and her sister is my classmate."
       },
       {
        "name": "A",
        "zh": "那个手里拿着铅笔的呢？",
-       "py": "",
-       "en": ""
+       "py": "Nàge shǒu lǐ názhe qiānbǐ de ne?",
+       "en": "What about the one holding a pencil?"
       },
       {
        "name": "B",
        "zh": "我不认识。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ bú rènshi.",
+       "en": "I don't know them."
       }
      ],
      "vocab": {
@@ -6479,26 +6479,26 @@
       {
        "name": "A",
        "zh": "听说你有女朋友了？我认识她吗？",
-       "py": "",
-       "en": ""
+       "py": "Tīngshuō nǐ yǒu nǚpéngyou le? Wǒ rènshi tā ma?",
+       "en": "I heard you have a girlfriend now? Do I know her?"
       },
       {
        "name": "B",
        "zh": "就是我们班那个长着两个大眼睛、非常爱笑的女孩儿。",
-       "py": "",
-       "en": ""
+       "py": "Jiù shì wǒmen bān nàge zhǎngzhe liǎng ge dà yǎnjing, fēicháng ài xiào de nǚháir.",
+       "en": "She's the girl in our class with the big eyes who loves to smile."
       },
       {
        "name": "A",
        "zh": "她不是有男朋友吗？",
-       "py": "",
-       "en": ""
+       "py": "Tā bú shì yǒu nánpéngyou ma?",
+       "en": "Doesn't she have a boyfriend?"
       },
       {
        "name": "B",
        "zh": "那个已经是她的前男友了。",
-       "py": "",
-       "en": ""
+       "py": "Nàge yǐjīng shì tā de qián nányǒu le.",
+       "en": "That guy is already her ex-boyfriend."
       }
      ],
      "vocab": {
@@ -6616,26 +6616,26 @@
       {
        "name": "A",
        "zh": "请问，这儿离新京宾馆远吗？",
-       "py": "",
-       "en": ""
+       "py": "Qǐngwèn, zhèr lí Xīnjīng bīnguǎn yuǎn ma?",
+       "en": "Excuse me, is the Xinjing Hotel far from here?"
       },
       {
        "name": "B",
        "zh": "不远，走路二十分钟就到。",
-       "py": "",
-       "en": ""
+       "py": "Bù yuǎn, zǒulù èrshí fēnzhōng jiù dào.",
+       "en": "Not far—about twenty minutes on foot."
       },
       {
        "name": "A",
        "zh": "你能告诉我怎么走吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ néng gàosu wǒ zěnme zǒu ma?",
+       "en": "Can you tell me how to get there?"
       },
       {
        "name": "B",
        "zh": "从这儿一直往前走，到了前面的路口再往右走。",
-       "py": "",
-       "en": ""
+       "py": "Cóng zhèr yìzhí wǎng qián zǒu, dào le qiánmiàn de lùkǒu zài wǎng yòu zǒu.",
+       "en": "Go straight ahead from here, and turn right at the intersection up front."
       }
      ],
      "vocab": {
@@ -6760,26 +6760,26 @@
       {
        "name": "A",
        "zh": "你看过那个电影没有？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ kànguo nàge diànyǐng méiyǒu?",
+       "en": "Have you seen that movie?"
       },
       {
        "name": "B",
        "zh": "没看过，听说很有意思。",
-       "py": "",
-       "en": ""
+       "py": "Méi kànguo, tīngshuō hěn yǒu yìsi.",
+       "en": "No, I haven't; I hear it's very interesting."
       },
       {
        "name": "A",
        "zh": "那我们下个星期一起去看吧？",
-       "py": "",
-       "en": ""
+       "py": "Nà wǒmen xià ge xīngqī yìqǐ qù kàn ba?",
+       "en": "Then let's go see it together next week?"
       },
       {
        "name": "B",
        "zh": "可以，但是我女朋友也想去。",
-       "py": "",
-       "en": ""
+       "py": "Kěyǐ, dànshì wǒ nǚpéngyou yě xiǎng qù.",
+       "en": "Sure, but my girlfriend wants to go too."
       }
      ],
      "vocab": {
@@ -6875,26 +6875,26 @@
       {
        "name": "A",
        "zh": "听说你去过中国，还想去吗？",
-       "py": "",
-       "en": ""
+       "py": "Tīngshuō nǐ qùguo Zhōngguó, hái xiǎng qù ma?",
+       "en": "I heard you've been to China—do you want to go again?"
       },
       {
        "name": "B",
        "zh": "我虽然去过好几次，但是还想再去玩儿玩儿。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ suīrán qùguo hǎojǐ cì, dànshì hái xiǎng zài qù wánrwánr.",
+       "en": "Even though I've been several times, I'd still like to go again for fun."
       },
       {
        "name": "A",
        "zh": "那我们一起去吧。",
-       "py": "",
-       "en": ""
+       "py": "Nà wǒmen yìqǐ qù ba.",
+       "en": "Then let's go together."
       },
       {
        "name": "B",
        "zh": "好啊，到时候我给你打电话。",
-       "py": "",
-       "en": ""
+       "py": "Hǎo a, dào shíhou wǒ gěi nǐ dǎ diànhuà.",
+       "en": "Sure, I'll call you when the time comes."
       }
      ],
      "vocab": {
@@ -7008,26 +7008,26 @@
       {
        "name": "A",
        "zh": "明天天气怎么样？",
-       "py": "",
-       "en": ""
+       "py": "Míngtiān tiānqì zěnmeyàng?",
+       "en": "How's the weather tomorrow?"
       },
       {
        "name": "B",
        "zh": "虽然是晴天，但是很冷。",
-       "py": "",
-       "en": ""
+       "py": "Suīrán shì qíngtiān, dànshì hěn lěng.",
+       "en": "Although it'll be sunny, it'll be cold."
       },
       {
        "name": "A",
        "zh": "那还能去跑步吗？",
-       "py": "",
-       "en": ""
+       "py": "Nà hái néng qù pǎobù ma?",
+       "en": "Can we still go running then?"
       },
       {
        "name": "B",
        "zh": "可以，但是你自己去吧，我还有很多事情要做。",
-       "py": "",
-       "en": ""
+       "py": "Kěyǐ, dànshì nǐ zìjǐ qù ba, wǒ hái yǒu hěn duō shìqing yào zuò.",
+       "en": "You can, but go by yourself—I still have a lot to do."
       }
      ],
      "vocab": {
@@ -7129,26 +7129,26 @@
       {
        "name": "A",
        "zh": "你在这个商店买过东西没有？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ zài zhège shāngdiàn mǎiguo dōngxi méiyǒu?",
+       "en": "Have you ever shopped at this store?"
       },
       {
        "name": "B",
        "zh": "买过一次，这儿的东西还可以，就是不便宜。",
-       "py": "",
-       "en": ""
+       "py": "Mǎiguo yí cì, zhèr de dōngxi hái kěyǐ, jiù shì bù piányi.",
+       "en": "Once; the stuff here is okay, just not cheap."
       },
       {
        "name": "A",
        "zh": "我喜欢这件衣服，但是觉得有点儿贵。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ xǐhuan zhè jiàn yīfu, dànshì juéde yǒudiǎnr guì.",
+       "en": "I like this piece of clothing, but I think it's a bit expensive."
       },
       {
        "name": "B",
        "zh": "两百块还可以，喜欢就买吧。",
-       "py": "",
-       "en": ""
+       "py": "Liǎngbǎi kuài hái kěyǐ, xǐhuan jiù mǎi ba.",
+       "en": "Two hundred yuan is fine—if you like it, buy it."
       }
      ],
      "vocab": {
@@ -7257,32 +7257,32 @@
       {
        "name": "A",
        "zh": "今天是12月20日，新年就要到了。",
-       "py": "",
-       "en": ""
+       "py": "Jīntiān shì shí'èr yuè èrshí rì, xīnnián jiù yào dào le.",
+       "en": "Today is December 20th; the New Year is almost here."
       },
       {
        "name": "B",
        "zh": "新年你准备做什么？",
-       "py": "",
-       "en": ""
+       "py": "Xīnnián nǐ zhǔnbèi zuò shénme?",
+       "en": "What are you planning to do for New Year?"
       },
       {
        "name": "A",
        "zh": "我想去北京旅游，北京很不错，我去过一次。",
-       "py": "",
-       "en": ""
+       "py": "Wǒ xiǎng qù Běijīng lǚyóu, Běijīng hěn búcuò, wǒ qùguo yí cì.",
+       "en": "I want to travel to Beijing—Beijing is great; I've been once."
       },
       {
        "name": "B",
        "zh": "你买票了吗？",
-       "py": "",
-       "en": ""
+       "py": "Nǐ mǎi piào le ma?",
+       "en": "Have you bought your ticket?"
       },
       {
        "name": "A",
        "zh": "还没有呢，明天就去火车站买票。",
-       "py": "",
-       "en": ""
+       "py": "Hái méiyǒu ne, míngtiān jiù qù huǒchēzhàn mǎi piào.",
+       "en": "Not yet; I'll go buy it at the train station tomorrow."
       }
      ],
      "vocab": {
@@ -7409,20 +7409,20 @@
       {
        "name": "A",
        "zh": "时间过得真快，新的一年快要到了！",
-       "py": "",
-       "en": ""
+       "py": "Shíjiān guò de zhēn kuài, xīn de yì nián kuài yào dào le!",
+       "en": "Time flies—a new year is almost here!"
       },
       {
        "name": "B",
        "zh": "是啊，谢谢大家这一年对我的帮助！",
-       "py": "",
-       "en": ""
+       "py": "Shì a, xièxie dàjiā zhè yì nián duì wǒ de bāngzhù!",
+       "en": "Yeah, thank you all for your help this year!"
       },
       {
        "name": "C",
        "zh": "希望我们的公司明年更好！",
-       "py": "",
-       "en": ""
+       "py": "Xīwàng wǒmen de gōngsī míngnián gèng hǎo!",
+       "en": "I hope our company does even better next year!"
       }
      ],
      "vocab": {
@@ -7519,26 +7519,26 @@
       {
        "name": "A",
        "zh": "你妹妹怎么还没来？都八点四十了！",
-       "py": "",
-       "en": ""
+       "py": "Nǐ mèimei zěnme hái méi lái? Dōu bā diǎn sìshí le!",
+       "en": "Why isn't your sister here yet? It's already 8:40!"
       },
       {
        "name": "B",
        "zh": "我们再等她几分钟吧。",
-       "py": "",
-       "en": ""
+       "py": "Wǒmen zài děng tā jǐ fēnzhōng ba.",
+       "en": "Let's wait a few more minutes for her."
       },
       {
        "name": "A",
        "zh": "都等她半个小时了！",
-       "py": "",
-       "en": ""
+       "py": "Dōu děng tā bàn ge xiǎoshí le!",
+       "en": "We've been waiting half an hour for her!"
       },
       {
        "name": "B",
        "zh": "她来了，我听见她说话了。",
-       "py": "",
-       "en": ""
+       "py": "Tā lái le, wǒ tīngjiàn tā shuōhuà le.",
+       "en": "She's here—I heard her voice."
       }
      ],
      "vocab": {
@@ -7637,26 +7637,26 @@
       {
        "name": "A",
        "zh": "天阴了，我要回去了。",
-       "py": "",
-       "en": ""
+       "py": "Tiān yīn le, wǒ yào huíqu le.",
+       "en": "It's getting cloudy; I'm heading back."
       },
       {
        "name": "B",
        "zh": "好的，快要下雨了，你路上慢点儿。",
-       "py": "",
-       "en": ""
+       "py": "Hǎo de, kuài yào xià yǔ le, nǐ lù shàng màn diǎnr.",
+       "en": "Okay, it's about to rain—take it easy on the way."
       },
       {
        "name": "A",
        "zh": "没关系，我坐公共汽车。",
-       "py": "",
-       "en": ""
+       "py": "Méi guānxi, wǒ zuò gōnggòng qìchē.",
+       "en": "It's fine, I'm taking the bus."
       },
       {
        "name": "B",
        "zh": "好的。再见。",
-       "py": "",
-       "en": ""
+       "py": "Hǎo de. Zàijiàn.",
+       "en": "Okay. Goodbye."
       }
      ],
      "vocab": {

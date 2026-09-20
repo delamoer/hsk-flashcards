@@ -77,7 +77,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   a line isn't glossed yet). Pinyin is tone-marked (与闪卡一致, colored via `colorPinyin`). TextView shows
   two off-by-default 拼音/En reveal pills in 读原文 (only when that text has gloss). Roll out to more units
   by appending rows to the TSV (dedup is automatic — identical lines across courses share one entry) and
-  re-running `npm run convert`; currently covers newhsk3-1. **连词成句
+  re-running `npm run convert`; now covers all six 课文 units (hsk-1/2/3 + newhsk3-1/2/3, ~1697 lines). **连词成句
   tokenization uses NO jieba**: `convert_texts.py` max-matches against a lexicon built from the flashcard
   vocabulary + the hand-vetted `scripts/grammar_segments.tsv` (358 grammar clauses, manually segmented —
   edit the TSV, not generated output). 课文 audio (dialogue lines) is generated via
