@@ -89,11 +89,17 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   **`convert_texts.py` never blanks a speaker name** (`heal_name_blanks`): the source cloze blanks the FIRST
   occurrence of an answer, which sometimes lands in a name (王一[雪]：, 周[太太]：) — that blank is un-blanked
   there and either relocated to the word's speech-body occurrence or, if the word only ever appears as a name,
-  dropped entirely (blanks then renumbered). **连词成句
-  tokenization uses NO jieba**: `convert_texts.py` max-matches against a lexicon built from the flashcard
-  vocabulary + the hand-vetted `scripts/grammar_segments.tsv` (358 grammar clauses, manually segmented —
-  edit the TSV, not generated output). 课文 audio (dialogue lines) is generated via
-  `gen_audio.py --texts` and uploaded to the same Storage `audio` bucket.
+  dropped entirely (blanks then renumbered). **连词成句 items are one SENTENCE each, not one
+  whole line** (`build_sentences`): each speech line is split by sentence-final punctuation (。！？；;
+  a hand-vetted `grammar_segments.tsv` clause is kept whole), so narratives — a single 40–70-tile monster
+  otherwise — become several doable sentences. Sentences that tokenize to <2 or >`MAX_SENT_TOKENS` (15)
+  tiles are dropped; sentences containing a 生词挖空 answer word are surfaced FIRST (练完挖空再排句). Each
+  sentence has a 听一听 audio-hint button (`say(curSentence.text)`). **连词成句 tokenization uses NO jieba**:
+  `convert_texts.py` max-matches against a lexicon built from the flashcard vocabulary + the hand-vetted
+  `scripts/grammar_segments.tsv` (358 grammar clauses, manually segmented — edit the TSV, not generated
+  output). 课文 audio (读原文 dialogue lines + every 连词成句 `sentences[].text`) is generated via
+  `gen_audio.py --texts` (`collect_text_lines`) and uploaded to the same Storage `audio` bucket; split
+  sub-sentences without a pre-generated MP3 fall back to browser TTS until audio is regenerated.
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
   works on GitHub Pages without server rewrites. Routes: `/`, `/pinyin`, `/my-words`, `/search`,
   `/login`, `/account`, `/admin`, the course flow `/course/:series/:unit[/lesson/:lesson[/quiz|print]]`,

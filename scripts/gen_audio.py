@@ -84,11 +84,23 @@ def collect_texts(series: str, unit: int, lesson_num: int | None) -> list[str]:
 
 
 def collect_text_lines() -> list[str]:
-    """Dialogue lines (speaker stripped) from the 课文 data — these are what the
-    读原文 🔊 button speaks, so they need pre-generated audio too."""
+    """Speakable 课文 strings that need pre-generated audio: the 读原文 🔊 lines
+    (dialogue lines, speaker stripped) AND every 连词成句 sentence (`sentences[].text`
+    — narratives are split into sub-sentences that don't match a whole line, and the
+    grammar mode's 听一听 hint button speaks each)."""
     import re
     seen: set[str] = set()
     texts: list[str] = []
+
+    def add(speech: str):
+        speech = (speech or "").strip()
+        # skip strings with nothing speakable (e.g. "……") to avoid TTS errors
+        if not speech or not re.search(r"[一-鿿A-Za-z0-9]", speech):
+            return
+        if speech not in seen:
+            seen.add(speech)
+            texts.append(speech)
+
     for f in sorted((DATA_DIR / "texts").glob("*-*.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
         if "lessons" not in data:
@@ -100,13 +112,9 @@ def collect_text_lines() -> list[str]:
                     if not line:
                         continue
                     m = re.match(r"^[^：:]{1,8}[：:](.*)$", line)
-                    speech = (m.group(1).strip() if m else line)
-                    # skip lines with nothing speakable (e.g. "……") to avoid TTS errors
-                    if not re.search(r"[一-鿿A-Za-z0-9]", speech):
-                        continue
-                    if speech and speech not in seen:
-                        seen.add(speech)
-                        texts.append(speech)
+                    add(m.group(1) if m else line)
+                for s in t.get("sentences") or []:
+                    add(s.get("text"))
     return texts
 
 

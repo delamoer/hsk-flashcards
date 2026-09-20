@@ -31,6 +31,7 @@ SEG_FILE = ROOT / "scripts" / "grammar_segments.tsv"
 GLOSS_FILE = ROOT / "scripts" / "text_gloss.tsv"
 WORD_GLOSS_FILE = ROOT / "scripts" / "word_gloss.tsv"
 MAX_WORD = 6  # longest word to try in max-match segmentation
+MAX_SENT_TOKENS = 15  # 连词成句: sentences longer than this are dropped (too hard)
 
 # (filename, series, unit) — teacher sheet "教师答案版" is the complete one.
 SOURCES = [
@@ -308,11 +309,23 @@ def parse_grammar(cloze: str, ans: str, segmap: dict):
 SPEAKER_RE = re.compile(r"^([^：:]{1,8})[：:](.*)$")
 
 
-def build_sentences(original: str, segmap: dict, lex: set):
-    """Split the whole dialogue into per-line 连词成句 items: each line's speech
-    tokenized (hand-vetted table wins when the line matches a grammar clause,
-    else dictionary max-match). Lines that yield <2 tiles are dropped (trivial)."""
-    out = []
+SENT_SPLIT_RE = re.compile(r"[^。！？；!?;]*[。！？；!?;]+[”\"’'）)」』]*|[^。！？；!?;]+$")
+
+
+def split_sentences(text: str):
+    """Split a speech line into individual sentences by sentence-final punctuation
+    (。！？；), keeping the punctuation and any trailing closing quote attached."""
+    return [c.strip() for c in SENT_SPLIT_RE.findall(text or "") if c.strip()]
+
+
+def build_sentences(original: str, segmap: dict, lex: set, answers=None):
+    """连词成句 items, one SENTENCE each (not one whole line — narratives were a
+    single 40–70-tile monster otherwise). Each line is split by sentence-final
+    punctuation; a hand-vetted grammar clause (in segmap) is kept whole. Sentences
+    that tokenize to <2 tiles (trivial) or >MAX_SENT_TOKENS (too hard) are dropped.
+    Sentences containing a 生词挖空 answer word are surfaced FIRST (练完挖空再排句)."""
+    answer_set = {a for a in (answers or []) if a}
+    primary, rest = [], []
     for raw in (original or "").split("\n"):
         line = raw.strip()
         if not line:
@@ -322,12 +335,15 @@ def build_sentences(original: str, segmap: dict, lex: set):
         speech = (m.group(2).strip() if m else line)
         if not speech:
             continue
-        toks = segmap.get(speech) or segment_sentence(speech, lex)
-        toks = strip_punct(toks)
-        if len(toks) < 2:
-            continue
-        out.append({"speaker": speaker, "text": speech, "tokens": toks})
-    return out
+        subs = [speech] if speech in segmap else split_sentences(speech)
+        for sub in subs:
+            toks = segmap.get(sub) or segment_sentence(sub, lex)
+            toks = strip_punct(toks)
+            if len(toks) < 2 or len(toks) > MAX_SENT_TOKENS:
+                continue
+            item = {"speaker": speaker, "text": sub, "tokens": toks}
+            (primary if any(a in sub for a in answer_set) else rest).append(item)
+    return primary + rest
 
 
 def build_lines(original: str, gloss: dict):
@@ -386,7 +402,7 @@ def convert(fname, series, unit, segmap, lex, gloss, wordmap):
             "lines": build_lines(original, gloss),
             "vocab": vocab,
             "grammar": parse_grammar(clean(r[C_GCLOZE]), clean(r[C_GANS]), segmap),
-            "sentences": build_sentences(original, segmap, seg_lex),
+            "sentences": build_sentences(original, segmap, seg_lex, vocab["answers"] if vocab else None),
             "note": clean(r[C_NOTE]) or "",
         })
 

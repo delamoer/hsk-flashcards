@@ -154,56 +154,66 @@
       </div>
     </div>
 
-    <!-- ============ ③ GRAMMAR · 整段复原 ============ -->
-    <div v-else-if="mode === 'grammar' && curSentence" class="panel">
-      <div class="grammar">
+    <!-- ============ ③ GRAMMAR · 整段复原（全句铺一页）============ -->
+    <div v-else-if="mode === 'grammar' && sentences.length" class="panel">
+      <div class="grammar paper-bg">
         <div class="ghead">
-          <div class="lede">把打乱的词排成这句话。 · Tap the words in order to rebuild the line.</div>
+          <div class="lede">把每句打乱的词排成句子。 · Rebuild each line by tapping the words in order.</div>
           <div class="gprogress">
-            <span class="gcount">句 {{ gi + 1 }} / {{ sentences.length }}</span>
-            <div class="gbar"><i :style="{ width: ((gi + (gChecked && gCorrect ? 1 : 0)) / sentences.length) * 100 + '%' }"></i></div>
+            <span class="gcount">完成 {{ gDoneCount }} / {{ sentences.length }}</span>
+            <div class="gbar"><i :style="{ width: (gDoneCount / sentences.length) * 100 + '%' }"></i></div>
           </div>
         </div>
 
-        <div class="gspeaker" v-if="curSentence.speaker">
-          <span class="gs-name">{{ curSentence.speaker }}</span>
-          <span class="gs-say">说：</span>
+        <div
+          class="gitem"
+          :class="{ done: gState[si].checked && gCorrect(si), wrong: gState[si].checked && !gCorrect(si) }"
+          v-for="(s, si) in sentences"
+          :key="si"
+        >
+          <div class="gspeaker">
+            <span class="gs-no">{{ si + 1 }}</span>
+            <template v-if="s.speaker">
+              <span class="gs-name">{{ s.speaker }}</span>
+              <span class="gs-say">说：</span>
+            </template>
+            <button class="glisten" @click="say(s.text)" title="听正确读法 · listen for a hint">
+              🔊 <span>听一听<small>LISTEN · hint</small></span>
+            </button>
+          </div>
+
+          <div
+            class="slot"
+            :class="{ empty: !gState[si].placed.length, solved: gState[si].checked && gCorrect(si), bad: gState[si].checked && !gCorrect(si) }"
+          >
+            <button
+              v-for="(chip, i) in gState[si].placed"
+              :key="chip.id"
+              class="gtile placed"
+              :class="{ drag: !gState[si].checked }"
+              :draggable="!gState[si].checked"
+              @dragstart="onDragStart(si, i)"
+              @dragover.prevent
+              @drop="onDrop(si, i)"
+              @dragend="dragFrom = -1"
+              @click="onPlacedClick(si, i)"
+            >{{ chip.text }}</button>
+          </div>
+          <p class="ghint" v-if="gState[si].placed.length > 1 && !gState[si].checked">拖动可调整顺序，点一下移回词库 · drag to reorder, tap to remove</p>
+
+          <div class="bank-tiles">
+            <button v-for="chip in gState[si].bank" :key="chip.id" class="gtile" @click="placeG(si, chip)">{{ chip.text }}</button>
+          </div>
+
+          <div class="actionrow">
+            <button class="btn btn-primary" :disabled="gState[si].bank.length || gState[si].checked" @click="checkOne(si)">对答案<small>CHECK</small></button>
+            <button class="btn btn-ghost" @click="resetOne(si)">重来<small>RESET</small></button>
+            <span v-if="gState[si].checked && gCorrect(si)" class="solved-badge"><span class="check">✓</span>正确 · Correct</span>
+            <span v-else-if="gState[si].checked" class="score mixed"><span class="dot"></span>答案：{{ s.text }}</span>
+          </div>
         </div>
 
-        <div class="slot" :class="{ empty: !gPlaced.length, solved: gChecked && gCorrect, bad: gChecked && !gCorrect }">
-          <button
-            v-for="(chip, i) in gPlaced"
-            :key="chip.id"
-            class="gtile placed"
-            :class="{ drag: !gChecked }"
-            :draggable="!gChecked"
-            @dragstart="onDragStart(i)"
-            @dragover.prevent
-            @drop="onDrop(i)"
-            @dragend="dragFrom = -1"
-            @click="onPlacedClick(i)"
-          >{{ chip.text }}</button>
-        </div>
-        <p class="ghint" v-if="gPlaced.length > 1 && !gChecked">拖动可调整顺序，点一下移回词库 · drag to reorder, tap to remove</p>
-
-        <div class="bank-tiles">
-          <button v-for="chip in gBank" :key="chip.id" class="gtile" @click="placeG(chip)">{{ chip.text }}</button>
-        </div>
-
-        <div class="actionrow">
-          <button class="btn btn-primary" :disabled="gBank.length" @click="gChecked = true">对答案<small>CHECK</small></button>
-          <button class="btn btn-ghost" @click="buildSentence">重来<small>RESET</small></button>
-          <span v-if="gChecked && gCorrect" class="solved-badge"><span class="check">✓</span>正确 · Correct</span>
-          <span v-else-if="gChecked" class="score mixed"><span class="dot"></span>答案：{{ curSentence.text }}</span>
-          <button
-            v-if="gChecked && gi < sentences.length - 1"
-            class="btn btn-primary"
-            style="margin-left:auto"
-            @click="nextSentence"
-          >下一句<small>NEXT</small></button>
-          <span v-else-if="gChecked && gCorrect" class="alldone">🎉 整段复原完成 · Whole text done!</span>
-        </div>
-        <div class="answer-hint" v-if="gChecked">全句：<b>{{ curSentence.text }}</b></div>
+        <div class="galldone" v-if="gDoneCount === sentences.length">🎉 全部完成 · Whole text done!</div>
       </div>
     </div>
 
@@ -522,69 +532,74 @@ const vScore = computed(
   () => blankNums.value.filter((b) => vFill.value[b] && vFill.value[b].text === vAnswers.value[b - 1]).length
 );
 
-// ── GRAMMAR (连词成句 · 整段复原, one sentence at a time) ─────────────────────
-const gi = ref(0); // current sentence index within the text
-const gBank = ref([]);
-const gPlaced = ref([]);
-const gChecked = ref(false);
-const curSentence = computed(() => sentences.value[gi.value] || null);
+// ── GRAMMAR (连词成句 · 整段复原) ────────────────────────────────────────────
+// All sentences of a text are laid out top-to-bottom, each an independent
+// reorder exercise. State is one entry per sentence: { bank, placed, checked }.
+const gState = ref([]);
 
-function buildSentence() {
-  const toks = curSentence.value?.tokens || [];
-  gBank.value = shuffle(toks.map((t, i) => ({ id: `g${i}`, text: t })));
-  gPlaced.value = [];
-  gChecked.value = false;
+function newG(sentence) {
+  const toks = sentence?.tokens || [];
+  return { bank: shuffle(toks.map((t, i) => ({ id: `g${i}`, text: t }))), placed: [], checked: false };
 }
-function resetGrammar() {
-  gi.value = 0;
-  buildSentence();
+function buildGrammar() {
+  gState.value = sentences.value.map(newG);
 }
-function placeG(chip) {
-  if (gChecked.value) return;
-  gPlaced.value = [...gPlaced.value, chip];
-  gBank.value = gBank.value.filter((c) => c.id !== chip.id);
+function resetOne(si) {
+  gState.value[si] = newG(sentences.value[si]);
 }
-function removeG(idx) {
-  if (gChecked.value) return;
-  const chip = gPlaced.value[idx];
-  gPlaced.value = gPlaced.value.filter((_, i) => i !== idx);
-  gBank.value = [...gBank.value, chip];
+function checkOne(si) {
+  gState.value[si].checked = true;
 }
-// drag-to-reorder placed tiles (desktop); click still removes (touch fallback)
+function placeG(si, chip) {
+  const st = gState.value[si];
+  if (st.checked) return;
+  st.placed = [...st.placed, chip];
+  st.bank = st.bank.filter((c) => c.id !== chip.id);
+}
+function removeG(si, idx) {
+  const st = gState.value[si];
+  if (st.checked) return;
+  const chip = st.placed[idx];
+  st.placed = st.placed.filter((_, i) => i !== idx);
+  st.bank = [...st.bank, chip];
+}
+function gCorrect(si) {
+  const toks = sentences.value[si]?.tokens || [];
+  const p = gState.value[si]?.placed || [];
+  return p.length === toks.length && p.every((c, i) => c.text === toks[i]);
+}
+const gDoneCount = computed(
+  () => sentences.value.reduce((n, _, si) => n + (gState.value[si]?.checked && gCorrect(si) ? 1 : 0), 0)
+);
+
+// drag-to-reorder placed tiles (desktop); click still removes (touch fallback).
+// dragSi pins the drag to one sentence's slot so drops don't cross sentences.
 const dragFrom = ref(-1);
+const dragSi = ref(-1);
 let dragMoved = false;
-function onDragStart(i) {
-  if (gChecked.value) return;
+function onDragStart(si, i) {
+  if (gState.value[si].checked) return;
+  dragSi.value = si;
   dragFrom.value = i;
   dragMoved = false;
 }
-function onDrop(i) {
-  if (gChecked.value || dragFrom.value < 0) return;
+function onDrop(si, i) {
+  if (dragSi.value !== si || dragFrom.value < 0 || gState.value[si].checked) return;
   dragMoved = true;
   const from = dragFrom.value;
   dragFrom.value = -1;
   if (from === i) return;
-  const arr = gPlaced.value.slice();
+  const arr = gState.value[si].placed.slice();
   const [m] = arr.splice(from, 1);
   arr.splice(i, 0, m);
-  gPlaced.value = arr;
+  gState.value[si].placed = arr;
 }
-function onPlacedClick(i) {
+function onPlacedClick(si, i) {
   if (dragMoved) {
     dragMoved = false;
     return;
   }
-  removeG(i);
-}
-const gCorrect = computed(() => {
-  const toks = curSentence.value?.tokens || [];
-  return gPlaced.value.length === toks.length && gPlaced.value.every((c, i) => c.text === toks[i]);
-});
-function nextSentence() {
-  if (gi.value < sentences.value.length - 1) {
-    gi.value++;
-    buildSentence();
-  }
+  removeG(si, i);
 }
 
 watch(
@@ -592,7 +607,7 @@ watch(
   () => {
     if (!text.value) return;
     resetVocab();
-    resetGrammar();
+    buildGrammar();
   },
   { immediate: true }
 );
@@ -1361,10 +1376,73 @@ watch(
   background: linear-gradient(90deg, var(--grad-a), var(--grad-b));
   transition: width 0.3s;
 }
+.gitem {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-lg, 22px);
+  box-shadow: var(--sh-soft);
+  padding: 18px 22px 20px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+}
+.gitem:last-of-type {
+  margin-bottom: 0;
+}
+.gitem.done {
+  border-color: color-mix(in srgb, var(--ok) 45%, transparent);
+  background: linear-gradient(180deg, var(--ok-soft) 0%, var(--card) 42%);
+}
+.gitem.wrong {
+  border-color: color-mix(in srgb, var(--err) 40%, transparent);
+}
+.gs-no {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  flex: none;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--primary) 30%, transparent);
+}
+.gitem.done .gs-no {
+  background: var(--ok);
+  box-shadow: none;
+}
+.glisten {
+  margin-left: auto;
+}
+.gitem .slot {
+  min-height: 52px;
+  padding: 10px 14px;
+  border-radius: var(--r-md, 16px);
+}
+.gitem .slot.empty::after {
+  font-size: 12px;
+}
+.gitem .bank-tiles {
+  margin-top: 12px;
+  min-height: 0;
+}
+.gitem .actionrow {
+  margin-top: 14px;
+}
+.galldone {
+  margin-top: 20px;
+  text-align: center;
+  font-family: var(--han);
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--primary-strong);
+}
 .gspeaker {
   display: flex;
-  align-items: baseline;
-  gap: 4px;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 12px;
   font-family: var(--han);
 }
@@ -1376,6 +1454,32 @@ watch(
 .gspeaker .gs-say {
   font-size: 14px;
   color: var(--muted);
+}
+.glisten {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--han);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--mint-active);
+  background: var(--mint-soft);
+  border-radius: var(--r-pill);
+  padding: 6px 14px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.glisten small {
+  display: block;
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  line-height: 1.1;
+}
+.glisten:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(78, 205, 196, 0.28);
 }
 .alldone {
   margin-left: auto;
