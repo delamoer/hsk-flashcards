@@ -31,6 +31,10 @@
             <div v-if="ex.en" class="e">{{ ex.en }}</div>
           </div>
         </div>
+        <div v-if="word.collocations && word.collocations.length" class="collocs">
+          <span class="cl-lab">搭配<i>Collocations</i></span>
+          <span class="cl-list">{{ word.collocations.join("　·　") }}</span>
+        </div>
         <div class="marks" @click.stop>
           <button
             class="mk known"
@@ -323,6 +327,44 @@ function say(text) {
   font-size: 12px;
   flex-shrink: 0;
   margin-top: 1px;
+}
+.collocs {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--hairline);
+  font-family: var(--han);
+  min-width: 0;
+}
+.cl-lab {
+  flex: none;
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.05;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--primary-strong);
+}
+.cl-lab i {
+  font-style: normal;
+  font-size: 8px;
+  font-weight: 700;
+  opacity: 0.7;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+.cl-list {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fc.focus .cl-list {
+  white-space: normal;
 }
 
 .marks {

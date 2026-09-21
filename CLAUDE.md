@@ -48,6 +48,10 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   `getUnit` / `getLesson` / `allWords` / `everyWord()` / `searchAll()` all return Promises — views
   `await` them into a ref (with a small `loading` state). `matchWord()` stays sync/pure.
   Word shape: `{ id, num, hanzi, pinyin, meaning, pos, type("core"|"supplement"|null), note, examples:[{zh,en}] }`.
+  Some courses add optional fields: **`collocations:[…]`** (常见搭配, 3 per word) — currently only the
+  生存汉语 (`survival`) series carries it (from its xlsx col "最常见词语搭配"); FlashCard shows it as a
+  compact row on the card back (`.collocs`), hidden for words without it. Add a per-course extra column via
+  `col.colloc` in `convert.py`'s SOURCES.
 - **词性 (part of speech) is hand-curated, not in the xlsx.** `scripts/pos.tsv` (`hanzi<TAB>code`) is
   the source of truth — ~4700 words tagged by hand (codes: `n v mv a adv pron num mw prep conj part
   intj idiom`; bilingual labels in `src/data/pos.js`). `convert.py` reads it and sets each word's `pos`

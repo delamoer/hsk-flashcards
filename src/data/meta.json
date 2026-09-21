@@ -68,5 +68,10 @@
   "lessonCount": 8,
   "wordCount": 181,
   "idPrefix": "huihua360-4-"
+ },
+ "survival-1": {
+  "lessonCount": 36,
+  "wordCount": 640,
+  "idPrefix": "survival-1-"
  }
 }

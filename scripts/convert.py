@@ -152,6 +152,16 @@ SOURCES = [
                 "hanzi": 3, "pinyin": 4, "meaning": 5,
                 "type": None, "note": 10, "ex": [(6, 7), (8, 9)]},
     },
+    {
+        # 生存汉语一本通 — one book, lessons 4–39 (1–3 are pinyin, no vocab table).
+        # Extra "colloc" column (最常见词语搭配, 3 per word) → word.collocations.
+        "series": "survival", "unit": 1,
+        "file": "sources/生存汉语一本通_词汇闪卡表_按课顺序_含常见搭配.xlsx",
+        "sheet": "生存汉语词汇表",
+        "col": {"lesson": 1, "lesson_key": None, "title": 2,
+                "hanzi": 3, "pinyin": 4, "meaning": 5,
+                "type": None, "note": 10, "ex": [(6, 7), (8, 9)], "colloc": 11},
+    },
 ]
 
 # English lesson titles: {series: {unit: {lesson_num: "title"}}}
@@ -384,6 +394,27 @@ TITLES_EN = {
             8: "Only by Persevering Can You Win!",
         },
     },
+    "survival": {
+        1: {
+            4: "Reading a Menu", 5: "Describing Flavors", 6: "Tableware",
+            7: "Dish Names & Ingredients", 8: "Dining at a Restaurant",
+            9: "Directions & Addresses", 10: "Asking for Directions",
+            11: "Taking a Taxi", 12: "Taking the Bus", 13: "Taking the Subway",
+            14: "Taking the Train", 15: "Taking a Flight", 16: "Ride-Hailing",
+            17: "Planning a Trip", 18: "Describing Symptoms",
+            19: "Getting a Prescription", 20: "Shopping at a Convenience Store",
+            21: "Buying Fruit", 22: "Clothing & Colors", 23: "Shopping at the Mall",
+            24: "Staying at a Hotel", 25: "Home Layout & Furnishings",
+            26: "At the Hair Salon", 27: "At the Bank", 28: "At the Post Office",
+            29: "Sending & Receiving Packages", 30: "Ordering Takeout",
+            31: "First Meeting & Self-Introduction", 32: "Telling Time",
+            33: "Hobbies & Talents", 34: "Daily Routines",
+            35: "Family Members & Occupations", 36: "Weather",
+            37: "Traditional Chinese Festivals",
+            38: "Major Solar-Calendar Holidays in China",
+            39: "Chinese Zodiac (12 Animals)",
+        },
+    },
 }
 
 # Chinese title overrides — used when the xlsx contains placeholder text.
@@ -481,6 +512,11 @@ def convert(src):
             "note": clean(r[col["note"]]) if col["note"] is not None else None,
             "examples": examples,
         }
+        # 常见搭配 (collocations) — only some courses carry this column
+        colloc_i = col.get("colloc")
+        if colloc_i is not None:
+            raw = clean(r[colloc_i])
+            word["collocations"] = [c.strip() for c in re.split(r"[；;、]", raw) if c.strip()] if raw else []
         lessons[ln]["words"].append(word)
 
     data = {"series": series, "unit": unit, "lessons": [lessons[n] for n in order]}

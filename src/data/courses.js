@@ -66,6 +66,26 @@ export const COURSE_REGISTRY = [
       { id: 4, label: "Book 4", available: true },
     ],
   },
+  {
+    id: "survival",
+    name: "生存汉语一本通",
+    nameEn: "Survival Chinese",
+    gradA: "#e8863a",
+    gradB: "#f4b24c",
+    theme: {
+      "--primary": "#d98324",
+      "--primary-active": "#c2731c",
+      "--primary-strong": "#9a5b12",
+      "--primary-soft": "#f9e6c9",
+      "--grad-a": "#e8863a",
+      "--grad-b": "#f4b24c",
+      "--sh-hover": "0 10px 28px rgba(217, 131, 36, 0.2)",
+      "--sh-front": "0 8px 24px rgba(217, 131, 36, 0.3)",
+    },
+    units: [
+      { id: 1, label: "生存汉语", available: true },
+    ],
+  },
 ];
 
 export function getSeries(seriesId) {
