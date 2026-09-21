@@ -3,33 +3,49 @@
    Tokens mirror DESIGN.md (暖珊橘 · 明快鼓励 / warm-coral, encouraging).
    ───────────────────────────────────────────────────────────── */
 :root {
-  --primary: #ff6b6b;
-  --primary-active: #ff5252;
-  --primary-strong: #f0453f;
-  --primary-soft: #ffe3dd;
-  --grad-a: #ff6b6b;
-  --grad-b: #ff8e53;
-  --accent: #4ecdc4;
-  --accent-active: #38b2ac;
-  --accent-soft: #d7f5f2;
-  --success: #22c55e;
-  --success-soft: #dcfce7;
-  --review: #f59e0b;
-  --review-soft: #fef3c7;
-  --star: #fbbf24;
-  --star-soft: #fef9c3;
-  --error: #ef4444;
-  --ink: #2b2b33;
-  --body: #4b4b55;
-  --muted: #7c7c88;
-  --muted-soft: #a8a8b3;
-  --hairline: #eee7e2;
-  --hairline-soft: #f5f0ec;
-  --border-strong: #d9cfc8;
-  --canvas: #fffaf6;
-  --card: #ffffff;
-  --soft: #fff3ec;
-  --strong: #ffe9df;
+  /* 典籍·线装 parchment base (see design-demos/direction-B.html). Per-series accent
+     (--primary / --grad-a/b / --primary-soft) is overridden by seriesTheme() in App.vue. */
+  --primary: #c0392b;
+  --primary-active: #a52c20;
+  --primary-strong: #8b2a1f;
+  --primary-soft: #f3e1d0;
+  --grad-a: #c0392b;
+  --grad-b: #8b2a1f;
+  --accent: #a9791a;
+  --accent-active: #8a641f;
+  --accent-soft: #f1e4c8;
+  --success: #2d6a4f;
+  --success-soft: #dbeee2;
+  --review: #b8862f;
+  --review-soft: #f6ecd2;
+  --star: #c8962a;
+  --star-soft: #f7eccf;
+  --error: #c0392b;
+  --ink: #1a1208;
+  --body: #4a3d2a;
+  --muted: #75674f;
+  --muted-soft: #9a8a6e;
+  --hairline: #d9cbb0;
+  --hairline-soft: #e3d7bf;
+  --border-strong: #c9b78f;
+  --canvas: #f5efe6;
+  --card: #fbf7ee;
+  --soft: #efe6d6;
+  --strong: #e8dcc6;
+
+  /* classical decorative palette */
+  --paper: #f5efe6;
+  --paper-2: #efe6d6;
+  --paper-3: #e8dcc6;
+  --gold: #c8962a;
+  --gold-lt: #e8b84b;
+  --gold-deep: #a9791a;
+  --cinnabar: #c0392b;
+  --cinnabar-dk: #8b2a1f;
+  --jade: #2d6a4f;
+  --jade-lt: #52b788;
+  --line: #d9cbb0;
+  --line-soft: #e3d7bf;
 
   --tone1: #e53935;
   --tone2: #43a047;
@@ -43,13 +59,16 @@
   --r-xl: 28px;
   --r-pill: 9999px;
 
-  --sh-card: 0 4px 16px rgba(43, 43, 51, 0.06);
-  --sh-hover: 0 10px 28px rgba(255, 107, 107, 0.18);
-  --sh-front: 0 8px 24px rgba(255, 107, 107, 0.3);
-  --sh-pop: 0 8px 30px rgba(43, 43, 51, 0.12);
+  --sh-card: 0 4px 16px rgba(45, 30, 10, 0.1);
+  --sh-hover: 0 10px 28px rgba(45, 30, 10, 0.16);
+  --sh-front: 0 8px 24px rgba(139, 42, 31, 0.28);
+  --sh-pop: 0 8px 30px rgba(45, 30, 10, 0.18);
 
   --ui: "Nunito", -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
   --han: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --serif-cn: "Noto Serif SC", serif;
+  --serif-en: "Cormorant Garamond", serif;
+  --caps: "Cinzel", serif;
 }
 
 * {
@@ -67,9 +86,31 @@ body {
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  position: relative;
+}
+/* 宣纸纹理 —— 淡（typography stays crisp above it via #app z-index） */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/></svg>");
+  mix-blend-mode: multiply;
+}
+/* 淡淡竖向帘纹 */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: repeating-linear-gradient(90deg, rgba(120, 90, 40, 0.025) 0 1px, transparent 1px 26px);
 }
 #app {
   min-height: 100%;
+  position: relative;
+  z-index: 1;
 }
 button {
   font-family: inherit;

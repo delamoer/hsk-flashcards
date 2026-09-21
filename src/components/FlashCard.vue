@@ -145,25 +145,36 @@ function say(text) {
 }
 /* opacity swap at the flip midpoint — bulletproof even if backface-visibility misbehaves */
 .fc-front {
-  /* --grad-a/b are themed per course at the App shell (see App.vue) */
-  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
-  color: #fff;
+  background: linear-gradient(160deg, #fbf7ee, #efe4d0);
+  color: var(--ink);
   box-shadow: var(--sh-front);
+  border: 1px solid var(--line);
   align-items: center;
   justify-content: center;
   text-align: center;
   opacity: 1;
   transition: opacity 0s 0.22s;
 }
+/* gold inner frame */
+.fc-front::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid var(--gold-lt);
+  border-radius: 12px;
+  opacity: 0.6;
+  pointer-events: none;
+}
 .fc.flip .fc-front {
   opacity: 0;
 }
 .fc-back {
-  background: var(--card);
+  background: linear-gradient(160deg, #f6ede0, #ede0c8);
   color: var(--ink);
   transform: rotateY(180deg);
   box-shadow: var(--sh-card);
-  border-top: 4px solid var(--primary);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
   opacity: 0;
   transition: opacity 0s 0.22s;
 }
@@ -182,25 +193,32 @@ function say(text) {
   align-items: center;
 }
 .lvl {
+  font-family: var(--caps);
   font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  opacity: 0.9;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
 }
 .char {
-  font-family: var(--han);
+  font-family: var(--serif-cn);
   font-weight: 700;
-  font-size: 66px;
+  font-size: 72px;
   line-height: 1;
+  letter-spacing: 4px;
+  color: var(--ink);
+  text-shadow: 1px 1px 0 var(--gold-lt);
 }
 .fc.focus .char {
   font-size: 128px;
 }
 .peek {
   margin-top: 12px;
+  font-family: var(--ui);
   font-weight: 700;
   font-size: 20px;
   height: 24px;
+  color: var(--gold-deep);
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -211,32 +229,36 @@ function say(text) {
 .peek.show {
   opacity: 0.96;
 }
-/* white pinyin on gradient overrides tone colors while peeking on the front */
-.peek :deep(span) {
-  color: #fff !important;
-}
 .hint {
   position: absolute;
-  bottom: 12px;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.85);
-  font-weight: 700;
+  bottom: 14px;
+  font-family: var(--caps);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
 }
 .iconbtn {
   width: 34px;
   height: 34px;
-  border-radius: var(--r-pill);
+  border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 15px;
-  background: rgba(255, 255, 255, 0.22);
-  color: #fff;
+  font-size: 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--gold-deep);
+  transition: 0.2s;
+}
+.iconbtn:hover {
+  background: var(--gold);
+  color: #fff8ea;
+  border-color: var(--gold-deep);
 }
 .iconbtn.small {
   width: 30px;
   height: 30px;
-  background: var(--soft);
-  color: var(--accent);
 }
 
 /* back */
@@ -271,9 +293,10 @@ function say(text) {
   padding-right: 96px;
 }
 .bh {
-  font-family: var(--han);
+  font-family: var(--serif-cn);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
+  letter-spacing: 2px;
   white-space: nowrap;
 }
 .fc.focus .bh {
@@ -307,8 +330,8 @@ function say(text) {
   margin-top: 6px;
 }
 .ex .z {
-  font-family: var(--han);
-  font-size: 14px;
+  font-family: var(--serif-cn);
+  font-size: 15px;
   font-weight: 500;
   display: flex;
   gap: 6px;

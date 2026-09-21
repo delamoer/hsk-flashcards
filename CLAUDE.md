@@ -5,18 +5,30 @@ Guidance for AI agents working in this repo. Keep it current when architecture c
 ## What this is
 
 A Vue 3 + Vite web app for **English-speaking beginners learning Chinese**, branded **「学中文 Learn Chinese」**.
-It began as a pure flashcard app (organized **course → lesson → word**) and has grown into a small
-multi-section learning platform. Top-level sections (see the nav in `AppHeader.vue`):
-- **词汇闪卡 Flashcards** (`/`, the home) — the original vocab decks (HSK + 会话 courses).
-- **拼音 Pinyin** (`/pinyin`) — an interactive pinyin chart with native audio (see below).
-- **课文 Texts** (`/texts`) — per-lesson dialogue texts with a "double cloze" exercise
-  (生词挖空 word-bank fill + 连词成句 whole-dialogue reordering), tied to the same
-  series/unit/lesson taxonomy as the flashcards (旧版→`hsk`, 新版→`newhsk3`).
-- **我的词 My words** (`/my-words`) — cross-course roundup of studied/starred words.
+It began as a pure flashcard app and is now a **lesson-centric** learning platform with a
+**中式典籍·线装 (classical parchment)** visual language (design origin: `design-demos/direction-B.html`;
+the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
+
+**Information architecture — four levels** (see `design-demos/direction-approved.md`):
+1. **课程总览 Library** (`/`, `LibraryView.vue`) — pick a course series (书函卡): 标准HSK / 新HSK3.0 /
+   会话360 / 生存汉语. Single-volume series (生存汉语, `single:true`) jump straight to its lessons.
+2. **选册/级 Books** (`/course/:series`, `SeriesBooksView.vue`) — series-specific 门面 hero + book/level
+   covers (its units). Per-series accent color from `courses.js`.
+3. **选课 Lessons** (`/course/:series/:unit`, `LessonListView.vue`) — lesson cards + range segmentation;
+   per-lesson progress badge (已掌握/学过 X%) from `useProgress`.
+4. **课内 hub** (`/course/:series/:unit/lesson/:lesson`, `LessonHubView.vue`) — one lesson, six tabs:
+   课文 Read (`ReadPanel`) · 生词表·闪卡 (`FlashcardsPanel`, 网格/专注双模式, reuses `FlashCard.vue`) ·
+   词汇详解 (placeholder) · 语法 (`GrammarNotesPanel`) · 练习 (`ExercisesPanel` = 生词挖空 + 连词成句) ·
+   话题讨论 (placeholder). 课文/练习/语法 pull from the 课文 data (`getTextUnit`) and gracefully show a
+   "本课暂无…" placeholder when a lesson has no text (only hsk-1/2/3 + newhsk3-1/2/3 have texts).
+
+Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **拼音 Pinyin** (`/pinyin`) · **我的词 My words** (`/my-words`),
+朱红印章 logo. 课文 is no longer a top-level nav item — it lives inside each lesson hub; the legacy
+`/texts/...` routes still exist (`TextsHomeView`/`TextsUnitView`/`TextView`) but aren't linked from nav.
+**我的词** doubles as global search (范围切换: 我的词 / 所有课程).
 
 Two audiences: a teacher in class (projector) and — most of the time — students self-studying,
 so the UI must be self-explanatory to weak-Chinese users and is **bilingual (中文 + English)** throughout.
-Future sections (e.g. 课文 texts) plug into the same nav + a route.
 
 Live: https://delamoer.github.io/hsk-flashcards/ · Repo: `delamoer/hsk-flashcards` (public, gh-pages).
 
@@ -105,10 +117,14 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   `gen_audio.py --texts` (`collect_text_lines`) and uploaded to the same Storage `audio` bucket; split
   sub-sentences without a pre-generated MP3 fall back to browser TTS until audio is regenerated.
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
-  works on GitHub Pages without server rewrites. Routes: `/`, `/pinyin`, `/my-words`, `/search`,
-  `/login`, `/account`, `/admin`, the course flow `/course/:series/:unit[/lesson/:lesson[/quiz|print]]`,
-  and the 课文 flow `/texts`, `/texts/:series/:unit`, `/texts/:series/:unit/:lesson/:n`
-  (legacy `/hsk/:level/...` redirects preserved). All routes are behind a login wall when Supabase is configured.
+  works on GitHub Pages without server rewrites. Course flow (four levels): `/` (LibraryView) →
+  `/course/:series` (SeriesBooksView) → `/course/:series/:unit` (LessonListView) →
+  `/course/:series/:unit/lesson/:lesson` (LessonHubView), plus `.../quiz` `.../print`. Also `/pinyin`,
+  `/my-words`, `/search`, `/login`, `/account`, `/admin`, the legacy 课文 flow `/texts[/:series/:unit[/:lesson/:n]]`
+  (kept working, not in nav), and legacy `/hsk/:level/...` redirects. All routes are behind a login wall
+  when Supabase is configured. **App-shell theming** (`App.vue`) still applies `seriesTheme(route.params.series)`
+  per-series accent on top of the global classical base. **Dead code from the pre-redesign flow**
+  (`HomeView.vue`, `LessonView.vue`, `LessonCard.vue`, `CourseUnitCard.vue`) is unused/unrouted — safe to delete.
 - **State** lives in composables backed by localStorage:
   - `useProgress` → per-word `{ s: "new"|"known"|"review", star }` (key `hsk-flashcards-progress-v1`)
   - `useSettings` → `{ toneColors, ttsRate }` (key `hsk-flashcards-settings-v1`)
@@ -143,9 +159,10 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
     `playPinyin(stem)` — no manifest. `ne1`/`chi1` come from davin (public domain) as hugolpz's were bad.
   - Both degrade silently. **All backend (Auth, progress sync, audio) is on Supabase, hosted abroad —
     mainland-China devices without a VPN may see intermittent audio/login failures. Not a code bug.**
-- **Top nav lives in `AppHeader.vue`** (词汇闪卡 / 拼音 / 我的词, current section highlighted; wraps to a
-  scrollable row on mobile). It measures its own height into the CSS var `--appbar-h`; sticky content that
-  must sit below the bar (e.g. the pinyin chart's detail card) offsets with `calc(var(--appbar-h) + …)`.
+- **Top nav lives in `AppHeader.vue`** (选书 Books / 拼音 / 我的词, 朱红印章 logo; current section highlighted
+  — `COURSE_ROUTES` set covers the whole course flow incl. `series`; wraps to a scrollable row on mobile).
+  It measures its own height into the CSS var `--appbar-h`; sticky content that must sit below the bar
+  (e.g. the pinyin chart's detail card) offsets with `calc(var(--appbar-h) + …)`.
   Account/Admin/Sign-out are in the right-side user-chip dropdown.
 - **`.claude/` is gitignored.** It holds a local symlink to the `huashu-design` skill (used only for
   design work) — not part of the app, must not enter the public repo. Also gitignored: **`audio-src/`**

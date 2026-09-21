@@ -17,7 +17,7 @@ const lessonProps = (route) => ({
 });
 
 const routes = [
-  { path: "/", name: "home", component: () => import("@/views/HomeView.vue") },
+  { path: "/", name: "home", component: () => import("@/views/LibraryView.vue") },
   { path: "/search", name: "search", component: () => import("@/views/SearchView.vue") },
   { path: "/login", name: "login", component: () => import("@/views/LoginView.vue") },
   { path: "/account", name: "account", component: () => import("@/views/AccountView.vue") },
@@ -47,6 +47,12 @@ const routes = [
 
   // ── Canonical routes ────────────────────────────────────────────────────
   {
+    path: "/course/:series",
+    name: "series",
+    component: () => import("@/views/SeriesBooksView.vue"),
+    props: (route) => ({ series: route.params.series }),
+  },
+  {
     path: "/course/:series/:unit",
     name: "lessons",
     component: () => import("@/views/LessonListView.vue"),
@@ -55,7 +61,7 @@ const routes = [
   {
     path: "/course/:series/:unit/lesson/:lesson",
     name: "lesson",
-    component: () => import("@/views/LessonView.vue"),
+    component: () => import("@/views/LessonHubView.vue"),
     props: lessonProps,
   },
   {

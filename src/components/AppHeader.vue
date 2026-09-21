@@ -6,9 +6,8 @@
     </router-link>
 
     <nav v-if="showNav" class="mainnav">
-      <router-link to="/" class="navlink" :class="{ on: isCourses }">词汇闪卡 <i>Flashcards</i></router-link>
+      <router-link to="/" class="navlink" :class="{ on: isCourses }">选书 <i>Books</i></router-link>
       <router-link to="/pinyin" class="navlink" :class="{ on: route.name === 'pinyin' }">拼音 <i>Pinyin</i></router-link>
-      <router-link to="/texts" class="navlink" :class="{ on: isTexts }">课文 <i>Texts</i></router-link>
       <router-link to="/my-words" class="navlink" :class="{ on: route.name === 'mywords' }">我的词 <i>My words</i></router-link>
     </nav>
 
@@ -87,10 +86,8 @@ const hideChrome = computed(() => route.name === "print" || route.name === "logi
 
 // Top-level section nav (desktop-primary). Shown once the user is in the app.
 const showNav = computed(() => !isConfigured || isLoggedIn.value);
-const COURSE_ROUTES = new Set(["home", "lessons", "lesson", "quiz", "search"]);
+const COURSE_ROUTES = new Set(["home", "series", "lessons", "lesson", "quiz", "search", "texts", "texts-unit", "text"]);
 const isCourses = computed(() => COURSE_ROUTES.has(route.name));
-const TEXT_ROUTES = new Set(["texts", "texts-unit", "text"]);
-const isTexts = computed(() => TEXT_ROUTES.has(route.name));
 
 const emailName = computed(() => (user.value?.email || "").split("@")[0]);
 // Chip label: display name if set, else a trimmed email prefix.
@@ -114,79 +111,105 @@ const avatarChar = computed(() => {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 12px 20px;
-  background: rgba(255, 250, 246, 0.9);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--hairline);
+  padding: 12px 24px;
+  background: linear-gradient(180deg, #f7f1e8, #f1e8d8);
+  border-bottom: 2px solid var(--gold);
+  box-shadow: 0 2px 0 var(--gold-lt), 0 6px 18px -12px rgba(45, 30, 10, 0.14);
+}
+.appbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--gold) 0 10px, transparent 10px 16px);
+  opacity: 0.5;
 }
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 13px;
   white-space: nowrap;
 }
 .logo .mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
-  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 7px;
+  background: linear-gradient(145deg, #c0392b, #9c2b1f);
+  color: #fbe7d4;
   display: grid;
   place-items: center;
-  font-family: "Ma Shan Zheng", var(--han);
-  font-size: 23px;
+  font-family: var(--serif-cn);
+  font-weight: 900;
+  font-size: 25px;
   line-height: 1;
-  padding-bottom: 2px;
-  box-shadow: var(--sh-card);
+  position: relative;
+  box-shadow: inset 0 0 0 2px rgba(251, 231, 212, 0.55), inset 0 0 0 3.5px #a52c20, 0 2px 5px rgba(139, 42, 31, 0.4);
+}
+.logo .mark::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(251, 231, 212, 0.35);
+  border-radius: 3px;
 }
 .logo .wordmark {
   display: flex;
   flex-direction: column;
-  line-height: 1.05;
+  line-height: 1.1;
 }
 .logo .wm-zh {
-  font-size: 16px;
-  font-weight: 800;
+  font-family: var(--serif-cn);
+  font-size: 20px;
+  font-weight: 700;
   color: var(--ink);
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
 }
 .logo .wm-en {
   font-style: normal;
-  font-size: 9px;
-  font-weight: 800;
-  color: var(--muted-soft);
-  letter-spacing: 1.4px;
+  font-family: var(--caps);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--gold-deep);
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 .mainnav {
   display: flex;
-  gap: 4px;
-  margin-left: 8px;
+  gap: 6px;
+  margin-left: 18px;
 }
 .navlink {
   display: inline-flex;
-  align-items: baseline;
-  gap: 5px;
-  padding: 7px 14px;
-  border-radius: var(--r-pill);
-  font-weight: 800;
+  flex-direction: column;
+  line-height: 1.15;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-family: var(--serif-cn);
+  font-weight: 600;
   font-size: 14px;
-  color: var(--body);
+  color: var(--ink-soft, #4a3d2a);
   white-space: nowrap;
-  transition: background 0.15s, color 0.15s;
+  transition: background 0.2s, color 0.2s;
 }
 .navlink i {
   font-style: normal;
-  font-size: 10px;
-  font-weight: 600;
-  opacity: 0.7;
+  font-family: var(--caps);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 .navlink:hover {
-  background: var(--hairline-soft);
+  background: var(--paper-3);
 }
 .navlink.on {
-  background: var(--soft);
-  color: var(--primary-strong);
+  color: var(--cinnabar-dk);
+}
+.navlink.on i {
+  color: var(--cinnabar);
 }
 .account {
   margin-left: auto;
