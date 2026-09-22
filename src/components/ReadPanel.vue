@@ -7,9 +7,9 @@
             <span class="badge">TEXT {{ t.n }}</span>
             <span class="cn">{{ t.title }}</span>
           </div>
-          <div class="toggles">
-            <button :class="{ on: state[ti].py }" @click="state[ti].py = !state[ti].py">拼音 PINYIN</button>
-            <button :class="{ on: state[ti].en }" @click="state[ti].en = !state[ti].en">EN</button>
+          <div class="toggles" v-if="t.hasPy || t.hasEn">
+            <button v-if="t.hasPy" :class="{ on: state[ti].py }" @click="state[ti].py = !state[ti].py">拼音 PINYIN</button>
+            <button v-if="t.hasEn" :class="{ on: state[ti].en }" @click="state[ti].en = !state[ti].en">EN</button>
           </div>
         </div>
         <div class="tc-body">
@@ -74,11 +74,16 @@ watch(
     const ds = await getTextUnit(s, u);
     const ld = ds?.lessons.find((x) => x.num === Number(l));
     if (ld) {
-      texts.value = ld.texts.map((t) => ({
-        n: t.n,
-        title: t.title,
-        lines: t.lines?.length ? t.lines : splitLines(t.original),
-      }));
+      texts.value = ld.texts.map((t) => {
+        const lines = t.lines?.length ? t.lines : splitLines(t.original);
+        return {
+          n: t.n,
+          title: t.title,
+          lines,
+          hasPy: lines.some((l) => l.py),
+          hasEn: lines.some((l) => l.en),
+        };
+      });
       texts.value.forEach(() => state.push({ py: true, en: true }));
     }
     loading.value = false;

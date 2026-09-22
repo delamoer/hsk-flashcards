@@ -3,7 +3,7 @@ import { reactive, watch } from "vue";
 const STORAGE_KEY = "hsk-flashcards-settings-v1";
 
 const defaults = {
-  toneColors: true, // color pinyin by tone (pedagogical aid)
+  toneColors: false, // color pinyin by tone; off by default (users opt in), existing on-users keep their choice
   ttsRate: 0.85,
 };
 

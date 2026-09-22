@@ -1,0 +1,516 @@
+# 会话360 课文英文对照 — 汉字<TAB>English (keyed by the exact speech line, speaker stripped).
+# Merged into src/data/texts/huihua360-*.json by scripts/convert_360.py.
+# Learner-friendly English; edit here (not the JSON), then re-run the converter.
+你好！雪丽.	Hello, Xueli!
+你好！雪丽。	Hello, Xueli!
+你好！思齐。	Hello, Siqi!
+你们好！	Hello, everyone!
+老师好！	Hello, teacher!
+您好！我是大卫。	Hello! I'm David.
+你好！我是王小天。	Hi! I'm Wang Xiaotian.
+再见！	Goodbye!
+我很饿。你饿吗？	I'm very hungry. Are you hungry?
+我也很饿。	I'm hungry too.
+这个好看吗？	Does this look nice?
+这个不好看。	This doesn't look nice.
+谢谢！	Thank you!
+不客气！	You're welcome!
+对不起！	I'm sorry!
+没关系！	It's okay!
+你好！我是大卫。你叫什么名字？	Hi! I'm David. What's your name?
+你好！我叫西田。大卫，你是哪国人？	Hi! My name is Nishida. David, what country are you from?
+我是俄罗斯人。你呢？	I'm Russian. And you?
+我是日本人。	I'm Japanese.
+您的电话号码是多少？	What's your phone number?
+我的电话是18810842742。	My phone number is 18810842742.
+您的邮箱是什么？	What's your email address?
+我的邮箱是18810842742@126.com。	My email is 18810842742@126.com.
+今天几月几号？	What's the date today?
+今天五月九号。	Today is May 9th.
+今天星期几？	What day is it today?
+今天星期二。	Today is Tuesday.
+六月二十五号是雪丽的生日。	June 25th is Xueli's birthday.
+六月二十五号星期几？	What day of the week is June 25th?
+星期日。	Sunday.
+星期日，太好了！	Sunday — great!
+明天早上七点吃早饭。	Tomorrow we'll have breakfast at seven in the morning.
+现在几点？	What time is it now?
+现在八点十分。	It's ten past eight.
+不对。现在十一点十分。	That's not right. It's ten past eleven.
+现在九点十分。	It's ten past nine.
+请问，现在几点？	Excuse me, what time is it now?
+现在北京时间九点十分。	It's ten past nine, Beijing time.
+迎迎，你几点下班？	Yingying, what time do you get off work?
+我六点下班。你什么时候下课？	I get off at six. When does your class finish?
+我五点半下课。我们晚上一起吃饭吧。	My class ends at five thirty. Let's have dinner together tonight.
+好啊！现在几点？	Sure! What time is it now?
+现在差一刻九点。	It's a quarter to nine.
+哎呀，我九点上班。晚上见。	Oh no, I start work at nine. See you tonight.
+晚上几点见？	What time shall we meet tonight?
+六点二十。	Six twenty.
+妈，这是我男朋友大卫，他的汉语很好。	Mom, this is my boyfriend David. His Chinese is very good.
+欢迎！欢迎！	Welcome! Welcome!
+阿姨好！	Hello, auntie!
+大卫，你多大？	David, how old are you?
+我25岁。	I'm 25 years old.
+你家有几口人？	How many people are in your family?
+我家有四口人，爸爸、妈妈、姐姐和我。	There are four people in my family: my dad, my mom, my older sister, and me.
+你爸爸、妈妈做什么工作？	What do your mom and dad do for work?
+我爸爸是老师，妈妈是医生。	My dad is a teacher and my mom is a doctor.
+你姐姐……	And your older sister...
+妈！您的问题太多了！	Mom! You're asking too many questions!
+这是谁？	Who is this?
+这是我妹妹。	This is my younger sister.
+她是学生吗？	Is she a student?
+是。	Yes.
+她在哪儿学习？	Where does she study?
+她在北京大学学习。	She studies at Peking University.
+这是你弟弟吗？	Is this your younger brother?
+我没有弟弟，这是我哥哥。	I don't have a younger brother; this is my older brother.
+他也是学生吗？	Is he a student too?
+不是，他在银行工作。	No, he works at a bank.
+西瓜多少钱一斤？	How much is watermelon per jin (half kilo)?
+西瓜两块五一斤。	Watermelon is 2.5 yuan per jin.
+我要这个。	I'll take this one.
+好。十一块二。	Okay. That's 11.2 yuan.
+苹果怎么卖？	How are the apples sold?
+苹果十块钱三斤。	Apples are 10 yuan for three jin.
+要三斤。	I'll take three jin.
+好。一共二十一块二，二十一吧。	Okay. That's 21.2 yuan in total — let's just say 21.
+您买什么？	What would you like to buy?
+我要两瓶矿泉水。	I'd like two bottles of mineral water.
+给。还要别的吗？	Here you go. Anything else?
+面包多少钱一个？	How much is one loaf of bread?
+六块钱一个。	Six yuan each.
+要一个。一共多少钱？	I'll take one. How much is it in total?
+十块。	Ten yuan.
+四块？	Four yuan?
+您好！请问，洗手间在哪儿？	Hello! Excuse me, where is the restroom?
+往左拐，一直走。	Turn left and go straight.
+好的，谢谢！	Okay, thank you!
+您好！请问，105房间在哪儿？	Hello! Excuse me, where is room 105?
+往前走，然后往右拐。	Go straight, then turn right.
+您好！请问，国家图书馆怎么走？	Hello! Excuse me, how do I get to the National Library?
+对不起，我也不知道。	Sorry, I don't know either.
+从这儿往南走，第二个路口往左拐。	From here go south and turn left at the second intersection.
+往南走，第二个路口，左拐。	Go south, second intersection, turn left.
+然后一直走到头，往右拐，再往前走500米，国家图书馆在马路西边。	Then go straight to the end, turn right, walk another 500 meters, and the National Library is on the west side of the road.
+马路西边。好的，谢谢！请问，这边是西边吗？	West side of the road. Okay, thank you! Excuse me, is this way west?
+你想吃包子还是饺子？	Do you want to eat baozi or dumplings?
+我都不想吃。咱们吃面条儿吧。	I don't want either. Let's have noodles.
+我不想吃面条儿。我最近每天都吃面条儿。	I don't want noodles. I've been eating noodles every day lately.
+那你想吃什么？	Then what do you want to eat?
+吃比萨，怎么样？	How about pizza?
+（女朋友看到了比萨广告）	(His girlfriend sees a pizza ad.)
+好主意。今天特价。	Good idea. There's a special today.
+太好了！	Great!
+欢迎光临！请问，您想喝点儿什么？	Welcome! What would you like to drink?
+您好！我要一杯红茶。	Hello! I'd like a cup of black tea.
+好的。您要大杯还是小杯？	Sure. Would you like a large or a small?
+大杯。	A large one.
+今天这种蛋糕特价，您要一块儿吗？	This cake is on special today. Would you like a piece?
+真便宜，要一块儿。	That's really cheap — I'll take a piece.
+好的。您刷卡还是付现金？	Okay. Will you pay by card or cash?
+刷卡。	By card.
+你好，我叫爱华，我住11层，1107。	Hi, my name is Aihua. I live on the 11th floor, room 1107.
+我住1106，很高兴认识你！	I live in 1106. Nice to meet you!
+认识你我也很高兴！这是你的小狗吗？	Nice to meet you too! Is this your puppy?
+是啊。它叫“小胖”。	Yes. Its name is "Xiaopang" (Little Chubby).
+它眼睛真大！太可爱了。	Its eyes are so big! So cute.
+（狗向前迈了一步）	(The dog takes a step forward.)
+别担心！	Don't worry!
+没关系，我很喜欢小猫、小狗。	It's fine, I really like cats and dogs.
+姐姐，爸妈身体怎么样？	Sis, how are Mom and Dad doing?
+爸妈身体都很好。你放心吧！	Mom and Dad are both very well. Don't worry!
+对了，我想看你新男朋友的照片。	By the way, I'd like to see a photo of your new boyfriend.
+（姐姐给她看一张照片）	(The older sister shows her a photo.)
+他个子真高！	He's so tall!
+他是健身教练。	He's a fitness trainer.
+他工作忙不忙？	Is he busy at work?
+他工作非常忙，周末也不休息。	He's very busy at work; he doesn't even rest on weekends.
+你喜欢唱歌吗？	Do you like singing?
+我喜欢听歌，唱歌唱得不太好。	I like listening to songs, but I don't sing very well.
+我喜欢唱歌、看电影、旅游、打网球……	I like singing, watching movies, traveling, playing tennis...
+是吗？你的爱好真多！	Really? You have so many hobbies!
+你有什么爱好？	What hobbies do you have?
+我也喜欢网球，不过我不会打。	I like tennis too, but I don't know how to play.
+没关系，我教你。	No problem, I'll teach you.
+请进。请坐。	Come in. Please have a seat.
+您好！我叫大树。	Hello! My name is Dashu.
+你好，大树。你的特长是什么？	Hi, Dashu. What are your special skills?
+我会说四种语言：英语、法语、意大利语和汉语。	I can speak four languages: English, French, Italian, and Chinese.
+你的汉语说得不错，你会唱汉语歌吗？	You speak Chinese well. Can you sing Chinese songs?
+会，我唱汉语歌唱得还可以。	Yes, I sing Chinese songs pretty well.
+好。除了这些，你还有什么特长？	Good. Besides these, what other skills do you have?
+我还会中国功夫。	I also know Chinese kung fu.
+你去过上海吗？假期我们一起去上海吧。	Have you been to Shanghai? Let's go to Shanghai together during the holiday.
+我以前去过上海。	I've been to Shanghai before.
+杭州呢？你去过杭州吗？	What about Hangzhou? Have you been to Hangzhou?
+杭州我也去过。	I've been to Hangzhou too.
+你还去过哪儿？	Where else have you been?
+我还去过西安、昆明、广州……	I've also been to Xi'an, Kunming, Guangzhou...
+你去过的地方真多啊！	You've been to so many places!
+咱们中午订外卖吧。	Let's order takeout for lunch.
+好，我上网看看。这家怎么样？	Sure, I'll look online. How about this place?
+我去过这家饭馆儿，菜都很辣。	I've been to this restaurant; the food is all very spicy.
+这家西餐厅吧，我吃过，味道不错。	How about this Western restaurant? I've eaten there; the food is good.
+这家我上个星期订过，送得特别慢，别订这家。	I ordered from this one last week; delivery was really slow. Don't order from here.
+这家上海菜很有名，我还没吃过呢。	This Shanghai restaurant is famous; I haven't tried it yet.
+我也没吃过，可以试试。	I haven't tried it either. Let's give it a try.
+周末你去哪儿了？	Where did you go over the weekend?
+我跟同学一起去郊区滑雪了。	I went skiing in the suburbs with a classmate.
+滑雪？好玩儿吗？	Skiing? Was it fun?
+很好玩儿，那儿的滑雪场特别棒，人也不多。	It was great fun. The ski resort there is excellent, and it wasn't crowded.
+我还没滑过雪呢。难不难？	I've never skied before. Is it hard?
+不难，你不怕摔就行。下次我请你去。	It's not hard, as long as you're not afraid of falling. Next time I'll take you.
+我想想吧。	Let me think about it.
+星期天你都干什么了？	What did you do on Sunday?
+几个朋友来我家吃饭了。	A few friends came to my place for dinner.
+你会做饭吗？	Can you cook?
+我们要求每个人带一个菜。	We asked everyone to bring one dish.
+这真是个好办法！你也做菜了吗？	That's a great idea! Did you cook something too?
+做了。你猜我做什么了。	Yes. Guess what I made.
+一定是沙拉。	It must be salad.
+请进。	Come in.
+诺敏，你怎么还不起床？今天不上课吗？	Nuomin, why aren't you up yet? Don't you have class today?
+我有点儿不舒服。	I feel a little unwell.
+怎么了？	What's wrong?
+我头很疼，觉得特别冷。	My head really hurts and I feel very cold.
+是不是发烧了？量量体温吧。	Do you have a fever? Let's take your temperature.
+我现在只想睡觉。	Right now I just want to sleep.
+38度5。还是去医院看看吧。	38.5 degrees. You'd better go to the hospital.
+哪儿不舒服？	Where does it hurt?
+头疼，发烧。	Headache and fever.
+先去验血吧。	Let's do a blood test first.
+（诺敏拿着化验报告回来给大夫看）	(Nuomin comes back with the lab report to show the doctor.)
+你感冒了。吃这种感冒药，一天三次，一次两片。	You have a cold. Take this cold medicine, three times a day, two tablets each time.
+好的。	Okay.
+多喝水，多休息，少吃辣的菜。	Drink more water, get more rest, and eat less spicy food.
+谢谢大夫！	Thank you, doctor!
+喂，你好！	Hello?
+诺敏，我是西田。你在干吗呢？	Nuomin, it's Nishida. What are you doing?
+我正在跑步呢。有事吗？	I'm running right now. What's up?
+我和大卫打算晚上去看球，你来吗？	David and I are planning to watch a game tonight. Do you want to come?
+好啊。什么时候出发？	Sure. When do we set off?
+我现在在外边吃饭呢，6点半在宿舍门口见，怎么样？	I'm out eating right now. Let's meet at the dorm entrance at six thirty, okay?
+好，不见不散。	Okay, see you there for sure.
+你还在睡觉吗？都11点了。	Are you still sleeping? It's already eleven o'clock.
+我昨天去看球了，睡得很晚。	I went to watch a game yesterday and went to bed very late.
+昨天晚上我给你打电话一直没人接。	I called you last night but no one answered.
+不好意思，你给我打电话的时候，我正在看球呢。	Sorry, when you called I was watching the game.
+下午两点跟我们一起去打篮球吧。	Come play basketball with us at two this afternoon.
+不行啊，我得去机场接朋友。	I can't; I have to pick up a friend at the airport.
+那好吧，我们下次再约。	All right then, let's arrange it another time.
+今天天气真热！	The weather is really hot today!
+是啊。莫斯科的夏天也很热吗？	Yes. Are summers in Moscow hot too?
+那儿比北京凉快。	It's cooler there than in Beijing.
+听说莫斯科的冬天冷极了，是吗？	I heard winters in Moscow are extremely cold. Is that true?
+是，比北京冷多了。	Yes, much colder than Beijing.
+大概多少度？	About how many degrees?
+最低气温零下二十多度，不过我们习惯了，不怕冷。我冬天还在外边游过泳呢！	The lowest temperature is more than twenty below zero, but we're used to it and don't mind the cold. I've even gone swimming outside in winter!
+你看，又下雨了！	Look, it's raining again!
+是啊，最近常常下雨。	Yes, it rains a lot lately.
+今年的雨比去年多多了。	There's been much more rain this year than last year.
+你看天气预报了吗？明天天气怎么样？	Did you check the weather forecast? What's the weather like tomorrow?
+天气预报说，明天的雨比今天更大。	The forecast says tomorrow's rain will be even heavier than today's.
+那咱们明天的足球比赛怎么办啊？	Then what do we do about our football match tomorrow?
+那只能下周再比了。	Then we'll have to play it next week.
+前面就是咱们学校最大的教学楼。	Up ahead is our school's largest teaching building.
+国际学生办公室就在楼里，是吗？	The international students' office is in this building, right?
+是的。国际学生办公室在教学楼三层。	Yes. The international students' office is on the third floor of the teaching building.
+听说办公室里有位特别帅的老师。	I heard there's a really handsome teacher in the office.
+请向前走。左边是食堂，右边是网球场。	Go straight ahead. On the left is the cafeteria, and on the right is the tennis court.
+请问图书馆在哪儿？	Excuse me, where is the library?
+图书馆在食堂对面。看，足球场右边就是图书馆。	The library is across from the cafeteria. Look, the library is right next to the football field on the right.
+学校附近有超市吗？	Is there a supermarket near the school?
+有，学校东边就有一个大超市，买东西很方便。	Yes, there's a big supermarket just east of the school; it's very convenient for shopping.
+学校东门附近有一家新开的咖啡厅。听说那儿的咖啡不错，咱们去尝尝？	There's a newly opened café near the school's east gate. I heard the coffee there is good — shall we go try it?
+改天吧，我得去自习。	Another day; I have to go study.
+咱们就休息一会儿，放松放松！	Let's just take a short break and relax a bit!
+你知道309教室在哪儿吗？	Do you know where classroom 309 is?
+就是三层中间那个大教室。	It's the big classroom in the middle of the third floor.
+就在国际学生办公室旁边吗？	Is it right next to the international students' office?
+对。	That's right.
+明天下午那里有个关于新生选课的讲座！	Tomorrow afternoon there's a lecture there about course selection for new students!
+咱们可以顺便去看看那位最帅的老师！	We can drop by and see that most handsome teacher while we're at it!
+您好，我可以试一下吗？	Hello, may I try this on?
+当然，试衣间在那边。	Of course, the fitting room is over there.
+（过了一会儿，爱华从试衣间出来）	(After a while, Aihua comes out of the fitting room.)
+这条有点儿大，有小一点儿的吗？	This one is a bit big. Do you have a smaller size?
+不好意思，黑色的没有小号的了。	Sorry, we're out of small in black.
+红色的可以吗？	Would red be okay?
+红色的很漂亮，不过我还是更喜欢黑色的。	The red one is pretty, but I still prefer the black one.
+您要黑色的，我可以帮您问问别的店。	If you want the black one, I can ask another store for you.
+这条裙子打折吗？	Is this skirt on sale?
+打七折。	It's 30% off.
+可以再便宜点儿吗？	Could it be a bit cheaper?
+对不起，我们最多打七折。	Sorry, 30% off is the most we can do.
+今年“双十一”网上的东西真便宜！	The online deals on this year's "Double Eleven" are really cheap!
+我想网购一双鞋，可是没有黄的了。	I wanted to buy a pair of shoes online, but they were out of yellow.
+那你买了什么颜色的？	So what color did you buy?
+没买，别的颜色我都不喜欢。我只买了几本书和一些本子。	I didn't buy any; I didn't like the other colors. I only bought a few books and some notebooks.
+我也买了很多书，不过我还是喜欢去商场买鞋和衣服。	I bought a lot of books too, but I still prefer buying shoes and clothes at the mall.
+网购可以节省时间。	Shopping online can save time.
+这倒是。我前几天在商场买了一条裙子，当时没货，今天还得去取。	That's true. I bought a skirt at the mall a few days ago, but it was out of stock, so I still have to go pick it up today.
+你可以给他们你的地址，让他们快递给你。	You can give them your address and have them deliver it to you.
+这个主意不错！	That's a good idea!
+欢迎光临，请问几位？	Welcome. How many people, please?
+两位。	Two.
+这边请。这是菜单。	This way, please. Here's the menu.
+（点菜）	(Ordering.)
+你能吃辣的吗？他们这里的水煮鱼非常好！	Can you eat spicy food? Their boiled fish in chili oil here is excellent!
+太好了！我是四川人，从小就喜欢吃辣的。	Great! I'm from Sichuan; I've loved spicy food since I was little.
+来一份水煮鱼，要大份的。	We'll have an order of boiled fish in chili oil — the large size.
+今天西红柿炒鸡蛋半价，要尝尝吗？	Tomato and scrambled eggs is half price today. Want to try it?
+我不喜欢吃甜的。	I don't like sweet food.
+您看看这些特色菜，又好吃又便宜。	Take a look at these specialty dishes — they're both delicious and cheap.
+麻婆豆腐！又麻又辣！	Mapo tofu! Both numbing and spicy!
+服务员，请再给我们两个碗和一双筷子。	Waiter, please bring us two more bowls and a pair of chopsticks.
+好的，请稍等。	Okay, one moment please.
+（饭后）	(After the meal.)
+这家餐馆儿的菜味道真好。	The food at this restaurant tastes really good.
+今天吃得太多了！我会长胖的。	I ate too much today! I'm going to gain weight.
+没关系！我们一会儿去锻炼！	It's fine! We'll go exercise in a bit!
+服务员，结账。请再给我们几张餐巾纸。	Waiter, the check please. And please bring us a few more napkins.
+（结账后，两个人走出餐馆）	(After paying, the two walk out of the restaurant.)
+今天真开心，老板还送了咱们两份冰淇淋。	What a fun day; the owner even gave us two servings of ice cream.
+这是网上排名前十的餐厅。我们以后可以常来！	This is one of the top ten restaurants online. We can come often from now on!
+你选完课了吗？	Have you finished choosing your courses?
+还没呢。我想选中国文化。	Not yet. I want to take Chinese Culture.
+听说这门课的作业特别难。	I heard the homework for this course is really hard.
+所以我还没想好。你呢？	That's why I haven't decided yet. And you?
+我刚选完，这学期我选了五门课。	I just finished; I chose five courses this semester.
+你说我选不选中国文化？	Do you think I should take Chinese Culture or not?
+听说这门课的老师特别有名，写了很多书。	I heard the teacher of this course is very famous and has written many books.
+那我想好了！这学期我看看这位老师的书，下学期选他的课。	Then I've decided! This semester I'll read this teacher's books, and next semester I'll take his course.
+对了！明天下午有这位老师的讲座，你可以去听一听。	By the way! There's a lecture by this teacher tomorrow afternoon; you can go listen.
+太好了！谢谢你！	Great! Thank you!
+上周的考试你考得怎么样？	How did you do on last week's exam?
+有的题我没看懂，所以答错了。你呢？	Some questions I didn't understand, so I got them wrong. And you?
+我没复习好，有些生词没记住。	I didn't review well; I didn't memorize some of the new words.
+这次考试大家考得都不好，成绩都不太理想。	Everyone did poorly on this exam; the grades weren't very good.
+算了，别想了。下次考试前好好复习，肯定能考好。	Never mind, don't think about it. Study hard before the next exam and you'll surely do well.
+嗯。那咱们商量商量假期去哪儿旅行吧？	Okay. So let's discuss where to travel during the holiday.
+去上海怎么样？	How about going to Shanghai?
+好啊，我还没坐过中国的高铁，要是去上海，咱们就坐高铁去吧。	Sure. I've never taken China's high-speed rail; if we go to Shanghai, let's take the high-speed train.
+西田，朋友送来两张星星影城的电影票，是今天下午五点的，可是我有课，你拿去吧。	Nishida, a friend gave me two movie tickets for Star Cinema, for five this afternoon, but I have class, so you take them.
+好啊。我没去过星星影城，从学校怎么走呢？	Sure. I've never been to Star Cinema. How do I get there from school?
+坐公共汽车或者坐地铁都行。公共汽车先坐86路，然后换484路。	You can take either the bus or the subway. For the bus, take the 86 first, then transfer to the 484.
+学校附近经常堵车，坐公共汽车一定特别慢。	There are often traffic jams near the school, so the bus would definitely be really slow.
+那就坐地铁，地铁不堵车。15号线可以到。	Then take the subway; the subway doesn't get stuck in traffic. Line 15 goes there.
+学校离15号线地铁站有点儿远。	The school is a bit far from the Line 15 subway station.
+你可以骑自行车到地铁站啊！从学校到15号线，骑车最多十分钟。	You can bike to the subway station! From school to Line 15, it's ten minutes by bike at most.
+这是个好办法。	That's a good idea.
+喂，小雨，你到哪儿了？	Hello, Xiaoyu, where are you now?
+我还有一站就到了，下地铁后我应该怎么走？	I'm one stop away. After I get off the subway, which way should I go?
+你下地铁后，先坐电梯上来，然后找D口，从D口出来。	After you get off the subway, take the elevator up, then find Exit D and come out through Exit D.
+好的，从D口出去。	Okay, out through Exit D.
+D口离你下地铁的地方比较远，不过离电影院最近。	Exit D is a bit far from where you get off the subway, but it's the closest to the cinema.
+出地铁后电影院好找吗？	Is the cinema easy to find after leaving the subway?
+我在地铁口等你。	I'll wait for you at the subway exit.
+行，一会儿见。	Okay, see you soon.
+听说你男朋友来了，假期有什么打算？	I heard your boyfriend is here. What are your plans for the holiday?
+我们俩都喜欢旅行，除了逛逛北京，我们还想去南方玩儿玩儿。	We both like traveling. Besides looking around Beijing, we also want to travel around the south.
+你们打算去哪些地方呢？	Which places are you planning to go?
+先去上海玩儿几天，然后去苏州逛两天，再到杭州玩儿三天。	First a few days in Shanghai, then two days in Suzhou, then three days in Hangzhou.
+你男朋友这次能在中国待多久？	How long can your boyfriend stay in China this time?
+他在中国待三周。	He's staying in China for three weeks.
+这是他第一次来中国吗？	Is this his first time in China?
+不是，他以前出差来过。	No, he's been here before on a business trip.
+那希望你们这次玩儿得高兴。	Then I hope you two have a great time.
+谢谢！也祝你假期愉快！	Thank you! Have a happy holiday too!
+“十一”假期你去哪儿玩儿了？	Where did you go during the National Day holiday?
+我去西安了。	I went to Xi'an.
+怎么样？有意思吗？	How was it? Was it interesting?
+那还用说！我太爱西安了，我在那儿玩儿得都不想回来了。	Need you ask! I love Xi'an so much; I had such a good time there I didn't want to come back.
+你在西安待了多长时间？	How long did you stay in Xi'an?
+待了不到一周，我是前天回来的。	Less than a week; I came back the day before yesterday.
+你是怎么去的？是坐高铁去的吗？	How did you get there? Did you take the high-speed rail?
+我没买到高铁票，没办法，后来坐飞机去的。	I couldn't get a high-speed rail ticket, so there was nothing I could do; I ended up flying.
+你是跟谁一起去的？	Who did you go with?
+我一个人去的。不过路上认识了好几个新朋友，我们那天儿聊得特别开心。	I went by myself. But I met several new friends on the way, and we chatted so happily that day.
+你怎么才来？比赛九点半就开始了，都踢完一半了。	Why are you only just arriving? The match started at nine thirty; it's already halfway through.
+别提了，我八点半就出门了。	Don't even mention it; I left home at eight thirty.
+啊？那怎么这么晚才到？	Huh? Then how come you're so late?
+我坐错车了，坐了40分钟才发现。	I got on the wrong bus and didn't realize it for 40 minutes.
+下次可得看清楚再上车。	Next time you'd better look carefully before getting on.
+嗯，你说得对。哎，现在几比几了？	Yeah, you're right. Hey, what's the score now?
+3比2。	3 to 2.
+这比赛太激烈了！	This match is so intense!
+李君，你跑了几圈儿了？	Li Jun, how many laps have you run?
+三圈儿。来，跟我一起跑吧。	Three laps. Come on, run with me.
+（跑了一圈后）	(After running one lap.)
+哎，咱们休息一下吧。	Hey, let's take a break.
+你刚跑了一圈儿，现在还不能休息，加油！	You've only run one lap; you can't rest yet. Keep it up!
+不行，我太累了，得坐一会儿。	No, I'm too tired; I need to sit for a bit.
+快起来，咱们再跑两圈儿。	Get up, let's run two more laps.
+不行，不行，还是你先跑吧。	No, no, you go ahead and run first.
+再坚持一下，你就不会觉得那么累了。	Hang in there a little longer and you won't feel so tired.
+小清，麻烦你帮我个忙，好吗？	Xiaoqing, could you do me a favor?
+没问题。	No problem.
+我想预订一张去南京的火车票，可是我不知道怎么在网上预订。	I want to book a train ticket to Nanjing, but I don't know how to book online.
+你要订哪天的？	Which day do you want to book for?
+15号的，最好是上午，不过别太早。	The 15th, preferably in the morning, but not too early.
+你坐高铁还是普通火车？高铁比普通火车贵三百来块钱。	Are you taking the high-speed rail or a regular train? The high-speed rail is about 300 yuan more expensive than a regular train.
+听说高铁快得多，是吗？	I heard the high-speed rail is much faster, is that right?
+对，普通火车要十四五个小时，高铁三四个小时就能到。	Right, a regular train takes about fourteen or fifteen hours, while the high-speed rail gets there in three or four.
+那还用问，当然坐高铁！	No need to ask — of course the high-speed rail!
+上午十点的，行吗？	Ten in the morning, is that okay?
+行，谢谢啊！	Okay, thanks!
+快放假了，咱们旅行住的宾馆预订好了吗？	The holiday is almost here. Have we booked the hotel for our trip?
+哎呀，我忘了！	Oh no, I forgot!
+听说假期房间比较紧张，最好早点儿订。	I heard rooms are tight during the holiday; we'd better book early.
+我现在就订。	I'll book right now.
+这个酒店看来不贵。	This hotel doesn't look expensive.
+不过这儿的房间快要订满了，单人间没有了。	But the rooms here are almost fully booked; there are no single rooms left.
+你看看这个标准间怎么样，价钱跟单人间差不多，有两张床。	Take a look at this standard room — the price is about the same as a single, and it has two beds.
+行，就订标准间吧。	Okay, let's book the standard room.
+姐姐，你是什么时候喜欢上西田的？	Sis, when did you start liking Nishida?
+从第一次见面开始。	From the first time we met.
+第一次见面？	The first time you met?
+当时教室的门开着，我看见一个男生坐在窗边。	The classroom door was open at the time, and I saw a boy sitting by the window.
+那个男生是西田？	Was that boy Nishida?
+他穿着一件白色的衬衫，手里拿着一本厚厚的书……	He was wearing a white shirt and holding a thick book in his hands...
+然后呢？	And then?
+然后我就喜欢上他了。	And then I fell for him.
+说来说去只是白色衬衫和一本书啊！还有别的吗？	After all that, it's just a white shirt and a book! Is there anything else?
+去机场接人都接错？！	You went to pick someone up at the airport and got the wrong person?!
+您告诉我，李经理个子高高的，穿着黑色的衬衫……	You told me Manager Li was tall and wearing a black shirt...
+手里拿着一个大大的文件包。那他就是李经理啊！	...and holding a big document bag. So he must be Manager Li!
+他也姓李，也是经理。	He's also surnamed Li and is also a manager.
+说来说去，你觉得是我的错吗？	So after all that, do you think it's my fault?
+我错了。我现在马上去接李经理！	I was wrong. I'll go pick up Manager Li right now!
+等等！你做事总是马马虎虎。小红和你一起去吧！	Wait! You're always so careless. Xiaohong, go with him!
+那个眼睛大大的、头发短短的小红？	That Xiaohong with the big eyes and short hair?
+我知道了。	Got it.
+西田，你能把桌子上那张纸给我吗？	Nishida, can you hand me that piece of paper on the table?
+是这张吗？	Is it this one?
+不是，是黄色的。	No, the yellow one.
+哎呀，我把它扔了。	Oh no, I threw it away.
+扔了？！那是安装书柜的说明书。	Threw it away?! That was the instruction manual for assembling the bookcase.
+别着急，我一定把它找到！	Don't worry, I'll definitely find it!
+说明书呢？	Where's the manual?
+垃圾车已经运走了。	The garbage truck has already taken it away.
+没关系，我们上网查查，把书柜装好。	It's okay, let's look it up online and put the bookcase together.
+哎呀！我刚才下楼，不小心把手机丢了。	Oh no! I just went downstairs and accidentally lost my phone.
+我们把桌子放到窗户旁边吧。	Let's put the table next to the window.
+好！我们可以把书柜放到床旁边。	Okay! We can put the bookcase next to the bed.
+好啊！	Sounds good!
+谢谢你帮我搬家，连书柜都帮我擦干净了。	Thank you for helping me move; you even cleaned the bookcase for me.
+爱华，你有这本书！我找了很久了。	Aihua, you have this book! I've been looking for it for a long time.
+这是我的中文老师借给我的。	My Chinese teacher lent it to me.
+你可以把这本书借给我吗？	Can you lend me this book?
+可以！不过你一定别把这本书弄丢了。	Sure! But you must not lose this book.
+我周末要去女朋友家。送什么礼物比较好？	I'm going to my girlfriend's house this weekend. What gift would be good to bring?
+送玫瑰花吧！玫瑰花代表“我爱你”。	Bring roses! Roses mean "I love you."
+送水果吧，又好看又好吃。	Bring fruit — it's both nice-looking and tasty.
+也可以送茶叶。中国人喜欢一边喝茶，一边聊天儿。	You could also bring tea. Chinese people like to chat while drinking tea.
+你也可以自己做个礼物。	You could also make a gift yourself.
+对啊！我可以自己做个礼物。	Right! I can make a gift myself.
+好主意！	Good idea!
+带着礼物去女朋友家。太浪漫了！	Going to your girlfriend's house with a gift. So romantic!
+我饱了，我来帮忙吧。	I'm full; let me help.
+不用，你们去客厅坐着看电视吧。	No need, go sit in the living room and watch TV.
+我们来吧。一边聊天儿，一边洗碗，一会儿就洗完了。	Let us do it. We'll chat while washing the dishes, and we'll be done in no time.
+今天我的表现还好吗？	Did I do all right today?
+很好！大家都喜欢你的蛋糕，又好看又好吃！	Very well! Everyone loved your cake — it looked great and tasted great!
+我妈妈一直笑着夸你。	My mom kept smiling and praising you.
+真的？夸我什么？	Really? Praising me for what?
+我妈妈说西田又帅又能干！	My mom said Nishida is both handsome and capable!
+太好了！我下次为你们做我们家乡的特色菜。	Great! Next time I'll make you the specialty dishes of my hometown.
+你怎么回来了？不是去看电影了吗？	Why are you back? Weren't you going to watch a movie?
+倒霉！我不得不回来，刚出门我的自行车就被撞坏了。	What bad luck! I had to come back; my bike got hit and broken right after I went out.
+啊？怎么撞坏的？	Huh? How did it get broken?
+我不小心撞到树上了，现在腿还疼呢。	I accidentally crashed into a tree, and my leg still hurts now.
+你可真倒霉。	You really are unlucky.
+还有更倒霉的呢！我本来想给女朋友打个电话，可是太着急了，手机被我摔坏了！	There's worse! I wanted to call my girlfriend, but I was in such a hurry that I dropped and broke my phone!
+那你不去看电影了？	So you're not going to the movie?
+还看什么呀！快把手机借给我用用。	Watch what movie! Hurry and lend me your phone.
+喂，我是西田。	Hello, it's Nishida.
+西田！不是说看电影吗？你在哪儿？	Nishida! Weren't we going to watch a movie? Where are you?
+我在宿舍。	I'm in the dorm.
+你怎么还在宿舍？电影都快开始了，我等了你半天了。	Why are you still in the dorm? The movie is about to start; I've been waiting for you for ages.
+你别生气，我不是故意的。我的自行车被撞坏了。	Don't be angry, I didn't do it on purpose. My bike got hit and broken.
+自行车坏了，难道你不能给我打个电话吗？	Your bike broke — couldn't you have called me?
+我本来想打电话，可是手机被摔坏了。	I did want to call, but my phone got dropped and broke.
+上次手机丢了，这次手机坏了。你怎么这么粗心啊！	Last time you lost your phone, this time it's broken. How can you be so careless!
+我以后一定注意。	I'll definitely be careful from now on.
+小天，听说你住院了，大家都很关心你。	Xiaotian, I heard you're in the hospital; everyone is worried about you.
+谢谢你！我学滑雪的时候脚骨折了。	Thank you! I broke my foot while learning to ski.
+怎么这么不小心啊！医生说你什么时候能出院？	How could you be so careless! When did the doctor say you can be discharged?
+还得住一个星期。	I still have to stay for another week.
+这个医院怎么样？	How is this hospital?
+这里的医生不但水平高，而且很热情，就是这里的菜我不爱吃。	The doctors here are not only highly skilled but also very warm; it's just that I don't like the food here.
+你看，这是什么？	Look, what's this?
+啊，都是我爱吃的！	Ah, it's all the food I love!
+爷爷、奶奶好！这是送给你们的花儿和水果。	Hello, Grandpa and Grandma! These flowers and fruit are for you.
+谢谢你们！来，坐这边。	Thank you! Come, sit over here.
+你们在这儿住了多久了？	How long have you been living here?
+不到一年。因为孩子去国外了，不方便照顾我们，所以我们就来这儿住了。	Less than a year. Because our children went abroad and can't easily take care of us, we came to live here.
+这里生活方便吗？	Is life convenient here?
+在这儿不但生活方便，而且孩子们放心。因为这儿有专业的医生、护士，所以不用为看病担心。	Here life is not only convenient, but our children can also relax. Because there are professional doctors and nurses here, we don't have to worry about medical care.
+对老人来说，健康是最重要的。	For the elderly, health is the most important thing.
+爷爷、奶奶，我给你们唱首汉语歌吧！	Grandpa, Grandma, let me sing you a Chinese song!
+你还会唱汉语歌？真是多才多艺啊！	You can even sing Chinese songs? You're really talented!
+你好，请坐！请你先做一下自我介绍。	Hello, please have a seat! Please introduce yourself first.
+我叫文强，现在是北京体育大学的留学生。	My name is Wenqiang; I'm currently an international student at Beijing Sport University.
+你想当什么志愿者？	What kind of volunteer do you want to be?
+我想教孩子踢足球。	I want to teach children to play soccer.
+你为什么对这个感兴趣？	Why are you interested in this?
+我是足球专业的，如果可以教孩子踢足球，就能让更多的中国孩子了解足球，喜欢足球。	I major in soccer. If I can teach children to play soccer, I can help more Chinese children learn about soccer and come to love it.
+你都什么时间可以工作？	When are you available to work?
+我每周一、周三下午没有课，可以工作，周末也没问题。	I have no classes on Monday and Wednesday afternoons, so I can work then, and weekends are fine too.
+很好，欢迎你加入我们。	Great, welcome to join us.
+你好，张月。	Hello, Zhang Yue.
+您好！我很高兴有机会来参加今天的面试。	Hello! I'm very glad to have the chance to take part in today's interview.
+你以前做什么工作的？	What did you do for work before?
+我以前在一家饭店工作。	I used to work at a restaurant.
+你为什么要换工作呢？	Why do you want to change jobs?
+主要是为了孩子。原来工作的地方离我家太远了。	Mainly for my child. My previous workplace was too far from home.
+你觉得自己有什么优点？	What do you think your strengths are?
+我做事比较认真，遇到问题会马上想办法解决。	I'm fairly conscientious in my work, and when I run into problems I immediately find a way to solve them.
+缺点呢？	And your weaknesses?
+如果事情太多，我就容易着急。这是我应该改的地方。	If there's too much to do, I get anxious easily. That's something I should work on.
+好的，今天的面试就到这里，下周我们会给你通知。谢谢！	Okay, that's it for today's interview. We'll let you know next week. Thank you!
+喂，你听得到吗？我听不到。喂？	Hello, can you hear me? I can't hear you. Hello?
+喂，怎么这么吵？现在听得到吗？	Hello, why is it so noisy? Can you hear me now?
+现在听到了，你的声音有点儿小，大点儿声。	I can hear you now; your voice is a bit soft, speak up a little.
+那我再打一次。喂，这次听得到吗？	Then I'll call again. Hello, can you hear me this time?
+现在好了。你到哪儿了？十点到得了到不了？	It's fine now. Where are you? Can you make it by ten?
+我早就到了，你到哪儿了？	I arrived a long time ago. Where are you?
+我也到博物馆了。你在哪儿呢？	I've reached the museum too. Where are you?
+我们不是商量好在入口见吗？我一直在这儿等着呢。	Didn't we agree to meet at the entrance? I've been waiting here the whole time.
+我也在入口，为什么看不见你呢？	I'm at the entrance too. Why can't I see you?
+原来我在出口。	It turns out I'm at the exit.
+主任，咱们订的书送过来了。	Director, the books we ordered have been delivered.
+已经送上来了吗？在哪儿呢？	Have they been brought up already? Where are they?
+还没有，司机说车停在外面，开不进来，我现在出去看看。	Not yet; the driver says the truck is parked outside and can't drive in. I'll go out and take a look now.
+最好让他们直接搬上来，放到会议室去。	It'd be best to have them carry the books straight up and put them in the meeting room.
+司机说就剩下他一个人，恐怕得咱们自己搬。	The driver says he's the only one left, so I'm afraid we'll have to carry them ourselves.
+咱们自己怎么搬得动？你叫文强来帮忙吧。	How can we carry them by ourselves? Ask Wenqiang to come help.
+不好，我的书要掉下去了！文强，帮帮我！	Oh no, my books are about to fall! Wenqiang, help me!
+我现在也帮不了你，我也搬不动了。	I can't help you right now either; I can't carry any more.
+你们快把书放到推车上来！	Quick, put the books on the cart!
+这办法太好了！要不这么多书咱们肯定搬不了。	That's a great idea! Otherwise we definitely couldn't move this many books.
+文强，再往里一点儿，要不电梯关不上。	Wenqiang, move in a bit more, or the elevator won't close.
+你怎么看起来不太高兴？	Why do you look a bit unhappy?
+唉，中文越学越难，我在想要不要放弃。	Sigh, the more I study Chinese the harder it gets; I'm wondering whether to give up.
+怎么能放弃呢？只有坚持，才能胜利。	How can you give up? Only by persevering can you succeed.
+可是我觉得我的中文进步不大。	But I feel my Chinese hasn't improved much.
+怎么会呢？我们都觉得你进步很大，也很快。	How could that be? We all think you've made great, fast progress.
+谢谢你这样说。不过我还是很担心。	Thank you for saying that. But I'm still worried.
+你是在担心期末考试吗？	Are you worried about the final exam?
+被你看出来了。我一到考试就很紧张。	You saw right through me. I get nervous whenever it's exam time.
+你不要担心了，我们一起复习，肯定没问题的。	Don't worry anymore; we'll review together and it'll definitely be fine.
+祝贺你期末考试取得了好成绩！	Congratulations on getting good results on the final exam!
+谢谢你们，也谢谢大家对我的帮助！	Thank you all, and thank you everyone for your help!
+我们真舍不得你回国！	We really don't want you to go back to your country!
+是啊！感觉好像你刚到中国，马上又要离开了。	Yeah! It feels like you just arrived in China and now you're leaving already.
+我也觉得时间过得太快了。	I feel time has passed too quickly too.
+你回国以后是工作还是读书？	After you go home, will you work or study?
+我还没毕业，等回国以后要准备开学了。	I haven't graduated yet; after I go home I'll get ready for the new term.
+祝你学习进步！	I wish you progress in your studies!
+谢谢！认识你们是我在中国最开心的事。	Thank you! Meeting you all has been the happiest part of my time in China.
+来！为咱们的友谊干杯！	Come on! A toast to our friendship!
+我们会想你的。以后有机会一定再到中国来。	We'll miss you. Come back to China whenever you get the chance.
+谢谢你们，我也会想你们的。	Thank you all; I'll miss you too.

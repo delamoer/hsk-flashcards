@@ -1,0 +1,5211 @@
+{
+ "series": "huihua360",
+ "unit": 4,
+ "lessons": [
+  {
+   "num": 1,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "他穿着一件白色的衬衫",
+     "original": "妹妹：姐姐，你是什么时候喜欢上西田的？\n姐姐：从第一次见面开始。\n妹妹：第一次见面？\n姐姐：当时教室的门开着，我看见一个男生坐在窗边。\n妹妹：那个男生是西田？\n姐姐：他穿着一件白色的衬衫，手里拿着一本厚厚的书……\n妹妹：然后呢？\n姐姐：然后我就喜欢上他了。\n妹妹：说来说去只是白色衬衫和一本书啊！还有别的吗？",
+     "lines": [
+      {
+       "name": "妹妹",
+       "zh": "姐姐，你是什么时候喜欢上西田的？",
+       "py": "jiě jiě， nǐ shì shén me shí hòu xǐ huān shàng xī tián de？",
+       "en": "Sis, when did you start liking Nishida?"
+      },
+      {
+       "name": "姐姐",
+       "zh": "从第一次见面开始。",
+       "py": "cóng dì yī cì jiàn miàn kāi shǐ。",
+       "en": "From the first time we met."
+      },
+      {
+       "name": "妹妹",
+       "zh": "第一次见面？",
+       "py": "dì yī cì jiàn miàn？",
+       "en": "The first time you met?"
+      },
+      {
+       "name": "姐姐",
+       "zh": "当时教室的门开着，我看见一个男生坐在窗边。",
+       "py": "dāng shí jiào shì de mén kāi zhe， wǒ kàn jiàn yí gè nán shēng zuò zài chuāng biān。",
+       "en": "The classroom door was open at the time, and I saw a boy sitting by the window."
+      },
+      {
+       "name": "妹妹",
+       "zh": "那个男生是西田？",
+       "py": "nà ge nán shēng shì xī tián？",
+       "en": "Was that boy Nishida?"
+      },
+      {
+       "name": "姐姐",
+       "zh": "他穿着一件白色的衬衫，手里拿着一本厚厚的书……",
+       "py": "tā chuān zhe yī jiàn bái sè de chèn shān， shǒu lǐ ná zhe yī běn hòu hòu de shū……",
+       "en": "He was wearing a white shirt and holding a thick book in his hands..."
+      },
+      {
+       "name": "妹妹",
+       "zh": "然后呢？",
+       "py": "rán hòu ne？",
+       "en": "And then?"
+      },
+      {
+       "name": "姐姐",
+       "zh": "然后我就喜欢上他了。",
+       "py": "rán hòu wǒ jiù xǐ huān shàng tā le。",
+       "en": "And then I fell for him."
+      },
+      {
+       "name": "妹妹",
+       "zh": "说来说去只是白色衬衫和一本书啊！还有别的吗？",
+       "py": "shuō lái shuō qù zhǐ shì bái sè chèn shān hé yī běn shū a！ hái yǒu bié de ma？",
+       "en": "After all that, it's just a white shirt and a book! Is there anything else?"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "妹妹：姐姐，你是"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "喜欢上西田的？\n姐姐：从"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "开始。\n妹妹：第一次见面？\n姐姐：当时教室的门"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "，我看见一个男生"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "。\n妹妹：那个男生是西田？\n姐姐：他"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "一件"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "衬衫，手里"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "一本"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "……\n妹妹：然后呢？\n姐姐：然后"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "。\n妹妹："
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "只是白色衬衫和一本书啊！还有"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "吗？"
+       }
+      ],
+      "answers": [
+       "什么时候",
+       "第一次见面",
+       "开着",
+       "坐在窗边",
+       "穿着",
+       "白色的",
+       "拿着",
+       "厚厚的书",
+       "我就喜欢上他了",
+       "说来说去",
+       "别的"
+      ],
+      "tiles": {
+       "别的": {
+        "py": "biéde",
+        "en": "other; else"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "妹妹",
+       "text": "姐姐，你是什么时候喜欢上西田的？",
+       "tokens": [
+        "姐姐",
+        "你",
+        "是",
+        "什么时候",
+        "喜欢",
+        "上",
+        "西田",
+        "的"
+       ]
+      },
+      {
+       "speaker": "姐姐",
+       "text": "从第一次见面开始。",
+       "tokens": [
+        "从",
+        "第一次见面",
+        "开始"
+       ]
+      },
+      {
+       "speaker": "姐姐",
+       "text": "当时教室的门开着，我看见一个男生坐在窗边。",
+       "tokens": [
+        "当时",
+        "教室",
+        "的",
+        "门",
+        "开着",
+        "我",
+        "看见",
+        "一个",
+        "男生",
+        "坐在窗边"
+       ]
+      },
+      {
+       "speaker": "姐姐",
+       "text": "他穿着一件白色的衬衫，手里拿着一本厚厚的书……",
+       "tokens": [
+        "他",
+        "穿着",
+        "一",
+        "件",
+        "白色的",
+        "衬衫",
+        "手里",
+        "拿着",
+        "一",
+        "本",
+        "厚厚的书"
+       ]
+      },
+      {
+       "speaker": "姐姐",
+       "text": "然后我就喜欢上他了。",
+       "tokens": [
+        "然后",
+        "我",
+        "就",
+        "喜欢",
+        "上",
+        "他",
+        "了"
+       ]
+      },
+      {
+       "speaker": "妹妹",
+       "text": "说来说去只是白色衬衫和一本书啊！",
+       "tokens": [
+        "说来说去",
+        "只是",
+        "白色",
+        "衬衫",
+        "和",
+        "一",
+        "本",
+        "书",
+        "啊"
+       ]
+      },
+      {
+       "speaker": "妹妹",
+       "text": "还有别的吗？",
+       "tokens": [
+        "还有",
+        "别的",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "妹妹",
+       "text": "那个男生是西田？",
+       "tokens": [
+        "那个",
+        "男生",
+        "是",
+        "西田"
+       ]
+      },
+      {
+       "speaker": "妹妹",
+       "text": "然后呢？",
+       "tokens": [
+        "然后",
+        "呢"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "他穿着一件白色的衬衫",
+     "original": "经理：去机场接人都接错？！\n西田：您告诉我，李经理个子高高的，穿着黑色的衬衫……\n经理：手里拿着一个大大的文件包。那他就是李经理啊！\n西田：他也姓李，也是经理。\n经理：说来说去，你觉得是我的错吗？\n西田：我错了。我现在马上去接李经理！\n经理：等等！你做事总是马马虎虎。小红和你一起去吧！\n西田：那个眼睛大大的、头发短短的小红？\n我知道了。",
+     "lines": [
+      {
+       "name": "经理",
+       "zh": "去机场接人都接错？！",
+       "py": "qù jī chǎng jiē rén dōu jiē cuò？！",
+       "en": "You went to pick someone up at the airport and got the wrong person?!"
+      },
+      {
+       "name": "西田",
+       "zh": "您告诉我，李经理个子高高的，穿着黑色的衬衫……",
+       "py": "nín gào sù wǒ， lǐ jīng lǐ gè zi gāo gāo de， chuān zhe hēi sè de chèn shān……",
+       "en": "You told me Manager Li was tall and wearing a black shirt..."
+      },
+      {
+       "name": "经理",
+       "zh": "手里拿着一个大大的文件包。那他就是李经理啊！",
+       "py": "shǒu lǐ ná zhe yí gè dà dà de wén jiàn bāo。 nà tā jiù shì lǐ jīng lǐ a！",
+       "en": "...and holding a big document bag. So he must be Manager Li!"
+      },
+      {
+       "name": "西田",
+       "zh": "他也姓李，也是经理。",
+       "py": "tā yě xìng lǐ， yě shì jīng lǐ。",
+       "en": "He's also surnamed Li and is also a manager."
+      },
+      {
+       "name": "经理",
+       "zh": "说来说去，你觉得是我的错吗？",
+       "py": "shuō lái shuō qù， nǐ jué de shì wǒ de cuò ma？",
+       "en": "So after all that, do you think it's my fault?"
+      },
+      {
+       "name": "西田",
+       "zh": "我错了。我现在马上去接李经理！",
+       "py": "wǒ cuò le。 wǒ xiàn zài mǎ shàng qù jiē lǐ jīng lǐ！",
+       "en": "I was wrong. I'll go pick up Manager Li right now!"
+      },
+      {
+       "name": "经理",
+       "zh": "等等！你做事总是马马虎虎。小红和你一起去吧！",
+       "py": "děng děng！ nǐ zuò shì zǒng shì mǎ mǎ hǔ hǔ。 xiǎo hóng hé nǐ yì qǐ qù ba！",
+       "en": "Wait! You're always so careless. Xiaohong, go with him!"
+      },
+      {
+       "name": "西田",
+       "zh": "那个眼睛大大的、头发短短的小红？",
+       "py": "nà ge yǎn jīng dà dà de、 tóu fà duǎn duǎn de xiǎo hóng？",
+       "en": "That Xiaohong with the big eyes and short hair?"
+      },
+      {
+       "name": "",
+       "zh": "我知道了。",
+       "py": "wǒ zhī dào le。",
+       "en": "Got it."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "经理：去机场"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "？！\n西田：您告诉我，李经理个子"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "，"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "黑色的衬衫……\n经理：手里"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "一个"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "文件包。那他"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "李经理啊！\n西田：他也姓李，也是经理。\n经理："
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "，你觉得是我的错吗？\n西田：我"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "。我现在马上去接李经理！\n经理：等等！你做事总是"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "。小红和你一起去吧！\n西田：那个眼睛大大的、头发"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "小红？\n我"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "接人都接错",
+       "高高的",
+       "穿着",
+       "拿着",
+       "大大的",
+       "就是",
+       "说来说去",
+       "错了",
+       "马马虎虎",
+       "短短的",
+       "知道了"
+      ],
+      "tiles": {
+       "就是": {
+        "py": "jiùshì",
+        "en": "exactly; just; that is"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "经理",
+       "text": "去机场接人都接错？！",
+       "tokens": [
+        "去",
+        "机场",
+        "接人都接错"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "您告诉我，李经理个子高高的，穿着黑色的衬衫……",
+       "tokens": [
+        "您",
+        "告诉",
+        "我",
+        "李",
+        "经理",
+        "个子",
+        "高高的",
+        "穿着",
+        "黑色",
+        "的",
+        "衬衫"
+       ]
+      },
+      {
+       "speaker": "经理",
+       "text": "手里拿着一个大大的文件包。",
+       "tokens": [
+        "手里",
+        "拿着",
+        "一个",
+        "大大的",
+        "文件包"
+       ]
+      },
+      {
+       "speaker": "经理",
+       "text": "那他就是李经理啊！",
+       "tokens": [
+        "那",
+        "他",
+        "就是",
+        "李",
+        "经理",
+        "啊"
+       ]
+      },
+      {
+       "speaker": "经理",
+       "text": "说来说去，你觉得是我的错吗？",
+       "tokens": [
+        "说来说去",
+        "你",
+        "觉得",
+        "是",
+        "我",
+        "的",
+        "错",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我错了。",
+       "tokens": [
+        "我",
+        "错了"
+       ]
+      },
+      {
+       "speaker": "经理",
+       "text": "你做事总是马马虎虎。",
+       "tokens": [
+        "你",
+        "做事",
+        "总是",
+        "马马虎虎"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "那个眼睛大大的、头发短短的小红？",
+       "tokens": [
+        "那个",
+        "眼睛",
+        "大大的",
+        "头发",
+        "短短的",
+        "小",
+        "红"
+       ]
+      },
+      {
+       "speaker": "",
+       "text": "我知道了。",
+       "tokens": [
+        "我",
+        "知道了"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "他也姓李，也是经理。",
+       "tokens": [
+        "他",
+        "也",
+        "姓",
+        "李",
+        "也",
+        "是",
+        "经理"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我现在马上去接李经理！",
+       "tokens": [
+        "我",
+        "现在",
+        "马上",
+        "去",
+        "接",
+        "李",
+        "经理"
+       ]
+      },
+      {
+       "speaker": "经理",
+       "text": "等等！",
+       "tokens": [
+        "等",
+        "等"
+       ]
+      },
+      {
+       "speaker": "经理",
+       "text": "小红和你一起去吧！",
+       "tokens": [
+        "小",
+        "红",
+        "和",
+        "你",
+        "一起",
+        "去",
+        "吧"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "我们把桌子放到窗户旁边吧",
+     "original": "爱华：西田，你能把桌子上那张纸给我吗？\n西田：是这张吗？\n爱华：不是，是黄色的。\n西田：哎呀，我把它扔了。\n爱华：扔了？！那是安装书柜的说明书。\n西田：别着急，我一定把它找到！\n爱华：说明书呢？\n西田：垃圾车已经运走了。\n爱华：没关系，我们上网查查，把书柜装好。\n西田：哎呀！我刚才下楼，不小心把手机丢了。",
+     "lines": [
+      {
+       "name": "爱华",
+       "zh": "西田，你能把桌子上那张纸给我吗？",
+       "py": "xī tián， nǐ néng bǎ zhuō zi shàng nà zhāng zhǐ gěi wǒ ma？",
+       "en": "Nishida, can you hand me that piece of paper on the table?"
+      },
+      {
+       "name": "西田",
+       "zh": "是这张吗？",
+       "py": "shì zhè zhāng ma？",
+       "en": "Is it this one?"
+      },
+      {
+       "name": "爱华",
+       "zh": "不是，是黄色的。",
+       "py": "bú shì， shì huáng sè de。",
+       "en": "No, the yellow one."
+      },
+      {
+       "name": "西田",
+       "zh": "哎呀，我把它扔了。",
+       "py": "āi yā， wǒ bǎ tā rēng le。",
+       "en": "Oh no, I threw it away."
+      },
+      {
+       "name": "爱华",
+       "zh": "扔了？！那是安装书柜的说明书。",
+       "py": "rēng le？！ nà shì ān zhuāng shū guì de shuō míng shū。",
+       "en": "Threw it away?! That was the instruction manual for assembling the bookcase."
+      },
+      {
+       "name": "西田",
+       "zh": "别着急，我一定把它找到！",
+       "py": "bié zháo jí， wǒ yí dìng bǎ tā zhǎo dào！",
+       "en": "Don't worry, I'll definitely find it!"
+      },
+      {
+       "name": "爱华",
+       "zh": "说明书呢？",
+       "py": "shuō míng shū ne？",
+       "en": "Where's the manual?"
+      },
+      {
+       "name": "西田",
+       "zh": "垃圾车已经运走了。",
+       "py": "lā jī chē yǐ jīng yùn zǒu le。",
+       "en": "The garbage truck has already taken it away."
+      },
+      {
+       "name": "爱华",
+       "zh": "没关系，我们上网查查，把书柜装好。",
+       "py": "méi guān xì， wǒ men shàng wǎng zhā zhā， bǎ shū guì zhuāng hǎo。",
+       "en": "It's okay, let's look it up online and put the bookcase together."
+      },
+      {
+       "name": "西田",
+       "zh": "哎呀！我刚才下楼，不小心把手机丢了。",
+       "py": "āi yā！ wǒ gāng cái xià lóu， bù xiǎo xīn bǎ shǒu jī diū le。",
+       "en": "Oh no! I just went downstairs and accidentally lost my phone."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "爱华：西田，你能"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "桌子上那张纸"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "吗？\n西田：是这张吗？\n爱华：不是，是"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "。\n西田：哎呀，我把它"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "了。\n爱华：扔了？！那是"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "书柜的"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "。\n西田：别着急，我一定"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "！\n爱华：说明书呢？\n西田：垃圾车已经"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "了。\n爱华："
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "，我们"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "，把书柜"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "。\n西田：哎呀！我刚才"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "，不小心"
+       },
+       {
+        "b": 13
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "把",
+       "给我",
+       "黄色的",
+       "扔",
+       "安装",
+       "说明书",
+       "把它找到",
+       "运走",
+       "没关系",
+       "上网查查",
+       "装好",
+       "下楼",
+       "把手机丢了"
+      ],
+      "tiles": {
+       "把": {
+        "py": "bǎ",
+        "en": "measure word for handled objects; disposal marker"
+       },
+       "扔": {
+        "py": "rēng",
+        "en": "to throw away"
+       },
+       "安装": {
+        "py": "ānzhuāng",
+        "en": "to install; to fix"
+       },
+       "说明书": {
+        "py": "shuōmíngshū",
+        "en": "instruction manual"
+       },
+       "没关系": {
+        "py": "méi guānxi",
+        "en": "it doesn't matter; that's okay"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "爱华",
+       "text": "西田，你能把桌子上那张纸给我吗？",
+       "tokens": [
+        "西田",
+        "你",
+        "能",
+        "把",
+        "桌子",
+        "上",
+        "那",
+        "张",
+        "纸",
+        "给我",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "不是，是黄色的。",
+       "tokens": [
+        "不是",
+        "是",
+        "黄色的"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "哎呀，我把它扔了。",
+       "tokens": [
+        "哎呀",
+        "我",
+        "把",
+        "它",
+        "扔",
+        "了"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "扔了？！",
+       "tokens": [
+        "扔",
+        "了"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "那是安装书柜的说明书。",
+       "tokens": [
+        "那",
+        "是",
+        "安装",
+        "书柜",
+        "的",
+        "说明书"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "别着急，我一定把它找到！",
+       "tokens": [
+        "别",
+        "着急",
+        "我",
+        "一定",
+        "把它找到"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "说明书呢？",
+       "tokens": [
+        "说明书",
+        "呢"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "垃圾车已经运走了。",
+       "tokens": [
+        "垃圾",
+        "车",
+        "已经",
+        "运走",
+        "了"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "没关系，我们上网查查，把书柜装好。",
+       "tokens": [
+        "没关系",
+        "我们",
+        "上网查查",
+        "把",
+        "书柜",
+        "装好"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我刚才下楼，不小心把手机丢了。",
+       "tokens": [
+        "我",
+        "刚才",
+        "下楼",
+        "不",
+        "小心",
+        "把手机丢了"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "是这张吗？",
+       "tokens": [
+        "是",
+        "这",
+        "张",
+        "吗"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "我们把桌子放到窗户旁边吧",
+     "original": "爱华：我们把桌子放到窗户旁边吧。\n西田：好！我们可以把书柜放到床旁边。\n爱华：好啊！\n爱华：谢谢你帮我搬家，连书柜都帮我擦干净了。\n西田：爱华，你有这本书！我找了很久了。\n爱华：这是我的中文老师借给我的。\n西田：你可以把这本书借给我吗？\n爱华：可以！不过你一定别把这本书弄丢了。",
+     "lines": [
+      {
+       "name": "爱华",
+       "zh": "我们把桌子放到窗户旁边吧。",
+       "py": "wǒ men bǎ zhuō zi fàng dào chuāng hù páng biān ba。",
+       "en": "Let's put the table next to the window."
+      },
+      {
+       "name": "西田",
+       "zh": "好！我们可以把书柜放到床旁边。",
+       "py": "hǎo！ wǒ men kě yǐ bǎ shū guì fàng dào chuáng páng biān。",
+       "en": "Okay! We can put the bookcase next to the bed."
+      },
+      {
+       "name": "爱华",
+       "zh": "好啊！",
+       "py": "hǎo a！",
+       "en": "Sounds good!"
+      },
+      {
+       "name": "爱华",
+       "zh": "谢谢你帮我搬家，连书柜都帮我擦干净了。",
+       "py": "xiè xiè nǐ bāng wǒ bān jiā， lián shū guì dōu bāng wǒ cā gān jìng le。",
+       "en": "Thank you for helping me move; you even cleaned the bookcase for me."
+      },
+      {
+       "name": "西田",
+       "zh": "爱华，你有这本书！我找了很久了。",
+       "py": "ài huá， nǐ yǒu zhè běn shū！ wǒ zhǎo le hěn jiǔ le。",
+       "en": "Aihua, you have this book! I've been looking for it for a long time."
+      },
+      {
+       "name": "爱华",
+       "zh": "这是我的中文老师借给我的。",
+       "py": "zhè shì wǒ de zhōng wén lǎo shī jiè gěi wǒ de。",
+       "en": "My Chinese teacher lent it to me."
+      },
+      {
+       "name": "西田",
+       "zh": "你可以把这本书借给我吗？",
+       "py": "nǐ kě yǐ bǎ zhè běn shū jiè gěi wǒ ma？",
+       "en": "Can you lend me this book?"
+      },
+      {
+       "name": "爱华",
+       "zh": "可以！不过你一定别把这本书弄丢了。",
+       "py": "kě yǐ！ bù guò nǐ yí dìng bié bǎ zhè běn shū nòng diū le。",
+       "en": "Sure! But you must not lose this book."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "爱华：我们"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "桌子"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "窗户旁边吧。\n西田：好！我们"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "把"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "放到"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "。\n爱华："
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "！\n爱华：谢谢你"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "，"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "书柜"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "帮我"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "了。\n西田：爱华，你有这本书！我"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "。\n爱华：这是我的中文老师"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "。\n西田：你可以"
+       },
+       {
+        "b": 13
+       },
+       {
+        "t": "吗？\n爱华：可以！不过你一定"
+       },
+       {
+        "b": 14
+       },
+       {
+        "t": "这本书"
+       },
+       {
+        "b": 15
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "把",
+       "放到",
+       "可以",
+       "书柜",
+       "床旁边",
+       "好啊",
+       "帮我搬家",
+       "连",
+       "都",
+       "擦干净",
+       "找了很久了",
+       "借给我的",
+       "把这本书借给我",
+       "别把",
+       "弄丢了"
+      ],
+      "tiles": {
+       "把": {
+        "py": "bǎ",
+        "en": "measure word for handled objects; disposal marker"
+       },
+       "可以": {
+        "py": "kěyǐ",
+        "en": "can; may"
+       },
+       "书柜": {
+        "py": "shūguì",
+        "en": "bookcase"
+       },
+       "连": {
+        "py": "lián",
+        "en": "even"
+       },
+       "都": {
+        "py": "dōu",
+        "en": "all; both"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "爱华",
+       "text": "我们把桌子放到窗户旁边吧。",
+       "tokens": [
+        "我们",
+        "把",
+        "桌子",
+        "放到",
+        "窗户",
+        "旁边",
+        "吧"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我们可以把书柜放到床旁边。",
+       "tokens": [
+        "我们",
+        "可以",
+        "把",
+        "书柜",
+        "放到",
+        "床旁边"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "谢谢你帮我搬家，连书柜都帮我擦干净了。",
+       "tokens": [
+        "谢谢",
+        "你",
+        "帮我搬家",
+        "连",
+        "书柜",
+        "都",
+        "帮",
+        "我",
+        "擦干净",
+        "了"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我找了很久了。",
+       "tokens": [
+        "我",
+        "找了很久了"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "这是我的中文老师借给我的。",
+       "tokens": [
+        "这",
+        "是",
+        "我",
+        "的",
+        "中文",
+        "老师",
+        "借给我的"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "你可以把这本书借给我吗？",
+       "tokens": [
+        "你",
+        "可以",
+        "把",
+        "这",
+        "本",
+        "书",
+        "借给",
+        "我",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "不过你一定别把这本书弄丢了。",
+       "tokens": [
+        "不过",
+        "你",
+        "一定",
+        "别把",
+        "这",
+        "本",
+        "书",
+        "弄丢了"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "爱华，你有这本书！",
+       "tokens": [
+        "爱华",
+        "你",
+        "有",
+        "这",
+        "本",
+        "书"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "我妈妈一直笑着夸你",
+     "original": "西田：我周末要去女朋友家。送什么礼物比较好？\n大树：送玫瑰花吧！玫瑰花代表“我爱你”。\n李君：送水果吧，又好看又好吃。\n大树：也可以送茶叶。中国人喜欢一边喝茶，一边聊天儿。\n李君：你也可以自己做个礼物。\n西田：对啊！我可以自己做个礼物。\n大树：好主意！\n李君：带着礼物去女朋友家。太浪漫了！",
+     "lines": [
+      {
+       "name": "西田",
+       "zh": "我周末要去女朋友家。送什么礼物比较好？",
+       "py": "wǒ zhōu mò yào qù nǚ péng yǒu jiā。 sòng shén me lǐ wù bǐ jiào hǎo？",
+       "en": "I'm going to my girlfriend's house this weekend. What gift would be good to bring?"
+      },
+      {
+       "name": "大树",
+       "zh": "送玫瑰花吧！玫瑰花代表“我爱你”。",
+       "py": "sòng méi guī huā ba！ méi guī huā dài biǎo“ wǒ ài nǐ”。",
+       "en": "Bring roses! Roses mean \"I love you.\""
+      },
+      {
+       "name": "李君",
+       "zh": "送水果吧，又好看又好吃。",
+       "py": "sòng shuǐ guǒ ba， yòu hǎo kàn yòu hǎo chī。",
+       "en": "Bring fruit — it's both nice-looking and tasty."
+      },
+      {
+       "name": "大树",
+       "zh": "也可以送茶叶。中国人喜欢一边喝茶，一边聊天儿。",
+       "py": "yě kě yǐ sòng chá yè。 zhōng guó rén xǐ huān yī biān hē chá， yī biān liáo tiān ér。",
+       "en": "You could also bring tea. Chinese people like to chat while drinking tea."
+      },
+      {
+       "name": "李君",
+       "zh": "你也可以自己做个礼物。",
+       "py": "nǐ yě kě yǐ zì jǐ zuò gè lǐ wù。",
+       "en": "You could also make a gift yourself."
+      },
+      {
+       "name": "西田",
+       "zh": "对啊！我可以自己做个礼物。",
+       "py": "duì a！ wǒ kě yǐ zì jǐ zuò gè lǐ wù。",
+       "en": "Right! I can make a gift myself."
+      },
+      {
+       "name": "大树",
+       "zh": "好主意！",
+       "py": "hǎo zhǔ yì！",
+       "en": "Good idea!"
+      },
+      {
+       "name": "李君",
+       "zh": "带着礼物去女朋友家。太浪漫了！",
+       "py": "dài zhe lǐ wù qù nǚ péng yǒu jiā。 tài làng màn le！",
+       "en": "Going to your girlfriend's house with a gift. So romantic!"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "西田：我周末"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "。送什么"
+       },
+       {
+        "b": 2
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "？\n大树：送"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "吧！玫瑰花"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "“我爱你”。\n李君：送水果吧，"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "好看又好吃。\n大树：也可以送"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "。中国人喜欢"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "喝茶，一边聊天儿。\n李君：你也可以"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "。\n西田：对啊！我可以自己做个礼物。\n大树："
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "！\n李君：带着礼物去"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "。太"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "了！"
+       }
+      ],
+      "answers": [
+       "要去女朋友家",
+       "礼物",
+       "比较好",
+       "玫瑰花",
+       "代表",
+       "又",
+       "茶叶",
+       "一边",
+       "自己做个礼物",
+       "好主意",
+       "女朋友家",
+       "浪漫"
+      ],
+      "tiles": {
+       "礼物": {
+        "py": "lǐwù",
+        "en": "gift; present"
+       },
+       "代表": {
+        "py": "dàibiǎo",
+        "en": "representative; to represent"
+       },
+       "又": {
+        "py": "yòu",
+        "en": "again; also"
+       },
+       "茶叶": {
+        "py": "cháyè",
+        "en": "tea leaves"
+       },
+       "一边": {
+        "py": "yìbiān",
+        "en": "one side; while doing"
+       },
+       "浪漫": {
+        "py": "làngmàn",
+        "en": "romantic"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "西田",
+       "text": "我周末要去女朋友家。",
+       "tokens": [
+        "我",
+        "周末",
+        "要去女朋友家"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "送什么礼物比较好？",
+       "tokens": [
+        "送",
+        "什么",
+        "礼物",
+        "比较好"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "送玫瑰花吧！",
+       "tokens": [
+        "送",
+        "玫瑰花",
+        "吧"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "玫瑰花代表“我爱你”。",
+       "tokens": [
+        "玫瑰花",
+        "代表",
+        "“",
+        "我",
+        "爱",
+        "你",
+        "”"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "送水果吧，又好看又好吃。",
+       "tokens": [
+        "送",
+        "水果",
+        "吧",
+        "又",
+        "好看",
+        "又",
+        "好吃"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "也可以送茶叶。",
+       "tokens": [
+        "也",
+        "可以",
+        "送",
+        "茶叶"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "中国人喜欢一边喝茶，一边聊天儿。",
+       "tokens": [
+        "中国",
+        "人",
+        "喜欢",
+        "一边",
+        "喝茶",
+        "一边",
+        "聊天儿"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "你也可以自己做个礼物。",
+       "tokens": [
+        "你",
+        "也",
+        "可以",
+        "自己做个礼物"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我可以自己做个礼物。",
+       "tokens": [
+        "我",
+        "可以",
+        "自己做个礼物"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "带着礼物去女朋友家。",
+       "tokens": [
+        "带",
+        "着",
+        "礼物",
+        "去",
+        "女朋友家"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "太浪漫了！",
+       "tokens": [
+        "太",
+        "浪漫",
+        "了"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "对啊！",
+       "tokens": [
+        "对",
+        "啊"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "我妈妈一直笑着夸你",
+     "original": "西田：我饱了，我来帮忙吧。\n小雨妈妈：不用，你们去客厅坐着看电视吧。\n小雨：我们来吧。一边聊天儿，一边洗碗，一会儿就洗完了。\n西田：今天我的表现还好吗？\n小雨：很好！大家都喜欢你的蛋糕，又好看又好吃！\n我妈妈一直笑着夸你。\n西田：真的？夸我什么？\n小雨：我妈妈说西田又帅又能干！\n西田：太好了！我下次为你们做我们家乡的特色菜。",
+     "lines": [
+      {
+       "name": "西田",
+       "zh": "我饱了，我来帮忙吧。",
+       "py": "wǒ bǎo le， wǒ lái bāng máng ba。",
+       "en": "I'm full; let me help."
+      },
+      {
+       "name": "小雨妈妈",
+       "zh": "不用，你们去客厅坐着看电视吧。",
+       "py": "bù yòng， nǐ men qù kè tīng zuò zhe kàn diàn shì ba。",
+       "en": "No need, go sit in the living room and watch TV."
+      },
+      {
+       "name": "小雨",
+       "zh": "我们来吧。一边聊天儿，一边洗碗，一会儿就洗完了。",
+       "py": "wǒ men lái ba。 yī biān liáo tiān ér， yī biān xǐ wǎn， yī huì er jiù xǐ wán le。",
+       "en": "Let us do it. We'll chat while washing the dishes, and we'll be done in no time."
+      },
+      {
+       "name": "西田",
+       "zh": "今天我的表现还好吗？",
+       "py": "jīn tiān wǒ de biǎo xiàn hái hǎo ma？",
+       "en": "Did I do all right today?"
+      },
+      {
+       "name": "小雨",
+       "zh": "很好！大家都喜欢你的蛋糕，又好看又好吃！",
+       "py": "hěn hǎo！ dà jiā dōu xǐ huān nǐ de dàn gāo， yòu hǎo kàn yòu hǎo chī！",
+       "en": "Very well! Everyone loved your cake — it looked great and tasted great!"
+      },
+      {
+       "name": "",
+       "zh": "我妈妈一直笑着夸你。",
+       "py": "wǒ mā mā yì zhí xiào zhe kuā nǐ。",
+       "en": "My mom kept smiling and praising you."
+      },
+      {
+       "name": "西田",
+       "zh": "真的？夸我什么？",
+       "py": "zhēn de？ kuā wǒ shén me？",
+       "en": "Really? Praising me for what?"
+      },
+      {
+       "name": "小雨",
+       "zh": "我妈妈说西田又帅又能干！",
+       "py": "wǒ mā mā shuō xī tián yòu shuài yòu néng gàn！",
+       "en": "My mom said Nishida is both handsome and capable!"
+      },
+      {
+       "name": "西田",
+       "zh": "太好了！我下次为你们做我们家乡的特色菜。",
+       "py": "tài hǎo le！ wǒ xià cì wèi nǐ men zuò wǒ men jiā xiāng de tè sè cài。",
+       "en": "Great! Next time I'll make you the specialty dishes of my hometown."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "西田：我"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "了，我"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "吧。\n小雨妈妈：不用，你们去客厅"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "吧。\n小雨："
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "吧。"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "聊天儿，一边洗碗，一会儿"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "洗完了。\n西田：今天我的表现"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "？\n小雨：很好！"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "你的蛋糕，"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "！\n我妈妈一直"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "。\n西田：真的？夸我什么？\n小雨：我妈妈说"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "！\n西田：太好了！我下次"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "你们"
+       },
+       {
+        "b": 13
+       },
+       {
+        "t": "我们家乡的特色菜。"
+       }
+      ],
+      "answers": [
+       "饱",
+       "来帮忙",
+       "坐着看电视",
+       "我们来",
+       "一边",
+       "就",
+       "还好吗",
+       "大家都喜欢",
+       "又好看又好吃",
+       "笑着夸你",
+       "西田又帅又能干",
+       "为",
+       "做"
+      ],
+      "tiles": {
+       "饱": {
+        "py": "bǎo",
+        "en": "full (after eating)"
+       },
+       "一边": {
+        "py": "yìbiān",
+        "en": "one side; while doing"
+       },
+       "就": {
+        "py": "jiù",
+        "en": "exactly; precisely"
+       },
+       "为": {
+        "py": "wéi",
+        "en": "to become"
+       },
+       "做": {
+        "py": "zuò",
+        "en": "to do; to make; to cook"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "西田",
+       "text": "我饱了，我来帮忙吧。",
+       "tokens": [
+        "我",
+        "饱",
+        "了",
+        "我",
+        "来帮忙",
+        "吧"
+       ]
+      },
+      {
+       "speaker": "小雨妈妈",
+       "text": "不用，你们去客厅坐着看电视吧。",
+       "tokens": [
+        "不用",
+        "你们",
+        "去",
+        "客厅",
+        "坐着看电视",
+        "吧"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "我们来吧。",
+       "tokens": [
+        "我们来",
+        "吧"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "一边聊天儿，一边洗碗，一会儿就洗完了。",
+       "tokens": [
+        "一边",
+        "聊天儿",
+        "一边",
+        "洗",
+        "碗",
+        "一会儿",
+        "就",
+        "洗",
+        "完",
+        "了"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "今天我的表现还好吗？",
+       "tokens": [
+        "今天",
+        "我",
+        "的",
+        "表现",
+        "还好吗"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "大家都喜欢你的蛋糕，又好看又好吃！",
+       "tokens": [
+        "大家都喜欢",
+        "你",
+        "的",
+        "蛋糕",
+        "又好看又好吃"
+       ]
+      },
+      {
+       "speaker": "",
+       "text": "我妈妈一直笑着夸你。",
+       "tokens": [
+        "我",
+        "妈妈",
+        "一直",
+        "笑着夸你"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "我妈妈说西田又帅又能干！",
+       "tokens": [
+        "我",
+        "妈妈",
+        "说",
+        "西田",
+        "又",
+        "帅",
+        "又",
+        "能干"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我下次为你们做我们家乡的特色菜。",
+       "tokens": [
+        "我",
+        "下次",
+        "为",
+        "你们",
+        "做",
+        "我们",
+        "家乡",
+        "的",
+        "特色菜"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "很好！",
+       "tokens": [
+        "很",
+        "好"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "真的？",
+       "tokens": [
+        "真",
+        "的"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "夸我什么？",
+       "tokens": [
+        "夸",
+        "我",
+        "什么"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "太好了！",
+       "tokens": [
+        "太",
+        "好",
+        "了"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "刚出门我的自行车就被撞坏了",
+     "original": "谢冬：你怎么回来了？不是去看电影了吗？\n西田：倒霉！我不得不回来，刚出门我的自行车就被撞坏了。\n谢冬：啊？怎么撞坏的？\n西田：我不小心撞到树上了，现在腿还疼呢。\n谢冬：你可真倒霉。\n西田：还有更倒霉的呢！我本来想给女朋友打个电话，可是太着急了，手机被我摔坏了！\n谢冬：那你不去看电影了？\n西田：还看什么呀！快把手机借给我用用。",
+     "lines": [
+      {
+       "name": "谢冬",
+       "zh": "你怎么回来了？不是去看电影了吗？",
+       "py": "nǐ zěn me huí lái le？ bú shì qù kàn diàn yǐng le ma？",
+       "en": "Why are you back? Weren't you going to watch a movie?"
+      },
+      {
+       "name": "西田",
+       "zh": "倒霉！我不得不回来，刚出门我的自行车就被撞坏了。",
+       "py": "dǎo méi！ wǒ bù dé bù huí lái， gāng chū mén wǒ de zì xíng chē jiù bèi zhuàng huài le。",
+       "en": "What bad luck! I had to come back; my bike got hit and broken right after I went out."
+      },
+      {
+       "name": "谢冬",
+       "zh": "啊？怎么撞坏的？",
+       "py": "a？ zěn me zhuàng huài de？",
+       "en": "Huh? How did it get broken?"
+      },
+      {
+       "name": "西田",
+       "zh": "我不小心撞到树上了，现在腿还疼呢。",
+       "py": "wǒ bù xiǎo xīn zhuàng dào shù shàng le， xiàn zài tuǐ hái téng ne。",
+       "en": "I accidentally crashed into a tree, and my leg still hurts now."
+      },
+      {
+       "name": "谢冬",
+       "zh": "你可真倒霉。",
+       "py": "nǐ kě zhēn dǎo méi。",
+       "en": "You really are unlucky."
+      },
+      {
+       "name": "西田",
+       "zh": "还有更倒霉的呢！我本来想给女朋友打个电话，可是太着急了，手机被我摔坏了！",
+       "py": "hái yǒu gèng dǎo méi de ne！ wǒ běn lái xiǎng gěi nǚ péng yǒu dǎ gè diàn huà， kě shì tài zháo jí le， shǒu jī bèi wǒ shuāi huài le！",
+       "en": "There's worse! I wanted to call my girlfriend, but I was in such a hurry that I dropped and broke my phone!"
+      },
+      {
+       "name": "谢冬",
+       "zh": "那你不去看电影了？",
+       "py": "nà nǐ bù qù kàn diàn yǐng le？",
+       "en": "So you're not going to the movie?"
+      },
+      {
+       "name": "西田",
+       "zh": "还看什么呀！快把手机借给我用用。",
+       "py": "hái kàn shén me ya！ kuài bǎ shǒu jī jiè gěi wǒ yòng yòng。",
+       "en": "Watch what movie! Hurry and lend me your phone."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "谢冬：你"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "回来了？"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "吗？\n西田："
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "！我"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "回来，"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "出门我的自行车就"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "。\n谢冬：啊？怎么撞坏的？\n西田：我不小心"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "了，现在腿"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "呢。\n谢冬：你"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "。\n西田：还有更倒霉的呢！我本来想给女朋友打个电话，可是太着急了，手机被我摔坏了！\n谢冬：那你不去看电影了？\n西田：还看什么呀！快把手机借给我用用。"
+       }
+      ],
+      "answers": [
+       "怎么",
+       "不是去看电影了",
+       "倒霉",
+       "不得不",
+       "刚",
+       "被撞坏了",
+       "撞到树上",
+       "还疼",
+       "可真倒霉"
+      ],
+      "tiles": {
+       "怎么": {
+        "py": "zěnme",
+        "en": "how"
+       },
+       "倒霉": {
+        "py": "dǎoméi",
+        "en": "unlucky"
+       },
+       "不得不": {
+        "py": "bùdébù",
+        "en": "have to; must"
+       },
+       "刚": {
+        "py": "gāng",
+        "en": "just; just now"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "谢冬",
+       "text": "你怎么回来了？",
+       "tokens": [
+        "你",
+        "怎么",
+        "回来",
+        "了"
+       ]
+      },
+      {
+       "speaker": "谢冬",
+       "text": "不是去看电影了吗？",
+       "tokens": [
+        "不是",
+        "去",
+        "看",
+        "电影",
+        "了",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我不得不回来，刚出门我的自行车就被撞坏了。",
+       "tokens": [
+        "我",
+        "不得不",
+        "回来",
+        "刚",
+        "出门",
+        "我",
+        "的",
+        "自行车",
+        "就",
+        "被撞坏了"
+       ]
+      },
+      {
+       "speaker": "谢冬",
+       "text": "怎么撞坏的？",
+       "tokens": [
+        "怎么",
+        "撞",
+        "坏",
+        "的"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我不小心撞到树上了，现在腿还疼呢。",
+       "tokens": [
+        "我",
+        "不",
+        "小心",
+        "撞到树上",
+        "了",
+        "现在",
+        "腿",
+        "还疼",
+        "呢"
+       ]
+      },
+      {
+       "speaker": "谢冬",
+       "text": "你可真倒霉。",
+       "tokens": [
+        "你",
+        "可真倒霉"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "还有更倒霉的呢！",
+       "tokens": [
+        "还有",
+        "更",
+        "倒霉",
+        "的",
+        "呢"
+       ]
+      },
+      {
+       "speaker": "谢冬",
+       "text": "那你不去看电影了？",
+       "tokens": [
+        "那",
+        "你",
+        "不",
+        "去",
+        "看",
+        "电影",
+        "了"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "还看什么呀！",
+       "tokens": [
+        "还",
+        "看",
+        "什么",
+        "呀"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "快把手机借给我用用。",
+       "tokens": [
+        "快",
+        "把手",
+        "机",
+        "借给",
+        "我",
+        "用",
+        "用"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "刚出门我的自行车就被撞坏了",
+     "original": "西田：喂，我是西田。\n小雨：西田！不是说看电影吗？你在哪儿？\n西田：我在宿舍。\n小雨：你怎么还在宿舍？电影都快开始了，我等了你半天了。\n西田：你别生气，我不是故意的。我的自行车被撞坏了。\n小雨：自行车坏了，难道你不能给我打个电话吗？\n西田：我本来想打电话，可是手机被摔坏了。\n小雨：上次手机丢了，这次手机坏了。你怎么这么粗心啊！\n西田：我以后一定注意。",
+     "lines": [
+      {
+       "name": "西田",
+       "zh": "喂，我是西田。",
+       "py": "wèi， wǒ shì xī tián。",
+       "en": "Hello, it's Nishida."
+      },
+      {
+       "name": "小雨",
+       "zh": "西田！不是说看电影吗？你在哪儿？",
+       "py": "xī tián！ bú shì shuō kàn diàn yǐng ma？ nǐ zài nǎ ér？",
+       "en": "Nishida! Weren't we going to watch a movie? Where are you?"
+      },
+      {
+       "name": "西田",
+       "zh": "我在宿舍。",
+       "py": "wǒ zài sù shè。",
+       "en": "I'm in the dorm."
+      },
+      {
+       "name": "小雨",
+       "zh": "你怎么还在宿舍？电影都快开始了，我等了你半天了。",
+       "py": "nǐ zěn me hái zài sù shè？ diàn yǐng dōu kuài kāi shǐ le， wǒ děng le nǐ bàn tiān le。",
+       "en": "Why are you still in the dorm? The movie is about to start; I've been waiting for you for ages."
+      },
+      {
+       "name": "西田",
+       "zh": "你别生气，我不是故意的。我的自行车被撞坏了。",
+       "py": "nǐ bié shēng qì， wǒ bú shì gù yì de。 wǒ de zì xíng chē bèi zhuàng huài le。",
+       "en": "Don't be angry, I didn't do it on purpose. My bike got hit and broken."
+      },
+      {
+       "name": "小雨",
+       "zh": "自行车坏了，难道你不能给我打个电话吗？",
+       "py": "zì xíng chē huài le， nán dào nǐ bù néng gěi wǒ dǎ gè diàn huà ma？",
+       "en": "Your bike broke — couldn't you have called me?"
+      },
+      {
+       "name": "西田",
+       "zh": "我本来想打电话，可是手机被摔坏了。",
+       "py": "wǒ běn lái xiǎng dǎ diàn huà， kě shì shǒu jī bèi shuāi huài le。",
+       "en": "I did want to call, but my phone got dropped and broke."
+      },
+      {
+       "name": "小雨",
+       "zh": "上次手机丢了，这次手机坏了。你怎么这么粗心啊！",
+       "py": "shàng cì shǒu jī diū le， zhè cì shǒu jī huài le。 nǐ zěn me zhè me cū xīn a！",
+       "en": "Last time you lost your phone, this time it's broken. How can you be so careless!"
+      },
+      {
+       "name": "西田",
+       "zh": "我以后一定注意。",
+       "py": "wǒ yǐ hòu yí dìng zhù yì。",
+       "en": "I'll definitely be careful from now on."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "西田："
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "，我是西田。\n小雨：西田！"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "看电影吗？你在哪儿？\n西田：我在宿舍。\n小雨：你怎么"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "？电影"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "了，我等了你"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "了。\n西田：你"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "，我不是"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "。我的自行车"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "。\n小雨：自行车坏了，"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "你不能给我打个电话吗？\n西田：我"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "打电话，"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "手机"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "。\n小雨：上次"
+       },
+       {
+        "b": 13
+       },
+       {
+        "t": "，这次"
+       },
+       {
+        "b": 14
+       },
+       {
+        "t": "。你怎么"
+       },
+       {
+        "b": 15
+       },
+       {
+        "t": "啊！\n西田："
+       },
+       {
+        "b": 16
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "喂",
+       "不是说",
+       "还在宿舍",
+       "都快开始",
+       "半天",
+       "别生气",
+       "故意的",
+       "被撞坏了",
+       "难道",
+       "本来想",
+       "可是",
+       "被摔坏了",
+       "手机丢了",
+       "手机坏了",
+       "这么粗心",
+       "我以后一定注意"
+      ],
+      "tiles": {
+       "喂": {
+        "py": "wéi",
+        "en": "hello (on the phone)"
+       },
+       "半天": {
+        "py": "bàntiān",
+        "en": "a long while; half a day"
+       },
+       "难道": {
+        "py": "nándào",
+        "en": "used in rhetorical questions"
+       },
+       "可是": {
+        "py": "kěshì",
+        "en": "but; however"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "西田",
+       "text": "喂，我是西田。",
+       "tokens": [
+        "喂",
+        "我",
+        "是",
+        "西田"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "不是说看电影吗？",
+       "tokens": [
+        "不是说",
+        "看",
+        "电影",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "你怎么还在宿舍？",
+       "tokens": [
+        "你",
+        "怎么",
+        "还在宿舍"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "电影都快开始了，我等了你半天了。",
+       "tokens": [
+        "电影",
+        "都快开始",
+        "了",
+        "我",
+        "等",
+        "了",
+        "你",
+        "半天",
+        "了"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "你别生气，我不是故意的。",
+       "tokens": [
+        "你",
+        "别生气",
+        "我",
+        "不是",
+        "故意的"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我的自行车被撞坏了。",
+       "tokens": [
+        "我",
+        "的",
+        "自行车",
+        "被撞坏了"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "自行车坏了，难道你不能给我打个电话吗？",
+       "tokens": [
+        "自行车",
+        "坏",
+        "了",
+        "难道",
+        "你",
+        "不能",
+        "给",
+        "我",
+        "打",
+        "个",
+        "电话",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我本来想打电话，可是手机被摔坏了。",
+       "tokens": [
+        "我",
+        "本来想",
+        "打电话",
+        "可是",
+        "手机",
+        "被摔坏了"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "上次手机丢了，这次手机坏了。",
+       "tokens": [
+        "上次",
+        "手机丢了",
+        "这",
+        "次",
+        "手机坏了"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "你怎么这么粗心啊！",
+       "tokens": [
+        "你",
+        "怎么",
+        "这么粗心",
+        "啊"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我以后一定注意。",
+       "tokens": [
+        "我",
+        "以后",
+        "一定",
+        "注意"
+       ]
+      },
+      {
+       "speaker": "小雨",
+       "text": "你在哪儿？",
+       "tokens": [
+        "你",
+        "在",
+        "哪儿"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我在宿舍。",
+       "tokens": [
+        "我",
+        "在",
+        "宿舍"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "听说你住院了，大家都很关心你",
+     "original": "李路明：小天，听说你住院了，大家都很关心你。\n王小天：谢谢你！我学滑雪的时候脚骨折了。\n李路明：怎么这么不小心啊！医生说你什么时候能出院？\n王小天：还得住一个星期。\n李路明：这个医院怎么样？\n王小天：这里的医生不但水平高，而且很热情，就是这里的菜我不爱吃。\n李路明：你看，这是什么？\n王小天：啊，都是我爱吃的！",
+     "lines": [
+      {
+       "name": "李路明",
+       "zh": "小天，听说你住院了，大家都很关心你。",
+       "py": "xiǎo tiān， tīng shuō nǐ zhù yuàn le， dà jiā dōu hěn guān xīn nǐ。",
+       "en": "Xiaotian, I heard you're in the hospital; everyone is worried about you."
+      },
+      {
+       "name": "王小天",
+       "zh": "谢谢你！我学滑雪的时候脚骨折了。",
+       "py": "xiè xiè nǐ！ wǒ xué huá xuě de shí hòu jiǎo gǔ zhé le。",
+       "en": "Thank you! I broke my foot while learning to ski."
+      },
+      {
+       "name": "李路明",
+       "zh": "怎么这么不小心啊！医生说你什么时候能出院？",
+       "py": "zěn me zhè me bù xiǎo xīn a！ yī shēng shuō nǐ shén me shí hòu néng chū yuàn？",
+       "en": "How could you be so careless! When did the doctor say you can be discharged?"
+      },
+      {
+       "name": "王小天",
+       "zh": "还得住一个星期。",
+       "py": "hái dé zhù yí gè xīng qī。",
+       "en": "I still have to stay for another week."
+      },
+      {
+       "name": "李路明",
+       "zh": "这个医院怎么样？",
+       "py": "zhè ge yī yuàn zěn me yàng？",
+       "en": "How is this hospital?"
+      },
+      {
+       "name": "王小天",
+       "zh": "这里的医生不但水平高，而且很热情，就是这里的菜我不爱吃。",
+       "py": "zhè lǐ de yī shēng bù dàn shuǐ píng gāo， ér qiě hěn rè qíng， jiù shì zhè lǐ de cài wǒ bù ài chī。",
+       "en": "The doctors here are not only highly skilled but also very warm; it's just that I don't like the food here."
+      },
+      {
+       "name": "李路明",
+       "zh": "你看，这是什么？",
+       "py": "nǐ kàn， zhè shì shén me？",
+       "en": "Look, what's this?"
+      },
+      {
+       "name": "王小天",
+       "zh": "啊，都是我爱吃的！",
+       "py": "a， dōu shì wǒ ài chī de！",
+       "en": "Ah, it's all the food I love!"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "李路明：小天，"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "你住院了，大家都很"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "。\n王小天：谢谢你！我"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "的时候"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "了。\n李路明：怎么这么不小心啊！医生说你什么时候"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "？\n王小天："
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "得住一个星期。\n李路明：这个医院"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "？\n王小天：这里的医生"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "水平高，"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "很热情，"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "这里的菜"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "。\n李路明：你看，这是什么？\n王小天：啊，都是"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "！"
+       }
+      ],
+      "answers": [
+       "听说",
+       "关心你",
+       "学滑雪",
+       "脚骨折",
+       "能出院",
+       "还",
+       "怎么样",
+       "不但",
+       "而且",
+       "就是",
+       "我不爱吃",
+       "我爱吃的"
+      ],
+      "tiles": {
+       "听说": {
+        "py": "tīngshuō",
+        "en": "to hear; be told"
+       },
+       "还": {
+        "py": "huán",
+        "en": "to return; to give back"
+       },
+       "怎么样": {
+        "py": "zěnmeyàng",
+        "en": "how; how about"
+       },
+       "不但": {
+        "py": "bùdàn",
+        "en": "not only"
+       },
+       "而且": {
+        "py": "érqiě",
+        "en": "and; moreover; but also"
+       },
+       "就是": {
+        "py": "jiùshì",
+        "en": "exactly; just; that is"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "李路明",
+       "text": "小天，听说你住院了，大家都很关心你。",
+       "tokens": [
+        "小",
+        "天",
+        "听说",
+        "你",
+        "住院",
+        "了",
+        "大家",
+        "都",
+        "很",
+        "关心你"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "我学滑雪的时候脚骨折了。",
+       "tokens": [
+        "我",
+        "学滑雪",
+        "的",
+        "时候",
+        "脚骨折",
+        "了"
+       ]
+      },
+      {
+       "speaker": "李路明",
+       "text": "医生说你什么时候能出院？",
+       "tokens": [
+        "医生",
+        "说",
+        "你",
+        "什么",
+        "时候",
+        "能出院"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "还得住一个星期。",
+       "tokens": [
+        "还",
+        "得",
+        "住",
+        "一个",
+        "星期"
+       ]
+      },
+      {
+       "speaker": "李路明",
+       "text": "这个医院怎么样？",
+       "tokens": [
+        "这个",
+        "医院",
+        "怎么样"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "这里的医生不但水平高，而且很热情，就是这里的菜我不爱吃。",
+       "tokens": [
+        "这里",
+        "的",
+        "医生",
+        "不但",
+        "水平",
+        "高",
+        "而且",
+        "很",
+        "热情",
+        "就是",
+        "这里",
+        "的",
+        "菜",
+        "我不爱吃"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "啊，都是我爱吃的！",
+       "tokens": [
+        "啊",
+        "都",
+        "是",
+        "我爱吃的"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "谢谢你！",
+       "tokens": [
+        "谢谢",
+        "你"
+       ]
+      },
+      {
+       "speaker": "李路明",
+       "text": "怎么这么不小心啊！",
+       "tokens": [
+        "怎么",
+        "这么",
+        "不",
+        "小心",
+        "啊"
+       ]
+      },
+      {
+       "speaker": "李路明",
+       "text": "你看，这是什么？",
+       "tokens": [
+        "你",
+        "看",
+        "这",
+        "是",
+        "什么"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "听说你住院了，大家都很关心你",
+     "original": "小白：爷爷、奶奶好！这是送给你们的花儿和水果。\n奶奶：谢谢你们！来，坐这边。\n小白：你们在这儿住了多久了？\n爷爷：不到一年。因为孩子去国外了，不方便照顾我们，所以我们就来这儿住了。\n爱华：这里生活方便吗？\n奶奶：在这儿不但生活方便，而且孩子们放心。因为这儿有专业的医生、护士，所以不用为看病担心。\n爱华：对老人来说，健康是最重要的。\n小白：爷爷、奶奶，我给你们唱首汉语歌吧！\n爷爷：你还会唱汉语歌？真是多才多艺啊！",
+     "lines": [
+      {
+       "name": "小白",
+       "zh": "爷爷、奶奶好！这是送给你们的花儿和水果。",
+       "py": "yé yé、 nǎi nǎi hǎo！ zhè shì sòng gěi nǐ men de huā ér hé shuǐ guǒ。",
+       "en": "Hello, Grandpa and Grandma! These flowers and fruit are for you."
+      },
+      {
+       "name": "奶奶",
+       "zh": "谢谢你们！来，坐这边。",
+       "py": "xiè xiè nǐ men！ lái， zuò zhè biān。",
+       "en": "Thank you! Come, sit over here."
+      },
+      {
+       "name": "小白",
+       "zh": "你们在这儿住了多久了？",
+       "py": "nǐ men zài zhè ér zhù le duō jiǔ le？",
+       "en": "How long have you been living here?"
+      },
+      {
+       "name": "爷爷",
+       "zh": "不到一年。因为孩子去国外了，不方便照顾我们，所以我们就来这儿住了。",
+       "py": "bú dào yī nián。 yīn wèi hái zi qù guó wài le， bù fāng biàn zhào gù wǒ men， suǒ yǐ wǒ men jiù lái zhè ér zhù le。",
+       "en": "Less than a year. Because our children went abroad and can't easily take care of us, we came to live here."
+      },
+      {
+       "name": "爱华",
+       "zh": "这里生活方便吗？",
+       "py": "zhè lǐ shēng huó fāng biàn ma？",
+       "en": "Is life convenient here?"
+      },
+      {
+       "name": "奶奶",
+       "zh": "在这儿不但生活方便，而且孩子们放心。因为这儿有专业的医生、护士，所以不用为看病担心。",
+       "py": "zài zhè ér bù dàn shēng huó fāng biàn， ér qiě hái zi men fàng xīn。 yīn wèi zhè ér yǒu zhuān yè de yī shēng、 hù shì， suǒ yǐ bù yòng wèi kàn bìng dān xīn。",
+       "en": "Here life is not only convenient, but our children can also relax. Because there are professional doctors and nurses here, we don't have to worry about medical care."
+      },
+      {
+       "name": "爱华",
+       "zh": "对老人来说，健康是最重要的。",
+       "py": "duì lǎo rén lái shuō， jiàn kāng shì zuì zhòng yào de。",
+       "en": "For the elderly, health is the most important thing."
+      },
+      {
+       "name": "小白",
+       "zh": "爷爷、奶奶，我给你们唱首汉语歌吧！",
+       "py": "yé yé、 nǎi nǎi， wǒ gěi nǐ men chàng shǒu hàn yǔ gē ba！",
+       "en": "Grandpa, Grandma, let me sing you a Chinese song!"
+      },
+      {
+       "name": "爷爷",
+       "zh": "你还会唱汉语歌？真是多才多艺啊！",
+       "py": "nǐ hái huì chàng hàn yǔ gē？ zhēn shì duō cái duō yì a！",
+       "en": "You can even sing Chinese songs? You're really talented!"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "小白：爷爷、奶奶好！这是"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "的花儿和水果。\n奶奶：谢谢你们！"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "，坐这边。\n小白：你们在这儿"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "？\n爷爷："
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "。"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "孩子去国外了，不"
+       },
+       {
+        "b": 6
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "我们，"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "我们就"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "。\n爱华：这里生活方便吗？\n奶奶：在这儿"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "生活方便，"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "孩子们放心。因为这儿有专业的医生、护士，所以不用为"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "担心。\n爱华："
+       },
+       {
+        "b": 13
+       },
+       {
+        "t": "老人"
+       },
+       {
+        "b": 14
+       },
+       {
+        "t": "，"
+       },
+       {
+        "b": 15
+       },
+       {
+        "t": "是最重要的。\n小白：爷爷、奶奶，我给你们唱首汉语歌吧！\n爷爷：你还会唱汉语歌？真是"
+       },
+       {
+        "b": 16
+       },
+       {
+        "t": "啊！"
+       }
+      ],
+      "answers": [
+       "送给你们",
+       "来",
+       "住了多久了",
+       "不到一年",
+       "因为",
+       "方便",
+       "照顾",
+       "所以",
+       "来这儿住了",
+       "不但",
+       "而且",
+       "看病",
+       "对",
+       "来说",
+       "健康",
+       "多才多艺"
+      ],
+      "tiles": {
+       "来": {
+        "py": "lái",
+        "en": "to come"
+       },
+       "因为": {
+        "py": "yīnwèi",
+        "en": "because"
+       },
+       "方便": {
+        "py": "fāngbiàn",
+        "en": "convenient"
+       },
+       "照顾": {
+        "py": "zhàogù",
+        "en": "to take care of"
+       },
+       "所以": {
+        "py": "suǒyǐ",
+        "en": "so; therefore"
+       },
+       "不但": {
+        "py": "bùdàn",
+        "en": "not only"
+       },
+       "而且": {
+        "py": "érqiě",
+        "en": "and; moreover; but also"
+       },
+       "看病": {
+        "py": "kànbìng",
+        "en": "to see a doctor; get medical treatment"
+       },
+       "对": {
+        "py": "duì",
+        "en": "correct; right"
+       },
+       "健康": {
+        "py": "jiànkāng",
+        "en": "healthy; health"
+       },
+       "多才多艺": {
+        "py": "duōcái-duōyì",
+        "en": "multi-talented; versatile"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "小白",
+       "text": "这是送给你们的花儿和水果。",
+       "tokens": [
+        "这",
+        "是",
+        "送给你们",
+        "的",
+        "花",
+        "儿",
+        "和",
+        "水果"
+       ]
+      },
+      {
+       "speaker": "奶奶",
+       "text": "来，坐这边。",
+       "tokens": [
+        "来",
+        "坐",
+        "这边"
+       ]
+      },
+      {
+       "speaker": "小白",
+       "text": "你们在这儿住了多久了？",
+       "tokens": [
+        "你们",
+        "在",
+        "这儿",
+        "住了多久了"
+       ]
+      },
+      {
+       "speaker": "爷爷",
+       "text": "因为孩子去国外了，不方便照顾我们，所以我们就来这儿住了。",
+       "tokens": [
+        "因为",
+        "孩子",
+        "去",
+        "国外",
+        "了",
+        "不",
+        "方便",
+        "照顾",
+        "我们",
+        "所以",
+        "我们",
+        "就",
+        "来这儿住了"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "这里生活方便吗？",
+       "tokens": [
+        "这里",
+        "生活",
+        "方便",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "奶奶",
+       "text": "在这儿不但生活方便，而且孩子们放心。",
+       "tokens": [
+        "在",
+        "这儿",
+        "不但",
+        "生活",
+        "方便",
+        "而且",
+        "孩子",
+        "们",
+        "放心"
+       ]
+      },
+      {
+       "speaker": "奶奶",
+       "text": "因为这儿有专业的医生、护士，所以不用为看病担心。",
+       "tokens": [
+        "因为",
+        "这儿",
+        "有",
+        "专业",
+        "的",
+        "医生",
+        "护士",
+        "所以",
+        "不用",
+        "为",
+        "看病",
+        "担心"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "对老人来说，健康是最重要的。",
+       "tokens": [
+        "对",
+        "老人",
+        "来说",
+        "健康",
+        "是",
+        "最",
+        "重要",
+        "的"
+       ]
+      },
+      {
+       "speaker": "爷爷",
+       "text": "真是多才多艺啊！",
+       "tokens": [
+        "真",
+        "是",
+        "多才多艺",
+        "啊"
+       ]
+      },
+      {
+       "speaker": "小白",
+       "text": "爷爷、奶奶好！",
+       "tokens": [
+        "爷爷",
+        "奶奶",
+        "好"
+       ]
+      },
+      {
+       "speaker": "奶奶",
+       "text": "谢谢你们！",
+       "tokens": [
+        "谢谢",
+        "你们"
+       ]
+      },
+      {
+       "speaker": "小白",
+       "text": "爷爷、奶奶，我给你们唱首汉语歌吧！",
+       "tokens": [
+        "爷爷",
+        "奶奶",
+        "我",
+        "给",
+        "你们",
+        "唱",
+        "首",
+        "汉语",
+        "歌",
+        "吧"
+       ]
+      },
+      {
+       "speaker": "爷爷",
+       "text": "你还会唱汉语歌？",
+       "tokens": [
+        "你",
+        "还",
+        "会",
+        "唱",
+        "汉语",
+        "歌"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "请你先做一下自我介绍",
+     "original": "面试官：你好，请坐！请你先做一下自我介绍。\n文强：我叫文强，现在是北京体育大学的留学生。\n面试官：你想当什么志愿者？\n文强：我想教孩子踢足球。\n面试官：你为什么对这个感兴趣？\n文强：我是足球专业的，如果可以教孩子踢足球，就能让更多的中国孩子了解足球，喜欢足球。\n面试官：你都什么时间可以工作？\n文强：我每周一、周三下午没有课，可以工作，周末也没问题。\n面试官：很好，欢迎你加入我们。",
+     "lines": [
+      {
+       "name": "面试官",
+       "zh": "你好，请坐！请你先做一下自我介绍。",
+       "py": "nǐ hǎo， qǐng zuò！ qǐng nǐ xiān zuò yī xià zì wǒ jiè shào。",
+       "en": "Hello, please have a seat! Please introduce yourself first."
+      },
+      {
+       "name": "文强",
+       "zh": "我叫文强，现在是北京体育大学的留学生。",
+       "py": "wǒ jiào wén qiáng， xiàn zài shì běi jīng tǐ yù dà xué de liú xué shēng。",
+       "en": "My name is Wenqiang; I'm currently an international student at Beijing Sport University."
+      },
+      {
+       "name": "面试官",
+       "zh": "你想当什么志愿者？",
+       "py": "nǐ xiǎng dāng shén me zhì yuàn zhě？",
+       "en": "What kind of volunteer do you want to be?"
+      },
+      {
+       "name": "文强",
+       "zh": "我想教孩子踢足球。",
+       "py": "wǒ xiǎng jiào hái zi tī zú qiú。",
+       "en": "I want to teach children to play soccer."
+      },
+      {
+       "name": "面试官",
+       "zh": "你为什么对这个感兴趣？",
+       "py": "nǐ wèi shén me duì zhè ge gǎn xìng qù？",
+       "en": "Why are you interested in this?"
+      },
+      {
+       "name": "文强",
+       "zh": "我是足球专业的，如果可以教孩子踢足球，就能让更多的中国孩子了解足球，喜欢足球。",
+       "py": "wǒ shì zú qiú zhuān yè de， rú guǒ kě yǐ jiào hái zi tī zú qiú， jiù néng ràng gèng duō de zhōng guó hái zi liǎo jiě zú qiú， xǐ huān zú qiú。",
+       "en": "I major in soccer. If I can teach children to play soccer, I can help more Chinese children learn about soccer and come to love it."
+      },
+      {
+       "name": "面试官",
+       "zh": "你都什么时间可以工作？",
+       "py": "nǐ dōu shén me shí jiān kě yǐ gōng zuò？",
+       "en": "When are you available to work?"
+      },
+      {
+       "name": "文强",
+       "zh": "我每周一、周三下午没有课，可以工作，周末也没问题。",
+       "py": "wǒ měi zhōu yī、 zhōu sān xià wǔ méi yǒu kè， kě yǐ gōng zuò， zhōu mò yě méi wèn tí。",
+       "en": "I have no classes on Monday and Wednesday afternoons, so I can work then, and weekends are fine too."
+      },
+      {
+       "name": "面试官",
+       "zh": "很好，欢迎你加入我们。",
+       "py": "hěn hǎo， huān yíng nǐ jiā rù wǒ men。",
+       "en": "Great, welcome to join us."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "面试官：你好，请坐！请你先做一下自我介绍。\n文强：我叫文强，现在是北京体育大学的留学生。\n面试官：你想当什么志愿者？\n文强：我想教孩子踢足球。\n面试官：你为什么对这个感兴趣？\n文强：我是"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "，"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "可以教孩子踢足球，"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "能让更多的中国孩子"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "足球，"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "足球。\n面试官：你都什么时间"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "？\n文强：我每周一、周三下午"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "，可以工作，周末"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "。\n面试官：很好，欢迎你"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "足球专业的",
+       "如果",
+       "就",
+       "了解",
+       "喜欢",
+       "可以工作",
+       "没有课",
+       "也没问题",
+       "加入我们"
+      ],
+      "tiles": {
+       "如果": {
+        "py": "rúguǒ",
+        "en": "if"
+       },
+       "就": {
+        "py": "jiù",
+        "en": "exactly; precisely"
+       },
+       "了解": {
+        "py": "liǎojiě",
+        "en": "to understand; to know about"
+       },
+       "喜欢": {
+        "py": "xǐhuan",
+        "en": "to like"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "面试官",
+       "text": "你都什么时间可以工作？",
+       "tokens": [
+        "你",
+        "都",
+        "什么",
+        "时间",
+        "可以工作"
+       ]
+      },
+      {
+       "speaker": "文强",
+       "text": "我每周一、周三下午没有课，可以工作，周末也没问题。",
+       "tokens": [
+        "我",
+        "每",
+        "周一",
+        "周",
+        "三",
+        "下午",
+        "没有课",
+        "可以工作",
+        "周末",
+        "也没问题"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "很好，欢迎你加入我们。",
+       "tokens": [
+        "很",
+        "好",
+        "欢迎",
+        "你",
+        "加入我们"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "你好，请坐！",
+       "tokens": [
+        "你好",
+        "请坐"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "请你先做一下自我介绍。",
+       "tokens": [
+        "请",
+        "你",
+        "先",
+        "做",
+        "一下",
+        "自我",
+        "介绍"
+       ]
+      },
+      {
+       "speaker": "文强",
+       "text": "我叫文强，现在是北京体育大学的留学生。",
+       "tokens": [
+        "我",
+        "叫",
+        "文强",
+        "现在",
+        "是",
+        "北京",
+        "体育",
+        "大学",
+        "的",
+        "留学生"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "你想当什么志愿者？",
+       "tokens": [
+        "你",
+        "想",
+        "当",
+        "什么",
+        "志愿者"
+       ]
+      },
+      {
+       "speaker": "文强",
+       "text": "我想教孩子踢足球。",
+       "tokens": [
+        "我",
+        "想",
+        "教",
+        "孩子",
+        "踢足球"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "你为什么对这个感兴趣？",
+       "tokens": [
+        "你",
+        "为什么",
+        "对",
+        "这个",
+        "感兴趣"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "请你先做一下自我介绍",
+     "original": "面试官：你好，张月。\n张月：您好！我很高兴有机会来参加今天的面试。\n面试官：你以前做什么工作的？\n张月：我以前在一家饭店工作。\n面试官：你为什么要换工作呢？\n张月：主要是为了孩子。原来工作的地方离我家太远了。\n面试官：你觉得自己有什么优点？\n张月：我做事比较认真，遇到问题会马上想办法解决。\n面试官：缺点呢？\n张月：如果事情太多，我就容易着急。这是我应该改的地方。\n面试官：好的，今天的面试就到这里，下周我们会给你通知。谢谢！",
+     "lines": [
+      {
+       "name": "面试官",
+       "zh": "你好，张月。",
+       "py": "nǐ hǎo， zhāng yuè。",
+       "en": "Hello, Zhang Yue."
+      },
+      {
+       "name": "张月",
+       "zh": "您好！我很高兴有机会来参加今天的面试。",
+       "py": "nín hǎo！ wǒ hěn gāo xìng yǒu jī huì lái cān jiā jīn tiān de miàn shì。",
+       "en": "Hello! I'm very glad to have the chance to take part in today's interview."
+      },
+      {
+       "name": "面试官",
+       "zh": "你以前做什么工作的？",
+       "py": "nǐ yǐ qián zuò shén me gōng zuò de？",
+       "en": "What did you do for work before?"
+      },
+      {
+       "name": "张月",
+       "zh": "我以前在一家饭店工作。",
+       "py": "wǒ yǐ qián zài yī jiā fàn diàn gōng zuò。",
+       "en": "I used to work at a restaurant."
+      },
+      {
+       "name": "面试官",
+       "zh": "你为什么要换工作呢？",
+       "py": "nǐ wèi shén me yào huàn gōng zuò ne？",
+       "en": "Why do you want to change jobs?"
+      },
+      {
+       "name": "张月",
+       "zh": "主要是为了孩子。原来工作的地方离我家太远了。",
+       "py": "zhǔ yào shì wèi le hái zi。 yuán lái gōng zuò de dì fāng lí wǒ jiā tài yuǎn le。",
+       "en": "Mainly for my child. My previous workplace was too far from home."
+      },
+      {
+       "name": "面试官",
+       "zh": "你觉得自己有什么优点？",
+       "py": "nǐ jué de zì jǐ yǒu shén me yōu diǎn？",
+       "en": "What do you think your strengths are?"
+      },
+      {
+       "name": "张月",
+       "zh": "我做事比较认真，遇到问题会马上想办法解决。",
+       "py": "wǒ zuò shì bǐ jiào rèn zhēn， yù dào wèn tí huì mǎ shàng xiǎng bàn fǎ jiě jué。",
+       "en": "I'm fairly conscientious in my work, and when I run into problems I immediately find a way to solve them."
+      },
+      {
+       "name": "面试官",
+       "zh": "缺点呢？",
+       "py": "quē diǎn ne？",
+       "en": "And your weaknesses?"
+      },
+      {
+       "name": "张月",
+       "zh": "如果事情太多，我就容易着急。这是我应该改的地方。",
+       "py": "rú guǒ shì qíng tài duō， wǒ jiù róng yì zháo jí。 zhè shì wǒ yīng gāi gǎi de dì fāng。",
+       "en": "If there's too much to do, I get anxious easily. That's something I should work on."
+      },
+      {
+       "name": "面试官",
+       "zh": "好的，今天的面试就到这里，下周我们会给你通知。谢谢！",
+       "py": "hǎo de， jīn tiān de miàn shì jiù dào zhè lǐ， xià zhōu wǒ men huì gěi nǐ tōng zhī。 xiè xiè！",
+       "en": "Okay, that's it for today's interview. We'll let you know next week. Thank you!"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "面试官：你好，张月。\n张月：您好！我很高兴"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "今天的面试。\n面试官：你"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "做什么工作的？\n张月：我以前"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "。\n面试官：你为什么"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "呢？\n张月：主要是"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "孩子。原来工作的地方"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "太远了。\n面试官：你觉得自己有什么优点？\n张月：我做事比较认真，遇到问题会马上想办法解决。\n面试官：缺点呢？\n张月：如果事情太多，我就容易着急。这是我应该改的地方。\n面试官：好的，今天的面试就到这里，下周我们会给你通知。谢谢！"
+       }
+      ],
+      "answers": [
+       "有机会来参加",
+       "以前",
+       "在一家饭店工作",
+       "要换工作",
+       "为了",
+       "离我家"
+      ],
+      "tiles": {
+       "以前": {
+        "py": "yǐqián",
+        "en": "before; formerly"
+       },
+       "为了": {
+        "py": "wèile",
+        "en": "in order to; for"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "张月",
+       "text": "我很高兴有机会来参加今天的面试。",
+       "tokens": [
+        "我",
+        "很",
+        "高兴",
+        "有机会来参加",
+        "今天",
+        "的",
+        "面试"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "你以前做什么工作的？",
+       "tokens": [
+        "你",
+        "以前",
+        "做",
+        "什么",
+        "工作",
+        "的"
+       ]
+      },
+      {
+       "speaker": "张月",
+       "text": "我以前在一家饭店工作。",
+       "tokens": [
+        "我",
+        "以前",
+        "在",
+        "一家",
+        "饭店",
+        "工作"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "你为什么要换工作呢？",
+       "tokens": [
+        "你",
+        "为什么",
+        "要换工作",
+        "呢"
+       ]
+      },
+      {
+       "speaker": "张月",
+       "text": "主要是为了孩子。",
+       "tokens": [
+        "主要",
+        "是",
+        "为了",
+        "孩子"
+       ]
+      },
+      {
+       "speaker": "张月",
+       "text": "原来工作的地方离我家太远了。",
+       "tokens": [
+        "原来",
+        "工作",
+        "的",
+        "地方",
+        "离我家",
+        "太",
+        "远",
+        "了"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "你好，张月。",
+       "tokens": [
+        "你好",
+        "张月"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "你觉得自己有什么优点？",
+       "tokens": [
+        "你",
+        "觉得",
+        "自己",
+        "有",
+        "什么",
+        "优点"
+       ]
+      },
+      {
+       "speaker": "张月",
+       "text": "我做事比较认真，遇到问题会马上想办法解决。",
+       "tokens": [
+        "我",
+        "做事",
+        "比较",
+        "认真",
+        "遇到",
+        "问题",
+        "会",
+        "马上",
+        "想",
+        "办法",
+        "解决"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "缺点呢？",
+       "tokens": [
+        "缺点",
+        "呢"
+       ]
+      },
+      {
+       "speaker": "张月",
+       "text": "如果事情太多，我就容易着急。",
+       "tokens": [
+        "如果",
+        "事情",
+        "太",
+        "多",
+        "我",
+        "就",
+        "容易",
+        "着急"
+       ]
+      },
+      {
+       "speaker": "张月",
+       "text": "这是我应该改的地方。",
+       "tokens": [
+        "这",
+        "是",
+        "我",
+        "应该",
+        "改",
+        "的",
+        "地方"
+       ]
+      },
+      {
+       "speaker": "面试官",
+       "text": "好的，今天的面试就到这里，下周我们会给你通知。",
+       "tokens": [
+        "好",
+        "的",
+        "今天",
+        "的",
+        "面试",
+        "就",
+        "到",
+        "这里",
+        "下",
+        "周",
+        "我们",
+        "会",
+        "给",
+        "你",
+        "通知"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "我也搬不动了",
+     "original": "大树：喂，你听得到吗？我听不到。喂？\n爱华：喂，怎么这么吵？现在听得到吗？\n大树：现在听到了，你的声音有点儿小，大点儿声。\n爱华：那我再打一次。喂，这次听得到吗？\n大树：现在好了。你到哪儿了？十点到得了到不了？\n爱华：我早就到了，你到哪儿了？\n大树：我也到博物馆了。你在哪儿呢？\n爱华：我们不是商量好在入口见吗？我一直在这儿等着呢。\n大树：我也在入口，为什么看不见你呢？\n爱华：原来我在出口。",
+     "lines": [
+      {
+       "name": "大树",
+       "zh": "喂，你听得到吗？我听不到。喂？",
+       "py": "wèi， nǐ tīng de dào ma？ wǒ tīng bú dào。 wèi？",
+       "en": "Hello, can you hear me? I can't hear you. Hello?"
+      },
+      {
+       "name": "爱华",
+       "zh": "喂，怎么这么吵？现在听得到吗？",
+       "py": "wèi， zěn me zhè me chǎo？ xiàn zài tīng de dào ma？",
+       "en": "Hello, why is it so noisy? Can you hear me now?"
+      },
+      {
+       "name": "大树",
+       "zh": "现在听到了，你的声音有点儿小，大点儿声。",
+       "py": "xiàn zài tīng dào le， nǐ de shēng yīn yǒu diǎn ér xiǎo， dà diǎn ér shēng。",
+       "en": "I can hear you now; your voice is a bit soft, speak up a little."
+      },
+      {
+       "name": "爱华",
+       "zh": "那我再打一次。喂，这次听得到吗？",
+       "py": "nà wǒ zài dǎ yī cì。 wèi， zhè cì tīng de dào ma？",
+       "en": "Then I'll call again. Hello, can you hear me this time?"
+      },
+      {
+       "name": "大树",
+       "zh": "现在好了。你到哪儿了？十点到得了到不了？",
+       "py": "xiàn zài hǎo le。 nǐ dào nǎ ér le？ shí diǎn dào dé le dào bù liǎo？",
+       "en": "It's fine now. Where are you? Can you make it by ten?"
+      },
+      {
+       "name": "爱华",
+       "zh": "我早就到了，你到哪儿了？",
+       "py": "wǒ zǎo jiù dào le， nǐ dào nǎ ér le？",
+       "en": "I arrived a long time ago. Where are you?"
+      },
+      {
+       "name": "大树",
+       "zh": "我也到博物馆了。你在哪儿呢？",
+       "py": "wǒ yě dào bó wù guǎn le。 nǐ zài nǎ ér ne？",
+       "en": "I've reached the museum too. Where are you?"
+      },
+      {
+       "name": "爱华",
+       "zh": "我们不是商量好在入口见吗？我一直在这儿等着呢。",
+       "py": "wǒ men bú shì shāng liáng hǎo zài rù kǒu jiàn ma？ wǒ yì zhí zài zhè ér děng zhe ne。",
+       "en": "Didn't we agree to meet at the entrance? I've been waiting here the whole time."
+      },
+      {
+       "name": "大树",
+       "zh": "我也在入口，为什么看不见你呢？",
+       "py": "wǒ yě zài rù kǒu， wèi shén me kàn bú jiàn nǐ ne？",
+       "en": "I'm at the entrance too. Why can't I see you?"
+      },
+      {
+       "name": "爱华",
+       "zh": "原来我在出口。",
+       "py": "yuán lái wǒ zài chū kǒu。",
+       "en": "It turns out I'm at the exit."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "大树：喂，你"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "？我"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "。喂？\n爱华：喂，怎么这么吵？现在"
+       },
+       {
+        "b": 3
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "？\n大树：现在听到了，"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "声音有点儿小，"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "。\n爱华：那我再打一次。喂，这次听得到吗？\n大树：现在好了。你到哪儿了？十点"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "？\n爱华：我"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "到了，你到哪儿了？\n大树：我"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "到博物馆了。你在哪儿呢？\n爱华：我们"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "商量好在"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "见吗？我一直在这儿"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "。\n大树：我也在入口，为什么看不见你呢？\n爱华："
+       },
+       {
+        "b": 13
+       },
+       {
+        "t": "我在"
+       },
+       {
+        "b": 14
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "听得到吗",
+       "听不到",
+       "听得到",
+       "吗",
+       "你的",
+       "大点儿声",
+       "到得了到不了",
+       "早就",
+       "也",
+       "不是",
+       "入口",
+       "等着呢",
+       "原来",
+       "出口"
+      ],
+      "tiles": {
+       "吗": {
+        "py": "ma",
+        "en": "question particle"
+       },
+       "也": {
+        "py": "yě",
+        "en": "also; too"
+       },
+       "不是": {
+        "py": "bú shì",
+        "en": "no; is not"
+       },
+       "入口": {
+        "py": "rùkǒu",
+        "en": "entrance"
+       },
+       "原来": {
+        "py": "yuánlái",
+        "en": "originally; as it turns out"
+       },
+       "出口": {
+        "py": "chūkǒu",
+        "en": "exit"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "大树",
+       "text": "喂，你听得到吗？",
+       "tokens": [
+        "喂",
+        "你",
+        "听得到吗"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "我听不到。",
+       "tokens": [
+        "我",
+        "听不到"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "现在听得到吗？",
+       "tokens": [
+        "现在",
+        "听得到吗"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "现在听到了，你的声音有点儿小，大点儿声。",
+       "tokens": [
+        "现在",
+        "听",
+        "到",
+        "了",
+        "你的",
+        "声音",
+        "有点儿",
+        "小",
+        "大点儿声"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "喂，这次听得到吗？",
+       "tokens": [
+        "喂",
+        "这",
+        "次",
+        "听得到吗"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "十点到得了到不了？",
+       "tokens": [
+        "十点",
+        "到得了到不了"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "我早就到了，你到哪儿了？",
+       "tokens": [
+        "我",
+        "早就",
+        "到",
+        "了",
+        "你",
+        "到",
+        "哪儿",
+        "了"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "我也到博物馆了。",
+       "tokens": [
+        "我",
+        "也",
+        "到",
+        "博物馆",
+        "了"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "我们不是商量好在入口见吗？",
+       "tokens": [
+        "我们",
+        "不是",
+        "商量",
+        "好",
+        "在",
+        "入口",
+        "见",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "我一直在这儿等着呢。",
+       "tokens": [
+        "我",
+        "一直",
+        "在",
+        "这儿",
+        "等着呢"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "我也在入口，为什么看不见你呢？",
+       "tokens": [
+        "我",
+        "也",
+        "在",
+        "入口",
+        "为什么",
+        "看",
+        "不见",
+        "你",
+        "呢"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "原来我在出口。",
+       "tokens": [
+        "原来",
+        "我",
+        "在",
+        "出口"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "喂，怎么这么吵？",
+       "tokens": [
+        "喂",
+        "怎么",
+        "这么",
+        "吵"
+       ]
+      },
+      {
+       "speaker": "爱华",
+       "text": "那我再打一次。",
+       "tokens": [
+        "那",
+        "我",
+        "再",
+        "打",
+        "一次"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "现在好了。",
+       "tokens": [
+        "现在",
+        "好",
+        "了"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "你到哪儿了？",
+       "tokens": [
+        "你",
+        "到",
+        "哪儿",
+        "了"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "你在哪儿呢？",
+       "tokens": [
+        "你",
+        "在",
+        "哪儿",
+        "呢"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "我也搬不动了",
+     "original": "王小天：主任，咱们订的书送过来了。\n主任：已经送上来了吗？在哪儿呢？\n王小天：还没有，司机说车停在外面，开不进来，我现在出去看看。\n主任：最好让他们直接搬上来，放到会议室去。\n王小天：司机说就剩下他一个人，恐怕得咱们自己搬。\n主任：咱们自己怎么搬得动？你叫文强来帮忙吧。\n王小天：不好，我的书要掉下去了！文强，帮帮我！\n文强：我现在也帮不了你，我也搬不动了。\n主任：你们快把书放到推车上来！\n王小天：这办法太好了！要不这么多书咱们肯定搬不了。\n主任：文强，再往里一点儿，要不电梯关不上。",
+     "lines": [
+      {
+       "name": "王小天",
+       "zh": "主任，咱们订的书送过来了。",
+       "py": "zhǔ rèn， zán men dìng de shū sòng guò lái le。",
+       "en": "Director, the books we ordered have been delivered."
+      },
+      {
+       "name": "主任",
+       "zh": "已经送上来了吗？在哪儿呢？",
+       "py": "yǐ jīng sòng shàng lái le ma？ zài nǎ ér ne？",
+       "en": "Have they been brought up already? Where are they?"
+      },
+      {
+       "name": "王小天",
+       "zh": "还没有，司机说车停在外面，开不进来，我现在出去看看。",
+       "py": "hái méi yǒu， sī jī shuō chē tíng zài wài miàn， kāi bù jìn lái， wǒ xiàn zài chū qù kàn kàn。",
+       "en": "Not yet; the driver says the truck is parked outside and can't drive in. I'll go out and take a look now."
+      },
+      {
+       "name": "主任",
+       "zh": "最好让他们直接搬上来，放到会议室去。",
+       "py": "zuì hǎo ràng tā men zhí jiē bān shàng lái， fàng dào huì yì shì qù。",
+       "en": "It'd be best to have them carry the books straight up and put them in the meeting room."
+      },
+      {
+       "name": "王小天",
+       "zh": "司机说就剩下他一个人，恐怕得咱们自己搬。",
+       "py": "sī jī shuō jiù shèng xià tā yí gè rén， kǒng pà dé zán men zì jǐ bān。",
+       "en": "The driver says he's the only one left, so I'm afraid we'll have to carry them ourselves."
+      },
+      {
+       "name": "主任",
+       "zh": "咱们自己怎么搬得动？你叫文强来帮忙吧。",
+       "py": "zán men zì jǐ zěn me bān dé dòng？ nǐ jiào wén qiáng lái bāng máng ba。",
+       "en": "How can we carry them by ourselves? Ask Wenqiang to come help."
+      },
+      {
+       "name": "王小天",
+       "zh": "不好，我的书要掉下去了！文强，帮帮我！",
+       "py": "bù hǎo， wǒ de shū yào diào xià qù le！ wén qiáng， bāng bāng wǒ！",
+       "en": "Oh no, my books are about to fall! Wenqiang, help me!"
+      },
+      {
+       "name": "文强",
+       "zh": "我现在也帮不了你，我也搬不动了。",
+       "py": "wǒ xiàn zài yě bāng bù liǎo nǐ， wǒ yě bān bù dòng le。",
+       "en": "I can't help you right now either; I can't carry any more."
+      },
+      {
+       "name": "主任",
+       "zh": "你们快把书放到推车上来！",
+       "py": "nǐ men kuài bǎ shū fàng dào tuī chē shàng lái！",
+       "en": "Quick, put the books on the cart!"
+      },
+      {
+       "name": "王小天",
+       "zh": "这办法太好了！要不这么多书咱们肯定搬不了。",
+       "py": "zhè bàn fǎ tài hǎo le！ yào bù zhè me duō shū zán men kěn dìng bān bù liǎo。",
+       "en": "That's a great idea! Otherwise we definitely couldn't move this many books."
+      },
+      {
+       "name": "主任",
+       "zh": "文强，再往里一点儿，要不电梯关不上。",
+       "py": "wén qiáng， zài wǎng lǐ yì diǎn ér， yào bù diàn tī guān bù shàng。",
+       "en": "Wenqiang, move in a bit more, or the elevator won't close."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "王小天：主任，咱们订的书"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "了。\n主任：已经"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "了吗？在哪儿呢？\n王小天："
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "，司机说车停在外面，"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "，我现在"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "。\n主任："
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "让他们"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "，放到会议室去。\n王小天：司机说"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "，恐怕得咱们自己搬。\n主任：咱们自己"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "？你叫文强"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "吧。\n王小天：不好，我的书"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "！文强，"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "！\n文强：我现在也帮不了你，我"
+       },
+       {
+        "b": 13
+       },
+       {
+        "t": "。\n主任：你们快把书"
+       },
+       {
+        "b": 14
+       },
+       {
+        "t": "！\n王小天：这办法"
+       },
+       {
+        "b": 15
+       },
+       {
+        "t": "！"
+       },
+       {
+        "b": 16
+       },
+       {
+        "t": "这么多书咱们肯定"
+       },
+       {
+        "b": 17
+       },
+       {
+        "t": "。\n主任：文强，再"
+       },
+       {
+        "b": 18
+       },
+       {
+        "t": "一点儿，要不电梯关不上。"
+       }
+      ],
+      "answers": [
+       "送过来",
+       "送上来",
+       "还没有",
+       "开不进来",
+       "出去看看",
+       "最好",
+       "直接搬上来",
+       "就剩下他一个人",
+       "怎么搬得动",
+       "来帮忙",
+       "要掉下去了",
+       "帮帮我",
+       "也搬不动了",
+       "放到推车上来",
+       "太好了",
+       "要不",
+       "搬不了",
+       "往里"
+      ],
+      "tiles": {
+       "最好": {
+        "py": "zuìhǎo",
+        "en": "had better"
+       },
+       "要不": {
+        "py": "yàobù",
+        "en": "otherwise; or else"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "王小天",
+       "text": "主任，咱们订的书送过来了。",
+       "tokens": [
+        "主任",
+        "咱们",
+        "订",
+        "的",
+        "书",
+        "送过来",
+        "了"
+       ]
+      },
+      {
+       "speaker": "主任",
+       "text": "已经送上来了吗？",
+       "tokens": [
+        "已经",
+        "送上来",
+        "了",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "还没有，司机说车停在外面，开不进来，我现在出去看看。",
+       "tokens": [
+        "还没有",
+        "司机",
+        "说",
+        "车",
+        "停",
+        "在",
+        "外面",
+        "开不进来",
+        "我",
+        "现在",
+        "出去看看"
+       ]
+      },
+      {
+       "speaker": "主任",
+       "text": "最好让他们直接搬上来，放到会议室去。",
+       "tokens": [
+        "最好",
+        "让",
+        "他们",
+        "直接搬上来",
+        "放到",
+        "会议室",
+        "去"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "司机说就剩下他一个人，恐怕得咱们自己搬。",
+       "tokens": [
+        "司机",
+        "说",
+        "就",
+        "剩",
+        "下",
+        "他",
+        "一个",
+        "人",
+        "恐怕",
+        "得",
+        "咱们",
+        "自己",
+        "搬"
+       ]
+      },
+      {
+       "speaker": "主任",
+       "text": "咱们自己怎么搬得动？",
+       "tokens": [
+        "咱们",
+        "自己",
+        "怎么搬得动"
+       ]
+      },
+      {
+       "speaker": "主任",
+       "text": "你叫文强来帮忙吧。",
+       "tokens": [
+        "你",
+        "叫",
+        "文强",
+        "来帮忙",
+        "吧"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "不好，我的书要掉下去了！",
+       "tokens": [
+        "不",
+        "好",
+        "我",
+        "的",
+        "书",
+        "要掉下去了"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "文强，帮帮我！",
+       "tokens": [
+        "文强",
+        "帮帮我"
+       ]
+      },
+      {
+       "speaker": "文强",
+       "text": "我现在也帮不了你，我也搬不动了。",
+       "tokens": [
+        "我",
+        "现在",
+        "也",
+        "帮",
+        "不",
+        "了",
+        "你",
+        "我",
+        "也搬不动了"
+       ]
+      },
+      {
+       "speaker": "主任",
+       "text": "你们快把书放到推车上来！",
+       "tokens": [
+        "你们",
+        "快",
+        "把",
+        "书",
+        "放到推车上来"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "这办法太好了！",
+       "tokens": [
+        "这",
+        "办法",
+        "太好了"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "要不这么多书咱们肯定搬不了。",
+       "tokens": [
+        "要不",
+        "这么",
+        "多",
+        "书",
+        "咱们",
+        "肯定",
+        "搬不了"
+       ]
+      },
+      {
+       "speaker": "主任",
+       "text": "文强，再往里一点儿，要不电梯关不上。",
+       "tokens": [
+        "文强",
+        "再",
+        "往里",
+        "一点儿",
+        "要不",
+        "电梯",
+        "关",
+        "不",
+        "上"
+       ]
+      },
+      {
+       "speaker": "主任",
+       "text": "在哪儿呢？",
+       "tokens": [
+        "在",
+        "哪儿",
+        "呢"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "只有坚持，才能胜利！",
+     "original": "李君：你怎么看起来不太高兴？\n大树：唉，中文越学越难，我在想要不要放弃。\n李君：怎么能放弃呢？只有坚持，才能胜利。\n大树：可是我觉得我的中文进步不大。\n李君：怎么会呢？我们都觉得你进步很大，也很快。\n大树：谢谢你这样说。不过我还是很担心。\n李君：你是在担心期末考试吗？\n大树：被你看出来了。我一到考试就很紧张。\n李君：你不要担心了，我们一起复习，肯定没问题的。",
+     "lines": [
+      {
+       "name": "李君",
+       "zh": "你怎么看起来不太高兴？",
+       "py": "nǐ zěn me kàn qǐ lái bù tài gāo xìng？",
+       "en": "Why do you look a bit unhappy?"
+      },
+      {
+       "name": "大树",
+       "zh": "唉，中文越学越难，我在想要不要放弃。",
+       "py": "āi， zhōng wén yuè xué yuè nán， wǒ zài xiǎng yào bú yào fàng qì。",
+       "en": "Sigh, the more I study Chinese the harder it gets; I'm wondering whether to give up."
+      },
+      {
+       "name": "李君",
+       "zh": "怎么能放弃呢？只有坚持，才能胜利。",
+       "py": "zěn me néng fàng qì ne？ zhǐ yǒu jiān chí， cái néng shèng lì。",
+       "en": "How can you give up? Only by persevering can you succeed."
+      },
+      {
+       "name": "大树",
+       "zh": "可是我觉得我的中文进步不大。",
+       "py": "kě shì wǒ jué de wǒ de zhōng wén jìn bù bù dà。",
+       "en": "But I feel my Chinese hasn't improved much."
+      },
+      {
+       "name": "李君",
+       "zh": "怎么会呢？我们都觉得你进步很大，也很快。",
+       "py": "zěn me huì ne？ wǒ men dōu jué de nǐ jìn bù hěn dà， yě hěn kuài。",
+       "en": "How could that be? We all think you've made great, fast progress."
+      },
+      {
+       "name": "大树",
+       "zh": "谢谢你这样说。不过我还是很担心。",
+       "py": "xiè xiè nǐ zhè yàng shuō。 bù guò wǒ hái shì hěn dān xīn。",
+       "en": "Thank you for saying that. But I'm still worried."
+      },
+      {
+       "name": "李君",
+       "zh": "你是在担心期末考试吗？",
+       "py": "nǐ shì zài dān xīn qī mò kǎo shì ma？",
+       "en": "Are you worried about the final exam?"
+      },
+      {
+       "name": "大树",
+       "zh": "被你看出来了。我一到考试就很紧张。",
+       "py": "bèi nǐ kàn chū lái le。 wǒ yī dào kǎo shì jiù hěn jǐn zhāng。",
+       "en": "You saw right through me. I get nervous whenever it's exam time."
+      },
+      {
+       "name": "李君",
+       "zh": "你不要担心了，我们一起复习，肯定没问题的。",
+       "py": "nǐ bú yào dān xīn le， wǒ men yì qǐ fù xí， kěn dìng méi wèn tí de。",
+       "en": "Don't worry anymore; we'll review together and it'll definitely be fine."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "李君：你怎么"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "不太高兴？\n大树：唉，中文"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "，我在想"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "。\n李君："
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "放弃呢？"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "坚持，"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "胜利。\n大树：可是我觉得我的中文进步不大。\n李君："
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "？我们都觉得"
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "，也"
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "。\n大树：谢谢你"
+       },
+       {
+        "b": 10
+       },
+       {
+        "t": "。"
+       },
+       {
+        "b": 11
+       },
+       {
+        "t": "我还是很担心。\n李君：你是在担心"
+       },
+       {
+        "b": 12
+       },
+       {
+        "t": "吗？\n大树：被你"
+       },
+       {
+        "b": 13
+       },
+       {
+        "t": "了。我"
+       },
+       {
+        "b": 14
+       },
+       {
+        "t": "到考试"
+       },
+       {
+        "b": 15
+       },
+       {
+        "t": "很紧张。\n李君：你不要担心了，我们"
+       },
+       {
+        "b": 16
+       },
+       {
+        "t": "，肯定"
+       },
+       {
+        "b": 17
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "看起来",
+       "越学越难",
+       "要不要放弃",
+       "怎么能",
+       "只有",
+       "才能",
+       "怎么会呢",
+       "你进步很大",
+       "很快",
+       "这样说",
+       "不过",
+       "期末考试",
+       "看出来",
+       "一",
+       "就",
+       "一起复习",
+       "没问题的"
+      ],
+      "tiles": {
+       "只有": {
+        "py": "zhǐyǒu",
+        "en": "only; only if"
+       },
+       "不过": {
+        "py": "búguò",
+        "en": "but; however"
+       },
+       "一": {
+        "py": "yī",
+        "en": "one"
+       },
+       "就": {
+        "py": "jiù",
+        "en": "exactly; precisely"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "李君",
+       "text": "你怎么看起来不太高兴？",
+       "tokens": [
+        "你",
+        "怎么",
+        "看起来",
+        "不太",
+        "高兴"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "唉，中文越学越难，我在想要不要放弃。",
+       "tokens": [
+        "唉",
+        "中文",
+        "越学越难",
+        "我",
+        "在",
+        "想",
+        "要不要放弃"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "怎么能放弃呢？",
+       "tokens": [
+        "怎么能",
+        "放弃",
+        "呢"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "只有坚持，才能胜利。",
+       "tokens": [
+        "只有",
+        "坚持",
+        "才能",
+        "胜利"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "我们都觉得你进步很大，也很快。",
+       "tokens": [
+        "我们",
+        "都",
+        "觉得",
+        "你进步很大",
+        "也",
+        "很快"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "谢谢你这样说。",
+       "tokens": [
+        "谢谢",
+        "你",
+        "这样说"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "不过我还是很担心。",
+       "tokens": [
+        "不过",
+        "我",
+        "还是",
+        "很",
+        "担心"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "你是在担心期末考试吗？",
+       "tokens": [
+        "你",
+        "是",
+        "在",
+        "担心",
+        "期末考试",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "被你看出来了。",
+       "tokens": [
+        "被",
+        "你",
+        "看出来",
+        "了"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "我一到考试就很紧张。",
+       "tokens": [
+        "我",
+        "一",
+        "到",
+        "考试",
+        "就",
+        "很",
+        "紧张"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "你不要担心了，我们一起复习，肯定没问题的。",
+       "tokens": [
+        "你",
+        "不要",
+        "担心",
+        "了",
+        "我们",
+        "一起复习",
+        "肯定",
+        "没问题的"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "可是我觉得我的中文进步不大。",
+       "tokens": [
+        "可是",
+        "我",
+        "觉得",
+        "我",
+        "的",
+        "中文",
+        "进步",
+        "不",
+        "大"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "只有坚持，才能胜利！",
+     "original": "李君：祝贺你期末考试取得了好成绩！\n大树：谢谢你们，也谢谢大家对我的帮助！\n李君：我们真舍不得你回国！\n李路明：是啊！感觉好像你刚到中国，马上又要离开了。\n大树：我也觉得时间过得太快了。\n李君：你回国以后是工作还是读书？\n大树：我还没毕业，等回国以后要准备开学了。\n李路明：祝你学习进步！\n大树：谢谢！认识你们是我在中国最开心的事。\n李君：来！为咱们的友谊干杯！\n李路明：我们会想你的。以后有机会一定再到中国来。\n大树：谢谢你们，我也会想你们的。",
+     "lines": [
+      {
+       "name": "李君",
+       "zh": "祝贺你期末考试取得了好成绩！",
+       "py": "zhù hè nǐ qī mò kǎo shì qǔ dé le hǎo chéng jì！",
+       "en": "Congratulations on getting good results on the final exam!"
+      },
+      {
+       "name": "大树",
+       "zh": "谢谢你们，也谢谢大家对我的帮助！",
+       "py": "xiè xiè nǐ men， yě xiè xiè dà jiā duì wǒ de bāng zhù！",
+       "en": "Thank you all, and thank you everyone for your help!"
+      },
+      {
+       "name": "李君",
+       "zh": "我们真舍不得你回国！",
+       "py": "wǒ men zhēn shě bù dé nǐ huí guó！",
+       "en": "We really don't want you to go back to your country!"
+      },
+      {
+       "name": "李路明",
+       "zh": "是啊！感觉好像你刚到中国，马上又要离开了。",
+       "py": "shì a！ gǎn jué hǎo xiàng nǐ gāng dào zhōng guó， mǎ shàng yòu yào lí kāi le。",
+       "en": "Yeah! It feels like you just arrived in China and now you're leaving already."
+      },
+      {
+       "name": "大树",
+       "zh": "我也觉得时间过得太快了。",
+       "py": "wǒ yě jué de shí jiān guò dé tài kuài le。",
+       "en": "I feel time has passed too quickly too."
+      },
+      {
+       "name": "李君",
+       "zh": "你回国以后是工作还是读书？",
+       "py": "nǐ huí guó yǐ hòu shì gōng zuò hái shì dú shū？",
+       "en": "After you go home, will you work or study?"
+      },
+      {
+       "name": "大树",
+       "zh": "我还没毕业，等回国以后要准备开学了。",
+       "py": "wǒ hái méi bì yè， děng huí guó yǐ hòu yào zhǔn bèi kāi xué le。",
+       "en": "I haven't graduated yet; after I go home I'll get ready for the new term."
+      },
+      {
+       "name": "李路明",
+       "zh": "祝你学习进步！",
+       "py": "zhù nǐ xué xí jìn bù！",
+       "en": "I wish you progress in your studies!"
+      },
+      {
+       "name": "大树",
+       "zh": "谢谢！认识你们是我在中国最开心的事。",
+       "py": "xiè xiè！ rèn shí nǐ men shì wǒ zài zhōng guó zuì kāi xīn de shì。",
+       "en": "Thank you! Meeting you all has been the happiest part of my time in China."
+      },
+      {
+       "name": "李君",
+       "zh": "来！为咱们的友谊干杯！",
+       "py": "lái！ wèi zán men de yǒu yì gān bēi！",
+       "en": "Come on! A toast to our friendship!"
+      },
+      {
+       "name": "李路明",
+       "zh": "我们会想你的。以后有机会一定再到中国来。",
+       "py": "wǒ men huì xiǎng nǐ de。 yǐ hòu yǒu jī huì yí dìng zài dào zhōng guó lái。",
+       "en": "We'll miss you. Come back to China whenever you get the chance."
+      },
+      {
+       "name": "大树",
+       "zh": "谢谢你们，我也会想你们的。",
+       "py": "xiè xiè nǐ men， wǒ yě huì xiǎng nǐ men de。",
+       "en": "Thank you all; I'll miss you too."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "李君：祝贺你期末考试"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "！\n大树：谢谢"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "，也谢谢大家"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "！\n李君：我们真"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "你回国！\n李路明：是啊！"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "你刚到中国，"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "又要离开了。\n大树：我也觉得时间"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "。\n李君：你回国以后是工作还是读书？\n大树：我还没毕业，等回国以后要准备开学了。\n李路明：祝你学习进步！\n大树：谢谢！认识你们是我在中国最开心的事。\n李君：来！为咱们的友谊干杯！\n李路明：我们会想你的。以后有机会一定再到中国来。\n大树：谢谢你们，我也会想你们的。"
+       }
+      ],
+      "answers": [
+       "取得了好成绩",
+       "你们",
+       "对我的帮助",
+       "舍不得",
+       "感觉好像",
+       "马上",
+       "过得太快了"
+      ],
+      "tiles": {
+       "你们": {
+        "py": "nǐmen",
+        "en": "you (plural)"
+       },
+       "舍不得": {
+        "py": "shěbude",
+        "en": "to be reluctant to part with"
+       },
+       "马上": {
+        "py": "mǎshàng",
+        "en": "right away; immediately"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "李君",
+       "text": "祝贺你期末考试取得了好成绩！",
+       "tokens": [
+        "祝贺",
+        "你",
+        "期末",
+        "考试",
+        "取得了好成绩"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "谢谢你们，也谢谢大家对我的帮助！",
+       "tokens": [
+        "谢谢",
+        "你们",
+        "也",
+        "谢谢",
+        "大家",
+        "对我的帮助"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "我们真舍不得你回国！",
+       "tokens": [
+        "我们",
+        "真",
+        "舍不得",
+        "你",
+        "回国"
+       ]
+      },
+      {
+       "speaker": "李路明",
+       "text": "感觉好像你刚到中国，马上又要离开了。",
+       "tokens": [
+        "感觉好像",
+        "你",
+        "刚",
+        "到",
+        "中国",
+        "马上",
+        "又",
+        "要",
+        "离开",
+        "了"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "我也觉得时间过得太快了。",
+       "tokens": [
+        "我",
+        "也",
+        "觉得",
+        "时间",
+        "过得太快了"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "认识你们是我在中国最开心的事。",
+       "tokens": [
+        "认识",
+        "你们",
+        "是",
+        "我",
+        "在",
+        "中国",
+        "最",
+        "开心",
+        "的",
+        "事"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "谢谢你们，我也会想你们的。",
+       "tokens": [
+        "谢谢",
+        "你们",
+        "我",
+        "也",
+        "会",
+        "想",
+        "你们",
+        "的"
+       ]
+      },
+      {
+       "speaker": "李路明",
+       "text": "是啊！",
+       "tokens": [
+        "是",
+        "啊"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "你回国以后是工作还是读书？",
+       "tokens": [
+        "你",
+        "回国",
+        "以后",
+        "是",
+        "工作",
+        "还是",
+        "读书"
+       ]
+      },
+      {
+       "speaker": "大树",
+       "text": "我还没毕业，等回国以后要准备开学了。",
+       "tokens": [
+        "我",
+        "还",
+        "没",
+        "毕业",
+        "等",
+        "回国",
+        "以后",
+        "要",
+        "准备",
+        "开学",
+        "了"
+       ]
+      },
+      {
+       "speaker": "李路明",
+       "text": "祝你学习进步！",
+       "tokens": [
+        "祝",
+        "你",
+        "学习",
+        "进步"
+       ]
+      },
+      {
+       "speaker": "李君",
+       "text": "为咱们的友谊干杯！",
+       "tokens": [
+        "为",
+        "咱们",
+        "的",
+        "友谊",
+        "干杯"
+       ]
+      },
+      {
+       "speaker": "李路明",
+       "text": "我们会想你的。",
+       "tokens": [
+        "我们",
+        "会",
+        "想",
+        "你",
+        "的"
+       ]
+      },
+      {
+       "speaker": "李路明",
+       "text": "以后有机会一定再到中国来。",
+       "tokens": [
+        "以后",
+        "有",
+        "机会",
+        "一定",
+        "再",
+        "到",
+        "中国",
+        "来"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  }
+ ]
+}

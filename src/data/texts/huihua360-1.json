@@ -1,0 +1,2419 @@
+{
+ "series": "huihua360",
+ "unit": 1,
+ "lessons": [
+  {
+   "num": 1,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "会话 1",
+     "original": "思齐：你好！雪丽。\n雪丽：你好！思齐。",
+     "lines": [
+      {
+       "name": "思齐",
+       "zh": "你好！雪丽。",
+       "py": "Nǐ hǎo! Xuělì.",
+       "en": "Hello, Xueli!"
+      },
+      {
+       "name": "雪丽",
+       "zh": "你好！思齐。",
+       "py": "Nǐ hǎo! Sīqí.",
+       "en": "Hello, Siqi!"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "思齐："
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "！雪丽。\n雪丽：你好！思齐。"
+       }
+      ],
+      "answers": [
+       "你好"
+      ],
+      "tiles": {
+       "你好": {
+        "py": "nǐhǎo",
+        "en": "hello"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "会话 2",
+     "original": "老师：你们好！\n同学们：老师好！",
+     "lines": [
+      {
+       "name": "老师",
+       "zh": "你们好！",
+       "py": "Nǐmen hǎo!",
+       "en": "Hello, everyone!"
+      },
+      {
+       "name": "同学们",
+       "zh": "老师好！",
+       "py": "Lǎoshī hǎo!",
+       "en": "Hello, teacher!"
+      }
+     ],
+     "vocab": null,
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "老师",
+       "text": "你们好！",
+       "tokens": [
+        "你们",
+        "好"
+       ]
+      },
+      {
+       "speaker": "同学们",
+       "text": "老师好！",
+       "tokens": [
+        "老师",
+        "好"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 3,
+     "title": "会话 3",
+     "original": "大卫：您好！我是大卫。\n王小天：你好！我是王小天。",
+     "lines": [
+      {
+       "name": "大卫",
+       "zh": "您好！我是大卫。",
+       "py": "Nín hǎo! Wǒ shì Dàwèi.",
+       "en": "Hello! I'm David."
+      },
+      {
+       "name": "王小天",
+       "zh": "你好！我是王小天。",
+       "py": "Nǐ hǎo! Wǒ shì Wáng Xiǎotiān.",
+       "en": "Hi! I'm Wang Xiaotian."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "大卫：您好！"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "大卫。\n王小天：你好！我是王小天。"
+       }
+      ],
+      "answers": [
+       "我是"
+      ]
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "大卫",
+       "text": "我是大卫。",
+       "tokens": [
+        "我是",
+        "大卫"
+       ]
+      },
+      {
+       "speaker": "王小天",
+       "text": "我是王小天。",
+       "tokens": [
+        "我是",
+        "王小天"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 4,
+     "title": "会话 4",
+     "original": "大卫：再见！\n王小天：再见！",
+     "lines": [
+      {
+       "name": "大卫",
+       "zh": "再见！",
+       "py": "Zàijiàn!",
+       "en": "Goodbye!"
+      },
+      {
+       "name": "王小天",
+       "zh": "再见！",
+       "py": "Zàijiàn!",
+       "en": "Goodbye!"
+      }
+     ],
+     "vocab": null,
+     "grammar": null,
+     "sentences": [],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "会话 1",
+     "original": "雪丽：我很饿。你饿吗？\n思齐：我也很饿。",
+     "lines": [
+      {
+       "name": "雪丽",
+       "zh": "我很饿。你饿吗？",
+       "py": "Wǒ hěn è. Nǐ è ma?",
+       "en": "I'm very hungry. Are you hungry?"
+      },
+      {
+       "name": "思齐",
+       "zh": "我也很饿。",
+       "py": "Wǒ yě hěn è.",
+       "en": "I'm hungry too."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "雪丽：我很"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "。"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "？\n思齐：我"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "很饿。"
+       }
+      ],
+      "answers": [
+       "饿",
+       "你饿吗",
+       "也"
+      ],
+      "tiles": {
+       "饿": {
+        "py": "è",
+        "en": "hungry"
+       },
+       "也": {
+        "py": "yě",
+        "en": "also; too"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "雪丽",
+       "text": "我很饿。",
+       "tokens": [
+        "我",
+        "很",
+        "饿"
+       ]
+      },
+      {
+       "speaker": "思齐",
+       "text": "我也很饿。",
+       "tokens": [
+        "我",
+        "也",
+        "很",
+        "饿"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "会话 2",
+     "original": "王小天：这个好看吗？\n女朋友：这个不好看。",
+     "lines": [
+      {
+       "name": "王小天",
+       "zh": "这个好看吗？",
+       "py": "Zhège hǎokàn ma?",
+       "en": "Does this look nice?"
+      },
+      {
+       "name": "女朋友",
+       "zh": "这个不好看。",
+       "py": "Zhège bù hǎokàn.",
+       "en": "This doesn't look nice."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "王小天："
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "吗？\n女朋友：这个不"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "这个好看",
+       "好看"
+      ],
+      "tiles": {
+       "好看": {
+        "py": "hǎokàn",
+        "en": "good-looking; nice to look at"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "王小天",
+       "text": "这个好看吗？",
+       "tokens": [
+        "这个好看",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "女朋友",
+       "text": "这个不好看。",
+       "tokens": [
+        "这个",
+        "不",
+        "好看"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 3,
+     "title": "会话 3",
+     "original": "学生：谢谢！\n思齐：不客气！",
+     "lines": [
+      {
+       "name": "学生",
+       "zh": "谢谢！",
+       "py": "Xièxie!",
+       "en": "Thank you!"
+      },
+      {
+       "name": "思齐",
+       "zh": "不客气！",
+       "py": "Bú kèqi!",
+       "en": "You're welcome!"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "学生：谢谢！\n思齐："
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "！"
+       }
+      ],
+      "answers": [
+       "不客气"
+      ],
+      "tiles": {
+       "不客气": {
+        "py": "bú kèqi",
+        "en": "you're welcome"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [],
+     "note": ""
+    },
+    {
+     "n": 4,
+     "title": "会话 4",
+     "original": "大卫：对不起！\n学生：没关系！",
+     "lines": [
+      {
+       "name": "大卫",
+       "zh": "对不起！",
+       "py": "Duìbuqǐ!",
+       "en": "I'm sorry!"
+      },
+      {
+       "name": "学生",
+       "zh": "没关系！",
+       "py": "Méi guānxi!",
+       "en": "It's okay!"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "大卫："
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "！\n学生："
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "！"
+       }
+      ],
+      "answers": [
+       "对不起",
+       "没关系"
+      ],
+      "tiles": {
+       "对不起": {
+        "py": "duìbuqǐ",
+        "en": "sorry"
+       },
+       "没关系": {
+        "py": "méi guānxi",
+        "en": "it doesn't matter; that's okay"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "会话 1",
+     "original": "大卫：你好！我是大卫。你叫什么名字？\n西田：你好！我叫西田。大卫，你是哪国人？\n大卫：我是俄罗斯人。你呢？\n西田：我是日本人。",
+     "lines": [
+      {
+       "name": "大卫",
+       "zh": "你好！我是大卫。你叫什么名字？",
+       "py": "Nǐ hǎo! Wǒ shì Dàwèi. Nǐ jiào shénme míngzi?",
+       "en": "Hi! I'm David. What's your name?"
+      },
+      {
+       "name": "西田",
+       "zh": "你好！我叫西田。大卫，你是哪国人？",
+       "py": "Nǐ hǎo! Wǒ jiào Xītián. Dàwèi, nǐ shì nǎ guó rén?",
+       "en": "Hi! My name is Nishida. David, what country are you from?"
+      },
+      {
+       "name": "大卫",
+       "zh": "我是俄罗斯人。你呢？",
+       "py": "Wǒ shì Éluósīrén. Nǐ ne?",
+       "en": "I'm Russian. And you?"
+      },
+      {
+       "name": "西田",
+       "zh": "我是日本人。",
+       "py": "Wǒ shì Rìběnrén.",
+       "en": "I'm Japanese."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "大卫：你好！我是大卫。你叫什么"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "？\n西田：你好！我叫西田。大卫，你是"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "人？\n大卫：我是"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "。你"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "？\n西田：我是"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "名字",
+       "哪国",
+       "俄罗斯人",
+       "呢",
+       "日本人"
+      ],
+      "tiles": {
+       "名字": {
+        "py": "míngzi",
+        "en": "name"
+       },
+       "呢": {
+        "py": "ne",
+        "en": "particle used in questions/topic follow-up"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "大卫",
+       "text": "你叫什么名字？",
+       "tokens": [
+        "你",
+        "叫",
+        "什么",
+        "名字"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "大卫，你是哪国人？",
+       "tokens": [
+        "大卫",
+        "你",
+        "是",
+        "哪国",
+        "人"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "我是俄罗斯人。",
+       "tokens": [
+        "我",
+        "是",
+        "俄罗斯人"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "你呢？",
+       "tokens": [
+        "你",
+        "呢"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我是日本人。",
+       "tokens": [
+        "我",
+        "是",
+        "日本人"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "我是大卫。",
+       "tokens": [
+        "我",
+        "是",
+        "大卫"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我叫西田。",
+       "tokens": [
+        "我",
+        "叫",
+        "西田"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "会话 2",
+     "original": "前台：您的电话号码是多少？\n西田：我的电话是18810842742。\n前台：您的邮箱是什么？\n西田：我的邮箱是18810842742@126.com。",
+     "lines": [
+      {
+       "name": "前台",
+       "zh": "您的电话号码是多少？",
+       "py": "Nín de diànhuà hàomǎ shì duōshao?",
+       "en": "What's your phone number?"
+      },
+      {
+       "name": "西田",
+       "zh": "我的电话是18810842742。",
+       "py": "Wǒ de diànhuà shì 18810842742.",
+       "en": "My phone number is 18810842742."
+      },
+      {
+       "name": "前台",
+       "zh": "您的邮箱是什么？",
+       "py": "Nín de yóuxiāng shì shénme?",
+       "en": "What's your email address?"
+      },
+      {
+       "name": "西田",
+       "zh": "我的邮箱是18810842742@126.com。",
+       "py": "Wǒ de yóuxiāng shì 18810842742@126.com.",
+       "en": "My email is 18810842742@126.com."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "前台：您的"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "是多少？\n西田：我的"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "是18810842742。\n前台：您的"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "是什么？\n西田：我的邮箱是18810842742@126.com。"
+       }
+      ],
+      "answers": [
+       "电话号码",
+       "电话",
+       "邮箱"
+      ],
+      "tiles": {
+       "电话": {
+        "py": "diànhuà",
+        "en": "telephone; phone"
+       },
+       "邮箱": {
+        "py": "yóuxiāng",
+        "en": "email address; mailbox"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "前台",
+       "text": "您的电话号码是多少？",
+       "tokens": [
+        "您",
+        "的",
+        "电话号码",
+        "是",
+        "多少"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "我的电话是18810842742。",
+       "tokens": [
+        "我",
+        "的",
+        "电话",
+        "是",
+        "1",
+        "8",
+        "8",
+        "1",
+        "0",
+        "8",
+        "4",
+        "2",
+        "7",
+        "4",
+        "2"
+       ]
+      },
+      {
+       "speaker": "前台",
+       "text": "您的邮箱是什么？",
+       "tokens": [
+        "您",
+        "的",
+        "邮箱",
+        "是",
+        "什么"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "会话 1",
+     "original": "老板：今天几月几号？\n秘书：今天五月九号。\n老板：今天星期几？\n秘书：今天星期二。",
+     "lines": [
+      {
+       "name": "老板",
+       "zh": "今天几月几号？",
+       "py": "Jīntiān jǐ yuè jǐ hào?",
+       "en": "What's the date today?"
+      },
+      {
+       "name": "秘书",
+       "zh": "今天五月九号。",
+       "py": "Jīntiān wǔ yuè jiǔ hào.",
+       "en": "Today is May 9th."
+      },
+      {
+       "name": "老板",
+       "zh": "今天星期几？",
+       "py": "Jīntiān xīngqī jǐ?",
+       "en": "What day is it today?"
+      },
+      {
+       "name": "秘书",
+       "zh": "今天星期二。",
+       "py": "Jīntiān xīngqī èr.",
+       "en": "Today is Tuesday."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "老板：今天几月几号？\n秘书：今天"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "。\n老板：今天星期几？\n秘书：今天"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "五月九号",
+       "星期二"
+      ]
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "秘书",
+       "text": "今天五月九号。",
+       "tokens": [
+        "今天",
+        "五月九号"
+       ]
+      },
+      {
+       "speaker": "秘书",
+       "text": "今天星期二。",
+       "tokens": [
+        "今天",
+        "星期二"
+       ]
+      },
+      {
+       "speaker": "老板",
+       "text": "今天几月几号？",
+       "tokens": [
+        "今天",
+        "几",
+        "月",
+        "几号"
+       ]
+      },
+      {
+       "speaker": "老板",
+       "text": "今天星期几？",
+       "tokens": [
+        "今天",
+        "星期",
+        "几"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "会话 2",
+     "original": "思齐：六月二十五号是雪丽的生日。\n西田：六月二十五号星期几？\n思齐：星期日。\n西田：星期日，太好了！",
+     "lines": [
+      {
+       "name": "思齐",
+       "zh": "六月二十五号是雪丽的生日。",
+       "py": "Liù yuè èrshíwǔ hào shì Xuělì de shēngrì.",
+       "en": "June 25th is Xueli's birthday."
+      },
+      {
+       "name": "西田",
+       "zh": "六月二十五号星期几？",
+       "py": "Liù yuè èrshíwǔ hào xīngqī jǐ?",
+       "en": "What day of the week is June 25th?"
+      },
+      {
+       "name": "思齐",
+       "zh": "星期日。",
+       "py": "Xīngqīrì.",
+       "en": "Sunday."
+      },
+      {
+       "name": "西田",
+       "zh": "星期日，太好了！",
+       "py": "Xīngqīrì, tài hǎo le!",
+       "en": "Sunday — great!"
+      }
+     ],
+     "vocab": null,
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "思齐",
+       "text": "六月二十五号是雪丽的生日。",
+       "tokens": [
+        "六",
+        "月",
+        "二",
+        "十",
+        "五",
+        "号",
+        "是",
+        "雪丽",
+        "的",
+        "生日"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "六月二十五号星期几？",
+       "tokens": [
+        "六",
+        "月",
+        "二",
+        "十",
+        "五",
+        "号",
+        "星期",
+        "几"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "星期日，太好了！",
+       "tokens": [
+        "星期日",
+        "太",
+        "好",
+        "了"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "会话 1",
+     "original": "导游：明天早上七点吃早饭。\n游客1：现在几点？\n游客2：现在八点十分。\n马修：不对。现在十一点十分。\n游客3：现在九点十分。\n游客1：请问，现在几点？\n导游：现在北京时间九点十分。",
+     "lines": [
+      {
+       "name": "导游",
+       "zh": "明天早上七点吃早饭。",
+       "py": "Míngtiān zǎoshang qī diǎn chī zǎofàn.",
+       "en": "Tomorrow we'll have breakfast at seven in the morning."
+      },
+      {
+       "name": "游客1",
+       "zh": "现在几点？",
+       "py": "Xiànzài jǐ diǎn?",
+       "en": "What time is it now?"
+      },
+      {
+       "name": "游客2",
+       "zh": "现在八点十分。",
+       "py": "Xiànzài bā diǎn shí fēn.",
+       "en": "It's ten past eight."
+      },
+      {
+       "name": "马修",
+       "zh": "不对。现在十一点十分。",
+       "py": "Bú duì. Xiànzài shíyī diǎn shí fēn.",
+       "en": "That's not right. It's ten past eleven."
+      },
+      {
+       "name": "游客3",
+       "zh": "现在九点十分。",
+       "py": "Xiànzài jiǔ diǎn shí fēn.",
+       "en": "It's ten past nine."
+      },
+      {
+       "name": "游客1",
+       "zh": "请问，现在几点？",
+       "py": "Qǐngwèn, xiànzài jǐ diǎn?",
+       "en": "Excuse me, what time is it now?"
+      },
+      {
+       "name": "导游",
+       "zh": "现在北京时间九点十分。",
+       "py": "Xiànzài Běijīng shíjiān jiǔ diǎn shí fēn.",
+       "en": "It's ten past nine, Beijing time."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "导游：明天早上"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "吃早饭。\n游客1："
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "？\n游客2：现在"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "。\n马修：不对。现在"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "。\n游客3：现在"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "。\n游客1：请问，现在几点？\n导游：现在北京时间九点十分。"
+       }
+      ],
+      "answers": [
+       "七点",
+       "现在几点",
+       "八点十分",
+       "十一点十分",
+       "九点十分"
+      ]
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "导游",
+       "text": "明天早上七点吃早饭。",
+       "tokens": [
+        "明天",
+        "早上",
+        "七点",
+        "吃",
+        "早饭"
+       ]
+      },
+      {
+       "speaker": "游客2",
+       "text": "现在八点十分。",
+       "tokens": [
+        "现在",
+        "八点十分"
+       ]
+      },
+      {
+       "speaker": "马修",
+       "text": "现在十一点十分。",
+       "tokens": [
+        "现在",
+        "十一点十分"
+       ]
+      },
+      {
+       "speaker": "游客3",
+       "text": "现在九点十分。",
+       "tokens": [
+        "现在",
+        "九点十分"
+       ]
+      },
+      {
+       "speaker": "游客1",
+       "text": "请问，现在几点？",
+       "tokens": [
+        "请问",
+        "现在几点"
+       ]
+      },
+      {
+       "speaker": "导游",
+       "text": "现在北京时间九点十分。",
+       "tokens": [
+        "现在",
+        "北京",
+        "时间",
+        "九点十分"
+       ]
+      },
+      {
+       "speaker": "马修",
+       "text": "不对。",
+       "tokens": [
+        "不",
+        "对"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "会话 2",
+     "original": "雪丽：迎迎，你几点下班？\n张迎迎：我六点下班。你什么时候下课？\n雪丽：我五点半下课。我们晚上一起吃饭吧。\n张迎迎：好啊！现在几点？\n雪丽：现在差一刻九点。\n张迎迎：哎呀，我九点上班。晚上见。\n雪丽：晚上几点见？\n张迎迎：六点二十。",
+     "lines": [
+      {
+       "name": "雪丽",
+       "zh": "迎迎，你几点下班？",
+       "py": "Yíngying, nǐ jǐ diǎn xiàbān?",
+       "en": "Yingying, what time do you get off work?"
+      },
+      {
+       "name": "张迎迎",
+       "zh": "我六点下班。你什么时候下课？",
+       "py": "Wǒ liù diǎn xiàbān. Nǐ shénme shíhou xiàkè?",
+       "en": "I get off at six. When does your class finish?"
+      },
+      {
+       "name": "雪丽",
+       "zh": "我五点半下课。我们晚上一起吃饭吧。",
+       "py": "Wǒ wǔ diǎn bàn xiàkè. Wǒmen wǎnshang yìqǐ chīfàn ba.",
+       "en": "My class ends at five thirty. Let's have dinner together tonight."
+      },
+      {
+       "name": "张迎迎",
+       "zh": "好啊！现在几点？",
+       "py": "Hǎo a! Xiànzài jǐ diǎn?",
+       "en": "Sure! What time is it now?"
+      },
+      {
+       "name": "雪丽",
+       "zh": "现在差一刻九点。",
+       "py": "Xiànzài chà yí kè jiǔ diǎn.",
+       "en": "It's a quarter to nine."
+      },
+      {
+       "name": "张迎迎",
+       "zh": "哎呀，我九点上班。晚上见。",
+       "py": "Āiyā, wǒ jiǔ diǎn shàngbān. Wǎnshang jiàn.",
+       "en": "Oh no, I start work at nine. See you tonight."
+      },
+      {
+       "name": "雪丽",
+       "zh": "晚上几点见？",
+       "py": "Wǎnshang jǐ diǎn jiàn?",
+       "en": "What time shall we meet tonight?"
+      },
+      {
+       "name": "张迎迎",
+       "zh": "六点二十。",
+       "py": "Liù diǎn èrshí.",
+       "en": "Six twenty."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "雪丽：迎迎，你几点下班？\n张迎迎：我"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "下班。你什么时候下课？\n雪丽：我"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "下课。我们晚上一起吃饭吧。\n张迎迎：好啊！现在几点？\n雪丽：现在"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "。\n张迎迎：哎呀，我"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "上班。晚上见。\n雪丽：晚上几点见？\n张迎迎："
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "六点",
+       "五点半",
+       "差一刻九点",
+       "九点",
+       "六点二十"
+      ]
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "张迎迎",
+       "text": "我六点下班。",
+       "tokens": [
+        "我",
+        "六点",
+        "下班"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "我五点半下课。",
+       "tokens": [
+        "我",
+        "五点半",
+        "下课"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "现在差一刻九点。",
+       "tokens": [
+        "现在",
+        "差一刻九点"
+       ]
+      },
+      {
+       "speaker": "张迎迎",
+       "text": "哎呀，我九点上班。",
+       "tokens": [
+        "哎呀",
+        "我",
+        "九点",
+        "上班"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "迎迎，你几点下班？",
+       "tokens": [
+        "迎",
+        "迎",
+        "你",
+        "几",
+        "点",
+        "下班"
+       ]
+      },
+      {
+       "speaker": "张迎迎",
+       "text": "你什么时候下课？",
+       "tokens": [
+        "你",
+        "什么",
+        "时候",
+        "下课"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "我们晚上一起吃饭吧。",
+       "tokens": [
+        "我们",
+        "晚上",
+        "一起",
+        "吃饭",
+        "吧"
+       ]
+      },
+      {
+       "speaker": "张迎迎",
+       "text": "好啊！",
+       "tokens": [
+        "好",
+        "啊"
+       ]
+      },
+      {
+       "speaker": "张迎迎",
+       "text": "现在几点？",
+       "tokens": [
+        "现在",
+        "几",
+        "点"
+       ]
+      },
+      {
+       "speaker": "张迎迎",
+       "text": "晚上见。",
+       "tokens": [
+        "晚上",
+        "见"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "晚上几点见？",
+       "tokens": [
+        "晚上",
+        "几",
+        "点",
+        "见"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "会话 1",
+     "original": "张迎迎：妈，这是我男朋友大卫，他的汉语很好。\n妈妈：欢迎！欢迎！\n大卫：阿姨好！\n妈妈：大卫，你多大？\n大卫：我25岁。\n妈妈：你家有几口人？\n大卫：我家有四口人，爸爸、妈妈、姐姐和我。\n妈妈：你爸爸、妈妈做什么工作？\n大卫：我爸爸是老师，妈妈是医生。\n妈妈：你姐姐……\n张迎迎：妈！您的问题太多了！",
+     "lines": [
+      {
+       "name": "张迎迎",
+       "zh": "妈，这是我男朋友大卫，他的汉语很好。",
+       "py": "Mā, zhè shì wǒ nánpéngyou Dàwèi, tā de Hànyǔ hěn hǎo.",
+       "en": "Mom, this is my boyfriend David. His Chinese is very good."
+      },
+      {
+       "name": "妈妈",
+       "zh": "欢迎！欢迎！",
+       "py": "Huānyíng! Huānyíng!",
+       "en": "Welcome! Welcome!"
+      },
+      {
+       "name": "大卫",
+       "zh": "阿姨好！",
+       "py": "Āyí hǎo!",
+       "en": "Hello, auntie!"
+      },
+      {
+       "name": "妈妈",
+       "zh": "大卫，你多大？",
+       "py": "Dàwèi, nǐ duō dà?",
+       "en": "David, how old are you?"
+      },
+      {
+       "name": "大卫",
+       "zh": "我25岁。",
+       "py": "Wǒ 25 suì.",
+       "en": "I'm 25 years old."
+      },
+      {
+       "name": "妈妈",
+       "zh": "你家有几口人？",
+       "py": "Nǐ jiā yǒu jǐ kǒu rén?",
+       "en": "How many people are in your family?"
+      },
+      {
+       "name": "大卫",
+       "zh": "我家有四口人，爸爸、妈妈、姐姐和我。",
+       "py": "Wǒ jiā yǒu sì kǒu rén, bàba, māma, jiějie hé wǒ.",
+       "en": "There are four people in my family: my dad, my mom, my older sister, and me."
+      },
+      {
+       "name": "妈妈",
+       "zh": "你爸爸、妈妈做什么工作？",
+       "py": "Nǐ bàba, māma zuò shénme gōngzuò?",
+       "en": "What do your mom and dad do for work?"
+      },
+      {
+       "name": "大卫",
+       "zh": "我爸爸是老师，妈妈是医生。",
+       "py": "Wǒ bàba shì lǎoshī, māma shì yīshēng.",
+       "en": "My dad is a teacher and my mom is a doctor."
+      },
+      {
+       "name": "妈妈",
+       "zh": "你姐姐……",
+       "py": "Nǐ jiějie……",
+       "en": "And your older sister..."
+      },
+      {
+       "name": "张迎迎",
+       "zh": "妈！您的问题太多了！",
+       "py": "Mā! Nín de wèntí tài duō le!",
+       "en": "Mom! You're asking too many questions!"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "张迎迎：妈，这是我男朋友"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "，他的汉语很好。\n妈妈："
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "！欢迎！\n大卫：阿姨好！\n妈妈：大卫，"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "？\n大卫：我25岁。\n妈妈："
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "？\n大卫：我家有四口人，爸爸、妈妈、姐姐和我。\n妈妈：你爸爸、妈妈做什么工作？\n大卫：我爸爸是老师，妈妈是医生。\n妈妈：你姐姐……\n张迎迎：妈！您的"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "太多了！"
+       }
+      ],
+      "answers": [
+       "大卫",
+       "欢迎",
+       "你多大",
+       "你家有几口人",
+       "问题"
+      ],
+      "tiles": {
+       "欢迎": {
+        "py": "huānyíng",
+        "en": "to welcome; welcome"
+       },
+       "问题": {
+        "py": "wèntí",
+        "en": "question; problem"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "张迎迎",
+       "text": "妈，这是我男朋友大卫，他的汉语很好。",
+       "tokens": [
+        "妈",
+        "这",
+        "是",
+        "我",
+        "男朋友",
+        "大卫",
+        "他",
+        "的",
+        "汉语",
+        "很",
+        "好"
+       ]
+      },
+      {
+       "speaker": "妈妈",
+       "text": "大卫，你多大？",
+       "tokens": [
+        "大卫",
+        "你多大"
+       ]
+      },
+      {
+       "speaker": "张迎迎",
+       "text": "您的问题太多了！",
+       "tokens": [
+        "您",
+        "的",
+        "问题",
+        "太",
+        "多",
+        "了"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "阿姨好！",
+       "tokens": [
+        "阿姨",
+        "好"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "我25岁。",
+       "tokens": [
+        "我",
+        "2",
+        "5",
+        "岁"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "我家有四口人，爸爸、妈妈、姐姐和我。",
+       "tokens": [
+        "我家",
+        "有",
+        "四",
+        "口",
+        "人",
+        "爸爸",
+        "妈妈",
+        "姐姐",
+        "和",
+        "我"
+       ]
+      },
+      {
+       "speaker": "妈妈",
+       "text": "你爸爸、妈妈做什么工作？",
+       "tokens": [
+        "你",
+        "爸爸",
+        "妈妈",
+        "做",
+        "什么",
+        "工作"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "我爸爸是老师，妈妈是医生。",
+       "tokens": [
+        "我",
+        "爸爸",
+        "是",
+        "老师",
+        "妈妈",
+        "是",
+        "医生"
+       ]
+      },
+      {
+       "speaker": "妈妈",
+       "text": "你姐姐……",
+       "tokens": [
+        "你",
+        "姐姐"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "会话 2",
+     "original": "思齐：这是谁？\n雪丽：这是我妹妹。\n思齐：她是学生吗？\n雪丽：是。\n思齐：她在哪儿学习？\n雪丽：她在北京大学学习。\n思齐：这是你弟弟吗？\n雪丽：我没有弟弟，这是我哥哥。\n思齐：他也是学生吗？\n雪丽：不是，他在银行工作。",
+     "lines": [
+      {
+       "name": "思齐",
+       "zh": "这是谁？",
+       "py": "Zhè shì shéi?",
+       "en": "Who is this?"
+      },
+      {
+       "name": "雪丽",
+       "zh": "这是我妹妹。",
+       "py": "Zhè shì wǒ mèimei.",
+       "en": "This is my younger sister."
+      },
+      {
+       "name": "思齐",
+       "zh": "她是学生吗？",
+       "py": "Tā shì xuéshēng ma?",
+       "en": "Is she a student?"
+      },
+      {
+       "name": "雪丽",
+       "zh": "是。",
+       "py": "Shì.",
+       "en": "Yes."
+      },
+      {
+       "name": "思齐",
+       "zh": "她在哪儿学习？",
+       "py": "Tā zài nǎr xuéxí?",
+       "en": "Where does she study?"
+      },
+      {
+       "name": "雪丽",
+       "zh": "她在北京大学学习。",
+       "py": "Tā zài Běijīng Dàxué xuéxí.",
+       "en": "She studies at Peking University."
+      },
+      {
+       "name": "思齐",
+       "zh": "这是你弟弟吗？",
+       "py": "Zhè shì nǐ dìdi ma?",
+       "en": "Is this your younger brother?"
+      },
+      {
+       "name": "雪丽",
+       "zh": "我没有弟弟，这是我哥哥。",
+       "py": "Wǒ méiyǒu dìdi, zhè shì wǒ gēge.",
+       "en": "I don't have a younger brother; this is my older brother."
+      },
+      {
+       "name": "思齐",
+       "zh": "他也是学生吗？",
+       "py": "Tā yě shì xuéshēng ma?",
+       "en": "Is he a student too?"
+      },
+      {
+       "name": "雪丽",
+       "zh": "不是，他在银行工作。",
+       "py": "Bú shì, tā zài yínháng gōngzuò.",
+       "en": "No, he works at a bank."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "思齐：这是谁？\n雪丽：这是我妹妹。\n思齐：她是学生吗？\n雪丽：是。\n思齐：她"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "学习？\n雪丽：她在北京大学学习。\n思齐：这是你弟弟吗？\n雪丽：我"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "弟弟，这是我哥哥。\n思齐：他"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "是学生吗？\n雪丽：不是，他在银行"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "。"
+       }
+      ],
+      "answers": [
+       "在哪儿",
+       "没有",
+       "也",
+       "工作"
+      ],
+      "tiles": {
+       "没有": {
+        "py": "méiyǒu",
+        "en": "to not have; there is/are not"
+       },
+       "也": {
+        "py": "yě",
+        "en": "also; too"
+       },
+       "工作": {
+        "py": "gōngzuò",
+        "en": "to work; work"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "思齐",
+       "text": "她在哪儿学习？",
+       "tokens": [
+        "她",
+        "在哪儿",
+        "学习"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "我没有弟弟，这是我哥哥。",
+       "tokens": [
+        "我",
+        "没有",
+        "弟弟",
+        "这",
+        "是",
+        "我",
+        "哥哥"
+       ]
+      },
+      {
+       "speaker": "思齐",
+       "text": "他也是学生吗？",
+       "tokens": [
+        "他",
+        "也",
+        "是",
+        "学生",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "不是，他在银行工作。",
+       "tokens": [
+        "不是",
+        "他",
+        "在",
+        "银行",
+        "工作"
+       ]
+      },
+      {
+       "speaker": "思齐",
+       "text": "这是谁？",
+       "tokens": [
+        "这",
+        "是",
+        "谁"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "这是我妹妹。",
+       "tokens": [
+        "这",
+        "是",
+        "我",
+        "妹妹"
+       ]
+      },
+      {
+       "speaker": "思齐",
+       "text": "她是学生吗？",
+       "tokens": [
+        "她",
+        "是",
+        "学生",
+        "吗"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "她在北京大学学习。",
+       "tokens": [
+        "她",
+        "在",
+        "北京",
+        "大学",
+        "学习"
+       ]
+      },
+      {
+       "speaker": "思齐",
+       "text": "这是你弟弟吗？",
+       "tokens": [
+        "这",
+        "是",
+        "你",
+        "弟弟",
+        "吗"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "会话 1",
+     "original": "雪丽：西瓜多少钱一斤？\n老板：西瓜两块五一斤。\n雪丽：我要这个。\n老板：好。十一块二。\n雪丽：苹果怎么卖？\n老板：苹果十块钱三斤。\n雪丽：要三斤。\n老板：好。一共二十一块二，二十一吧。",
+     "lines": [
+      {
+       "name": "雪丽",
+       "zh": "西瓜多少钱一斤？",
+       "py": "Xīguā duōshao qián yì jīn?",
+       "en": "How much is watermelon per jin (half kilo)?"
+      },
+      {
+       "name": "老板",
+       "zh": "西瓜两块五一斤。",
+       "py": "Xīguā liǎng kuài wǔ yì jīn.",
+       "en": "Watermelon is 2.5 yuan per jin."
+      },
+      {
+       "name": "雪丽",
+       "zh": "我要这个。",
+       "py": "Wǒ yào zhège.",
+       "en": "I'll take this one."
+      },
+      {
+       "name": "老板",
+       "zh": "好。十一块二。",
+       "py": "Hǎo. Shíyī kuài èr.",
+       "en": "Okay. That's 11.2 yuan."
+      },
+      {
+       "name": "雪丽",
+       "zh": "苹果怎么卖？",
+       "py": "Píngguǒ zěnme mài?",
+       "en": "How are the apples sold?"
+      },
+      {
+       "name": "老板",
+       "zh": "苹果十块钱三斤。",
+       "py": "Píngguǒ shí kuài qián sān jīn.",
+       "en": "Apples are 10 yuan for three jin."
+      },
+      {
+       "name": "雪丽",
+       "zh": "要三斤。",
+       "py": "Yào sān jīn.",
+       "en": "I'll take three jin."
+      },
+      {
+       "name": "老板",
+       "zh": "好。一共二十一块二，二十一吧。",
+       "py": "Hǎo. Yígòng èrshíyī kuài èr, èrshíyī ba.",
+       "en": "Okay. That's 21.2 yuan in total — let's just say 21."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "雪丽："
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "多少钱一斤？\n老板：西瓜"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "。\n雪丽：我要这个。\n老板：好。"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "。\n雪丽："
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "怎么卖？\n老板：苹果"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "。\n雪丽：要"
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "。\n老板：好。一共"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "，二十一吧。"
+       }
+      ],
+      "answers": [
+       "西瓜",
+       "两块五一斤",
+       "十一块二",
+       "苹果",
+       "十块钱三斤",
+       "三斤",
+       "二十一块二"
+      ],
+      "tiles": {
+       "西瓜": {
+        "py": "xīguā",
+        "en": "watermelon"
+       },
+       "苹果": {
+        "py": "píngguǒ",
+        "en": "apple"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "雪丽",
+       "text": "西瓜多少钱一斤？",
+       "tokens": [
+        "西瓜",
+        "多少钱",
+        "一",
+        "斤"
+       ]
+      },
+      {
+       "speaker": "老板",
+       "text": "西瓜两块五一斤。",
+       "tokens": [
+        "西瓜",
+        "两块五一斤"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "苹果怎么卖？",
+       "tokens": [
+        "苹果",
+        "怎么",
+        "卖"
+       ]
+      },
+      {
+       "speaker": "老板",
+       "text": "苹果十块钱三斤。",
+       "tokens": [
+        "苹果",
+        "十块钱三斤"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "要三斤。",
+       "tokens": [
+        "要",
+        "三斤"
+       ]
+      },
+      {
+       "speaker": "老板",
+       "text": "一共二十一块二，二十一吧。",
+       "tokens": [
+        "一共",
+        "二十一块二",
+        "二",
+        "十",
+        "一",
+        "吧"
+       ]
+      },
+      {
+       "speaker": "雪丽",
+       "text": "我要这个。",
+       "tokens": [
+        "我",
+        "要",
+        "这个"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "会话 2",
+     "original": "老板：您买什么？\n西田：我要两瓶矿泉水。\n老板：给。还要别的吗？\n西田：面包多少钱一个？\n老板：六块钱一个。\n西田：要一个。一共多少钱？\n老板：十块。\n西田：四块？\n老板：十块。",
+     "lines": [
+      {
+       "name": "老板",
+       "zh": "您买什么？",
+       "py": "Nín mǎi shénme?",
+       "en": "What would you like to buy?"
+      },
+      {
+       "name": "西田",
+       "zh": "我要两瓶矿泉水。",
+       "py": "Wǒ yào liǎng píng kuàngquánshuǐ.",
+       "en": "I'd like two bottles of mineral water."
+      },
+      {
+       "name": "老板",
+       "zh": "给。还要别的吗？",
+       "py": "Gěi. Hái yào bié de ma?",
+       "en": "Here you go. Anything else?"
+      },
+      {
+       "name": "西田",
+       "zh": "面包多少钱一个？",
+       "py": "Miànbāo duōshao qián yí gè?",
+       "en": "How much is one loaf of bread?"
+      },
+      {
+       "name": "老板",
+       "zh": "六块钱一个。",
+       "py": "Liù kuài qián yí gè.",
+       "en": "Six yuan each."
+      },
+      {
+       "name": "西田",
+       "zh": "要一个。一共多少钱？",
+       "py": "Yào yí gè. Yígòng duōshao qián?",
+       "en": "I'll take one. How much is it in total?"
+      },
+      {
+       "name": "老板",
+       "zh": "十块。",
+       "py": "Shí kuài.",
+       "en": "Ten yuan."
+      },
+      {
+       "name": "西田",
+       "zh": "四块？",
+       "py": "Sì kuài?",
+       "en": "Four yuan?"
+      },
+      {
+       "name": "老板",
+       "zh": "十块。",
+       "py": "Shí kuài.",
+       "en": "Ten yuan."
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "老板："
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "？\n西田：我要"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "矿泉水。\n老板：给。"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "？\n西田："
+       },
+       {
+        "b": 4
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "？\n老板："
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "。\n西田：要一个。"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "？\n老板："
+       },
+       {
+        "b": 8
+       },
+       {
+        "t": "。\n西田："
+       },
+       {
+        "b": 9
+       },
+       {
+        "t": "？\n老板：十块。"
+       }
+      ],
+      "answers": [
+       "您买什么",
+       "两瓶",
+       "还要别的吗",
+       "面包",
+       "多少钱一个",
+       "六块钱一个",
+       "一共多少钱",
+       "十块",
+       "四块"
+      ],
+      "tiles": {
+       "面包": {
+        "py": "miànbāo",
+        "en": "bread"
+       }
+      }
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "西田",
+       "text": "我要两瓶矿泉水。",
+       "tokens": [
+        "我",
+        "要",
+        "两瓶",
+        "矿泉水"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "面包多少钱一个？",
+       "tokens": [
+        "面包",
+        "多少钱一个"
+       ]
+      },
+      {
+       "speaker": "西田",
+       "text": "要一个。",
+       "tokens": [
+        "要",
+        "一个"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "name": "",
+   "texts": [
+    {
+     "n": 1,
+     "title": "会话 1",
+     "original": "思齐：您好！请问，洗手间在哪儿？\n服务员1：往左拐，一直走。\n思齐：好的，谢谢！\n服务员1：不客气！\n思齐：您好！请问，105房间在哪儿？\n服务员2：往前走，然后往右拐。\n思齐：好的，谢谢！\n服务员2：不客气！",
+     "lines": [
+      {
+       "name": "思齐",
+       "zh": "您好！请问，洗手间在哪儿？",
+       "py": "Nín hǎo! Qǐngwèn, xǐshǒujiān zài nǎr?",
+       "en": "Hello! Excuse me, where is the restroom?"
+      },
+      {
+       "name": "服务员1",
+       "zh": "往左拐，一直走。",
+       "py": "Wǎng zuǒ guǎi, yìzhí zǒu.",
+       "en": "Turn left and go straight."
+      },
+      {
+       "name": "思齐",
+       "zh": "好的，谢谢！",
+       "py": "Hǎo de, xièxie!",
+       "en": "Okay, thank you!"
+      },
+      {
+       "name": "服务员1",
+       "zh": "不客气！",
+       "py": "Bú kèqi!",
+       "en": "You're welcome!"
+      },
+      {
+       "name": "思齐",
+       "zh": "您好！请问，105房间在哪儿？",
+       "py": "Nín hǎo! Qǐngwèn, 105 fángjiān zài nǎr?",
+       "en": "Hello! Excuse me, where is room 105?"
+      },
+      {
+       "name": "服务员2",
+       "zh": "往前走，然后往右拐。",
+       "py": "Wǎng qián zǒu, ránhòu wǎng yòu guǎi.",
+       "en": "Go straight, then turn right."
+      },
+      {
+       "name": "思齐",
+       "zh": "好的，谢谢！",
+       "py": "Hǎo de, xièxie!",
+       "en": "Okay, thank you!"
+      },
+      {
+       "name": "服务员2",
+       "zh": "不客气！",
+       "py": "Bú kèqi!",
+       "en": "You're welcome!"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "思齐：您好！请问，"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "？\n服务员1："
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "，"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "。\n思齐："
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "，谢谢！\n服务员1：不客气！\n思齐：您好！请问，105"
+       },
+       {
+        "b": 5
+       },
+       {
+        "t": "？\n服务员2："
+       },
+       {
+        "b": 6
+       },
+       {
+        "t": "，然后"
+       },
+       {
+        "b": 7
+       },
+       {
+        "t": "。\n思齐：好的，谢谢！\n服务员2：不客气！"
+       }
+      ],
+      "answers": [
+       "洗手间在哪儿",
+       "往左拐",
+       "一直走",
+       "好的",
+       "房间在哪儿",
+       "往前走",
+       "往右拐"
+      ]
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "思齐",
+       "text": "请问，洗手间在哪儿？",
+       "tokens": [
+        "请问",
+        "洗手间在哪儿"
+       ]
+      },
+      {
+       "speaker": "服务员1",
+       "text": "往左拐，一直走。",
+       "tokens": [
+        "往左拐",
+        "一直走"
+       ]
+      },
+      {
+       "speaker": "思齐",
+       "text": "好的，谢谢！",
+       "tokens": [
+        "好的",
+        "谢谢"
+       ]
+      },
+      {
+       "speaker": "思齐",
+       "text": "请问，105房间在哪儿？",
+       "tokens": [
+        "请问",
+        "1",
+        "0",
+        "5",
+        "房间在哪儿"
+       ]
+      },
+      {
+       "speaker": "服务员2",
+       "text": "往前走，然后往右拐。",
+       "tokens": [
+        "往前走",
+        "然后",
+        "往右拐"
+       ]
+      },
+      {
+       "speaker": "思齐",
+       "text": "好的，谢谢！",
+       "tokens": [
+        "好的",
+        "谢谢"
+       ]
+      }
+     ],
+     "note": ""
+    },
+    {
+     "n": 2,
+     "title": "会话 2",
+     "original": "大卫：您好！请问，国家图书馆怎么走？\n路人1：对不起，我也不知道。\n大卫：您好！请问，国家图书馆怎么走？\n路人2：从这儿往南走，第二个路口往左拐。\n大卫：往南走，第二个路口，左拐。\n路人2：然后一直走到头，往右拐，再往前走500米，国家图书馆在马路西边。\n大卫：马路西边。好的，谢谢！请问，这边是西边吗？",
+     "lines": [
+      {
+       "name": "大卫",
+       "zh": "您好！请问，国家图书馆怎么走？",
+       "py": "Nín hǎo! Qǐngwèn, Guójiā Túshūguǎn zěnme zǒu?",
+       "en": "Hello! Excuse me, how do I get to the National Library?"
+      },
+      {
+       "name": "路人1",
+       "zh": "对不起，我也不知道。",
+       "py": "Duìbuqǐ, wǒ yě bù zhīdào.",
+       "en": "Sorry, I don't know either."
+      },
+      {
+       "name": "大卫",
+       "zh": "您好！请问，国家图书馆怎么走？",
+       "py": "Nín hǎo! Qǐngwèn, Guójiā Túshūguǎn zěnme zǒu?",
+       "en": "Hello! Excuse me, how do I get to the National Library?"
+      },
+      {
+       "name": "路人2",
+       "zh": "从这儿往南走，第二个路口往左拐。",
+       "py": "Cóng zhèr wǎng nán zǒu, dì-èr gè lùkǒu wǎng zuǒ guǎi.",
+       "en": "From here go south and turn left at the second intersection."
+      },
+      {
+       "name": "大卫",
+       "zh": "往南走，第二个路口，左拐。",
+       "py": "Wǎng nán zǒu, dì-èr gè lùkǒu, zuǒ guǎi.",
+       "en": "Go south, second intersection, turn left."
+      },
+      {
+       "name": "路人2",
+       "zh": "然后一直走到头，往右拐，再往前走500米，国家图书馆在马路西边。",
+       "py": "Ránhòu yìzhí zǒu dào tóu, wǎng yòu guǎi, zài wǎng qián zǒu 500 mǐ, Guójiā Túshūguǎn zài mǎlù xībian.",
+       "en": "Then go straight to the end, turn right, walk another 500 meters, and the National Library is on the west side of the road."
+      },
+      {
+       "name": "大卫",
+       "zh": "马路西边。好的，谢谢！请问，这边是西边吗？",
+       "py": "Mǎlù xībian. Hǎo de, xièxie! Qǐngwèn, zhèbian shì xībian ma?",
+       "en": "West side of the road. Okay, thank you! Excuse me, is this way west?"
+      }
+     ],
+     "vocab": {
+      "seg": [
+       {
+        "t": "大卫：您好！请问，国家图书馆"
+       },
+       {
+        "b": 1
+       },
+       {
+        "t": "？\n路人1：对不起，我也"
+       },
+       {
+        "b": 2
+       },
+       {
+        "t": "。\n大卫：您好！请问，国家图书馆怎么走？\n路人2：从这儿往南走，第二个路口往左拐。\n大卫：往南走，第二个路口，左拐。\n路人2：然后一直走到头，往右拐，再往前走500米，国家图书馆在"
+       },
+       {
+        "b": 3
+       },
+       {
+        "t": "。\n大卫：马路西边。好的，谢谢！请问，这边"
+       },
+       {
+        "b": 4
+       },
+       {
+        "t": "？"
+       }
+      ],
+      "answers": [
+       "怎么走",
+       "不知道",
+       "马路西边",
+       "是西边吗"
+      ]
+     },
+     "grammar": null,
+     "sentences": [
+      {
+       "speaker": "大卫",
+       "text": "请问，国家图书馆怎么走？",
+       "tokens": [
+        "请问",
+        "国家",
+        "图书馆",
+        "怎么走"
+       ]
+      },
+      {
+       "speaker": "路人1",
+       "text": "对不起，我也不知道。",
+       "tokens": [
+        "对不起",
+        "我",
+        "也",
+        "不知道"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "请问，国家图书馆怎么走？",
+       "tokens": [
+        "请问",
+        "国家",
+        "图书馆",
+        "怎么走"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "请问，这边是西边吗？",
+       "tokens": [
+        "请问",
+        "这边",
+        "是西边吗"
+       ]
+      },
+      {
+       "speaker": "路人2",
+       "text": "从这儿往南走，第二个路口往左拐。",
+       "tokens": [
+        "从",
+        "这儿",
+        "往",
+        "南",
+        "走",
+        "第二",
+        "个",
+        "路口",
+        "往",
+        "左",
+        "拐"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "往南走，第二个路口，左拐。",
+       "tokens": [
+        "往",
+        "南",
+        "走",
+        "第二",
+        "个",
+        "路口",
+        "左",
+        "拐"
+       ]
+      },
+      {
+       "speaker": "大卫",
+       "text": "好的，谢谢！",
+       "tokens": [
+        "好",
+        "的",
+        "谢谢"
+       ]
+      }
+     ],
+     "note": ""
+    }
+   ]
+  }
+ ]
+}

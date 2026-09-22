@@ -47,11 +47,13 @@
   --line: #d9cbb0;
   --line-soft: #e3d7bf;
 
-  --tone1: #e53935;
-  --tone2: #43a047;
-  --tone3: #1e88e5;
-  --tone4: #8e24aa;
-  --tone0: #9e9e9e;
+  /* Tone palette — earthy/muted to sit in the classical parchment scheme,
+     while keeping 4 distinct hues (red/green/blue/purple) for the pedagogy. */
+  --tone1: #c0392b; /* 朱砂 cinnabar red (level) */
+  --tone2: #3f7a52; /* 青绿 jade green (rising) */
+  --tone3: #2f6d8c; /* 黛蓝 muted teal-blue (dipping) */
+  --tone4: #7a4f86; /* 黛紫 muted plum (falling) */
+  --tone0: #8a7a5c; /* 暖褐灰 warm taupe (neutral) */
 
   --r-sm: 10px;
   --r-md: 16px;

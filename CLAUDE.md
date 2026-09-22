@@ -44,7 +44,8 @@ npm run convert    # regenerate word data src/data/hsk*.json etc. from xlsx (uv 
 npm run deploy     # build + publish dist to gh-pages branch
 
 # Texts + Grammar (not npm scripts — run via uv directly):
-uv run --with openpyxl python3 scripts/convert_texts.py            # xlsx → src/data/texts/*.json
+uv run --with openpyxl python3 scripts/convert_texts.py            # xlsx → src/data/texts/*.json (hsk/newhsk3)
+uv run --with openpyxl --with pypinyin python3 scripts/convert_360.py   # xlsx → src/data/texts/huihua360-*.json (会话360)
 uv run --with openpyxl python3 scripts/convert_grammar.py          # xlsx → src/data/grammar/*.json
 
 # Pinyin section (not npm scripts — run via uv directly):
@@ -123,6 +124,25 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   output). 课文 audio (读原文 dialogue lines + every 连词成句 `sentences[].text`) is generated via
   `gen_audio.py --texts` (`collect_text_lines`) and uploaded to the same Storage `audio` bucket; split
   sub-sentences without a pre-generated MP3 fall back to browser TTS until audio is regenerated.
+- **会话360 课文 come from a DIFFERENT converter** (`scripts/convert_360.py`, not `convert_texts.py`). Source =
+  the four `sources/汉语标准会话360句{1,2,3,4}_课文挖空练习整理_第1-8课*.xlsx` → `src/data/texts/huihua360-{1,2,3,4}.json`
+  (+ merged into `texts/meta.json`, HSK/newhsk3 entries kept), so `huihua360` gets the same 读原文 (`ReadPanel`)
+  + 生词挖空/连词成句 (`ExercisesPanel`) as HSK — no component changes. The 4 files have a **heterogeneous schema**
+  (different sheet names 挖空练习/练习内容; 句1/2 carry dialogue 拼音, 句3/4 don't; 句3/4 use `{{blank1}}`
+  website templates; 句4 has no 练习类型 column), so the converter does **not** trust the pre-blanked cloze text —
+  it REBUILDS both layers from the clean dialogue (对话原文 sheet) + the answer list: **生词挖空** blanks the
+  WORD/PHRASE answers over the full dialogue (an exercise counts as word-level when its mean answer length
+  ≤ `WORD_AVG`=4; longer = 整句挖空, left to 连词成句), first-occurrence + speaker-name-safe; **连词成句** is
+  derived via the SAME `convert_texts.build_sentences` engine (imported), with speaker names added to the
+  lexicon so a name-only line drops instead of fragmenting into single chars. Pinyin is zipped line-by-line
+  from the source for 句1/2; **句3/4 have no pinyin column, so it's generated with `pypinyin`** (tone-marked,
+  `to_pinyin()`) — all four units are now 100% pinyin. **English is hand/AI-authored** in `scripts/text_gloss_360.tsv`
+  (`汉字<TAB>English`, keyed by the exact speech line, speaker stripped; ~512 lines) and merged into each line's
+  `en` — the 360 source has zero English, so this TSV is the owned truth (edit it, not the JSON, then re-run).
+  Both `拼音`/`EN` reveal pills in `ReadPanel` (and 拼音 in 生词挖空) are shown **only when that text actually has
+  the data** (`t.hasPy`/`t.hasEn`), so there are no dead toggles. 生词挖空 tiles still get py/en from the flashcard
+  wordmap where a cloze answer is a flashcard word. One text = one 会话 (对话); a 课次 has ~2–4 会话 → ~2–4 「课文 N」
+  in the picker. 课次 1–8 == our lesson num, matching the flashcard units. Coverage: huihua360-1..4, all 8 lessons each.
 - **语法 (Grammar) data is generated too.** Source = the eight `sources/*_语法预习复习主表.xlsx` (HSK1–5 +
   新HSK3.0 第一/二/三册). `scripts/convert_grammar.py` reads each file's first sheet (「语法总表」/「语法语言点总表」,
   one row per grammar point keyed by 课次 = our lesson `num`), grouping points by lesson into
@@ -163,8 +183,11 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   If space is tight, English-primary. Card *content* is the Chinese being learned; *chrome* is bilingual.
 - **Flashcard front shows the 汉字 only.** Pinyin/English are on the back (or via the 👁 peek button).
 - **Tone-colored pinyin** is a pedagogical contract, not decoration. `src/utils/pinyinTones.js` splits
-  pinyin into syllables and wraps each in `.t1`–`.t4`/`.t0` (Pleco palette: 1 red / 2 green / 3 blue /
-  4 purple / neutral gray). Colors are fixed across themes; togglable via `useSettings.toneColors`.
+  pinyin into syllables and wraps each in `.t1`–`.t4`/`.t0`. The palette (`--tone1..4`/`--tone0` in
+  `main.css`) is an **earthy/muted set** (朱砂红/青绿/黛蓝/黛紫/暖褐灰) retuned to sit in the classical
+  scheme — still 4 distinct hues for the pedagogy, not the bright Pleco/Material colors. **Default OFF**
+  (`useSettings.toneColors: false` — users opt in; existing on-users keep their stored choice, no forced
+  migration). Colors are fixed across themes; togglable via `useSettings.toneColors`.
 
 ## Gotchas / non-obvious decisions
 
