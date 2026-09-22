@@ -1,0 +1,189 @@
+const e="huihua360",t=2,n=[{num:1,name:"",texts:[{n:1,title:"会话 1",original:`王小天：你想吃包子还是饺子？
+女朋友：我都不想吃。咱们吃面条儿吧。
+王小天：我不想吃面条儿。我最近每天都吃面条儿。
+女朋友：那你想吃什么？
+王小天：吃比萨，怎么样？
+（女朋友看到了比萨广告）
+女朋友：好主意。今天特价。
+王小天：太好了！`,lines:[{name:"王小天",zh:"你想吃包子还是饺子？",py:"Nǐ xiǎng chī bāozi háishi jiǎozi?",en:"Do you want to eat baozi or dumplings?"},{name:"女朋友",zh:"我都不想吃。咱们吃面条儿吧。",py:"Wǒ dōu bù xiǎng chī. Zánmen chī miàntiáor ba.",en:"I don't want either. Let's have noodles."},{name:"王小天",zh:"我不想吃面条儿。我最近每天都吃面条儿。",py:"Wǒ bù xiǎng chī miàntiáor. Wǒ zuìjìn měitiān dōu chī miàntiáor.",en:"I don't want noodles. I've been eating noodles every day lately."},{name:"女朋友",zh:"那你想吃什么？",py:"Nà nǐ xiǎng chī shénme?",en:"Then what do you want to eat?"},{name:"王小天",zh:"吃比萨，怎么样？",py:"Chī bǐsà, zěnmeyàng?",en:"How about pizza?"},{name:"",zh:"（女朋友看到了比萨广告）",py:"(Nǚpéngyou kàn dào le bǐsà guǎnggào.)",en:"(His girlfriend sees a pizza ad.)"},{name:"女朋友",zh:"好主意。今天特价。",py:"Hǎo zhǔyi. Jīntiān tèjià.",en:"Good idea. There's a special today."},{name:"王小天",zh:"太好了！",py:"Tài hǎo le!",en:"Great!"}],vocab:{seg:[{t:"王小天：你想吃"},{b:1},{t:"还是"},{b:2},{t:`？
+女朋友：我都不想吃。咱们吃`},{b:3},{t:`吧。
+王小天：我不想吃面条儿。我最近每天都吃面条儿。
+女朋友：那你想吃`},{b:4},{t:`？
+王小天：吃`},{b:5},{t:`，怎么样？
+（女朋友看到了比萨广告）
+女朋友：`},{b:6},{t:`。今天特价。
+王小天：太好了！`}],answers:["包子","饺子","面条儿","什么","比萨","好主意"],tiles:{包子:{py:"bāozi",en:"steamed stuffed bun"},饺子:{py:"jiǎozǐ",en:"dumpling"},面条儿:{py:"miàntiáor",en:"noodles"},什么:{py:"shénme",en:"what"},比萨:{py:"bǐsà",en:"pizza"}}},grammar:null,sentences:[{speaker:"王小天",text:"你想吃包子还是饺子？",tokens:["你","想","吃","包子","还是","饺子"]},{speaker:"女朋友",text:"咱们吃面条儿吧。",tokens:["咱们","吃","面条儿","吧"]},{speaker:"王小天",text:"我不想吃面条儿。",tokens:["我","不","想","吃","面条儿"]},{speaker:"王小天",text:"我最近每天都吃面条儿。",tokens:["我","最近","每天","都","吃","面条儿"]},{speaker:"女朋友",text:"那你想吃什么？",tokens:["那","你","想","吃","什么"]},{speaker:"王小天",text:"吃比萨，怎么样？",tokens:["吃","比萨","怎么样"]},{speaker:"",text:"（女朋友看到了比萨广告）",tokens:["女朋友","看到","了","比萨","广告"]},{speaker:"女朋友",text:"我都不想吃。",tokens:["我","都","不","想","吃"]},{speaker:"女朋友",text:"今天特价。",tokens:["今天","特价"]},{speaker:"王小天",text:"太好了！",tokens:["太","好","了"]}],note:""},{n:2,title:"会话 2",original:`服务员：欢迎光临！请问，您想喝点儿什么？
+学生：您好！我要一杯红茶。
+服务员：好的。您要大杯还是小杯？
+学生：大杯。
+服务员：今天这种蛋糕特价，您要一块儿吗？
+学生：真便宜，要一块儿。
+服务员：好的。您刷卡还是付现金？
+学生：刷卡。`,lines:[{name:"服务员",zh:"欢迎光临！请问，您想喝点儿什么？",py:"Huānyíng guānglín! Qǐngwèn, nín xiǎng hē diǎnr shénme?",en:"Welcome! What would you like to drink?"},{name:"学生",zh:"您好！我要一杯红茶。",py:"Nín hǎo! Wǒ yào yì bēi hóngchá.",en:"Hello! I'd like a cup of black tea."},{name:"服务员",zh:"好的。您要大杯还是小杯？",py:"Hǎo de. Nín yào dà bēi háishi xiǎo bēi?",en:"Sure. Would you like a large or a small?"},{name:"学生",zh:"大杯。",py:"Dà bēi.",en:"A large one."},{name:"服务员",zh:"今天这种蛋糕特价，您要一块儿吗？",py:"Jīntiān zhè zhǒng dàngāo tèjià, nín yào yí kuàir ma?",en:"This cake is on special today. Would you like a piece?"},{name:"学生",zh:"真便宜，要一块儿。",py:"Zhēn piányi, yào yí kuàir.",en:"That's really cheap — I'll take a piece."},{name:"服务员",zh:"好的。您刷卡还是付现金？",py:"Hǎo de. Nín shuākǎ háishi fù xiànjīn?",en:"Okay. Will you pay by card or cash?"},{name:"学生",zh:"刷卡。",py:"Shuākǎ.",en:"By card."}],vocab:{seg:[{t:"服务员："},{b:1},{t:`！请问，您想喝点儿什么？
+学生：您好！我要一杯红茶。
+服务员：好的。您要`},{b:2},{t:"还是"},{b:3},{t:`？
+学生：大杯。
+服务员：今天这种蛋糕特价，您要`},{b:4},{t:`吗？
+学生：真便宜，要一块儿。
+服务员：好的。您`},{b:5},{t:"还是"},{b:6},{t:`？
+学生：刷卡。`}],answers:["欢迎光临","大杯","小杯","一块儿","刷卡","付现金"],tiles:{一块儿:{py:"yíkuàir",en:"together"},刷卡:{py:"shuākǎ",en:"pay/swipe by card"}}},grammar:null,sentences:[{speaker:"服务员",text:"您要大杯还是小杯？",tokens:["您","要","大杯","还是","小杯"]},{speaker:"服务员",text:"今天这种蛋糕特价，您要一块儿吗？",tokens:["今天","这","种","蛋糕","特价","您","要","一块儿","吗"]},{speaker:"学生",text:"真便宜，要一块儿。",tokens:["真","便宜","要","一块儿"]},{speaker:"服务员",text:"您刷卡还是付现金？",tokens:["您","刷卡","还是","付现金"]},{speaker:"服务员",text:"请问，您想喝点儿什么？",tokens:["请问","您","想","喝","点儿","什么"]},{speaker:"学生",text:"我要一杯红茶。",tokens:["我","要","一杯","红茶"]},{speaker:"服务员",text:"好的。",tokens:["好","的"]},{speaker:"服务员",text:"好的。",tokens:["好","的"]}],note:""}]},{num:2,name:"",texts:[{n:1,title:"会话 1",original:`爱华：你好，我叫爱华，我住11层，1107。
+邻居：我住1106，很高兴认识你！
+爱华：认识你我也很高兴！这是你的小狗吗？
+邻居：是啊。它叫“小胖”。
+爱华：它眼睛真大！太可爱了。
+（狗向前迈了一步）
+邻居：别担心！
+爱华：没关系，我很喜欢小猫、小狗。`,lines:[{name:"爱华",zh:"你好，我叫爱华，我住11层，1107。",py:"Nǐ hǎo, wǒ jiào Àihuá, wǒ zhù 11 céng, 1107.",en:"Hi, my name is Aihua. I live on the 11th floor, room 1107."},{name:"邻居",zh:"我住1106，很高兴认识你！",py:"Wǒ zhù 1106, hěn gāoxìng rènshi nǐ!",en:"I live in 1106. Nice to meet you!"},{name:"爱华",zh:"认识你我也很高兴！这是你的小狗吗？",py:"Rènshi nǐ wǒ yě hěn gāoxìng! Zhè shì nǐ de xiǎo gǒu ma?",en:"Nice to meet you too! Is this your puppy?"},{name:"邻居",zh:"是啊。它叫“小胖”。",py:"Shì a. Tā jiào “Xiǎopàng”.",en:'Yes. Its name is "Xiaopang" (Little Chubby).'},{name:"爱华",zh:"它眼睛真大！太可爱了。",py:"Tā yǎnjing zhēn dà! Tài kě'ài le.",en:"Its eyes are so big! So cute."},{name:"",zh:"（狗向前迈了一步）",py:"(Gǒu xiàng qián mài le yí bù.)",en:"(The dog takes a step forward.)"},{name:"邻居",zh:"别担心！",py:"Bié dānxīn!",en:"Don't worry!"},{name:"爱华",zh:"没关系，我很喜欢小猫、小狗。",py:"Méi guānxi, wǒ hěn xǐhuan xiǎo māo, xiǎo gǒu.",en:"It's fine, I really like cats and dogs."}],vocab:{seg:[{t:"爱华：你好，我叫爱华，我住"},{b:1},{t:`，1107。
+邻居：我住1106，很高兴`},{b:2},{t:`！
+爱华：认识你我也很高兴！这是你的小狗吗？
+邻居：是啊。它叫“小胖”。
+爱华：它`},{b:3},{t:"真大！太"},{b:4},{t:`了。
+（狗向前迈了一步）
+邻居：别`},{b:5},{t:`！
+爱华：没关系，我很`},{b:6},{t:"小猫、小狗。"}],answers:["11层","认识你","眼睛","可爱","担心","喜欢"],tiles:{眼睛:{py:"yǎnjing",en:"eye; eyes"},可爱:{py:"kě'ài",en:"cute; lovely"},担心:{py:"dānxīn",en:"to worry"},喜欢:{py:"xǐhuan",en:"to like"}}},grammar:null,sentences:[{speaker:"爱华",text:"你好，我叫爱华，我住11层，1107。",tokens:["你好","我","叫","爱华","我","住","11层","1","1","0","7"]},{speaker:"邻居",text:"我住1106，很高兴认识你！",tokens:["我","住","1","1","0","6","很","高兴","认识你"]},{speaker:"爱华",text:"认识你我也很高兴！",tokens:["认识你","我","也","很","高兴"]},{speaker:"爱华",text:"它眼睛真大！",tokens:["它","眼睛","真","大"]},{speaker:"爱华",text:"太可爱了。",tokens:["太","可爱","了"]},{speaker:"邻居",text:"别担心！",tokens:["别","担心"]},{speaker:"爱华",text:"没关系，我很喜欢小猫、小狗。",tokens:["没关系","我","很","喜欢","小猫","小","狗"]},{speaker:"爱华",text:"这是你的小狗吗？",tokens:["这","是","你","的","小","狗","吗"]},{speaker:"邻居",text:"是啊。",tokens:["是","啊"]},{speaker:"邻居",text:"它叫“小胖”。",tokens:["它","叫","“","小","胖","”"]},{speaker:"",text:"（狗向前迈了一步）",tokens:["狗","向","前","迈","了","一","步"]}],note:""},{n:2,title:"会话 2",original:`学生：姐姐，爸妈身体怎么样？
+姐姐：爸妈身体都很好。你放心吧！
+学生：对了，我想看你新男朋友的照片。
+（姐姐给她看一张照片）
+学生：他个子真高！
+姐姐：他是健身教练。
+学生：他工作忙不忙？
+姐姐：他工作非常忙，周末也不休息。`,lines:[{name:"学生",zh:"姐姐，爸妈身体怎么样？",py:"Jiějie, bà-mā shēntǐ zěnmeyàng?",en:"Sis, how are Mom and Dad doing?"},{name:"姐姐",zh:"爸妈身体都很好。你放心吧！",py:"Bà-mā shēntǐ dōu hěn hǎo. Nǐ fàngxīn ba!",en:"Mom and Dad are both very well. Don't worry!"},{name:"学生",zh:"对了，我想看你新男朋友的照片。",py:"Duì le, wǒ xiǎng kàn nǐ xīn nánpéngyou de zhàopiàn.",en:"By the way, I'd like to see a photo of your new boyfriend."},{name:"",zh:"（姐姐给她看一张照片）",py:"(Jiějie gěi tā kàn yì zhāng zhàopiàn.)",en:"(The older sister shows her a photo.)"},{name:"学生",zh:"他个子真高！",py:"Tā gèzi zhēn gāo!",en:"He's so tall!"},{name:"姐姐",zh:"他是健身教练。",py:"Tā shì jiànshēn jiàoliàn.",en:"He's a fitness trainer."},{name:"学生",zh:"他工作忙不忙？",py:"Tā gōngzuò máng bu máng?",en:"Is he busy at work?"},{name:"姐姐",zh:"他工作非常忙，周末也不休息。",py:"Tā gōngzuò fēicháng máng, zhōumò yě bù xiūxi.",en:"He's very busy at work; he doesn't even rest on weekends."}],vocab:{seg:[{t:"学生：姐姐，爸妈"},{b:1},{t:`怎么样？
+姐姐：爸妈身体都很好。你`},{b:2},{t:`吧！
+学生：对了，我想看你新男朋友的`},{b:3},{t:`。
+（姐姐给她看一张照片）
+学生：他`},{b:4},{t:`真高！
+姐姐：他是`},{b:5},{t:`。
+学生：他工作忙不忙？
+姐姐：他工作`},{b:6},{t:"忙，"},{b:7},{t:"也不休息。"}],answers:["身体","放心","照片","个子","健身教练","非常","周末"],tiles:{身体:{py:"shēntǐ",en:"body; health"},放心:{py:"fàngxīn",en:"to feel relieved; don't worry"},照片:{py:"zhàopiàn",en:"photo"},个子:{py:"gèzi",en:"height; stature"},非常:{py:"fēicháng",en:"very; extremely"},周末:{py:"zhōumò",en:"weekend"}}},grammar:null,sentences:[{speaker:"学生",text:"姐姐，爸妈身体怎么样？",tokens:["姐姐","爸","妈","身体","怎么样"]},{speaker:"姐姐",text:"爸妈身体都很好。",tokens:["爸","妈","身体","都","很","好"]},{speaker:"姐姐",text:"你放心吧！",tokens:["你","放心","吧"]},{speaker:"学生",text:"对了，我想看你新男朋友的照片。",tokens:["对了","我","想","看","你","新","男朋友","的","照片"]},{speaker:"",text:"（姐姐给她看一张照片）",tokens:["姐姐","给","她","看","一","张","照片"]},{speaker:"学生",text:"他个子真高！",tokens:["他","个子","真","高"]},{speaker:"姐姐",text:"他是健身教练。",tokens:["他","是","健身教练"]},{speaker:"姐姐",text:"他工作非常忙，周末也不休息。",tokens:["他","工作","非常","忙","周末","也","不","休息"]},{speaker:"学生",text:"他工作忙不忙？",tokens:["他","工作","忙","不","忙"]}],note:""}]},{num:3,name:"",texts:[{n:1,title:"会话 1",original:`西田：你喜欢唱歌吗？
+诺敏：我喜欢听歌，唱歌唱得不太好。
+西田：我喜欢唱歌、看电影、旅游、打网球……
+诺敏：是吗？你的爱好真多！
+西田：你有什么爱好？
+诺敏：我也喜欢网球，不过我不会打。
+西田：没关系，我教你。`,lines:[{name:"西田",zh:"你喜欢唱歌吗？",py:"Nǐ xǐhuan chàng gē ma?",en:"Do you like singing?"},{name:"诺敏",zh:"我喜欢听歌，唱歌唱得不太好。",py:"Wǒ xǐhuan tīng gē, chàng gē chàng de bú tài hǎo.",en:"I like listening to songs, but I don't sing very well."},{name:"西田",zh:"我喜欢唱歌、看电影、旅游、打网球……",py:"Wǒ xǐhuan chàng gē, kàn diànyǐng, lǚyóu, dǎ wǎngqiú……",en:"I like singing, watching movies, traveling, playing tennis..."},{name:"诺敏",zh:"是吗？你的爱好真多！",py:"Shì ma? Nǐ de àihào zhēn duō!",en:"Really? You have so many hobbies!"},{name:"西田",zh:"你有什么爱好？",py:"Nǐ yǒu shénme àihào?",en:"What hobbies do you have?"},{name:"诺敏",zh:"我也喜欢网球，不过我不会打。",py:"Wǒ yě xǐhuan wǎngqiú, búguò wǒ bú huì dǎ.",en:"I like tennis too, but I don't know how to play."},{name:"西田",zh:"没关系，我教你。",py:"Méi guānxi, wǒ jiāo nǐ.",en:"No problem, I'll teach you."}],vocab:{seg:[{t:"西田：你喜欢"},{b:1},{t:`吗？
+诺敏：我喜欢`},{b:2},{t:"，唱歌唱得"},{b:3},{t:`太好。
+西田：我喜欢唱歌、`},{b:4},{t:"、旅游、"},{b:5},{t:`……
+诺敏：是吗？你的`},{b:6},{b:7},{t:`多！
+西田：你有`},{b:8},{t:`爱好？
+诺敏：我也喜欢`},{b:9},{t:"，不过我不会"},{b:10},{t:`。
+西田：没关系，我`},{b:11},{t:"。"}],answers:["唱歌","听歌","不","看电影","打网球","爱好","真","什么","网球","打","教你"],tiles:{唱歌:{py:"chànggē",en:"sing"},不:{py:"bù",en:"not; no"},爱好:{py:"àihào",en:"hobby; interest"},真:{py:"zhēn",en:"really; truly"},什么:{py:"shénme",en:"what"},网球:{py:"wǎngqiú",en:"tennis"},打:{py:"dǎ",en:"to play; hit"}}},grammar:null,sentences:[{speaker:"西田",text:"你喜欢唱歌吗？",tokens:["你","喜欢","唱歌","吗"]},{speaker:"诺敏",text:"我喜欢听歌，唱歌唱得不太好。",tokens:["我","喜欢","听歌","唱歌","唱","得","不太","好"]},{speaker:"西田",text:"我喜欢唱歌、看电影、旅游、打网球……",tokens:["我","喜欢","唱歌","看电影","旅游","打网球"]},{speaker:"诺敏",text:"你的爱好真多！",tokens:["你","的","爱好","真","多"]},{speaker:"西田",text:"你有什么爱好？",tokens:["你","有","什么","爱好"]},{speaker:"诺敏",text:"我也喜欢网球，不过我不会打。",tokens:["我","也","喜欢","网球","不过","我","不会","打"]},{speaker:"西田",text:"没关系，我教你。",tokens:["没关系","我","教你"]},{speaker:"诺敏",text:"是吗？",tokens:["是","吗"]}],note:""},{n:2,title:"会话 2",original:`面试官：请进。请坐。
+大树：您好！我叫大树。
+面试官：你好，大树。你的特长是什么？
+大树：我会说四种语言：英语、法语、意大利语和汉语。
+面试官：你的汉语说得不错，你会唱汉语歌吗？
+大树：会，我唱汉语歌唱得还可以。
+面试官：好。除了这些，你还有什么特长？
+大树：我还会中国功夫。`,lines:[{name:"面试官",zh:"请进。请坐。",py:"Qǐng jìn. Qǐng zuò.",en:"Come in. Please have a seat."},{name:"大树",zh:"您好！我叫大树。",py:"Nín hǎo! Wǒ jiào Dàshù.",en:"Hello! My name is Dashu."},{name:"面试官",zh:"你好，大树。你的特长是什么？",py:"Nǐ hǎo, Dàshù. Nǐ de tècháng shì shénme?",en:"Hi, Dashu. What are your special skills?"},{name:"大树",zh:"我会说四种语言：英语、法语、意大利语和汉语。",py:"Wǒ huì shuō sì zhǒng yǔyán: Yīngyǔ, Fǎyǔ, Yìdàlìyǔ hé Hànyǔ.",en:"I can speak four languages: English, French, Italian, and Chinese."},{name:"面试官",zh:"你的汉语说得不错，你会唱汉语歌吗？",py:"Nǐ de Hànyǔ shuō de búcuò, nǐ huì chàng Hànyǔ gē ma?",en:"You speak Chinese well. Can you sing Chinese songs?"},{name:"大树",zh:"会，我唱汉语歌唱得还可以。",py:"Huì, wǒ chàng Hànyǔ gē chàng de hái kěyǐ.",en:"Yes, I sing Chinese songs pretty well."},{name:"面试官",zh:"好。除了这些，你还有什么特长？",py:"Hǎo. Chúle zhèxiē, nǐ hái yǒu shénme tècháng?",en:"Good. Besides these, what other skills do you have?"},{name:"大树",zh:"我还会中国功夫。",py:"Wǒ hái huì Zhōngguó gōngfu.",en:"I also know Chinese kung fu."}],vocab:{seg:[{t:"面试官：请进。请"},{b:1},{t:`。
+大树：您好！我叫大树。
+面试官：你好，大树。你的`},{b:2},{t:`是什么？
+大树：我会说`},{b:3},{t:`：英语、法语、意大利语和汉语。
+面试官：你的汉语说得不错，你会`},{b:4},{t:`吗？
+大树：会，我唱`},{b:5},{t:`得还可以。
+面试官：好。`},{b:6},{t:`这些，你还有什么特长？
+大树：我还会中国`},{b:7},{t:"。"}],answers:["坐","特长","四种语言","唱汉语歌","汉语歌唱","除了","功夫"],tiles:{坐:{py:"zuò",en:"to sit; to take (transport)"},特长:{py:"tècháng",en:"special skill; strong point"},除了:{py:"chúle",en:"besides; except"},功夫:{py:"gōngfu",en:"kung fu"}}},grammar:null,sentences:[{speaker:"面试官",text:"你的特长是什么？",tokens:["你","的","特长","是","什么"]},{speaker:"大树",text:"我会说四种语言：英语、法语、意大利语和汉语。",tokens:["我","会","说","四种语言","英语","法语","意","大","利","语","和","汉语"]},{speaker:"面试官",text:"你的汉语说得不错，你会唱汉语歌吗？",tokens:["你","的","汉语","说","得","不错","你","会","唱汉语歌","吗"]},{speaker:"大树",text:"会，我唱汉语歌唱得还可以。",tokens:["会","我","唱汉语歌","唱","得","还可以"]},{speaker:"面试官",text:"除了这些，你还有什么特长？",tokens:["除了","这些","你","还有","什么","特长"]},{speaker:"大树",text:"我还会中国功夫。",tokens:["我","还","会","中国","功夫"]},{speaker:"面试官",text:"请进。",tokens:["请","进"]},{speaker:"大树",text:"我叫大树。",tokens:["我","叫","大树"]},{speaker:"面试官",text:"你好，大树。",tokens:["你好","大树"]}],note:""}]},{num:4,name:"",texts:[{n:1,title:"会话 1",original:`朋友：你去过上海吗？假期我们一起去上海吧。
+李君：我以前去过上海。
+朋友：杭州呢？你去过杭州吗？
+李君：杭州我也去过。
+朋友：你还去过哪儿？
+李君：我还去过西安、昆明、广州……
+朋友：你去过的地方真多啊！`,lines:[{name:"朋友",zh:"你去过上海吗？假期我们一起去上海吧。",py:"Nǐ qùguo Shànghǎi ma? Jiàqī wǒmen yìqǐ qù Shànghǎi ba.",en:"Have you been to Shanghai? Let's go to Shanghai together during the holiday."},{name:"李君",zh:"我以前去过上海。",py:"Wǒ yǐqián qùguo Shànghǎi.",en:"I've been to Shanghai before."},{name:"朋友",zh:"杭州呢？你去过杭州吗？",py:"Hángzhōu ne? Nǐ qùguo Hángzhōu ma?",en:"What about Hangzhou? Have you been to Hangzhou?"},{name:"李君",zh:"杭州我也去过。",py:"Hángzhōu wǒ yě qùguo.",en:"I've been to Hangzhou too."},{name:"朋友",zh:"你还去过哪儿？",py:"Nǐ hái qùguo nǎr?",en:"Where else have you been?"},{name:"李君",zh:"我还去过西安、昆明、广州……",py:"Wǒ hái qùguo Xī'ān, Kūnmíng, Guǎngzhōu……",en:"I've also been to Xi'an, Kunming, Guangzhou..."},{name:"朋友",zh:"你去过的地方真多啊！",py:"Nǐ qùguo de dìfang zhēn duō a!",en:"You've been to so many places!"}],vocab:{seg:[{t:"朋友：你去过上海吗？"},{b:1},{t:`我们一起去上海吧。
+李君：我`},{b:2},{t:`去过上海。
+朋友：杭州呢？你去过杭州吗？
+李君：杭州我`},{b:3},{t:`去过。
+朋友：你`},{b:4},{t:"去过"},{b:5},{t:`？
+李君：我还去过西安、昆明、广州……
+朋友：你去过的`},{b:6},{t:"真多啊！"}],answers:["假期","以前","也","还","哪儿","地方"],tiles:{假期:{py:"jiàqī",en:"holiday; vacation"},以前:{py:"yǐqián",en:"before; formerly"},也:{py:"yě",en:"also; too"},还:{py:"huán",en:"to return; to give back"},哪儿:{py:"nǎr",en:"where"},地方:{py:"dìfang",en:"place"}}},grammar:null,sentences:[{speaker:"朋友",text:"假期我们一起去上海吧。",tokens:["假期","我们","一起","去","上海","吧"]},{speaker:"李君",text:"我以前去过上海。",tokens:["我","以前","去过","上海"]},{speaker:"李君",text:"杭州我也去过。",tokens:["杭州","我","也","去过"]},{speaker:"朋友",text:"你还去过哪儿？",tokens:["你","还","去过","哪儿"]},{speaker:"李君",text:"我还去过西安、昆明、广州……",tokens:["我","还","去过","西安","昆","明","广","州"]},{speaker:"朋友",text:"你去过的地方真多啊！",tokens:["你","去过","的","地方","真","多","啊"]},{speaker:"朋友",text:"你去过上海吗？",tokens:["你","去过","上海","吗"]},{speaker:"朋友",text:"杭州呢？",tokens:["杭州","呢"]},{speaker:"朋友",text:"你去过杭州吗？",tokens:["你","去过","杭州","吗"]}],note:""},{n:2,title:"会话 2",original:`张迎迎：咱们中午订外卖吧。
+同事：好，我上网看看。这家怎么样？
+张迎迎：我去过这家饭馆儿，菜都很辣。
+同事：这家西餐厅吧，我吃过，味道不错。
+张迎迎：这家我上个星期订过，送得特别慢，别订这家。
+同事：这家上海菜很有名，我还没吃过呢。
+张迎迎：我也没吃过，可以试试。`,lines:[{name:"张迎迎",zh:"咱们中午订外卖吧。",py:"Zánmen zhōngwǔ dìng wàimài ba.",en:"Let's order takeout for lunch."},{name:"同事",zh:"好，我上网看看。这家怎么样？",py:"Hǎo, wǒ shàngwǎng kànkan. Zhè jiā zěnmeyàng?",en:"Sure, I'll look online. How about this place?"},{name:"张迎迎",zh:"我去过这家饭馆儿，菜都很辣。",py:"Wǒ qùguo zhè jiā fànguǎnr, cài dōu hěn là.",en:"I've been to this restaurant; the food is all very spicy."},{name:"同事",zh:"这家西餐厅吧，我吃过，味道不错。",py:"Zhè jiā xīcāntīng ba, wǒ chīguo, wèidào búcuò.",en:"How about this Western restaurant? I've eaten there; the food is good."},{name:"张迎迎",zh:"这家我上个星期订过，送得特别慢，别订这家。",py:"Zhè jiā wǒ shàng ge xīngqī dìngguo, sòng de tèbié màn, bié dìng zhè jiā.",en:"I ordered from this one last week; delivery was really slow. Don't order from here."},{name:"同事",zh:"这家上海菜很有名，我还没吃过呢。",py:"Zhè jiā Shànghǎi cài hěn yǒumíng, wǒ hái méi chīguo ne.",en:"This Shanghai restaurant is famous; I haven't tried it yet."},{name:"张迎迎",zh:"我也没吃过，可以试试。",py:"Wǒ yě méi chīguo, kěyǐ shìshi.",en:"I haven't tried it either. Let's give it a try."}],vocab:{seg:[{t:"张迎迎：咱们中午"},{b:1},{t:`吧。
+同事：好，我`},{b:2},{t:`看看。这家怎么样？
+张迎迎：我去过这家饭馆儿，`},{b:3},{t:`。
+同事：这家西餐厅吧，我吃过，`},{b:4},{t:`。
+张迎迎：这家我上个星期订过，`},{b:5},{t:`，别订这家。
+同事：这家上海菜`},{b:6},{t:`，我还没吃过呢。
+张迎迎：我也没吃过，`},{b:7},{t:"。"}],answers:["订外卖","上网","菜都很辣","味道不错","送得特别慢","很有名","可以试试"],tiles:{上网:{py:"shàngwǎng",en:"to go online"}}},grammar:null,sentences:[{speaker:"张迎迎",text:"咱们中午订外卖吧。",tokens:["咱们","中午","订外卖","吧"]},{speaker:"同事",text:"好，我上网看看。",tokens:["好","我","上网","看看"]},{speaker:"张迎迎",text:"我去过这家饭馆儿，菜都很辣。",tokens:["我","去过","这家","饭馆","儿","菜都很辣"]},{speaker:"同事",text:"这家西餐厅吧，我吃过，味道不错。",tokens:["这家","西餐厅","吧","我","吃","过","味道不错"]},{speaker:"张迎迎",text:"这家我上个星期订过，送得特别慢，别订这家。",tokens:["这家","我","上","个","星期","订","过","送得特别慢","别","订","这家"]},{speaker:"同事",text:"这家上海菜很有名，我还没吃过呢。",tokens:["这家","上海","菜","很有名","我","还","没","吃","过","呢"]},{speaker:"张迎迎",text:"我也没吃过，可以试试。",tokens:["我","也","没","吃","过","可以试试"]},{speaker:"同事",text:"这家怎么样？",tokens:["这家","怎么样"]}],note:""}]},{num:5,name:"",texts:[{n:1,title:"会话 1",original:`王小天：周末你去哪儿了？
+学生：我跟同学一起去郊区滑雪了。
+王小天：滑雪？好玩儿吗？
+学生：很好玩儿，那儿的滑雪场特别棒，人也不多。
+王小天：我还没滑过雪呢。难不难？
+学生：不难，你不怕摔就行。下次我请你去。
+王小天：我想想吧。`,lines:[{name:"王小天",zh:"周末你去哪儿了？",py:"Zhōumò nǐ qù nǎr le?",en:"Where did you go over the weekend?"},{name:"学生",zh:"我跟同学一起去郊区滑雪了。",py:"Wǒ gēn tóngxué yìqǐ qù jiāoqū huáxuě le.",en:"I went skiing in the suburbs with a classmate."},{name:"王小天",zh:"滑雪？好玩儿吗？",py:"Huáxuě? Hǎowánr ma?",en:"Skiing? Was it fun?"},{name:"学生",zh:"很好玩儿，那儿的滑雪场特别棒，人也不多。",py:"Hěn hǎowánr, nàr de huáxuěchǎng tèbié bàng, rén yě bù duō.",en:"It was great fun. The ski resort there is excellent, and it wasn't crowded."},{name:"王小天",zh:"我还没滑过雪呢。难不难？",py:"Wǒ hái méi huáguo xuě ne. Nán bu nán?",en:"I've never skied before. Is it hard?"},{name:"学生",zh:"不难，你不怕摔就行。下次我请你去。",py:"Bù nán, nǐ bú pà shuāi jiù xíng. Xià cì wǒ qǐng nǐ qù.",en:"It's not hard, as long as you're not afraid of falling. Next time I'll take you."},{name:"王小天",zh:"我想想吧。",py:"Wǒ xiǎngxiang ba.",en:"Let me think about it."}],vocab:{seg:[{t:"王小天："},{b:1},{t:`你去哪儿了？
+学生：我`},{b:2},{t:`去郊区滑雪了。
+王小天：滑雪？好玩儿吗？
+学生：很好玩儿，那儿的滑雪场`},{b:3},{t:`，人也不多。
+王小天：我还没滑过雪呢。难不难？
+学生：不难，你`},{b:4},{t:`就行。下次我请你去。
+王小天：我`},{b:5},{t:"吧。"}],answers:["周末","跟同学一起","特别棒","不怕摔","想想"],tiles:{周末:{py:"zhōumò",en:"weekend"}}},grammar:null,sentences:[{speaker:"王小天",text:"周末你去哪儿了？",tokens:["周末","你","去","哪儿","了"]},{speaker:"学生",text:"我跟同学一起去郊区滑雪了。",tokens:["我","跟同学一起","去","郊区","滑雪","了"]},{speaker:"学生",text:"很好玩儿，那儿的滑雪场特别棒，人也不多。",tokens:["很","好玩儿","那儿","的","滑雪场","特别棒","人","也","不","多"]},{speaker:"学生",text:"不难，你不怕摔就行。",tokens:["不","难","你","不怕摔","就行"]},{speaker:"王小天",text:"我想想吧。",tokens:["我","想想","吧"]},{speaker:"王小天",text:"好玩儿吗？",tokens:["好玩儿","吗"]},{speaker:"王小天",text:"我还没滑过雪呢。",tokens:["我","还","没","滑","过","雪","呢"]},{speaker:"王小天",text:"难不难？",tokens:["难","不","难"]},{speaker:"学生",text:"下次我请你去。",tokens:["下次","我","请","你","去"]}],note:""},{n:2,title:"会话 2",original:`姐姐：星期天你都干什么了？
+小美：几个朋友来我家吃饭了。
+姐姐：你会做饭吗？
+小美：我们要求每个人带一个菜。
+姐姐：这真是个好办法！你也做菜了吗？
+小美：做了。你猜我做什么了。
+姐姐：一定是沙拉。`,lines:[{name:"姐姐",zh:"星期天你都干什么了？",py:"Xīngqītiān nǐ dōu gàn shénme le?",en:"What did you do on Sunday?"},{name:"小美",zh:"几个朋友来我家吃饭了。",py:"Jǐ ge péngyou lái wǒ jiā chīfàn le.",en:"A few friends came to my place for dinner."},{name:"姐姐",zh:"你会做饭吗？",py:"Nǐ huì zuò fàn ma?",en:"Can you cook?"},{name:"小美",zh:"我们要求每个人带一个菜。",py:"Wǒmen yāoqiú měi ge rén dài yí ge cài.",en:"We asked everyone to bring one dish."},{name:"姐姐",zh:"这真是个好办法！你也做菜了吗？",py:"Zhè zhēn shì ge hǎo bànfǎ! Nǐ yě zuò cài le ma?",en:"That's a great idea! Did you cook something too?"},{name:"小美",zh:"做了。你猜我做什么了。",py:"Zuò le. Nǐ cāi wǒ zuò shénme le.",en:"Yes. Guess what I made."},{name:"姐姐",zh:"一定是沙拉。",py:"Yídìng shì shālā.",en:"It must be salad."}],vocab:{seg:[{t:"姐姐：星期天你都"},{b:1},{t:`了？
+小美：`},{b:2},{t:`来我家吃饭了。
+姐姐：你会`},{b:3},{t:`吗？
+小美：我们`},{b:4},{t:`每个人带一个菜。
+姐姐：这真是个`},{b:5},{t:`！你也做菜了吗？
+小美：做了。`},{b:6},{t:`我做什么了。
+姐姐：`},{b:7},{t:"是沙拉。"}],answers:["干什么","几个朋友","做饭","要求","好办法","你猜","一定"],tiles:{做饭:{py:"zuòfàn",en:"cook; make a meal"},要求:{py:"yāoqiú",en:"requirement; to require"},一定:{py:"yídìng",en:"certainly; must"}}},grammar:null,sentences:[{speaker:"姐姐",text:"星期天你都干什么了？",tokens:["星期天","你","都","干什么","了"]},{speaker:"小美",text:"几个朋友来我家吃饭了。",tokens:["几个朋友","来","我家","吃饭","了"]},{speaker:"姐姐",text:"你会做饭吗？",tokens:["你","会","做饭","吗"]},{speaker:"小美",text:"我们要求每个人带一个菜。",tokens:["我们","要求","每","个人","带","一个","菜"]},{speaker:"姐姐",text:"这真是个好办法！",tokens:["这","真","是","个","好办法"]},{speaker:"小美",text:"你猜我做什么了。",tokens:["你猜","我","做","什么","了"]},{speaker:"姐姐",text:"一定是沙拉。",tokens:["一定","是","沙拉"]},{speaker:"姐姐",text:"你也做菜了吗？",tokens:["你","也","做","菜","了","吗"]},{speaker:"小美",text:"做了。",tokens:["做","了"]}],note:""}]},{num:6,name:"",texts:[{n:1,title:"会话 1",original:`诺敏：请进。
+爱华：诺敏，你怎么还不起床？今天不上课吗？
+诺敏：我有点儿不舒服。
+爱华：怎么了？
+诺敏：我头很疼，觉得特别冷。
+爱华：是不是发烧了？量量体温吧。
+诺敏：我现在只想睡觉。
+爱华：38度5。还是去医院看看吧。`,lines:[{name:"诺敏",zh:"请进。",py:"Qǐng jìn.",en:"Come in."},{name:"爱华",zh:"诺敏，你怎么还不起床？今天不上课吗？",py:"Nuòmǐn, nǐ zěnme hái bù qǐchuáng? Jīntiān bú shàngkè ma?",en:"Nuomin, why aren't you up yet? Don't you have class today?"},{name:"诺敏",zh:"我有点儿不舒服。",py:"Wǒ yǒudiǎnr bù shūfu.",en:"I feel a little unwell."},{name:"爱华",zh:"怎么了？",py:"Zěnme le?",en:"What's wrong?"},{name:"诺敏",zh:"我头很疼，觉得特别冷。",py:"Wǒ tóu hěn téng, juéde tèbié lěng.",en:"My head really hurts and I feel very cold."},{name:"爱华",zh:"是不是发烧了？量量体温吧。",py:"Shì bu shì fāshāo le? Liángliang tǐwēn ba.",en:"Do you have a fever? Let's take your temperature."},{name:"诺敏",zh:"我现在只想睡觉。",py:"Wǒ xiànzài zhǐ xiǎng shuìjiào.",en:"Right now I just want to sleep."},{name:"爱华",zh:"38度5。还是去医院看看吧。",py:"38 dù 5. Háishi qù yīyuàn kànkan ba.",en:"38.5 degrees. You'd better go to the hospital."}],vocab:{seg:[{t:`诺敏：请进。
+爱华：诺敏，你怎么还`},{b:1},{t:`？今天不上课吗？
+诺敏：我有点儿`},{b:2},{t:`。
+爱华：怎么了？
+诺敏：我`},{b:3},{t:"，觉得"},{b:4},{t:`。
+爱华：是不是`},{b:5},{t:"了？"},{b:6},{t:`体温吧。
+诺敏：我现在`},{b:7},{t:`想睡觉。
+爱华：38度5。`},{b:8},{t:"去医院看看吧。"}],answers:["不起床","不舒服","头很疼","特别冷","发烧","量量","只","还是"],tiles:{发烧:{py:"fāshāo",en:"to have a fever"},只:{py:"zhǐ",en:"only; just"},还是:{py:"háishi",en:"or; still"}}},grammar:null,sentences:[{speaker:"爱华",text:"诺敏，你怎么还不起床？",tokens:["诺敏","你","怎么","还","不起床"]},{speaker:"诺敏",text:"我有点儿不舒服。",tokens:["我","有点儿","不舒服"]},{speaker:"诺敏",text:"我头很疼，觉得特别冷。",tokens:["我","头很疼","觉得","特别冷"]},{speaker:"爱华",text:"是不是发烧了？",tokens:["是不是","发烧","了"]},{speaker:"爱华",text:"量量体温吧。",tokens:["量量","体温","吧"]},{speaker:"诺敏",text:"我现在只想睡觉。",tokens:["我","现在","只","想","睡觉"]},{speaker:"爱华",text:"还是去医院看看吧。",tokens:["还是","去","医院","看看","吧"]},{speaker:"诺敏",text:"请进。",tokens:["请","进"]},{speaker:"爱华",text:"今天不上课吗？",tokens:["今天","不","上课","吗"]},{speaker:"爱华",text:"怎么了？",tokens:["怎么","了"]},{speaker:"爱华",text:"38度5。",tokens:["3","8","度","5"]}],note:""},{n:2,title:"会话 2",original:`大夫：哪儿不舒服？
+诺敏：头疼，发烧。
+大夫：先去验血吧。
+（诺敏拿着化验报告回来给大夫看）
+大夫：你感冒了。吃这种感冒药，一天三次，一次两片。
+诺敏：好的。
+大夫：多喝水，多休息，少吃辣的菜。
+诺敏：谢谢大夫！`,lines:[{name:"大夫",zh:"哪儿不舒服？",py:"Nǎr bù shūfu?",en:"Where does it hurt?"},{name:"诺敏",zh:"头疼，发烧。",py:"Tóu téng, fāshāo.",en:"Headache and fever."},{name:"大夫",zh:"先去验血吧。",py:"Xiān qù yànxuè ba.",en:"Let's do a blood test first."},{name:"",zh:"（诺敏拿着化验报告回来给大夫看）",py:"(Nuòmǐn ná zhe huàyàn bàogào huílai gěi dàifu kàn.)",en:"(Nuomin comes back with the lab report to show the doctor.)"},{name:"大夫",zh:"你感冒了。吃这种感冒药，一天三次，一次两片。",py:"Nǐ gǎnmào le. Chī zhè zhǒng gǎnmào yào, yì tiān sān cì, yí cì liǎng piàn.",en:"You have a cold. Take this cold medicine, three times a day, two tablets each time."},{name:"诺敏",zh:"好的。",py:"Hǎo de.",en:"Okay."},{name:"大夫",zh:"多喝水，多休息，少吃辣的菜。",py:"Duō hē shuǐ, duō xiūxi, shǎo chī là de cài.",en:"Drink more water, get more rest, and eat less spicy food."},{name:"诺敏",zh:"谢谢大夫！",py:"Xièxie dàifu!",en:"Thank you, doctor!"}],vocab:{seg:[{t:"大夫："},{b:1},{t:`？
+诺敏：`},{b:2},{t:`。
+大夫：`},{b:3},{t:`。
+（诺敏拿着化验报告回来给`},{b:4},{t:`看）
+大夫：`},{b:5},{t:"。吃这种"},{b:6},{t:"，一天"},{b:7},{t:"，一次"},{b:8},{t:`。
+诺敏：好的。
+大夫：`},{b:9},{t:"，"},{b:10},{t:`。
+诺敏：谢谢大夫！`}],answers:["哪儿不舒服","头疼，发烧","先去验血吧","大夫","你感冒了","感冒药","三次","两片","多喝水，多休息","少吃辣的菜"],tiles:{大夫:{py:"dàifu",en:"doctor"}}},grammar:null,sentences:[{speaker:"",text:"（诺敏拿着化验报告回来给大夫看）",tokens:["诺敏","拿","着","化","验","报告","回来","给","大夫","看"]},{speaker:"大夫",text:"吃这种感冒药，一天三次，一次两片。",tokens:["吃","这","种","感冒药","一","天","三次","一次","两片"]},{speaker:"大夫",text:"多喝水，多休息，少吃辣的菜。",tokens:["多","喝","水","多","休息","少吃辣的菜"]},{speaker:"诺敏",text:"谢谢大夫！",tokens:["谢谢","大夫"]},{speaker:"诺敏",text:"好的。",tokens:["好","的"]}],note:""}]},{num:7,name:"",texts:[{n:1,title:"会话 1",original:`诺敏：喂，你好！
+西田：诺敏，我是西田。你在干吗呢？
+诺敏：我正在跑步呢。有事吗？
+西田：我和大卫打算晚上去看球，你来吗？
+诺敏：好啊。什么时候出发？
+西田：我现在在外边吃饭呢，6点半在宿舍门口见，怎么样？
+诺敏：好，不见不散。`,lines:[{name:"诺敏",zh:"喂，你好！",py:"Wéi, nǐ hǎo!",en:"Hello?"},{name:"西田",zh:"诺敏，我是西田。你在干吗呢？",py:"Nuòmǐn, wǒ shì Xītián. Nǐ zài gànmá ne?",en:"Nuomin, it's Nishida. What are you doing?"},{name:"诺敏",zh:"我正在跑步呢。有事吗？",py:"Wǒ zhèngzài pǎobù ne. Yǒu shì ma?",en:"I'm running right now. What's up?"},{name:"西田",zh:"我和大卫打算晚上去看球，你来吗？",py:"Wǒ hé Dàwèi dǎsuàn wǎnshang qù kàn qiú, nǐ lái ma?",en:"David and I are planning to watch a game tonight. Do you want to come?"},{name:"诺敏",zh:"好啊。什么时候出发？",py:"Hǎo a. Shénme shíhou chūfā?",en:"Sure. When do we set off?"},{name:"西田",zh:"我现在在外边吃饭呢，6点半在宿舍门口见，怎么样？",py:"Wǒ xiànzài zài wàibian chīfàn ne, 6 diǎn bàn zài sùshè ménkǒu jiàn, zěnmeyàng?",en:"I'm out eating right now. Let's meet at the dorm entrance at six thirty, okay?"},{name:"诺敏",zh:"好，不见不散。",py:"Hǎo, bújiàn-búsàn.",en:"Okay, see you there for sure."}],vocab:{seg:[{t:"诺敏："},{b:1},{t:`！
+西田：诺敏，我是西田。`},{b:2},{t:`？
+诺敏：我正在跑步呢。`},{b:3},{t:`？
+西田：我和大卫`},{b:4},{t:`晚上去看球，你来吗？
+诺敏：好啊。`},{b:5},{t:`？
+西田：我现在`},{b:6},{t:"吃饭呢，6点半在"},{b:7},{t:`见，怎么样？
+诺敏：好，`},{b:8},{t:"。"}],answers:["喂，你好","你在干吗呢","有事吗","打算","什么时候出发","在外边","宿舍门口","不见不散"],tiles:{打算:{py:"dǎsuàn",en:"to plan; plan"},不见不散:{py:"bú jiàn bú sàn",en:"don't leave until we meet; see you there"}}},grammar:null,sentences:[{speaker:"西田",text:"我和大卫打算晚上去看球，你来吗？",tokens:["我","和","大卫","打算","晚上","去","看","球","你","来","吗"]},{speaker:"西田",text:"我现在在外边吃饭呢，6点半在宿舍门口见，怎么样？",tokens:["我","现在","在外边","吃饭","呢","6","点","半","在","宿舍门口","见","怎么样"]},{speaker:"诺敏",text:"好，不见不散。",tokens:["好","不见不散"]},{speaker:"西田",text:"诺敏，我是西田。",tokens:["诺敏","我","是","西田"]},{speaker:"诺敏",text:"我正在跑步呢。",tokens:["我","正在","跑步","呢"]},{speaker:"诺敏",text:"好啊。",tokens:["好","啊"]}],note:""},{n:2,title:"会话 2",original:`大树：你还在睡觉吗？都11点了。
+西田：我昨天去看球了，睡得很晚。
+大树：昨天晚上我给你打电话一直没人接。
+西田：不好意思，你给我打电话的时候，我正在看球呢。
+大树：下午两点跟我们一起去打篮球吧。
+西田：不行啊，我得去机场接朋友。
+大树：那好吧，我们下次再约。`,lines:[{name:"大树",zh:"你还在睡觉吗？都11点了。",py:"Nǐ hái zài shuìjiào ma? Dōu 11 diǎn le.",en:"Are you still sleeping? It's already eleven o'clock."},{name:"西田",zh:"我昨天去看球了，睡得很晚。",py:"Wǒ zuótiān qù kàn qiú le, shuì de hěn wǎn.",en:"I went to watch a game yesterday and went to bed very late."},{name:"大树",zh:"昨天晚上我给你打电话一直没人接。",py:"Zuótiān wǎnshang wǒ gěi nǐ dǎ diànhuà yìzhí méi rén jiē.",en:"I called you last night but no one answered."},{name:"西田",zh:"不好意思，你给我打电话的时候，我正在看球呢。",py:"Bù hǎoyìsi, nǐ gěi wǒ dǎ diànhuà de shíhou, wǒ zhèngzài kàn qiú ne.",en:"Sorry, when you called I was watching the game."},{name:"大树",zh:"下午两点跟我们一起去打篮球吧。",py:"Xiàwǔ liǎng diǎn gēn wǒmen yìqǐ qù dǎ lánqiú ba.",en:"Come play basketball with us at two this afternoon."},{name:"西田",zh:"不行啊，我得去机场接朋友。",py:"Bùxíng a, wǒ děi qù jīchǎng jiē péngyou.",en:"I can't; I have to pick up a friend at the airport."},{name:"大树",zh:"那好吧，我们下次再约。",py:"Nà hǎo ba, wǒmen xià cì zài yuē.",en:"All right then, let's arrange it another time."}],vocab:null,grammar:null,sentences:[{speaker:"大树",text:"你还在睡觉吗？",tokens:["你","还","在","睡觉","吗"]},{speaker:"大树",text:"都11点了。",tokens:["都","1","1","点","了"]},{speaker:"西田",text:"我昨天去看球了，睡得很晚。",tokens:["我","昨天","去","看","球","了","睡","得","很","晚"]},{speaker:"大树",text:"昨天晚上我给你打电话一直没人接。",tokens:["昨天","晚上","我","给","你","打电话","一直","没","人","接"]},{speaker:"西田",text:"不好意思，你给我打电话的时候，我正在看球呢。",tokens:["不好意思","你","给","我","打电话","的","时候","我","正在","看","球","呢"]},{speaker:"大树",text:"下午两点跟我们一起去打篮球吧。",tokens:["下午","两点","跟","我们","一起","去","打篮球","吧"]},{speaker:"西田",text:"不行啊，我得去机场接朋友。",tokens:["不行","啊","我","得","去","机场","接","朋友"]},{speaker:"大树",text:"那好吧，我们下次再约。",tokens:["那","好","吧","我们","下次","再","约"]}],note:""}]},{num:8,name:"",texts:[{n:1,title:"会话 1",original:`爱华：今天天气真热！
+大树：是啊。莫斯科的夏天也很热吗？
+爱华：那儿比北京凉快。
+大树：听说莫斯科的冬天冷极了，是吗？
+爱华：是，比北京冷多了。
+大树：大概多少度？
+爱华：最低气温零下二十多度，不过我们习惯了，不怕冷。我冬天还在外边游过泳呢！`,lines:[{name:"爱华",zh:"今天天气真热！",py:"Jīntiān tiānqì zhēn rè!",en:"The weather is really hot today!"},{name:"大树",zh:"是啊。莫斯科的夏天也很热吗？",py:"Shì a. Mòsīkē de xiàtiān yě hěn rè ma?",en:"Yes. Are summers in Moscow hot too?"},{name:"爱华",zh:"那儿比北京凉快。",py:"Nàr bǐ Běijīng liángkuai.",en:"It's cooler there than in Beijing."},{name:"大树",zh:"听说莫斯科的冬天冷极了，是吗？",py:"Tīngshuō Mòsīkē de dōngtiān lěngjí le, shì ma?",en:"I heard winters in Moscow are extremely cold. Is that true?"},{name:"爱华",zh:"是，比北京冷多了。",py:"Shì, bǐ Běijīng lěngduō le.",en:"Yes, much colder than Beijing."},{name:"大树",zh:"大概多少度？",py:"Dàgài duōshao dù?",en:"About how many degrees?"},{name:"爱华",zh:"最低气温零下二十多度，不过我们习惯了，不怕冷。我冬天还在外边游过泳呢！",py:"Zuìdī qìwēn língxià èrshí duō dù, búguò wǒmen xíguàn le, bú pà lěng. Wǒ dōngtiān hái zài wàibian yóuguo yǒng ne!",en:"The lowest temperature is more than twenty below zero, but we're used to it and don't mind the cold. I've even gone swimming outside in winter!"}],vocab:null,grammar:null,sentences:[{speaker:"爱华",text:"今天天气真热！",tokens:["今天","天气","真","热"]},{speaker:"大树",text:"是啊。",tokens:["是","啊"]},{speaker:"大树",text:"莫斯科的夏天也很热吗？",tokens:["莫","斯","科","的","夏天","也","很","热","吗"]},{speaker:"爱华",text:"那儿比北京凉快。",tokens:["那儿","比","北京","凉快"]},{speaker:"大树",text:"听说莫斯科的冬天冷极了，是吗？",tokens:["听说","莫","斯","科","的","冬天","冷","极了","是","吗"]},{speaker:"爱华",text:"是，比北京冷多了。",tokens:["是","比","北京","冷","多","了"]},{speaker:"大树",text:"大概多少度？",tokens:["大概","多少","度"]},{speaker:"爱华",text:"最低气温零下二十多度，不过我们习惯了，不怕冷。",tokens:["最","低","气温","零下","二","十","多","度","不过","我们","习惯","了","不","怕","冷"]},{speaker:"爱华",text:"我冬天还在外边游过泳呢！",tokens:["我","冬天","还","在","外边","游","过","泳","呢"]}],note:""},{n:2,title:"会话 2",original:`王小天：你看，又下雨了！
+朋友：是啊，最近常常下雨。
+王小天：今年的雨比去年多多了。
+朋友：你看天气预报了吗？明天天气怎么样？
+王小天：天气预报说，明天的雨比今天更大。
+朋友：那咱们明天的足球比赛怎么办啊？
+王小天：那只能下周再比了。`,lines:[{name:"王小天",zh:"你看，又下雨了！",py:"Nǐ kàn, yòu xià yǔ le!",en:"Look, it's raining again!"},{name:"朋友",zh:"是啊，最近常常下雨。",py:"Shì a, zuìjìn chángcháng xià yǔ.",en:"Yes, it rains a lot lately."},{name:"王小天",zh:"今年的雨比去年多多了。",py:"Jīnnián de yǔ bǐ qùnián duōduō le.",en:"There's been much more rain this year than last year."},{name:"朋友",zh:"你看天气预报了吗？明天天气怎么样？",py:"Nǐ kàn tiānqì yùbào le ma? Míngtiān tiānqì zěnmeyàng?",en:"Did you check the weather forecast? What's the weather like tomorrow?"},{name:"王小天",zh:"天气预报说，明天的雨比今天更大。",py:"Tiānqì yùbào shuō, míngtiān de yǔ bǐ jīntiān gèng dà.",en:"The forecast says tomorrow's rain will be even heavier than today's."},{name:"朋友",zh:"那咱们明天的足球比赛怎么办啊？",py:"Nà zánmen míngtiān de zúqiú bǐsài zěnme bàn a?",en:"Then what do we do about our football match tomorrow?"},{name:"王小天",zh:"那只能下周再比了。",py:"Nà zhǐ néng xià zhōu zài bǐ le.",en:"Then we'll have to play it next week."}],vocab:null,grammar:null,sentences:[{speaker:"王小天",text:"你看，又下雨了！",tokens:["你","看","又","下雨","了"]},{speaker:"朋友",text:"是啊，最近常常下雨。",tokens:["是","啊","最近","常常","下雨"]},{speaker:"王小天",text:"今年的雨比去年多多了。",tokens:["今年","的","雨","比","去年","多","多","了"]},{speaker:"朋友",text:"你看天气预报了吗？",tokens:["你","看","天气","预报","了","吗"]},{speaker:"朋友",text:"明天天气怎么样？",tokens:["明天","天气","怎么样"]},{speaker:"王小天",text:"天气预报说，明天的雨比今天更大。",tokens:["天气","预报","说","明天","的","雨","比","今天","更","大"]},{speaker:"朋友",text:"那咱们明天的足球比赛怎么办啊？",tokens:["那","咱们","明天","的","足球","比赛","怎么办","啊"]},{speaker:"王小天",text:"那只能下周再比了。",tokens:["那","只能","下","周","再","比","了"]}],note:""}]}],a={series:e,unit:2,lessons:n};export{a as default,n as lessons,e as series,t as unit};
