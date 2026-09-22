@@ -19,9 +19,11 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
    per-lesson progress badge (已掌握/学过 X%) from `useProgress`.
 4. **课内 hub** (`/course/:series/:unit/lesson/:lesson`, `LessonHubView.vue`) — one lesson, six tabs:
    课文 Read (`ReadPanel`) · 生词表·闪卡 (`FlashcardsPanel`, 网格/专注双模式, reuses `FlashCard.vue`) ·
-   词汇详解 (placeholder) · 语法 (`GrammarNotesPanel`) · 练习 (`ExercisesPanel` = 生词挖空 + 连词成句) ·
-   话题讨论 (placeholder). 课文/练习/语法 pull from the 课文 data (`getTextUnit`) and gracefully show a
-   "本课暂无…" placeholder when a lesson has no text (only hsk-1/2/3 + newhsk3-1/2/3 have texts).
+   词汇详解 (placeholder) · 语法 (`GrammarNotesPanel`) · 练习 (`ExercisesPanel` = 生词挖空 + 连词成句 + 语法) ·
+   话题讨论 (placeholder). 课文/生词挖空/连词成句 pull from the 课文 data (`getTextUnit`); the 语法 tab and the
+   练习 tab's 语法 mode pull from the grammar data (`getGrammarLesson`, see below) — the latter is independent of
+   课文, so 练习 shows up even for lessons with no text (e.g. hsk-4/5), defaulting to 语法 mode there. Each tab
+   gracefully shows a "本课暂无…" placeholder when its data is missing.
 
 Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **拼音 Pinyin** (`/pinyin`) · **我的词 My words** (`/my-words`),
 朱红印章 logo. 课文 is no longer a top-level nav item — it lives inside each lesson hub; the legacy
@@ -40,6 +42,10 @@ npm run dev        # dev server (localhost:5173)
 npm run build      # production build → dist/
 npm run convert    # regenerate word data src/data/hsk*.json etc. from xlsx (uv + openpyxl)
 npm run deploy     # build + publish dist to gh-pages branch
+
+# Texts + Grammar (not npm scripts — run via uv directly):
+uv run --with openpyxl python3 scripts/convert_texts.py            # xlsx → src/data/texts/*.json
+uv run --with openpyxl python3 scripts/convert_grammar.py          # xlsx → src/data/grammar/*.json
 
 # Pinyin section (not npm scripts — run via uv directly):
 uv run --with openpyxl python3 scripts/convert_pinyin.py            # xlsx → src/data/pinyin.json
@@ -117,6 +123,24 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   output). 课文 audio (读原文 dialogue lines + every 连词成句 `sentences[].text`) is generated via
   `gen_audio.py --texts` (`collect_text_lines`) and uploaded to the same Storage `audio` bucket; split
   sub-sentences without a pre-generated MP3 fall back to browser TTS until audio is regenerated.
+- **语法 (Grammar) data is generated too.** Source = the eight `sources/*_语法预习复习主表.xlsx` (HSK1–5 +
+  新HSK3.0 第一/二/三册). `scripts/convert_grammar.py` reads each file's first sheet (「语法总表」/「语法语言点总表」,
+  one row per grammar point keyed by 课次 = our lesson `num`), grouping points by lesson into
+  `src/data/grammar/{series}-{unit}.json` (+ `grammar/meta.json`), lazy-loaded via `src/data/grammar.js`
+  (own `import.meta.glob("./grammar/*-*.json")`, dash pattern excludes meta). Run:
+  `uv run --with openpyxl python3 scripts/convert_grammar.py`. Each point: `{ id, name, pinyin, type,
+  tier?(HSK4), explainEn, structure, examples:[{zh,en}], exercises:[{q,a}], note, source }`. Coverage:
+  hsk-1..5 + newhsk3-1..3 (~495 points); other series/units gracefully show placeholders. Two bilingual
+  fields are hand-authored inside `convert_grammar.py` and merged at build time: `noteEn` (English for each
+  中文 备注, from `scripts/grammar_note_en.tsv`) and `typeEn` (English for each 语法类型, from the in-script
+  `TYPE_EN` map covering all 157 type strings). Both the 语法 tab chip and 练习 语法-mode heading show 中文 + English. The 语法 tab
+  (`GrammarNotesPanel`) renders these as cards (讲解/结构/例句 + expandable 练习 with reveal-answer); falls back
+  to the 课文 `note` list only when a lesson has no grammar data. The 练习 tab's 语法 mode (`ExercisesPanel`,
+  `mode:'gp'` — note the pre-existing `mode:'grammar'` is 连词成句/Reorder, NOT grammar points) lists the same
+  exercises as **no-typing** cards: 看答案 reveal → self-assess 会了/再练 (progress counts 会了). Beginners can't
+  type well, so there's no input. Each exercise's Chinese instruction prefix (填空/翻译/排序…) is shown bilingually
+  via `instr`/`instrEn`/`body` (split in `convert_grammar.py` using the in-script `Q_INSTR_EN` map, 47 prefixes;
+  the ~4% unmapped/compound instructions fall back to the raw Chinese question).
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
   works on GitHub Pages without server rewrites. Course flow (four levels): `/` (LibraryView) →
   `/course/:series` (SeriesBooksView) → `/course/:series/:unit` (LessonListView) →

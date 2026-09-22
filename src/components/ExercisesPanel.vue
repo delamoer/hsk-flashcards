@@ -1,16 +1,17 @@
 <template>
   <div class="exp">
-    <template v-if="texts.length">
+    <template v-if="texts.length || hasGP">
       <!-- text picker (a lesson may have several 课文) + sub-mode -->
       <div class="exp-head">
-        <div class="picker" v-if="texts.length > 1">
+        <div class="picker" v-if="texts.length > 1 && mode !== 'gp'">
           <button v-for="(t, i) in texts" :key="i" :class="{ on: ti === i }" @click="ti = i">
             课文 {{ t.n }}<i>Text {{ t.n }}</i>
           </button>
         </div>
         <div class="submodes">
-          <button :class="{ on: mode === 'vocab' }" @click="mode = 'vocab'">生词挖空<i>Cloze</i></button>
+          <button v-if="texts.length" :class="{ on: mode === 'vocab' }" @click="mode = 'vocab'">生词挖空<i>Cloze</i></button>
           <button v-if="hasGrammar" :class="{ on: mode === 'grammar' }" @click="mode = 'grammar'">连词成句<i>Reorder</i></button>
+          <button v-if="hasGP" :class="{ on: mode === 'gp' }" @click="mode = 'gp'">语法<i>Grammar</i></button>
         </div>
       </div>
 
@@ -127,6 +128,41 @@
         <div class="galldone" v-if="gDoneCount === sentences.length">🎉 全部完成 · Whole text done!</div>
       </div>
 
+      <!-- ③ 语法练习 -->
+      <div v-else-if="mode === 'gp' && gpGroups.length" class="gp">
+        <div class="ghead">
+          <div class="lede">看题目，想一想，再点「看答案」核对并自评。 · Read, think, then reveal and self-check — no typing.</div>
+          <div class="gprogress">
+            <span class="gcount">会了 {{ gpDone }} / {{ gpItems.length }}</span>
+            <div class="gbar"><i :style="{ width: (gpItems.length ? gpDone / gpItems.length : 0) * 100 + '%' }"></i></div>
+          </div>
+        </div>
+        <template v-for="(grp, gi) in gpGroups" :key="gi">
+          <div class="gp-point"><span class="gp-name">{{ grp.name }}</span><span class="gp-type" v-if="grp.type">{{ grp.type }}<i v-if="grp.typeEn"> · {{ grp.typeEn }}</i></span></div>
+          <div class="gp-q" v-for="it in grp.items" :key="it.key" :class="{ got: gpGot.has(it.key), review: gpReview.has(it.key) }">
+            <div class="qt">
+              <b>{{ it.n }}.</b>
+              <template v-if="it.instrEn">
+                <span class="q-instr">{{ it.instr }}<i>{{ it.instrEn }}</i></span>
+                <span class="q-body">{{ it.body }}</span>
+              </template>
+              <template v-else>{{ it.q }}</template>
+            </div>
+            <div v-if="!gpShown.has(it.key)" class="gp-reveal">
+              <button class="btn btn-ghost sm" @click="revealGP(it.key)">看答案<small>SHOW ANSWER</small></button>
+            </div>
+            <template v-else>
+              <div class="gp-ans"><span class="a-lab">答案 Answer</span><span class="a-txt">{{ it.a }}</span></div>
+              <div class="gp-self">
+                <span class="self-q">做对了吗？ · Did you get it?</span>
+                <button class="self ok" :class="{ on: gpGot.has(it.key) }" @click="markGot(it.key)">✓ 会了<small>GOT IT</small></button>
+                <button class="self no" :class="{ on: gpReview.has(it.key) }" @click="markReview(it.key)">↻ 再练<small>REVIEW</small></button>
+              </div>
+            </template>
+          </div>
+        </template>
+      </div>
+
       <div v-else class="placeholder"><div class="diamond">◇ ◇ ◇</div><p>本篇暂无该练习 · Not available for this text.</p></div>
     </template>
 
@@ -141,8 +177,9 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from "vue";
+import { ref, reactive, computed, watch } from "vue";
 import { getTextUnit } from "@/data/texts";
+import { getGrammarLesson } from "@/data/grammar";
 import { colorPinyin } from "@/utils/pinyinTones";
 import { speak } from "@/utils/tts";
 import { useSettings } from "@/composables/useSettings";
@@ -158,16 +195,44 @@ const { settings } = useSettings();
 const texts = ref([]);
 const loading = ref(true);
 const ti = ref(0);
-const mode = ref("vocab");
+const mode = ref("vocab"); // 'vocab' 生词挖空 · 'grammar' 连词成句 · 'gp' 语法练习
+
+// ── GRAMMAR POINTS (语法练习) — independent of 课文; no typing, reveal + self-check ──
+const gpLesson = ref(null);
+const gpShown = reactive(new Set()); // answer revealed
+const gpGot = reactive(new Set()); // self-marked 会了
+const gpReview = reactive(new Set()); // self-marked 再练
+const hasGP = computed(() => !!(gpLesson.value && gpLesson.value.points && gpLesson.value.points.some((p) => p.exercises && p.exercises.length)));
+const gpGroups = computed(() => {
+  const groups = [];
+  let n = 0;
+  (gpLesson.value?.points || []).forEach((p, pi) => {
+    const items = (p.exercises || []).filter((e) => e.q).map((ex, ei) => ({ key: pi + "-" + ei, q: ex.q, a: ex.a, instr: ex.instr || "", instrEn: ex.instrEn || "", body: ex.body || "", n: ++n }));
+    if (items.length) groups.push({ name: p.name, type: p.type, typeEn: p.typeEn || "", items });
+  });
+  return groups;
+});
+const gpItems = computed(() => gpGroups.value.flatMap((g) => g.items));
+const gpDone = computed(() => gpItems.value.filter((it) => gpGot.has(it.key)).length);
+function revealGP(key) { gpShown.add(key); }
+function markGot(key) { gpGot.add(key); gpReview.delete(key); }
+function markReview(key) { gpReview.add(key); gpGot.delete(key); }
 
 watch(
   () => [props.series, props.unit, props.lesson],
   async ([s, u, l]) => {
     loading.value = true;
     ti.value = 0;
-    const ds = await getTextUnit(s, u);
+    gpShown.clear();
+    gpGot.clear();
+    gpReview.clear();
+    const [ds, gl] = await Promise.all([getTextUnit(s, u), getGrammarLesson(s, u, l)]);
     const ld = ds?.lessons.find((x) => x.num === Number(l));
     texts.value = ld?.texts || [];
+    gpLesson.value = gl && gl.points && gl.points.length ? gl : null;
+    // pick a valid default mode for this lesson
+    if (!texts.value.length && hasGP.value) mode.value = "gp";
+    else if (mode.value === "gp" && !hasGP.value) mode.value = "vocab";
     loading.value = false;
   },
   { immediate: true }
@@ -484,6 +549,34 @@ watch(
 .solved-badge { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 14px; color: #15803d; background: var(--success-soft); padding: 9px 18px; border-radius: var(--r-pill); }
 .solved-badge .check { width: 20px; height: 20px; border-radius: 50%; background: var(--jade); color: #fff; display: grid; place-items: center; font-size: 12px; }
 .galldone { margin-top: 20px; text-align: center; font-family: var(--serif-cn); font-weight: 800; font-size: 15px; color: var(--cinnabar-dk); }
+
+/* 语法练习 (grammar points) */
+.gp .gp-point { display: flex; align-items: baseline; gap: 8px; margin: 22px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+.gp .gp-point:first-of-type { margin-top: 0; }
+.gp-name { font-family: var(--serif-cn); font-weight: 700; font-size: 17px; color: var(--cinnabar-dk); }
+.gp-type { font-family: var(--han); font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: var(--r-pill); background: var(--accent-soft); color: var(--accent-active); }
+.gp-type i { font-family: var(--serif-en); font-style: italic; font-weight: 600; opacity: .8; }
+.gp-q { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-md, 16px); padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 3px 10px -6px var(--shadow, rgba(45,30,10,.14)); transition: .2s; }
+.gp-q.got { border-color: color-mix(in srgb, var(--jade) 45%, transparent); background: linear-gradient(180deg, var(--success-soft) 0%, var(--card) 46%); }
+.gp-q.review { border-color: color-mix(in srgb, var(--gold) 55%, transparent); }
+.gp-q .qt { font-family: var(--serif-cn); font-size: 16px; color: var(--ink); line-height: 1.7; }
+.gp-q .qt b { color: var(--gold-deep); margin-right: 4px; }
+.q-instr { display: inline-flex; flex-direction: column; line-height: 1.1; vertical-align: middle; background: var(--accent-soft); color: var(--accent-active); border-radius: 7px; padding: 3px 9px; margin-right: 8px; }
+.q-instr i { font-family: var(--serif-en); font-style: italic; font-size: 10px; opacity: .85; margin-top: 1px; }
+.q-body { color: var(--ink); }
+.btn.sm { padding: 8px 16px; font-size: 13px; }
+.gp-reveal { margin-top: 10px; }
+.gp-ans { margin-top: 10px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; font-family: var(--serif-cn); }
+.gp-ans .a-lab { font-family: var(--caps); font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-deep); }
+.gp-ans .a-txt { font-size: 17px; font-weight: 700; color: var(--success); }
+.gp-self { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--line-soft); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.gp-self .self-q { font-family: var(--serif-cn); font-size: 12.5px; color: var(--muted); margin-right: auto; }
+.self { display: inline-flex; flex-direction: column; align-items: center; line-height: 1.1; font-family: var(--serif-cn); font-weight: 700; font-size: 14px; padding: 7px 18px; border-radius: var(--r-pill); border: 1.5px solid var(--line); background: var(--paper); transition: .15s; }
+.self small { font-family: var(--caps); font-size: 8px; letter-spacing: 1px; text-transform: uppercase; opacity: .75; margin-top: 1px; }
+.self.ok { color: #15803d; }
+.self.ok:hover, .self.ok.on { background: var(--jade); border-color: var(--jade); color: #f4fbf6; }
+.self.no { color: #8a641f; }
+.self.no:hover, .self.no.on { background: var(--gold); border-color: var(--gold-deep); color: #fff8ea; }
 
 .placeholder { text-align: center; padding: 70px 20px; color: var(--muted); }
 .placeholder .diamond { color: var(--gold); letter-spacing: 6px; margin-bottom: 14px; }

@@ -1,0 +1,34 @@
+{
+"hsk-1": {
+"lessonCount": 13,
+"pointCount": 45
+},
+"hsk-2": {
+"lessonCount": 15,
+"pointCount": 44
+},
+"hsk-3": {
+"lessonCount": 20,
+"pointCount": 47
+},
+"hsk-4": {
+"lessonCount": 20,
+"pointCount": 100
+},
+"hsk-5": {
+"lessonCount": 36,
+"pointCount": 111
+},
+"newhsk3-1": {
+"lessonCount": 14,
+"pointCount": 40
+},
+"newhsk3-3": {
+"lessonCount": 18,
+"pointCount": 63
+},
+"newhsk3-2": {
+"lessonCount": 15,
+"pointCount": 45
+}
+}
