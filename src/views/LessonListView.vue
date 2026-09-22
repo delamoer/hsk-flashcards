@@ -10,12 +10,14 @@
       <router-link class="back" :to="`/course/${seriesId}`">‹ 返回书架 Back to shelf</router-link>
     </div>
 
-    <div class="title-block">
-      <div>
+    <div class="ls-hero">
+      <div class="ls-seal">{{ sealChar }}</div>
+      <div class="plaque">
+        <span class="pc a"></span><span class="pc b"></span><span class="pc c"></span><span class="pc d"></span>
         <h2>{{ unitLabel }}</h2>
-        <div class="sub">共 {{ data.lessons.length }} 课　<span class="en">{{ data.lessons.length }} lessons</span></div>
       </div>
-      <div class="title-seal">{{ sealChar }}</div>
+      <div class="sub">共 {{ data.lessons.length }} 课　<span class="en">{{ data.lessons.length }} lessons</span></div>
+      <div class="rule"><span class="diamond">◇ ◇ ◇</span></div>
     </div>
 
     <div class="seg" v-if="ranges.length > 1">
@@ -142,15 +144,27 @@ function numCn(n) {
 .page-head .back, .back { font-family: var(--caps); font-size: 12px; letter-spacing: 2px; color: var(--cinnabar-dk); display: inline-flex; gap: 6px; align-items: center; }
 .page-head .back:hover, .back:hover { color: var(--cinnabar); }
 
-.title-block { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding: 14px 0 8px; border-bottom: 2px solid var(--gold); position: relative; }
-.title-block::after { content: ""; position: absolute; left: 0; bottom: -5px; width: 120px; height: 2px; background: var(--cinnabar); }
-.title-block h2 { font-family: var(--serif-cn); font-weight: 900; font-size: 52px; letter-spacing: 4px; line-height: 1; }
-.title-block .sub { font-family: var(--serif-cn); font-size: 16px; color: var(--ink-soft, #4a3d2a); letter-spacing: 1px; }
-.title-block .sub .en { font-family: var(--serif-en); font-style: italic; color: var(--muted); font-size: 15px; }
-.title-seal { width: 64px; height: 64px; flex: 0 0 auto; border-radius: 8px; background: linear-gradient(145deg, #c0392b, #8b2a1f); display: grid; place-items: center; color: #fbeecf; font-family: var(--serif-cn); font-weight: 900; font-size: 30px; box-shadow: inset 0 0 0 2px rgba(251,238,207,.5), 0 3px 8px rgba(139,42,31,.4); position: relative; }
-.title-seal::after { content: ""; position: absolute; inset: 7px; border: 1px solid rgba(251,238,207,.4); border-radius: 4px; }
+/* 选课 hero —— 牌匾·留白 · 鎏金流光 */
+.ls-hero { text-align: center; padding: 30px 24px 26px; margin: 10px 0 2px; border-radius: 14px; background: linear-gradient(180deg, #faf4e9, #f1e7d4); border: 1px solid var(--line); box-shadow: 0 10px 30px -18px rgba(45,30,10,.3); }
+.ls-seal { width: 58px; height: 58px; margin: 0 auto 12px; border-radius: 9px; background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbe7d4; font-family: var(--serif-cn); font-weight: 900; font-size: 28px; display: grid; place-items: center; position: relative; box-shadow: inset 0 0 0 2px rgba(251,231,212,.5), 0 0 0 2px var(--gold), 0 4px 10px rgba(139,42,31,.35); }
+.ls-seal::after { content: ""; position: absolute; inset: 6px; border: 1px solid rgba(251,231,212,.35); border-radius: 5px; }
+.plaque { position: relative; display: inline-block; padding: 12px 44px; margin: 4px 0 2px; border-radius: 8px; background: linear-gradient(180deg, #5c1b12, #40130c); border: 2px solid var(--gold); box-shadow: 0 12px 28px -12px rgba(50,10,6,.6), inset 0 1px 0 rgba(255,220,180,.15); }
+.plaque::before { content: ""; position: absolute; inset: 5px; border: 1px solid rgba(240,201,106,.5); border-radius: 5px; pointer-events: none; }
+.plaque .pc { position: absolute; width: 14px; height: 14px; border: 2px solid #f3d786; opacity: .85; }
+.plaque .pc.a { left: 9px; top: 9px; border-right: none; border-bottom: none; }
+.plaque .pc.b { right: 9px; top: 9px; border-left: none; border-bottom: none; }
+.plaque .pc.c { left: 9px; bottom: 9px; border-right: none; border-top: none; }
+.plaque .pc.d { right: 9px; bottom: 9px; border-left: none; border-top: none; }
+.ls-hero h2 { position: relative; margin: 0; font-family: var(--serif-cn); font-weight: 900; font-size: 44px; line-height: 1; letter-spacing: 4px; background: linear-gradient(100deg, #cf9d38 0%, #f7dd96 42%, #fff4d2 50%, #f7dd96 58%, #cf9d38 100%); background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 1px 1px rgba(0,0,0,.25); animation: gilt 6.5s ease-in-out infinite; }
+@keyframes gilt { 0%, 100% { background-position: 120% 0; } 50% { background-position: -20% 0; } }
+@media (prefers-reduced-motion: reduce) { .ls-hero h2 { animation: none; background-position: 50% 0; } }
+.ls-hero .sub { font-family: var(--serif-cn); font-size: 16px; color: var(--ink-soft, #4a3d2a); letter-spacing: 1px; margin-top: 14px; }
+.ls-hero .sub .en { font-family: var(--serif-en); font-style: italic; color: var(--muted); font-size: 15px; }
+.ls-hero .rule { display: flex; align-items: center; gap: 14px; color: var(--gold); max-width: 280px; margin: 16px auto 0; }
+.ls-hero .rule::before, .ls-hero .rule::after { content: ""; height: 1px; flex: 1; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+.ls-hero .diamond { font-size: 12px; letter-spacing: 6px; color: var(--gold); }
 
-.seg { display: inline-flex; background: var(--paper-3); border: 1px solid var(--line); border-radius: 8px; padding: 4px; margin: 26px 0; gap: 4px; box-shadow: inset 0 1px 3px rgba(45,30,10,.06); flex-wrap: wrap; }
+.seg { display: flex; width: fit-content; background: var(--paper-3); border: 1px solid var(--line); border-radius: 8px; padding: 4px; margin: 26px auto; gap: 4px; box-shadow: inset 0 1px 3px rgba(45,30,10,.06); flex-wrap: wrap; }
 .seg button { font-family: var(--serif-cn); font-size: 14px; letter-spacing: 1px; padding: 8px 20px; border-radius: 6px; color: var(--ink-soft, #4a3d2a); transition: .2s; }
 .seg button .en { display: block; font-family: var(--caps); font-size: 9px; letter-spacing: 1.5px; color: var(--muted); }
 .seg button.active { background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbeecf; box-shadow: 0 2px 5px -1px rgba(139,42,31,.4); }

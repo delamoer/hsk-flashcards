@@ -11,7 +11,8 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
 
 **Information architecture — four levels** (see `design-demos/direction-approved.md`):
 1. **课程总览 Library** (`/`, `LibraryView.vue`) — pick a course series (书函卡): 标准HSK / 新HSK3.0 /
-   会话360 / 生存汉语. Single-volume series (生存汉语, `single:true`) jump straight to its lessons.
+   会话360 / 生存汉语. (A series may set `single:true` to jump straight to its lessons, skipping 选册;
+   currently none do — 生存汉语 is now a normal multi-book series with one book so far.)
 2. **选册/级 Books** (`/course/:series`, `SeriesBooksView.vue`) — series-specific 门面 hero + book/level
    covers (its units). Per-series accent color from `courses.js`.
 3. **选课 Lessons** (`/course/:series/:unit`, `LessonListView.vue`) — lesson cards + range segmentation;

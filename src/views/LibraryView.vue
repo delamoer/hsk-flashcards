@@ -2,11 +2,12 @@
   <div class="libwrap">
     <!-- 课程总览 · 书函陈列 -->
     <div class="hero-app">
-      <div class="corner tl"><svg viewBox="0 0 64 64"><path d="M2 2 H30 M2 2 V30" stroke="#c8962a" stroke-width="1.5" fill="none"/><path d="M8 8 H24 M8 8 V24" stroke="#c8962a" stroke-width="1" fill="none" opacity=".6"/><circle cx="8" cy="8" r="2.5" fill="#c0392b"/></svg></div>
-      <div class="corner tr"><svg viewBox="0 0 64 64"><path d="M2 2 H30 M2 2 V30" stroke="#c8962a" stroke-width="1.5" fill="none"/><path d="M8 8 H24 M8 8 V24" stroke="#c8962a" stroke-width="1" fill="none" opacity=".6"/><circle cx="8" cy="8" r="2.5" fill="#c0392b"/></svg></div>
       <div class="brand-seal">學</div>
       <div class="kicker">Learn Chinese · Curriculum Library</div>
-      <h1>学中文</h1>
+      <div class="plaque">
+        <span class="pc a"></span><span class="pc b"></span><span class="pc c"></span><span class="pc d"></span>
+        <h1>学中文</h1>
+      </div>
       <div class="cn-sub">课本典藏 · 择一而学</div>
       <div class="en-sub">A shelf of classics — pick your path</div>
       <div class="rule"><span class="diamond">◇ ◇ ◇</span></div>
@@ -64,30 +65,53 @@ function pick(s) {
   padding: 0 32px 72px;
 }
 
-/* hero */
-.hero-app { text-align: center; padding: 60px 0 26px; position: relative; }
+/* hero —— 牌匾·留白 · 鎏金流光 (lacquer plaque on parchment) */
+.hero-app {
+  text-align: center; padding: 44px 24px 36px; position: relative;
+  margin: 18px 0 6px; border-radius: 14px; overflow: hidden;
+  background: linear-gradient(180deg, #faf4e9, #f1e7d4);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 30px -18px rgba(45,30,10,.3);
+}
 .brand-seal {
-  width: 88px; height: 88px; margin: 0 auto 18px; border-radius: 12px;
+  width: 66px; height: 66px; margin: 2px auto 18px; border-radius: 10px;
   background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbe7d4;
-  font-family: var(--serif-cn); font-weight: 900; font-size: 52px;
+  font-family: var(--serif-cn); font-weight: 900; font-size: 38px;
   display: grid; place-items: center; position: relative;
-  box-shadow: inset 0 0 0 3px rgba(251,231,212,.5), inset 0 0 0 5px #a52c20, 0 4px 12px rgba(139,42,31,.45);
+  box-shadow: inset 0 0 0 2px rgba(251,231,212,.5), 0 0 0 2px var(--gold), 0 4px 10px rgba(139,42,31,.35);
 }
-.brand-seal::after { content: ""; position: absolute; inset: 9px; border: 1px solid rgba(251,231,212,.35); border-radius: 6px; }
+.brand-seal::after { content: ""; position: absolute; inset: 7px; border: 1px solid rgba(251,231,212,.35); border-radius: 5px; }
 .kicker { font-family: var(--caps); font-size: 12px; letter-spacing: 5px; color: var(--gold-deep); text-transform: uppercase; }
-.hero-app h1 {
-  font-family: var(--serif-cn); font-weight: 900; font-size: 60px; line-height: 1.05; letter-spacing: 6px;
-  margin: 8px 0 8px; color: var(--ink); text-shadow: 1px 1px 0 var(--gold-lt);
+
+/* 牌匾 plaque */
+.plaque {
+  position: relative; display: inline-block; padding: 16px 52px; margin: 14px 0 2px; border-radius: 8px;
+  background: linear-gradient(180deg, #5c1b12, #40130c); border: 2px solid var(--gold);
+  box-shadow: 0 12px 28px -12px rgba(50,10,6,.6), inset 0 1px 0 rgba(255,220,180,.15);
 }
-.cn-sub { font-family: var(--serif-cn); font-size: 19px; letter-spacing: 3px; color: var(--ink-soft, #4a3d2a); margin-bottom: 4px; }
+.plaque::before { content: ""; position: absolute; inset: 5px; border: 1px solid rgba(240,201,106,.5); border-radius: 5px; pointer-events: none; }
+.plaque .pc { position: absolute; width: 15px; height: 15px; border: 2px solid #f3d786; opacity: .85; }
+.plaque .pc.a { left: 10px; top: 10px; border-right: none; border-bottom: none; }
+.plaque .pc.b { right: 10px; top: 10px; border-left: none; border-bottom: none; }
+.plaque .pc.c { left: 10px; bottom: 10px; border-right: none; border-top: none; }
+.plaque .pc.d { right: 10px; bottom: 10px; border-left: none; border-top: none; }
+.hero-app h1 {
+  position: relative; margin: 0; font-family: var(--serif-cn); font-weight: 900;
+  font-size: 56px; line-height: 1; letter-spacing: 8px;
+  background: linear-gradient(100deg, #cf9d38 0%, #f7dd96 42%, #fff4d2 50%, #f7dd96 58%, #cf9d38 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  text-shadow: 0 1px 1px rgba(0,0,0,.25);
+  animation: gilt 6.5s ease-in-out infinite;
+}
+@keyframes gilt { 0%, 100% { background-position: 120% 0; } 50% { background-position: -20% 0; } }
+@media (prefers-reduced-motion: reduce) { .hero-app h1 { animation: none; background-position: 50% 0; } }
+
+.cn-sub { font-family: var(--serif-cn); font-size: 19px; letter-spacing: 3px; color: var(--ink-soft, #4a3d2a); margin-top: 16px; margin-bottom: 4px; }
 .en-sub { font-family: var(--serif-en); font-style: italic; font-size: 16px; letter-spacing: 1.5px; color: var(--muted); }
-.rule { display: flex; align-items: center; gap: 14px; color: var(--gold); max-width: 300px; margin: 22px auto 0; }
+.rule { display: flex; align-items: center; gap: 14px; color: var(--gold); max-width: 300px; margin: 20px auto 0; }
 .rule::before, .rule::after { content: ""; height: 1px; flex: 1; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
 .diamond { font-size: 12px; letter-spacing: 6px; color: var(--gold); }
-.corner { position: absolute; width: 64px; height: 64px; pointer-events: none; opacity: .7; }
-.corner svg { width: 100%; height: 100%; }
-.corner.tl { top: 8px; left: 0; }
-.corner.tr { top: 8px; right: 0; transform: scaleX(-1); }
 
 /* series 书函卡 */
 .series-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; margin-top: 44px; }

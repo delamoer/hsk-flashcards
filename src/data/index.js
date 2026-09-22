@@ -16,7 +16,7 @@ function key(seriesId, unitId) {
 }
 
 // Series + per-unit metadata (lesson/word counts, id prefix, availability),
-// all from meta.json — no word data loaded. Drives HomeView's course grid and
+// all from meta.json — no word data loaded. Drives LibraryView's course grid and
 // progress rings, plus Account/Admin totals.
 export const courseRegistry = COURSE_REGISTRY.map((series) => ({
   ...series,
