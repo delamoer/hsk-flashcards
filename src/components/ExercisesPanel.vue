@@ -465,7 +465,7 @@ watch(
 .picker, .submodes { display: inline-flex; background: var(--paper-3); border: 1px solid var(--line); border-radius: 8px; padding: 4px; gap: 4px; }
 .picker button, .submodes button { display: inline-flex; flex-direction: column; line-height: 1.1; font-family: var(--serif-cn); font-weight: 600; font-size: 14px; padding: 6px 16px; border-radius: 6px; color: var(--ink-soft, #4a3d2a); transition: .2s; }
 .picker button i, .submodes button i { font-style: normal; font-family: var(--caps); font-size: 8.5px; letter-spacing: 1.3px; text-transform: uppercase; color: var(--muted); }
-.picker button.on, .submodes button.on { background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbeecf; box-shadow: 0 2px 5px -1px rgba(139,42,31,.4); }
+.picker button.on, .submodes button.on { background: linear-gradient(145deg, var(--seal-a), var(--seal-b)); color: #fbeecf; box-shadow: 0 2px 5px -1px rgba(139,42,31,.4); }
 .picker button.on i, .submodes button.on i { color: rgba(251,238,207,.85); }
 
 /* shared lede + toggles */
@@ -509,7 +509,7 @@ watch(
 .actionrow { display: flex; align-items: center; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
 .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--serif-cn); font-weight: 700; font-size: 14px; border-radius: var(--r-pill); padding: 11px 24px; line-height: 1.15; transition: .15s; }
 .btn small { font-family: var(--caps); font-size: 9px; letter-spacing: 1.2px; text-transform: uppercase; opacity: .85; }
-.btn-primary { background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbeecf; box-shadow: 0 4px 12px -4px rgba(139,42,31,.4); }
+.btn-primary { background: linear-gradient(145deg, var(--seal-a), var(--seal-b)); color: #fbeecf; box-shadow: 0 4px 12px -4px rgba(139,42,31,.4); }
 .btn-primary:disabled { opacity: .45; box-shadow: none; }
 .btn-ghost { background: var(--paper); color: var(--cinnabar-dk); border: 1.5px solid var(--line); }
 .btn-ghost:hover { border-color: var(--gold); }
@@ -523,7 +523,12 @@ watch(
 .gcount { display: block; font-family: var(--serif-cn); font-size: 12px; font-weight: 800; color: var(--cinnabar-dk); text-align: right; margin-bottom: 6px; }
 .gbar { height: 6px; border-radius: var(--r-pill); background: var(--paper-3); overflow: hidden; }
 .gbar i { display: block; height: 100%; border-radius: var(--r-pill); background: linear-gradient(90deg, var(--gold), var(--cinnabar)); transition: width .3s; }
-.gitem { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-lg, 22px); box-shadow: 0 3px 12px -8px var(--shadow, rgba(45,30,10,.14)); padding: 18px 22px 20px; margin-bottom: 16px; transition: .2s; }
+.gitem { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: var(--r-lg, 22px); box-shadow: 0 3px 12px -8px var(--shadow, rgba(45,30,10,.14)); padding: 18px 22px 20px; margin-bottom: 16px; transition: .2s;
+  background:
+    linear-gradient(rgba(251,247,238,.85), rgba(251,247,238,.85)),
+    url("../assets/img/motif/rock.webp") right -6px bottom -6px / 150px auto no-repeat,
+    var(--card);
+}
 .gitem:last-of-type { margin-bottom: 0; }
 .gitem.done { border-color: color-mix(in srgb, var(--jade) 45%, transparent); background: linear-gradient(180deg, var(--success-soft) 0%, var(--card) 42%); }
 .gitem.wrong { border-color: color-mix(in srgb, var(--error) 40%, transparent); }
@@ -541,7 +546,7 @@ watch(
 .gtile { font-family: var(--serif-cn); font-weight: 700; font-size: 19px; color: var(--ink); background: var(--card); border: 1.5px solid var(--line); border-radius: var(--r-sm, 10px); padding: 11px 20px; box-shadow: 0 3px 10px -6px var(--shadow, rgba(45,30,10,.14)); transition: .12s; }
 .gtile:hover { transform: translateY(-2px); border-color: var(--gold); }
 .slot .gtile { border-color: var(--gold-lt); }
-.slot.solved .gtile { border-color: transparent; background: #fff; }
+.slot.solved .gtile { border-color: transparent; background: var(--card); }
 .gtile.placed.drag { cursor: grab; }
 .gtile.placed.drag:active { cursor: grabbing; }
 .bank-tiles { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
@@ -556,7 +561,12 @@ watch(
 .gp-name { font-family: var(--serif-cn); font-weight: 700; font-size: 17px; color: var(--cinnabar-dk); }
 .gp-type { font-family: var(--han); font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: var(--r-pill); background: var(--accent-soft); color: var(--accent-active); }
 .gp-type i { font-family: var(--serif-en); font-style: italic; font-weight: 600; opacity: .8; }
-.gp-q { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-md, 16px); padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 3px 10px -6px var(--shadow, rgba(45,30,10,.14)); transition: .2s; }
+.gp-q { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: var(--r-md, 16px); padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 3px 10px -6px var(--shadow, rgba(45,30,10,.14)); transition: .2s;
+  background:
+    linear-gradient(rgba(251,247,238,.86), rgba(251,247,238,.86)),
+    url("../assets/img/motif/plum-branch-2.webp") right -8px bottom -10px / 140px auto no-repeat,
+    var(--card);
+}
 .gp-q.got { border-color: color-mix(in srgb, var(--jade) 45%, transparent); background: linear-gradient(180deg, var(--success-soft) 0%, var(--card) 46%); }
 .gp-q.review { border-color: color-mix(in srgb, var(--gold) 55%, transparent); }
 .gp-q .qt { font-family: var(--serif-cn); font-size: 16px; color: var(--ink); line-height: 1.7; }

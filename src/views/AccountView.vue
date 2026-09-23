@@ -1,9 +1,9 @@
 <template>
   <div class="wrap">
     <div class="crumb">
-      <router-link to="/">首页 Home</router-link>
-      <span class="sep">/</span>
-      <span class="cur">账号 Account</span>
+      <router-link to="/">课程总览 Library</router-link>
+      <span class="sep">◇</span>
+      <span class="cur">个人中心 Account</span>
     </div>
 
     <!-- 1 · 资料头部 -->
@@ -265,7 +265,9 @@ async function doSignOut() {
   position: relative;
   overflow: hidden;
   border-radius: var(--r-xl);
-  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+  background:
+    linear-gradient(135deg, rgba(70, 54, 38, 0.84), rgba(48, 37, 26, 0.7)),
+    url("../assets/img/hero/hero-main.webp") center / cover no-repeat;
   color: #fff;
   padding: 30px 32px;
   display: flex;
@@ -305,8 +307,10 @@ async function doSignOut() {
   min-width: 0;
 }
 .hi .name {
-  font-size: 22px;
+  font-family: var(--serif-cn);
+  font-size: 24px;
   font-weight: 900;
+  letter-spacing: 1px;
   line-height: 1.1;
 }
 .hi .email {
@@ -344,11 +348,11 @@ async function doSignOut() {
 
 /* section label */
 .sec {
-  font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-  color: var(--muted);
-  text-transform: uppercase;
+  font-family: var(--serif-cn);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--ink);
   margin: 0 4px 12px;
 }
 
@@ -502,8 +506,10 @@ async function doSignOut() {
   padding: 26px;
 }
 .panel h3 {
-  font-size: 16px;
-  font-weight: 900;
+  font-family: var(--serif-cn);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
   margin-bottom: 18px;
 }
 .panel h3 i {

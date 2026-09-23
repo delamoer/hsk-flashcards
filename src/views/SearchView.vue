@@ -1,8 +1,8 @@
 <template>
   <div class="wrap">
     <div class="crumb">
-      <router-link to="/">首页 Home</router-link>
-      <span class="sep">/</span>
+      <router-link to="/">课程总览 Library</router-link>
+      <span class="sep">◇</span>
       <span class="cur">搜索 Search</span>
     </div>
 

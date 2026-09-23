@@ -112,7 +112,11 @@ function pyHtml(py) {
 
 .glist { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 18px; align-items: start; }
 .gcard {
-  position: relative; background: linear-gradient(160deg, #fbf6ec, #f3ead9); border: 1px solid var(--line);
+  position: relative; overflow: hidden; border: 1px solid var(--line);
+  background:
+    linear-gradient(rgba(250,245,235,.85), rgba(244,236,219,.85)),
+    url("../assets/img/motif/bamboo.webp") right -10px bottom -6px / auto 150px no-repeat,
+    linear-gradient(160deg, #fbf6ec, #f3ead9);
   border-radius: 12px; padding: 22px 24px 20px; box-shadow: 0 3px 12px -7px var(--shadow, rgba(45,30,10,.14));
 }
 .gcard::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; border-radius: 12px 0 0 12px; background: linear-gradient(180deg, var(--gold-lt), var(--gold-deep)); }

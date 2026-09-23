@@ -130,8 +130,9 @@ function translateError(msg) {
   flex-direction: column;
   justify-content: space-between;
   background:
-    radial-gradient(120% 90% at 82% 6%, rgba(255, 236, 200, 0.14), transparent 48%),
-    linear-gradient(150deg, #c15a48 0%, #a5341f 44%, #7f2418 100%);
+    radial-gradient(120% 90% at 82% 6%, rgba(255, 236, 200, 0.12), transparent 48%),
+    linear-gradient(150deg, rgba(64, 50, 36, 0.82) 0%, rgba(44, 34, 24, 0.62) 46%, rgba(28, 22, 16, 0.74) 100%),
+    url("../assets/img/hero/hero-main.webp") center / cover no-repeat;
 }
 /* 宣纸纹理 */
 .hero::before {
@@ -184,7 +185,7 @@ function translateError(msg) {
   width: 40px;
   height: 40px;
   border-radius: 6px;
-  background: linear-gradient(145deg, #d8624e, #a5341f);
+  background: linear-gradient(145deg, var(--seal-a), var(--seal-b));
   color: #fbe7d4;
   display: grid;
   place-items: center;
@@ -392,7 +393,7 @@ function translateError(msg) {
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  background: linear-gradient(145deg, #c0392b, #8b2a1f);
+  background: linear-gradient(145deg, var(--seal-a), var(--seal-b));
   color: #fbeecf;
   font-family: var(--serif-cn);
   font-weight: 700;

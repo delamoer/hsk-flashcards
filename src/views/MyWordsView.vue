@@ -1,6 +1,7 @@
 <template>
   <div class="wrap">
-    <header class="hero">
+    <header class="hero" :style="pageHeroBg()">
+      <img class="hero-motif" :src="motifPlum2" alt="" aria-hidden="true" />
       <div class="kicker">My Vocabulary · 生词典藏</div>
       <h1>我的词</h1>
       <div class="en-sub">Every word you've studied — and every word there is</div>
@@ -58,6 +59,7 @@ import { useRoute } from "vue-router";
 import FlashCard from "@/components/FlashCard.vue";
 import { everyWord, matchWord } from "@/data";
 import { useProgress } from "@/composables/useProgress";
+import { pageHeroBg, motifPlum2 } from "@/assets/img.js";
 
 const route = useRoute();
 const { statusOf, isStarred } = useProgress();
@@ -141,9 +143,18 @@ const emptyText = computed(() => {
 
 <style scoped>
 .hero {
+  position: relative;
   text-align: center;
-  padding: 34px 0 20px;
+  padding: 40px 24px 30px;
+  margin: 16px 0 24px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 30px -18px rgba(45, 30, 10, 0.3);
+  overflow: hidden;
 }
+.hero-motif { position: absolute; top: -10px; right: -6px; width: 200px; opacity: .9; mix-blend-mode: multiply; pointer-events: none; }
+.hero > *:not(.hero-motif) { position: relative; z-index: 1; }
+@media (max-width: 640px) { .hero-motif { width: 130px; opacity: .7; } }
 .hero .kicker {
   font-family: var(--caps);
   font-size: 12px;
@@ -152,13 +163,13 @@ const emptyText = computed(() => {
   color: var(--gold-deep);
 }
 .hero h1 {
-  font-family: var(--serif-cn);
-  font-weight: 900;
-  font-size: 48px;
-  letter-spacing: 5px;
-  color: var(--ink);
+  font-family: var(--brush);
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: 3px;
+  color: var(--sumi);
   margin: 8px 0 6px;
-  text-shadow: 1px 1px 0 var(--gold-lt);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 .hero .en-sub {
   font-family: var(--serif-en);
@@ -248,7 +259,7 @@ const emptyText = computed(() => {
   color: var(--muted);
 }
 .scope button.on {
-  background: linear-gradient(145deg, #c0392b, #8b2a1f);
+  background: linear-gradient(145deg, var(--seal-a), var(--seal-b));
   color: #fbeecf;
   box-shadow: 0 2px 5px -1px rgba(139, 42, 31, 0.4);
 }

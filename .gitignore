@@ -8,3 +8,4 @@ audio-src/
 .env
 __pycache__/
 design-demos/
+/assets/

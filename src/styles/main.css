@@ -5,12 +5,16 @@
 :root {
   /* 典籍·线装 parchment base (see design-demos/direction-B.html). Per-series accent
      (--primary / --grad-a/b / --primary-soft) is overridden by seriesTheme() in App.vue. */
-  --primary: #c0392b;
-  --primary-active: #a52c20;
-  --primary-strong: #8b2a1f;
+  --primary: #a33f2e;
+  --primary-active: #8f3323;
+  --primary-strong: #7a2b21;
   --primary-soft: #f3e1d0;
-  --grad-a: #c0392b;
-  --grad-b: #8b2a1f;
+  --grad-a: #a33f2e;
+  --grad-b: #7a2b21;
+  /* 沉朱砂·印章红 —— UI 填充统一用它（比旧故宫大红 #c0392b 更内敛），
+     不随 seriesTheme 变色；声调教学色 --tone1 与 --error 仍保留原亮红。 */
+  --seal-a: #a33f2e;
+  --seal-b: #7a2b21;
   --accent: #a9791a;
   --accent-active: #8a641f;
   --accent-soft: #f1e4c8;
@@ -37,11 +41,16 @@
   --paper: #f5efe6;
   --paper-2: #efe6d6;
   --paper-3: #e8dcc6;
-  --gold: #c8962a;
-  --gold-lt: #e8b84b;
-  --gold-deep: #a9791a;
-  --cinnabar: #c0392b;
-  --cinnabar-dk: #8b2a1f;
+  /* 淡墨/赭灰 accents (was bright 鎏金 gold — muted toward ink per 水墨 direction).
+     朱红 --cinnabar stays vivid, reserved for seals/印章. */
+  --gold: #8a7c5c;
+  --gold-lt: #b3a582;
+  --gold-deep: #6a5c3f;
+  --cinnabar: #a33f2e;
+  --cinnabar-dk: #7a2b21;
+  /* 水墨 ink tones for hairlines / inscriptions */
+  --ink-wash: #5f5a4e;
+  --sumi: #2a241a;
   --jade: #2d6a4f;
   --jade-lt: #52b788;
   --line: #d9cbb0;
@@ -70,7 +79,8 @@
   --han: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   --serif-cn: "Noto Serif SC", serif;
   --serif-en: "Cormorant Garamond", serif;
-  --caps: "Cinzel", serif;
+  --caps: "Cormorant Garamond", serif;
+  --brush: "Ma Shan Zheng", "Noto Serif SC", cursive;
 }
 
 * {
@@ -90,14 +100,19 @@ body {
   text-rendering: optimizeLegibility;
   position: relative;
 }
-/* 宣纸纹理 —— 淡（typography stays crisp above it via #app z-index） */
+/* 宣纸纹理 —— 真实皮纸纤维（裁自纹理合集）平铺 + 细噪点叠加，文字仍在 #app z-index 之上 */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/></svg>");
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/></svg>"),
+    url("../assets/img/texture/paper.webp");
+  background-repeat: repeat, repeat;
+  background-size: 140px, 360px;
+  opacity: 0.55;
   mix-blend-mode: multiply;
 }
 /* 淡淡竖向帘纹 */

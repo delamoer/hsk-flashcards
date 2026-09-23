@@ -1,5 +1,7 @@
 <template>
   <div class="lswrap" v-if="data">
+    <div class="page-wm" :style="wmBg" aria-hidden="true"></div>
+    <div class="corner-motif" :style="{ backgroundImage: `url(${motifBamboo})` }" aria-hidden="true"></div>
     <div class="crumb">
       <router-link to="/">课程总览 Library</router-link><span class="sep">◇</span>
       <router-link v-if="!series?.single" :to="`/course/${seriesId}`">{{ series?.heroTitle }}</router-link>
@@ -10,12 +12,9 @@
       <router-link class="back" :to="`/course/${seriesId}`">‹ 返回书架 Back to shelf</router-link>
     </div>
 
-    <div class="ls-hero">
+    <div class="ls-hero" :style="{ backgroundImage: bandBg }">
       <div class="ls-seal">{{ sealChar }}</div>
-      <div class="plaque">
-        <span class="pc a"></span><span class="pc b"></span><span class="pc c"></span><span class="pc d"></span>
-        <h2>{{ unitLabel }}</h2>
-      </div>
+      <h2 class="inscribe">{{ unitLabel }}</h2>
       <div class="sub">共 {{ data.lessons.length }} 课　<span class="en">{{ data.lessons.length }} lessons</span></div>
       <div class="rule"><span class="diamond">◇ ◇ ◇</span></div>
     </div>
@@ -29,13 +28,14 @@
       >Lesson {{ r.label }}<span class="en">Part {{ i + 1 }}</span></button>
     </div>
 
-    <div class="lessons">
+    <div class="lessons" :style="gridWash">
       <router-link
         v-for="lesson in shownLessons"
         :key="lesson.num"
         class="lcard"
         :to="`/course/${seriesId}/${unitId}/lesson/${lesson.num}`"
       >
+        <span class="lc-art" :style="{ backgroundImage: `url(${cardArt(lesson.num)})` }" aria-hidden="true"></span>
         <span class="no">第 {{ numCn(lesson.num) }} 课</span>
         <div class="lesson-tag">Lesson {{ pad(lesson.num) }}</div>
         <div class="cn-title">{{ lesson.title }}</div>
@@ -45,6 +45,8 @@
         <span class="go">→</span>
       </router-link>
     </div>
+
+    <div class="foot-hills" :style="{ backgroundImage: `url(${motifMountainFar})` }" aria-hidden="true"></div>
   </div>
   <div class="lswrap" v-else-if="loading"><p class="muted">加载中… · Loading…</p></div>
   <div class="lswrap" v-else>
@@ -58,12 +60,39 @@ import { ref, computed, watch } from "vue";
 import { getUnit } from "@/data";
 import { getSeries } from "@/data/courses.js";
 import { useProgress } from "@/composables/useProgress";
+import { seriesBand, watermark, motifBamboo, motifMountainFar, motifPine, motifPlum2, motifPavilion, motifRock } from "@/assets/img.js";
+
+// 每张课卡右下角的淡墨母题——按课次轮换，给卡片添古风又不重复
+const CARD_ART = [motifPine, motifBamboo, motifPlum2, motifPavilion, motifMountainFar, motifRock];
+function cardArt(n) {
+  return CARD_ART[(Number(n) - 1) % CARD_ART.length];
+}
 
 const { statusOf } = useProgress();
 
 const props = defineProps({
   series: { type: String, required: true },
   unit: { type: [Number, String], required: true },
+});
+
+const bandBg = computed(() => {
+  const img = seriesBand[props.series];
+  return img
+    ? `linear-gradient(180deg, rgba(250,244,233,.74), rgba(241,231,212,.92)), url(${img})`
+    : "none";
+});
+const WM = { hsk: watermark.pinyin, newhsk3: watermark.words, huihua360: watermark.books, survival: watermark.words };
+const wmBg = computed(() => ({ backgroundImage: `url(${WM[props.series] || watermark.books})` }));
+
+// 卡片网格区衬一层极淡山水（纸色覆盖压到 ~10% 可见），填补空旷中段
+const gridWash = computed(() => {
+  const img = seriesBand[props.series];
+  if (!img) return {};
+  return {
+    backgroundImage: `linear-gradient(rgba(247,241,231,.9), rgba(247,241,231,.93)), url(${img})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  };
 });
 
 const seriesId = computed(() => props.series);
@@ -132,7 +161,11 @@ function numCn(n) {
 </script>
 
 <style scoped>
-.lswrap { max-width: 1180px; margin: 0 auto; padding: 0 32px 72px; }
+.lswrap { max-width: 1180px; margin: 0 auto; padding: 0 32px 72px; position: relative; overflow: hidden; }
+.lswrap > *:not(.page-wm):not(.corner-motif) { position: relative; z-index: 1; }
+.page-wm { position: absolute; left: -40px; bottom: 30px; width: 40%; height: 68%; z-index: 0; background-size: contain; background-position: left bottom; background-repeat: no-repeat; opacity: .2; mix-blend-mode: multiply; pointer-events: none; -webkit-mask-image: linear-gradient(90deg, #000 45%, transparent); mask-image: linear-gradient(90deg, #000 45%, transparent); }
+.corner-motif { position: absolute; right: -30px; top: 84px; width: 200px; height: 260px; z-index: 0; background-size: contain; background-position: right top; background-repeat: no-repeat; opacity: .3; mix-blend-mode: multiply; pointer-events: none; }
+.foot-hills { height: 140px; margin: 30px -32px -20px; background-repeat: no-repeat; background-position: center bottom; background-size: cover; opacity: .5; mix-blend-mode: multiply; pointer-events: none; -webkit-mask-image: linear-gradient(180deg, transparent, #000 70%); mask-image: linear-gradient(180deg, transparent, #000 70%); }
 .muted { color: var(--muted); font-weight: 600; padding: 40px 0 0; }
 
 .crumb { display: flex; align-items: center; gap: 9px; font-size: 13px; color: var(--muted); padding: 20px 0 4px; font-family: var(--serif-cn); }
@@ -145,19 +178,11 @@ function numCn(n) {
 .page-head .back:hover, .back:hover { color: var(--cinnabar); }
 
 /* 选课 hero —— 牌匾·留白 · 鎏金流光 */
-.ls-hero { text-align: center; padding: 30px 24px 26px; margin: 10px 0 2px; border-radius: 14px; background: linear-gradient(180deg, #faf4e9, #f1e7d4); border: 1px solid var(--line); box-shadow: 0 10px 30px -18px rgba(45,30,10,.3); }
-.ls-seal { width: 58px; height: 58px; margin: 0 auto 12px; border-radius: 9px; background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbe7d4; font-family: var(--serif-cn); font-weight: 900; font-size: 28px; display: grid; place-items: center; position: relative; box-shadow: inset 0 0 0 2px rgba(251,231,212,.5), 0 0 0 2px var(--gold), 0 4px 10px rgba(139,42,31,.35); }
+.ls-hero { text-align: center; padding: 30px 24px 26px; margin: 10px 0 2px; border-radius: 14px; background-color: #f1e7d4; background-size: cover; background-position: center 42%; background-repeat: no-repeat; border: 1px solid var(--line); box-shadow: 0 10px 30px -18px rgba(45,30,10,.3); }
+.ls-seal { width: 58px; height: 58px; margin: 0 auto 12px; border-radius: 9px; background: linear-gradient(145deg, var(--seal-a), var(--seal-b)); color: #fbe7d4; font-family: var(--serif-cn); font-weight: 900; font-size: 28px; display: grid; place-items: center; position: relative; box-shadow: inset 0 0 0 2px rgba(251,231,212,.5), 0 0 0 2px var(--gold), 0 4px 10px rgba(139,42,31,.35); }
 .ls-seal::after { content: ""; position: absolute; inset: 6px; border: 1px solid rgba(251,231,212,.35); border-radius: 5px; }
-.plaque { position: relative; display: inline-block; padding: 12px 44px; margin: 4px 0 2px; border-radius: 8px; background: linear-gradient(180deg, #5c1b12, #40130c); border: 2px solid var(--gold); box-shadow: 0 12px 28px -12px rgba(50,10,6,.6), inset 0 1px 0 rgba(255,220,180,.15); }
-.plaque::before { content: ""; position: absolute; inset: 5px; border: 1px solid rgba(240,201,106,.5); border-radius: 5px; pointer-events: none; }
-.plaque .pc { position: absolute; width: 14px; height: 14px; border: 2px solid #f3d786; opacity: .85; }
-.plaque .pc.a { left: 9px; top: 9px; border-right: none; border-bottom: none; }
-.plaque .pc.b { right: 9px; top: 9px; border-left: none; border-bottom: none; }
-.plaque .pc.c { left: 9px; bottom: 9px; border-right: none; border-top: none; }
-.plaque .pc.d { right: 9px; bottom: 9px; border-left: none; border-top: none; }
-.ls-hero h2 { position: relative; margin: 0; font-family: var(--serif-cn); font-weight: 900; font-size: 44px; line-height: 1; letter-spacing: 4px; background: linear-gradient(100deg, #cf9d38 0%, #f7dd96 42%, #fff4d2 50%, #f7dd96 58%, #cf9d38 100%); background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 1px 1px rgba(0,0,0,.25); animation: gilt 6.5s ease-in-out infinite; }
-@keyframes gilt { 0%, 100% { background-position: 120% 0; } 50% { background-position: -20% 0; } }
-@media (prefers-reduced-motion: reduce) { .ls-hero h2 { animation: none; background-position: 50% 0; } }
+.ls-hero .inscribe { position: relative; display: inline-block; margin: 6px 0 2px; font-family: var(--brush); font-weight: 400; font-size: 54px; line-height: 1.05; letter-spacing: 3px; color: var(--sumi); text-shadow: 0 1px 0 rgba(255,255,255,.4); }
+.ls-hero .inscribe::after { content: ""; display: block; height: 2px; width: 58%; margin: 8px auto 0; background: linear-gradient(90deg, transparent, var(--ink-wash), transparent); opacity: .5; }
 .ls-hero .sub { font-family: var(--serif-cn); font-size: 16px; color: var(--ink-soft, #4a3d2a); letter-spacing: 1px; margin-top: 14px; }
 .ls-hero .sub .en { font-family: var(--serif-en); font-style: italic; color: var(--muted); font-size: 15px; }
 .ls-hero .rule { display: flex; align-items: center; gap: 14px; color: var(--gold); max-width: 280px; margin: 16px auto 0; }
@@ -167,17 +192,21 @@ function numCn(n) {
 .seg { display: flex; width: fit-content; background: var(--paper-3); border: 1px solid var(--line); border-radius: 8px; padding: 4px; margin: 26px auto; gap: 4px; box-shadow: inset 0 1px 3px rgba(45,30,10,.06); flex-wrap: wrap; }
 .seg button { font-family: var(--serif-cn); font-size: 14px; letter-spacing: 1px; padding: 8px 20px; border-radius: 6px; color: var(--ink-soft, #4a3d2a); transition: .2s; }
 .seg button .en { display: block; font-family: var(--caps); font-size: 9px; letter-spacing: 1.5px; color: var(--muted); }
-.seg button.active { background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbeecf; box-shadow: 0 2px 5px -1px rgba(139,42,31,.4); }
+.seg button.active { background: linear-gradient(145deg, var(--seal-a), var(--seal-b)); color: #fbeecf; box-shadow: 0 2px 5px -1px rgba(139,42,31,.4); }
 .seg button.active .en { color: rgba(251,238,207,.85); }
 
-.lessons { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 18px; margin-top: 26px; }
+.lessons { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 18px; margin-top: 26px; padding: 20px; border-radius: 14px; border: 1px solid var(--line-soft); box-shadow: inset 0 1px 0 rgba(255,255,255,.4); }
 .lcard {
   position: relative; background: linear-gradient(160deg, #fbf6ec, #f3ead9); border: 1px solid var(--line);
   border-radius: 10px; padding: 20px 22px 20px 60px; transition: .24s; overflow: hidden;
   box-shadow: 0 3px 10px -6px var(--shadow, rgba(45,30,10,.14)); display: block;
 }
-.lcard::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: linear-gradient(180deg, var(--gold-lt), var(--gold-deep)); }
-.lcard:hover { transform: translateY(-4px); border-color: var(--gold); box-shadow: 0 12px 24px -12px var(--shadow, rgba(45,30,10,.14)); }
+.lcard::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: linear-gradient(180deg, var(--cinnabar), var(--cinnabar-dk)); z-index: 1; }
+.lcard::after { content: ""; position: absolute; inset: 7px 7px 7px 50px; border: 1px solid var(--line-soft); border-radius: 6px; pointer-events: none; }
+.lcard:hover { transform: translateY(-4px); border-color: var(--cinnabar); box-shadow: 0 14px 26px -12px rgba(139,42,31,.28); }
+.lcard .lc-art { position: absolute; right: 6px; bottom: 6px; width: 128px; height: 108px; z-index: 0; background-repeat: no-repeat; background-position: right bottom; background-size: contain; opacity: .12; mix-blend-mode: multiply; pointer-events: none; -webkit-mask-image: radial-gradient(130% 130% at 100% 100%, #000 30%, transparent 74%); mask-image: radial-gradient(130% 130% at 100% 100%, #000 30%, transparent 74%); transition: opacity .24s; }
+.lcard:hover .lc-art { opacity: .2; }
+.lcard .lesson-tag, .lcard .cn-title, .lcard .en { position: relative; z-index: 1; }
 .lcard .no { position: absolute; left: 14px; top: 18px; font-family: var(--caps); font-size: 11px; letter-spacing: 1px; color: var(--gold-deep); writing-mode: vertical-rl; text-orientation: mixed; }
 .lcard .lesson-tag { font-family: var(--caps); font-size: 10.5px; letter-spacing: 2px; color: var(--gold-deep); text-transform: uppercase; }
 .lcard .cn-title { font-family: var(--serif-cn); font-weight: 700; font-size: 21px; letter-spacing: 1px; margin: 3px 0 2px; color: var(--ink); }

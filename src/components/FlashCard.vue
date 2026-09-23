@@ -145,7 +145,10 @@ function say(text) {
 }
 /* opacity swap at the flip midpoint — bulletproof even if backface-visibility misbehaves */
 .fc-front {
-  background: linear-gradient(160deg, #fbf7ee, #efe4d0);
+  background:
+    linear-gradient(rgba(250,245,235,.92), rgba(240,231,214,.92)),
+    url("../assets/img/motif/cloud.webp") right -8px bottom -8px / 132px auto no-repeat,
+    linear-gradient(160deg, #fbf7ee, #efe4d0);
   color: var(--ink);
   box-shadow: var(--sh-front);
   border: 1px solid var(--line);

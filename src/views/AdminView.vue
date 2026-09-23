@@ -1,12 +1,13 @@
 <template>
   <div class="wrap">
+    <div class="corner-motif" :style="{ backgroundImage: `url(${motifBamboo})` }" aria-hidden="true"></div>
     <div class="crumb">
-      <router-link to="/">首页 Home</router-link>
-      <span class="sep">/</span>
+      <router-link to="/">课程总览 Library</router-link>
+      <span class="sep">◇</span>
       <span class="cur">管理后台 Admin</span>
     </div>
 
-    <h2 class="title">学生管理 <i>Student management</i></h2>
+    <h2 class="title inscribe">学生管理 <i>Student management</i></h2>
 
     <!-- KPIs -->
     <div class="kpis">
@@ -175,6 +176,8 @@
         </div>
       </div>
     </div>
+
+    <div class="foot-hills" :style="{ backgroundImage: `url(${motifMountainFar})` }" aria-hidden="true"></div>
   </div>
 </template>
 
@@ -183,6 +186,7 @@ import { ref, computed, onMounted } from "vue";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/composables/useAuth";
 import { courseRegistry } from "@/data";
+import { motifBamboo, motifMountainFar } from "@/assets/img.js";
 
 const { user } = useAuth();
 const myId = user.value?.id;
@@ -437,17 +441,37 @@ onMounted(reload);
 </script>
 
 <style scoped>
-.title {
-  font-size: 26px;
-  font-weight: 800;
-  margin-bottom: 18px;
+.wrap { position: relative; overflow: hidden; }
+.wrap > *:not(.corner-motif):not(.foot-hills) { position: relative; z-index: 1; }
+.corner-motif { position: absolute; right: -34px; top: 40px; width: 210px; height: 280px; z-index: 0; background-size: contain; background-position: right top; background-repeat: no-repeat; opacity: .22; mix-blend-mode: multiply; pointer-events: none; }
+.foot-hills { height: 130px; margin: 20px 0 -20px; background-repeat: no-repeat; background-position: center bottom; background-size: cover; opacity: .4; mix-blend-mode: multiply; pointer-events: none; -webkit-mask-image: linear-gradient(180deg, transparent, #000 70%); mask-image: linear-gradient(180deg, transparent, #000 70%); }
+
+.title.inscribe {
+  display: inline-block;
+  font-family: var(--brush);
+  font-weight: 400;
+  font-size: 46px;
+  letter-spacing: 3px;
+  color: var(--sumi);
+  margin-bottom: 20px;
+}
+.title.inscribe::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 62%;
+  margin: 6px 0 0;
+  background: linear-gradient(90deg, var(--ink-wash), transparent);
+  opacity: .5;
 }
 .title i {
-  font-style: normal;
-  font-size: 14px;
-  font-weight: 600;
+  font-family: var(--serif-en);
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 500;
   color: var(--muted);
-  margin-left: 8px;
+  margin-left: 10px;
+  letter-spacing: 0;
 }
 
 /* KPIs */
@@ -481,14 +505,17 @@ onMounted(reload);
 
 .card {
   background: var(--card);
+  border: 1px solid var(--line);
   border-radius: var(--r-lg);
   box-shadow: var(--sh-card);
   padding: 20px;
   margin-bottom: 24px;
 }
 .card h3 {
-  font-size: 16px;
-  font-weight: 800;
+  font-family: var(--serif-cn);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .5px;
   margin-bottom: 14px;
 }
 .card h3 i,
@@ -637,8 +664,10 @@ onMounted(reload);
   flex-wrap: wrap;
 }
 .listhead h3 {
-  font-size: 16px;
-  font-weight: 800;
+  font-family: var(--serif-cn);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .5px;
 }
 .tools {
   display: flex;
@@ -820,8 +849,9 @@ onMounted(reload);
   max-width: 380px;
 }
 .modalcard h3 {
+  font-family: var(--serif-cn);
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .modalcard h3 i {
   font-style: normal;

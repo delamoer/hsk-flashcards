@@ -1,10 +1,10 @@
 <template>
   <div class="wrap quizwrap" v-if="lesson">
     <div class="crumb">
-      <router-link to="/">首页</router-link><span class="sep">/</span>
-      <router-link :to="`/course/${series}/${unit}`">{{ unitLabel }}</router-link><span class="sep">/</span>
+      <router-link to="/">课程总览 Library</router-link><span class="sep">◇</span>
+      <router-link :to="`/course/${series}/${unit}`">{{ unitLabel }}</router-link><span class="sep">◇</span>
       <router-link :to="`/course/${series}/${unit}/lesson/${lesson.num}`">第 {{ lesson.num }} 课</router-link>
-      <span class="sep">/</span><span class="cur">自测 Quiz</span>
+      <span class="sep">◇</span><span class="cur">自测 Quiz</span>
     </div>
 
     <!-- result -->
@@ -210,17 +210,19 @@ function restart() {
   margin-bottom: 20px;
 }
 .qcard {
-  background: var(--card);
+  background: linear-gradient(165deg, #fbf7ee, #f3ead9);
+  border: 1px solid var(--line);
   border-radius: var(--r-xl);
   box-shadow: var(--sh-card);
   padding: 28px;
   text-align: center;
 }
 .qtype {
+  font-family: var(--caps);
   font-size: 12px;
-  font-weight: 800;
-  color: var(--primary);
-  letter-spacing: 0.4px;
+  font-weight: 600;
+  color: var(--gold-deep);
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 .qprompt {
@@ -290,9 +292,10 @@ function restart() {
   padding: 40px 0;
 }
 .score {
+  font-family: var(--serif-cn);
   font-size: 64px;
-  font-weight: 800;
-  color: var(--primary);
+  font-weight: 900;
+  color: var(--cinnabar-dk);
   line-height: 1;
 }
 .score span {
@@ -301,8 +304,10 @@ function restart() {
   margin-left: 6px;
 }
 .rlabel {
-  font-size: 20px;
-  font-weight: 800;
+  font-family: var(--serif-cn);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
   margin: 12px 0 6px;
 }
 .ractions {

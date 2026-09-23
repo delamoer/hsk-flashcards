@@ -1,8 +1,11 @@
 <template>
   <div class="wrap">
-    <header class="phead">
-      <h1><span class="zh">汉语拼音</span> <span class="en">Pinyin</span></h1>
+    <header class="phead" :style="pageHeroBg()">
+      <img class="hero-motif" :src="motifCloud" alt="" aria-hidden="true" />
+      <div class="kicker">Pinyin · 发音之基</div>
+      <h1>汉语拼音<span class="en">Pinyin</span></h1>
       <p>点一下就能听真人发音 · Tap anything to hear a native speaker</p>
+      <div class="rule"><span class="diamond">◇ ◇ ◇</span></div>
     </header>
 
     <div class="tabs">
@@ -182,6 +185,7 @@ import pinyinData from "@/data/pinyin.json";
 import { playPinyin, speak } from "@/utils/tts";
 import { toneOf } from "@/utils/pinyinTones";
 import { useSettings } from "@/composables/useSettings";
+import { pageHeroBg, motifCloud } from "@/assets/img.js";
 
 const { settings } = useSettings();
 const data = pinyinData;
@@ -277,16 +281,22 @@ function optClass(t) {
 
 <style scoped>
 .wrap { max-width: 1000px; margin: 0 auto; }
-.phead { text-align: center; padding: 6px 0 16px; }
-.phead h1 { font-size: 30px; font-weight: 800; }
-.phead .zh { background: linear-gradient(135deg, var(--grad-a), var(--grad-b)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.phead .en { color: var(--muted-soft); font-weight: 700; }
-.phead p { margin-top: 6px; color: var(--muted); font-size: 14px; }
+.phead { position: relative; text-align: center; padding: 38px 24px 28px; margin: 16px 0 22px; border-radius: 14px; border: 1px solid var(--line); box-shadow: 0 10px 30px -18px rgba(45,30,10,.3); overflow: hidden; }
+.hero-motif { position: absolute; top: 4px; right: 10px; width: 180px; opacity: .55; mix-blend-mode: multiply; pointer-events: none; }
+.phead > *:not(.hero-motif) { position: relative; z-index: 1; }
+@media (max-width: 640px) { .hero-motif { display: none; } }
+.phead .kicker { font-family: var(--caps); font-size: 12px; letter-spacing: 5px; text-transform: uppercase; color: var(--gold-deep); }
+.phead h1 { font-family: var(--brush); font-size: 52px; font-weight: 400; letter-spacing: 3px; color: var(--sumi); margin: 8px 0 4px; text-shadow: 0 1px 0 rgba(255,255,255,.5); }
+.phead .en { font-family: var(--serif-en); font-style: italic; font-weight: 500; font-size: 22px; letter-spacing: 1px; color: var(--gold-deep); margin-left: 12px; }
+.phead p { margin-top: 4px; color: var(--ink-soft, #4a3d2a); font-family: var(--serif-cn); font-size: 15px; }
+.phead .rule { display: flex; align-items: center; gap: 14px; max-width: 260px; margin: 14px auto 0; }
+.phead .rule::before, .phead .rule::after { content: ""; height: 1px; flex: 1; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+.phead .diamond { font-size: 11px; letter-spacing: 6px; color: var(--gold); }
 
 .tabs { display: flex; gap: 6px; background: var(--soft); border-radius: var(--r-pill); padding: 5px; max-width: 460px; margin: 0 auto 20px; }
 .tabs button { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 8px 6px; border-radius: var(--r-pill); font-weight: 800; font-size: 14px; color: var(--body); transition: 0.15s; }
 .tabs button i { font-style: normal; font-size: 10px; font-weight: 600; opacity: 0.7; }
-.tabs button.on { background: #fff; color: var(--primary-strong); box-shadow: var(--sh-card); }
+.tabs button.on { background: var(--card); color: var(--primary-strong); box-shadow: var(--sh-card); }
 
 .panel { animation: pop 0.2s ease; }
 @keyframes pop { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
@@ -301,12 +311,17 @@ function optClass(t) {
 .viewtoggle { display: flex; background: var(--soft); border-radius: var(--r-pill); padding: 4px; }
 .viewtoggle button { display: flex; flex-direction: column; align-items: center; padding: 6px 16px; border-radius: var(--r-pill); font-weight: 800; font-size: 13px; color: var(--body); }
 .viewtoggle button i { font-style: normal; font-size: 9px; opacity: 0.7; }
-.viewtoggle button.on { background: #fff; color: var(--primary-strong); box-shadow: var(--sh-card); }
+.viewtoggle button.on { background: var(--card); color: var(--primary-strong); box-shadow: var(--sh-card); }
 
 /* card walls */
 .wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
 .wall.syl { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-.card { text-align: left; background: var(--card); border: 1.5px solid var(--hairline); border-radius: var(--r-lg); padding: 16px; transition: 0.15s; }
+.card { position: relative; overflow: hidden; text-align: left; border: 1.5px solid var(--hairline); border-radius: var(--r-lg); padding: 16px; transition: 0.15s;
+  background:
+    linear-gradient(rgba(251,247,238,.9), rgba(251,247,238,.9)),
+    url("../assets/img/motif/mountain-far.webp") right bottom / 150px auto no-repeat,
+    var(--card);
+}
 .card.ini { cursor: pointer; }
 .card.ini:hover { transform: translateY(-3px); box-shadow: var(--sh-hover); border-color: var(--primary); }
 .card.ini.playing { border-color: var(--primary); background: var(--soft); }
@@ -330,7 +345,7 @@ function optClass(t) {
 .tones { display: flex; gap: 6px; flex-wrap: wrap; }
 .tones.center { justify-content: center; }
 .ssyl { text-align: center; font-weight: 900; font-size: 20px; color: var(--ink); margin-bottom: 10px; }
-.tone { min-width: 46px; padding: 8px 8px; border-radius: var(--r-sm); border: 1.5px solid var(--hairline); background: #fff; font-family: var(--ui); font-size: 19px; font-weight: 800; color: var(--ink); transition: 0.12s; }
+.tone { min-width: 46px; padding: 8px 8px; border-radius: var(--r-sm); border: 1.5px solid var(--hairline); background: var(--card); font-family: var(--ui); font-size: 19px; font-weight: 800; color: var(--ink); transition: 0.12s; }
 .tone.sm { min-width: 38px; font-size: 16px; padding: 6px 4px; }
 .tone.lg { min-width: 58px; font-size: 26px; padding: 12px 14px; }
 .tone:hover { border-color: var(--primary); background: var(--soft); }
@@ -339,7 +354,7 @@ function optClass(t) {
 
 /* picker */
 .pickrow { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
-.pick { padding: 9px 15px; border-radius: var(--r-pill); border: 1.5px solid var(--hairline); background: #fff; font-family: var(--ui); font-weight: 800; font-size: 16px; color: var(--body); }
+.pick { padding: 9px 15px; border-radius: var(--r-pill); border: 1.5px solid var(--hairline); background: var(--card); font-family: var(--ui); font-weight: 800; font-size: 16px; color: var(--body); }
 .pick.on { background: linear-gradient(135deg, var(--grad-a), var(--grad-b)); color: #fff; border-color: transparent; }
 
 /* chart */
@@ -348,10 +363,10 @@ function optClass(t) {
 .dtones { display: flex; gap: 8px; flex-wrap: wrap; flex: 1; }
 .dclose { font-size: 16px; color: var(--muted); padding: 4px 8px; border-radius: var(--r-sm); }
 .dclose:hover { background: var(--soft); }
-.wallwrap { background: #fff; border-radius: var(--r-lg); box-shadow: var(--sh-card); padding: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.wallwrap { background: var(--card); border-radius: var(--r-lg); box-shadow: var(--sh-card); padding: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .ptable { border-collapse: separate; border-spacing: 4px; min-width: 720px; width: 100%; }
 .ptable th { font-weight: 900; font-size: 13px; color: var(--muted); padding: 6px 4px; }
-.ptable thead th { position: sticky; top: 0; background: #fff; color: var(--primary-strong); z-index: 2; }
+.ptable thead th { position: sticky; top: 0; background: var(--card); color: var(--primary-strong); z-index: 2; }
 .ptable .corner { left: 0; z-index: 3; font-size: 11px; }
 .ptable .rowh { position: sticky; left: 0; background: var(--soft); color: var(--primary-strong); border-radius: var(--r-sm); z-index: 1; min-width: 48px; }
 .ptable td { padding: 0; }
@@ -386,7 +401,7 @@ function optClass(t) {
 .qplay .qsyl { font-size: 26px; font-weight: 900; letter-spacing: 1px; }
 .qplay .qre { font-size: 11px; opacity: 0.9; font-weight: 700; }
 .qopts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.qopt { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 14px 8px; border-radius: var(--r-md); border: 2px solid var(--hairline); background: #fff; transition: 0.12s; }
+.qopt { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 14px 8px; border-radius: var(--r-md); border: 2px solid var(--hairline); background: var(--card); transition: 0.12s; }
 .qopt:hover { border-color: var(--primary); background: var(--soft); }
 .qopt .qmark { font-size: 28px; font-weight: 900; color: var(--ink); }
 .qopt.t1 .qmark { color: var(--tone1); } .qopt.t2 .qmark { color: var(--tone2); } .qopt.t3 .qmark { color: var(--tone3); } .qopt.t4 .qmark { color: var(--tone4); }
@@ -398,7 +413,7 @@ function optClass(t) {
 .qfeed.show { opacity: 1; }
 .qfeed .ok { color: var(--success); }
 .qfeed .no { color: var(--error); }
-.qnext { width: 100%; margin-top: 14px; padding: 13px; border-radius: var(--r-pill); background: #fff; color: var(--primary-strong); font-weight: 900; font-size: 15px; box-shadow: var(--sh-card); }
+.qnext { width: 100%; margin-top: 14px; padding: 13px; border-radius: var(--r-pill); background: var(--card); color: var(--primary-strong); font-weight: 900; font-size: 15px; box-shadow: var(--sh-card); }
 .qhint { text-align: center; color: rgba(255, 255, 255, 0.85); font-size: 12px; margin-top: 14px; font-weight: 600; }
 
 /* mobile */

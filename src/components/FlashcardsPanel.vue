@@ -140,7 +140,7 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
 .modes { display: inline-flex; background: var(--paper-3); border: 1px solid var(--line); border-radius: 8px; padding: 4px; gap: 4px; }
 .modes button { display: inline-flex; flex-direction: column; line-height: 1.1; font-family: var(--serif-cn); font-weight: 600; font-size: 14px; padding: 6px 16px; border-radius: 6px; color: var(--ink-soft, #4a3d2a); transition: .2s; }
 .modes button i { font-style: normal; font-family: var(--caps); font-size: 8.5px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
-.modes button.on { background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbeecf; box-shadow: 0 2px 5px -1px rgba(139,42,31,.4); }
+.modes button.on { background: linear-gradient(145deg, var(--seal-a), var(--seal-b)); color: #fbeecf; box-shadow: 0 2px 5px -1px rgba(139,42,31,.4); }
 .modes button.on i { color: rgba(251,238,207,.85); }
 .search { flex: 1; min-width: 160px; }
 .search input { width: 100%; font-family: var(--han); font-size: 14px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); }
@@ -152,7 +152,7 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
 .tbtn { display: inline-flex; flex-direction: column; line-height: 1.1; font-family: var(--serif-cn); font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--ink-soft, #4a3d2a); transition: .2s; }
 .tbtn i { font-style: normal; font-family: var(--caps); font-size: 8.5px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); }
 .tbtn:hover { border-color: var(--gold); }
-.tbtn.primary { background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbeecf; border-color: var(--cinnabar-dk); }
+.tbtn.primary { background: linear-gradient(145deg, var(--seal-a), var(--seal-b)); color: #fbeecf; border-color: var(--cinnabar-dk); }
 .tbtn.primary i { color: rgba(251,238,207,.85); }
 
 /* chips */

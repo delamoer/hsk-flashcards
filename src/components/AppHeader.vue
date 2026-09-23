@@ -6,7 +6,7 @@
     </router-link>
 
     <nav v-if="showNav" class="mainnav">
-      <router-link to="/" class="navlink" :class="{ on: isCourses }">选书 <i>Books</i></router-link>
+      <router-link to="/courses" class="navlink" :class="{ on: isCourses }">选书 <i>Books</i></router-link>
       <router-link to="/pinyin" class="navlink" :class="{ on: route.name === 'pinyin' }">拼音 <i>Pinyin</i></router-link>
       <router-link to="/my-words" class="navlink" :class="{ on: route.name === 'mywords' }">我的词 <i>My words</i></router-link>
     </nav>
@@ -26,7 +26,7 @@
               <div class="me">{{ user.email }}</div>
             </div>
           </div>
-          <router-link to="/account" class="mi" @click="open = false">账号 <i>Account</i></router-link>
+          <router-link to="/account" class="mi" @click="open = false">个人中心 <i>Account</i></router-link>
           <router-link v-if="isAdmin" to="/admin" class="mi" @click="open = false">管理 <i>Admin</i></router-link>
           <button class="mi danger" @click="handleSignOut">退出 <i>Sign out</i></button>
         </div>
@@ -86,7 +86,7 @@ const hideChrome = computed(() => route.name === "print" || route.name === "logi
 
 // Top-level section nav (desktop-primary). Shown once the user is in the app.
 const showNav = computed(() => !isConfigured || isLoggedIn.value);
-const COURSE_ROUTES = new Set(["home", "series", "lessons", "lesson", "quiz", "search", "texts", "texts-unit", "text"]);
+const COURSE_ROUTES = new Set(["courses", "series", "lessons", "lesson", "quiz", "search", "texts", "texts-unit", "text"]);
 const isCourses = computed(() => COURSE_ROUTES.has(route.name));
 
 const emailName = computed(() => (user.value?.email || "").split("@")[0]);
@@ -112,19 +112,19 @@ const avatarChar = computed(() => {
   align-items: center;
   gap: 14px;
   padding: 12px 24px;
-  background: linear-gradient(180deg, #f7f1e8, #f1e8d8);
-  border-bottom: 2px solid var(--gold);
-  box-shadow: 0 2px 0 var(--gold-lt), 0 6px 18px -12px rgba(45, 30, 10, 0.14);
+  background: linear-gradient(180deg, #f6f0e6, #f1e9db);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 6px 18px -14px rgba(45, 30, 10, 0.2);
 }
 .appbar::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -4px;
-  height: 2px;
-  background: repeating-linear-gradient(90deg, var(--gold) 0 10px, transparent 10px 16px);
-  opacity: 0.5;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--ink-wash), transparent);
+  opacity: 0.35;
 }
 .logo {
   display: inline-flex;
@@ -136,7 +136,7 @@ const avatarChar = computed(() => {
   width: 44px;
   height: 44px;
   border-radius: 7px;
-  background: linear-gradient(145deg, #c0392b, #9c2b1f);
+  background: linear-gradient(145deg, var(--seal-a), var(--seal-b));
   color: #fbe7d4;
   display: grid;
   place-items: center;
@@ -145,7 +145,7 @@ const avatarChar = computed(() => {
   font-size: 25px;
   line-height: 1;
   position: relative;
-  box-shadow: inset 0 0 0 2px rgba(251, 231, 212, 0.55), inset 0 0 0 3.5px #a52c20, 0 2px 5px rgba(139, 42, 31, 0.4);
+  box-shadow: inset 0 0 0 2px rgba(251, 231, 212, 0.55), inset 0 0 0 3.5px var(--seal-b), 0 2px 5px rgba(139, 42, 31, 0.4);
 }
 .logo .mark::after {
   content: "";

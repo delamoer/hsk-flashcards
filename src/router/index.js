@@ -18,6 +18,7 @@ const lessonProps = (route) => ({
 
 const routes = [
   { path: "/", name: "home", component: () => import("@/views/LibraryView.vue") },
+  { path: "/courses", name: "courses", component: () => import("@/views/CoursesView.vue") },
   { path: "/search", name: "search", component: () => import("@/views/SearchView.vue") },
   { path: "/login", name: "login", component: () => import("@/views/LoginView.vue") },
   { path: "/account", name: "account", component: () => import("@/views/AccountView.vue") },

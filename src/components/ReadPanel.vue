@@ -102,13 +102,17 @@ function say(t) {
 <style scoped>
 .readpanel { padding: 30px 0 20px; }
 .text-card {
-  background: linear-gradient(165deg, #fbf7ee, #f3ead9); border: 1px solid var(--line); border-radius: 12px;
+  background:
+    linear-gradient(rgba(250,245,235,.85), rgba(244,236,219,.85)),
+    url("../assets/img/motif/cloud.webp") right 6px bottom 6px / 190px auto no-repeat,
+    linear-gradient(165deg, #fbf7ee, #f3ead9);
+  border: 1px solid var(--line); border-radius: 12px;
   padding: 0; margin-bottom: 26px; box-shadow: 0 4px 14px -8px var(--shadow, rgba(45,30,10,.14)); overflow: hidden; position: relative;
 }
 .text-card::before { content: ""; position: absolute; inset: 8px; border: 1px solid var(--line-soft); border-radius: 8px; pointer-events: none; }
 .tc-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 24px; border-bottom: 1px solid var(--line); background: linear-gradient(90deg, rgba(200,150,42,.08), transparent); }
 .tc-head .tno { display: flex; align-items: center; gap: 12px; }
-.tc-head .tno .badge { background: linear-gradient(145deg, #c0392b, #8b2a1f); color: #fbeecf; font-family: var(--caps); font-size: 11px; letter-spacing: 1.5px; padding: 4px 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(139,42,31,.35); }
+.tc-head .tno .badge { background: linear-gradient(145deg, var(--seal-a), var(--seal-b)); color: #fbeecf; font-family: var(--caps); font-size: 11px; letter-spacing: 1.5px; padding: 4px 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(139,42,31,.35); }
 .tc-head .tno .cn { font-family: var(--serif-cn); font-weight: 700; font-size: 19px; letter-spacing: 1px; }
 .toggles { display: flex; gap: 8px; }
 .toggles button { font-family: var(--caps); font-size: 10px; letter-spacing: 1.5px; padding: 5px 12px; border: 1px solid var(--line); background: var(--paper); border-radius: 99px; color: var(--muted); transition: .2s; }
