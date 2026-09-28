@@ -79,7 +79,7 @@
        },
        "觉得": {
         "py": "juéde",
-        "en": "to feel; think"
+        "en": "feel; think"
        },
        "最": {
         "py": "zuì",
@@ -665,7 +665,7 @@
       "tiles": {
        "生病": {
         "py": "shēngbìng",
-        "en": "to get sick"
+        "en": "fall ill; get sick"
        },
        "每天": {
         "py": "měi tiān",
@@ -681,7 +681,7 @@
        },
        "起床": {
         "py": "qǐchuáng",
-        "en": "to get up"
+        "en": "get up"
        }
       }
      },
@@ -1113,8 +1113,8 @@
       ],
       "tiles": {
        "休息": {
-        "py": "xiūxi",
-        "en": "to rest"
+        "py": "xiūxī",
+        "en": "rest"
        },
        "忙": {
         "py": "máng",
@@ -1311,8 +1311,7 @@
        "speaker": "A",
        "text": "多少钱买的？",
        "tokens": [
-        "多少",
-        "钱",
+        "多少钱",
         "买",
         "的"
        ]
@@ -1397,7 +1396,7 @@
        },
        "一下": {
         "py": "yíxià",
-        "en": "a little; once"
+        "en": "a little; once (softens an action)"
        },
        "牛奶": {
         "py": "niúnǎi",
@@ -4152,7 +4151,7 @@
       "tiles": {
        "再": {
         "py": "zài",
-        "en": "again; then"
+        "en": "again"
        },
        "告诉": {
         "py": "gàosu",
@@ -4295,7 +4294,7 @@
        },
        "找": {
         "py": "zhǎo",
-        "en": "to look for"
+        "en": "look for; find"
        },
        "事情": {
         "py": "shìqing",
@@ -4450,7 +4449,7 @@
       "tiles": {
        "服务员": {
         "py": "fúwùyuán",
-        "en": "waiter; waitress; attendant"
+        "en": "waiter; waitress; server"
        }
       }
      },
@@ -4598,7 +4597,7 @@
        },
        "再": {
         "py": "zài",
-        "en": "again; then"
+        "en": "again"
        }
       }
      },
@@ -5600,7 +5599,7 @@
        },
        "正在": {
         "py": "zhèngzài",
-        "en": "in the process of; currently"
+        "en": "be in the process of; be doing"
        }
       }
      },
@@ -5916,7 +5915,7 @@
       "tiles": {
        "唱歌": {
         "py": "chànggē",
-        "en": "to sing"
+        "en": "sing"
        },
        "男朋友": {
         "py": "nánpéngyou",
@@ -6770,7 +6769,7 @@
        },
        "穿": {
         "py": "chuān",
-        "en": "to wear"
+        "en": "wear; put on"
        },
        "进": {
         "py": "jìn",

@@ -152,8 +152,8 @@ def col_index(header):
         "type": find("语法类型"),
         "tier": find("层级标记"),
         "explainEn": find("Very Simple English Explanation"),
-        "structure": find("基本结构"),
-        "ex_zh": [find(f"例句{k}（中文）") for k in (1, 2, 3)],
+        "structure": find("基本结构（中文 + English）", "基本结构"),
+        "ex_zh": [find(f"例句{k}（中文 + 拼音）", f"例句{k}（中文）") for k in (1, 2, 3)],
         "ex_en": [find(f"例句{k}（英文）") for k in (1, 2, 3)],
         "q": [find(f"练习{k}") for k in (1, 2, 3)],
         "a": [find(f"答案{k}") for k in (1, 2, 3)],
@@ -164,6 +164,19 @@ def col_index(header):
 
 def s(v):
     return str(v).strip() if v is not None else ""
+
+
+def split_bilingual(v):
+    """「零基础拼音英文版」把两种写法塞进一个单元格，用换行分隔：
+       基本结构 → 中文结构 ⏎ English gloss；例句 → 中文 ⏎ 拼音。
+    旧版主表是单行，此时第二半为空，调用方照旧只用第一半。"""
+    parts = [p.strip() for p in s(v).split("\n") if p.strip()]
+    if not parts:
+        return "", ""
+    if len(parts) == 1:
+        return parts[0], ""
+    other = " ".join(parts[1:])
+    return parts[0], re.sub(r"^English\s*[:：]\s*", "", other)
 
 
 def convert_file(path):
@@ -189,10 +202,13 @@ def convert_file(path):
 
         examples = []
         for zi, ei in zip(c["ex_zh"], c["ex_en"]):
-            zh = s(r[zi]) if zi is not None else ""
+            zh, py = split_bilingual(r[zi]) if zi is not None else ("", "")
             en = s(r[ei]) if ei is not None else ""
             if zh:
-                examples.append({"zh": zh, "en": en})
+                ex = {"zh": zh, "en": en}
+                if py:
+                    ex["py"] = py
+                examples.append(ex)
 
         exercises = []
         for qi, ai in zip(c["q"], c["a"]):
@@ -207,18 +223,23 @@ def convert_file(path):
                     ex["body"] = m.group(2).strip()
                 exercises.append(ex)
 
+        structure, structure_en = (
+            split_bilingual(r[c["structure"]]) if c["structure"] is not None else ("", "")
+        )
         point = {
             "id": s(r[c["id"]]) if c["id"] is not None else "",
             "name": s(r[c["name"]]) if c["name"] is not None else "",
             "pinyin": s(r[c["pinyin"]]) if c["pinyin"] is not None else "",
             "type": s(r[c["type"]]) if c["type"] is not None else "",
             "explainEn": s(r[c["explainEn"]]) if c["explainEn"] is not None else "",
-            "structure": s(r[c["structure"]]) if c["structure"] is not None else "",
+            "structure": structure,
             "examples": examples,
             "exercises": exercises,
             "note": s(r[c["note"]]) if c["note"] is not None else "",
             "source": s(r[c["source"]]) if c["source"] is not None else "",
         }
+        if structure_en:
+            point["structureEn"] = structure_en
         if point["note"] and NOTE_EN.get(point["note"]):
             point["noteEn"] = NOTE_EN[point["note"]]
         if point["type"] and TYPE_EN.get(point["type"]):
@@ -245,19 +266,28 @@ def main():
     NOTE_EN = load_note_en()
     print(f"  note_en: {len(NOTE_EN)} 条英文备注")
     os.makedirs(OUT_DIR, exist_ok=True)
-    files = sorted(glob.glob(os.path.join(ROOT, "sources", "*语法预习复习主表*.xlsx")))
+    # 同一册若两版并存，用「零基础拼音英文版」——它是主表的加强版（例句带拼音、结构带英文），
+    # 语法点集合完全一致。没有加强版的册（hsk-3/4/5）继续走旧主表。
+    files = {}
+    for pattern, upgraded in (("*语法预习复习主表*.xlsx", False), ("*语法零基础拼音英文版.xlsx", True)):
+        for f in sorted(glob.glob(os.path.join(ROOT, "sources", pattern))):
+            target = parse_target(f)
+            if target and (upgraded or target not in files):
+                files[target] = f
     meta = {}
     total_pts = 0
-    for f in files:
+    for f in [files[k] for k in sorted(files)]:
         res = convert_file(f)
         if not res:
             continue
         key, data, m = res
+        n_py = sum(1 for l in data["lessons"] for p in l["points"] for e in p["examples"] if e.get("py"))
         with open(os.path.join(OUT_DIR, f"{key}.json"), "w", encoding="utf-8") as fh:
             json.dump(data, fh, ensure_ascii=False, separators=(",", ":"))
         meta[key] = m
         total_pts += m["pointCount"]
-        print(f"  ✓ {key}: {m['lessonCount']} 课, {m['pointCount']} 语法点")
+        tag = f"  例句拼音 {n_py}" if n_py else "  （旧版主表，无例句拼音）"
+        print(f"  ✓ {key}: {m['lessonCount']} 课, {m['pointCount']} 语法点{tag}")
     with open(os.path.join(OUT_DIR, "meta.json"), "w", encoding="utf-8") as fh:
         json.dump(meta, fh, ensure_ascii=False, indent=0)
     print(f"共 {len(meta)} 册, {total_pts} 语法点 → {OUT_DIR}")

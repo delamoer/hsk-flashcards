@@ -350,7 +350,7 @@
       "tiles": {
        "行李": {
         "py": "xíngli",
-        "en": "luggage"
+        "en": "luggage; baggage"
        },
        "丢": {
         "py": "diū",
@@ -1267,14 +1267,11 @@
         "给",
         "我们",
         "拿",
-        "一",
-        "双",
-        "筷子",
+        "一双筷子",
         "一个",
         "勺子",
         "和",
-        "一个",
-        "碗"
+        "一个碗"
        ]
       },
       {
@@ -1364,9 +1361,7 @@
         "您",
         "一些",
         "水果",
-        "请",
-        "慢",
-        "用"
+        "请慢用"
        ]
       }
      ],
@@ -1450,7 +1445,7 @@
        },
        "外卖": {
         "py": "wàimài",
-        "en": "takeaway; takeout"
+        "en": "food delivery; takeout"
        },
        "方便": {
         "py": "fāngbiàn",
@@ -1539,8 +1534,7 @@
        "text": "这个鸡肉饭太好吃了，我要再来吃一次。",
        "tokens": [
         "这个",
-        "鸡",
-        "肉",
+        "鸡肉",
         "饭",
         "太",
         "好吃",
@@ -1790,7 +1784,7 @@
        },
        "小区": {
         "py": "xiǎoqū",
-        "en": "residential community"
+        "en": "residential community; housing estate"
        },
        "环境": {
         "py": "huánjìng",
@@ -1859,8 +1853,7 @@
         "好",
         "的",
         "离",
-        "地铁",
-        "站",
+        "地铁站",
         "还",
         "不",
         "远"
@@ -2044,7 +2037,7 @@
        },
        "卫生间": {
         "py": "wèishēngjiān",
-        "en": "restroom; bathroom"
+        "en": "bathroom; restroom"
        },
        "打扫": {
         "py": "dǎsǎo",
@@ -2289,7 +2282,7 @@
       "tiles": {
        "办": {
         "py": "bàn",
-        "en": "to handle; do"
+        "en": "handle; do"
        },
        "信用卡": {
         "py": "xìnyòngkǎ",
@@ -2558,8 +2551,7 @@
         "去",
         "买",
         "一些",
-        "纸",
-        "箱",
+        "纸箱",
         "很",
         "快",
         "就",
@@ -2715,7 +2707,7 @@
         "en": "grassland; prairie"
        },
        "主意": {
-        "py": "zhǔyi",
+        "py": "zhǔyì",
         "en": "idea"
        },
        "骑": {
@@ -4529,7 +4521,7 @@
        },
        "行": {
         "py": "xíng",
-        "en": "to be OK; all right"
+        "en": "okay; all right"
        }
       }
      },
@@ -5252,7 +5244,7 @@
       "tiles": {
        "放假": {
         "py": "fàngjià",
-        "en": "to have a holiday; be on vacation"
+        "en": "have a holiday; be on vacation"
        },
        "沙发": {
         "py": "shāfā",
@@ -10159,7 +10151,7 @@
        },
        "工作日": {
         "py": "gōngzuòrì",
-        "en": "weekday; workday"
+        "en": "working day; business day"
        },
        "地方": {
         "py": "dìfang",
@@ -11212,8 +11204,7 @@
         "再",
         "加",
         "一个",
-        "鸡",
-        "肉",
+        "鸡肉",
         "一个"
        ]
       },
@@ -11389,7 +11380,7 @@
        },
        "酒": {
         "py": "jiǔ",
-        "en": "alcoholic drink; wine"
+        "en": "alcoholic drink; liquor"
        },
        "放": {
         "py": "fàng",
@@ -12575,8 +12566,8 @@
         "en": "program; show"
        },
        "怎么办": {
-        "py": "zěnme bàn",
-        "en": "what to do; what should one do"
+        "py": "zěnmebàn",
+        "en": "what to do; what should I do"
        },
        "校长": {
         "py": "xiàozhǎng",
@@ -12976,8 +12967,7 @@
         "也",
         "很",
         "方便",
-        "过",
-        "马路",
+        "过马路",
         "就是",
         "超市"
        ]
@@ -13217,8 +13207,7 @@
         "我",
         "想",
         "去",
-        "南",
-        "京",
+        "南京",
         "旅游",
         "但是",
         "我",
@@ -13246,8 +13235,7 @@
         "我",
         "介绍",
         "一下",
-        "南",
-        "京",
+        "南京",
         "吧"
        ]
       },
@@ -13963,8 +13951,7 @@
         "你们",
         "养",
         "了",
-        "多",
-        "久",
+        "多久",
         "了"
        ]
       },
@@ -15371,7 +15358,7 @@
        },
        "查": {
         "py": "chá",
-        "en": "to check; look up"
+        "en": "check; look up"
        }
       }
      },
@@ -15809,7 +15796,7 @@
        },
        "大概": {
         "py": "dàgài",
-        "en": "roughly; probably"
+        "en": "approximately; probably"
        }
       }
      },

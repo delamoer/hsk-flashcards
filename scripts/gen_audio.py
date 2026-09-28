@@ -118,6 +118,27 @@ def collect_text_lines() -> list[str]:
     return texts
 
 
+def collect_discussion() -> list[str]:
+    """Every 话题讨论 question (`questions[].zh`) — DiscussionPanel puts a 🔊 on each."""
+    import re
+    seen: set[str] = set()
+    texts: list[str] = []
+    for f in sorted((DATA_DIR / "discussion").glob("*-*.json")):
+        data = json.loads(f.read_text(encoding="utf-8"))
+        if "lessons" not in data:
+            continue
+        for lesson in data["lessons"]:
+            for t in lesson["texts"]:
+                for q in t.get("questions") or []:
+                    zh = (q.get("zh") or "").strip()
+                    if not zh or not re.search(r"[一-鿿A-Za-z0-9]", zh):
+                        continue
+                    if zh not in seen:
+                        seen.add(zh)
+                        texts.append(zh)
+    return texts
+
+
 def collect_all_texts() -> list[str]:
     seen: set[str] = set()
     texts: list[str] = []
@@ -180,6 +201,7 @@ async def main():
     parser.add_argument("--lesson", type=int, default=None, help="Specific lesson number (omit = whole unit)")
     parser.add_argument("--all", action="store_true", help="Generate for entire corpus")
     parser.add_argument("--texts", action="store_true", help="Generate for 课文 dialogue lines")
+    parser.add_argument("--discussion", action="store_true", help="Generate for 话题讨论 questions")
     parser.add_argument("--concurrency", type=int, default=8, help="Concurrent TTS requests")
     args = parser.parse_args()
 
@@ -187,7 +209,10 @@ async def main():
     manifest = load_manifest()
     already = len(manifest)
 
-    if args.texts:
+    if args.discussion:
+        texts = collect_discussion()
+        label = "话题讨论 questions"
+    elif args.texts:
         texts = collect_text_lines()
         label = "课文 dialogue lines"
     elif args.all:

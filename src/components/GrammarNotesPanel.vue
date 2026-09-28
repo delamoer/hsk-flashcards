@@ -18,11 +18,15 @@
           <p class="explain" v-if="p.explainEn">{{ p.explainEn }}</p>
           <div class="struct" v-if="p.structure">
             <span class="lab">结构 Structure</span>
-            <code>{{ p.structure }}</code>
+            <span class="scode">
+              <code>{{ p.structure }}</code>
+              <code class="en" v-if="p.structureEn">{{ p.structureEn }}</code>
+            </span>
           </div>
           <div class="egs" v-if="p.examples.length">
             <div class="eg" v-for="(e, ei) in p.examples" :key="ei">
               <div class="z">{{ e.zh }}</div>
+              <div class="p" v-if="e.py" v-html="pyHtml(e.py)"></div>
               <div class="e" v-if="e.en">{{ e.en }}</div>
             </div>
           </div>
@@ -131,13 +135,16 @@ function pyHtml(py) {
 .py { font-family: var(--ui); font-size: 14px; font-weight: 600; color: var(--muted); margin-top: 4px; }
 
 .explain { font-size: 14px; line-height: 1.55; color: var(--ink-soft, #4a3d2a); margin-top: 14px; }
-.struct { display: flex; align-items: center; gap: 12px; margin-top: 14px; background: var(--paper-3); border: 1px dashed var(--border-strong); border-radius: 8px; padding: 10px 14px; }
+.struct { display: flex; align-items: baseline; gap: 12px; margin-top: 14px; background: var(--paper-3); border: 1px dashed var(--border-strong); border-radius: 8px; padding: 10px 14px; }
 .struct .lab { font-family: var(--caps); font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-deep); flex: 0 0 auto; }
+.struct .scode { display: grid; gap: 2px; min-width: 0; }
 .struct code { font-family: var(--serif-cn); font-size: 16px; font-weight: 600; color: var(--ink); letter-spacing: .5px; }
+.struct code.en { font-family: var(--serif-en); font-style: italic; font-size: 13px; font-weight: 400; letter-spacing: 0; color: var(--muted); }
 
 .egs { margin-top: 16px; display: grid; gap: 10px; }
 .eg { border-left: 2px solid var(--gold-lt); padding-left: 12px; }
 .eg .z { font-family: var(--serif-cn); font-size: 16px; color: var(--ink); line-height: 1.5; }
+.eg .p { font-family: var(--ui); font-size: 13px; color: var(--muted); line-height: 1.4; margin-top: 1px; }
 .eg .e { font-family: var(--serif-en); font-style: italic; font-size: 13.5px; color: var(--muted); margin-top: 2px; }
 
 .gnote { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line-soft); }

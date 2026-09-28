@@ -41,6 +41,8 @@ SOURCES = [
     ("新版HSK1_逐篇课文双重挖空练习_原文精校版.xlsx", "newhsk3", 1),
     ("新版HSK2_逐篇课文双重挖空练习_原文精校版.xlsx", "newhsk3", 2),
     ("新版HSK3_逐篇课文双重挖空练习_原文精校版.xlsx", "newhsk3", 3),
+    # 4A 无拼音/英文列 → 每行 py/en 为空，ReadPanel 的 拼音/EN pill 自动隐藏。
+    ("新版HSK4A_逐篇课文双重挖空练习_原文精校版.xlsx", "newhsk3", 4),
 ]
 
 SHEET = "教师答案版"

@@ -1691,8 +1691,8 @@
         "en": "week; day of the week"
        },
        "休息": {
-        "py": "xiūxi",
-        "en": "to rest"
+        "py": "xiūxī",
+        "en": "rest"
        }
       }
      },
@@ -1821,14 +1821,14 @@
       "tiles": {
        "做饭": {
         "py": "zuòfàn",
-        "en": "to cook"
+        "en": "cook; make a meal"
        },
        "面条儿": {
         "py": "miàntiáor",
         "en": "noodles"
        },
        "饺子": {
-        "py": "jiǎozi",
+        "py": "jiǎozǐ",
         "en": "dumpling"
        },
        "一些": {
@@ -2484,8 +2484,7 @@
         "还",
         "想",
         "去",
-        "西",
-        "安",
+        "西安",
         "饭店"
        ]
       },
@@ -3200,7 +3199,7 @@
        },
        "下": {
         "py": "xià",
-        "en": "to fall (rain/snow)"
+        "en": "next; below"
        }
       }
      },
@@ -3698,7 +3697,7 @@
       "tiles": {
        "前边": {
         "py": "qiánbian",
-        "en": "in front; ahead"
+        "en": "in front; front side"
        },
        "电影院": {
         "py": "diànyǐngyuàn",
@@ -4070,7 +4069,7 @@
        },
        "唱歌": {
         "py": "chànggē",
-        "en": "to sing"
+        "en": "sing"
        },
        "电视": {
         "py": "diànshì",
@@ -4275,7 +4274,7 @@
        },
        "这边": {
         "py": "zhèbiān",
-        "en": "here; this side"
+        "en": "this side"
        },
        "钱": {
         "py": "qián",
@@ -4326,8 +4325,7 @@
        "speaker": "王一雪",
        "text": "多少钱一个？",
        "tokens": [
-        "多少",
-        "钱",
+        "多少钱",
         "一个"
        ]
       },
@@ -4864,11 +4862,11 @@
        },
        "正在": {
         "py": "zhèngzài",
-        "en": "in the process of; currently"
+        "en": "be in the process of; be doing"
        },
        "找": {
         "py": "zhǎo",
-        "en": "to look for"
+        "en": "look for; find"
        },
        "开车": {
         "py": "kāichē",
@@ -4931,8 +4929,7 @@
         "我",
         "没",
         "开车",
-        "坐",
-        "车",
+        "坐车",
         "呢"
        ]
       },
@@ -5212,7 +5209,7 @@
        },
        "起床": {
         "py": "qǐchuáng",
-        "en": "to get up"
+        "en": "get up"
        },
        "睡觉": {
         "py": "shuìjiào",
@@ -5533,7 +5530,7 @@
        },
        "生病": {
         "py": "shēngbìng",
-        "en": "to get sick"
+        "en": "fall ill; get sick"
        },
        "看病": {
         "py": "kànbìng",
@@ -5714,7 +5711,7 @@
        },
        "再": {
         "py": "zài",
-        "en": "again; then"
+        "en": "again"
        }
       }
      },
@@ -5891,7 +5888,7 @@
        },
        "一下": {
         "py": "yíxià",
-        "en": "a little; once"
+        "en": "a little; once (softens an action)"
        }
       }
      },
@@ -6084,8 +6081,7 @@
        "text": "女士，请坐！",
        "tokens": [
         "女士",
-        "请",
-        "坐"
+        "请坐"
        ]
       },
       {
@@ -6239,7 +6235,7 @@
         "en": "Mr.; sir; husband"
        },
        "饺子": {
-        "py": "jiǎozi",
+        "py": "jiǎozǐ",
         "en": "dumpling"
        },
        "一半": {
@@ -6271,8 +6267,7 @@
        "text": "先生，请坐！",
        "tokens": [
         "先生",
-        "请",
-        "坐"
+        "请坐"
        ]
       },
       {
@@ -6852,7 +6847,7 @@
        },
        "上学": {
         "py": "shàngxué",
-        "en": "to go to school"
+        "en": "go to school; attend school"
        }
       }
      },
@@ -7202,8 +7197,7 @@
         "男朋友",
         "去",
         "了",
-        "西",
-        "安",
+        "西安",
         "今年",
         "我",
         "想",
@@ -7221,8 +7215,7 @@
         "我",
         "去",
         "了",
-        "西",
-        "安",
+        "西安",
         "非常",
         "好玩儿"
        ]
@@ -7369,7 +7362,7 @@
        },
        "家人": {
         "py": "jiārén",
-        "en": "family member"
+        "en": "family member(s)"
        },
        "时间": {
         "py": "shíjiān",

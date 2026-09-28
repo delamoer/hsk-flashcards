@@ -20,9 +20,10 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
 4. **课内 hub** (`/course/:series/:unit/lesson/:lesson`, `LessonHubView.vue`) — one lesson, six tabs:
    课文 Read (`ReadPanel`) · 生词表·闪卡 (`FlashcardsPanel`, 网格/专注双模式, reuses `FlashCard.vue`) ·
    词汇详解 (placeholder) · 语法 (`GrammarNotesPanel`) · 练习 (`ExercisesPanel` = 生词挖空 + 连词成句 + 语法) ·
-   话题讨论 (placeholder). 课文/生词挖空/连词成句 pull from the 课文 data (`getTextUnit`); the 语法 tab and the
+   话题讨论 (`DiscussionPanel`). 课文/生词挖空/连词成句 pull from the 课文 data (`getTextUnit`); the 语法 tab and the
    练习 tab's 语法 mode pull from the grammar data (`getGrammarLesson`, see below) — the latter is independent of
-   课文, so 练习 shows up even for lessons with no text (e.g. hsk-4/5), defaulting to 语法 mode there. Each tab
+   课文, so 练习 shows up even for lessons with no text (e.g. hsk-4/5), defaulting to 语法 mode there. 话题讨论 is
+   independent too (`getDiscussionLesson`), so it also works for text-less units. Each tab
    gracefully shows a "本课暂无…" placeholder when its data is missing.
 
 Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **拼音 Pinyin** (`/pinyin`) · **我的词 My words** (`/my-words`),
@@ -46,7 +47,10 @@ npm run deploy     # build + publish dist to gh-pages branch
 # Texts + Grammar (not npm scripts — run via uv directly):
 uv run --with openpyxl python3 scripts/convert_texts.py            # xlsx → src/data/texts/*.json (hsk/newhsk3)
 uv run --with openpyxl --with pypinyin python3 scripts/convert_360.py   # xlsx → src/data/texts/huihua360-*.json (会话360)
+#   ORDER MATTERS: convert_texts.py rewrites texts/meta.json from scratch (dropping the huihua360
+#   entries); convert_360.py merges them back. Always run 360 after texts, never texts alone.
 uv run --with openpyxl python3 scripts/convert_grammar.py          # xlsx → src/data/grammar/*.json
+uv run --with openpyxl --with pypinyin python3 scripts/convert_discussion.py  # xlsx → src/data/discussion/*.json (话题讨论)
 
 # Pinyin section (not npm scripts — run via uv directly):
 uv run --with openpyxl python3 scripts/convert_pinyin.py            # xlsx → src/data/pinyin.json
@@ -101,7 +105,9 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   a line isn't glossed yet). Pinyin is tone-marked (与闪卡一致, colored via `colorPinyin`). TextView shows
   two off-by-default 拼音/En reveal pills in 读原文 (only when that text has gloss). Roll out to more units
   by appending rows to the TSV (dedup is automatic — identical lines across courses share one entry) and
-  re-running `npm run convert`; now covers all six 课文 units (hsk-1/2/3 + newhsk3-1/2/3, ~1697 lines).
+  re-running `npm run convert`; now covers six of the seven 课文 units (hsk-1/2/3 + newhsk3-1/2/3, ~1697
+  lines). **newhsk3-4** (新版HSK4A, 10课/40篇) is the exception — its xlsx has no 拼音/英文 columns and it is
+  not in the TSV, so every line's `py`/`en` is blank and `hasPy`/`hasEn` keep both reveal pills hidden.
   The **生词挖空 word-bank tiles** carry pinyin + English too, via `vocab.tiles` (`{word:{py,en}}`) baked in
   by `convert_texts.py` from the full flashcard vocab (all units) + the hand-owned `scripts/word_gloss.tsv`
   (fills the ~55 cloze answers that aren't standalone flashcard entries — compounds/single chars/phrases);
@@ -143,14 +149,20 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   the data** (`t.hasPy`/`t.hasEn`), so there are no dead toggles. 生词挖空 tiles still get py/en from the flashcard
   wordmap where a cloze answer is a flashcard word. One text = one 会话 (对话); a 课次 has ~2–4 会话 → ~2–4 「课文 N」
   in the picker. 课次 1–8 == our lesson num, matching the flashcard units. Coverage: huihua360-1..4, all 8 lessons each.
-- **语法 (Grammar) data is generated too.** Source = the eight `sources/*_语法预习复习主表.xlsx` (HSK1–5 +
-  新HSK3.0 第一/二/三册). `scripts/convert_grammar.py` reads each file's first sheet (「语法总表」/「语法语言点总表」,
+- **语法 (Grammar) data is generated too.** Sources = the eight `sources/*_语法预习复习主表.xlsx` (HSK1–5 +
+  新HSK3.0 第一/二/三册) **plus five `sources/*_语法零基础拼音英文版.xlsx`** (HSK1/2 + 新HSK3.0 第一/二/三册).
+  The 零基础 files are an enriched rewrite of the SAME point sets (counts match exactly), adding pinyin to
+  every example and an English gloss to 基本结构 — both packed into one cell separated by a **newline**,
+  split by `split_bilingual()` into `examples[].py` and `structureEn`. `main()` prefers the 零基础 file per
+  (series, unit); hsk-3/4/5 have no 零基础 version yet and keep the old 主表 (so their cards carry no example
+  pinyin). `scripts/convert_grammar.py` reads each file's first sheet (「语法总表」/「语法语言点总表」,
   one row per grammar point keyed by 课次 = our lesson `num`), grouping points by lesson into
   `src/data/grammar/{series}-{unit}.json` (+ `grammar/meta.json`), lazy-loaded via `src/data/grammar.js`
   (own `import.meta.glob("./grammar/*-*.json")`, dash pattern excludes meta). Run:
   `uv run --with openpyxl python3 scripts/convert_grammar.py`. Each point: `{ id, name, pinyin, type,
-  tier?(HSK4), explainEn, structure, examples:[{zh,en}], exercises:[{q,a}], note, source }`. Coverage:
-  hsk-1..5 + newhsk3-1..3 (~495 points); other series/units gracefully show placeholders. Two bilingual
+  tier?(HSK4), explainEn, structure, structureEn?, examples:[{zh,en,py?}], exercises:[{q,a}], note, source }`.
+  Coverage: hsk-1..5 + newhsk3-1..3 (495 points, 711 of them with example pinyin); other series/units
+  gracefully show placeholders. Two bilingual
   fields are hand-authored inside `convert_grammar.py` and merged at build time: `noteEn` (English for each
   中文 备注, from `scripts/grammar_note_en.tsv`) and `typeEn` (English for each 语法类型, from the in-script
   `TYPE_EN` map covering all 157 type strings). Both the 语法 tab chip and 练习 语法-mode heading show 中文 + English. The 语法 tab
@@ -161,6 +173,17 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   type well, so there's no input. Each exercise's Chinese instruction prefix (填空/翻译/排序…) is shown bilingually
   via `instr`/`instrEn`/`body` (split in `convert_grammar.py` using the in-script `Q_INSTR_EN` map, 47 prefixes;
   the ~4% unmapped/compound instructions fall back to the raw Chinese question).
+- **话题讨论 (Discussion) data is generated too.** Source = the eight `sources/*_课文生活化聊天问题.xlsx`
+  (HSK1–5 + 新HSK3.0 第一/二/三册). `scripts/convert_discussion.py` → `src/data/discussion/{series}-{unit}.json`
+  (+ `discussion/meta.json`), lazy-loaded via `src/data/discussion.js` (same glob/meta shape as grammar).
+  One row = one 课文, grouped by 课次: `{ num, name, vol?, group?, texts:[{ title, kind?, topic?,
+  questions:[{zh,py}], hints:[] }] }`. Coverage: hsk-1..5 + newhsk3-1..3 — 1494 questions. Two deliberate
+  omissions: the source's **「教学提示」 column is never exported** (it's written for the teacher —
+  "不询问学生私人婚姻计划…" — and must not reach the student UI), and there is **no English** (not in the
+  source; not generated). 拼音 IS generated with pypinyin (`to_pinyin`, same format as `convert_360.py`),
+  surfaced behind an off-by-default 拼音 pill in `DiscussionPanel`, matching the ReadPanel convention.
+  Header rows sit on sheet row 4 (title + blurb + blank above), and some sheets trail 说明/URL rows —
+  `header_row()` finds the header and non-integer 课次 rows are skipped.
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
   works on GitHub Pages without server rewrites. Course flow (four levels): `/` (LibraryView) →
   `/course/:series` (SeriesBooksView) → `/course/:series/:unit` (LessonListView) →
@@ -202,6 +225,11 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   bucket `audio`** (not bundled in the build):
   - *Words*: pre-generated edge-tts MP3s keyed by md5(hanzi) via a `manifest.json` (`speak(text)`),
     falling back to browser `speechSynthesis` when missing. `scripts/gen_audio.py` + `upload_audio.py`.
+    **Whenever you add content with a 🔊, add a collector and regenerate** — the scopes are
+    `--all` (words + examples), `--texts` (课文 lines + every 连词成句 sentence; globs `texts/*-*.json`,
+    so a new 课文 unit needs no code change) and `--discussion` (话题讨论 questions). Generating only
+    writes to the gitignored `audio-src/`; the site keeps falling back to robot TTS until
+    `upload_audio.py` pushes the new MP3s + manifest to Storage (idempotent, skips existing).
   - *Pinyin*: **real human recordings** (hugolpz/audio-cmn, CC-BY-SA — credit shown in PinyinView footer)
     under the `pinyin/` prefix, named `{syllable}{tone}.mp3` (ü→v). Played by filename via
     `playPinyin(stem)` — no manifest. `ne1`/`chi1` come from davin (public domain) as hugolpz's were bad.

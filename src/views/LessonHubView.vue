@@ -30,6 +30,7 @@
       <FlashcardsPanel v-else-if="tab === 'cards'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
       <ExercisesPanel v-else-if="tab === 'exercises'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
       <GrammarNotesPanel v-else-if="tab === 'grammar'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
+      <DiscussionPanel v-else-if="tab === 'discussion'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
       <div v-else class="placeholder">
         <img class="ph-scene" :src="motifPavilion" alt="" aria-hidden="true" />
         <div class="diamond">◇ ◇ ◇</div>
@@ -51,6 +52,7 @@ import ReadPanel from "@/components/ReadPanel.vue";
 import FlashcardsPanel from "@/components/FlashcardsPanel.vue";
 import ExercisesPanel from "@/components/ExercisesPanel.vue";
 import GrammarNotesPanel from "@/components/GrammarNotesPanel.vue";
+import DiscussionPanel from "@/components/DiscussionPanel.vue";
 import { getLesson } from "@/data";
 import { getSeries } from "@/data/courses.js";
 import { seriesBand, motifMountainFar, motifPavilion } from "@/assets/img.js";
