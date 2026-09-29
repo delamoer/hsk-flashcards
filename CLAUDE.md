@@ -62,8 +62,13 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 
 ## Architecture / data flow
 
-- **Data is generated, not hand-written.** Source of truth = the three `HSK*_按课次词汇闪卡表.xlsx`
-  in the repo root. `scripts/convert.py` normalizes them into `src/data/hsk{1,2,3}.json`.
+- **Data is generated, not hand-written.** Source of truth = the xlsx files in `sources/`, named
+  **`{系列}_{册}_{类型}.xlsx`** so a series' branches sort together and a missing branch is obvious at a
+  glance. 系列/册: `HSK{1..6}` · `新HSK3.0_第{一,二,三}册` + `新HSK3.0_第四册A`（A = 第四册只到前半部分）·
+  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `汉语拼音`. 类型 (exactly five): `词汇闪卡表` ·
+  `课文挖空练习` · `语法主表` · `语法零基础版` · `聊天问题`. **Keep this convention when adding a book** —
+  the grammar/discussion converters map filename → (series, unit) by regex and **silently skip** a name
+  they don't recognize. `scripts/convert.py` normalizes the 词汇闪卡表 files into `src/data/{series}-{unit}.json`.
   **Never edit `src/data/*.json` by hand** — edit the xlsx (and English titles in `convert.py`'s
   `TITLES_EN`), then run `npm run convert`.
 - **Course data is lazy-loaded, one chunk per unit.** `src/data/index.js` uses
@@ -93,7 +98,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   grid) **and** injects the bilingual pedagogy (English pronunciation analogues, place/manner EN,
   example words) which lives *in that script's maps* — edit the script, not the JSON, then re-run.
   `PinyinView.vue` imports `pinyin.json` directly (lazy-loaded route, so it's not in the main bundle).
-- **课文 (Texts) data is generated too.** Source = the six `sources/{新版|旧版}HSK{1,2,3}_逐篇课文双重挖空练习_*.xlsx`.
+- **课文 (Texts) data is generated too.** Source = the seven `sources/HSK{1,2,3}_课文挖空练习.xlsx` + `sources/新HSK3.0_第{一,二,三}册|第四册A_课文挖空练习.xlsx`.
   `scripts/convert_texts.py` normalizes them into `src/data/texts/{series}-{unit}.json` (+ `texts/meta.json`),
   lazy-loaded via `src/data/texts.js` (its own `import.meta.glob`, kept in a subfolder so the flashcard
   glob never picks it up). Each text carries: `original` (dialogue), `vocab` (numbered-blank cloze +
@@ -106,7 +111,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   two off-by-default 拼音/En reveal pills in 读原文 (only when that text has gloss). Roll out to more units
   by appending rows to the TSV (dedup is automatic — identical lines across courses share one entry) and
   re-running `npm run convert`; now covers six of the seven 课文 units (hsk-1/2/3 + newhsk3-1/2/3, ~1697
-  lines). **newhsk3-4** (新版HSK4A, 10课/40篇) is the exception — its xlsx has no 拼音/英文 columns and it is
+  lines). **newhsk3-4** (新HSK3.0 第四册A, 10课/40篇) is the exception — its xlsx has no 拼音/英文 columns and it is
   not in the TSV, so every line's `py`/`en` is blank and `hasPy`/`hasEn` keep both reveal pills hidden.
   The **生词挖空 word-bank tiles** carry pinyin + English too, via `vocab.tiles` (`{word:{py,en}}`) baked in
   by `convert_texts.py` from the full flashcard vocab (all units) + the hand-owned `scripts/word_gloss.tsv`
@@ -131,7 +136,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   `gen_audio.py --texts` (`collect_text_lines`) and uploaded to the same Storage `audio` bucket; split
   sub-sentences without a pre-generated MP3 fall back to browser TTS until audio is regenerated.
 - **会话360 课文 come from a DIFFERENT converter** (`scripts/convert_360.py`, not `convert_texts.py`). Source =
-  the four `sources/汉语标准会话360句{1,2,3,4}_课文挖空练习整理_第1-8课*.xlsx` → `src/data/texts/huihua360-{1,2,3,4}.json`
+  the four `sources/标准汉语会话360句{1,2,3,4}_课文挖空练习.xlsx` → `src/data/texts/huihua360-{1,2,3,4}.json`
   (+ merged into `texts/meta.json`, HSK/newhsk3 entries kept), so `huihua360` gets the same 读原文 (`ReadPanel`)
   + 生词挖空/连词成句 (`ExercisesPanel`) as HSK — no component changes. The 4 files have a **heterogeneous schema**
   (different sheet names 挖空练习/练习内容; 句1/2 carry dialogue 拼音, 句3/4 don't; 句3/4 use `{{blank1}}`
@@ -149,12 +154,12 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   the data** (`t.hasPy`/`t.hasEn`), so there are no dead toggles. 生词挖空 tiles still get py/en from the flashcard
   wordmap where a cloze answer is a flashcard word. One text = one 会话 (对话); a 课次 has ~2–4 会话 → ~2–4 「课文 N」
   in the picker. 课次 1–8 == our lesson num, matching the flashcard units. Coverage: huihua360-1..4, all 8 lessons each.
-- **语法 (Grammar) data is generated too.** Sources = the nine `sources/*_语法预习复习主表.xlsx` (HSK1–5 +
-  新HSK3.0 第一/二/三/四册) **plus five `sources/*_语法零基础拼音英文版.xlsx`** (HSK1/2 + 新HSK3.0 第一/二/三册).
+- **语法 (Grammar) data is generated too.** Sources = the nine `sources/*_语法主表.xlsx` (HSK1–5 +
+  新HSK3.0 第一/二/三册 + 第四册A) **plus five `sources/*_语法零基础版.xlsx`** (HSK1/2 + 新HSK3.0 第一/二/三册).
   The 零基础 files are an enriched rewrite of the SAME point sets (counts match exactly), adding pinyin to
   every example and an English gloss to 基本结构 — both packed into one cell separated by a **newline**,
   split by `split_bilingual()` into `examples[].py` and `structureEn`. `main()` prefers the 零基础 file per
-  (series, unit); hsk-3/4/5 and newhsk3-4 have no 零基础 version yet and keep the old 主表 (so their cards
+  (series, unit); hsk-3/4/5 and newhsk3-4 have no 零基础 version yet and keep the plain 主表 (so their cards
   carry no example pinyin). `scripts/convert_grammar.py` reads each file's first sheet (「语法总表」/「语法语言点总表」,
   one row per grammar point keyed by 课次 = our lesson `num`), grouping points by lesson into
   `src/data/grammar/{series}-{unit}.json` (+ `grammar/meta.json`), lazy-loaded via `src/data/grammar.js`
@@ -173,13 +178,14 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   type well, so there's no input. Each exercise's Chinese instruction prefix (填空/翻译/排序…) is shown bilingually
   via `instr`/`instrEn`/`body` (split in `convert_grammar.py` using the in-script `Q_INSTR_EN` map, 47 prefixes;
   the ~4% unmapped/compound instructions fall back to the raw Chinese question).
-- **话题讨论 (Discussion) data is generated too.** Source = the thirteen `sources/*_课文生活化聊天问题.xlsx`
-  (HSK1–5 + 新HSK3.0 第一~四册 + 标准汉语会话360句1–4). `scripts/convert_discussion.py` → `src/data/discussion/{series}-{unit}.json`
+- **话题讨论 (Discussion) data is generated too.** Source = the thirteen `sources/*_聊天问题.xlsx`
+  (HSK1–5 + 新HSK3.0 第一/二/三册 + 第四册A + 标准汉语会话360句1–4). `scripts/convert_discussion.py` → `src/data/discussion/{series}-{unit}.json`
   (+ `discussion/meta.json`), lazy-loaded via `src/data/discussion.js` (same glob/meta shape as grammar).
   One row = one 课文, grouped by 课次: `{ num, name, vol?, group?, texts:[{ title, kind?, topic?,
   questions:[{zh,py}], hints:[] }] }`. Coverage: hsk-1..5 + newhsk3-1..4 + huihua360-1..4 — 1818 questions.
   **Filename → (series, unit) is decided by `parse_target`; an unmatched name is silently skipped**, so a
-  source must be named `HSK{n}_…` / `新HSK3.0_第{一二三四}册_…` (no 上/下 suffix) / `标准汉语会话360句{n}_…`.
+  source must follow the `sources/` naming convention: `HSK{n}_聊天问题` / `新HSK3.0_第{一二三四}册[A-Z]?_聊天问题`
+  / `标准汉语会话360句{n}_聊天问题`.
   The 360 sheets label the topic column 「课文场景 / 话题（教师用）」 — already aliased in `col_index`. Two deliberate
   omissions: the source's **「教学提示」 column is never exported** (it's written for the teacher —
   "不询问学生私人婚姻计划…" — and must not reach the student UI), and there is **no English** (not in the

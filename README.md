@@ -55,7 +55,7 @@ npm run deploy     # 构建并发布到 gh-pages 分支（GitHub Pages）
 
 ```
 hsk/
-├─ HSK{1,2,3}_按课次词汇闪卡表.xlsx   # 数据源（唯一真源）
+├─ sources/*.xlsx                    # 数据源（唯一真源），命名 {系列}_{册}_{类型}.xlsx
 ├─ scripts/convert.py                # xlsx → JSON（含 50 条英文课名）
 ├─ DESIGN.md                         # 设计系统（暖珊橘·明快鼓励）
 ├─ prototype/index.html              # 早期高保真原型（设计参考，非生产代码）

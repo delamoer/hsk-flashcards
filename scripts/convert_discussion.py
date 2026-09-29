@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""课文生活化聊天问题 → src/data/discussion/{series}-{unit}.json (+ discussion/meta.json).
+"""聊天问题 → src/data/discussion/{series}-{unit}.json (+ discussion/meta.json).
 
-Source of truth: the eight `sources/*_课文生活化聊天问题.xlsx` files. Each row is ONE
+Source of truth: the thirteen `sources/*_聊天问题.xlsx` files. Each row is ONE
 课文 (or, for hsk-5, one 主课文) and carries three open-ended questions that move the
 class from the text's topic to the student's own life. Grouped by 课次 (= our lesson
 `num`) and emitted as one lazy-loaded chunk per unit, mirroring convert_grammar.py.
@@ -35,15 +35,15 @@ ORDER_RE = re.compile(r"^([^（(]+)\s*[（(]([^）)]*)[）)]\s*$")
 def parse_target(path):
     """filename → (series, unit).  None if unrecognized."""
     base = os.path.basename(path)
-    m = re.match(r"HSK(\d)_课文生活化聊天问题", base)
+    m = re.match(r"HSK(\d)_聊天问题", base)
     if m:
         return ("hsk", int(m.group(1)))
-    m = re.match(r"新HSK3\.0_第([一二三四五六])册_课文生活化聊天问题", base)
+    m = re.match(r"新HSK3\.0_第([一二三四五六])册[A-Z]?_聊天问题", base)
     if m:
         return ("newhsk3", CN_VOL[m.group(1)])
-    # 会话360 — the book title appears both ways across sources/, so accept either
-    # word order; an unrecognized name is silently skipped, which is easy to miss.
-    m = re.match(r"(?:标准汉语|汉语标准)会话360句(\d)_课文生活化聊天问题", base)
+    # An unrecognized name is silently skipped, which is easy to miss — keep the
+    # sources/ naming convention ({系列}_{册}_{类型}.xlsx) when adding a book.
+    m = re.match(r"标准汉语会话360句(\d)_聊天问题", base)
     if m:
         return ("huihua360", int(m.group(1)))
     return None
@@ -175,7 +175,7 @@ def convert_file(path):
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
-    files = sorted(glob.glob(os.path.join(ROOT, "sources", "*_课文生活化聊天问题.xlsx")))
+    files = sorted(glob.glob(os.path.join(ROOT, "sources", "*_聊天问题.xlsx")))
     meta = {}
     total_q = 0
     print("Converted 话题讨论:")

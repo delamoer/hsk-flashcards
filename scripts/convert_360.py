@@ -9,11 +9,11 @@ Run with uv (openpyxl + pypinyin provided on the fly):
 scripts/text_gloss_360.tsv (汉字<TAB>English, keyed by the exact speech line) and
 merged into each line's `en` — blank where a line isn't glossed yet.
 
-Sources (sources/汉语标准会话360句{1,2,3,4}_课文挖空练习整理_第1-8课*.xlsx):
+Sources (sources/标准汉语会话360句{1,2,3,4}_课文挖空练习.xlsx):
   four books → series "huihua360", units 1..4 (matching the flashcard courses,
   课次 1..8 == our lesson num).
 
-Unlike the 逐篇课文双重挖空 files (convert_texts.py), the 360 files have a
+Unlike the HSK/新HSK3.0 课文挖空练习 files (convert_texts.py), the 360 files have a
 heterogeneous schema (different sheet names, some with pinyin, some with
 {{blank}} website templates, 句4 has no 练习类型 column at all). So instead of
 trusting the pre-blanked cloze text, we REBUILD both practice layers from the
@@ -49,10 +49,10 @@ DATA = ROOT / "src" / "data"
 
 # (filename, unit) — series is always huihua360.
 SOURCES = [
-    ("汉语标准会话360句1_课文挖空练习整理_第1-8课_拼音版.xlsx", 1),
-    ("汉语标准会话360句2_课文挖空练习整理_第1-8课_拼音版.xlsx", 2),
-    ("汉语标准会话360句3_课文挖空练习整理_第1-8课.xlsx", 3),
-    ("汉语标准会话360句4_课文挖空练习整理_第1-8课.xlsx", 4),
+    ("标准汉语会话360句1_课文挖空练习.xlsx", 1),
+    ("标准汉语会话360句2_课文挖空练习.xlsx", 2),
+    ("标准汉语会话360句3_课文挖空练习.xlsx", 3),
+    ("标准汉语会话360句4_课文挖空练习.xlsx", 4),
 ]
 SERIES = "huihua360"
 

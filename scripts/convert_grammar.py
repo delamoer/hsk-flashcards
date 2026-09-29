@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""语法预习复习主表 → src/data/grammar/{series}-{unit}.json (+ grammar/meta.json).
+"""语法主表 → src/data/grammar/{series}-{unit}.json (+ grammar/meta.json).
 
-Source of truth: the eight `sources/*_语法预习复习主表.xlsx` files. Each file's first
+Source of truth: the nine `sources/*_语法主表.xlsx` files. Each file's first
 sheet ("语法总表" / "语法语言点总表") holds one row per grammar point, keyed by 课次
 (matching our lesson `num`). We group points by lesson and emit one lazy-loaded chunk
 per unit, mirroring convert_texts.py.
@@ -129,7 +129,7 @@ def parse_target(path):
     m = re.match(r"HSK(\d)_语法", base)
     if m:
         return ("hsk", int(m.group(1)))
-    m = re.match(r"新HSK3\.0_第([一二三四五六])册_语法", base)
+    m = re.match(r"新HSK3\.0_第([一二三四五六])册[A-Z]?_语法", base)
     if m:
         return ("newhsk3", CN_VOL[m.group(1)])
     return None
@@ -268,10 +268,10 @@ def main():
     NOTE_EN = load_note_en()
     print(f"  note_en: {len(NOTE_EN)} 条英文备注")
     os.makedirs(OUT_DIR, exist_ok=True)
-    # 同一册若两版并存，用「零基础拼音英文版」——它是主表的加强版（例句带拼音、结构带英文），
-    # 语法点集合完全一致。没有加强版的册（hsk-3/4/5）继续走旧主表。
+    # 同一册若两版并存，用「语法零基础版」——它是主表的加强版（例句带拼音、结构带英文），
+    # 语法点集合完全一致。没有加强版的册（hsk-3/4/5、newhsk3 第四册A）继续走主表。
     files = {}
-    for pattern, upgraded in (("*语法预习复习主表*.xlsx", False), ("*语法零基础拼音英文版.xlsx", True)):
+    for pattern, upgraded in (("*_语法主表.xlsx", False), ("*_语法零基础版.xlsx", True)):
         for f in sorted(glob.glob(os.path.join(ROOT, "sources", pattern))):
             target = parse_target(f)
             if target and (upgraded or target not in files):

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Convert the 逐篇课文双重挖空 xlsx files into per-unit JSON for the 课文 section.
+"""Convert the 课文挖空练习 xlsx files into per-unit JSON for the 课文 section.
 
 Run with uv (openpyxl provided on the fly):
     uv run --with openpyxl python3 scripts/convert_texts.py
 
-Sources: sources/{新版|旧版}HSK{1,2,3}_逐篇课文双重挖空练习_*.xlsx
+Sources: sources/HSK{1,2,3}_课文挖空练习.xlsx + sources/新HSK3.0_第{一,二,三}册_课文挖空练习.xlsx
+         + sources/新HSK3.0_第四册A_课文挖空练习.xlsx
   新版 → series "newhsk3", 旧版 → series "hsk" (same taxonomy as the flashcard courses).
 
 Output (kept in a subfolder so the flashcard glob `./*-*.json` never picks it up):
@@ -35,14 +36,14 @@ MAX_SENT_TOKENS = 15  # 连词成句: sentences longer than this are dropped (to
 
 # (filename, series, unit) — teacher sheet "教师答案版" is the complete one.
 SOURCES = [
-    ("旧版HSK1_逐篇课文双重挖空练习_原文精校版.xlsx", "hsk", 1),
-    ("旧版HSK2_逐篇课文双重挖空练习_原文版.xlsx", "hsk", 2),
-    ("旧版HSK3_逐篇课文双重挖空练习_原文精校版.xlsx", "hsk", 3),
-    ("新版HSK1_逐篇课文双重挖空练习_原文精校版.xlsx", "newhsk3", 1),
-    ("新版HSK2_逐篇课文双重挖空练习_原文精校版.xlsx", "newhsk3", 2),
-    ("新版HSK3_逐篇课文双重挖空练习_原文精校版.xlsx", "newhsk3", 3),
+    ("HSK1_课文挖空练习.xlsx", "hsk", 1),
+    ("HSK2_课文挖空练习.xlsx", "hsk", 2),
+    ("HSK3_课文挖空练习.xlsx", "hsk", 3),
+    ("新HSK3.0_第一册_课文挖空练习.xlsx", "newhsk3", 1),
+    ("新HSK3.0_第二册_课文挖空练习.xlsx", "newhsk3", 2),
+    ("新HSK3.0_第三册_课文挖空练习.xlsx", "newhsk3", 3),
     # 4A 无拼音/英文列 → 每行 py/en 为空，ReadPanel 的 拼音/EN pill 自动隐藏。
-    ("新版HSK4A_逐篇课文双重挖空练习_原文精校版.xlsx", "newhsk3", 4),
+    ("新HSK3.0_第四册A_课文挖空练习.xlsx", "newhsk3", 4),
 ]
 
 SHEET = "教师答案版"
