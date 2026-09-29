@@ -47,6 +47,8 @@ TYPE_EN = {
     "连词": "Conjunction", "比较句": "Comparison", "时间表达": "Time", "能愿动词": "Modal verb",
     "条件复句": "Conditional", "趋向补语": "Directional compl.", "动词": "Verb", "数量表达": "Quantity",
     "介词结构": "Prep. phrase", "把字句": "把 sentence", "句型": "Sentence pattern",
+    "使字句": "使 sentence", "指示代词": "Demonstrative pronoun",
+    "紧缩复句": "Contracted complex sentence", "连词/副词": "Conjunction / Adverb",
     "趋向补语引申": "Directional (fig.)", "量词": "Measure word", "程度表达": "Degree",
     "补语": "Complement", "可能补语": "Potential compl.", "并列复句": "Coordinate clause",
     "反问句": "Rhetorical question", "程度结构": "Degree structure", "递进复句": "Progressive clause",

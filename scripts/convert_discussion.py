@@ -41,6 +41,11 @@ def parse_target(path):
     m = re.match(r"新HSK3\.0_第([一二三四五六])册_课文生活化聊天问题", base)
     if m:
         return ("newhsk3", CN_VOL[m.group(1)])
+    # 会话360 — the book title appears both ways across sources/, so accept either
+    # word order; an unrecognized name is silently skipped, which is easy to miss.
+    m = re.match(r"(?:标准汉语|汉语标准)会话360句(\d)_课文生活化聊天问题", base)
+    if m:
+        return ("huihua360", int(m.group(1)))
     return None
 
 

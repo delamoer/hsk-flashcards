@@ -38,5 +38,30 @@
 "lessonCount": 15,
 "textCount": 60,
 "questionCount": 180
+},
+"newhsk3-4": {
+"lessonCount": 10,
+"textCount": 40,
+"questionCount": 120
+},
+"huihua360-1": {
+"lessonCount": 8,
+"textCount": 20,
+"questionCount": 60
+},
+"huihua360-2": {
+"lessonCount": 8,
+"textCount": 16,
+"questionCount": 48
+},
+"huihua360-3": {
+"lessonCount": 8,
+"textCount": 16,
+"questionCount": 48
+},
+"huihua360-4": {
+"lessonCount": 8,
+"textCount": 16,
+"questionCount": 48
 }
 }
