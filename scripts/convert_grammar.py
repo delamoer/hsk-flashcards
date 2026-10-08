@@ -17,17 +17,19 @@ import openpyxl
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "src", "data", "grammar")
 NOTE_EN_TSV = os.path.join(ROOT, "scripts", "grammar_note_en.tsv")
+STRUCT_EN_TSV = os.path.join(ROOT, "scripts", "grammar_structure_en.tsv")
+EX_PY_TSV = os.path.join(ROOT, "scripts", "grammar_example_pinyin.tsv")
 
 CN_VOL = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6}
 
 
-def load_note_en():
-    """Hand-authored English for each 中文 备注 (中文<TAB>English), keyed by exact note text.
-    Dedup is automatic — identical notes across files share one entry. Edit the TSV, not JSON."""
+def load_zh_en_tsv(path):
+    """Hand-authored 中文<TAB>English map, keyed by the exact Chinese string. Dedup is
+    automatic — an identical string across files shares one entry. Edit the TSV, not JSON."""
     m = {}
-    if not os.path.exists(NOTE_EN_TSV):
+    if not os.path.exists(path):
         return m
-    with open(NOTE_EN_TSV, encoding="utf-8") as fh:
+    with open(path, encoding="utf-8") as fh:
         for line in fh:
             line = line.rstrip("\n")
             if not line or line.startswith("#") or "\t" not in line:
@@ -40,6 +42,12 @@ def load_note_en():
 
 
 NOTE_EN = {}
+# 基本结构 中→英. Only consulted when the book has no 语法零基础版 (which carries its own
+# structure English); never overrides that file. hsk-3/4/5 + newhsk3 第四册 rely on this.
+STRUCT_EN = {}
+# 例句拼音 汉字→拼音. Same role as STRUCT_EN: only consulted when the book has no
+# 语法零基础版 (which carries its own example pinyin); never overrides that file.
+EX_PY = {}
 
 # 语法类型 中→英 (hand-authored, concise for a chip). Compound types keep the "/".
 TYPE_EN = {
@@ -216,6 +224,8 @@ def convert_file(path):
             en = s(r[ei]) if ei is not None else ""
             if zh:
                 ex = {"zh": zh, "en": en}
+                if not py:
+                    py = EX_PY.get(zh, "")
                 if py:
                     ex["py"] = py
                 examples.append(ex)
@@ -248,6 +258,8 @@ def convert_file(path):
             "note": s(r[c["note"]]) if c["note"] is not None else "",
             "source": s(r[c["source"]]) if c["source"] is not None else "",
         }
+        if not structure_en and structure:
+            structure_en = STRUCT_EN.get(structure, "")
         if structure_en:
             point["structureEn"] = structure_en
         if point["note"] and NOTE_EN.get(point["note"]):
@@ -272,9 +284,11 @@ def convert_file(path):
 
 
 def main():
-    global NOTE_EN
-    NOTE_EN = load_note_en()
-    print(f"  note_en: {len(NOTE_EN)} 条英文备注")
+    global NOTE_EN, STRUCT_EN, EX_PY
+    NOTE_EN = load_zh_en_tsv(NOTE_EN_TSV)
+    STRUCT_EN = load_zh_en_tsv(STRUCT_EN_TSV)
+    EX_PY = load_zh_en_tsv(EX_PY_TSV)
+    print(f"  note_en: {len(NOTE_EN)} · struct_en: {len(STRUCT_EN)} · 例句拼音: {len(EX_PY)}")
     os.makedirs(OUT_DIR, exist_ok=True)
     # 同一本书若两版并存，用「语法零基础版」——它是主表的加强版（例句带拼音、结构带英文），
     # 语法点集合完全一致。没有加强版的书（hsk-3/4/5、newhsk3 第四册上/下）继续走主表。

@@ -168,9 +168,16 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   新HSK3.0 第一/二/三册 + 第四册上/下) **plus five `sources/*_语法零基础版.xlsx`** (HSK1/2 + 新HSK3.0 第一/二/三册).
   The 零基础 files are an enriched rewrite of the SAME point sets (counts match exactly), adding pinyin to
   every example and an English gloss to 基本结构 — both packed into one cell separated by a **newline**,
-  split by `split_bilingual()` into `examples[].py` and `structureEn`. `main()` prefers the 零基础 file per
-  (series, unit); hsk-3/4/5 and newhsk3-4 have no 零基础 version yet and keep the plain 主表 (so their cards
-  carry no example pinyin). `scripts/convert_grammar.py` reads each file's first sheet (「语法总表」/「语法语言点总表」,
+  split by `split_bilingual()` into `examples[].py` and `structureEn`. Version choice is made per BOOK
+  (filename minus the 类型 suffix), not per unit, so 第四册上 getting a 零基础版 later won't knock out 第四册下.
+  hsk-3/4/5 and newhsk3-4 have no 零基础版, so those two fields come from **hand-authored TSVs** instead:
+  `scripts/grammar_structure_en.tsv` (331 结构英文) and `scripts/grammar_example_pinyin.tsv` (990 例句拼音),
+  both 中文<TAB>译文, loaded by `load_zh_en_tsv()` and used **only as a fallback** — a 零基础版's own values
+  always win. Every point now has structureEn and every example has pinyin (575 points / 1725 examples).
+  Same rule as 课文: do NOT bulk-generate this pinyin with pypinyin (per-character, no sandhi, no capitals,
+  wrong readings like 谁 shuí / 参加 shēnjiā / 行不通 háng). It was written by hand and then cross-checked
+  syllable-by-syllable against pypinyin, reviewing all 440 disagreements — the script for that lives
+  nowhere, but the check is: normalise both to a letters-only string and diff. `scripts/convert_grammar.py` reads each file's first sheet (「语法总表」/「语法语言点总表」,
   one row per grammar point keyed by 课次 = our lesson `num`), grouping points by lesson into
   `src/data/grammar/{series}-{unit}.json` (+ `grammar/meta.json`), lazy-loaded via `src/data/grammar.js`
   (own `import.meta.glob("./grammar/*-*.json")`, dash pattern excludes meta). Run:
