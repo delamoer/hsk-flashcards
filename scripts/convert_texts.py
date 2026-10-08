@@ -117,11 +117,13 @@ def load_word_map() -> dict:
     return m
 
 
-# Real flashcard words that, in our texts, only ever occur inside a LONGER phrase where
-# greedy left-to-right max-match would eat the wrong prefix (不便宜 → 不便|宜,
-# 从中间 → 从中|间). Excluded from the segmentation lexicon ONLY — they stay normal
-# flashcard entries. When a new book adds such a word, verify it never occurs standalone
-# in any 课文 before listing it here.
+# Real flashcard words that, in the sentences 连词成句 actually tiles, only ever occur as
+# the wrong prefix of a longer word (不便宜 → 不便|宜, 从中间 → 从中|间). Excluded from the
+# segmentation lexicon ONLY — they stay normal flashcard entries and normal 课文 text.
+# Both DO appear standalone elsewhere (「带来不便」「从中了解中国」), but only inside long
+# narrative lines that exceed MAX_SENT_TOKENS and are dropped before tiling, so excluding
+# them costs nothing today. Before adding a word here, check it against t["sentences"] —
+# the tiled items — not just the raw 课文, and re-check when a book is added.
 LEX_EXCLUDE = {"不便", "从中"}
 
 
@@ -370,6 +372,10 @@ def build_lines(original: str, gloss: dict):
         m = SPEAKER_RE.match(line)
         name = m.group(1) if m else ""
         speech = (m.group(2).strip() if m else line)
+        # 书信/通知的称呼语（「亲爱的同学们：」「家月姐姐：」）长得像说话人但正文为空，
+        # 会渲染成一个只有名字的空行 —— 整行当正文处理。
+        if not speech:
+            name, speech = "", line
         g = gloss.get(speech, {})
         out.append({"name": name, "zh": speech, "py": g.get("py", ""), "en": g.get("en", "")})
     return out

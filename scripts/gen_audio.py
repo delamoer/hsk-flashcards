@@ -107,12 +107,13 @@ def collect_text_lines() -> list[str]:
             continue
         for lesson in data["lessons"]:
             for t in lesson["texts"]:
-                for raw in (t.get("original") or "").split("\n"):
-                    line = raw.strip()
-                    if not line:
-                        continue
-                    m = re.match(r"^[^：:]{1,8}[：:](.*)$", line)
-                    add(m.group(1) if m else line)
+                # Read the 🔊 lines straight from `lines` — the same array ReadPanel
+                # renders and calls say(l.zh) on. Re-deriving them from `original` here
+                # duplicated convert_texts.build_lines' speaker rule, and the two
+                # silently drifted when that rule changed (letter salutations like
+                # 「亲爱的同学们：」 stopped being parsed as a speaker).
+                for ln in t.get("lines") or []:
+                    add(ln.get("zh"))
                 for s in t.get("sentences") or []:
                     add(s.get("text"))
     return texts

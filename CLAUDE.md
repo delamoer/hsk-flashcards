@@ -112,9 +112,14 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   a line isn't glossed yet). Pinyin is tone-marked (与闪卡一致, colored via `colorPinyin`). TextView shows
   two off-by-default 拼音/En reveal pills in 读原文 (only when that text has gloss). Roll out to more units
   by appending rows to the TSV (dedup is automatic — identical lines across courses share one entry) and
-  re-running `npm run convert`; now covers six of the seven 课文 units (hsk-1/2/3 + newhsk3-1/2/3, ~1697
-  lines). **newhsk3-4** (新HSK3.0 第四册上+下, 20课/80篇) is the exception — its xlsx has no 拼音/英文 columns and it is
-  not in the TSV, so every line's `py`/`en` is blank and `hasPy`/`hasEn` keep both reveal pills hidden.
+  re-running `npm run convert`. **All 11 课文 units are now fully glossed** (2609 of 2611 lines; the 2
+  gaps are newhsk3-2 lines that are literally 「……」 in the textbook). None of the xlsx carry 拼音/英文
+  columns for newhsk3-4 — its 371 lines were authored into the TSV by hand. `hasPy`/`hasEn` are computed
+  per text in the component (`lines.some(l => l.py)`), not stored, so the pills appear as soon as a
+  line is glossed. **Do NOT bulk-generate this pinyin with pypinyin** — it splits per character rather
+  than per word (`wǒ men` vs `Wǒmen`), skips sentence/proper-noun capitals, keeps full-width punctuation
+  and gets 一/不 sandhi wrong (`bù tài` for 不太). The TSV convention is word-grouped, capitalized,
+  half-width punctuation, erhua attached, neutral tones unmarked, sandhi applied.
   The **生词挖空 word-bank tiles** carry pinyin + English too, via `vocab.tiles` (`{word:{py,en}}`) baked in
   by `convert_texts.py` from the full flashcard vocab (all units) + the hand-owned `scripts/word_gloss.tsv`
   (fills the ~55 cloze answers that aren't standalone flashcard entries — compounds/single chars/phrases);
