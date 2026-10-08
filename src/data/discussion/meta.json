@@ -24,26 +24,6 @@
 "textCount": 36,
 "questionCount": 108
 },
-"newhsk3-1": {
-"lessonCount": 15,
-"textCount": 45,
-"questionCount": 135
-},
-"newhsk3-3": {
-"lessonCount": 18,
-"textCount": 72,
-"questionCount": 216
-},
-"newhsk3-2": {
-"lessonCount": 15,
-"textCount": 60,
-"questionCount": 180
-},
-"newhsk3-4": {
-"lessonCount": 10,
-"textCount": 40,
-"questionCount": 120
-},
 "huihua360-1": {
 "lessonCount": 8,
 "textCount": 20,
@@ -63,5 +43,25 @@
 "lessonCount": 8,
 "textCount": 16,
 "questionCount": 48
+},
+"newhsk3-1": {
+"lessonCount": 15,
+"textCount": 45,
+"questionCount": 135
+},
+"newhsk3-2": {
+"lessonCount": 15,
+"textCount": 60,
+"questionCount": 180
+},
+"newhsk3-3": {
+"lessonCount": 18,
+"textCount": 72,
+"questionCount": 216
+},
+"newhsk3-4": {
+"lessonCount": 20,
+"textCount": 80,
+"questionCount": 240
 }
 }

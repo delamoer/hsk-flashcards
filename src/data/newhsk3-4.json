@@ -7231,6 +7231,8216 @@
      ]
     }
    ]
+  },
+  {
+   "num": 11,
+   "title": "活到老学到老",
+   "titleEn": "Never Too Old to Learn",
+   "words": [
+    {
+     "id": "newhsk3-4-l11-1",
+     "num": 1,
+     "hanzi": "老年",
+     "pinyin": "lǎonián",
+     "meaning": "old age",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他到了老年还在学习。",
+       "en": "He kept studying in old age."
+      },
+      {
+       "zh": "老年生活也可以很丰富。",
+       "en": "Life in old age can also be rich."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-2",
+     "num": 2,
+     "hanzi": "散步",
+     "pinyin": "sànbù",
+     "meaning": "to take a walk",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "晚饭后我常散步。",
+       "en": "I often take a walk after dinner."
+      },
+      {
+       "zh": "我们去公园散步吧。",
+       "en": "Let's take a walk in the park."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-3",
+     "num": 3,
+     "hanzi": "丰富",
+     "pinyin": "fēngfù",
+     "meaning": "rich; plentiful",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的经验很丰富。",
+       "en": "He has rich experience."
+      },
+      {
+       "zh": "这里的活动很丰富。",
+       "en": "There are many activities here."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-4",
+     "num": 4,
+     "hanzi": "羡慕",
+     "pinyin": "xiànmù",
+     "meaning": "to admire; envy",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我很羡慕他会弹钢琴。",
+       "en": "I admire that he can play the piano."
+      },
+      {
+       "zh": "大家都羡慕她的生活。",
+       "en": "Everyone envies her life."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-5",
+     "num": 5,
+     "hanzi": "即使",
+     "pinyin": "jíshǐ",
+     "meaning": "even if",
+     "pos": "conj",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "即使下雨，我也要去。",
+       "en": "Even if it rains, I will go."
+      },
+      {
+       "zh": "即使很忙，他也会学习。",
+       "en": "Even if he is busy, he studies."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-6",
+     "num": 6,
+     "hanzi": "活",
+     "pinyin": "huó",
+     "meaning": "to live; alive",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "爷爷活到九十岁。",
+       "en": "Grandpa lived to ninety."
+      },
+      {
+       "zh": "鱼还活着。",
+       "en": "The fish is still alive."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-7",
+     "num": 7,
+     "hanzi": "继续",
+     "pinyin": "jìxù",
+     "meaning": "to continue",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请继续说。",
+       "en": "Please continue speaking."
+      },
+      {
+       "zh": "休息以后我们继续学习。",
+       "en": "We will continue studying after the break."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-8",
+     "num": 8,
+     "hanzi": "网友",
+     "pinyin": "wǎngyǒu",
+     "meaning": "internet friend; online user",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我认识了一个网友。",
+       "en": "I met an online friend."
+      },
+      {
+       "zh": "很多网友在讨论这件事。",
+       "en": "Many internet users are discussing this."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-9",
+     "num": 9,
+     "hanzi": "无聊",
+     "pinyin": "wúliáo",
+     "meaning": "boring; bored",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我一个人在家很无聊。",
+       "en": "I am bored at home alone."
+      },
+      {
+       "zh": "这部电影有点儿无聊。",
+       "en": "This movie is a little boring."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-10",
+     "num": 10,
+     "hanzi": "弹",
+     "pinyin": "tán",
+     "meaning": "to play (a musical instrument)",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她会弹钢琴。",
+       "en": "She can play the piano."
+      },
+      {
+       "zh": "他每天弹半小时。",
+       "en": "He plays for half an hour every day."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-11",
+     "num": 11,
+     "hanzi": "数字",
+     "pinyin": "shùzì",
+     "meaning": "number; digital",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请写下这个数字。",
+       "en": "Please write down this number."
+      },
+      {
+       "zh": "我不记得这个数字。",
+       "en": "I do not remember this number."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-12",
+     "num": 12,
+     "hanzi": "留",
+     "pinyin": "liú",
+     "meaning": "to stay; leave behind",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请留下你的电话。",
+       "en": "Please leave your phone number."
+      },
+      {
+       "zh": "我想在这里多留一天。",
+       "en": "I want to stay here one more day."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-13",
+     "num": 13,
+     "hanzi": "点名",
+     "pinyin": "diǎnmíng",
+     "meaning": "to call the roll",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师开始点名了。",
+       "en": "The teacher began calling the roll."
+      },
+      {
+       "zh": "上课前要点名。",
+       "en": "The roll is called before class."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-14",
+     "num": 14,
+     "hanzi": "自学",
+     "pinyin": "zìxué",
+     "meaning": "to study by oneself",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在家自学中文。",
+       "en": "I study Chinese by myself at home."
+      },
+      {
+       "zh": "他会用视频自学。",
+       "en": "He uses videos to study by himself."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-15",
+     "num": 15,
+     "hanzi": "线上",
+     "pinyin": "xiànshàng",
+     "meaning": "online",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们今天线上上课。",
+       "en": "We have class online today."
+      },
+      {
+       "zh": "这个活动可以线上报名。",
+       "en": "You can register for this event online."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-16",
+     "num": 16,
+     "hanzi": "线下",
+     "pinyin": "xiànxià",
+     "meaning": "offline; in person",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "明天我们线下见。",
+       "en": "We will meet in person tomorrow."
+      },
+      {
+       "zh": "线下课更方便交流。",
+       "en": "In-person classes make communication easier."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-17",
+     "num": 17,
+     "hanzi": "科技",
+     "pinyin": "kējì",
+     "meaning": "technology",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "科技改变生活。",
+       "en": "Technology changes life."
+      },
+      {
+       "zh": "我喜欢学习科技知识。",
+       "en": "I like learning about technology."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-18",
+     "num": 18,
+     "hanzi": "获取",
+     "pinyin": "huòqǔ",
+     "meaning": "to obtain; acquire",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们可以从网上获取资料。",
+       "en": "We can get information from the internet."
+      },
+      {
+       "zh": "他获取了很多知识。",
+       "en": "He gained a lot of knowledge."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-19",
+     "num": 19,
+     "hanzi": "礼貌",
+     "pinyin": "lǐmào",
+     "meaning": "polite; courtesy",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "对别人要有礼貌。",
+       "en": "Be polite to others."
+      },
+      {
+       "zh": "这个孩子很有礼貌。",
+       "en": "This child is very polite."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-20",
+     "num": 20,
+     "hanzi": "养成",
+     "pinyin": "yǎngchéng",
+     "meaning": "to develop; form a habit",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "要养成早睡的习惯。",
+       "en": "Develop the habit of going to bed early."
+      },
+      {
+       "zh": "他养成了每天读书的习惯。",
+       "en": "He developed the habit of reading every day."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-21",
+     "num": 21,
+     "hanzi": "家长",
+     "pinyin": "jiāzhǎng",
+     "meaning": "parent; guardian",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "家长都很关心孩子。",
+       "en": "Parents care about their children."
+      },
+      {
+       "zh": "老师要跟家长联系。",
+       "en": "The teacher needs to contact the parents."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-22",
+     "num": 22,
+     "hanzi": "成功",
+     "pinyin": "chénggōng",
+     "meaning": "to succeed; successful",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他终于成功了。",
+       "en": "He finally succeeded."
+      },
+      {
+       "zh": "祝你考试成功。",
+       "en": "I wish you success in the exam."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-23",
+     "num": 23,
+     "hanzi": "做法",
+     "pinyin": "zuòfǎ",
+     "meaning": "way of doing something",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个做法很好。",
+       "en": "This way of doing it is good."
+      },
+      {
+       "zh": "我不同意他的做法。",
+       "en": "I do not agree with his way of doing things."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-24",
+     "num": 24,
+     "hanzi": "分数",
+     "pinyin": "fēnshù",
+     "meaning": "score; mark",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的考试分数很高。",
+       "en": "His test score is high."
+      },
+      {
+       "zh": "我想提高分数。",
+       "en": "I want to improve my score."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-25",
+     "num": 25,
+     "hanzi": "棒",
+     "pinyin": "bàng",
+     "meaning": "excellent; great",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的中文真棒！",
+       "en": "Your Chinese is great!"
+      },
+      {
+       "zh": "这个办法很棒。",
+       "en": "This idea is great."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-26",
+     "num": 26,
+     "hanzi": "一生",
+     "pinyin": "yìshēng",
+     "meaning": "all one's life",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他一生都喜欢学习。",
+       "en": "He loved learning all his life."
+      },
+      {
+       "zh": "这是我一生难忘的事。",
+       "en": "This is something I will never forget in my life."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-27",
+     "num": 27,
+     "hanzi": "网页",
+     "pinyin": "wǎngyè",
+     "meaning": "webpage",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个网页很有用。",
+       "en": "This webpage is useful."
+      },
+      {
+       "zh": "我在网页上找到了资料。",
+       "en": "I found the information on the webpage."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-28",
+     "num": 28,
+     "hanzi": "快速",
+     "pinyin": "kuàisù",
+     "meaning": "fast; rapid",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他快速地跑过去。",
+       "en": "He ran over quickly."
+      },
+      {
+       "zh": "这个方法快速又方便。",
+       "en": "This method is fast and convenient."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-29",
+     "num": 29,
+     "hanzi": "钢琴",
+     "pinyin": "gāngqín",
+     "meaning": "piano",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她每天弹钢琴。",
+       "en": "She plays the piano every day."
+      },
+      {
+       "zh": "家里有一架钢琴。",
+       "en": "There is a piano at home."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-30",
+     "num": 30,
+     "hanzi": "重新",
+     "pinyin": "chóngxīn",
+     "meaning": "again; anew",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请重新说一遍。",
+       "en": "Please say it again."
+      },
+      {
+       "zh": "我想重新开始。",
+       "en": "I want to start again."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-31",
+     "num": 31,
+     "hanzi": "仍",
+     "pinyin": "réng",
+     "meaning": "still",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "下雨了，他仍去跑步。",
+       "en": "It rained, but he still went running."
+      },
+      {
+       "zh": "问题仍没有解决。",
+       "en": "The problem is still not solved."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-32",
+     "num": 32,
+     "hanzi": "准时",
+     "pinyin": "zhǔnshí",
+     "meaning": "on time; punctual",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请准时来上课。",
+       "en": "Please come to class on time."
+      },
+      {
+       "zh": "他每天都准时到。",
+       "en": "He arrives on time every day."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-33",
+     "num": 33,
+     "hanzi": "打招呼",
+     "pinyin": "dǎ zhāohu",
+     "meaning": "to greet",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "见面要先打招呼。",
+       "en": "Greet people first when you meet them."
+      },
+      {
+       "zh": "他笑着跟我打招呼。",
+       "en": "He smiled and greeted me."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-34",
+     "num": 34,
+     "hanzi": "教授",
+     "pinyin": "jiàoshòu",
+     "meaning": "professor",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "王教授今天来上课。",
+       "en": "Professor Wang is teaching today."
+      },
+      {
+       "zh": "他是大学教授。",
+       "en": "He is a university professor."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-35",
+     "num": 35,
+     "hanzi": "记录",
+     "pinyin": "jìlù",
+     "meaning": "record; to record",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "请记录重要内容。",
+       "en": "Please record the important points."
+      },
+      {
+       "zh": "手机里有学习记录。",
+       "en": "There are study records on the phone."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-36",
+     "num": 36,
+     "hanzi": "口语",
+     "pinyin": "kǒuyǔ",
+     "meaning": "spoken language",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想提高中文口语。",
+       "en": "I want to improve my spoken Chinese."
+      },
+      {
+       "zh": "多说对口语有帮助。",
+       "en": "Speaking more helps your spoken language."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-37",
+     "num": 37,
+     "hanzi": "律师",
+     "pinyin": "lǜshī",
+     "meaning": "lawyer",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是一名律师。",
+       "en": "He is a lawyer."
+      },
+      {
+       "zh": "我朋友想当律师。",
+       "en": "My friend wants to be a lawyer."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-38",
+     "num": 38,
+     "hanzi": "目的",
+     "pinyin": "mùdì",
+     "meaning": "purpose; goal",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "学习的目的是什么？",
+       "en": "What is the purpose of studying?"
+      },
+      {
+       "zh": "我这次来的目的很简单。",
+       "en": "My purpose for coming this time is simple."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-39",
+     "num": 39,
+     "hanzi": "视频",
+     "pinyin": "shìpín",
+     "meaning": "video",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我看了一个学习视频。",
+       "en": "I watched a learning video."
+      },
+      {
+       "zh": "请把视频发给我。",
+       "en": "Please send me the video."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-40",
+     "num": 40,
+     "hanzi": "优秀",
+     "pinyin": "yōuxiù",
+     "meaning": "excellent",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她是一名优秀的学生。",
+       "en": "She is an excellent student."
+      },
+      {
+       "zh": "他的工作很优秀。",
+       "en": "His work is excellent."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l11-41",
+     "num": 41,
+     "hanzi": "资料",
+     "pinyin": "zīliào",
+     "meaning": "material; information",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在网上找资料。",
+       "en": "I look for information online."
+      },
+      {
+       "zh": "请把资料发给我。",
+       "en": "Please send me the materials."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "title": "幸福的家庭",
+   "titleEn": "A Happy Family",
+   "words": [
+    {
+     "id": "newhsk3-4-l12-1",
+     "num": 1,
+     "hanzi": "毛衣",
+     "pinyin": "máoyī",
+     "meaning": "sweater",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这件毛衣很暖和。",
+       "en": "This sweater is warm."
+      },
+      {
+       "zh": "我买了一件蓝毛衣。",
+       "en": "I bought a blue sweater."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-2",
+     "num": 2,
+     "hanzi": "期",
+     "pinyin": "qī",
+     "meaning": "period; session",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这期课有十周。",
+       "en": "This course session lasts ten weeks."
+      },
+      {
+       "zh": "下一期什么时候开始？",
+       "en": "When does the next session start?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-3",
+     "num": 3,
+     "hanzi": "强",
+     "pinyin": "qiáng",
+     "meaning": "strong; better",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的身体很强。",
+       "en": "He is physically strong."
+      },
+      {
+       "zh": "这个队比那个队强。",
+       "en": "This team is stronger than that one."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-4",
+     "num": 4,
+     "hanzi": "样子",
+     "pinyin": "yàngzi",
+     "meaning": "appearance; way",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他看起来很高兴的样子。",
+       "en": "He looks happy."
+      },
+      {
+       "zh": "这个样子很好看。",
+       "en": "This style looks good."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-5",
+     "num": 5,
+     "hanzi": "自",
+     "pinyin": "zì",
+     "meaning": "from; self",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "自今天起开始报名。",
+       "en": "Registration starts from today."
+      },
+      {
+       "zh": "他自小就喜欢画画。",
+       "en": "He has liked drawing since childhood."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-6",
+     "num": 6,
+     "hanzi": "年底",
+     "pinyin": "niándǐ",
+     "meaning": "end of the year",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "年底工作比较忙。",
+       "en": "Work is busier at the end of the year."
+      },
+      {
+       "zh": "我们年底回家。",
+       "en": "We will go home at the end of the year."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-7",
+     "num": 7,
+     "hanzi": "适合",
+     "pinyin": "shìhé",
+     "meaning": "to suit; suitable",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这件衣服很适合你。",
+       "en": "This clothing suits you well."
+      },
+      {
+       "zh": "这个时间不太适合。",
+       "en": "This time is not very suitable."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-8",
+     "num": 8,
+     "hanzi": "全",
+     "pinyin": "quán",
+     "meaning": "all; whole",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "人全到了。",
+       "en": "Everyone has arrived."
+      },
+      {
+       "zh": "我把书全看完了。",
+       "en": "I finished reading all the books."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-9",
+     "num": 9,
+     "hanzi": "售货员",
+     "pinyin": "shòuhuòyuán",
+     "meaning": "shop assistant",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "售货员很热情。",
+       "en": "The shop assistant is very friendly."
+      },
+      {
+       "zh": "我问了售货员价钱。",
+       "en": "I asked the shop assistant the price."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-10",
+     "num": 10,
+     "hanzi": "打折",
+     "pinyin": "dǎzhé",
+     "meaning": "to give a discount",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这件衣服打八折。",
+       "en": "This piece of clothing is 20% off."
+      },
+      {
+       "zh": "今天很多商品打折。",
+       "en": "Many products are on sale today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-11",
+     "num": 11,
+     "hanzi": "值",
+     "pinyin": "zhí",
+     "meaning": "to be worth; value",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这本书值五十元。",
+       "en": "This book is worth fifty yuan."
+      },
+      {
+       "zh": "这张票值一百元。",
+       "en": "This ticket is worth 100 yuan."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-12",
+     "num": 12,
+     "hanzi": "质量",
+     "pinyin": "zhìliàng",
+     "meaning": "quality",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这件衣服质量很好。",
+       "en": "The quality of this clothing is very good."
+      },
+      {
+       "zh": "买东西要看质量。",
+       "en": "Look at quality when buying things."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-13",
+     "num": 13,
+     "hanzi": "估计",
+     "pinyin": "gūjì",
+     "meaning": "to estimate; probably",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我估计他快到了。",
+       "en": "I guess he will arrive soon."
+      },
+      {
+       "zh": "估计今天会下雨。",
+       "en": "It will probably rain today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-14",
+     "num": 14,
+     "hanzi": "听力",
+     "pinyin": "tīnglì",
+     "meaning": "listening ability",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的中文听力还可以。",
+       "en": "My Chinese listening is okay."
+      },
+      {
+       "zh": "多听可以提高听力。",
+       "en": "Listening more can improve your listening."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-15",
+     "num": 15,
+     "hanzi": "烦",
+     "pinyin": "fán",
+     "meaning": "annoyed; troublesome",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天事情太多，我有点儿烦。",
+       "en": "There are too many things today, and I feel annoyed."
+      },
+      {
+       "zh": "别烦他了。",
+       "en": "Do not bother him."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-16",
+     "num": 16,
+     "hanzi": "脱",
+     "pinyin": "tuō",
+     "meaning": "to take off",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "进门请脱鞋。",
+       "en": "Please take off your shoes when you enter."
+      },
+      {
+       "zh": "天气热了，可以脱外套。",
+       "en": "It is warm, so you can take off your coat."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-17",
+     "num": 17,
+     "hanzi": "挂",
+     "pinyin": "guà",
+     "meaning": "to hang; hang up",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请把衣服挂起来。",
+       "en": "Please hang up the clothes."
+      },
+      {
+       "zh": "他挂了电话。",
+       "en": "He hung up the phone."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-18",
+     "num": 18,
+     "hanzi": "脾气",
+     "pinyin": "píqi",
+     "meaning": "temper",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的脾气很好。",
+       "en": "He has a good temper."
+      },
+      {
+       "zh": "别因为小事发脾气。",
+       "en": "Do not lose your temper over small things."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-19",
+     "num": 19,
+     "hanzi": "伤心",
+     "pinyin": "shāngxīn",
+     "meaning": "sad",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "听到这个消息，他很伤心。",
+       "en": "He was sad to hear the news."
+      },
+      {
+       "zh": "别伤心，一切会好的。",
+       "en": "Do not be sad; everything will be fine."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-20",
+     "num": 20,
+     "hanzi": "批评",
+     "pinyin": "pīpíng",
+     "meaning": "to criticize",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师没有批评他。",
+       "en": "The teacher did not criticize him."
+      },
+      {
+       "zh": "做错了要接受批评。",
+       "en": "If you make a mistake, you should accept criticism."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-21",
+     "num": 21,
+     "hanzi": "道歉",
+     "pinyin": "dàoqiàn",
+     "meaning": "to apologize",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我应该向他道歉。",
+       "en": "I should apologize to him."
+      },
+      {
+       "zh": "他马上道歉了。",
+       "en": "He apologized at once."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-22",
+     "num": 22,
+     "hanzi": "父子",
+     "pinyin": "fùzǐ",
+     "meaning": "father and son",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他们父子关系很好。",
+       "en": "The father and son have a good relationship."
+      },
+      {
+       "zh": "这对父子常一起运动。",
+       "en": "This father and son often exercise together."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-23",
+     "num": 23,
+     "hanzi": "卫生",
+     "pinyin": "wèishēng",
+     "meaning": "hygiene; sanitary",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里很干净，也很卫生。",
+       "en": "It is clean and hygienic here."
+      },
+      {
+       "zh": "做饭前要注意卫生。",
+       "en": "Pay attention to hygiene before cooking."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-24",
+     "num": 24,
+     "hanzi": "母亲",
+     "pinyin": "mǔqīn",
+     "meaning": "mother",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的母亲很喜欢看书。",
+       "en": "My mother likes reading very much."
+      },
+      {
+       "zh": "他母亲是一名老师。",
+       "en": "His mother is a teacher."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-25",
+     "num": 25,
+     "hanzi": "无论",
+     "pinyin": "wúlùn",
+     "meaning": "no matter",
+     "pos": "conj",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "无论多忙，我都要吃早饭。",
+       "en": "No matter how busy I am, I eat breakfast."
+      },
+      {
+       "zh": "无论去哪儿，他都带着书。",
+       "en": "No matter where he goes, he takes a book."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-26",
+     "num": 26,
+     "hanzi": "待",
+     "pinyin": "dāi",
+     "meaning": "to stay",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想在家待一天。",
+       "en": "I want to stay home for a day."
+      },
+      {
+       "zh": "他在北京待了三年。",
+       "en": "He stayed in Beijing for three years."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-27",
+     "num": 27,
+     "hanzi": "将",
+     "pinyin": "jiāng",
+     "meaning": "will; to take",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "比赛将于明天开始。",
+       "en": "The competition will start tomorrow."
+      },
+      {
+       "zh": "我们将去北京旅行。",
+       "en": "We will travel to Beijing."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-28",
+     "num": 28,
+     "hanzi": "闻",
+     "pinyin": "wén",
+     "meaning": "to smell",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你闻一闻，很香。",
+       "en": "Smell it; it is fragrant."
+      },
+      {
+       "zh": "我闻到了花的味道。",
+       "en": "I smelled the flowers."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-29",
+     "num": 29,
+     "hanzi": "味道",
+     "pinyin": "wèidào",
+     "meaning": "taste; smell",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个菜味道很好。",
+       "en": "This dish tastes good."
+      },
+      {
+       "zh": "我喜欢茶的味道。",
+       "en": "I like the taste of tea."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-30",
+     "num": 30,
+     "hanzi": "冷静",
+     "pinyin": "lěngjìng",
+     "meaning": "calm",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "遇到问题要冷静。",
+       "en": "Stay calm when you have a problem."
+      },
+      {
+       "zh": "请先冷静一下。",
+       "en": "Please calm down first."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-31",
+     "num": 31,
+     "hanzi": "鼻子",
+     "pinyin": "bízi",
+     "meaning": "nose",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的鼻子有点儿不舒服。",
+       "en": "My nose feels a little uncomfortable."
+      },
+      {
+       "zh": "他的鼻子很高。",
+       "en": "He has a high nose."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-32",
+     "num": 32,
+     "hanzi": "城",
+     "pinyin": "chéng",
+     "meaning": "city; town",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一座老城。",
+       "en": "This is an old city."
+      },
+      {
+       "zh": "城里有很多人。",
+       "en": "There are many people in the city."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-33",
+     "num": 33,
+     "hanzi": "鲜",
+     "pinyin": "xiān",
+     "meaning": "fresh",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这条鱼很鲜。",
+       "en": "This fish is very fresh."
+      },
+      {
+       "zh": "我喜欢吃新鲜水果。",
+       "en": "I like eating fresh fruit."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-34",
+     "num": 34,
+     "hanzi": "暖",
+     "pinyin": "nuǎn",
+     "meaning": "warm",
+     "pos": "a",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "今天比较暖。",
+       "en": "It is warmer today."
+      },
+      {
+       "zh": "这件衣服很暖。",
+       "en": "This clothing is warm."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-35",
+     "num": 35,
+     "hanzi": "勇敢",
+     "pinyin": "yǒnggǎn",
+     "meaning": "brave",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个孩子很勇敢。",
+       "en": "This child is brave."
+      },
+      {
+       "zh": "遇到困难要勇敢一点儿。",
+       "en": "Be brave when facing difficulties."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-36",
+     "num": 36,
+     "hanzi": "商量",
+     "pinyin": "shāngliang",
+     "meaning": "to discuss; consult",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们商量一下吧。",
+       "en": "Let's discuss it."
+      },
+      {
+       "zh": "我先和家人商量。",
+       "en": "I will discuss it with my family first."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-37",
+     "num": 37,
+     "hanzi": "父母",
+     "pinyin": "fùmǔ",
+     "meaning": "parents",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的父母住在成都。",
+       "en": "My parents live in Chengdu."
+      },
+      {
+       "zh": "父母都很关心孩子。",
+       "en": "Parents care about their children."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-38",
+     "num": 38,
+     "hanzi": "父亲",
+     "pinyin": "fùqīn",
+     "meaning": "father",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我父亲喜欢喝茶。",
+       "en": "My father likes drinking tea."
+      },
+      {
+       "zh": "他的父亲是老师。",
+       "en": "His father is a teacher."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-39",
+     "num": 39,
+     "hanzi": "老家",
+     "pinyin": "lǎojiā",
+     "meaning": "hometown",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的老家在四川。",
+       "en": "My hometown is in Sichuan."
+      },
+      {
+       "zh": "春节我回老家。",
+       "en": "I go back to my hometown for Spring Festival."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-40",
+     "num": 40,
+     "hanzi": "另外",
+     "pinyin": "lìngwài",
+     "meaning": "in addition; another",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我还想买另外一本书。",
+       "en": "I also want to buy another book."
+      },
+      {
+       "zh": "另外，我们明天要早起。",
+       "en": "In addition, we need to get up early tomorrow."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-41",
+     "num": 41,
+     "hanzi": "母子",
+     "pinyin": "mǔzǐ",
+     "meaning": "mother and son",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这对母子正在散步。",
+       "en": "This mother and son are taking a walk."
+      },
+      {
+       "zh": "母子两个人都很开心。",
+       "en": "The mother and son are both happy."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-42",
+     "num": 42,
+     "hanzi": "条件",
+     "pinyin": "tiáojiàn",
+     "meaning": "condition; requirement",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个工作条件不错。",
+       "en": "The conditions for this job are good."
+      },
+      {
+       "zh": "你有什么条件？",
+       "en": "What requirements do you have?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l12-43",
+     "num": 43,
+     "hanzi": "允许",
+     "pinyin": "yǔnxǔ",
+     "meaning": "to allow",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里不允许停车。",
+       "en": "Parking is not allowed here."
+      },
+      {
+       "zh": "老师允许我们早点儿走。",
+       "en": "The teacher allowed us to leave early."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "title": "美好的日子",
+   "titleEn": "Beautiful Days",
+   "words": [
+    {
+     "id": "newhsk3-4-l13-1",
+     "num": 1,
+     "hanzi": "熊",
+     "pinyin": "xióng",
+     "meaning": "bear",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "动物园里有两只熊。",
+       "en": "There are two bears in the zoo."
+      },
+      {
+       "zh": "熊喜欢吃什么？",
+       "en": "What do bears like to eat?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-2",
+     "num": 2,
+     "hanzi": "老虎",
+     "pinyin": "lǎohǔ",
+     "meaning": "tiger",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "动物园里有老虎。",
+       "en": "There are tigers in the zoo."
+      },
+      {
+       "zh": "老虎跑得很快。",
+       "en": "Tigers run very fast."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-3",
+     "num": 3,
+     "hanzi": "喊",
+     "pinyin": "hǎn",
+     "meaning": "to shout; call",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他在门口喊我的名字。",
+       "en": "He called my name at the door."
+      },
+      {
+       "zh": "别大声喊。",
+       "en": "Do not shout loudly."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-4",
+     "num": 4,
+     "hanzi": "树林",
+     "pinyin": "shùlín",
+     "meaning": "woods; grove",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们在树林里散步。",
+       "en": "We walked in the woods."
+      },
+      {
+       "zh": "树林里很安静。",
+       "en": "It is quiet in the woods."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-5",
+     "num": 5,
+     "hanzi": "级",
+     "pinyin": "jí",
+     "meaning": "level; grade",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这个考试分三个级别。",
+       "en": "This exam has three levels."
+      },
+      {
+       "zh": "他现在是中级。",
+       "en": "He is at the intermediate level now."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-6",
+     "num": 6,
+     "hanzi": "景区",
+     "pinyin": "jǐngqū",
+     "meaning": "scenic area",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个景区很漂亮。",
+       "en": "This scenic area is beautiful."
+      },
+      {
+       "zh": "假日景区人很多。",
+       "en": "There are many people in scenic areas on holidays."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-7",
+     "num": 7,
+     "hanzi": "区",
+     "pinyin": "qū",
+     "meaning": "area; district",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个区很安静。",
+       "en": "This district is quiet."
+      },
+      {
+       "zh": "我住在城东这个区。",
+       "en": "I live in this district in the east of the city."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-8",
+     "num": 8,
+     "hanzi": "美",
+     "pinyin": "měi",
+     "meaning": "beautiful; beauty",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里的景色很美。",
+       "en": "The scenery here is beautiful."
+      },
+      {
+       "zh": "大家都喜欢美的东西。",
+       "en": "Everyone likes beautiful things."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-9",
+     "num": 9,
+     "hanzi": "节假日",
+     "pinyin": "jiéjiàrì",
+     "meaning": "festival and holiday",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "节假日这里人很多。",
+       "en": "There are many people here during holidays."
+      },
+      {
+       "zh": "节假日我们不用上班。",
+       "en": "We do not work on holidays."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-10",
+     "num": 10,
+     "hanzi": "千万",
+     "pinyin": "qiānwàn",
+     "meaning": "must; by all means",
+     "pos": "num",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你千万别迟到。",
+       "en": "Make sure you are not late."
+      },
+      {
+       "zh": "天气冷，千万要多穿一点儿。",
+       "en": "It is cold, so be sure to wear more."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-11",
+     "num": 11,
+     "hanzi": "开玩笑",
+     "pinyin": "kāi wánxiào",
+     "meaning": "to joke",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我只是开玩笑。",
+       "en": "I am only joking."
+      },
+      {
+       "zh": "别跟他开这种玩笑。",
+       "en": "Do not make this kind of joke with him."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-12",
+     "num": 12,
+     "hanzi": "已",
+     "pinyin": "yǐ",
+     "meaning": "already",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "比赛已结束。",
+       "en": "The match has already ended."
+      },
+      {
+       "zh": "票已卖完。",
+       "en": "The tickets are already sold out."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-13",
+     "num": 13,
+     "hanzi": "月饼",
+     "pinyin": "yuèbing",
+     "meaning": "mooncake",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "中秋节我们吃月饼。",
+       "en": "We eat mooncakes at Mid-Autumn Festival."
+      },
+      {
+       "zh": "这个月饼很甜。",
+       "en": "This mooncake is sweet."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-14",
+     "num": 14,
+     "hanzi": "葡萄",
+     "pinyin": "pútao",
+     "meaning": "grape",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这些葡萄很甜。",
+       "en": "These grapes are sweet."
+      },
+      {
+       "zh": "我买了一些葡萄。",
+       "en": "I bought some grapes."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-15",
+     "num": 15,
+     "hanzi": "香",
+     "pinyin": "xiāng",
+     "meaning": "fragrant; tasty",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个面包真香。",
+       "en": "This bread smells great."
+      },
+      {
+       "zh": "饭做好了，好香！",
+       "en": "The meal is ready and smells delicious!"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-16",
+     "num": 16,
+     "hanzi": "街道",
+     "pinyin": "jiēdào",
+     "meaning": "street",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这条街道很安静。",
+       "en": "This street is quiet."
+      },
+      {
+       "zh": "街道两边有很多树。",
+       "en": "There are many trees on both sides of the street."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-17",
+     "num": 17,
+     "hanzi": "剧院",
+     "pinyin": "jùyuàn",
+     "meaning": "theater",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们晚上去剧院。",
+       "en": "We are going to the theater tonight."
+      },
+      {
+       "zh": "剧院离这里不远。",
+       "en": "The theater is not far from here."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-18",
+     "num": 18,
+     "hanzi": "演出",
+     "pinyin": "yǎnchū",
+     "meaning": "performance; to perform",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "今晚有一场演出。",
+       "en": "There is a performance tonight."
+      },
+      {
+       "zh": "他们准备上台演出。",
+       "en": "They are preparing to perform on stage."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-19",
+     "num": 19,
+     "hanzi": "赶",
+     "pinyin": "gǎn",
+     "meaning": "to hurry; catch",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "快点儿，我们要赶火车。",
+       "en": "Hurry up, we need to catch the train."
+      },
+      {
+       "zh": "我赶着去上班。",
+       "en": "I am hurrying to work."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-20",
+     "num": 20,
+     "hanzi": "巧",
+     "pinyin": "qiǎo",
+     "meaning": "coincidental; skillful",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "真巧，我们又见面了。",
+       "en": "What a coincidence, we meet again."
+      },
+      {
+       "zh": "今天来得真巧。",
+       "en": "You came at just the right time today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-21",
+     "num": 21,
+     "hanzi": "之中",
+     "pinyin": "zhīzhōng",
+     "meaning": "among; within",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这些人之中，他最高。",
+       "en": "Among these people, he is the tallest."
+      },
+      {
+       "zh": "三种方法之中，我选这个。",
+       "en": "Among the three methods, I choose this one."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-22",
+     "num": 22,
+     "hanzi": "左右",
+     "pinyin": "zuǒyòu",
+     "meaning": "about; approximately",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "大约十分钟左右。",
+       "en": "About ten minutes."
+      },
+      {
+       "zh": "这里有二十个人左右。",
+       "en": "There are around twenty people here."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-23",
+     "num": 23,
+     "hanzi": "大约",
+     "pinyin": "dàyuē",
+     "meaning": "about; approximately",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "大约有三十个人。",
+       "en": "There are about thirty people."
+      },
+      {
+       "zh": "我们大约六点到。",
+       "en": "We will arrive at about six."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-24",
+     "num": 24,
+     "hanzi": "人员",
+     "pinyin": "rényuán",
+     "meaning": "staff; personnel",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "工作人员已经到了。",
+       "en": "The staff have arrived."
+      },
+      {
+       "zh": "这里有很多服务人员。",
+       "en": "There are many service staff here."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-25",
+     "num": 25,
+     "hanzi": "烤",
+     "pinyin": "kǎo",
+     "meaning": "to roast; bake",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们晚上烤肉。",
+       "en": "We will barbecue tonight."
+      },
+      {
+       "zh": "这个面包是刚烤的。",
+       "en": "This bread was just baked."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-26",
+     "num": 26,
+     "hanzi": "反向",
+     "pinyin": "fǎnxiàng",
+     "meaning": "opposite direction",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这两个方向是反向的。",
+       "en": "These two directions are opposite."
+      },
+      {
+       "zh": "请看反向的箭头。",
+       "en": "Please look at the arrow pointing the other way."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-27",
+     "num": 27,
+     "hanzi": "西红柿",
+     "pinyin": "xīhóngshì",
+     "meaning": "tomato",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我买了三个西红柿。",
+       "en": "I bought three tomatoes."
+      },
+      {
+       "zh": "西红柿可以做汤。",
+       "en": "Tomatoes can be used to make soup."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-28",
+     "num": 28,
+     "hanzi": "团圆",
+     "pinyin": "tuányuán",
+     "meaning": "family reunion",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "春节是家人团圆的日子。",
+       "en": "Spring Festival is a time for family reunion."
+      },
+      {
+       "zh": "一家人终于团圆了。",
+       "en": "The family was finally reunited."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-29",
+     "num": 29,
+     "hanzi": "出现",
+     "pinyin": "chūxiàn",
+     "meaning": "to appear; occur",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "问题又出现了。",
+       "en": "The problem appeared again."
+      },
+      {
+       "zh": "他突然出现在门口。",
+       "en": "He suddenly appeared at the door."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-30",
+     "num": 30,
+     "hanzi": "传统",
+     "pinyin": "chuántǒng",
+     "meaning": "tradition; traditional",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "春节是传统节日。",
+       "en": "Spring Festival is a traditional holiday."
+      },
+      {
+       "zh": "我们要了解中国传统。",
+       "en": "We should learn about Chinese traditions."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-31",
+     "num": 31,
+     "hanzi": "到来",
+     "pinyin": "dàolái",
+     "meaning": "to arrive; arrival",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "春天到来了。",
+       "en": "Spring has arrived."
+      },
+      {
+       "zh": "我们期待假期的到来。",
+       "en": "We look forward to the arrival of the holiday."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-32",
+     "num": 32,
+     "hanzi": "回忆",
+     "pinyin": "huíyì",
+     "meaning": "memory; to recall",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一段美好的回忆。",
+       "en": "This is a beautiful memory."
+      },
+      {
+       "zh": "我常回忆小时候的事。",
+       "en": "I often recall things from my childhood."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-33",
+     "num": 33,
+     "hanzi": "记忆",
+     "pinyin": "jìyì",
+     "meaning": "memory",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这段记忆很美好。",
+       "en": "This memory is beautiful."
+      },
+      {
+       "zh": "照片帮助我留下记忆。",
+       "en": "Photos help me keep memories."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-34",
+     "num": 34,
+     "hanzi": "美食",
+     "pinyin": "měishí",
+     "meaning": "delicious food",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "成都有很多美食。",
+       "en": "Chengdu has a lot of delicious food."
+      },
+      {
+       "zh": "我喜欢尝当地美食。",
+       "en": "I like trying local food."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-35",
+     "num": 35,
+     "hanzi": "年夜饭",
+     "pinyin": "niányèfàn",
+     "meaning": "New Year's Eve dinner",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我们全家一起吃年夜饭。",
+       "en": "Our whole family eats New Year's Eve dinner together."
+      },
+      {
+       "zh": "年夜饭很丰富。",
+       "en": "The New Year's Eve dinner is plentiful."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-36",
+     "num": 36,
+     "hanzi": "仍然",
+     "pinyin": "réngrán",
+     "meaning": "still; yet",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "十年后这里仍然很美。",
+       "en": "Ten years later, it is still beautiful here."
+      },
+      {
+       "zh": "他很忙，但仍然来帮我。",
+       "en": "He is busy, but he still came to help me."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-37",
+     "num": 37,
+     "hanzi": "铁路",
+     "pinyin": "tiělù",
+     "meaning": "railway",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这条铁路很长。",
+       "en": "This railway is very long."
+      },
+      {
+       "zh": "铁路连接了两个城市。",
+       "en": "The railway connects the two cities."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-38",
+     "num": 38,
+     "hanzi": "童年",
+     "pinyin": "tóngnián",
+     "meaning": "childhood",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的童年很快乐。",
+       "en": "My childhood was happy."
+      },
+      {
+       "zh": "这张照片让我想起童年。",
+       "en": "This photo reminds me of my childhood."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-39",
+     "num": 39,
+     "hanzi": "兄弟",
+     "pinyin": "xiōngdì",
+     "meaning": "brothers",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他们是兄弟。",
+       "en": "They are brothers."
+      },
+      {
+       "zh": "这两个兄弟都喜欢运动。",
+       "en": "These two brothers both like sports."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-40",
+     "num": 40,
+     "hanzi": "意义",
+     "pinyin": "yìyì",
+     "meaning": "meaning; significance",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这件事很有意义。",
+       "en": "This is very meaningful."
+      },
+      {
+       "zh": "旅行对我有特别的意义。",
+       "en": "Travel has special meaning for me."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-41",
+     "num": 41,
+     "hanzi": "有着",
+     "pinyin": "yǒuzhe",
+     "meaning": "to have; possess",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个城市有着很长的历史。",
+       "en": "This city has a long history."
+      },
+      {
+       "zh": "他有着丰富的经验。",
+       "en": "He has rich experience."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-42",
+     "num": 42,
+     "hanzi": "中年",
+     "pinyin": "zhōngnián",
+     "meaning": "middle age",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他到了中年更喜欢运动。",
+       "en": "He likes exercise more in middle age."
+      },
+      {
+       "zh": "很多中年人很忙。",
+       "en": "Many middle-aged people are busy."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l13-43",
+     "num": 43,
+     "hanzi": "作为",
+     "pinyin": "zuòwéi",
+     "meaning": "as; in the role of",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "作为学生，要认真学习。",
+       "en": "As a student, you should study hard."
+      },
+      {
+       "zh": "他作为代表参加会议。",
+       "en": "He attended the meeting as a representative."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 14,
+   "title": "合适才买",
+   "titleEn": "Buy It Only If It's Right",
+   "words": [
+    {
+     "id": "newhsk3-4-l14-1",
+     "num": 1,
+     "hanzi": "茶叶",
+     "pinyin": "cháyè",
+     "meaning": "tea leaves",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是中国茶叶。",
+       "en": "These are Chinese tea leaves."
+      },
+      {
+       "zh": "我买了一些茶叶。",
+       "en": "I bought some tea leaves."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-2",
+     "num": 2,
+     "hanzi": "究竟",
+     "pinyin": "jiūjìng",
+     "meaning": "exactly; after all",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你究竟想买什么？",
+       "en": "What exactly do you want to buy?"
+      },
+      {
+       "zh": "这究竟是为什么？",
+       "en": "Why exactly is this?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-3",
+     "num": 3,
+     "hanzi": "抱歉",
+     "pinyin": "bàoqiàn",
+     "meaning": "sorry; to feel sorry",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很抱歉，我迟到了。",
+       "en": "I am sorry I am late."
+      },
+      {
+       "zh": "抱歉，我今天不能来。",
+       "en": "Sorry, I cannot come today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-4",
+     "num": 4,
+     "hanzi": "暂时",
+     "pinyin": "zànshí",
+     "meaning": "temporarily; for now",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我暂时住在这里。",
+       "en": "I am staying here for now."
+      },
+      {
+       "zh": "这个问题暂时不能解决。",
+       "en": "This problem cannot be solved for the moment."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-5",
+     "num": 5,
+     "hanzi": "满",
+     "pinyin": "mǎn",
+     "meaning": "full; filled",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个杯子已经满了。",
+       "en": "This cup is already full."
+      },
+      {
+       "zh": "房间里坐满了人。",
+       "en": "The room is full of people."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-6",
+     "num": 6,
+     "hanzi": "两",
+     "pinyin": "liǎng",
+     "meaning": "two",
+     "pos": "mw",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我买了两件衣服。",
+       "en": "I bought two pieces of clothing."
+      },
+      {
+       "zh": "我们两点见。",
+       "en": "Let's meet at two."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-7",
+     "num": 7,
+     "hanzi": "超过",
+     "pinyin": "chāoguò",
+     "meaning": "to exceed; more than",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "人数超过一百。",
+       "en": "The number of people is over one hundred."
+      },
+      {
+       "zh": "时间不能超过两小时。",
+       "en": "The time cannot exceed two hours."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-8",
+     "num": 8,
+     "hanzi": "盒子",
+     "pinyin": "hézi",
+     "meaning": "box",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "礼物在盒子里。",
+       "en": "The gift is in the box."
+      },
+      {
+       "zh": "这个盒子很漂亮。",
+       "en": "This box is very pretty."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-9",
+     "num": 9,
+     "hanzi": "装",
+     "pinyin": "zhuāng",
+     "meaning": "to install; pack; dress",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请把书装进箱子。",
+       "en": "Please put the books into the box."
+      },
+      {
+       "zh": "电脑已经装好了。",
+       "en": "The computer has been installed."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-10",
+     "num": 10,
+     "hanzi": "缺",
+     "pinyin": "quē",
+     "meaning": "to lack; be short of",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个班还缺两个人。",
+       "en": "This class is still short two people."
+      },
+      {
+       "zh": "家里缺牛奶了。",
+       "en": "We are out of milk at home."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-11",
+     "num": 11,
+     "hanzi": "各位",
+     "pinyin": "gèwèi",
+     "meaning": "everyone; ladies and gentlemen",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "各位，请坐。",
+       "en": "Everyone, please sit down."
+      },
+      {
+       "zh": "谢谢各位的帮助。",
+       "en": "Thank you all for your help."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-12",
+     "num": 12,
+     "hanzi": "减",
+     "pinyin": "jiǎn",
+     "meaning": "to reduce; subtract",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个月体重减了两公斤。",
+       "en": "My weight went down by two kilograms this month."
+      },
+      {
+       "zh": "请减一点儿糖。",
+       "en": "Please reduce the sugar a little."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-13",
+     "num": 13,
+     "hanzi": "顾客",
+     "pinyin": "gùkè",
+     "meaning": "customer",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "店里有很多顾客。",
+       "en": "There are many customers in the shop."
+      },
+      {
+       "zh": "我们要对顾客友好。",
+       "en": "We should be friendly to customers."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-14",
+     "num": 14,
+     "hanzi": "广告",
+     "pinyin": "guǎnggào",
+     "meaning": "advertisement",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在网上看到了广告。",
+       "en": "I saw an advertisement online."
+      },
+      {
+       "zh": "这个广告很有意思。",
+       "en": "This advertisement is interesting."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-15",
+     "num": 15,
+     "hanzi": "本",
+     "pinyin": "běn",
+     "meaning": "this; current",
+     "pos": "mw",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "本店今天打折。",
+       "en": "This shop has discounts today."
+      },
+      {
+       "zh": "本次活动很有意思。",
+       "en": "This event is very interesting."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-16",
+     "num": 16,
+     "hanzi": "假日",
+     "pinyin": "jiàrì",
+     "meaning": "holiday",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "假日商店里人很多。",
+       "en": "There are many people in shops on holidays."
+      },
+      {
+       "zh": "我们假日去旅行。",
+       "en": "We travel during holidays."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-17",
+     "num": 17,
+     "hanzi": "牌子",
+     "pinyin": "páizi",
+     "meaning": "brand; sign",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个牌子很有名。",
+       "en": "This brand is famous."
+      },
+      {
+       "zh": "你喜欢哪个牌子？",
+       "en": "Which brand do you like?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-18",
+     "num": 18,
+     "hanzi": "低价",
+     "pinyin": "dījià",
+     "meaning": "low price",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这家店有很多低价商品。",
+       "en": "This shop has many low-priced products."
+      },
+      {
+       "zh": "我买到了低价票。",
+       "en": "I bought a low-priced ticket."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-19",
+     "num": 19,
+     "hanzi": "促销",
+     "pinyin": "cùxiāo",
+     "meaning": "sales promotion",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "商店正在促销。",
+       "en": "The shop is having a promotion."
+      },
+      {
+       "zh": "促销的时候比较便宜。",
+       "en": "Things are cheaper during promotions."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-20",
+     "num": 20,
+     "hanzi": "样式",
+     "pinyin": "yàngshì",
+     "meaning": "style; design",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这件衣服的样式很新。",
+       "en": "The style of this clothing is new."
+      },
+      {
+       "zh": "你喜欢哪种样式？",
+       "en": "Which style do you like?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-21",
+     "num": 21,
+     "hanzi": "广播",
+     "pinyin": "guǎngbō",
+     "meaning": "broadcast; to broadcast",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天听广播。",
+       "en": "I listen to the radio every day."
+      },
+      {
+       "zh": "广播里在说天气。",
+       "en": "The radio is talking about the weather."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-22",
+     "num": 22,
+     "hanzi": "商业",
+     "pinyin": "shāngyè",
+     "meaning": "business; commercial",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这里是商业区。",
+       "en": "This is a business district."
+      },
+      {
+       "zh": "他对商业很感兴趣。",
+       "en": "He is interested in business."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-23",
+     "num": 23,
+     "hanzi": "表示",
+     "pinyin": "biǎoshì",
+     "meaning": "to express; indicate",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他点头表示同意。",
+       "en": "He nodded to show agreement."
+      },
+      {
+       "zh": "我想表示感谢。",
+       "en": "I want to express my thanks."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-24",
+     "num": 24,
+     "hanzi": "商品",
+     "pinyin": "shāngpǐn",
+     "meaning": "goods; product",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里的商品很多。",
+       "en": "There are many products here."
+      },
+      {
+       "zh": "这个商品正在打折。",
+       "en": "This product is on sale."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-25",
+     "num": 25,
+     "hanzi": "加上",
+     "pinyin": "jiāshàng",
+     "meaning": "to add; plus",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "十加上五是十五。",
+       "en": "Ten plus five is fifteen."
+      },
+      {
+       "zh": "价格加上运费一共一百元。",
+       "en": "The price plus shipping is 100 yuan."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-26",
+     "num": 26,
+     "hanzi": "种类",
+     "pinyin": "zhǒnglèi",
+     "meaning": "type; kind",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这里有很多种类的茶。",
+       "en": "There are many kinds of tea here."
+      },
+      {
+       "zh": "水果种类很多。",
+       "en": "There are many kinds of fruit."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-27",
+     "num": 27,
+     "hanzi": "态度",
+     "pinyin": "tàidu",
+     "meaning": "attitude",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的学习态度很好。",
+       "en": "His attitude toward studying is good."
+      },
+      {
+       "zh": "请注意你的态度。",
+       "en": "Please pay attention to your attitude."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-28",
+     "num": 28,
+     "hanzi": "盲盒",
+     "pinyin": "mánghé",
+     "meaning": "blind box",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "孩子买了一个盲盒。",
+       "en": "The child bought a blind box."
+      },
+      {
+       "zh": "这个盲盒不便宜。",
+       "en": "This blind box is not cheap."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-29",
+     "num": 29,
+     "hanzi": "友好",
+     "pinyin": "yǒuhǎo",
+     "meaning": "friendly",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "大家对我很友好。",
+       "en": "Everyone is friendly to me."
+      },
+      {
+       "zh": "这是一次友好的比赛。",
+       "en": "This is a friendly match."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-30",
+     "num": 30,
+     "hanzi": "使得",
+     "pinyin": "shǐde",
+     "meaning": "to make; cause",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "运动使得身体更健康。",
+       "en": "Exercise makes the body healthier."
+      },
+      {
+       "zh": "这件事使得他很开心。",
+       "en": "This made him very happy."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-31",
+     "num": 31,
+     "hanzi": "者",
+     "pinyin": "zhě",
+     "meaning": "-er; person who",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "读者就是读书的人。",
+       "en": "A reader is a person who reads."
+      },
+      {
+       "zh": "“作者”是写文章的人。",
+       "en": "An “author” is a person who writes articles."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-32",
+     "num": 32,
+     "hanzi": "对于",
+     "pinyin": "duìyú",
+     "meaning": "as for; regarding",
+     "pos": "prep",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "对于这个问题，我有一个想法。",
+       "en": "I have an idea about this problem."
+      },
+      {
+       "zh": "运动对于健康很重要。",
+       "en": "Exercise is important for health."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-33",
+     "num": 33,
+     "hanzi": "不光",
+     "pinyin": "bùguāng",
+     "meaning": "not only",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他不光会唱歌，还会跳舞。",
+       "en": "He can not only sing, but also dance."
+      },
+      {
+       "zh": "这里不光便宜，而且方便。",
+       "en": "It is not only cheap here, but also convenient."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-34",
+     "num": 34,
+     "hanzi": "外套",
+     "pinyin": "wàitào",
+     "meaning": "coat; jacket",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "外面冷，穿上外套吧。",
+       "en": "It is cold outside, put on your coat."
+      },
+      {
+       "zh": "这件外套很适合你。",
+       "en": "This coat suits you well."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-35",
+     "num": 35,
+     "hanzi": "袜子",
+     "pinyin": "wàzi",
+     "meaning": "socks",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我买了两双袜子。",
+       "en": "I bought two pairs of socks."
+      },
+      {
+       "zh": "这双袜子很舒服。",
+       "en": "These socks are comfortable."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-36",
+     "num": 36,
+     "hanzi": "分为",
+     "pinyin": "fēnwéi",
+     "meaning": "to divide into",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "全班分为三组。",
+       "en": "The whole class is divided into three groups."
+      },
+      {
+       "zh": "这本书分为两部分。",
+       "en": "This book is divided into two parts."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-37",
+     "num": 37,
+     "hanzi": "降价",
+     "pinyin": "jiàngjià",
+     "meaning": "to reduce the price",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这件衣服降价了。",
+       "en": "The price of this clothing has gone down."
+      },
+      {
+       "zh": "商店今天开始降价。",
+       "en": "The shop starts reducing prices today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-38",
+     "num": 38,
+     "hanzi": "价钱",
+     "pinyin": "jiàqian",
+     "meaning": "price",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个价钱不贵。",
+       "en": "This price is not expensive."
+      },
+      {
+       "zh": "请问价钱是多少？",
+       "en": "How much is it?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-39",
+     "num": 39,
+     "hanzi": "首先",
+     "pinyin": "shǒuxiān",
+     "meaning": "first of all",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "首先，我们要看时间。",
+       "en": "First, we need to look at the time."
+      },
+      {
+       "zh": "做饭时首先要洗手。",
+       "en": "First wash your hands when cooking."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-40",
+     "num": 40,
+     "hanzi": "许多",
+     "pinyin": "xǔduō",
+     "meaning": "many; a lot of",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里有许多顾客。",
+       "en": "There are many customers here."
+      },
+      {
+       "zh": "我学到了许多东西。",
+       "en": "I learned many things."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l14-41",
+     "num": 41,
+     "hanzi": "仔细",
+     "pinyin": "zǐxì",
+     "meaning": "careful; carefully",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请仔细看。",
+       "en": "Please look carefully."
+      },
+      {
+       "zh": "他做事很仔细。",
+       "en": "He does things carefully."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 15,
+   "title": "我去应聘了",
+   "titleEn": "I Went to a Job Interview",
+   "words": [
+    {
+     "id": "newhsk3-4-l15-1",
+     "num": 1,
+     "hanzi": "期中",
+     "pinyin": "qīzhōng",
+     "meaning": "midterm",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "下周有期中考试。",
+       "en": "There is a midterm exam next week."
+      },
+      {
+       "zh": "期中以后我们会更忙。",
+       "en": "We will be busier after midterm."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-2",
+     "num": 2,
+     "hanzi": "医药",
+     "pinyin": "yīyào",
+     "meaning": "medicine; medical care",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "他在医药公司工作。",
+       "en": "He works for a pharmaceutical company."
+      },
+      {
+       "zh": "这是医药方面的工作。",
+       "en": "This is work related to medicine."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-3",
+     "num": 3,
+     "hanzi": "应聘",
+     "pinyin": "yìngpìn",
+     "meaning": "to apply for a job",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我去这家公司应聘。",
+       "en": "I went to apply for a job at this company."
+      },
+      {
+       "zh": "他正在应聘经理的工作。",
+       "en": "He is applying for a manager position."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-4",
+     "num": 4,
+     "hanzi": "招聘",
+     "pinyin": "zhāopìn",
+     "meaning": "to recruit",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这家公司正在招聘。",
+       "en": "This company is recruiting."
+      },
+      {
+       "zh": "学校要招聘两名老师。",
+       "en": "The school wants to recruit two teachers."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-5",
+     "num": 5,
+     "hanzi": "实习",
+     "pinyin": "shíxí",
+     "meaning": "to intern; internship",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我暑假去公司实习。",
+       "en": "I will intern at a company during summer vacation."
+      },
+      {
+       "zh": "这次实习很有帮助。",
+       "en": "This internship is very helpful."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-6",
+     "num": 6,
+     "hanzi": "考虑",
+     "pinyin": "kǎolǜ",
+     "meaning": "to consider",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我需要考虑一下。",
+       "en": "I need to think about it."
+      },
+      {
+       "zh": "请考虑我的意见。",
+       "en": "Please consider my suggestion."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-7",
+     "num": 7,
+     "hanzi": "答",
+     "pinyin": "dá",
+     "meaning": "to answer",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请你回答这个问题。",
+       "en": "Please answer this question."
+      },
+      {
+       "zh": "这个问题我不会答。",
+       "en": "I cannot answer this question."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-8",
+     "num": 8,
+     "hanzi": "单位",
+     "pinyin": "dānwèi",
+     "meaning": "work unit; organization",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他在这个单位工作。",
+       "en": "He works in this organization."
+      },
+      {
+       "zh": "单位离家很近。",
+       "en": "His workplace is close to home."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-9",
+     "num": 9,
+     "hanzi": "毕业生",
+     "pinyin": "bìyèshēng",
+     "meaning": "graduate",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是今年的毕业生。",
+       "en": "He is a graduate this year."
+      },
+      {
+       "zh": "很多毕业生在找工作。",
+       "en": "Many graduates are looking for jobs."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-10",
+     "num": 10,
+     "hanzi": "经历",
+     "pinyin": "jīnglì",
+     "meaning": "experience; to go through",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一次特别的经历。",
+       "en": "This was a special experience."
+      },
+      {
+       "zh": "他经历了很多变化。",
+       "en": "He went through many changes."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-11",
+     "num": 11,
+     "hanzi": "消息",
+     "pinyin": "xiāoxi",
+     "meaning": "news; message",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我刚收到一个好消息。",
+       "en": "I just received good news."
+      },
+      {
+       "zh": "有消息请告诉我。",
+       "en": "Please tell me if there is any news."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-12",
+     "num": 12,
+     "hanzi": "报名",
+     "pinyin": "bàomíng",
+     "meaning": "to sign up; register",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想报名参加比赛。",
+       "en": "I want to sign up for the competition."
+      },
+      {
+       "zh": "报名今天开始。",
+       "en": "Registration starts today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-13",
+     "num": 13,
+     "hanzi": "由",
+     "pinyin": "yóu",
+     "meaning": "by; from",
+     "pos": "prep",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个活动由学生准备。",
+       "en": "This event is prepared by the students."
+      },
+      {
+       "zh": "比赛由老师负责。",
+       "en": "The teacher is in charge of the competition."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-14",
+     "num": 14,
+     "hanzi": "部门",
+     "pinyin": "bùmén",
+     "meaning": "department",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他在市场部门工作。",
+       "en": "He works in the marketing department."
+      },
+      {
+       "zh": "请联系这个部门。",
+       "en": "Please contact this department."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-15",
+     "num": 15,
+     "hanzi": "笔试",
+     "pinyin": "bǐshì",
+     "meaning": "written test",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "明天先参加笔试。",
+       "en": "Tomorrow we will take the written test first."
+      },
+      {
+       "zh": "笔试以后还有面试。",
+       "en": "There is also an interview after the written test."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-16",
+     "num": 16,
+     "hanzi": "不论",
+     "pinyin": "búlùn",
+     "meaning": "no matter; regardless of",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "不论多忙，我都要学习。",
+       "en": "No matter how busy I am, I will study."
+      },
+      {
+       "zh": "不论谁来，都欢迎。",
+       "en": "No matter who comes, they are welcome."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-17",
+     "num": 17,
+     "hanzi": "肯定",
+     "pinyin": "kěndìng",
+     "meaning": "certainly; sure",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他肯定会来。",
+       "en": "He will definitely come."
+      },
+      {
+       "zh": "这个答案肯定没问题。",
+       "en": "This answer is certainly fine."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-18",
+     "num": 18,
+     "hanzi": "短信",
+     "pinyin": "duǎnxìn",
+     "meaning": "text message",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我给你发了短信。",
+       "en": "I sent you a text message."
+      },
+      {
+       "zh": "请看一下我的短信。",
+       "en": "Please check my text message."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-19",
+     "num": 19,
+     "hanzi": "激动",
+     "pinyin": "jīdòng",
+     "meaning": "excited; to excite",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "听到消息后我很激动。",
+       "en": "I was very excited after hearing the news."
+      },
+      {
+       "zh": "他激动得说不出话。",
+       "en": "He was so excited that he could not speak."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-20",
+     "num": 20,
+     "hanzi": "扔",
+     "pinyin": "rēng",
+     "meaning": "to throw",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别把垃圾扔在地上。",
+       "en": "Do not throw rubbish on the ground."
+      },
+      {
+       "zh": "他把球扔给我。",
+       "en": "He threw the ball to me."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-21",
+     "num": 21,
+     "hanzi": "镜子",
+     "pinyin": "jìngzi",
+     "meaning": "mirror",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "镜子在门后。",
+       "en": "The mirror is behind the door."
+      },
+      {
+       "zh": "她看着镜子理发。",
+       "en": "She looks at the mirror while getting her hair cut."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-22",
+     "num": 22,
+     "hanzi": "自我",
+     "pinyin": "zìwǒ",
+     "meaning": "self",
+     "pos": "pron",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "要学会自我介绍。",
+       "en": "Learn how to introduce yourself."
+      },
+      {
+       "zh": "他很重视自我学习。",
+       "en": "He values self-learning."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-23",
+     "num": 23,
+     "hanzi": "运用",
+     "pinyin": "yùnyòng",
+     "meaning": "to apply; use",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我们要学会运用这些词。",
+       "en": "We need to learn how to use these words."
+      },
+      {
+       "zh": "他能灵活运用中文。",
+       "en": "He can use Chinese flexibly."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-24",
+     "num": 24,
+     "hanzi": "工厂",
+     "pinyin": "gōngchǎng",
+     "meaning": "factory",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他在工厂工作。",
+       "en": "He works in a factory."
+      },
+      {
+       "zh": "这个工厂很大。",
+       "en": "This factory is very large."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-25",
+     "num": 25,
+     "hanzi": "不如",
+     "pinyin": "bùrú",
+     "meaning": "not as good as; rather than",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "坐公交不如坐地铁快。",
+       "en": "Taking the bus is not as fast as taking the subway."
+      },
+      {
+       "zh": "与其等，不如先走。",
+       "en": "Rather than wait, we should leave first."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-26",
+     "num": 26,
+     "hanzi": "规定",
+     "pinyin": "guīdìng",
+     "meaning": "rule; to stipulate",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "学校有这个规定。",
+       "en": "The school has this rule."
+      },
+      {
+       "zh": "请按规定做。",
+       "en": "Please follow the rules."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-27",
+     "num": 27,
+     "hanzi": "答案",
+     "pinyin": "dá'àn",
+     "meaning": "answer",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的答案是对的。",
+       "en": "Your answer is correct."
+      },
+      {
+       "zh": "我还没找到答案。",
+       "en": "I have not found the answer yet."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-28",
+     "num": 28,
+     "hanzi": "完全",
+     "pinyin": "wánquán",
+     "meaning": "completely",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我完全同意。",
+       "en": "I completely agree."
+      },
+      {
+       "zh": "这两个答案完全不同。",
+       "en": "These two answers are completely different."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-29",
+     "num": 29,
+     "hanzi": "职业",
+     "pinyin": "zhíyè",
+     "meaning": "occupation; profession",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的职业是什么？",
+       "en": "What is your occupation?"
+      },
+      {
+       "zh": "医生是一个重要职业。",
+       "en": "Doctor is an important profession."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-30",
+     "num": 30,
+     "hanzi": "例如",
+     "pinyin": "lìrú",
+     "meaning": "for example",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢运动，例如跑步。",
+       "en": "I like sports, for example running."
+      },
+      {
+       "zh": "很多水果很甜，例如葡萄。",
+       "en": "Many fruits are sweet, for example grapes."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-31",
+     "num": 31,
+     "hanzi": "负责人",
+     "pinyin": "fùzérén",
+     "meaning": "person in charge",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是这个项目的负责人。",
+       "en": "He is the person in charge of this project."
+      },
+      {
+       "zh": "请找负责人。",
+       "en": "Please find the person in charge."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-32",
+     "num": 32,
+     "hanzi": "课堂",
+     "pinyin": "kètáng",
+     "meaning": "classroom; class",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "课堂上不要说话。",
+       "en": "Do not talk in class."
+      },
+      {
+       "zh": "今天的课堂很有意思。",
+       "en": "Today's class is interesting."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-33",
+     "num": 33,
+     "hanzi": "理发",
+     "pinyin": "lǐfà",
+     "meaning": "to get a haircut",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我今天去理发。",
+       "en": "I am getting a haircut today."
+      },
+      {
+       "zh": "他每个月理一次发。",
+       "en": "He gets a haircut once a month."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-34",
+     "num": 34,
+     "hanzi": "面试",
+     "pinyin": "miànshì",
+     "meaning": "interview",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我明天有一个面试。",
+       "en": "I have an interview tomorrow."
+      },
+      {
+       "zh": "面试前要好好准备。",
+       "en": "Prepare well before the interview."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-35",
+     "num": 35,
+     "hanzi": "能够",
+     "pinyin": "nénggòu",
+     "meaning": "to be able to",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我希望能够帮助你。",
+       "en": "I hope I can help you."
+      },
+      {
+       "zh": "他已经能够自己完成了。",
+       "en": "He can already finish it by himself."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-36",
+     "num": 36,
+     "hanzi": "填写",
+     "pinyin": "tiánxiě",
+     "meaning": "to fill in",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请填写这张表。",
+       "en": "Please fill in this form."
+      },
+      {
+       "zh": "报名时要填写名字。",
+       "en": "You need to fill in your name when registering."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l15-37",
+     "num": 37,
+     "hanzi": "细节",
+     "pinyin": "xìjié",
+     "meaning": "detail",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "请注意这个细节。",
+       "en": "Please pay attention to this detail."
+      },
+      {
+       "zh": "这个细节很重要。",
+       "en": "This detail is important."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 16,
+   "title": "计划赶不上变化",
+   "titleEn": "Plans Can't Keep Up with Changes",
+   "words": [
+    {
+     "id": "newhsk3-4-l16-1",
+     "num": 1,
+     "hanzi": "本来",
+     "pinyin": "běnlái",
+     "meaning": "originally; at first",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我本来想坐地铁。",
+       "en": "I originally wanted to take the subway."
+      },
+      {
+       "zh": "他本来今天不来。",
+       "en": "He was not going to come today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-2",
+     "num": 2,
+     "hanzi": "只好",
+     "pinyin": "zhǐhǎo",
+     "meaning": "have no choice but to",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "下雨了，我们只好回家。",
+       "en": "It is raining, so we have no choice but to go home."
+      },
+      {
+       "zh": "没有票，我只好等下一班。",
+       "en": "There were no tickets, so I had to wait for the next one."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-3",
+     "num": 3,
+     "hanzi": "可惜",
+     "pinyin": "kěxī",
+     "meaning": "what a pity; unfortunately",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "可惜我今天没时间。",
+       "en": "Unfortunately, I do not have time today."
+      },
+      {
+       "zh": "这么好的机会，错过太可惜了。",
+       "en": "It is a pity to miss such a good chance."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-4",
+     "num": 4,
+     "hanzi": "赶上",
+     "pinyin": "gǎnshàng",
+     "meaning": "to catch up with; make it",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们终于赶上了火车。",
+       "en": "We finally caught the train."
+      },
+      {
+       "zh": "快走，不然赶不上了。",
+       "en": "Walk quickly, or we will miss it."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-5",
+     "num": 5,
+     "hanzi": "等到",
+     "pinyin": "děngdào",
+     "meaning": "to wait until",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "等到雨停了再走。",
+       "en": "Wait until the rain stops before leaving."
+      },
+      {
+       "zh": "等到周末我们再去。",
+       "en": "We will go when the weekend comes."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-6",
+     "num": 6,
+     "hanzi": "推迟",
+     "pinyin": "tuīchí",
+     "meaning": "to postpone",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "会议推迟到明天。",
+       "en": "The meeting was postponed until tomorrow."
+      },
+      {
+       "zh": "因为下雨，比赛推迟了。",
+       "en": "The match was postponed because of rain."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-7",
+     "num": 7,
+     "hanzi": "却",
+     "pinyin": "què",
+     "meaning": "but; however",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我很累，却睡不着。",
+       "en": "I am tired, but I cannot fall asleep."
+      },
+      {
+       "zh": "他年纪不大，却很有经验。",
+       "en": "He is not old, but he has a lot of experience."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-8",
+     "num": 8,
+     "hanzi": "部",
+     "pinyin": "bù",
+     "meaning": "part; department; measure word",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这部电影很好看。",
+       "en": "This movie is very good."
+      },
+      {
+       "zh": "公司有三个部门。",
+       "en": "The company has three departments."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-9",
+     "num": 9,
+     "hanzi": "把握",
+     "pinyin": "bǎwò",
+     "meaning": "confidence; to grasp",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我有把握做好。",
+       "en": "I am confident I can do it well."
+      },
+      {
+       "zh": "先把握好时间。",
+       "en": "First, manage the time well."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-10",
+     "num": 10,
+     "hanzi": "标准",
+     "pinyin": "biāozhǔn",
+     "meaning": "standard",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个答案符合标准。",
+       "en": "This answer meets the standard."
+      },
+      {
+       "zh": "每个人的标准不一样。",
+       "en": "Everyone's standards are different."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-11",
+     "num": 11,
+     "hanzi": "并且",
+     "pinyin": "bìngqiě",
+     "meaning": "and; moreover",
+     "pos": "conj",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他会中文，并且会英文。",
+       "en": "He can speak Chinese and also English."
+      },
+      {
+       "zh": "这里安静并且干净。",
+       "en": "It is quiet and clean here."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-12",
+     "num": 12,
+     "hanzi": "不便",
+     "pinyin": "bùbiàn",
+     "meaning": "inconvenient",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里停车不便。",
+       "en": "Parking is inconvenient here."
+      },
+      {
+       "zh": "我现在说话不便。",
+       "en": "It is inconvenient for me to talk now."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-13",
+     "num": 13,
+     "hanzi": "不得不",
+     "pinyin": "bùdébù",
+     "meaning": "have to",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "下雨了，我们不得不回家。",
+       "en": "It started raining, so we have to go home."
+      },
+      {
+       "zh": "我不得不改变计划。",
+       "en": "I have to change the plan."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-14",
+     "num": 14,
+     "hanzi": "部分",
+     "pinyin": "bùfen",
+     "meaning": "part; portion",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我只看了部分内容。",
+       "en": "I only read part of the content."
+      },
+      {
+       "zh": "这部分很重要。",
+       "en": "This part is very important."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-15",
+     "num": 15,
+     "hanzi": "错误",
+     "pinyin": "cuòwù",
+     "meaning": "mistake; error",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个答案有错误。",
+       "en": "This answer has an error."
+      },
+      {
+       "zh": "发现错误以后要改。",
+       "en": "Correct the mistake after you find it."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-16",
+     "num": 16,
+     "hanzi": "逛",
+     "pinyin": "guàng",
+     "meaning": "to stroll; browse shops",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们去逛商店吧。",
+       "en": "Let's go shopping."
+      },
+      {
+       "zh": "我喜欢周末逛一逛。",
+       "en": "I like to stroll around on weekends."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-17",
+     "num": 17,
+     "hanzi": "关键",
+     "pinyin": "guānjiàn",
+     "meaning": "key; crucial",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "健康是关键。",
+       "en": "Health is the key."
+      },
+      {
+       "zh": "这个问题的关键是什么？",
+       "en": "What is the key to this problem?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-18",
+     "num": 18,
+     "hanzi": "观看",
+     "pinyin": "guānkàn",
+     "meaning": "to watch",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起观看比赛。",
+       "en": "We will watch the match together."
+      },
+      {
+       "zh": "很多人在线观看。",
+       "en": "Many people watch it online."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-19",
+     "num": 19,
+     "hanzi": "忽然",
+     "pinyin": "hūrán",
+     "meaning": "suddenly",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "天忽然下雨了。",
+       "en": "It suddenly started raining."
+      },
+      {
+       "zh": "他忽然笑了。",
+       "en": "He suddenly laughed."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-20",
+     "num": 20,
+     "hanzi": "接受",
+     "pinyin": "jiēshòu",
+     "meaning": "to accept",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我接受你的意见。",
+       "en": "I accept your suggestion."
+      },
+      {
+       "zh": "他接受了这个工作。",
+       "en": "He accepted the job."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-21",
+     "num": 21,
+     "hanzi": "灵活",
+     "pinyin": "línghuó",
+     "meaning": "flexible",
+     "pos": "a",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "计划要灵活一点儿。",
+       "en": "Plans should be a little flexible."
+      },
+      {
+       "zh": "她学习方法很灵活。",
+       "en": "Her study methods are flexible."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-22",
+     "num": 22,
+     "hanzi": "例子",
+     "pinyin": "lìzi",
+     "meaning": "example",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师举了一个例子。",
+       "en": "The teacher gave an example."
+      },
+      {
+       "zh": "这个例子很简单。",
+       "en": "This example is simple."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-23",
+     "num": 23,
+     "hanzi": "旅行",
+     "pinyin": "lǚxíng",
+     "meaning": "to travel; trip",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们暑假去旅行。",
+       "en": "We travel during summer vacation."
+      },
+      {
+       "zh": "我喜欢和家人旅行。",
+       "en": "I like traveling with my family."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-24",
+     "num": 24,
+     "hanzi": "轻松",
+     "pinyin": "qīngsōng",
+     "meaning": "relaxed; easy",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "考试结束后我很轻松。",
+       "en": "I felt relaxed after the exam."
+      },
+      {
+       "zh": "这份工作没有想象中轻松。",
+       "en": "This job is not as easy as I imagined."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-25",
+     "num": 25,
+     "hanzi": "取得",
+     "pinyin": "qǔdé",
+     "meaning": "to obtain; achieve",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他取得了好成绩。",
+       "en": "He achieved good results."
+      },
+      {
+       "zh": "我们取得了很大进步。",
+       "en": "We made great progress."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-26",
+     "num": 26,
+     "hanzi": "确实",
+     "pinyin": "quèshí",
+     "meaning": "indeed; really",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个办法确实很好。",
+       "en": "This method is indeed good."
+      },
+      {
+       "zh": "今天确实有点儿冷。",
+       "en": "It really is a little cold today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-27",
+     "num": 27,
+     "hanzi": "取消",
+     "pinyin": "qǔxiāo",
+     "meaning": "to cancel",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "会议取消了。",
+       "en": "The meeting was canceled."
+      },
+      {
+       "zh": "因为下雨，比赛取消了。",
+       "en": "The match was canceled because of rain."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-28",
+     "num": 28,
+     "hanzi": "时间表",
+     "pinyin": "shíjiānbiǎo",
+     "meaning": "schedule; timetable",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我做了一个时间表。",
+       "en": "I made a schedule."
+      },
+      {
+       "zh": "请看一下今天的时间表。",
+       "en": "Please look at today's schedule."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-29",
+     "num": 29,
+     "hanzi": "失望",
+     "pinyin": "shīwàng",
+     "meaning": "disappointed",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "听到结果，我有点儿失望。",
+       "en": "I was a little disappointed after hearing the result."
+      },
+      {
+       "zh": "别让大家失望。",
+       "en": "Do not disappoint everyone."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-30",
+     "num": 30,
+     "hanzi": "说不定",
+     "pinyin": "shuōbudìng",
+     "meaning": "maybe; perhaps",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "说不定他已经到了。",
+       "en": "Maybe he has already arrived."
+      },
+      {
+       "zh": "明天说不定会下雨。",
+       "en": "It might rain tomorrow."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-31",
+     "num": 31,
+     "hanzi": "调整",
+     "pinyin": "tiáozhěng",
+     "meaning": "to adjust",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我要调整一下计划。",
+       "en": "I need to adjust the plan."
+      },
+      {
+       "zh": "请调整座位。",
+       "en": "Please adjust the seat."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-32",
+     "num": 32,
+     "hanzi": "无法",
+     "pinyin": "wúfǎ",
+     "meaning": "unable to; cannot",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我今天无法参加。",
+       "en": "I cannot attend today."
+      },
+      {
+       "zh": "这个问题现在无法解决。",
+       "en": "This problem cannot be solved now."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-33",
+     "num": 33,
+     "hanzi": "相反",
+     "pinyin": "xiāngfǎn",
+     "meaning": "opposite; on the contrary",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "结果和我想的相反。",
+       "en": "The result is the opposite of what I thought."
+      },
+      {
+       "zh": "他不生气，相反，他很开心。",
+       "en": "He is not angry; on the contrary, he is happy."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-34",
+     "num": 34,
+     "hanzi": "详细",
+     "pinyin": "xiángxì",
+     "meaning": "detailed",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请说得详细一点儿。",
+       "en": "Please explain it in more detail."
+      },
+      {
+       "zh": "这个计划写得很详细。",
+       "en": "This plan is written in detail."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-35",
+     "num": 35,
+     "hanzi": "严格",
+     "pinyin": "yángé",
+     "meaning": "strict",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师对我们很严格。",
+       "en": "The teacher is strict with us."
+      },
+      {
+       "zh": "这个规定很严格。",
+       "en": "This rule is strict."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-36",
+     "num": 36,
+     "hanzi": "也许",
+     "pinyin": "yěxǔ",
+     "meaning": "perhaps; maybe",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他也许已经到了。",
+       "en": "Maybe he has already arrived."
+      },
+      {
+       "zh": "明天也许会更冷。",
+       "en": "It may be colder tomorrow."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-37",
+     "num": 37,
+     "hanzi": "一切",
+     "pinyin": "yíqiè",
+     "meaning": "everything",
+     "pos": "pron",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "一切都准备好了。",
+       "en": "Everything is ready."
+      },
+      {
+       "zh": "希望一切顺利。",
+       "en": "I hope everything goes smoothly."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-38",
+     "num": 38,
+     "hanzi": "有趣",
+     "pinyin": "yǒuqù",
+     "meaning": "interesting",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这本书很有趣。",
+       "en": "This book is interesting."
+      },
+      {
+       "zh": "今天的课很有趣。",
+       "en": "Today's class is interesting."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-39",
+     "num": 39,
+     "hanzi": "约",
+     "pinyin": "yuē",
+     "meaning": "to make an appointment; about",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们约在三点见。",
+       "en": "We arranged to meet at three."
+      },
+      {
+       "zh": "这里约有五十个人。",
+       "en": "There are about fifty people here."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-40",
+     "num": 40,
+     "hanzi": "早晨",
+     "pinyin": "zǎochén",
+     "meaning": "early morning",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天早晨跑步。",
+       "en": "I run every morning."
+      },
+      {
+       "zh": "早晨空气很好。",
+       "en": "The air is good in the morning."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l16-41",
+     "num": 41,
+     "hanzi": "增加",
+     "pinyin": "zēngjiā",
+     "meaning": "to increase",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "学习时间增加了。",
+       "en": "Study time increased."
+      },
+      {
+       "zh": "今年游客增加了很多。",
+       "en": "The number of tourists increased a lot this year."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 17,
+   "title": "运动让我更健康",
+   "titleEn": "Exercise Makes Me Healthier",
+   "words": [
+    {
+     "id": "newhsk3-4-l17-1",
+     "num": 1,
+     "hanzi": "路过",
+     "pinyin": "lùguò",
+     "meaning": "to pass by",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天路过这个公园。",
+       "en": "I pass this park every day."
+      },
+      {
+       "zh": "路过的时候进去看看吧。",
+       "en": "Let's go in and have a look when we pass by."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-2",
+     "num": 2,
+     "hanzi": "健身",
+     "pinyin": "jiànshēn",
+     "meaning": "to work out",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每周健身三次。",
+       "en": "I work out three times a week."
+      },
+      {
+       "zh": "健身对身体有好处。",
+       "en": "Working out is good for the body."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-3",
+     "num": 3,
+     "hanzi": "躺",
+     "pinyin": "tǎng",
+     "meaning": "to lie down",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想躺一会儿。",
+       "en": "I want to lie down for a while."
+      },
+      {
+       "zh": "他躺在床上看书。",
+       "en": "He is lying on the bed reading."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-4",
+     "num": 4,
+     "hanzi": "体重",
+     "pinyin": "tǐzhòng",
+     "meaning": "body weight",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的体重没变。",
+       "en": "My weight has not changed."
+      },
+      {
+       "zh": "运动可以控制体重。",
+       "en": "Exercise can help control weight."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-5",
+     "num": 5,
+     "hanzi": "会员",
+     "pinyin": "huìyuán",
+     "meaning": "member",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我是这家店的会员。",
+       "en": "I am a member of this shop."
+      },
+      {
+       "zh": "会员可以打折。",
+       "en": "Members can get a discount."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-6",
+     "num": 6,
+     "hanzi": "果汁",
+     "pinyin": "guǒzhī",
+     "meaning": "fruit juice",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想喝一杯果汁。",
+       "en": "I want a glass of juice."
+      },
+      {
+       "zh": "这个果汁不太甜。",
+       "en": "This juice is not too sweet."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-7",
+     "num": 7,
+     "hanzi": "之",
+     "pinyin": "zhī",
+     "meaning": "of; literary connector",
+     "pos": "part",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "十分之一是百分之十。",
+       "en": "One tenth is ten percent."
+      },
+      {
+       "zh": "这是三个问题之一。",
+       "en": "This is one of the three problems."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-8",
+     "num": 8,
+     "hanzi": "教练",
+     "pinyin": "jiàoliàn",
+     "meaning": "coach",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "教练让我们跑十分钟。",
+       "en": "The coach asked us to run for ten minutes."
+      },
+      {
+       "zh": "他是一名足球教练。",
+       "en": "He is a football coach."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-9",
+     "num": 9,
+     "hanzi": "连",
+     "pinyin": "lián",
+     "meaning": "even",
+     "pos": "prep",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他太忙了，连饭都没吃。",
+       "en": "He was so busy that he did not even eat."
+      },
+      {
+       "zh": "这个词连孩子都知道。",
+       "en": "Even children know this word."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-10",
+     "num": 10,
+     "hanzi": "动作",
+     "pinyin": "dòngzuò",
+     "meaning": "movement; action",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个动作很简单。",
+       "en": "This movement is simple."
+      },
+      {
+       "zh": "请跟着教练做动作。",
+       "en": "Please follow the coach's movements."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-11",
+     "num": 11,
+     "hanzi": "科学",
+     "pinyin": "kēxué",
+     "meaning": "science",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他喜欢科学。",
+       "en": "He likes science."
+      },
+      {
+       "zh": "这个方法很科学。",
+       "en": "This method is scientific."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-12",
+     "num": 12,
+     "hanzi": "受伤",
+     "pinyin": "shòushāng",
+     "meaning": "to be injured",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他运动时受伤了。",
+       "en": "He was injured while exercising."
+      },
+      {
+       "zh": "小心，别受伤。",
+       "en": "Be careful not to get hurt."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-13",
+     "num": 13,
+     "hanzi": "操场",
+     "pinyin": "cāochǎng",
+     "meaning": "playground; sports field",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "学生在操场跑步。",
+       "en": "The students are running on the sports field."
+      },
+      {
+       "zh": "我们在操场见。",
+       "en": "Let's meet on the playground."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-14",
+     "num": 14,
+     "hanzi": "其中",
+     "pinyin": "qízhōng",
+     "meaning": "among them; in it",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里有三本书，其中一本是我的。",
+       "en": "There are three books here, and one of them is mine."
+      },
+      {
+       "zh": "我喜欢很多运动，其中最喜欢跑步。",
+       "en": "I like many sports; among them I like running best."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-15",
+     "num": 15,
+     "hanzi": "火",
+     "pinyin": "huǒ",
+     "meaning": "fire; popular",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "火太大了，小心！",
+       "en": "The fire is too big. Be careful!"
+      },
+      {
+       "zh": "这个节目最近很火。",
+       "en": "This show is very popular recently."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-16",
+     "num": 16,
+     "hanzi": "好处",
+     "pinyin": "hǎochu",
+     "meaning": "benefit; advantage",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "运动有很多好处。",
+       "en": "Exercise has many benefits."
+      },
+      {
+       "zh": "早睡对身体有好处。",
+       "en": "Going to bed early is good for the body."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-17",
+     "num": 17,
+     "hanzi": "设备",
+     "pinyin": "shèbèi",
+     "meaning": "equipment",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "健身房的设备很新。",
+       "en": "The gym equipment is new."
+      },
+      {
+       "zh": "这些设备很贵。",
+       "en": "This equipment is expensive."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-18",
+     "num": 18,
+     "hanzi": "全身",
+     "pinyin": "quánshēn",
+     "meaning": "whole body",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "运动后我全身都热了。",
+       "en": "My whole body felt hot after exercise."
+      },
+      {
+       "zh": "他淋雨后全身都湿了。",
+       "en": "His whole body was wet after the rain."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-19",
+     "num": 19,
+     "hanzi": "准确",
+     "pinyin": "zhǔnquè",
+     "meaning": "accurate",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个答案很准确。",
+       "en": "This answer is accurate."
+      },
+      {
+       "zh": "请准确地说出时间。",
+       "en": "Please state the time accurately."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-20",
+     "num": 20,
+     "hanzi": "仅仅",
+     "pinyin": "jǐnjǐn",
+     "meaning": "only; merely",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这仅仅是开始。",
+       "en": "This is only the beginning."
+      },
+      {
+       "zh": "我仅仅问了一个问题。",
+       "en": "I only asked one question."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-21",
+     "num": 21,
+     "hanzi": "表扬",
+     "pinyin": "biǎoyáng",
+     "meaning": "to praise",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师表扬了他。",
+       "en": "The teacher praised him."
+      },
+      {
+       "zh": "妈妈常常表扬孩子。",
+       "en": "The mother often praises her child."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-22",
+     "num": 22,
+     "hanzi": "进步",
+     "pinyin": "jìnbù",
+     "meaning": "to improve; progress",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "你的中文进步很大。",
+       "en": "Your Chinese has improved a lot."
+      },
+      {
+       "zh": "每天练习就会进步。",
+       "en": "You will improve if you practice every day."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-23",
+     "num": 23,
+     "hanzi": "鼓励",
+     "pinyin": "gǔlì",
+     "meaning": "to encourage",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师常常鼓励我。",
+       "en": "The teacher often encourages me."
+      },
+      {
+       "zh": "谢谢你一直鼓励我。",
+       "en": "Thank you for always encouraging me."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-24",
+     "num": 24,
+     "hanzi": "帅",
+     "pinyin": "shuài",
+     "meaning": "handsome",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他又高又帅。",
+       "en": "He is tall and handsome."
+      },
+      {
+       "zh": "这张照片里的他很帅。",
+       "en": "He looks handsome in this photo."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-25",
+     "num": 25,
+     "hanzi": "乒乓球",
+     "pinyin": "pīngpāngqiú",
+     "meaning": "table tennis",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我周末打乒乓球。",
+       "en": "I play table tennis on weekends."
+      },
+      {
+       "zh": "他很喜欢乒乓球。",
+       "en": "He likes table tennis very much."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-26",
+     "num": 26,
+     "hanzi": "队",
+     "pinyin": "duì",
+     "meaning": "team",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们队赢了。",
+       "en": "Our team won."
+      },
+      {
+       "zh": "他加入了足球队。",
+       "en": "He joined the football team."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-27",
+     "num": 27,
+     "hanzi": "项",
+     "pinyin": "xiàng",
+     "meaning": "item; measure word for projects",
+     "pos": "mw",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个活动有三项比赛。",
+       "en": "This event has three competitions."
+      },
+      {
+       "zh": "第一项已经完成了。",
+       "en": "The first item has been completed."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-28",
+     "num": 28,
+     "hanzi": "赢",
+     "pinyin": "yíng",
+     "meaning": "to win",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们队赢了。",
+       "en": "Our team won."
+      },
+      {
+       "zh": "我希望这次能赢。",
+       "en": "I hope we can win this time."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-29",
+     "num": 29,
+     "hanzi": "赢得",
+     "pinyin": "yíngdé",
+     "meaning": "to win; gain",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他赢得了比赛。",
+       "en": "He won the match."
+      },
+      {
+       "zh": "她赢得了大家的支持。",
+       "en": "She won everyone's support."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-30",
+     "num": 30,
+     "hanzi": "叫作",
+     "pinyin": "jiàozuò",
+     "meaning": "to be called",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个动作叫作“深呼吸”。",
+       "en": "This movement is called “deep breathing.”"
+      },
+      {
+       "zh": "这种水果叫作葡萄。",
+       "en": "This fruit is called grape."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-31",
+     "num": 31,
+     "hanzi": "梦",
+     "pinyin": "mèng",
+     "meaning": "dream",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我昨晚做了一个梦。",
+       "en": "I had a dream last night."
+      },
+      {
+       "zh": "这是一个好梦。",
+       "en": "This is a good dream."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-32",
+     "num": 32,
+     "hanzi": "不断",
+     "pinyin": "búduàn",
+     "meaning": "continuously; constantly",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他不断练习中文。",
+       "en": "He keeps practicing Chinese."
+      },
+      {
+       "zh": "天气不断变化。",
+       "en": "The weather keeps changing."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-33",
+     "num": 33,
+     "hanzi": "队员",
+     "pinyin": "duìyuán",
+     "meaning": "team member",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "每个队员都很努力。",
+       "en": "Every team member works hard."
+      },
+      {
+       "zh": "教练在跟队员说话。",
+       "en": "The coach is talking to the team members."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-34",
+     "num": 34,
+     "hanzi": "训练",
+     "pinyin": "xùnliàn",
+     "meaning": "to train; training",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "球队每天训练。",
+       "en": "The team trains every day."
+      },
+      {
+       "zh": "训练以后要休息。",
+       "en": "You should rest after training."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-35",
+     "num": 35,
+     "hanzi": "球队",
+     "pinyin": "qiúduì",
+     "meaning": "sports team",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个球队很有名。",
+       "en": "This team is famous."
+      },
+      {
+       "zh": "我最喜欢的球队赢了。",
+       "en": "My favorite team won."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-36",
+     "num": 36,
+     "hanzi": "球迷",
+     "pinyin": "qiúmí",
+     "meaning": "sports fan",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是足球迷。",
+       "en": "He is a football fan."
+      },
+      {
+       "zh": "很多球迷来看比赛。",
+       "en": "Many fans came to watch the game."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-37",
+     "num": 37,
+     "hanzi": "梦想",
+     "pinyin": "mèngxiǎng",
+     "meaning": "dream; aspiration",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的梦想是当医生。",
+       "en": "My dream is to be a doctor."
+      },
+      {
+       "zh": "他一直没有放弃梦想。",
+       "en": "He has never given up his dream."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-38",
+     "num": 38,
+     "hanzi": "大赛",
+     "pinyin": "dàsài",
+     "meaning": "major competition",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他参加了跑步大赛。",
+       "en": "He joined a running competition."
+      },
+      {
+       "zh": "大赛下个月开始。",
+       "en": "The competition starts next month."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-39",
+     "num": 39,
+     "hanzi": "饼干",
+     "pinyin": "bǐnggān",
+     "meaning": "biscuit; cookie",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我买了一包饼干。",
+       "en": "I bought a pack of cookies."
+      },
+      {
+       "zh": "孩子喜欢吃饼干。",
+       "en": "The child likes eating cookies."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-40",
+     "num": 40,
+     "hanzi": "健身房",
+     "pinyin": "jiànshēnfáng",
+     "meaning": "gym",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我下班后去健身房。",
+       "en": "I go to the gym after work."
+      },
+      {
+       "zh": "这家健身房很大。",
+       "en": "This gym is large."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l17-41",
+     "num": 41,
+     "hanzi": "酸奶",
+     "pinyin": "suānnǎi",
+     "meaning": "yogurt",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我早餐喝酸奶。",
+       "en": "I drink yogurt for breakfast."
+      },
+      {
+       "zh": "这杯酸奶很好喝。",
+       "en": "This yogurt tastes good."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 18,
+   "title": "科技改变生活",
+   "titleEn": "Technology Changes Our Lives",
+   "words": [
+    {
+     "id": "newhsk3-4-l18-1",
+     "num": 1,
+     "hanzi": "3D打印机",
+     "pinyin": "3D dǎyìnjī",
+     "meaning": "3D printer",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这台3D打印机很方便。",
+       "en": "This 3D printer is very convenient."
+      },
+      {
+       "zh": "学校有一台3D打印机。",
+       "en": "The school has a 3D printer."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-2",
+     "num": 2,
+     "hanzi": "AI眼镜",
+     "pinyin": "AI yǎnjìng",
+     "meaning": "AI glasses",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这副AI眼镜很轻。",
+       "en": "These AI glasses are very light."
+      },
+      {
+       "zh": "他想试试AI眼镜。",
+       "en": "He wants to try AI glasses."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-3",
+     "num": 3,
+     "hanzi": "按",
+     "pinyin": "àn",
+     "meaning": "to press; according to",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请按这个按钮。",
+       "en": "Please press this button."
+      },
+      {
+       "zh": "按老师说的做。",
+       "en": "Do it as the teacher said."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-4",
+     "num": 4,
+     "hanzi": "办事",
+     "pinyin": "bànshì",
+     "meaning": "to handle affairs; do business",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我下午出去办事。",
+       "en": "I am going out to handle some things this afternoon."
+      },
+      {
+       "zh": "他办事很认真。",
+       "en": "He handles things very carefully."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-5",
+     "num": 5,
+     "hanzi": "不必",
+     "pinyin": "bùbì",
+     "meaning": "need not",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你不必担心。",
+       "en": "You do not need to worry."
+      },
+      {
+       "zh": "明天不必早来。",
+       "en": "You do not need to come early tomorrow."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-6",
+     "num": 6,
+     "hanzi": "猜",
+     "pinyin": "cāi",
+     "meaning": "to guess",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你猜他是谁？",
+       "en": "Guess who he is."
+      },
+      {
+       "zh": "我猜今天会下雨。",
+       "en": "I guess it will rain today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-7",
+     "num": 7,
+     "hanzi": "差点儿",
+     "pinyin": "chàdiǎnr",
+     "meaning": "almost; nearly",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我差点儿迟到。",
+       "en": "I was almost late."
+      },
+      {
+       "zh": "他差点儿摔倒。",
+       "en": "He almost fell down."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-8",
+     "num": 8,
+     "hanzi": "出口",
+     "pinyin": "chūkǒu",
+     "meaning": "exit; export",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "出口在前面。",
+       "en": "The exit is ahead."
+      },
+      {
+       "zh": "请从这个出口出去。",
+       "en": "Please go out through this exit."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-9",
+     "num": 9,
+     "hanzi": "厨师",
+     "pinyin": "chúshī",
+     "meaning": "chef; cook",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是一名厨师。",
+       "en": "He is a chef."
+      },
+      {
+       "zh": "这个厨师做菜很好吃。",
+       "en": "This chef cooks very well."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-10",
+     "num": 10,
+     "hanzi": "大大",
+     "pinyin": "dàdà",
+     "meaning": "greatly",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个办法大大提高了速度。",
+       "en": "This method greatly improved the speed."
+      },
+      {
+       "zh": "新技术大大方便了生活。",
+       "en": "New technology greatly makes life easier."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-11",
+     "num": 11,
+     "hanzi": "到底",
+     "pinyin": "dàodǐ",
+     "meaning": "after all; exactly",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你到底想去哪儿？",
+       "en": "Where exactly do you want to go?"
+      },
+      {
+       "zh": "这到底是怎么回事？",
+       "en": "What exactly is going on?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-12",
+     "num": 12,
+     "hanzi": "点赞",
+     "pinyin": "diǎnzàn",
+     "meaning": "to like online",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我给这张照片点赞了。",
+       "en": "I liked this photo online."
+      },
+      {
+       "zh": "很多网友给他点赞。",
+       "en": "Many internet users liked his post."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-13",
+     "num": 13,
+     "hanzi": "对",
+     "pinyin": "duì",
+     "meaning": "toward; to",
+     "pos": "prep",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他对大家很友好。",
+       "en": "He is very friendly to everyone."
+      },
+      {
+       "zh": "这对我很重要。",
+       "en": "This is very important to me."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-14",
+     "num": 14,
+     "hanzi": "多样",
+     "pinyin": "duōyàng",
+     "meaning": "diverse; varied",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里的食物很多样。",
+       "en": "The food here is varied."
+      },
+      {
+       "zh": "学习方法可以很多样。",
+       "en": "Learning methods can be diverse."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-15",
+     "num": 15,
+     "hanzi": "二维码",
+     "pinyin": "èrwéimǎ",
+     "meaning": "QR code",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "请扫这个二维码。",
+       "en": "Please scan this QR code."
+      },
+      {
+       "zh": "二维码在门口。",
+       "en": "The QR code is at the entrance."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-16",
+     "num": 16,
+     "hanzi": "费用",
+     "pinyin": "fèiyòng",
+     "meaning": "cost; fee",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个费用不高。",
+       "en": "This fee is not high."
+      },
+      {
+       "zh": "旅行费用是多少？",
+       "en": "How much does the trip cost?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-17",
+     "num": 17,
+     "hanzi": "各地",
+     "pinyin": "gèdì",
+     "meaning": "various places",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "各地都有游客。",
+       "en": "There are tourists everywhere."
+      },
+      {
+       "zh": "他去过中国各地。",
+       "en": "He has been to many places in China."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-18",
+     "num": 18,
+     "hanzi": "各个",
+     "pinyin": "gègè",
+     "meaning": "each; various",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "各个小组都准备好了。",
+       "en": "Each group is ready."
+      },
+      {
+       "zh": "各个地方情况不同。",
+       "en": "The situation is different in each place."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-19",
+     "num": 19,
+     "hanzi": "共享单车",
+     "pinyin": "gòngxiǎng dānchē",
+     "meaning": "shared bicycle",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我常骑共享单车。",
+       "en": "I often ride shared bicycles."
+      },
+      {
+       "zh": "地铁站外有共享单车。",
+       "en": "There are shared bicycles outside the subway station."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-20",
+     "num": 20,
+     "hanzi": "互联网",
+     "pinyin": "hùliánwǎng",
+     "meaning": "internet",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "互联网改变了生活。",
+       "en": "The internet has changed life."
+      },
+      {
+       "zh": "我们可以在互联网上学习。",
+       "en": "We can study on the internet."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-21",
+     "num": 21,
+     "hanzi": "仅",
+     "pinyin": "jǐn",
+     "meaning": "only",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这本书仅十元。",
+       "en": "This book costs only ten yuan."
+      },
+      {
+       "zh": "活动仅一天。",
+       "en": "The event lasts only one day."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-22",
+     "num": 22,
+     "hanzi": "拍",
+     "pinyin": "pāi",
+     "meaning": "to take a photo; pat",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请帮我拍一张照片。",
+       "en": "Please take a photo for me."
+      },
+      {
+       "zh": "我喜欢拍风景。",
+       "en": "I like taking photos of scenery."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-23",
+     "num": 23,
+     "hanzi": "亲戚",
+     "pinyin": "qīnqi",
+     "meaning": "relative",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "春节我们去看亲戚。",
+       "en": "We visit relatives during Spring Festival."
+      },
+      {
+       "zh": "我有很多亲戚住在外地。",
+       "en": "I have many relatives living out of town."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-24",
+     "num": 24,
+     "hanzi": "取",
+     "pinyin": "qǔ",
+     "meaning": "to take; get",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我去取快递。",
+       "en": "I am going to pick up a package."
+      },
+      {
+       "zh": "请到前台取票。",
+       "en": "Please get your ticket at the front desk."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-25",
+     "num": 25,
+     "hanzi": "然而",
+     "pinyin": "rán'ér",
+     "meaning": "however",
+     "pos": "conj",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我准备得很好，然而还是紧张。",
+       "en": "I prepared well; however, I was still nervous."
+      },
+      {
+       "zh": "路不远，然而很难走。",
+       "en": "The road is not far; however, it is difficult to walk."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-26",
+     "num": 26,
+     "hanzi": "上门",
+     "pinyin": "shàngmén",
+     "meaning": "to visit a home; door-to-door",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "医生可以上门服务。",
+       "en": "Doctors can provide home service."
+      },
+      {
+       "zh": "他们明天会上门。",
+       "en": "They will come to the house tomorrow."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-27",
+     "num": 27,
+     "hanzi": "说明",
+     "pinyin": "shuōmíng",
+     "meaning": "to explain; to describe",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请说明原因。",
+       "en": "Please explain the reason."
+      },
+      {
+       "zh": "老师说明了怎么做。",
+       "en": "The teacher explained how to do it."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-28",
+     "num": 28,
+     "hanzi": "讨论",
+     "pinyin": "tǎolùn",
+     "meaning": "to discuss",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们讨论一下这个问题。",
+       "en": "Let's discuss this problem."
+      },
+      {
+       "zh": "大家正在讨论计划。",
+       "en": "Everyone is discussing the plan."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-29",
+     "num": 29,
+     "hanzi": "提出",
+     "pinyin": "tíchū",
+     "meaning": "to put forward; raise",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他提出了一个问题。",
+       "en": "He raised a question."
+      },
+      {
+       "zh": "我想提出一个建议。",
+       "en": "I want to make a suggestion."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-30",
+     "num": 30,
+     "hanzi": "推",
+     "pinyin": "tuī",
+     "meaning": "to push",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请推门。",
+       "en": "Please push the door."
+      },
+      {
+       "zh": "他推着车往前走。",
+       "en": "He pushed the cart forward."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-31",
+     "num": 31,
+     "hanzi": "推出",
+     "pinyin": "tuīchū",
+     "meaning": "to launch; introduce",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "公司推出了新产品。",
+       "en": "The company launched a new product."
+      },
+      {
+       "zh": "这家店推出了新服务。",
+       "en": "This shop introduced a new service."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-32",
+     "num": 32,
+     "hanzi": "现有",
+     "pinyin": "xiànyǒu",
+     "meaning": "existing; current",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "先用现有的设备。",
+       "en": "Use the existing equipment first."
+      },
+      {
+       "zh": "现有条件已经很好。",
+       "en": "The current conditions are already good."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-33",
+     "num": 33,
+     "hanzi": "小吃",
+     "pinyin": "xiǎochī",
+     "meaning": "snack; local food",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里有很多地方小吃。",
+       "en": "There are many local snacks here."
+      },
+      {
+       "zh": "我想尝尝这种小吃。",
+       "en": "I want to try this snack."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-34",
+     "num": 34,
+     "hanzi": "小组",
+     "pinyin": "xiǎozǔ",
+     "meaning": "small group",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们分成三个小组。",
+       "en": "We divided into three groups."
+      },
+      {
+       "zh": "每个小组有四个人。",
+       "en": "Each group has four people."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-35",
+     "num": 35,
+     "hanzi": "演",
+     "pinyin": "yǎn",
+     "meaning": "to act; perform",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他在电影里演老师。",
+       "en": "He plays a teacher in the movie."
+      },
+      {
+       "zh": "你想演哪个角色？",
+       "en": "Which role do you want to play?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-36",
+     "num": 36,
+     "hanzi": "原因",
+     "pinyin": "yuányīn",
+     "meaning": "reason",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你迟到的原因是什么？",
+       "en": "What is the reason you were late?"
+      },
+      {
+       "zh": "我不知道真正的原因。",
+       "en": "I do not know the real reason."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-37",
+     "num": 37,
+     "hanzi": "预约",
+     "pinyin": "yùyuē",
+     "meaning": "to make an appointment",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我想预约明天的时间。",
+       "en": "I want to make an appointment for tomorrow."
+      },
+      {
+       "zh": "看医生要先预约。",
+       "en": "You need to make an appointment before seeing a doctor."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-38",
+     "num": 38,
+     "hanzi": "注册",
+     "pinyin": "zhùcè",
+     "meaning": "to register",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "请先注册一个账号。",
+       "en": "Please register an account first."
+      },
+      {
+       "zh": "我已经在网上注册了。",
+       "en": "I have already registered online."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l18-39",
+     "num": 39,
+     "hanzi": "著名",
+     "pinyin": "zhùmíng",
+     "meaning": "famous",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一位著名作家。",
+       "en": "This is a famous writer."
+      },
+      {
+       "zh": "这里有很多著名景点。",
+       "en": "There are many famous sights here."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 19,
+   "title": "他们都很棒",
+   "titleEn": "They Are All Great",
+   "words": [
+    {
+     "id": "newhsk3-4-l19-1",
+     "num": 1,
+     "hanzi": "版",
+     "pinyin": "bǎn",
+     "meaning": "edition; version",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这是新版的书。",
+       "en": "This is the new edition of the book."
+      },
+      {
+       "zh": "我买了电子版。",
+       "en": "I bought the electronic version."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-2",
+     "num": 2,
+     "hanzi": "报考",
+     "pinyin": "bàokǎo",
+     "meaning": "to apply for an exam or school",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他想报考这所大学。",
+       "en": "He wants to apply to this university."
+      },
+      {
+       "zh": "我准备明年报考。",
+       "en": "I plan to apply next year."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-3",
+     "num": 3,
+     "hanzi": "点头",
+     "pinyin": "diǎntóu",
+     "meaning": "to nod",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他点头同意了。",
+       "en": "He nodded in agreement."
+      },
+      {
+       "zh": "老师说话时，他一直点头。",
+       "en": "He kept nodding while the teacher spoke."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-4",
+     "num": 4,
+     "hanzi": "度假",
+     "pinyin": "dùjià",
+     "meaning": "to take a vacation",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们准备去海边度假。",
+       "en": "We plan to take a vacation by the sea."
+      },
+      {
+       "zh": "他正在国外度假。",
+       "en": "He is on vacation abroad."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-5",
+     "num": 5,
+     "hanzi": "读者",
+     "pinyin": "dúzhě",
+     "meaning": "reader",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这本书有很多读者。",
+       "en": "This book has many readers."
+      },
+      {
+       "zh": "作者要了解读者。",
+       "en": "Writers should understand their readers."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-6",
+     "num": 6,
+     "hanzi": "歌声",
+     "pinyin": "gēshēng",
+     "meaning": "singing voice",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她的歌声很好听。",
+       "en": "Her singing voice is beautiful."
+      },
+      {
+       "zh": "我听到了歌声。",
+       "en": "I heard singing."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-7",
+     "num": 7,
+     "hanzi": "歌手",
+     "pinyin": "gēshǒu",
+     "meaning": "singer",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是一位年轻歌手。",
+       "en": "He is a young singer."
+      },
+      {
+       "zh": "这个歌手很有名。",
+       "en": "This singer is famous."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-8",
+     "num": 8,
+     "hanzi": "功夫",
+     "pinyin": "gōngfu",
+     "meaning": "kung fu; skill",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他会中国功夫。",
+       "en": "He knows Chinese kung fu."
+      },
+      {
+       "zh": "学好中文要下功夫。",
+       "en": "It takes effort to learn Chinese well."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-9",
+     "num": 9,
+     "hanzi": "功课",
+     "pinyin": "gōngkè",
+     "meaning": "schoolwork; lessons",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我做完功课了。",
+       "en": "I finished my schoolwork."
+      },
+      {
+       "zh": "今天的功课不多。",
+       "en": "There is not much schoolwork today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-10",
+     "num": 10,
+     "hanzi": "观众",
+     "pinyin": "guānzhòng",
+     "meaning": "audience",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "观众都在鼓掌。",
+       "en": "The audience is applauding."
+      },
+      {
+       "zh": "今天来了很多观众。",
+       "en": "Many audience members came today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-11",
+     "num": 11,
+     "hanzi": "鼓掌",
+     "pinyin": "gǔzhǎng",
+     "meaning": "to applaud",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "表演结束后大家鼓掌。",
+       "en": "Everyone applauded after the performance."
+      },
+      {
+       "zh": "请为他们鼓掌。",
+       "en": "Please applaud for them."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-12",
+     "num": 12,
+     "hanzi": "话剧",
+     "pinyin": "huàjù",
+     "meaning": "stage play",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们今晚去看话剧。",
+       "en": "We are going to see a stage play tonight."
+      },
+      {
+       "zh": "这部话剧很好看。",
+       "en": "This play is very good."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-13",
+     "num": 13,
+     "hanzi": "获奖",
+     "pinyin": "huòjiǎng",
+     "meaning": "to win an award",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的作品获奖了。",
+       "en": "His work won an award."
+      },
+      {
+       "zh": "祝贺你这次获奖。",
+       "en": "Congratulations on winning the award."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-14",
+     "num": 14,
+     "hanzi": "奖",
+     "pinyin": "jiǎng",
+     "meaning": "award; prize",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他得了一个奖。",
+       "en": "He won a prize."
+      },
+      {
+       "zh": "这个奖很重要。",
+       "en": "This award is important."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-15",
+     "num": 15,
+     "hanzi": "留下",
+     "pinyin": "liúxià",
+     "meaning": "to leave behind; stay",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请留下你的名字。",
+       "en": "Please leave your name."
+      },
+      {
+       "zh": "这张照片留下了美好回忆。",
+       "en": "This photo preserved a beautiful memory."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-16",
+     "num": 16,
+     "hanzi": "内心",
+     "pinyin": "nèixīn",
+     "meaning": "inner feelings; heart",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他内心很平静。",
+       "en": "He feels calm inside."
+      },
+      {
+       "zh": "我知道你内心的想法。",
+       "en": "I know what you feel inside."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-17",
+     "num": 17,
+     "hanzi": "排",
+     "pinyin": "pái",
+     "meaning": "to arrange; row",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请排好队。",
+       "en": "Please line up properly."
+      },
+      {
+       "zh": "他们排成两列。",
+       "en": "They lined up in two rows."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-18",
+     "num": 18,
+     "hanzi": "期待",
+     "pinyin": "qīdài",
+     "meaning": "to look forward to",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我很期待这次旅行。",
+       "en": "I am looking forward to this trip."
+      },
+      {
+       "zh": "大家都期待比赛开始。",
+       "en": "Everyone is looking forward to the match starting."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-19",
+     "num": 19,
+     "hanzi": "青年",
+     "pinyin": "qīngnián",
+     "meaning": "young person; youth",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是一名青年作家。",
+       "en": "He is a young writer."
+      },
+      {
+       "zh": "很多青年喜欢旅行。",
+       "en": "Many young people like traveling."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-20",
+     "num": 20,
+     "hanzi": "庆祝",
+     "pinyin": "qìngzhù",
+     "meaning": "to celebrate",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起庆祝生日。",
+       "en": "We celebrate the birthday together."
+      },
+      {
+       "zh": "大家在庆祝比赛胜利。",
+       "en": "Everyone is celebrating the win."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-21",
+     "num": 21,
+     "hanzi": "全部",
+     "pinyin": "quánbù",
+     "meaning": "all; entire",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这些我全部要。",
+       "en": "I want all of these."
+      },
+      {
+       "zh": "任务已经全部完成。",
+       "en": "The task has been completely finished."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-22",
+     "num": 22,
+     "hanzi": "入",
+     "pinyin": "rù",
+     "meaning": "to enter",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请从这里进入。",
+       "en": "Please enter from here."
+      },
+      {
+       "zh": "比赛已经进入第二天。",
+       "en": "The competition has entered its second day."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-23",
+     "num": 23,
+     "hanzi": "入口",
+     "pinyin": "rùkǒu",
+     "meaning": "entrance",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "入口在左边。",
+       "en": "The entrance is on the left."
+      },
+      {
+       "zh": "我们在入口见面。",
+       "en": "Let's meet at the entrance."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-24",
+     "num": 24,
+     "hanzi": "少年",
+     "pinyin": "shàonián",
+     "meaning": "teenager; youth",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他少年时就喜欢写作。",
+       "en": "He liked writing when he was a teenager."
+      },
+      {
+       "zh": "很多少年喜欢运动。",
+       "en": "Many teenagers like sports."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-25",
+     "num": 25,
+     "hanzi": "世纪",
+     "pinyin": "shìjì",
+     "meaning": "century",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是二十一世纪。",
+       "en": "This is the twenty-first century."
+      },
+      {
+       "zh": "这座楼建于上个世纪。",
+       "en": "This building was built last century."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-26",
+     "num": 26,
+     "hanzi": "图片",
+     "pinyin": "túpiàn",
+     "meaning": "picture; image",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请看这张图片。",
+       "en": "Please look at this picture."
+      },
+      {
+       "zh": "我把图片发给你。",
+       "en": "I sent you the image."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-27",
+     "num": 27,
+     "hanzi": "文学",
+     "pinyin": "wénxué",
+     "meaning": "literature",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "他喜欢中国文学。",
+       "en": "He likes Chinese literature."
+      },
+      {
+       "zh": "我大学学的是文学。",
+       "en": "I studied literature at university."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-28",
+     "num": 28,
+     "hanzi": "文章",
+     "pinyin": "wénzhāng",
+     "meaning": "article",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我读了一篇文章。",
+       "en": "I read an article."
+      },
+      {
+       "zh": "这篇文章不难。",
+       "en": "This article is not difficult."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-29",
+     "num": 29,
+     "hanzi": "文字",
+     "pinyin": "wénzì",
+     "meaning": "written language; text",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "图片下面有一些文字。",
+       "en": "There is some text under the picture."
+      },
+      {
+       "zh": "请把这段文字读一遍。",
+       "en": "Please read this passage once."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-30",
+     "num": 30,
+     "hanzi": "演唱",
+     "pinyin": "yǎnchàng",
+     "meaning": "to sing; perform singing",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她在台上演唱。",
+       "en": "She is singing on stage."
+      },
+      {
+       "zh": "他演唱了一首中文歌。",
+       "en": "He sang a Chinese song."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-31",
+     "num": 31,
+     "hanzi": "演员",
+     "pinyin": "yǎnyuán",
+     "meaning": "actor; actress",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她是一名演员。",
+       "en": "She is an actress."
+      },
+      {
+       "zh": "这个演员很有名。",
+       "en": "This actor is famous."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-32",
+     "num": 32,
+     "hanzi": "邀请",
+     "pinyin": "yāoqǐng",
+     "meaning": "to invite",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想邀请你来我家。",
+       "en": "I want to invite you to my home."
+      },
+      {
+       "zh": "谢谢你的邀请。",
+       "en": "Thank you for your invitation."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-33",
+     "num": 33,
+     "hanzi": "艺术",
+     "pinyin": "yìshù",
+     "meaning": "art",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她很喜欢艺术。",
+       "en": "She likes art very much."
+      },
+      {
+       "zh": "这是一件艺术作品。",
+       "en": "This is a work of art."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-34",
+     "num": 34,
+     "hanzi": "整理",
+     "pinyin": "zhěnglǐ",
+     "meaning": "to organize; tidy",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在整理房间。",
+       "en": "I am tidying the room."
+      },
+      {
+       "zh": "请把资料整理一下。",
+       "en": "Please organize the materials."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-35",
+     "num": 35,
+     "hanzi": "指",
+     "pinyin": "zhǐ",
+     "meaning": "to point; refer to",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他指着门口说。",
+       "en": "He pointed at the door and spoke."
+      },
+      {
+       "zh": "这里的“他”指谁？",
+       "en": "Who does “he” refer to here?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-36",
+     "num": 36,
+     "hanzi": "转发",
+     "pinyin": "zhuǎnfā",
+     "meaning": "to forward; repost",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请把消息转发给他。",
+       "en": "Please forward the message to him."
+      },
+      {
+       "zh": "我转发了这篇文章。",
+       "en": "I reposted this article."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-37",
+     "num": 37,
+     "hanzi": "自信",
+     "pinyin": "zìxìn",
+     "meaning": "self-confident; confidence",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "她说中文很自信。",
+       "en": "She speaks Chinese confidently."
+      },
+      {
+       "zh": "多练习会更自信。",
+       "en": "More practice will make you more confident."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-38",
+     "num": 38,
+     "hanzi": "作家",
+     "pinyin": "zuòjiā",
+     "meaning": "writer",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是一位作家。",
+       "en": "He is a writer."
+      },
+      {
+       "zh": "这个作家写了很多小说。",
+       "en": "This writer has written many novels."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-39",
+     "num": 39,
+     "hanzi": "作品",
+     "pinyin": "zuòpǐn",
+     "meaning": "work; creation",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是他的最新作品。",
+       "en": "This is his latest work."
+      },
+      {
+       "zh": "我很喜欢这件作品。",
+       "en": "I like this work very much."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l19-40",
+     "num": 40,
+     "hanzi": "作者",
+     "pinyin": "zuòzhě",
+     "meaning": "author",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这篇文章的作者是谁？",
+       "en": "Who is the author of this article?"
+      },
+      {
+       "zh": "作者介绍了自己的经历。",
+       "en": "The author introduced his experience."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 20,
+   "title": "看不完也读不完",
+   "titleEn": "Too Much to Watch and Read",
+   "words": [
+    {
+     "id": "newhsk3-4-l20-1",
+     "num": 1,
+     "hanzi": "安检",
+     "pinyin": "ānjiǎn",
+     "meaning": "security check",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "进机场前要安检。",
+       "en": "You need to go through security before entering the airport."
+      },
+      {
+       "zh": "安检以后我们去登机。",
+       "en": "After the security check, we will board the plane."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-2",
+     "num": 2,
+     "hanzi": "百分之",
+     "pinyin": "bǎi fēn zhī",
+     "meaning": "percent",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "百分之八十的人同意。",
+       "en": "Eighty percent of the people agree."
+      },
+      {
+       "zh": "今天有百分之十的学生请假。",
+       "en": "Ten percent of the students are absent today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-3",
+     "num": 3,
+     "hanzi": "乘",
+     "pinyin": "chéng",
+     "meaning": "to take; ride",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们乘火车去。",
+       "en": "We will go by train."
+      },
+      {
+       "zh": "请乘下一班车。",
+       "en": "Please take the next bus."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-4",
+     "num": 4,
+     "hanzi": "车速",
+     "pinyin": "chēsù",
+     "meaning": "vehicle speed",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里车速不能太快。",
+       "en": "Cars cannot go too fast here."
+      },
+      {
+       "zh": "请注意车速。",
+       "en": "Please pay attention to your speed."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-5",
+     "num": 5,
+     "hanzi": "窗户",
+     "pinyin": "chuānghu",
+     "meaning": "window",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请打开窗户。",
+       "en": "Please open the window."
+      },
+      {
+       "zh": "窗户外面很漂亮。",
+       "en": "It is beautiful outside the window."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-6",
+     "num": 6,
+     "hanzi": "从中",
+     "pinyin": "cóngzhōng",
+     "meaning": "from it; from among them",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我从中学到了很多。",
+       "en": "I learned a lot from it."
+      },
+      {
+       "zh": "你能从中找到答案。",
+       "en": "You can find the answer from it."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-7",
+     "num": 7,
+     "hanzi": "大巴",
+     "pinyin": "dàbā",
+     "meaning": "coach; bus",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们坐大巴去机场。",
+       "en": "We will take a coach to the airport."
+      },
+      {
+       "zh": "大巴十分钟后开。",
+       "en": "The bus leaves in ten minutes."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-8",
+     "num": 8,
+     "hanzi": "当",
+     "pinyin": "dāng",
+     "meaning": "to serve as; be",
+     "pos": "prep",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "他想当老师。",
+       "en": "He wants to be a teacher."
+      },
+      {
+       "zh": "我小时候想当医生。",
+       "en": "I wanted to be a doctor when I was young."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-9",
+     "num": 9,
+     "hanzi": "道路",
+     "pinyin": "dàolù",
+     "meaning": "road",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这条道路很宽。",
+       "en": "This road is wide."
+      },
+      {
+       "zh": "前面的道路不太好走。",
+       "en": "The road ahead is not easy to travel."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-10",
+     "num": 10,
+     "hanzi": "导游",
+     "pinyin": "dǎoyóu",
+     "meaning": "tour guide",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "导游带我们参观。",
+       "en": "The tour guide showed us around."
+      },
+      {
+       "zh": "她是一名导游。",
+       "en": "She is a tour guide."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-11",
+     "num": 11,
+     "hanzi": "登机",
+     "pinyin": "dēngjī",
+     "meaning": "to board a plane",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们准备登机了。",
+       "en": "We are ready to board the plane."
+      },
+      {
+       "zh": "请提前去登机。",
+       "en": "Please go to board early."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-12",
+     "num": 12,
+     "hanzi": "动车",
+     "pinyin": "dòngchē",
+     "meaning": "high-speed train",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们坐动车去杭州。",
+       "en": "We will take a high-speed train to Hangzhou."
+      },
+      {
+       "zh": "动车很方便。",
+       "en": "High-speed trains are convenient."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-13",
+     "num": 13,
+     "hanzi": "堵车",
+     "pinyin": "dǔchē",
+     "meaning": "traffic jam",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "早上常常堵车。",
+       "en": "There are often traffic jams in the morning."
+      },
+      {
+       "zh": "因为堵车，我们迟到了。",
+       "en": "We were late because of traffic."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-14",
+     "num": 14,
+     "hanzi": "烦恼",
+     "pinyin": "fánnǎo",
+     "meaning": "worry; trouble",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "别为小事烦恼。",
+       "en": "Do not worry about small things."
+      },
+      {
+       "zh": "他最近有一些烦恼。",
+       "en": "He has some worries recently."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-15",
+     "num": 15,
+     "hanzi": "航班",
+     "pinyin": "hángbān",
+     "meaning": "flight",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的航班是下午三点。",
+       "en": "My flight is at 3 p.m."
+      },
+      {
+       "zh": "这个航班晚了。",
+       "en": "This flight is delayed."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-16",
+     "num": 16,
+     "hanzi": "红包",
+     "pinyin": "hóngbāo",
+     "meaning": "red envelope",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "过年时孩子会收到红包。",
+       "en": "Children receive red envelopes at New Year."
+      },
+      {
+       "zh": "奶奶给了我一个红包。",
+       "en": "Grandma gave me a red envelope."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-17",
+     "num": 17,
+     "hanzi": "节省",
+     "pinyin": "jiéshěng",
+     "meaning": "to save; economize",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "这样可以节省时间。",
+       "en": "This can save time."
+      },
+      {
+       "zh": "坐地铁能节省很多时间。",
+       "en": "Taking the subway can save a lot of time."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-18",
+     "num": 18,
+     "hanzi": "解释",
+     "pinyin": "jiěshì",
+     "meaning": "to explain",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请解释一下这个词。",
+       "en": "Please explain this word."
+      },
+      {
+       "zh": "老师解释得很清楚。",
+       "en": "The teacher explained it clearly."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-19",
+     "num": 19,
+     "hanzi": "卷",
+     "pinyin": "juǎn",
+     "meaning": "to roll up",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "请把地图卷起来。",
+       "en": "Please roll up the map."
+      },
+      {
+       "zh": "他把纸卷好了。",
+       "en": "He rolled up the paper."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-20",
+     "num": 20,
+     "hanzi": "靠",
+     "pinyin": "kào",
+     "meaning": "to rely on; be near",
+     "pos": "v",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "成功要靠努力。",
+       "en": "Success depends on hard work."
+      },
+      {
+       "zh": "请靠窗坐。",
+       "en": "Please sit by the window."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-21",
+     "num": 21,
+     "hanzi": "里",
+     "pinyin": "lǐ",
+     "meaning": "inside; in",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "书在包里。",
+       "en": "The book is in the bag."
+      },
+      {
+       "zh": "车里很暖和。",
+       "en": "It is warm in the car."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-22",
+     "num": 22,
+     "hanzi": "列",
+     "pinyin": "liè",
+     "meaning": "row; to list",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请站成两列。",
+       "en": "Please stand in two rows."
+      },
+      {
+       "zh": "他列了三个原因。",
+       "en": "He listed three reasons."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-23",
+     "num": 23,
+     "hanzi": "流利",
+     "pinyin": "liúlì",
+     "meaning": "fluent",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的中文很流利。",
+       "en": "His Chinese is fluent."
+      },
+      {
+       "zh": "我想说得更流利。",
+       "en": "I want to speak more fluently."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-24",
+     "num": 24,
+     "hanzi": "旅客",
+     "pinyin": "lǚkè",
+     "meaning": "traveler; passenger",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "很多旅客在等车。",
+       "en": "Many travelers are waiting for the bus."
+      },
+      {
+       "zh": "旅客请注意时间。",
+       "en": "Passengers, please pay attention to the time."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-25",
+     "num": 25,
+     "hanzi": "民族",
+     "pinyin": "mínzú",
+     "meaning": "ethnic group; nation",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "中国有很多民族。",
+       "en": "China has many ethnic groups."
+      },
+      {
+       "zh": "不同民族有不同文化。",
+       "en": "Different ethnic groups have different cultures."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-26",
+     "num": 26,
+     "hanzi": "难道",
+     "pinyin": "nándào",
+     "meaning": "could it be that...?",
+     "pos": "adv",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "难道你不知道吗？",
+       "en": "Don't you know?"
+      },
+      {
+       "zh": "难道他今天不来？",
+       "en": "Could it be that he is not coming today?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-27",
+     "num": 27,
+     "hanzi": "牌",
+     "pinyin": "pái",
+     "meaning": "sign; card",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "门口有一个牌。",
+       "en": "There is a sign at the entrance."
+      },
+      {
+       "zh": "请看这个路牌。",
+       "en": "Please look at this road sign."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-28",
+     "num": 28,
+     "hanzi": "泼",
+     "pinyin": "pō",
+     "meaning": "to splash; pour",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "别把水泼到地上。",
+       "en": "Do not splash water on the floor."
+      },
+      {
+       "zh": "他不小心泼了水。",
+       "en": "He accidentally spilled water."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-29",
+     "num": 29,
+     "hanzi": "少数",
+     "pinyin": "shǎoshù",
+     "meaning": "a small number; minority",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "只有少数人不同意。",
+       "en": "Only a small number of people disagree."
+      },
+      {
+       "zh": "少数学生今天请假。",
+       "en": "A few students are absent today."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-30",
+     "num": 30,
+     "hanzi": "所有",
+     "pinyin": "suǒyǒu",
+     "meaning": "all",
+     "pos": "a",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "所有人都到了。",
+       "en": "Everyone has arrived."
+      },
+      {
+       "zh": "我看完了所有照片。",
+       "en": "I finished looking at all the photos."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-31",
+     "num": 31,
+     "hanzi": "特点",
+     "pinyin": "tèdiǎn",
+     "meaning": "feature; characteristic",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个地方有什么特点？",
+       "en": "What are the features of this place?"
+      },
+      {
+       "zh": "每个人都有自己的特点。",
+       "en": "Everyone has their own characteristics."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-32",
+     "num": 32,
+     "hanzi": "晚餐",
+     "pinyin": "wǎncān",
+     "meaning": "dinner",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们七点吃晚餐。",
+       "en": "We eat dinner at seven."
+      },
+      {
+       "zh": "今天晚餐吃什么？",
+       "en": "What are we having for dinner today?"
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-33",
+     "num": 33,
+     "hanzi": "无",
+     "pinyin": "wú",
+     "meaning": "without; no",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里无停车位。",
+       "en": "There is no parking here."
+      },
+      {
+       "zh": "这件事与我无关。",
+       "en": "This has nothing to do with me."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-34",
+     "num": 34,
+     "hanzi": "细",
+     "pinyin": "xì",
+     "meaning": "thin; fine",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "这条线很细。",
+       "en": "This line is thin."
+      },
+      {
+       "zh": "请把字写细一点儿。",
+       "en": "Please write the strokes a little thinner."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-35",
+     "num": 35,
+     "hanzi": "小说",
+     "pinyin": "xiǎoshuō",
+     "meaning": "novel",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我正在看一本小说。",
+       "en": "I am reading a novel."
+      },
+      {
+       "zh": "这本小说很有意思。",
+       "en": "This novel is interesting."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-36",
+     "num": 36,
+     "hanzi": "要是",
+     "pinyin": "yàoshi",
+     "meaning": "if",
+     "pos": "conj",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "要是下雨，我们就不去。",
+       "en": "If it rains, we will not go."
+      },
+      {
+       "zh": "要是你有时间，就给我打电话。",
+       "en": "If you have time, call me."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-37",
+     "num": 37,
+     "hanzi": "夜",
+     "pinyin": "yè",
+     "meaning": "night",
+     "pos": "n",
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "夜里很安静。",
+       "en": "It is quiet at night."
+      },
+      {
+       "zh": "我们夜里十二点才睡。",
+       "en": "We did not sleep until midnight."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-38",
+     "num": 38,
+     "hanzi": "意见",
+     "pinyin": "yìjiàn",
+     "meaning": "opinion; suggestion",
+     "pos": "n",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "你有什么意见？",
+       "en": "What is your opinion?"
+      },
+      {
+       "zh": "谢谢你提出意见。",
+       "en": "Thank you for giving your suggestion."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-39",
+     "num": 39,
+     "hanzi": "值机",
+     "pinyin": "zhíjī",
+     "meaning": "flight check-in",
+     "pos": null,
+     "type": null,
+     "note": "教材标注：本级超纲词",
+     "examples": [
+      {
+       "zh": "我们先去值机。",
+       "en": "We will check in for the flight first."
+      },
+      {
+       "zh": "值机以后去安检。",
+       "en": "After check-in, go through security."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-40",
+     "num": 40,
+     "hanzi": "转机",
+     "pinyin": "zhuǎnjī",
+     "meaning": "to transfer flights",
+     "pos": null,
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们在上海转机。",
+       "en": "We transfer flights in Shanghai."
+      },
+      {
+       "zh": "转机要两个小时。",
+       "en": "The flight transfer takes two hours."
+      }
+     ]
+    },
+    {
+     "id": "newhsk3-4-l20-41",
+     "num": 41,
+     "hanzi": "总结",
+     "pinyin": "zǒngjié",
+     "meaning": "to summarize; summary",
+     "pos": "v",
+     "type": null,
+     "note": null,
+     "examples": [
+      {
+       "zh": "请总结一下这篇文章。",
+       "en": "Please summarize this article."
+      },
+      {
+       "zh": "课后我们做一个总结。",
+       "en": "We will make a summary after class."
+      }
+     ]
+    }
+   ]
   }
  ]
 }

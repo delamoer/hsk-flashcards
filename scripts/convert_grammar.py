@@ -98,6 +98,8 @@ TYPE_EN = {
     "目的复句": "Purpose clause", "范围副词": "Scope adverb", "口语固定格式": "Colloquial fixed pattern",
     "数量重叠": "Quantity reduplication", "时间短语": "Time phrase", "时间/起点结构": "Time / Starting point",
     "介词/动词": "Preposition / Verb",
+    "关联副词": "Correlative adverb", "数量结构": "Quantity structure",
+    "比较结构": "Comparison structure", "语气副词": "Modal adverb",
 }
 
 # 练习指令前缀 中→英 (so beginners can understand the task). Keyed by the text before "：".
@@ -120,6 +122,12 @@ Q_INSTR_EN = {
     "用“坏了”改写": "Rewrite with 坏了", "改成不同": "Rewrite with 不同", "用“该……了”改写": "Rewrite with 该…了",
     "用“极了”改写": "Rewrite with 极了", "用“前”改写": "Rewrite with 前", "用“看来”表达": "Express with 看来",
     "用“X什么啊”回答": "Answer with X什么啊",
+    "排序并连接": "Reorder, then join", "用“再也不”表达": "Express with 再也不",
+    "用“到底”加强": "Strengthen with 到底", "用“叫”改写": "Rewrite with 叫",
+    "用“对于”开头": "Start with 对于", "用“就是说”解释": "Explain with 就是说",
+    "用“究竟”加强问句": "Strengthen the question with 究竟", "用“表扬”说": "Say it with 表扬",
+    "用“说不定”表达": "Express with 说不定", "用“难道”改成反问": "Turn into a 难道 rhetorical question",
+    "用这个格式表达": "Express with this pattern",
 }
 
 
@@ -129,7 +137,7 @@ def parse_target(path):
     m = re.match(r"HSK(\d)_语法", base)
     if m:
         return ("hsk", int(m.group(1)))
-    m = re.match(r"新HSK3\.0_第([一二三四五六])册[A-Z]?_语法", base)
+    m = re.match(r"新HSK3\.0_第([一二三四五六])册[上下]?_语法", base)
     if m:
         return ("newhsk3", CN_VOL[m.group(1)])
     return None
@@ -268,27 +276,47 @@ def main():
     NOTE_EN = load_note_en()
     print(f"  note_en: {len(NOTE_EN)} 条英文备注")
     os.makedirs(OUT_DIR, exist_ok=True)
-    # 同一册若两版并存，用「语法零基础版」——它是主表的加强版（例句带拼音、结构带英文），
-    # 语法点集合完全一致。没有加强版的册（hsk-3/4/5、newhsk3 第四册A）继续走主表。
-    files = {}
+    # 同一本书若两版并存，用「语法零基础版」——它是主表的加强版（例句带拼音、结构带英文），
+    # 语法点集合完全一致。没有加强版的书（hsk-3/4/5、newhsk3 第四册上/下）继续走主表。
+    # 选版本按「书」（文件名去掉类型后缀）而不是按 unit：第四册上有了零基础版时，
+    # 不该把还只有主表的第四册下一起顶掉。
+    books = {}
     for pattern, upgraded in (("*_语法主表.xlsx", False), ("*_语法零基础版.xlsx", True)):
         for f in sorted(glob.glob(os.path.join(ROOT, "sources", pattern))):
             target = parse_target(f)
-            if target and (upgraded or target not in files):
-                files[target] = f
+            if not target:
+                continue
+            book = os.path.basename(f).rsplit("_", 1)[0]
+            if upgraded or book not in books:
+                books[book] = (target, f)
+    # 一个 unit 可由多本书组成（第四册 = 上 + 下），按课次合并后再写一次。
+    files = {}
+    for target, f in sorted(books.values(), key=lambda tf: tf[1]):
+        files.setdefault(target, []).append(f)
+
     meta = {}
     total_pts = 0
-    for f in [files[k] for k in sorted(files)]:
-        res = convert_file(f)
-        if not res:
+    for target in sorted(files):
+        key, data, m = None, None, None
+        for f in files[target]:
+            res = convert_file(f)
+            if not res:
+                continue
+            if data is None:
+                key, data, m = res
+            else:
+                data["lessons"].extend(res[1]["lessons"])
+                m["lessonCount"] += res[2]["lessonCount"]
+                m["pointCount"] += res[2]["pointCount"]
+        if data is None:
             continue
-        key, data, m = res
+        data["lessons"].sort(key=lambda l: l["num"])
         n_py = sum(1 for l in data["lessons"] for p in l["points"] for e in p["examples"] if e.get("py"))
         with open(os.path.join(OUT_DIR, f"{key}.json"), "w", encoding="utf-8") as fh:
             json.dump(data, fh, ensure_ascii=False, separators=(",", ":"))
         meta[key] = m
         total_pts += m["pointCount"]
-        tag = f"  例句拼音 {n_py}" if n_py else "  （旧版主表，无例句拼音）"
+        tag = f"  例句拼音 {n_py}" if n_py else "  （主表，无例句拼音）"
         print(f"  ✓ {key}: {m['lessonCount']} 课, {m['pointCount']} 语法点{tag}")
     with open(os.path.join(OUT_DIR, "meta.json"), "w", encoding="utf-8") as fh:
         json.dump(meta, fh, ensure_ascii=False, indent=0)

@@ -5,7 +5,7 @@ Run with uv (openpyxl provided on the fly):
     uv run --with openpyxl python3 scripts/convert_texts.py
 
 Sources: sources/HSK{1,2,3}_课文挖空练习.xlsx + sources/新HSK3.0_第{一,二,三}册_课文挖空练习.xlsx
-         + sources/新HSK3.0_第四册A_课文挖空练习.xlsx
+         + sources/新HSK3.0_第四册{上,下}_课文挖空练习.xlsx (two books, one unit — merged)
   新版 → series "newhsk3", 旧版 → series "hsk" (same taxonomy as the flashcard courses).
 
 Output (kept in a subfolder so the flashcard glob `./*-*.json` never picks it up):
@@ -42,8 +42,10 @@ SOURCES = [
     ("新HSK3.0_第一册_课文挖空练习.xlsx", "newhsk3", 1),
     ("新HSK3.0_第二册_课文挖空练习.xlsx", "newhsk3", 2),
     ("新HSK3.0_第三册_课文挖空练习.xlsx", "newhsk3", 3),
-    # 4A 无拼音/英文列 → 每行 py/en 为空，ReadPanel 的 拼音/EN pill 自动隐藏。
-    ("新HSK3.0_第四册A_课文挖空练习.xlsx", "newhsk3", 4),
+    # 第四册 = 上(1–10课) + 下(11–20课) 两本书合成一个 unit，main() 按课次合并。
+    # 两本都无拼音/英文列 → 每行 py/en 为空，ReadPanel 的 拼音/EN pill 自动隐藏。
+    ("新HSK3.0_第四册上_课文挖空练习.xlsx", "newhsk3", 4),
+    ("新HSK3.0_第四册下_课文挖空练习.xlsx", "newhsk3", 4),
 ]
 
 SHEET = "教师答案版"
@@ -115,6 +117,14 @@ def load_word_map() -> dict:
     return m
 
 
+# Real flashcard words that, in our texts, only ever occur inside a LONGER phrase where
+# greedy left-to-right max-match would eat the wrong prefix (不便宜 → 不便|宜,
+# 从中间 → 从中|间). Excluded from the segmentation lexicon ONLY — they stay normal
+# flashcard entries. When a new book adds such a word, verify it never occurs standalone
+# in any 课文 before listing it here.
+LEX_EXCLUDE = {"不便", "从中"}
+
+
 def load_lexicon(segmap: dict) -> set:
     """Word list for 连词成句 segmentation, built from the app's OWN vocabulary:
     every flashcard word (src/data/{series}-{unit}.json) + every hand-vetted
@@ -137,7 +147,7 @@ def load_lexicon(segmap: dict) -> set:
         for t in toks:
             if len(t) >= 2:
                 lex.add(t)
-    return lex
+    return lex - LEX_EXCLUDE
 
 
 def segment_sentence(text: str, lex: set) -> list:
@@ -423,14 +433,27 @@ def main():
     meta = {}
     print(f"Segmentation table: {len(segmap)} clauses · lexicon: {len(lex)} words · gloss: {len(gloss)} lines · wordmap: {len(wordmap)} words")
     print("Converted 课文:")
+    # Several books may map to one unit (第四册 = 上 + 下): accumulate before writing,
+    # else the second file would silently overwrite the first.
+    units = {}
     for fname, series, unit, in SOURCES:
         data, n_lessons, n_texts = convert(fname, series, unit, segmap, lex, gloss, wordmap)
         key = f"{series}-{unit}"
+        if key in units:
+            units[key]["data"]["lessons"].extend(data["lessons"])
+            units[key]["texts"] += n_texts
+            units[key]["from"].append(fname)
+        else:
+            units[key] = {"data": data, "texts": n_texts, "from": [fname]}
+
+    for key, u in units.items():
+        data = u["data"]
+        data["lessons"].sort(key=lambda l: l["num"])
         (OUT / f"{key}.json").write_text(
             json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8"
         )
-        meta[key] = {"lessonCount": n_lessons, "textCount": n_texts}
-        print(f"  {key}: {n_lessons} lessons, {n_texts} texts  ← {fname}")
+        meta[key] = {"lessonCount": len(data["lessons"]), "textCount": u["texts"]}
+        print(f"  {key}: {len(data['lessons'])} lessons, {u['texts']} texts  ← {' + '.join(u['from'])}")
 
     (OUT / "meta.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8"

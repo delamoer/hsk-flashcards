@@ -114,9 +114,17 @@ SOURCES = [
                 "type": None, "note": 10, "ex": [(6, 7), (8, 9)]},
     },
     {
-        # HSK 4 upper half (4A / 4上): lessons 1–10. Lower half (4B) to be merged later.
+        # 第四册 ships as two physical books (4上 = lessons 1–10, 4下 = 11–20) but is ONE
+        # unit here. Both entries carry the same series+unit; main() merges them by lesson.
         "series": "newhsk3", "unit": 4,
-        "file": "sources/新HSK3.0_第四册A_词汇闪卡表.xlsx", "sheet": "HSK4A词汇表",
+        "file": "sources/新HSK3.0_第四册上_词汇闪卡表.xlsx", "sheet": "HSK4A词汇表",
+        "col": {"lesson": 1, "lesson_key": None, "title": 2,
+                "hanzi": 3, "pinyin": 4, "meaning": 5,
+                "type": None, "note": 10, "ex": [(6, 7), (8, 9)]},
+    },
+    {
+        "series": "newhsk3", "unit": 4,
+        "file": "sources/新HSK3.0_第四册下_词汇闪卡表.xlsx", "sheet": "HSK4词汇表",
         "col": {"lesson": 1, "lesson_key": None, "title": 2,
                 "hanzi": 3, "pinyin": 4, "meaning": 5,
                 "type": None, "note": 10, "ex": [(6, 7), (8, 9)]},
@@ -353,6 +361,16 @@ TITLES_EN = {
             8: "Relax When It's Time to Relax",
             9: "Meeting You at Just the Right Time",
             10: "The South Doesn't Get the North's Cold",
+            11: "Never Too Old to Learn",
+            12: "A Happy Family",
+            13: "Beautiful Days",
+            14: "Buy It Only If It's Right",
+            15: "I Went to a Job Interview",
+            16: "Plans Can't Keep Up with Changes",
+            17: "Exercise Makes Me Healthier",
+            18: "Technology Changes Our Lives",
+            19: "They Are All Great",
+            20: "Too Much to Watch and Read",
         },
     },
     "huihua360": {
@@ -540,9 +558,21 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     summary = []
     meta = {}  # {series}-{unit} → { lessonCount, wordCount, idPrefix } for lazy-loaded UI
+    # Several books may map to one unit (新HSK3.0 第四册 = 4上 + 4下). Accumulate their
+    # lessons before writing, else the second file would silently overwrite the first.
+    units = {}  # key → {"src", "data", "total"}
     for src in SOURCES:
         data, total = convert(src)
         key = f"{src['series']}-{src['unit']}"
+        if key in units:
+            units[key]["data"]["lessons"].extend(data["lessons"])
+            units[key]["total"] += total
+        else:
+            units[key] = {"src": src, "data": data, "total": total}
+
+    for key, u in units.items():
+        data, total, src = u["data"], u["total"], u["src"]
+        data["lessons"].sort(key=lambda l: l["num"])
         path = OUT / f"{key}.json"
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         meta[key] = {

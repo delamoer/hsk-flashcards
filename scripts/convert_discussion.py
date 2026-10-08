@@ -38,7 +38,7 @@ def parse_target(path):
     m = re.match(r"HSK(\d)_聊天问题", base)
     if m:
         return ("hsk", int(m.group(1)))
-    m = re.match(r"新HSK3\.0_第([一二三四五六])册[A-Z]?_聊天问题", base)
+    m = re.match(r"新HSK3\.0_第([一二三四五六])册[上下]?_聊天问题", base)
     if m:
         return ("newhsk3", CN_VOL[m.group(1)])
     # An unrecognized name is silently skipped, which is easy to miss — keep the
@@ -179,11 +179,25 @@ def main():
     meta = {}
     total_q = 0
     print("Converted 话题讨论:")
+    # 一个 unit 可由多本书组成（新HSK3.0 第四册 = 上 + 下），按课次合并后再写一次——
+    # 否则后扫到的文件会静默覆盖前一个。
+    units = {}
     for f in files:
         res = convert_file(f)
         if not res:
             continue
         key, data, m = res
+        if key in units:
+            u = units[key]
+            u["data"]["lessons"].extend(data["lessons"])
+            for k in ("lessonCount", "textCount", "questionCount"):
+                u["meta"][k] += m[k]
+        else:
+            units[key] = {"data": data, "meta": m}
+
+    for key in sorted(units):
+        data, m = units[key]["data"], units[key]["meta"]
+        data["lessons"].sort(key=lambda l: l["num"])
         with open(os.path.join(OUT_DIR, f"{key}.json"), "w", encoding="utf-8") as fh:
             json.dump(data, fh, ensure_ascii=False, separators=(",", ":"))
         meta[key] = m
