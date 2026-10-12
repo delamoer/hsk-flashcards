@@ -4,8 +4,9 @@
 Run with uv (openpyxl provided on the fly):
     uv run --with openpyxl python3 scripts/convert_texts.py
 
-Sources: sources/HSK{1,2,3}_课文挖空练习.xlsx + sources/新HSK3.0_第{一,二,三}册_课文挖空练习.xlsx
+Sources: sources/HSK{1,2,3,4}_课文挖空练习.xlsx + sources/新HSK3.0_第{一,二,三}册_课文挖空练习.xlsx
          + sources/新HSK3.0_第四册{上,下}_课文挖空练习.xlsx (two books, one unit — merged)
+         + sources/HSK{5,6}_课文原文.xlsx (essays, no cloze — 读原文 + 连词成句 only)
   新版 → series "newhsk3", 旧版 → series "hsk" (same taxonomy as the flashcard courses).
 
 Output (kept in a subfolder so the flashcard glob `./*-*.json` never picks it up):
@@ -46,12 +47,25 @@ SOURCES = [
     # 两本都无拼音/英文列 → 每行 py/en 为空，ReadPanel 的 拼音/EN pill 自动隐藏。
     ("新HSK3.0_第四册上_课文挖空练习.xlsx", "newhsk3", 4),
     ("新HSK3.0_第四册下_课文挖空练习.xlsx", "newhsk3", 4),
+    ("HSK4_课文挖空练习.xlsx", "hsk", 4),  # 上下两册合在一个文件里，多一列「册」
+]
+
+# 「课文原文」= 只有课文正文、没有挖空的书（HSK5/6 是长篇散文）。每课一篇，
+# 只产出 读原文 + 连词成句；vocab/grammar 为 None，练习面板自动隐藏生词挖空。
+PROSE_SOURCES = [
+    ("HSK5_课文原文.xlsx", "hsk", 5),
+    ("HSK6_课文原文.xlsx", "hsk", 6),
 ]
 
 SHEET = "教师答案版"
-# Column indices (0-based) in the teacher sheet.
-C_LESSON, C_NAME, C_TITLE, C_ORIG = 1, 2, 3, 4
-C_VCLOZE, C_VANS, C_GCLOZE, C_GANS, C_NOTE = 5, 6, 7, 8, 9
+# Teacher-sheet columns, located by header text (the HSK4 file carries an extra 「册」
+# column, so fixed indices would silently read the wrong fields).
+COLS = {
+    "lesson": ("课次",), "name": ("课名",), "title": ("课文序号",), "orig": ("原文",),
+    "vcloze": ("第一篇｜生词/重点词语挖空",), "vans": ("第一篇答案",),
+    "gcloze": ("第二篇｜语法挖空", "第二篇｜语法/核心句式挖空"), "gans": ("第二篇答案",),
+    "note": ("本课语法点", "本课语言点"),
+}
 
 PUNCT = set("，。！？、；：""''（）()《》…—,.!?;: 　\t\n")
 
@@ -333,7 +347,7 @@ def split_sentences(text: str):
     return [c.strip() for c in SENT_SPLIT_RE.findall(text or "") if c.strip()]
 
 
-def build_sentences(original: str, segmap: dict, lex: set, answers=None):
+def build_sentences(original: str, segmap: dict, lex: set, answers=None, prose=False):
     """连词成句 items, one SENTENCE each (not one whole line — narratives were a
     single 40–70-tile monster otherwise). Each line is split by sentence-final
     punctuation; a hand-vetted grammar clause (in segmap) is kept whole. Sentences
@@ -345,7 +359,7 @@ def build_sentences(original: str, segmap: dict, lex: set, answers=None):
         line = raw.strip()
         if not line:
             continue
-        m = SPEAKER_RE.match(line)
+        m = None if prose else SPEAKER_RE.match(line)
         speaker = m.group(1) if m else ""
         speech = (m.group(2).strip() if m else line)
         if not speech:
@@ -361,15 +375,16 @@ def build_sentences(original: str, segmap: dict, lex: set, answers=None):
     return primary + rest
 
 
-def build_lines(original: str, gloss: dict):
+def build_lines(original: str, gloss: dict, prose=False):
     """Per-line reading view: speaker + speech + hand-authored pinyin/English.
-    Derived from `original` so the source stays the single dialogue string."""
+    Derived from `original` so the source stays the single dialogue string.
+    `prose`: paragraphs of an essay — a leading 「老鼠说：」 is narration, not a speaker."""
     out = []
     for raw in (original or "").split("\n"):
         line = raw.strip()
         if not line:
             continue
-        m = SPEAKER_RE.match(line)
+        m = None if prose else SPEAKER_RE.match(line)
         name = m.group(1) if m else ""
         speech = (m.group(2).strip() if m else line)
         # 书信/通知的称呼语（「亲爱的同学们：」「家月姐姐：」）长得像说话人但正文为空，
@@ -386,6 +401,14 @@ def convert(fname, series, unit, segmap, lex, gloss, wordmap):
     ws = wb[SHEET]
     rows = list(ws.iter_rows(values_only=True))
     hi = next(i for i, r in enumerate(rows) if r and r[0] == "序号")
+    header = [clean(h) for h in rows[hi]]
+    col = {}
+    for k, names in COLS.items():
+        col[k] = next((header.index(n) for n in names if n in header), None)
+        if col[k] is None:
+            raise SystemExit(f"{fname}: 找不到列 {names}")
+    C_LESSON, C_NAME, C_TITLE, C_ORIG = col["lesson"], col["name"], col["title"], col["orig"]
+    C_VCLOZE, C_VANS, C_GCLOZE, C_GANS, C_NOTE = (col[k] for k in ("vcloze", "vans", "gcloze", "gans", "note"))
 
     lessons = {}
     order = []
@@ -430,6 +453,39 @@ def convert(fname, series, unit, segmap, lex, gloss, wordmap):
     return data, len(order), n_texts
 
 
+def convert_prose(fname, series, unit, segmap, lex, gloss):
+    """「课文原文」book: sheet 1, one row per lesson; headers are bilingual and vary
+    between files (「lesson_id」 vs 「课号 lesson_id」), so match by substring."""
+    wb = openpyxl.load_workbook(ROOT / "sources" / fname, read_only=True, data_only=True)
+    rows = list(wb.worksheets[0].iter_rows(values_only=True))
+    header = [clean(h) or "" for h in rows[0]]
+
+    def find(key):
+        i = next((i for i, h in enumerate(header) if key in h), None)
+        if i is None:
+            raise SystemExit(f"{fname}: 找不到列 {key}")
+        return i
+
+    C_ID, C_T, C_BODY = find("lesson_id"), find("title"), find("content")
+    lessons = []
+    for r in rows[1:]:
+        if not r or r[C_ID] is None:
+            continue
+        # paragraphs are separated by blank lines; one paragraph = one reading line
+        original = "\n".join(p.strip() for p in (clean(r[C_BODY]) or "").split("\n") if p.strip())
+        lessons.append({"num": int(r[C_ID]), "name": clean(r[C_T]) or "", "texts": [{
+            "n": 1,
+            "title": "课文",
+            "original": original,
+            "lines": build_lines(original, gloss, prose=True),
+            "vocab": None,
+            "grammar": None,
+            "sentences": build_sentences(original, segmap, lex, prose=True),
+            "note": "",
+        }]})
+    return {"series": series, "unit": unit, "lessons": lessons}, len(lessons), len(lessons)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     segmap = load_segments()
@@ -442,8 +498,10 @@ def main():
     # Several books may map to one unit (第四册 = 上 + 下): accumulate before writing,
     # else the second file would silently overwrite the first.
     units = {}
-    for fname, series, unit, in SOURCES:
-        data, n_lessons, n_texts = convert(fname, series, unit, segmap, lex, gloss, wordmap)
+    jobs = [(f, s, u, lambda f, s, u: convert(f, s, u, segmap, lex, gloss, wordmap)) for f, s, u in SOURCES]
+    jobs += [(f, s, u, lambda f, s, u: convert_prose(f, s, u, segmap, lex, gloss)) for f, s, u in PROSE_SOURCES]
+    for fname, series, unit, run in jobs:
+        data, n_lessons, n_texts = run(fname, series, unit)
         key = f"{series}-{unit}"
         if key in units:
             units[key]["data"]["lessons"].extend(data["lessons"])

@@ -27,6 +27,18 @@
   "lessonCount": 20,
   "textCount": 80
  },
+ "hsk-4": {
+  "lessonCount": 20,
+  "textCount": 100
+ },
+ "hsk-5": {
+  "lessonCount": 36,
+  "textCount": 36
+ },
+ "hsk-6": {
+  "lessonCount": 40,
+  "textCount": 40
+ },
  "huihua360-1": {
   "lessonCount": 8,
   "textCount": 20

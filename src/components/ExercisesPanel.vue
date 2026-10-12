@@ -9,7 +9,7 @@
           </button>
         </div>
         <div class="submodes">
-          <button v-if="texts.length" :class="{ on: mode === 'vocab' }" @click="mode = 'vocab'">生词挖空<i>Cloze</i></button>
+          <button v-if="hasVocab" :class="{ on: mode === 'vocab' }" @click="mode = 'vocab'">生词挖空<i>Cloze</i></button>
           <button v-if="hasGrammar" :class="{ on: mode === 'grammar' }" @click="mode = 'grammar'">连词成句<i>Reorder</i></button>
           <button v-if="hasGP" :class="{ on: mode === 'gp' }" @click="mode = 'gp'">语法<i>Grammar</i></button>
         </div>
@@ -230,15 +230,22 @@ watch(
     const ld = ds?.lessons.find((x) => x.num === Number(l));
     texts.value = ld?.texts || [];
     gpLesson.value = gl && gl.points && gl.points.length ? gl : null;
-    // pick a valid default mode for this lesson
-    if (!texts.value.length && hasGP.value) mode.value = "gp";
-    else if (mode.value === "gp" && !hasGP.value) mode.value = "vocab";
+    fixMode();
     loading.value = false;
   },
   { immediate: true }
 );
 
 const text = computed(() => texts.value[ti.value] || null);
+// 「课文原文」books (HSK5/6) have text but no cloze — only 连词成句 (+ 语法).
+const hasVocab = computed(() => !!text.value?.vocab);
+
+// Keep `mode` pointing at a sub-mode this lesson/text actually has.
+function fixMode() {
+  const ok = { vocab: hasVocab.value, grammar: hasGrammar.value, gp: hasGP.value };
+  if (!texts.value.length && hasGP.value) mode.value = "gp";
+  else if (!ok[mode.value]) mode.value = ["vocab", "grammar", "gp"].find((m) => ok[m]) || "vocab";
+}
 
 // ── shared ──
 const showPy = ref(false);
@@ -452,7 +459,7 @@ watch(
     if (!text.value) return;
     resetVocab();
     buildGrammar();
-    if (mode.value === "grammar" && !hasGrammar.value) mode.value = "vocab";
+    fixMode();
   },
   { immediate: true }
 );

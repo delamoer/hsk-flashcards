@@ -65,8 +65,8 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 - **Data is generated, not hand-written.** Source of truth = the xlsx files in `sources/`, named
   **`{系列}_{册}_{类型}.xlsx`** so a series' branches sort together and a missing branch is obvious at a
   glance. 系列/册: `HSK{1..6}` · `新HSK3.0_第{一,二,三}册` + `新HSK3.0_第四册{上,下}`（教材第四册分上下两本，站内合为一册）·
-  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `汉语拼音`. 类型 (exactly five): `词汇闪卡表` ·
-  `课文挖空练习` · `语法主表` · `语法零基础版` · `聊天问题`. **Keep this convention when adding a book** —
+  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `汉语拼音`. 类型 (exactly six): `词汇闪卡表` ·
+  `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6）· `语法主表` · `语法零基础版` · `聊天问题`. **Keep this convention when adding a book** —
   the grammar/discussion converters map filename → (series, unit) by regex and **silently skip** a name
   they don't recognize. **Several books may map to ONE unit** (新HSK3.0 第四册上 = 课次1–10, 第四册下 =
   11–20): all four converters group sources by (series, unit) and merge their lessons before writing,
@@ -100,7 +100,13 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   grid) **and** injects the bilingual pedagogy (English pronunciation analogues, place/manner EN,
   example words) which lives *in that script's maps* — edit the script, not the JSON, then re-run.
   `PinyinView.vue` imports `pinyin.json` directly (lazy-loaded route, so it's not in the main bundle).
-- **课文 (Texts) data is generated too.** Source = the eight `sources/HSK{1,2,3}_课文挖空练习.xlsx` + `sources/新HSK3.0_第{一,二,三}册|第四册{上,下}_课文挖空练习.xlsx`.
+- **课文 (Texts) data is generated too.** Source = the nine `sources/HSK{1,2,3,4}_课文挖空练习.xlsx` + `sources/新HSK3.0_第{一,二,三}册|第四册{上,下}_课文挖空练习.xlsx`
+  (teacher sheet 「教师答案版」, columns located **by header text** — the HSK4 file has an extra 「册」 column
+  and HSK1/新一册 spell the grammar column 「语法/核心句式挖空」; add an alias to `COLS` if a new file varies),
+  plus `sources/HSK{5,6}_课文原文.xlsx` (`PROSE_SOURCES`, `convert_prose`): essays with no cloze at all — one
+  text per lesson, one paragraph per reading line, no speaker parsing (a leading 「老鼠说：」 is narration),
+  `vocab`/`grammar` = null, so they get only 读原文 + 连词成句. `ExercisesPanel` hides 生词挖空 for a text
+  without `vocab` and `fixMode()` falls through to the first sub-mode the lesson actually has.
   `scripts/convert_texts.py` normalizes them into `src/data/texts/{series}-{unit}.json` (+ `texts/meta.json`),
   lazy-loaded via `src/data/texts.js` (its own `import.meta.glob`, kept in a subfolder so the flashcard
   glob never picks it up). Each text carries: `original` (dialogue), `vocab` (numbered-blank cloze +
@@ -112,8 +118,9 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   a line isn't glossed yet). Pinyin is tone-marked (与闪卡一致, colored via `colorPinyin`). TextView shows
   two off-by-default 拼音/En reveal pills in 读原文 (only when that text has gloss). Roll out to more units
   by appending rows to the TSV (dedup is automatic — identical lines across courses share one entry) and
-  re-running `npm run convert`. **All 11 课文 units are now fully glossed** (2609 of 2611 lines; the 2
-  gaps are newhsk3-2 lines that are literally 「……」 in the textbook). None of the xlsx carry 拼音/英文
+  re-running `npm run convert`. **11 of 14 课文 units are fully glossed** (2609 of 2611 lines; the 2
+  gaps are newhsk3-2 lines that are literally 「……」 in the textbook). **hsk-4 (402 lines) and hsk-5/6
+  (215 + 368 essay paragraphs) have no gloss yet** — their pills simply stay hidden. None of the xlsx carry 拼音/英文
   columns for newhsk3-4 — its 371 lines were authored into the TSV by hand. `hasPy`/`hasEn` are computed
   per text in the component (`lines.some(l => l.py)`), not stored, so the pills appear as soon as a
   line is glossed. **Do NOT bulk-generate this pinyin with pypinyin** — it splits per character rather
@@ -164,26 +171,26 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   the data** (`t.hasPy`/`t.hasEn`), so there are no dead toggles. 生词挖空 tiles still get py/en from the flashcard
   wordmap where a cloze answer is a flashcard word. One text = one 会话 (对话); a 课次 has ~2–4 会话 → ~2–4 「课文 N」
   in the picker. 课次 1–8 == our lesson num, matching the flashcard units. Coverage: huihua360-1..4, all 8 lessons each.
-- **语法 (Grammar) data is generated too.** Sources = the ten `sources/*_语法主表.xlsx` (HSK1–5 +
+- **语法 (Grammar) data is generated too.** Sources = the eleven `sources/*_语法主表.xlsx` (HSK1–6 +
   新HSK3.0 第一/二/三册 + 第四册上/下) **plus five `sources/*_语法零基础版.xlsx`** (HSK1/2 + 新HSK3.0 第一/二/三册).
   The 零基础 files are an enriched rewrite of the SAME point sets (counts match exactly), adding pinyin to
   every example and an English gloss to 基本结构 — both packed into one cell separated by a **newline**,
   split by `split_bilingual()` into `examples[].py` and `structureEn`. Version choice is made per BOOK
   (filename minus the 类型 suffix), not per unit, so 第四册上 getting a 零基础版 later won't knock out 第四册下.
-  hsk-3/4/5 and newhsk3-4 have no 零基础版, so those two fields come from **hand-authored TSVs** instead:
-  `scripts/grammar_structure_en.tsv` (331 结构英文) and `scripts/grammar_example_pinyin.tsv` (990 例句拼音),
+  hsk-3/4/5/6 and newhsk3-4 have no 零基础版, so those two fields come from **hand-authored TSVs** instead:
+  `scripts/grammar_structure_en.tsv` (431 结构英文) and `scripts/grammar_example_pinyin.tsv` (1289 例句拼音),
   both 中文<TAB>译文, loaded by `load_zh_en_tsv()` and used **only as a fallback** — a 零基础版's own values
-  always win. Every point now has structureEn and every example has pinyin (575 points / 1725 examples).
+  always win. Every point now has structureEn and every example has pinyin (675 points / 2025 examples).
   Same rule as 课文: do NOT bulk-generate this pinyin with pypinyin (per-character, no sandhi, no capitals,
   wrong readings like 谁 shuí / 参加 shēnjiā / 行不通 háng). It was written by hand and then cross-checked
-  syllable-by-syllable against pypinyin, reviewing all 440 disagreements — the script for that lives
+  syllable-by-syllable against pypinyin, reviewing every disagreement (440 for hsk-3/4/5 + newhsk3-4, 157 for hsk-6) — the script for that lives
   nowhere, but the check is: normalise both to a letters-only string and diff. `scripts/convert_grammar.py` reads each file's first sheet (「语法总表」/「语法语言点总表」,
   one row per grammar point keyed by 课次 = our lesson `num`), grouping points by lesson into
   `src/data/grammar/{series}-{unit}.json` (+ `grammar/meta.json`), lazy-loaded via `src/data/grammar.js`
   (own `import.meta.glob("./grammar/*-*.json")`, dash pattern excludes meta). Run:
   `uv run --with openpyxl python3 scripts/convert_grammar.py`. Each point: `{ id, name, pinyin, type,
   tier?(HSK4), explainEn, structure, structureEn?, examples:[{zh,en,py?}], exercises:[{q,a}], note, source }`.
-  Coverage: hsk-1..5 + newhsk3-1..4 (575 points, 711 of them with example pinyin); other series/units
+  Coverage: hsk-1..6 + newhsk3-1..4 (675 points); other series/units
   gracefully show placeholders. Two bilingual
   fields are hand-authored inside `convert_grammar.py` and merged at build time: `noteEn` (English for each
   中文 备注, from `scripts/grammar_note_en.tsv`) and `typeEn` (English for each 语法类型, from the in-script

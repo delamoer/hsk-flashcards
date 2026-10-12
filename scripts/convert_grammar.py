@@ -108,6 +108,18 @@ TYPE_EN = {
     "介词/动词": "Preposition / Verb",
     "关联副词": "Correlative adverb", "数量结构": "Quantity structure",
     "比较结构": "Comparison structure", "语气副词": "Modal adverb",
+    # HSK6
+    "介词/构词成分": "Preposition / Word-forming element", "兼语/动词": "Pivot verb",
+    "列举/代称": "Listing labels", "副词/条件结构": "Adverb / Conditional",
+    "副词/能愿用法": "Adverb / Modal use", "动词/书面否定": "Verb / Formal negation",
+    "动词/固定用法": "Verb / Set usage", "动词/比喻词": "Verb / Simile word",
+    "动词/连词": "Verb / Conjunction", "助词结构": "Particle structure",
+    "反问/推测结构": "Rhetorical / Guessing", "名词": "Noun",
+    "名词/动词/介词": "Noun / Verb / Preposition", "固定用法": "Set usage",
+    "复句结构": "Complex sentence", "形式动词": "Dummy verb", "插入语": "Parenthetical",
+    "状态形容词": "Vivid adjective", "目的连词": "Purpose conjunction", "结构": "Structure",
+    "让步/列举结构": "Concessive / Listing", "词汇/语体": "Vocabulary / Register",
+    "连接语": "Linking phrase",
 }
 
 # 练习指令前缀 中→英 (so beginners can understand the task). Keyed by the text before "：".
