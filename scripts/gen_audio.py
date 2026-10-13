@@ -20,6 +20,8 @@ from pathlib import Path
 
 import edge_tts
 
+import edge_tts_compat  # noqa: F401  — endpoint / IPv4 / CA fixes, see that file
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "src" / "data"
 # Audio lives outside the Vite build (uploaded to Supabase Storage, not shipped in dist).

@@ -118,9 +118,12 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   a line isn't glossed yet). Pinyin is tone-marked (与闪卡一致, colored via `colorPinyin`). TextView shows
   two off-by-default 拼音/En reveal pills in 读原文 (only when that text has gloss). Roll out to more units
   by appending rows to the TSV (dedup is automatic — identical lines across courses share one entry) and
-  re-running `npm run convert`. **11 of 14 课文 units are fully glossed** (2609 of 2611 lines; the 2
-  gaps are newhsk3-2 lines that are literally 「……」 in the textbook). **hsk-4 (402 lines) and hsk-5/6
-  (215 + 368 essay paragraphs) have no gloss yet** — their pills simply stay hidden. None of the xlsx carry 拼音/英文
+  re-running `npm run convert`. **All 14 课文 units are fully glossed** (3594 of 3596 lines; the 2
+  gaps are newhsk3-2 lines that are literally 「……」 in the textbook). hsk-5/6 lines are whole essay
+  paragraphs (one TSV row each, up to ~300 chars); their speaker-like prefixes (记者：/乔布斯：) are part
+  of the text and are glossed too. hsk-4/5/6 (985 lines) were hand-written in Oct 2026 and cross-checked
+  against pypinyin the same way as the grammar pinyin. Idioms are written as two words
+  (`chéngqiān shàngwàn`), not hyphenated; approximate numbers keep the hyphen (`qī-bā`). None of the xlsx carry 拼音/英文
   columns for newhsk3-4 — its 371 lines were authored into the TSV by hand. `hasPy`/`hasEn` are computed
   per text in the component (`lines.some(l => l.py)`), not stored, so the pills appear as soon as a
   line is glossed. **Do NOT bulk-generate this pinyin with pypinyin** — it splits per character rather
