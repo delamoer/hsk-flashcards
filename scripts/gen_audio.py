@@ -162,6 +162,11 @@ async def generate(texts: list[str], manifest: dict, concurrency: int = 8) -> in
     for text in texts:
         filename = text_hash(text) + ".mp3"
         output = AUDIO_DIR / filename
+        # A failed synthesis leaves a 0-byte file behind (edge-tts opens it before
+        # connecting); never count that as done, or it ships as silent audio.
+        if output.exists() and output.stat().st_size == 0:
+            output.unlink()
+            manifest.pop(text, None)
         if text in manifest or output.exists():
             if text not in manifest:
                 manifest[text] = filename  # repair manifest for orphaned files
@@ -179,6 +184,7 @@ async def generate(texts: list[str], manifest: dict, concurrency: int = 8) -> in
             try:
                 await synthesize(text, output)
             except Exception as e:
+                output.unlink(missing_ok=True)  # don't leave a partial file to be mistaken for done
                 async with lock:
                     print(f"  ✗ skip '{text}' ({e.__class__.__name__})")
                 return

@@ -45,9 +45,9 @@ def ca_bundle():
 VERIFY = ca_bundle()
 
 
-async def list_existing(client: httpx.AsyncClient) -> set[str]:
-    """List all object names already in the bucket (paginated)."""
-    names: set[str] = set()
+async def list_existing(client: httpx.AsyncClient) -> dict[str, int]:
+    """List all objects already in the bucket (paginated): name → size in bytes."""
+    names: dict[str, int] = {}
     offset = 0
     page = 1000
     while True:
@@ -61,7 +61,8 @@ async def list_existing(client: httpx.AsyncClient) -> set[str]:
         batch = r.json()
         if not batch:
             break
-        names.update(item["name"] for item in batch)
+        for item in batch:
+            names[item["name"]] = int((item.get("metadata") or {}).get("size") or -1)
         if len(batch) < page:
             break
         offset += page
@@ -99,9 +100,14 @@ async def main():
         existing = await list_existing(client)
         print(f"  {len(existing)} already in bucket")
 
-        # Always re-upload manifest (it changes); skip mp3s already present.
-        todo = [f for f in files if f.name == "manifest.json" or f.name not in existing]
-        print(f"Uploading {len(todo)} files ({len(files) - len(todo)} skipped)…")
+        # Always re-upload manifest (it changes); skip mp3s already present with the
+        # same size. Comparing size (not just name) re-sends files that were uploaded
+        # broken — e.g. 0-byte leftovers of a failed synthesis, regenerated under the
+        # same md5 name.
+        stale = [f for f in files if f.name in existing and existing[f.name] != f.stat().st_size
+                 and f.name != "manifest.json"]
+        todo = [f for f in files if f.name == "manifest.json" or existing.get(f.name) != f.stat().st_size]
+        print(f"Uploading {len(todo)} files ({len(files) - len(todo)} skipped, {len(stale)} replacing a different-size copy)…")
 
         sem = asyncio.Semaphore(CONCURRENCY)
         done = 0
