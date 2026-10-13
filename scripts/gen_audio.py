@@ -63,6 +63,12 @@ async def synthesize(text: str, path: Path, retries: int = 3):
                 raise
 
 
+def example_speech(zh: str) -> str:
+    """Two-line exchange examples ("A：…B：…") are spoken without the A/B labels —
+    FlashCard's speechOf() strips them the same way before looking up the manifest."""
+    return zh.replace("A：", "").replace("B：", "")
+
+
 def collect_texts(series: str, unit: int, lesson_num: int | None) -> list[str]:
     """Return unique Chinese texts (words + examples) for the given scope."""
     data_file = DATA_DIR / f"{series}-{unit}.json"
@@ -77,7 +83,7 @@ def collect_texts(series: str, unit: int, lesson_num: int | None) -> list[str]:
         if lesson_num is not None and lesson["num"] != lesson_num:
             continue
         for word in lesson["words"]:
-            for t in [word["hanzi"]] + [ex["zh"] for ex in word.get("examples", []) if ex.get("zh")]:
+            for t in [word["hanzi"]] + [example_speech(ex["zh"]) for ex in word.get("examples", []) if ex.get("zh")]:
                 if t not in seen:
                     seen.add(t)
                     texts.append(t)
@@ -151,7 +157,7 @@ def collect_all_texts() -> list[str]:
             continue
         for lesson in data["lessons"]:
             for word in lesson["words"]:
-                for t in [word["hanzi"]] + [ex["zh"] for ex in word.get("examples", []) if ex.get("zh")]:
+                for t in [word["hanzi"]] + [example_speech(ex["zh"]) for ex in word.get("examples", []) if ex.get("zh")]:
                     if t not in seen:
                         seen.add(t)
                         texts.append(t)

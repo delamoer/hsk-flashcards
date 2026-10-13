@@ -73,5 +73,15 @@
   "lessonCount": 36,
   "wordCount": 640,
   "idPrefix": "survival-1-"
+ },
+ "kouyu-1": {
+  "lessonCount": 16,
+  "wordCount": 290,
+  "idPrefix": "kouyu-1-"
+ },
+ "kouyu-2": {
+  "lessonCount": 16,
+  "wordCount": 323,
+  "idPrefix": "kouyu-2-"
  }
 }

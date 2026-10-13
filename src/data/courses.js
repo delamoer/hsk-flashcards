@@ -143,6 +143,39 @@ export const COURSE_REGISTRY = [
       { id: 1, label: "生存汉语", available: true },
     ],
   },
+  {
+    id: "kouyu",
+    name: "新时代汉语口语",
+    nameEn: "Spoken Chinese for a New Era",
+    gradA: "#3e5f8a",
+    gradB: "#243a57",
+    theme: {
+      "--primary": "#3e5f8a",
+      "--primary-active": "#355178",
+      "--primary-strong": "#243a57",
+      "--primary-soft": "#dbe3ee",
+      "--grad-a": "#3e5f8a",
+      "--grad-b": "#243a57",
+      "--sh-hover": "0 10px 28px rgba(62, 95, 138, 0.2)",
+      "--sh-front": "0 8px 24px rgba(62, 95, 138, 0.3)",
+    },
+    seal: { cn: "口", en: "语" },
+    seriesColor: "#3e5f8a",
+    colorClass: "c-indigo",
+    kicker: "Spoken Chinese · Campus Life in China",
+    heroTitle: "新时代汉语口语",
+    heroSub: "留学生活 · 开口说中文",
+    heroEn: "Speak up in everyday campus life",
+    desc: "留学生活 · 开口说中文",
+    descEn: "Speak up in everyday campus life",
+    volUnit: "Books",
+    levelWord: "初级",
+    // lvl: 书封大字（默认是册号）
+    units: [
+      { id: 1, label: "初级上", lvl: "上", available: true },
+      { id: 2, label: "初级下", lvl: "下", available: true },
+    ],
+  },
 ];
 
 export function getSeries(seriesId) {

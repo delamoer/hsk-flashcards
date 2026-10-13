@@ -33,43 +33,12 @@
 
       <!-- ── 01 教材 ─────────────────────────────────── -->
       <section class="sec s-books">
-        <div class="sec-bg is-band" :style="bandPanel(seriesBand.hsk)" aria-hidden="true"></div>
-        <img class="sec-motif cranes" :src="motifCranes" alt="" aria-hidden="true" />
-        <div class="sec-side">
-          <div class="num">01</div>
-          <div class="sec-title">教材<span class="en">TEXTBOOKS</span></div>
-          <p class="sec-desc">选择适合你的中文学习教材<span class="en">Choose the right Chinese textbook — find the best learning path.</span></p>
-          <router-link class="sec-cta" to="/courses">浏览教材 Browse <span class="ar">→</span></router-link>
-        </div>
-        <div class="books-scroll">
-          <div class="books-track">
-            <div
-              v-for="s in seriesList"
-              :key="s.id"
-              class="book"
-              :style="{ '--sc': s.seriesColor }"
-              role="link"
-              tabindex="0"
-              @click="pick(s)"
-              @keyup.enter="pick(s)"
-            >
-              <div class="cover"><img :src="bookCover[s.id]" :alt="s.heroTitle" loading="lazy" /></div>
-              <div class="band">
-                <span class="bseal">{{ s.seal.cn }}</span>
-                <span class="btxt"><b>{{ s.heroTitle }}</b><i>{{ s.nameEn }}</i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <aside class="sec-list">
-          <div class="list-scroll">
-            <router-link v-for="s in seriesList" :key="s.id" class="li" :to="s.single ? `/course/${s.id}/${s.units[0].id}` : `/course/${s.id}`">
-              <span class="dot" :style="{ background: s.seriesColor }"></span>
-              <span class="lz">{{ s.heroTitle }}</span>
-              <span class="le">{{ s.nameEn }}</span>
-            </router-link>
-          </div>
-        </aside>
+        <TextbookCarousel :list="seriesList">
+          <template #head>
+            <div class="num">01</div>
+            <div class="sec-title">教材<span class="en">TEXTBOOKS</span></div>
+          </template>
+        </TextbookCarousel>
       </section>
 
       <!-- ── 02 拼音 ─────────────────────────────────── -->
@@ -148,11 +117,10 @@
 </template>
 
 <script setup>
-import { useRouter } from "vue-router";
 import { courseRegistry } from "@/data";
-import { heroMain, bookCover, seriesBand, motifPlum, motifPlum2, motifCloud, motifCranes, motifSeals, motifMountainFar, motifBoat, motifRock } from "@/assets/img.js";
+import TextbookCarousel from "@/components/TextbookCarousel.vue";
+import { heroMain, seriesBand, motifPlum, motifPlum2, motifCloud, motifCranes, motifSeals, motifMountainFar, motifBoat, motifRock } from "@/assets/img.js";
 
-const router = useRouter();
 const seriesList = courseRegistry;
 
 // 整块面板嵌入 band 山水：左浓右淡横向 scrim（护文字）+ 顶底轻纱，图在最底。
@@ -177,10 +145,6 @@ const sampleWords = [
   { zh: "文化", py: "wén huà", en: "culture" },
 ];
 
-function pick(s) {
-  if (s.single) router.push(`/course/${s.id}/${s.units[0].id}`);
-  else router.push(`/course/${s.id}`);
-}
 function bg(img) {
   return { backgroundImage: `url(${img})` };
 }
@@ -221,8 +185,9 @@ function bg(img) {
 .brk { display: none; }
 
 /* ── Section 卡片面板 ─────────────────── */
-.sec { position: relative; margin: 26px 0; border-radius: 16px; border: 1px solid var(--line); background: linear-gradient(165deg, #fbf7ee, #f3ead9); box-shadow: 0 16px 38px -24px rgba(45,30,10,.55); overflow: hidden; display: grid; align-items: stretch; }
-.sec.s-books { grid-template-columns: 236px 1fr 214px; }
+/* 三个板块统一高度：以「01 教材」3D 书架所需的高度为准（--sec-h），其余板块内容垂直居中 */
+.sec { --sec-h: 400px; min-height: var(--sec-h); position: relative; margin: 26px 0; border-radius: 16px; border: 1px solid var(--line); background: linear-gradient(165deg, #fbf7ee, #f3ead9); box-shadow: 0 16px 38px -24px rgba(45,30,10,.55); overflow: hidden; display: grid; align-items: stretch; }
+.sec.s-books { grid-template-columns: minmax(0, 1fr); }
 .sec.s-media { grid-template-columns: 236px minmax(0, 1fr); }
 .sec > *:not(.sec-bg):not(.sec-motif) { position: relative; z-index: 1; }
 /* 整块面板嵌入的 band 山水（scrim 已在内联渐变里，护住文字） */
@@ -247,28 +212,6 @@ function bg(img) {
 .sec-cta:hover .ar { transform: translateX(3px); }
 
 /* 01 教材 —— 书封横向滚动 + 右列纵向滚动 */
-.books-scroll { align-self: center; overflow-x: auto; overflow-y: hidden; padding: 26px 8px 26px 0; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
-.books-track { display: flex; gap: 16px; width: max-content; }
-.book { flex: 0 0 148px; cursor: pointer; border-radius: 4px 8px 8px 4px; overflow: hidden; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 8px 20px -12px rgba(45,30,10,.4); transition: transform .28s cubic-bezier(.2,.7,.3,1), box-shadow .28s; }
-.book:hover { transform: translateY(-6px); box-shadow: 0 18px 32px -16px rgba(45,30,10,.5); }
-.book .cover { aspect-ratio: 3 / 4; overflow: hidden; position: relative; }
-.book .cover::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 8px; z-index: 2; background: linear-gradient(90deg, rgba(0,0,0,.28), rgba(255,255,255,.14)); }
-.book .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.book .band { display: flex; align-items: center; gap: 8px; padding: 9px 10px; background: linear-gradient(145deg, var(--sc), color-mix(in srgb, var(--sc) 65%, #000)); color: #fff8ec; }
-.book .bseal { flex: 0 0 auto; width: 24px; height: 24px; border-radius: 5px; display: grid; place-items: center; font-family: var(--serif-cn); font-weight: 900; font-size: 14px; background: rgba(255,248,236,.16); box-shadow: inset 0 0 0 1px rgba(255,248,236,.5); }
-.book .btxt { min-width: 0; line-height: 1.15; }
-.book .btxt b { font-family: var(--serif-cn); font-weight: 700; font-size: 13px; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.book .btxt i { font-family: var(--serif-en); font-style: italic; font-size: 10px; opacity: .9; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-.sec-list { align-self: stretch; border-left: 1px solid var(--line-soft); padding: 22px 22px 22px 20px; background: linear-gradient(90deg, rgba(250,245,236,.3), rgba(250,245,236,.72)); }
-.list-scroll { max-height: 244px; overflow-y: auto; scrollbar-width: thin; }
-.sec-list .li { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 6px 9px; padding: 9px 4px 9px 0; border-bottom: 1px dashed var(--line-soft); transition: .2s; }
-.sec-list .li:last-child { border-bottom: none; }
-.sec-list .li:hover { padding-left: 4px; }
-.sec-list .li:hover .lz { color: var(--cinnabar-dk); }
-.sec-list .dot { width: 7px; height: 7px; border-radius: 50%; grid-row: span 2; }
-.sec-list .lz { font-family: var(--serif-cn); font-weight: 600; font-size: 14px; color: var(--ink); transition: .2s; }
-.sec-list .le { grid-column: 2; font-family: var(--serif-en); font-style: italic; font-size: 11px; color: var(--muted); }
 
 /* 02/03 预览（无边框，坐落卡面上） */
 .preview { align-self: center; padding: 26px 24px; }
@@ -329,9 +272,6 @@ function bg(img) {
   .brk { display: inline; }
   .sec.s-books, .sec.s-media { grid-template-columns: 1fr; }
   .sec-side { align-self: start; padding: 24px 24px 4px; }
-  .books-scroll { padding: 8px 24px 24px; }
-  .sec-list { border-left: none; border-top: 1px solid var(--line-soft); padding: 16px 24px 22px; }
-  .list-scroll { max-height: none; }
   .preview { padding: 6px 24px 24px; max-width: none; }
   .mw-preview { grid-template-columns: 1fr; }
 }

@@ -170,6 +170,23 @@ SOURCES = [
                 "hanzi": 3, "pinyin": 4, "meaning": 5,
                 "type": None, "note": 10, "ex": [(6, 7), (8, 9)], "colloc": 11},
     },
+    # 新时代汉语口语 初级上/下 — 16 lessons each. The 备注 column is editorial
+    # ("上册·课文词语表｜PDF第13页｜…"), so it's read only as the type (课文词语 = core,
+    # 拓展词语 = supplement) and never shown as a note.
+    {
+        "series": "kouyu", "unit": 1,
+        "file": "sources/新时代汉语口语_初级上_词汇闪卡表.xlsx", "sheet": "新时代汉语口语词汇表",
+        "col": {"lesson": 1, "lesson_key": None, "title": 2,
+                "hanzi": 3, "pinyin": 4, "meaning": 5,
+                "type": 10, "note": None, "ex": [(6, 7), (8, 9)]},
+    },
+    {
+        "series": "kouyu", "unit": 2,
+        "file": "sources/新时代汉语口语_初级下_词汇闪卡表.xlsx", "sheet": "新时代汉语口语词汇表",
+        "col": {"lesson": 1, "lesson_key": None, "title": 2,
+                "hanzi": 3, "pinyin": 4, "meaning": 5,
+                "type": 10, "note": None, "ex": [(6, 7), (8, 9)]},
+    },
 ]
 
 # English lesson titles: {series: {unit: {lesson_num: "title"}}}
@@ -433,6 +450,29 @@ TITLES_EN = {
             39: "Chinese Zodiac (12 Animals)",
         },
     },
+    "kouyu": {
+        1: {
+            1: "Are You an International Student Too?", 2: "What Should I Do?",
+            3: "Who Is This Little Girl?", 4: "Let's Listen to Jay Chou's Songs",
+            5: "Wuhan Is a Great Place", 6: "Could You Keep It Down a Bit?",
+            7: "Let's Talk About It Later", 8: "Help Me Review Chinese Characters",
+            9: "Don't Be Sad", 10: "I Want to Get a Puppy",
+            11: "Exchange It for a New One", 12: "What's Wrong? Where Does It Hurt?",
+            13: "Do You Like Playing Soccer?", 14: "Sorry, I'm Late",
+            15: "How Does Your Country Celebrate New Year?", 16: "What Are Your Plans?",
+        },
+        2: {
+            1: "Meeting New Classmates", 2: "Live On Campus or Off Campus?",
+            3: "I Eat at the Cafeteria Every Day",
+            4: "I'd Like to Borrow The Travels of Marco Polo",
+            5: "Just Pay with Your Phone", 6: "Let's Climb the Great Wall This Weekend",
+            7: "Comfort or Beauty?", 8: "Do You Want to Join a Club?",
+            9: "We Came in Second", 10: "Visiting a New Village",
+            11: "I'll Pick the Stars for You", 12: "I'm Taking the High-Speed Train to Yangzhou",
+            13: "Come Visit My Hometown", 14: "Qingqing's Family Courtyard House",
+            15: "Do You Know Jianzhen?", 16: "I'm Doing an Internship Over the Break",
+        },
+    },
 }
 
 # Chinese title overrides — used when the xlsx contains placeholder text.
@@ -470,6 +510,11 @@ def classify_type(raw):
     if raw is None:
         return None
     s = str(raw).lower()
+    # 新时代汉语口语 备注 — checked first: it also says "教学补充" about the examples
+    if "课文词语" in s:
+        return "core"
+    if "拓展词语" in s:
+        return "supplement"
     if "core" in s:
         return "core"
     if "supplement" in s or "补充" in s:

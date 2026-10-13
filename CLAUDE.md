@@ -10,8 +10,12 @@ It began as a pure flashcard app and is now a **lesson-centric** learning platfo
 the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
 
 **Information architecture — four levels** (see `design-demos/direction-approved.md`):
-1. **课程总览 Library** (`/`, `LibraryView.vue`) — pick a course series (书函卡): 标准HSK / 新HSK3.0 /
-   会话360 / 生存汉语. (A series may set `single:true` to jump straight to its lessons, skipping 选册;
+1. **课程总览 Library** (`/`, `LibraryView.vue`) — its 「01 教材」 section is `TextbookCarousel.vue`: a 3D coverflow
+   shelf + ink-wash background swap, driven entirely by `courseRegistry` (no per-course code; a series without a
+   cover / band image falls back to a series-color cover / wash; >7 series swaps the dots for a 「03 / 12」 counter).
+   All home sections share one height (`--sec-h` on `.sec`, sized for the shelf) — raise it rather than squeezing
+   the shelf. Pick a course series (书函卡): 标准HSK / 新HSK3.0 /
+   会话360 / 生存汉语 / 新时代汉语口语. (A series may set `single:true` to jump straight to its lessons, skipping 选册;
    currently none do — 生存汉语 is now a normal multi-book series with one book so far.)
 2. **选册/级 Books** (`/course/:series`, `SeriesBooksView.vue`) — series-specific 门面 hero + book/level
    covers (its units). Per-series accent color from `courses.js`.
@@ -65,7 +69,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 - **Data is generated, not hand-written.** Source of truth = the xlsx files in `sources/`, named
   **`{系列}_{册}_{类型}.xlsx`** so a series' branches sort together and a missing branch is obvious at a
   glance. 系列/册: `HSK{1..6}` · `新HSK3.0_第{一,二,三}册` + `新HSK3.0_第四册{上,下}`（教材第四册分上下两本，站内合为一册）·
-  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `汉语拼音`. 类型 (exactly six): `词汇闪卡表` ·
+  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `汉语拼音`. 类型 (exactly six): `词汇闪卡表` ·
   `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6）· `语法主表` · `语法零基础版` · `聊天问题`. **Keep this convention when adding a book** —
   the grammar/discussion converters map filename → (series, unit) by regex and **silently skip** a name
   they don't recognize. **Several books may map to ONE unit** (新HSK3.0 第四册上 = 课次1–10, 第四册下 =
@@ -83,6 +87,12 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   生存汉语 (`survival`) series carries it (from its xlsx col "最常见词语搭配"); FlashCard shows it as a
   compact row on the card back (`.collocs`), hidden for words without it. Add a per-course extra column via
   `col.colloc` in `convert.py`'s SOURCES.
+  **新时代汉语口语 (`kouyu`)**: its 备注 column is editorial ("上册·课文词语表｜PDF第13页｜…") — read only as
+  the core/supplement type (课文词语/拓展词语, `classify_type`), never shown as a note. Its 例句2 was rewritten by
+  hand in Oct 2026 (the source's were pronoun-swapped copies of 例句1) and many are two-line exchanges
+  `A：…B：…`: FlashCard renders one line per turn (`turns()`) and speaks them with the A/B labels stripped
+  (`speechOf()`); `gen_audio.py`'s `example_speech()` strips them the same way so the manifest key matches.
+  A unit can set `lvl` in `courses.js` to override the book-cover numeral (kouyu shows 上/下).
 - **词性 (part of speech) is hand-curated, not in the xlsx.** `scripts/pos.tsv` (`hanzi<TAB>code`) is
   the source of truth — ~4700 words tagged by hand (codes: `n v mv a adv pron num mw prep conj part
   intj idiom`; bilingual labels in `src/data/pos.js`). `convert.py` reads it and sets each word's `pos`

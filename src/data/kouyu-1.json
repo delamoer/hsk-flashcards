@@ -1,0 +1,5918 @@
+{
+ "series": "kouyu",
+ "unit": 1,
+ "lessons": [
+  {
+   "num": 1,
+   "title": "你也是留学生吗？",
+   "titleEn": "Are You an International Student Too?",
+   "words": [
+    {
+     "id": "kouyu-1-l1-1",
+     "num": 1,
+     "hanzi": "遇到",
+     "pinyin": "yùdào",
+     "meaning": "come across",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我昨天在商店遇到了朋友。",
+       "en": "I ran into a friend at the store yesterday."
+      },
+      {
+       "zh": "你在中国遇到过什么问题吗？",
+       "en": "Have you run into any problems in China?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-2",
+     "num": 2,
+     "hanzi": "留学生",
+     "pinyin": "liúxuéshēng",
+     "meaning": "student studying abroad",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们班有十个留学生。",
+       "en": "There are ten international students in our class."
+      },
+      {
+       "zh": "留学生宿舍在食堂旁边。",
+       "en": "The international student dorm is next to the cafeteria."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-3",
+     "num": 3,
+     "hanzi": "中文",
+     "pinyin": "Zhōngwén",
+     "meaning": "Chinese language",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天学习中文。",
+       "en": "I study Chinese every day."
+      },
+      {
+       "zh": "你的中文说得真好！",
+       "en": "Your Chinese is really good!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-4",
+     "num": 4,
+     "hanzi": "学院",
+     "pinyin": "xuéyuàn",
+     "meaning": "institute",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在中文学院学习。",
+       "en": "I study at the School of Chinese Studies."
+      },
+      {
+       "zh": "A：你是哪个学院的？B：我是外语学院的。",
+       "en": "A: Which school are you in? B: I'm in the School of Foreign Languages."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-5",
+     "num": 5,
+     "hanzi": "新生",
+     "pinyin": "xīnshēng",
+     "meaning": "new student",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她是今年的新生。",
+       "en": "She is a new student this year."
+      },
+      {
+       "zh": "新生明天上午去学院报到。",
+       "en": "New students register at the school tomorrow morning."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-6",
+     "num": 6,
+     "hanzi": "咱们",
+     "pinyin": "zánmen",
+     "meaning": "we; us",
+     "pos": "pron",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "咱们一起去吃饭吧。",
+       "en": "Let's go eat together."
+      },
+      {
+       "zh": "咱们是同学，别客气！",
+       "en": "We're classmates—don't be so polite!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-7",
+     "num": 7,
+     "hanzi": "啊",
+     "pinyin": "à",
+     "meaning": "ah; aha (sudden realization)",
+     "pos": "part",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "啊，我明白了！",
+       "en": "Ah, I understand!"
+      },
+      {
+       "zh": "啊，原来你也是留学生！",
+       "en": "Ah, so you're an international student too!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-8",
+     "num": 8,
+     "hanzi": "以为",
+     "pinyin": "yǐwéi",
+     "meaning": "to think or assume (often mistakenly)",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我以为你今天不上课。",
+       "en": "I thought you didn't have class today."
+      },
+      {
+       "zh": "我以为他是中国人，原来他是日本人。",
+       "en": "I thought he was Chinese, but it turns out he's Japanese."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-9",
+     "num": 9,
+     "hanzi": "意大利",
+     "pinyin": "Yìdàlì",
+     "meaning": "Italy",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我朋友来自意大利。",
+       "en": "My friend comes from Italy."
+      },
+      {
+       "zh": "A：你去过意大利吗？B：去过，我很喜欢意大利菜。",
+       "en": "A: Have you been to Italy? B: Yes, I love Italian food."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-10",
+     "num": 10,
+     "hanzi": "法国",
+     "pinyin": "Fǎguó",
+     "meaning": "France",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她去年去了法国。",
+       "en": "She went to France last year."
+      },
+      {
+       "zh": "法国菜很有名。",
+       "en": "French food is famous."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-11",
+     "num": 11,
+     "hanzi": "室友",
+     "pinyin": "shìyǒu",
+     "meaning": "roommate",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的室友很友好。",
+       "en": "My roommate is very friendly."
+      },
+      {
+       "zh": "A：你的室友是哪国人？B：他是韩国人。",
+       "en": "A: Where is your roommate from? B: He's Korean."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-12",
+     "num": 12,
+     "hanzi": "见面",
+     "pinyin": "jiànmiàn",
+     "meaning": "meet",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们明天见面吧。",
+       "en": "Let's meet tomorrow."
+      },
+      {
+       "zh": "我们在哪儿见面？",
+       "en": "Where shall we meet?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-13",
+     "num": 13,
+     "hanzi": "加",
+     "pinyin": "jiā",
+     "meaning": "add",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请加一下我的微信。",
+       "en": "Please add me on WeChat."
+      },
+      {
+       "zh": "A：我能加你微信吗？B：当然可以。",
+       "en": "A: Can I add you on WeChat? B: Of course."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-14",
+     "num": 14,
+     "hanzi": "微信",
+     "pinyin": "Wēixìn",
+     "meaning": "WeChat",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我用微信和朋友聊天。",
+       "en": "I chat with friends on WeChat."
+      },
+      {
+       "zh": "在中国，大家都用微信付钱。",
+       "en": "In China, everyone pays with WeChat."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l1-15",
+     "num": 15,
+     "hanzi": "俄罗斯",
+     "pinyin": "Èluósī",
+     "meaning": "Russia",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她来自俄罗斯。",
+       "en": "She comes from Russia."
+      },
+      {
+       "zh": "俄罗斯的冬天很冷。",
+       "en": "Winters in Russia are very cold."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "怎么办？",
+   "titleEn": "What Should I Do?",
+   "words": [
+    {
+     "id": "kouyu-1-l2-1",
+     "num": 1,
+     "hanzi": "地铁",
+     "pinyin": "dìtiě",
+     "meaning": "subway",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天坐地铁上学。",
+       "en": "I take the subway to school every day."
+      },
+      {
+       "zh": "A：地铁站在哪儿？B：前边就是。",
+       "en": "A: Where's the subway station? B: It's just up ahead."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-2",
+     "num": 2,
+     "hanzi": "大巴",
+     "pinyin": "dàbā",
+     "meaning": "bus",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们坐大巴去机场。",
+       "en": "We take a shuttle bus to the airport."
+      },
+      {
+       "zh": "学校的大巴几点出发？",
+       "en": "What time does the school bus leave?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-3",
+     "num": 3,
+     "hanzi": "或者",
+     "pinyin": "huòzhě",
+     "meaning": "or",
+     "pos": "conj",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你想喝茶或者咖啡？",
+       "en": "Would you like tea or coffee?"
+      },
+      {
+       "zh": "周末我在宿舍看书，或者去打球。",
+       "en": "On weekends I read in my dorm or go play ball."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-4",
+     "num": 4,
+     "hanzi": "种",
+     "pinyin": "zhǒng",
+     "meaning": "kind; type (measure word)",
+     "pos": "mw",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里有三种水果。",
+       "en": "There are three kinds of fruit here."
+      },
+      {
+       "zh": "你喜欢哪种音乐？",
+       "en": "What kind of music do you like?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-5",
+     "num": 5,
+     "hanzi": "线",
+     "pinyin": "xiàn",
+     "meaning": "line",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请坐地铁五号线。",
+       "en": "Please take subway Line 5."
+      },
+      {
+       "zh": "A：去火车站坐几号线？B：坐二号线。",
+       "en": "A: Which line goes to the train station? B: Take Line 2."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-6",
+     "num": 6,
+     "hanzi": "查",
+     "pinyin": "chá",
+     "meaning": "search",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想查一下地图。",
+       "en": "I want to check the map."
+      },
+      {
+       "zh": "你可以在手机上查一下天气。",
+       "en": "You can check the weather on your phone."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-7",
+     "num": 7,
+     "hanzi": "换",
+     "pinyin": "huàn",
+     "meaning": "change",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们在这里换地铁。",
+       "en": "We change subway lines here."
+      },
+      {
+       "zh": "这件衣服太大了，我想换一件。",
+       "en": "This shirt is too big; I'd like to exchange it."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-8",
+     "num": 8,
+     "hanzi": "先",
+     "pinyin": "xiān",
+     "meaning": "first",
+     "pos": "adv",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们先吃饭，再学习。",
+       "en": "Let's eat first and study afterward."
+      },
+      {
+       "zh": "你先走吧，我马上来。",
+       "en": "You go ahead first; I'll be right there."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-9",
+     "num": 9,
+     "hanzi": "然后",
+     "pinyin": "ránhòu",
+     "meaning": "then; after that",
+     "pos": "conj",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我先做作业，然后睡觉。",
+       "en": "I do my homework first and then go to sleep."
+      },
+      {
+       "zh": "一直往前走，然后往左拐。",
+       "en": "Go straight ahead, then turn left."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-10",
+     "num": 10,
+     "hanzi": "感谢",
+     "pinyin": "gǎnxiè",
+     "meaning": "appreciate",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "非常感谢你的帮助。",
+       "en": "Thank you very much for your help."
+      },
+      {
+       "zh": "感谢老师这个学期的帮助！",
+       "en": "Thank you, teacher, for your help this semester!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-11",
+     "num": 11,
+     "hanzi": "中汉大学",
+     "pinyin": "Zhōnghàn Dàxué",
+     "meaning": "Zhonghan University",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我在中汉大学学习中文。",
+       "en": "I study Chinese at Zhonghan University."
+      },
+      {
+       "zh": "中汉大学的留学生很多。",
+       "en": "Zhonghan University has a lot of international students."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-12",
+     "num": 12,
+     "hanzi": "中山桥",
+     "pinyin": "Zhōngshān Qiáo",
+     "meaning": "Zhongshan Bridge",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们在中山桥见面。",
+       "en": "Let's meet at Zhongshan Bridge."
+      },
+      {
+       "zh": "A：中山桥离这儿远吗？B：不远，走路十分钟。",
+       "en": "A: Is Zhongshan Bridge far from here? B: Not far, ten minutes on foot."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-13",
+     "num": 13,
+     "hanzi": "新月公园",
+     "pinyin": "Xīnyuè Gōngyuán",
+     "meaning": "Xinyue Park",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "周末我们去新月公园。",
+       "en": "Let's go to Xinyue Park this weekend."
+      },
+      {
+       "zh": "新月公园里有很多花。",
+       "en": "There are lots of flowers in Xinyue Park."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-14",
+     "num": 14,
+     "hanzi": "修",
+     "pinyin": "xiū",
+     "meaning": "repair",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他会修电脑。",
+       "en": "He can repair computers."
+      },
+      {
+       "zh": "我的手机坏了，哪儿能修？",
+       "en": "My phone is broken. Where can I get it fixed?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-15",
+     "num": 15,
+     "hanzi": "一会儿",
+     "pinyin": "yíhuìr",
+     "meaning": "in a while",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请等我一会儿。",
+       "en": "Please wait for me a little while."
+      },
+      {
+       "zh": "我一会儿给你打电话。",
+       "en": "I'll call you in a bit."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-16",
+     "num": 16,
+     "hanzi": "办公室",
+     "pinyin": "bàngōngshì",
+     "meaning": "office",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师在办公室里。",
+       "en": "The teacher is in the office."
+      },
+      {
+       "zh": "A：王老师的办公室在几楼？B：在三楼。",
+       "en": "A: Which floor is Teacher Wang's office on? B: The third floor."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-17",
+     "num": 17,
+     "hanzi": "课表",
+     "pinyin": "kèbiǎo",
+     "meaning": "class timetable; class schedule",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我看一下今天的课表。",
+       "en": "Let me check today's class schedule."
+      },
+      {
+       "zh": "新学期的课表出来了吗？",
+       "en": "Is the new semester's timetable out yet?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l2-18",
+     "num": 18,
+     "hanzi": "麻烦",
+     "pinyin": "máfan",
+     "meaning": "bother; trouble sb",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "麻烦你帮我一下。",
+       "en": "Could you please help me?"
+      },
+      {
+       "zh": "麻烦你告诉我去地铁站怎么走。",
+       "en": "Could you please tell me how to get to the subway station?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "这个小女孩儿是谁？",
+   "titleEn": "Who Is This Little Girl?",
+   "words": [
+    {
+     "id": "kouyu-1-l3-1",
+     "num": 1,
+     "hanzi": "照片",
+     "pinyin": "zhàopiàn",
+     "meaning": "photo",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一张家庭照片。",
+       "en": "This is a family photo."
+      },
+      {
+       "zh": "你能帮我们拍张照片吗？",
+       "en": "Could you take a photo of us?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-2",
+     "num": 2,
+     "hanzi": "拿",
+     "pinyin": "ná",
+     "meaning": "hold; take",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请帮我拿一下这本书。",
+       "en": "Please hold this book for me."
+      },
+      {
+       "zh": "你手里拿的是什么？",
+       "en": "What's that in your hand?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-3",
+     "num": 3,
+     "hanzi": "可爱",
+     "pinyin": "kě'ài",
+     "meaning": "cute; adorable",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个小女孩儿很可爱。",
+       "en": "This little girl is very cute."
+      },
+      {
+       "zh": "A：你看，这只小狗多可爱啊！B：真可爱！",
+       "en": "A: Look, how cute this puppy is! B: So cute!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-4",
+     "num": 4,
+     "hanzi": "起来",
+     "pinyin": "qǐlái",
+     "meaning": "used after a verb to express an impression (e.g., 看起来 = looks)",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这道菜看起来很好吃。",
+       "en": "This dish looks delicious."
+      },
+      {
+       "zh": "这个主意听起来不错。",
+       "en": "That idea sounds good."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-5",
+     "num": 5,
+     "hanzi": "年轻",
+     "pinyin": "niánqīng",
+     "meaning": "young; youthful",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她看起来很年轻。",
+       "en": "She looks very young."
+      },
+      {
+       "zh": "我们的老师很年轻，才二十五岁。",
+       "en": "Our teacher is young—only twenty-five."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-6",
+     "num": 6,
+     "hanzi": "长",
+     "pinyin": "zhǎng",
+     "meaning": "grow; have a certain appearance (in 长得)",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "孩子长得很高。",
+       "en": "The child has grown tall."
+      },
+      {
+       "zh": "你妹妹长得真漂亮！",
+       "en": "Your younger sister is really pretty!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-7",
+     "num": 7,
+     "hanzi": "鼻子",
+     "pinyin": "bízi",
+     "meaning": "nose",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的鼻子很高。",
+       "en": "He has a high-bridged nose."
+      },
+      {
+       "zh": "我感冒了，鼻子不舒服。",
+       "en": "I have a cold, and my nose is bothering me."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-8",
+     "num": 8,
+     "hanzi": "像",
+     "pinyin": "xiàng",
+     "meaning": "look like",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她长得像妈妈。",
+       "en": "She looks like her mother."
+      },
+      {
+       "zh": "A：照片里这个人像你哥哥。B：对，就是他！",
+       "en": "A: The person in this photo looks like your brother. B: Yes, that's him!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-9",
+     "num": 9,
+     "hanzi": "戴",
+     "pinyin": "dài",
+     "meaning": "put on; wear",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他戴着一副眼镜。",
+       "en": "He is wearing a pair of glasses."
+      },
+      {
+       "zh": "外面很冷，戴上帽子吧。",
+       "en": "It's cold outside—put on a hat."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-10",
+     "num": 10,
+     "hanzi": "眼镜",
+     "pinyin": "yǎnjìng",
+     "meaning": "eyeglasses",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的眼镜在哪儿？",
+       "en": "Where are my glasses?"
+      },
+      {
+       "zh": "A：你戴眼镜吗？B：看书的时候戴。",
+       "en": "A: Do you wear glasses? B: Only when I read."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-11",
+     "num": 11,
+     "hanzi": "瘦",
+     "pinyin": "shòu",
+     "meaning": "thin",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他很瘦，但是很健康。",
+       "en": "He is thin but healthy."
+      },
+      {
+       "zh": "你最近瘦了！",
+       "en": "You've lost weight lately!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-12",
+     "num": 12,
+     "hanzi": "马来西亚",
+     "pinyin": "Mǎláixīyà",
+     "meaning": "Malaysia",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她来自马来西亚。",
+       "en": "She comes from Malaysia."
+      },
+      {
+       "zh": "马来西亚的天气很热。",
+       "en": "The weather in Malaysia is very hot."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-13",
+     "num": 13,
+     "hanzi": "个子",
+     "pinyin": "gèzi",
+     "meaning": "height; stature",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我哥哥个子很高。",
+       "en": "My older brother is tall."
+      },
+      {
+       "zh": "A：你个子多高？B：一米七五。",
+       "en": "A: How tall are you? B: One meter seventy-five."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-14",
+     "num": 14,
+     "hanzi": "头发",
+     "pinyin": "tóufa",
+     "meaning": "hair",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她有一头长头发。",
+       "en": "She has long hair."
+      },
+      {
+       "zh": "你剪头发了？真好看！",
+       "en": "Did you get a haircut? It looks great!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-15",
+     "num": 15,
+     "hanzi": "帅",
+     "pinyin": "shuài",
+     "meaning": "handsome",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的哥哥真帅。",
+       "en": "Your older brother is handsome."
+      },
+      {
+       "zh": "A：照片上这个帅哥是谁？B：是我男朋友。",
+       "en": "A: Who's the handsome guy in the photo? B: My boyfriend."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-16",
+     "num": 16,
+     "hanzi": "胖",
+     "pinyin": "pàng",
+     "meaning": "plump",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这只小猫胖胖的。",
+       "en": "This kitten is chubby."
+      },
+      {
+       "zh": "我最近吃得太多，胖了。",
+       "en": "I've been eating too much lately and put on weight."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l3-17",
+     "num": 17,
+     "hanzi": "双",
+     "pinyin": "shuāng",
+     "meaning": "pair",
+     "pos": "mw",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我买了一双新鞋。",
+       "en": "I bought a new pair of shoes."
+      },
+      {
+       "zh": "这双筷子是谁的？",
+       "en": "Whose chopsticks are these?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "听听周杰伦的歌吧",
+   "titleEn": "Let's Listen to Jay Chou's Songs",
+   "words": [
+    {
+     "id": "kouyu-1-l4-1",
+     "num": 1,
+     "hanzi": "推荐",
+     "pinyin": "tuījiàn",
+     "meaning": "recommend",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我推荐这家饭馆。",
+       "en": "I recommend this restaurant."
+      },
+      {
+       "zh": "A：你能给我推荐一首中文歌吗？B：听听周杰伦的吧。",
+       "en": "A: Can you recommend a Chinese song to me? B: Try Jay Chou."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-2",
+     "num": 2,
+     "hanzi": "一定",
+     "pinyin": "yídìng",
+     "meaning": "surely",
+     "pos": "adv",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你一定要来北京玩。",
+       "en": "You must come and visit Beijing."
+      },
+      {
+       "zh": "明天的考试你一定没问题！",
+       "en": "You'll definitely be fine on tomorrow's exam!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-3",
+     "num": 3,
+     "hanzi": "有名",
+     "pinyin": "yǒumíng",
+     "meaning": "famous",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这家饭馆很有名。",
+       "en": "This restaurant is famous."
+      },
+      {
+       "zh": "A：周杰伦在中国有名吗？B：非常有名！",
+       "en": "A: Is Jay Chou famous in China? B: Very famous!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-4",
+     "num": 4,
+     "hanzi": "清楚",
+     "pinyin": "qīngchu",
+     "meaning": "clear",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请说清楚一点儿。",
+       "en": "Please speak a little more clearly."
+      },
+      {
+       "zh": "黑板上的字你看得清楚吗？",
+       "en": "Can you see the writing on the board clearly?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-5",
+     "num": 5,
+     "hanzi": "特别",
+     "pinyin": "tèbié",
+     "meaning": "special; especially",
+     "pos": "adv",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这家店的菜特别好吃。",
+       "en": "The food at this restaurant is especially delicious."
+      },
+      {
+       "zh": "今天是个特别的日子。",
+       "en": "Today is a special day."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-6",
+     "num": 6,
+     "hanzi": "中国风",
+     "pinyin": "zhōngguófēng",
+     "meaning": "Chinese-inspired style (especially in art or music)",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这首歌有中国风的特点。",
+       "en": "This song has a Chinese-style feel."
+      },
+      {
+       "zh": "我很喜欢中国风的衣服。",
+       "en": "I really like Chinese-style clothes."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-7",
+     "num": 7,
+     "hanzi": "不但……，而且……",
+     "pinyin": "búdàn……, érqiě……",
+     "meaning": "not only... but also...",
+     "pos": "conj",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他不但会说中文，而且会说英文。",
+       "en": "He speaks not only Chinese but also English."
+      },
+      {
+       "zh": "这首歌不但好听，而且很容易学。",
+       "en": "This song is not only nice to listen to but also easy to learn."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-8",
+     "num": 8,
+     "hanzi": "浪漫",
+     "pinyin": "làngmàn",
+     "meaning": "romantic",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一首浪漫的歌。",
+       "en": "This is a romantic song."
+      },
+      {
+       "zh": "他给女朋友买了花，真浪漫！",
+       "en": "He bought his girlfriend flowers—how romantic!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-9",
+     "num": 9,
+     "hanzi": "重要",
+     "pinyin": "zhòngyào",
+     "meaning": "important",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "对我来说，家人很重要。",
+       "en": "My family is very important to me."
+      },
+      {
+       "zh": "明天的考试很重要，别迟到。",
+       "en": "Tomorrow's exam is important—don't be late."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-10",
+     "num": 10,
+     "hanzi": "如果",
+     "pinyin": "rúguǒ",
+     "meaning": "if",
+     "pos": "conj",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "如果明天下雨，我们就不去。",
+       "en": "If it rains tomorrow, we won't go."
+      },
+      {
+       "zh": "如果你不懂，就问老师。",
+       "en": "If you don't understand, ask the teacher."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-11",
+     "num": 11,
+     "hanzi": "原因",
+     "pinyin": "yuányīn",
+     "meaning": "reason",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你迟到的原因是什么？",
+       "en": "What is the reason you are late?"
+      },
+      {
+       "zh": "我喜欢这首歌，原因很简单：好听。",
+       "en": "I like this song for a simple reason: it sounds good."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-12",
+     "num": 12,
+     "hanzi": "周杰伦",
+     "pinyin": "Zhōu Jiélún",
+     "meaning": "Jay Chou (Taiwanese singer-songwriter)",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢听周杰伦的歌。",
+       "en": "I like listening to Jay Chou's songs."
+      },
+      {
+       "zh": "周杰伦会唱歌，也会弹钢琴。",
+       "en": "Jay Chou can sing, and he can also play the piano."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-13",
+     "num": 13,
+     "hanzi": "青花瓷",
+     "pinyin": "Qīnghuācí",
+     "meaning": "Blue and White Porcelain (song title)",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "《青花瓷》是一首很有名的歌。",
+       "en": "Blue and White Porcelain is a very famous song."
+      },
+      {
+       "zh": "你会唱《青花瓷》吗？",
+       "en": "Can you sing Blue and White Porcelain?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-14",
+     "num": 14,
+     "hanzi": "经常",
+     "pinyin": "jīngcháng",
+     "meaning": "often; regularly",
+     "pos": "adv",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我经常在图书馆学习。",
+       "en": "I often study in the library."
+      },
+      {
+       "zh": "A：你经常给家里打电话吗？B：每个周末打一次。",
+       "en": "A: Do you call home often? B: Once every weekend."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-15",
+     "num": 15,
+     "hanzi": "环境",
+     "pinyin": "huánjìng",
+     "meaning": "environment",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里的学习环境很好。",
+       "en": "The study environment here is very good."
+      },
+      {
+       "zh": "A：新宿舍环境怎么样？B：很干净，也很安静。",
+       "en": "A: What's the new dorm like? B: Very clean and very quiet."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-16",
+     "num": 16,
+     "hanzi": "又……又……",
+     "pinyin": "yòu……yòu……",
+     "meaning": "both... and...",
+     "pos": "conj",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这家店的菜又好吃又便宜。",
+       "en": "This restaurant's food is both tasty and inexpensive."
+      },
+      {
+       "zh": "我今天又累又饿。",
+       "en": "I'm tired and hungry today."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-17",
+     "num": 17,
+     "hanzi": "翻译",
+     "pinyin": "fānyì",
+     "meaning": "translate; translation",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请帮我翻译这个句子。",
+       "en": "Please help me translate this sentence."
+      },
+      {
+       "zh": "这个词用英文怎么翻译？",
+       "en": "How do you translate this word into English?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-18",
+     "num": 18,
+     "hanzi": "用",
+     "pinyin": "yòng",
+     "meaning": "use",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天用中文聊天。",
+       "en": "I chat in Chinese every day."
+      },
+      {
+       "zh": "A：可以用一下你的笔吗？B：用吧。",
+       "en": "A: Can I use your pen for a moment? B: Go ahead."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l4-19",
+     "num": 19,
+     "hanzi": "免费",
+     "pinyin": "miǎnfèi",
+     "meaning": "free (of charge)",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个活动是免费的。",
+       "en": "This activity is free."
+      },
+      {
+       "zh": "学校里可以免费上网吗？",
+       "en": "Can you get online for free on campus?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "武汉是个好地方",
+   "titleEn": "Wuhan Is a Great Place",
+   "words": [
+    {
+     "id": "kouyu-1-l5-1",
+     "num": 1,
+     "hanzi": "放假",
+     "pinyin": "fàngjià",
+     "meaning": "have a holiday",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们下周开始放假。",
+       "en": "Our holiday begins next week."
+      },
+      {
+       "zh": "放假的时候你回国吗？",
+       "en": "Are you going back to your country during the holiday?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-2",
+     "num": 2,
+     "hanzi": "历史",
+     "pinyin": "lìshǐ",
+     "meaning": "history",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢学习中国历史。",
+       "en": "I enjoy studying Chinese history."
+      },
+      {
+       "zh": "这座城市有三千多年的历史。",
+       "en": "This city has more than three thousand years of history."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-3",
+     "num": 3,
+     "hanzi": "城市",
+     "pinyin": "chéngshì",
+     "meaning": "city",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "北京是一座大城市。",
+       "en": "Beijing is a big city."
+      },
+      {
+       "zh": "A：你最喜欢中国哪个城市？B：成都。",
+       "en": "A: Which city in China do you like best? B: Chengdu."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-4",
+     "num": 4,
+     "hanzi": "景色",
+     "pinyin": "jǐngsè",
+     "meaning": "scenery",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里的景色很漂亮。",
+       "en": "The scenery here is beautiful."
+      },
+      {
+       "zh": "山上的景色怎么样？",
+       "en": "What's the view like up on the mountain?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-5",
+     "num": 5,
+     "hanzi": "秋天",
+     "pinyin": "qiūtiān",
+     "meaning": "autumn; fall",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "秋天的北京很舒服。",
+       "en": "Beijing is pleasant in autumn."
+      },
+      {
+       "zh": "秋天到了，天气凉快了。",
+       "en": "Autumn is here, and the weather has cooled down."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-6",
+     "num": 6,
+     "hanzi": "舒服",
+     "pinyin": "shūfu",
+     "meaning": "comfortable",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个椅子坐着很舒服。",
+       "en": "This chair is very comfortable to sit on."
+      },
+      {
+       "zh": "我今天有点儿不舒服，不想去上课。",
+       "en": "I'm feeling a bit unwell today and don't want to go to class."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-7",
+     "num": 7,
+     "hanzi": "季节",
+     "pinyin": "jìjié",
+     "meaning": "season",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你最喜欢哪个季节？",
+       "en": "Which season do you like best?"
+      },
+      {
+       "zh": "现在是吃西瓜的季节。",
+       "en": "It's watermelon season now."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-8",
+     "num": 8,
+     "hanzi": "热情",
+     "pinyin": "rèqíng",
+     "meaning": "warm; enthusiastic; hospitable",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "中国朋友对我很热情。",
+       "en": "My Chinese friends are very warm toward me."
+      },
+      {
+       "zh": "A：武汉人怎么样？B：很热情！",
+       "en": "A: What are people in Wuhan like? B: Very warm and friendly!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-9",
+     "num": 9,
+     "hanzi": "热干面",
+     "pinyin": "règānmiàn",
+     "meaning": "Wuhan-style hot dry noodles (with sesame sauce)",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "武汉的热干面很好吃。",
+       "en": "Wuhan's hot dry noodles are delicious."
+      },
+      {
+       "zh": "A：早饭吃什么？B：来一碗热干面吧！",
+       "en": "A: What should we have for breakfast? B: Let's get a bowl of hot dry noodles!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-10",
+     "num": 10,
+     "hanzi": "小吃",
+     "pinyin": "xiǎochī",
+     "meaning": "snack",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里有很多当地小吃。",
+       "en": "There are many local snacks here."
+      },
+      {
+       "zh": "你最喜欢吃什么中国小吃？",
+       "en": "What's your favorite Chinese snack?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-11",
+     "num": 11,
+     "hanzi": "地方",
+     "pinyin": "dìfang",
+     "meaning": "place",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是个好地方。",
+       "en": "This is a nice place."
+      },
+      {
+       "zh": "你周末想去什么地方玩？",
+       "en": "Where do you want to go this weekend?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-12",
+     "num": 12,
+     "hanzi": "人山人海",
+     "pinyin": "rénshān-rénhǎi",
+     "meaning": "packed with people; huge crowds",
+     "pos": "idiom",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "周末公园里人山人海。",
+       "en": "The park is packed with people on weekends."
+      },
+      {
+       "zh": "国庆节的时候，黄鹤楼人山人海。",
+       "en": "During the National Day holiday, Yellow Crane Tower is packed with people."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-13",
+     "num": 13,
+     "hanzi": "比如",
+     "pinyin": "bǐrú",
+     "meaning": "take for example",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢水果，比如苹果。",
+       "en": "I like fruit, such as apples."
+      },
+      {
+       "zh": "A：你去过中国哪些城市？B：很多，比如成都、武汉。",
+       "en": "A: Which Chinese cities have you been to? B: Lots—for example, Chengdu and Wuhan."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-14",
+     "num": 14,
+     "hanzi": "武汉",
+     "pinyin": "Wǔhàn",
+     "meaning": "Wuhan [capital city of Hubei Province]",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "武汉是一个大城市。",
+       "en": "Wuhan is a big city."
+      },
+      {
+       "zh": "A：武汉的夏天热吗？B：特别热！",
+       "en": "A: Are summers in Wuhan hot? B: Extremely hot!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-15",
+     "num": 15,
+     "hanzi": "黄鹤楼",
+     "pinyin": "Huánghè Lóu",
+     "meaning": "Yellow Crane Tower [a landmark in Wuhan]",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "黄鹤楼在武汉。",
+       "en": "Yellow Crane Tower is in Wuhan."
+      },
+      {
+       "zh": "我们周末去黄鹤楼拍照吧。",
+       "en": "Let's go take photos at Yellow Crane Tower this weekend."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-16",
+     "num": 16,
+     "hanzi": "熊猫",
+     "pinyin": "xióngmāo",
+     "meaning": "panda",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "熊猫喜欢吃竹子。",
+       "en": "Pandas like eating bamboo."
+      },
+      {
+       "zh": "在成都可以看到很多熊猫。",
+       "en": "You can see lots of pandas in Chengdu."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-17",
+     "num": 17,
+     "hanzi": "辣",
+     "pinyin": "là",
+     "meaning": "spicy",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这道菜太辣了。",
+       "en": "This dish is too spicy."
+      },
+      {
+       "zh": "A：你能吃辣吗？B：能，我很喜欢吃辣的。",
+       "en": "A: Can you handle spicy food? B: Yes, I love spicy food."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-18",
+     "num": 18,
+     "hanzi": "山",
+     "pinyin": "shān",
+     "meaning": "mountain",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "周末我们去爬山。",
+       "en": "Let's hike a mountain this weekend."
+      },
+      {
+       "zh": "山上的空气很好。",
+       "en": "The air up in the mountains is fresh."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-19",
+     "num": 19,
+     "hanzi": "镜子",
+     "pinyin": "jìngzi",
+     "meaning": "mirror",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请看一看镜子里的自己。",
+       "en": "Please look at yourself in the mirror."
+      },
+      {
+       "zh": "洗手间里有镜子吗？",
+       "en": "Is there a mirror in the bathroom?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-20",
+     "num": 20,
+     "hanzi": "天池",
+     "pinyin": "Tiānchí",
+     "meaning": "Heavenly Lake (place name)",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想去看看天池。",
+       "en": "I want to visit Heavenly Lake."
+      },
+      {
+       "zh": "天池的水特别干净。",
+       "en": "The water in Heavenly Lake is incredibly clear."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-21",
+     "num": 21,
+     "hanzi": "成都",
+     "pinyin": "Chéngdū",
+     "meaning": "Chengdu [capital city of Sichuan Province]",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我计划去成都旅行。",
+       "en": "I plan to travel to Chengdu."
+      },
+      {
+       "zh": "成都的火锅很有名。",
+       "en": "Chengdu's hot pot is famous."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l5-22",
+     "num": 22,
+     "hanzi": "新疆",
+     "pinyin": "Xīnjiāng",
+     "meaning": "Xinjiang Uygur Autonomous Region",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "新疆有美丽的风景。",
+       "en": "Xinjiang has beautiful scenery."
+      },
+      {
+       "zh": "新疆在中国的西北部。",
+       "en": "Xinjiang is in northwest China."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "声音小点儿，可以吗？",
+   "titleEn": "Could You Keep It Down a Bit?",
+   "words": [
+    {
+     "id": "kouyu-1-l6-1",
+     "num": 1,
+     "hanzi": "灯",
+     "pinyin": "dēng",
+     "meaning": "light",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "晚上请开灯。",
+       "en": "Please turn on the light in the evening."
+      },
+      {
+       "zh": "灯坏了，房间里很黑。",
+       "en": "The light is broken, so the room is dark."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-2",
+     "num": 2,
+     "hanzi": "关",
+     "pinyin": "guān",
+     "meaning": "turn off; close",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请把门关上。",
+       "en": "Please close the door."
+      },
+      {
+       "zh": "睡觉前别忘了关灯。",
+       "en": "Don't forget to turn off the light before bed."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-3",
+     "num": 3,
+     "hanzi": "安静",
+     "pinyin": "ānjìng",
+     "meaning": "quiet",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "图书馆里很安静。",
+       "en": "The library is very quiet."
+      },
+      {
+       "zh": "请大家安静一下！",
+       "en": "Quiet down, everyone, please!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-4",
+     "num": 4,
+     "hanzi": "聊（天儿）",
+     "pinyin": "liáo (tiānr)",
+     "meaning": "chat",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们下课以后聊天儿。",
+       "en": "We chat after class."
+      },
+      {
+       "zh": "我常常跟室友聊天儿到很晚。",
+       "en": "I often chat with my roommate until late at night."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-5",
+     "num": 5,
+     "hanzi": "商量",
+     "pinyin": "shāngliang",
+     "meaning": "discuss",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想跟你商量一下。",
+       "en": "I want to discuss something with you."
+      },
+      {
+       "zh": "这件事我们商量商量再决定吧。",
+       "en": "Let's talk it over before we decide."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-6",
+     "num": 6,
+     "hanzi": "打扰",
+     "pinyin": "dǎrǎo",
+     "meaning": "disturb; bother",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "不好意思，打扰一下。",
+       "en": "Excuse me for interrupting."
+      },
+      {
+       "zh": "对不起，打扰你休息了。",
+       "en": "Sorry for disturbing your rest."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-7",
+     "num": 7,
+     "hanzi": "声音",
+     "pinyin": "shēngyīn",
+     "meaning": "sound; voice",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的声音太小了。",
+       "en": "Your voice is too quiet."
+      },
+      {
+       "zh": "你听，外面是什么声音？",
+       "en": "Listen—what's that sound outside?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-8",
+     "num": 8,
+     "hanzi": "理解",
+     "pinyin": "lǐjiě",
+     "meaning": "understand",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我能理解你的想法。",
+       "en": "I can understand your ideas."
+      },
+      {
+       "zh": "A：这句话你理解了吗？B：还不太理解。",
+       "en": "A: Do you understand this sentence? B: Not quite yet."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-9",
+     "num": 9,
+     "hanzi": "互相",
+     "pinyin": "hùxiāng",
+     "meaning": "mutually",
+     "pos": "adv",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们应该互相帮助。",
+       "en": "We should help each other."
+      },
+      {
+       "zh": "我和语伴互相学习语言。",
+       "en": "My language partner and I teach each other our languages."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-10",
+     "num": 10,
+     "hanzi": "满意",
+     "pinyin": "mǎnyì",
+     "meaning": "satisfied; pleased",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我对这个房间很满意。",
+       "en": "I am very satisfied with this room."
+      },
+      {
+       "zh": "A：你对你的成绩满意吗？B：还不太满意。",
+       "en": "A: Are you happy with your grades? B: Not really."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-11",
+     "num": 11,
+     "hanzi": "美国",
+     "pinyin": "Měiguó",
+     "meaning": "America (USA)",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他是美国人。",
+       "en": "He is American."
+      },
+      {
+       "zh": "我想去美国旅游。",
+       "en": "I'd like to travel to the United States."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-12",
+     "num": 12,
+     "hanzi": "节",
+     "pinyin": "jié",
+     "meaning": "class period; section (measure word)",
+     "pos": "mw",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们今天有两节汉语课。",
+       "en": "We have two Chinese classes today."
+      },
+      {
+       "zh": "A：下一节是什么课？B：口语课。",
+       "en": "A: What's the next class? B: Speaking class."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-13",
+     "num": 13,
+     "hanzi": "建议",
+     "pinyin": "jiànyì",
+     "meaning": "suggest; suggestion",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我建议你早点儿休息。",
+       "en": "I suggest that you rest earlier."
+      },
+      {
+       "zh": "谢谢你的建议，我试试看。",
+       "en": "Thanks for the suggestion—I'll give it a try."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-14",
+     "num": 14,
+     "hanzi": "最好",
+     "pinyin": "zuìhǎo",
+     "meaning": "had better",
+     "pos": "adv",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你最好早点儿睡觉。",
+       "en": "You had better go to bed early."
+      },
+      {
+       "zh": "晚上最好别一个人出去。",
+       "en": "You'd better not go out alone at night."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-15",
+     "num": 15,
+     "hanzi": "主意",
+     "pinyin": "zhǔyi",
+     "meaning": "idea",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一个好主意。",
+       "en": "That's a good idea."
+      },
+      {
+       "zh": "A：咱们去看电影，怎么样？B：好主意！",
+       "en": "A: How about we go see a movie? B: Good idea!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l6-16",
+     "num": 16,
+     "hanzi": "考虑",
+     "pinyin": "kǎolǜ",
+     "meaning": "think over",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "让我再考虑一下。",
+       "en": "Let me think about it some more."
+      },
+      {
+       "zh": "这件事你考虑好了吗？",
+       "en": "Have you thought this over?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "要不再说吧",
+   "titleEn": "Let's Talk About It Later",
+   "words": [
+    {
+     "id": "kouyu-1-l7-1",
+     "num": 1,
+     "hanzi": "演唱会",
+     "pinyin": "yǎnchànghuì",
+     "meaning": "concert",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们周末去看演唱会。",
+       "en": "Let's go to a concert this weekend."
+      },
+      {
+       "zh": "A：你看过周杰伦的演唱会吗？B：还没有，很想去。",
+       "en": "A: Have you been to a Jay Chou concert? B: Not yet, but I'd love to go."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-2",
+     "num": 2,
+     "hanzi": "行",
+     "pinyin": "xíng",
+     "meaning": "OK; be all right",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这样做行吗？",
+       "en": "Is it okay to do it this way?"
+      },
+      {
+       "zh": "A：明天上午十点见，行吗？B：行，没问题。",
+       "en": "A: See you tomorrow at ten a.m., okay? B: Sure, no problem."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-3",
+     "num": 3,
+     "hanzi": "马上",
+     "pinyin": "mǎshàng",
+     "meaning": "at once; right away",
+     "pos": "adv",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师马上就来了。",
+       "en": "The teacher will be here right away."
+      },
+      {
+       "zh": "等我一下，我马上就好。",
+       "en": "Wait a moment—I'll be ready right away."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-4",
+     "num": 4,
+     "hanzi": "周末",
+     "pinyin": "zhōumò",
+     "meaning": "weekend",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我周末喜欢看电影。",
+       "en": "I like watching movies on weekends."
+      },
+      {
+       "zh": "A：这个周末你有空吗？B：有，怎么了？",
+       "en": "A: Are you free this weekend? B: Yes, what's up?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-5",
+     "num": 5,
+     "hanzi": "复习",
+     "pinyin": "fùxí",
+     "meaning": "review",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天晚上我要复习汉字。",
+       "en": "I'm going to review Chinese characters tonight."
+      },
+      {
+       "zh": "考试前我们一起复习吧。",
+       "en": "Let's review together before the exam."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-6",
+     "num": 6,
+     "hanzi": "来不及",
+     "pinyin": "láibují",
+     "meaning": "not have enough time; be too late",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "太晚了，我们来不及了。",
+       "en": "It's too late; we won't make it in time."
+      },
+      {
+       "zh": "快走吧，要不就来不及了！",
+       "en": "Hurry up, or we won't make it in time!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-7",
+     "num": 7,
+     "hanzi": "要不",
+     "pinyin": "yàobù",
+     "meaning": "or; otherwise",
+     "pos": "conj",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "要不明天再去吧。",
+       "en": "How about going tomorrow instead?"
+      },
+      {
+       "zh": "A：今天太累了。B：要不咱们打车回去吧。",
+       "en": "A: I'm so tired today. B: How about we take a taxi back?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-8",
+     "num": 8,
+     "hanzi": "可惜",
+     "pinyin": "kěxī",
+     "meaning": "regrettable",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "不能参加真可惜。",
+       "en": "It's a pity I can't attend."
+      },
+      {
+       "zh": "真可惜，票已经卖完了。",
+       "en": "What a shame—the tickets are sold out."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-9",
+     "num": 9,
+     "hanzi": "抱歉",
+     "pinyin": "bàoqiàn",
+     "meaning": "be sorry",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "很抱歉，我今天不能来。",
+       "en": "I'm sorry I can't come today."
+      },
+      {
+       "zh": "抱歉，让你久等了。",
+       "en": "Sorry to keep you waiting."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-10",
+     "num": 10,
+     "hanzi": "拒绝",
+     "pinyin": "jùjué",
+     "meaning": "refuse",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他拒绝了我的邀请。",
+       "en": "He turned down my invitation."
+      },
+      {
+       "zh": "我不知道怎么拒绝他。",
+       "en": "I don't know how to say no to him."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-11",
+     "num": 11,
+     "hanzi": "售货员",
+     "pinyin": "shòuhuòyuán",
+     "meaning": "shop assistant",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "售货员正在帮助顾客。",
+       "en": "The shop assistant is helping a customer."
+      },
+      {
+       "zh": "售货员说这件衣服打八折。",
+       "en": "The shop assistant said this item is 20% off."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-12",
+     "num": 12,
+     "hanzi": "需要",
+     "pinyin": "xūyào",
+     "meaning": "need",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我需要一点儿帮助。",
+       "en": "I need a little help."
+      },
+      {
+       "zh": "A：你需要帮忙吗？B：不用，谢谢。",
+       "en": "A: Do you need any help? B: No, thanks."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-13",
+     "num": 13,
+     "hanzi": "自己",
+     "pinyin": "zìjǐ",
+     "meaning": "oneself",
+     "pos": "pron",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想自己做作业。",
+       "en": "I want to do my homework myself."
+      },
+      {
+       "zh": "这个蛋糕是我自己做的。",
+       "en": "I made this cake myself."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-14",
+     "num": 14,
+     "hanzi": "方便",
+     "pinyin": "fāngbiàn",
+     "meaning": "convenient; appropriate",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "坐地铁很方便。",
+       "en": "Taking the subway is convenient."
+      },
+      {
+       "zh": "A：你明天下午方便吗？B：方便，有什么事？",
+       "en": "A: Is tomorrow afternoon a good time for you? B: Sure, what's up?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-15",
+     "num": 15,
+     "hanzi": "蛋糕",
+     "pinyin": "dàngāo",
+     "meaning": "cake",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天是生日，我们吃蛋糕。",
+       "en": "It's a birthday today, so we're having cake."
+      },
+      {
+       "zh": "这家店的蛋糕又好看又好吃。",
+       "en": "The cakes at this shop look great and taste great."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l7-16",
+     "num": 16,
+     "hanzi": "尝",
+     "pinyin": "cháng",
+     "meaning": "taste; try",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请尝一尝这个菜。",
+       "en": "Please try this dish."
+      },
+      {
+       "zh": "A：这是什么菜？B：你尝尝就知道了。",
+       "en": "A: What dish is this? B: Try it and you'll see."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "帮我复习汉字吧",
+   "titleEn": "Help Me Review Chinese Characters",
+   "words": [
+    {
+     "id": "kouyu-1-l8-1",
+     "num": 1,
+     "hanzi": "语伴",
+     "pinyin": "yǔbàn",
+     "meaning": "language partner",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想找一个中文语伴。",
+       "en": "I want to find a Chinese language partner."
+      },
+      {
+       "zh": "我的语伴是中国学生，她想学英语。",
+       "en": "My language partner is a Chinese student who wants to learn English."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-2",
+     "num": 2,
+     "hanzi": "发音",
+     "pinyin": "fāyīn",
+     "meaning": "pronunciation",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的汉语发音很清楚。",
+       "en": "Your Chinese pronunciation is very clear."
+      },
+      {
+       "zh": "A：这个字的发音对吗？B：不太对，再说一遍。",
+       "en": "A: Is my pronunciation of this character right? B: Not quite—say it again."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-3",
+     "num": 3,
+     "hanzi": "口语",
+     "pinyin": "kǒuyǔ",
+     "meaning": "spoken Chinese; speaking",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天练习汉语口语。",
+       "en": "I practice spoken Chinese every day."
+      },
+      {
+       "zh": "我的口语不太好，听力还可以。",
+       "en": "My speaking isn't very good, but my listening is okay."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-4",
+     "num": 4,
+     "hanzi": "选修课",
+     "pinyin": "xuǎnxiūkè",
+     "meaning": "elective course",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这学期我选了一门选修课。",
+       "en": "I chose an elective course this semester."
+      },
+      {
+       "zh": "A：你选了什么选修课？B：太极拳。",
+       "en": "A: Which elective did you choose? B: Tai chi."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-5",
+     "num": 5,
+     "hanzi": "门",
+     "pinyin": "mén",
+     "meaning": "measure word for school subjects or courses",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我这学期上三门课。",
+       "en": "I'm taking three courses this semester."
+      },
+      {
+       "zh": "你这学期有几门考试？",
+       "en": "How many exams do you have this semester?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-6",
+     "num": 6,
+     "hanzi": "讲",
+     "pinyin": "jiǎng",
+     "meaning": "explain; lecture",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师正在讲语法。",
+       "en": "The teacher is explaining grammar."
+      },
+      {
+       "zh": "老师，您能再讲一遍吗？",
+       "en": "Teacher, could you explain that once more?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-7",
+     "num": 7,
+     "hanzi": "纠正",
+     "pinyin": "jiūzhèng",
+     "meaning": "correct",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请帮我纠正发音。",
+       "en": "Please help correct my pronunciation."
+      },
+      {
+       "zh": "我说错的时候，你可以纠正我。",
+       "en": "When I make a mistake, feel free to correct me."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-8",
+     "num": 8,
+     "hanzi": "活动",
+     "pinyin": "huódòng",
+     "meaning": "activity",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "学校今天有一个活动。",
+       "en": "The school has an activity today."
+      },
+      {
+       "zh": "A：周末有什么活动？B：我们去爬山。",
+       "en": "A: Any plans for the weekend? B: We're going hiking."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-9",
+     "num": 9,
+     "hanzi": "德语",
+     "pinyin": "Déyǔ",
+     "meaning": "German (language)",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他会说德语。",
+       "en": "He speaks German."
+      },
+      {
+       "zh": "A：德语难学吗？B：语法有点儿难。",
+       "en": "A: Is German hard to learn? B: The grammar is a bit tough."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-10",
+     "num": 10,
+     "hanzi": "语法",
+     "pinyin": "yǔfǎ",
+     "meaning": "grammar",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这条汉语语法不难。",
+       "en": "This Chinese grammar rule is not difficult."
+      },
+      {
+       "zh": "我觉得汉语语法比英语简单。",
+       "en": "I think Chinese grammar is simpler than English grammar."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-11",
+     "num": 11,
+     "hanzi": "越……越……",
+     "pinyin": "yuè……yuè……",
+     "meaning": "the more... the more...",
+     "pos": "conj",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我越练习，汉语说得越好。",
+       "en": "The more I practice, the better I speak Chinese."
+      },
+      {
+       "zh": "这首歌越听越好听。",
+       "en": "The more I listen to this song, the more I like it."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-12",
+     "num": 12,
+     "hanzi": "忘",
+     "pinyin": "wàng",
+     "meaning": "forget",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "别忘了明天的考试。",
+       "en": "Don't forget tomorrow's exam."
+      },
+      {
+       "zh": "对不起，我忘带书了。",
+       "en": "Sorry, I forgot to bring my book."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-13",
+     "num": 13,
+     "hanzi": "期中",
+     "pinyin": "qīzhōng",
+     "meaning": "midterm",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "下周期中考试。",
+       "en": "The midterm exam is next week."
+      },
+      {
+       "zh": "期中考试你考得怎么样？",
+       "en": "How did you do on the midterm?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-14",
+     "num": 14,
+     "hanzi": "当",
+     "pinyin": "dāng",
+     "meaning": "serve as",
+     "pos": "prep",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他想当老师。",
+       "en": "He wants to become a teacher."
+      },
+      {
+       "zh": "下次我当老师，你当学生。",
+       "en": "Next time I'll be the teacher and you be the student."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-15",
+     "num": 15,
+     "hanzi": "学期",
+     "pinyin": "xuéqī",
+     "meaning": "semester",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个学期我很忙。",
+       "en": "I'm very busy this semester."
+      },
+      {
+       "zh": "新学期开始了，我们班来了很多新同学。",
+       "en": "The new semester has started, and lots of new classmates have joined our class."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-16",
+     "num": 16,
+     "hanzi": "记",
+     "pinyin": "jì",
+     "meaning": "memorize",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天记十个新词。",
+       "en": "I memorize ten new words every day."
+      },
+      {
+       "zh": "这个汉字太难了，我记不住。",
+       "en": "This character is too hard—I can't remember it."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-17",
+     "num": 17,
+     "hanzi": "方法",
+     "pinyin": "fāngfǎ",
+     "meaning": "method",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个学习方法很好。",
+       "en": "This learning method is very good."
+      },
+      {
+       "zh": "A：你有什么好方法记汉字吗？B：多写多用。",
+       "en": "A: Do you have a good way to remember characters? B: Write them and use them a lot."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-18",
+     "num": 18,
+     "hanzi": "一边……一边……",
+     "pinyin": "yìbiān……yìbiān……",
+     "meaning": "while; do two things at once",
+     "pos": "conj",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她一边听音乐，一边做作业。",
+       "en": "She listens to music while doing homework."
+      },
+      {
+       "zh": "我们一边走一边聊吧。",
+       "en": "Let's chat as we walk."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-19",
+     "num": 19,
+     "hanzi": "耐心",
+     "pinyin": "nàixīn",
+     "meaning": "patience",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师对学生很有耐心。",
+       "en": "The teacher is very patient with students."
+      },
+      {
+       "zh": "学汉语要有耐心。",
+       "en": "Learning Chinese takes patience."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l8-20",
+     "num": 20,
+     "hanzi": "汉字听写大会",
+     "pinyin": "Hànzì Tīngxiě Dàhuì",
+     "meaning": "Chinese Characters Dictation Competition",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起看汉字听写大会。",
+       "en": "Let's watch the Chinese Character Dictation Competition together."
+      },
+      {
+       "zh": "汉字听写大会的题目太难了！",
+       "en": "The words in the Chinese Characters Dictation Competition are so hard!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "别难过了",
+   "titleEn": "Don't Be Sad",
+   "words": [
+    {
+     "id": "kouyu-1-l9-1",
+     "num": 1,
+     "hanzi": "难过",
+     "pinyin": "nánguò",
+     "meaning": "sad",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "听到这个消息我很难过。",
+       "en": "I felt sad when I heard the news."
+      },
+      {
+       "zh": "别难过了，下次一定会更好。",
+       "en": "Don't be sad—next time will definitely be better."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-2",
+     "num": 2,
+     "hanzi": "关心",
+     "pinyin": "guānxīn",
+     "meaning": "be concerned about",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "谢谢你关心我。",
+       "en": "Thank you for caring about me."
+      },
+      {
+       "zh": "妈妈经常打电话关心我的学习。",
+       "en": "My mom often calls to check on how my studies are going."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-3",
+     "num": 3,
+     "hanzi": "以后",
+     "pinyin": "yǐhòu",
+     "meaning": "after; later",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "下课以后我们去吃饭。",
+       "en": "Let's eat after class."
+      },
+      {
+       "zh": "以后有问题就来问我。",
+       "en": "From now on, just come to me if you have any questions."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-4",
+     "num": 4,
+     "hanzi": "机会",
+     "pinyin": "jīhuì",
+     "meaning": "opportunity",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一个很好的机会。",
+       "en": "This is a very good opportunity."
+      },
+      {
+       "zh": "我想找机会多跟中国人说话。",
+       "en": "I want to find more chances to talk with Chinese people."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-5",
+     "num": 5,
+     "hanzi": "信心",
+     "pinyin": "xìnxīn",
+     "meaning": "confidence",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我对考试有信心。",
+       "en": "I feel confident about the exam."
+      },
+      {
+       "zh": "要对自己有信心！",
+       "en": "Have confidence in yourself!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-6",
+     "num": 6,
+     "hanzi": "聪明",
+     "pinyin": "cōngmíng",
+     "meaning": "clever; smart",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个孩子很聪明。",
+       "en": "This child is very clever."
+      },
+      {
+       "zh": "A：你真聪明，一学就会！B：哪里哪里。",
+       "en": "A: You're so smart—you pick things up right away! B: Oh, not at all."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-7",
+     "num": 7,
+     "hanzi": "着急",
+     "pinyin": "zháojí",
+     "meaning": "worried; anxious",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "别着急，我们还有时间。",
+       "en": "Don't worry; we still have time."
+      },
+      {
+       "zh": "你为什么这么着急？",
+       "en": "Why are you so anxious?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-8",
+     "num": 8,
+     "hanzi": "办法",
+     "pinyin": "bànfǎ",
+     "meaning": "solution; means",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起想办法。",
+       "en": "Let's find a solution together."
+      },
+      {
+       "zh": "A：钥匙丢了，怎么办？B：别担心，总有办法的。",
+       "en": "A: I lost my keys. What do I do? B: Don't worry, there's always a way."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-9",
+     "num": 9,
+     "hanzi": "努力",
+     "pinyin": "nǔlì",
+     "meaning": "make efforts (to do sth)",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天都努力学习。",
+       "en": "I study hard every day."
+      },
+      {
+       "zh": "只要努力，你一定能学好汉语。",
+       "en": "As long as you work hard, you'll definitely master Chinese."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-10",
+     "num": 10,
+     "hanzi": "鼓励",
+     "pinyin": "gǔlì",
+     "meaning": "encourage",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "老师鼓励我多说汉语。",
+       "en": "The teacher encourages me to speak more Chinese."
+      },
+      {
+       "zh": "谢谢你的鼓励，我会继续努力的。",
+       "en": "Thanks for the encouragement—I'll keep working hard."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-11",
+     "num": 11,
+     "hanzi": "哭",
+     "pinyin": "kū",
+     "meaning": "cry",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "小孩子为什么哭了？",
+       "en": "Why is the child crying?"
+      },
+      {
+       "zh": "别哭了，没什么大不了的。",
+       "en": "Don't cry—it's no big deal."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-12",
+     "num": 12,
+     "hanzi": "丢",
+     "pinyin": "diū",
+     "meaning": "lose",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我把钥匙丢了。",
+       "en": "I lost my keys."
+      },
+      {
+       "zh": "A：你的手机呢？B：好像丢在出租车上了。",
+       "en": "A: Where's your phone? B: I think I left it in the taxi."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-13",
+     "num": 13,
+     "hanzi": "担心",
+     "pinyin": "dānxīn",
+     "meaning": "worry",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "别担心，我没事。",
+       "en": "Don't worry; I'm fine."
+      },
+      {
+       "zh": "妈妈总是担心我在中国吃不好。",
+       "en": "My mom always worries that I don't eat well in China."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-14",
+     "num": 14,
+     "hanzi": "放心",
+     "pinyin": "fàngxīn",
+     "meaning": "set one’s mind at rest",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你放心吧，我会准时到。",
+       "en": "Don't worry, I'll arrive on time."
+      },
+      {
+       "zh": "看到你没事，我就放心了。",
+       "en": "Now that I see you're okay, I can stop worrying."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l9-15",
+     "num": 15,
+     "hanzi": "广播",
+     "pinyin": "guǎngbō",
+     "meaning": "broadcast",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我听到了学校的广播。",
+       "en": "I heard the school announcement."
+      },
+      {
+       "zh": "A：广播里说什么？B：飞机要晚点了。",
+       "en": "A: What did the announcement say? B: The flight is delayed."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "我想养只小狗",
+   "titleEn": "I Want to Get a Puppy",
+   "words": [
+    {
+     "id": "kouyu-1-l10-1",
+     "num": 1,
+     "hanzi": "宠物",
+     "pinyin": "chǒngwù",
+     "meaning": "pet (animal)",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你养过宠物吗？",
+       "en": "Have you ever had a pet?"
+      },
+      {
+       "zh": "留学生宿舍不能养宠物。",
+       "en": "Pets aren't allowed in the international student dorm."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-2",
+     "num": 2,
+     "hanzi": "养",
+     "pinyin": "yǎng",
+     "meaning": "keep; raise",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想养一只小猫。",
+       "en": "I want to keep a kitten as a pet."
+      },
+      {
+       "zh": "A：你家养花吗？B：养了几盆，可是都死了。",
+       "en": "A: Do you grow flowers at home? B: I had a few pots, but they all died."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-3",
+     "num": 3,
+     "hanzi": "毛茸茸",
+     "pinyin": "máoróngróng",
+     "meaning": "fluffy; furry",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这只小狗毛茸茸的。",
+       "en": "This puppy is very fluffy."
+      },
+      {
+       "zh": "她冬天喜欢穿毛茸茸的拖鞋。",
+       "en": "In winter she likes to wear fluffy slippers."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-4",
+     "num": 4,
+     "hanzi": "毛",
+     "pinyin": "máo",
+     "meaning": "fur; hair",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这只猫的毛很软。",
+       "en": "This cat's fur is very soft."
+      },
+      {
+       "zh": "我的衣服上都是狗毛。",
+       "en": "My clothes are covered in dog hair."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-5",
+     "num": 5,
+     "hanzi": "雪球",
+     "pinyin": "xuěqiú",
+     "meaning": "snowball",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "孩子们在玩雪球。",
+       "en": "The children are playing with snowballs."
+      },
+      {
+       "zh": "我给我的小白狗起名叫“雪球”。",
+       "en": "I named my little white dog \"Snowball.\""
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-6",
+     "num": 6,
+     "hanzi": "陪",
+     "pinyin": "péi",
+     "meaning": "accompany",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想陪妈妈去医院。",
+       "en": "I want to go to the hospital with my mother."
+      },
+      {
+       "zh": "A：周末谁陪你去买东西？B：我的中国同屋。",
+       "en": "A: Who's going shopping with you this weekend? B: My Chinese roommate."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-7",
+     "num": 7,
+     "hanzi": "长大",
+     "pinyin": "zhǎngdà",
+     "meaning": "grow up",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "长大以后我想当医生。",
+       "en": "I want to be a doctor when I grow up."
+      },
+      {
+       "zh": "A：你长大了想做什么？B：想当足球运动员。",
+       "en": "A: What do you want to be when you grow up? B: A soccer player."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-8",
+     "num": 8,
+     "hanzi": "照顾",
+     "pinyin": "zhàogù",
+     "meaning": "look after",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我要照顾我的小狗。",
+       "en": "I need to take care of my puppy."
+      },
+      {
+       "zh": "我生病的时候，同学们都来照顾我。",
+       "en": "When I was sick, my classmates all came to look after me."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-9",
+     "num": 9,
+     "hanzi": "害怕",
+     "pinyin": "hàipà",
+     "meaning": "fear",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我有点儿害怕狗。",
+       "en": "I'm a little afraid of dogs."
+      },
+      {
+       "zh": "A：晚上一个人回家，你害怕吗？B：不害怕。",
+       "en": "A: Are you scared going home alone at night? B: No, I'm not."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-10",
+     "num": 10,
+     "hanzi": "怕",
+     "pinyin": "pà",
+     "meaning": "worry about",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我怕坐飞机。",
+       "en": "I'm afraid of flying."
+      },
+      {
+       "zh": "我怕明天的考试太难。",
+       "en": "I'm worried tomorrow's exam will be too hard."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-11",
+     "num": 11,
+     "hanzi": "钥匙",
+     "pinyin": "yàoshi",
+     "meaning": "key",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我找不到家里的钥匙。",
+       "en": "I can't find my house key."
+      },
+      {
+       "zh": "A：你带钥匙了吗？B：带了，在包里。",
+       "en": "A: Did you bring your key? B: Yes, it's in my bag."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-12",
+     "num": 12,
+     "hanzi": "羡慕",
+     "pinyin": "xiànmù",
+     "meaning": "admire; envy",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我很羡慕你的汉语水平。",
+       "en": "I really envy your Chinese ability."
+      },
+      {
+       "zh": "他每天都不用早起，真让人羡慕！",
+       "en": "He never has to get up early. I'm so jealous!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-13",
+     "num": 13,
+     "hanzi": "脸",
+     "pinyin": "liǎn",
+     "meaning": "face",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她的脸红了。",
+       "en": "Her face turned red."
+      },
+      {
+       "zh": "早上起来先洗脸、刷牙。",
+       "en": "After getting up, I wash my face and brush my teeth first."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-14",
+     "num": 14,
+     "hanzi": "乖",
+     "pinyin": "guāi",
+     "meaning": "well-behaved",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个孩子很乖。",
+       "en": "This child is very well-behaved."
+      },
+      {
+       "zh": "A：你的小狗乖不乖？B：很乖，从来不咬人。",
+       "en": "A: Is your puppy well-behaved? B: Very. It never bites anyone."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-15",
+     "num": 15,
+     "hanzi": "干净",
+     "pinyin": "gānjìng",
+     "meaning": "clean",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这里的房间很干净。",
+       "en": "The room here is very clean."
+      },
+      {
+       "zh": "吃水果以前要洗干净。",
+       "en": "Wash fruit thoroughly before you eat it."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-16",
+     "num": 16,
+     "hanzi": "花",
+     "pinyin": "huā",
+     "meaning": "spend",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我花了两个小时做作业。",
+       "en": "I spent two hours doing homework."
+      },
+      {
+       "zh": "你这个月花了多少钱？",
+       "en": "How much money did you spend this month?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-17",
+     "num": 17,
+     "hanzi": "兔子",
+     "pinyin": "tùzi",
+     "meaning": "rabbit",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我家有一只小兔子。",
+       "en": "We have a rabbit at home."
+      },
+      {
+       "zh": "A：兔子喜欢吃什么？B：胡萝卜和青菜。",
+       "en": "A: What do rabbits like to eat? B: Carrots and greens."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-18",
+     "num": 18,
+     "hanzi": "亲近",
+     "pinyin": "qīnjìn",
+     "meaning": "be close to; get close to",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这只小狗很亲近人。",
+       "en": "This puppy is very friendly with people."
+      },
+      {
+       "zh": "刚来的时候，小猫不愿意亲近我。",
+       "en": "When it first came, the kitten didn't want to get close to me."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-19",
+     "num": 19,
+     "hanzi": "后来",
+     "pinyin": "hòulái",
+     "meaning": "afterwards; later",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我先学了英语，后来学中文。",
+       "en": "I studied English first and Chinese later."
+      },
+      {
+       "zh": "我们是在上海认识的，后来成了好朋友。",
+       "en": "We met in Shanghai, and later we became good friends."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l10-20",
+     "num": 20,
+     "hanzi": "死",
+     "pinyin": "sǐ",
+     "meaning": "die",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "那条鱼已经死了。",
+       "en": "That fish has died."
+      },
+      {
+       "zh": "A：你的花怎么了？B：忘了浇水，都死了。",
+       "en": "A: What happened to your flowers? B: I forgot to water them, and they all died."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "换一个新的",
+   "titleEn": "Exchange It for a New One",
+   "words": [
+    {
+     "id": "kouyu-1-l11-1",
+     "num": 1,
+     "hanzi": "坏",
+     "pinyin": "huài",
+     "meaning": "break down; go bad",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的手机坏了。",
+       "en": "My phone is broken."
+      },
+      {
+       "zh": "天太热，牛奶放了一天就坏了。",
+       "en": "It's so hot that the milk went bad after one day."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-2",
+     "num": 2,
+     "hanzi": "网",
+     "pinyin": "wǎng",
+     "meaning": "Internet",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我家里没有网。",
+       "en": "There is no internet connection at home."
+      },
+      {
+       "zh": "A：宿舍的网怎么这么慢？B：用的人太多了。",
+       "en": "A: Why is the dorm Internet so slow? B: Too many people are using it."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-3",
+     "num": 3,
+     "hanzi": "小票",
+     "pinyin": "xiǎopiào",
+     "meaning": "receipt",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请保留购物小票。",
+       "en": "Please keep your receipt."
+      },
+      {
+       "zh": "A：您有小票吗？B：有，在这儿。",
+       "en": "A: Do you have the receipt? B: Yes, here it is."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-4",
+     "num": 4,
+     "hanzi": "刚",
+     "pinyin": "gāng",
+     "meaning": "just",
+     "pos": "adv",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我刚到学校。",
+       "en": "I just arrived at school."
+      },
+      {
+       "zh": "这个手机是我刚买的。",
+       "en": "I just bought this phone."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-5",
+     "num": 5,
+     "hanzi": "摔",
+     "pinyin": "shuāi",
+     "meaning": "cause to fall and break",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "手机掉在地上摔坏了。",
+       "en": "The phone fell to the floor and broke."
+      },
+      {
+       "zh": "下雨路滑，我摔了一跤。",
+       "en": "The road was slippery from the rain, and I fell down."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-6",
+     "num": 6,
+     "hanzi": "突然",
+     "pinyin": "tūrán",
+     "meaning": "sudden; suddenly",
+     "pos": "adv",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "外面突然下雨了。",
+       "en": "It suddenly started raining outside."
+      },
+      {
+       "zh": "上课的时候，他突然站起来了。",
+       "en": "During class, he suddenly stood up."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-7",
+     "num": 7,
+     "hanzi": "质量",
+     "pinyin": "zhìliàng",
+     "meaning": "quality",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这件衣服的质量很好。",
+       "en": "This piece of clothing is of good quality."
+      },
+      {
+       "zh": "A：这个包质量怎么样？B：不错，用了三年了。",
+       "en": "A: How's the quality of this bag? B: Good. I've used it for three years."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-8",
+     "num": 8,
+     "hanzi": "寄",
+     "pinyin": "jì",
+     "meaning": "mail; send",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想给家人寄礼物。",
+       "en": "I want to mail a gift to my family."
+      },
+      {
+       "zh": "A：寄到美国要几天？B：大概一个星期。",
+       "en": "A: How many days does it take to mail it to the US? B: About a week."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-9",
+     "num": 9,
+     "hanzi": "双十一",
+     "pinyin": "Shuāng Shíyī",
+     "meaning": "Singles’ Day shopping festival (November 11)",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "双十一很多东西打折。",
+       "en": "Many things are on sale during Double Eleven."
+      },
+      {
+       "zh": "A：双十一你买了什么？B：买了一件大衣。",
+       "en": "A: What did you buy on Singles' Day? B: I bought a coat."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-10",
+     "num": 10,
+     "hanzi": "鞋",
+     "pinyin": "xié",
+     "meaning": "shoe",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想买一双运动鞋。",
+       "en": "I want to buy a pair of sneakers."
+      },
+      {
+       "zh": "进门以前请换鞋。",
+       "en": "Please change your shoes before coming in."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-11",
+     "num": 11,
+     "hanzi": "退",
+     "pinyin": "tuì",
+     "meaning": "return",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这件衣服不合适，我想退货。",
+       "en": "These clothes don't fit, so I want to return them."
+      },
+      {
+       "zh": "A：这双鞋能退吗？B：七天以内可以退。",
+       "en": "A: Can I return these shoes? B: Yes, within seven days."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-12",
+     "num": 12,
+     "hanzi": "合适",
+     "pinyin": "héshì",
+     "meaning": "suitable",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这件衣服很合适。",
+       "en": "This piece of clothing fits well."
+      },
+      {
+       "zh": "A：明天下午见面，合适吗？B：合适，没问题。",
+       "en": "A: Does tomorrow afternoon work for meeting? B: Yes, no problem."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-13",
+     "num": 13,
+     "hanzi": "发现",
+     "pinyin": "fāxiàn",
+     "meaning": "find",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我发现了一个新问题。",
+       "en": "I discovered a new problem."
+      },
+      {
+       "zh": "到了学校，我才发现忘带书了。",
+       "en": "When I got to school, I realized I had forgotten my book."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-14",
+     "num": 14,
+     "hanzi": "页",
+     "pinyin": "yè",
+     "meaning": "page",
+     "pos": "mw",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请打开书的第十页。",
+       "en": "Please open your book to page ten."
+      },
+      {
+       "zh": "这本书一共有多少页？",
+       "en": "How many pages does this book have in total?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l11-15",
+     "num": 15,
+     "hanzi": "破",
+     "pinyin": "pò",
+     "meaning": "tear",
+     "pos": "a",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的书包破了。",
+       "en": "My backpack is torn."
+      },
+      {
+       "zh": "A：你的裤子怎么破了？B：刚才摔了一下。",
+       "en": "A: How did your pants get torn? B: I fell just now."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "title": "你哪儿不舒服？",
+   "titleEn": "What's Wrong? Where Does It Hurt?",
+   "words": [
+    {
+     "id": "kouyu-1-l12-1",
+     "num": 1,
+     "hanzi": "挂号",
+     "pinyin": "guàhào",
+     "meaning": "register at a hospital",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "看医生以前要先挂号。",
+       "en": "You need to register before seeing a doctor."
+      },
+      {
+       "zh": "A：在哪儿挂号？B：一楼，也可以在手机上挂。",
+       "en": "A: Where do I register? B: On the first floor, or you can do it on your phone."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-2",
+     "num": 2,
+     "hanzi": "收费处",
+     "pinyin": "shōufèichù",
+     "meaning": "cashier; payment counter",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请先到收费处交费。",
+       "en": "Please pay at the cashier's counter first."
+      },
+      {
+       "zh": "A：请问，收费处在哪儿？B：在一楼左边。",
+       "en": "A: Excuse me, where's the payment counter? B: On the left, first floor."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-3",
+     "num": 3,
+     "hanzi": "费",
+     "pinyin": "fèi",
+     "meaning": "fee; expense",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个挂号费多少钱？",
+       "en": "How much is the registration fee?"
+      },
+      {
+       "zh": "在中国上大学，学费贵吗？",
+       "en": "Is college tuition expensive in China?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-4",
+     "num": 4,
+     "hanzi": "科",
+     "pinyin": "kē",
+     "meaning": "department",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你要挂哪个科？",
+       "en": "Which medical department do you need?"
+      },
+      {
+       "zh": "A：我牙疼，挂什么科？B：挂口腔科。",
+       "en": "A: I have a toothache. Which department should I register for? B: Dentistry."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-5",
+     "num": 5,
+     "hanzi": "肚子",
+     "pinyin": "dùzi",
+     "meaning": "belly",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天我的肚子不舒服。",
+       "en": "My stomach doesn't feel well today."
+      },
+      {
+       "zh": "A：我肚子饿了。B：我们去吃饭吧。",
+       "en": "A: I'm hungry. B: Let's go eat."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-6",
+     "num": 6,
+     "hanzi": "疼",
+     "pinyin": "téng",
+     "meaning": "painful",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的头有点儿疼。",
+       "en": "My head hurts a little."
+      },
+      {
+       "zh": "A：哪儿疼？B：这儿，一碰就疼。",
+       "en": "A: Where does it hurt? B: Here. It hurts when I touch it."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-7",
+     "num": 7,
+     "hanzi": "内科",
+     "pinyin": "nèikē",
+     "meaning": "internal medicine",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你可以去内科看看。",
+       "en": "You can visit the internal medicine department."
+      },
+      {
+       "zh": "A：我发烧了，看哪个科？B：去内科吧。",
+       "en": "A: I have a fever. Which department should I see? B: Go to internal medicine."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-8",
+     "num": 8,
+     "hanzi": "拉肚子",
+     "pinyin": "lā dùzi",
+     "meaning": "have diarrhea",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我昨天晚上拉肚子了。",
+       "en": "I had diarrhea last night."
+      },
+      {
+       "zh": "吃了不干净的东西，容易拉肚子。",
+       "en": "Eating something unclean can easily give you diarrhea."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-9",
+     "num": 9,
+     "hanzi": "检查",
+     "pinyin": "jiǎnchá",
+     "meaning": "check (up)",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "医生要给我检查一下。",
+       "en": "The doctor wants to examine me."
+      },
+      {
+       "zh": "交作业以前，请再检查一遍。",
+       "en": "Please check it over once more before handing in your homework."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-10",
+     "num": 10,
+     "hanzi": "新鲜",
+     "pinyin": "xīnxiān",
+     "meaning": "fresh",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我喜欢吃新鲜水果。",
+       "en": "I like eating fresh fruit."
+      },
+      {
+       "zh": "A：这鱼新鲜吗？B：很新鲜，今天早上刚到的。",
+       "en": "A: Is this fish fresh? B: Very fresh. It just came in this morning."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-11",
+     "num": 11,
+     "hanzi": "开",
+     "pinyin": "kāi",
+     "meaning": "prescribe (medicine); write a prescription",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "医生给我开了药。",
+       "en": "The doctor prescribed medicine for me."
+      },
+      {
+       "zh": "A：大夫，能给我开点儿药吗？B：好，吃三天就行。",
+       "en": "A: Doctor, could you prescribe me some medicine? B: Sure, three days' worth will do."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-12",
+     "num": 12,
+     "hanzi": "片",
+     "pinyin": "piàn",
+     "meaning": "tablet (medicine); slice",
+     "pos": "mw",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "一天吃两片药。",
+       "en": "Take two tablets a day."
+      },
+      {
+       "zh": "我早上吃了两片面包。",
+       "en": "I ate two slices of bread this morning."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-13",
+     "num": 13,
+     "hanzi": "注意",
+     "pinyin": "zhùyì",
+     "meaning": "pay attention to",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请注意休息。",
+       "en": "Please make sure to rest."
+      },
+      {
+       "zh": "过马路的时候要注意车。",
+       "en": "Watch out for cars when you cross the street."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-14",
+     "num": 14,
+     "hanzi": "凉",
+     "pinyin": "liáng",
+     "meaning": "cool; cold",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "别喝太凉的水。",
+       "en": "Don't drink water that is too cold."
+      },
+      {
+       "zh": "A：外面凉不凉？B：有点儿凉，多穿点儿。",
+       "en": "A: Is it cold outside? B: A bit chilly. Put on more clothes."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-15",
+     "num": 15,
+     "hanzi": "药房",
+     "pinyin": "yàofáng",
+     "meaning": "pharmacy",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你可以去药房拿药。",
+       "en": "You can pick up your medicine at the pharmacy."
+      },
+      {
+       "zh": "A：药房几点关门？B：晚上十点。",
+       "en": "A: What time does the pharmacy close? B: At ten at night."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-16",
+     "num": 16,
+     "hanzi": "腿",
+     "pinyin": "tuǐ",
+     "meaning": "leg",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的腿有点儿疼。",
+       "en": "My leg hurts a little."
+      },
+      {
+       "zh": "走了一天路，我的腿都累了。",
+       "en": "After walking all day, my legs are tired."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-17",
+     "num": 17,
+     "hanzi": "血",
+     "pinyin": "xuè",
+     "meaning": "blood",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "医生要检查我的血。",
+       "en": "The doctor needs to test my blood."
+      },
+      {
+       "zh": "A：手怎么出血了？B：切菜的时候不小心切到了。",
+       "en": "A: Why is your hand bleeding? B: I cut it by accident while chopping vegetables."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-18",
+     "num": 18,
+     "hanzi": "上",
+     "pinyin": "shàng",
+     "meaning": "apply (medicine); put on",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "医生给我的腿上了药。",
+       "en": "The doctor applied medicine to my leg."
+      },
+      {
+       "zh": "护士给他的伤口上了点儿药。",
+       "en": "The nurse put some medicine on his wound."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-19",
+     "num": 19,
+     "hanzi": "感冒",
+     "pinyin": "gǎnmào",
+     "meaning": "(common) cold; catch cold",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我感冒了，今天不去上课。",
+       "en": "I have a cold, so I'm not going to class today."
+      },
+      {
+       "zh": "A：你感冒好了吗？B：好多了，谢谢。",
+       "en": "A: Are you over your cold? B: Much better, thanks."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-20",
+     "num": 20,
+     "hanzi": "咳嗽",
+     "pinyin": "késou",
+     "meaning": "cough",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他这两天一直咳嗽。",
+       "en": "He has been coughing these past two days."
+      },
+      {
+       "zh": "A：你咳嗽得厉害吗？B：晚上咳嗽得比较厉害。",
+       "en": "A: Is your cough bad? B: It's worse at night."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-21",
+     "num": 21,
+     "hanzi": "发烧",
+     "pinyin": "fāshāo",
+     "meaning": "have a fever",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她发烧了，今天要休息。",
+       "en": "She has a fever and needs to rest today."
+      },
+      {
+       "zh": "A：你发烧吗？B：有一点儿，三十七度五。",
+       "en": "A: Do you have a fever? B: A little, 37.5 degrees."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-22",
+     "num": 22,
+     "hanzi": "度",
+     "pinyin": "dù",
+     "meaning": "degree (temperature)",
+     "pos": "mw",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的体温是三十八度。",
+       "en": "His temperature is 38 degrees Celsius."
+      },
+      {
+       "zh": "A：今天多少度？B：零下五度，特别冷。",
+       "en": "A: What's the temperature today? B: Minus five degrees. It's freezing."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l12-23",
+     "num": 23,
+     "hanzi": "结果",
+     "pinyin": "jiéguǒ",
+     "meaning": "result",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "检查结果出来了吗？",
+       "en": "Are the test results ready?"
+      },
+      {
+       "zh": "我复习了很久，结果还是没考好。",
+       "en": "I studied for a long time, but I still didn't do well on the exam."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "title": "你喜欢踢足球吗？",
+   "titleEn": "Do You Like Playing Soccer?",
+   "words": [
+    {
+     "id": "kouyu-1-l13-1",
+     "num": 1,
+     "hanzi": "交",
+     "pinyin": "jiāo",
+     "meaning": "make friends (in 交朋友); hand in (in 交作业)",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想交几个中国朋友。",
+       "en": "I want to make some Chinese friends."
+      },
+      {
+       "zh": "A：作业什么时候交？B：星期五以前。",
+       "en": "A: When is the homework due? B: Before Friday."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-2",
+     "num": 2,
+     "hanzi": "感受",
+     "pinyin": "gǎnshòu",
+     "meaning": "experience; feeling; to experience",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想感受中国文化。",
+       "en": "I want to experience Chinese culture."
+      },
+      {
+       "zh": "A：来中国一个月了，你有什么感受？B：一切都很新鲜。",
+       "en": "A: You've been in China a month. How do you feel? B: Everything feels new."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-3",
+     "num": 3,
+     "hanzi": "场",
+     "pinyin": "chǎng",
+     "meaning": "field; measure word for sports matches and performances",
+     "pos": "mw",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们在足球场上见面。",
+       "en": "Let's meet at the football field."
+      },
+      {
+       "zh": "昨天晚上的那场比赛太精彩了！",
+       "en": "Last night's match was fantastic!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-4",
+     "num": 4,
+     "hanzi": "好处",
+     "pinyin": "hǎochù",
+     "meaning": "benefit",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "运动对身体有好处。",
+       "en": "Exercise is good for your health."
+      },
+      {
+       "zh": "A：早睡早起有什么好处？B：精神会更好。",
+       "en": "A: What are the benefits of early to bed, early to rise? B: You'll have more energy."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-5",
+     "num": 5,
+     "hanzi": "汗",
+     "pinyin": "hàn",
+     "meaning": "sweat",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我跑步后出了很多汗。",
+       "en": "I sweated a lot after running."
+      },
+      {
+       "zh": "天太热了，我一出门就出汗。",
+       "en": "It's so hot that I start sweating as soon as I go out."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-6",
+     "num": 6,
+     "hanzi": "为了",
+     "pinyin": "wèile",
+     "meaning": "in order to",
+     "pos": "prep",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "为了学好汉语，我每天练习。",
+       "en": "In order to learn Chinese well, I practice every day."
+      },
+      {
+       "zh": "A：你为了什么来中国？B：为了学习中医。",
+       "en": "A: Why did you come to China? B: To study Chinese medicine."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-7",
+     "num": 7,
+     "hanzi": "健康",
+     "pinyin": "jiànkāng",
+     "meaning": "healthy",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "运动可以让身体更健康。",
+       "en": "Exercise can make you healthier."
+      },
+      {
+       "zh": "A：你爷爷身体怎么样？B：很健康，每天去公园散步。",
+       "en": "A: How is your grandpa's health? B: Very healthy. He walks in the park every day."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-8",
+     "num": 8,
+     "hanzi": "懒",
+     "pinyin": "lǎn",
+     "meaning": "lazy",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他今天有点儿懒。",
+       "en": "He is a little lazy today."
+      },
+      {
+       "zh": "周末我懒得做饭，就叫外卖。",
+       "en": "On weekends I'm too lazy to cook, so I order takeout."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-9",
+     "num": 9,
+     "hanzi": "感兴趣",
+     "pinyin": "gǎnxìngqù",
+     "meaning": "be interested in",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我对中国历史很感兴趣。",
+       "en": "I'm very interested in Chinese history."
+      },
+      {
+       "zh": "A：你对什么运动感兴趣？B：我对篮球感兴趣。",
+       "en": "A: What sports are you interested in? B: I'm into basketball."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-10",
+     "num": 10,
+     "hanzi": "德国",
+     "pinyin": "Déguó",
+     "meaning": "Germany",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我有一个德国朋友。",
+       "en": "I have a German friend."
+      },
+      {
+       "zh": "A：你是从德国来的吗？B：不，我是奥地利人。",
+       "en": "A: Did you come from Germany? B: No, I'm Austrian."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-11",
+     "num": 11,
+     "hanzi": "冬天",
+     "pinyin": "dōngtiān",
+     "meaning": "winter",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "北京的冬天很冷。",
+       "en": "Winters in Beijing are cold."
+      },
+      {
+       "zh": "A：你喜欢冬天吗？B：喜欢，因为可以看雪。",
+       "en": "A: Do you like winter? B: Yes, because I can see snow."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-12",
+     "num": 12,
+     "hanzi": "滑雪",
+     "pinyin": "huáxuě",
+     "meaning": "ski",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想在冬天去滑雪。",
+       "en": "I want to go skiing in winter."
+      },
+      {
+       "zh": "A：你会滑雪吗？B：会一点儿，可是滑得不好。",
+       "en": "A: Can you ski? B: A little, but not well."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-13",
+     "num": 13,
+     "hanzi": "速度",
+     "pinyin": "sùdù",
+     "meaning": "speed",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的速度太快了。",
+       "en": "You're going too fast."
+      },
+      {
+       "zh": "A：这里的网速度怎么样？B：挺快的。",
+       "en": "A: How's the Internet speed here? B: Pretty fast."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-14",
+     "num": 14,
+     "hanzi": "更",
+     "pinyin": "gèng",
+     "meaning": "more",
+     "pos": "adv",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想把汉语说得更好。",
+       "en": "I want to speak Chinese even better."
+      },
+      {
+       "zh": "坐地铁比坐出租车更快。",
+       "en": "Taking the subway is even faster than taking a taxi."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-15",
+     "num": 15,
+     "hanzi": "爱好",
+     "pinyin": "àihào",
+     "meaning": "hobby",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的爱好是游泳。",
+       "en": "My hobby is swimming."
+      },
+      {
+       "zh": "A：你有什么爱好？B：我喜欢拍照和爬山。",
+       "en": "A: What are your hobbies? B: I like taking photos and hiking."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-16",
+     "num": 16,
+     "hanzi": "太极拳",
+     "pinyin": "tàijíquán",
+     "meaning": "tai chi",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我爷爷每天打太极拳。",
+       "en": "My grandfather practices tai chi every day."
+      },
+      {
+       "zh": "A：你学过太极拳吗？B：学过，在公园跟老人学的。",
+       "en": "A: Have you ever learned tai chi? B: Yes, from some old people in the park."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l13-17",
+     "num": 17,
+     "hanzi": "适合",
+     "pinyin": "shìhé",
+     "meaning": "suit; fit",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个活动很适合你。",
+       "en": "This activity is a good fit for you."
+      },
+      {
+       "zh": "A：这件衣服适合我吗？B：颜色很适合你。",
+       "en": "A: Does this outfit suit me? B: The color really suits you."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 14,
+   "title": "对不起，我迟到了",
+   "titleEn": "Sorry, I'm Late",
+   "words": [
+    {
+     "id": "kouyu-1-l14-1",
+     "num": 1,
+     "hanzi": "迟到",
+     "pinyin": "chídào",
+     "meaning": "be late",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天上课我迟到了。",
+       "en": "I was late for class today."
+      },
+      {
+       "zh": "A：你怎么又迟到了？B：对不起，路上堵车。",
+       "en": "A: Why are you late again? B: Sorry, there was a traffic jam."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-2",
+     "num": 2,
+     "hanzi": "生气",
+     "pinyin": "shēngqì",
+     "meaning": "get angry",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请别生我的气。",
+       "en": "Please don't be angry with me."
+      },
+      {
+       "zh": "A：你还在生气吗？B：不生气了，没关系。",
+       "en": "A: Are you still angry? B: Not anymore. It's fine."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-3",
+     "num": 3,
+     "hanzi": "堵车",
+     "pinyin": "dǔchē",
+     "meaning": "be traffic-jammed",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "今天路上堵车很严重。",
+       "en": "Traffic is very bad today."
+      },
+      {
+       "zh": "A：几点出门不堵车？B：最好七点以前。",
+       "en": "A: What time should I leave to avoid traffic? B: Best before seven."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-4",
+     "num": 4,
+     "hanzi": "怪",
+     "pinyin": "guài",
+     "meaning": "blame",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "不要怪他，他不是故意的。",
+       "en": "Don't blame him; he didn't do it on purpose."
+      },
+      {
+       "zh": "这件事都怪我，是我忘了告诉你。",
+       "en": "This is all my fault. I forgot to tell you."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-5",
+     "num": 5,
+     "hanzi": "其实",
+     "pinyin": "qíshí",
+     "meaning": "actually",
+     "pos": "adv",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "其实我已经知道了。",
+       "en": "Actually, I already knew."
+      },
+      {
+       "zh": "A：你汉语说得真好！B：其实我只学了半年。",
+       "en": "A: Your Chinese is really good! B: Actually, I've only studied for half a year."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-6",
+     "num": 6,
+     "hanzi": "出门",
+     "pinyin": "chūmén",
+     "meaning": "go out",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天八点出门。",
+       "en": "I leave home at eight every day."
+      },
+      {
+       "zh": "A：你出门了吗？B：还没呢，马上就走。",
+       "en": "A: Have you left yet? B: Not yet. I'm leaving right now."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-7",
+     "num": 7,
+     "hanzi": "保证",
+     "pinyin": "bǎozhèng",
+     "meaning": "assure; guarantee",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我保证以后不迟到。",
+       "en": "I promise I won't be late again."
+      },
+      {
+       "zh": "A：你保证明天能做完吗？B：我保证。",
+       "en": "A: Can you guarantee you'll finish by tomorrow? B: I promise."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-8",
+     "num": 8,
+     "hanzi": "准时",
+     "pinyin": "zhǔnshí",
+     "meaning": "on time",
+     "pos": "a",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请明天准时到学校。",
+       "en": "Please arrive at school on time tomorrow."
+      },
+      {
+       "zh": "A：火车准时吗？B：准时，八点整开。",
+       "en": "A: Is the train on time? B: Yes, it leaves at eight sharp."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-9",
+     "num": 9,
+     "hanzi": "故意",
+     "pinyin": "gùyì",
+     "meaning": "deliberately",
+     "pos": "adv",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他不是故意迟到的。",
+       "en": "He wasn't late on purpose."
+      },
+      {
+       "zh": "对不起，我不是故意踩你的。",
+       "en": "Sorry, I didn't step on you on purpose."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-10",
+     "num": 10,
+     "hanzi": "道歉",
+     "pinyin": "dàoqiàn",
+     "meaning": "apologize",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我应该向你道歉。",
+       "en": "I should apologize to you."
+      },
+      {
+       "zh": "A：他向你道歉了吗？B：道歉了，我们和好了。",
+       "en": "A: Did he apologize to you? B: He did, and we made up."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-11",
+     "num": 11,
+     "hanzi": "好好",
+     "pinyin": "hǎohǎo",
+     "meaning": "properly; carefully; to one’s heart’s content",
+     "pos": "adv",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "今晚我要好好复习。",
+       "en": "I want to review carefully tonight."
+      },
+      {
+       "zh": "考完试，我要好好睡一觉。",
+       "en": "After the exam, I'm going to get a really good sleep."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-12",
+     "num": 12,
+     "hanzi": "接",
+     "pinyin": "jiē",
+     "meaning": "answer (the phone)",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我现在不能接电话。",
+       "en": "I can't answer the phone right now."
+      },
+      {
+       "zh": "A：刚才你怎么不接电话？B：我在上课。",
+       "en": "A: Why didn't you answer the phone just now? B: I was in class."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-13",
+     "num": 13,
+     "hanzi": "解释",
+     "pinyin": "jiěshì",
+     "meaning": "explain",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "请听我解释一下。",
+       "en": "Please let me explain."
+      },
+      {
+       "zh": "A：这个词什么意思？B：我给你解释一下。",
+       "en": "A: What does this word mean? B: Let me explain it to you."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-14",
+     "num": 14,
+     "hanzi": "刚才",
+     "pinyin": "gāngcái",
+     "meaning": "just now",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你刚才去哪儿了？",
+       "en": "Where did you go just now?"
+      },
+      {
+       "zh": "刚才有人给你打电话了。",
+       "en": "Someone called you just now."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-15",
+     "num": 15,
+     "hanzi": "跟",
+     "pinyin": "gēn",
+     "meaning": "with",
+     "pos": "prep",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想跟老师说话。",
+       "en": "I want to talk to the teacher."
+      },
+      {
+       "zh": "A：你跟谁一起去？B：跟我的同屋。",
+       "en": "A: Who are you going with? B: With my roommate."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-16",
+     "num": 16,
+     "hanzi": "请假",
+     "pinyin": "qǐngjià",
+     "meaning": "ask for leave of absence",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我生病了，要请一天假。",
+       "en": "I'm sick and need to take a day off."
+      },
+      {
+       "zh": "A：老师，我明天能请假吗？B：可以，好好休息。",
+       "en": "A: Teacher, can I take tomorrow off? B: Sure. Get some good rest."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l14-17",
+     "num": 17,
+     "hanzi": "交",
+     "pinyin": "jiāo",
+     "meaning": "make friends (in 交朋友); hand in (in 交作业)",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想交几个中国朋友。",
+       "en": "I want to make some Chinese friends."
+      },
+      {
+       "zh": "对不起，我的作业明天再交，行吗？",
+       "en": "Sorry, could I hand in my homework tomorrow?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 15,
+   "title": "你们国家怎么庆祝新年？",
+   "titleEn": "How Does Your Country Celebrate New Year?",
+   "words": [
+    {
+     "id": "kouyu-1-l15-1",
+     "num": 1,
+     "hanzi": "新年",
+     "pinyin": "xīnnián",
+     "meaning": "new year",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "祝你新年快乐！",
+       "en": "Happy New Year to you!"
+      },
+      {
+       "zh": "A：新年你回国吗？B：不回，我在北京过。",
+       "en": "A: Are you going home for New Year? B: No, I'm spending it in Beijing."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-2",
+     "num": 2,
+     "hanzi": "烟花",
+     "pinyin": "yānhuā",
+     "meaning": "fireworks",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "新年晚上有很多烟花。",
+       "en": "There are lots of fireworks on New Year's Eve."
+      },
+      {
+       "zh": "A：你看过烟花吗？B：看过，特别漂亮。",
+       "en": "A: Have you ever seen fireworks? B: Yes, they were really beautiful."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-3",
+     "num": 3,
+     "hanzi": "放",
+     "pinyin": "fàng",
+     "meaning": "set off (fireworks)",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起放烟花吧。",
+       "en": "Let's set off fireworks together."
+      },
+      {
+       "zh": "现在城里很多地方不能放鞭炮。",
+       "en": "Nowadays you can't set off firecrackers in many parts of the city."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-4",
+     "num": 4,
+     "hanzi": "一样",
+     "pinyin": "yíyàng",
+     "meaning": "the same",
+     "pos": "part",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我和他一样高。",
+       "en": "He and I are the same height."
+      },
+      {
+       "zh": "A：你们国家也过春节吗？B：不一样，我们过圣诞节。",
+       "en": "A: Does your country celebrate Spring Festival too? B: It's different. We celebrate Christmas."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-5",
+     "num": 5,
+     "hanzi": "聚会",
+     "pinyin": "jùhuì",
+     "meaning": "get together",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "星期六我们有个聚会。",
+       "en": "We're having a gathering on Saturday."
+      },
+      {
+       "zh": "A：聚会几点开始？B：晚上七点，在我家。",
+       "en": "A: What time does the party start? B: Seven in the evening, at my place."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-6",
+     "num": 6,
+     "hanzi": "庆祝",
+     "pinyin": "qìngzhù",
+     "meaning": "celebrate",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们一起庆祝生日。",
+       "en": "Let's celebrate the birthday together."
+      },
+      {
+       "zh": "A：考试结束了，怎么庆祝？B：去吃火锅吧！",
+       "en": "A: Exams are over. How should we celebrate? B: Let's go eat hot pot!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-7",
+     "num": 7,
+     "hanzi": "游戏",
+     "pinyin": "yóuxì",
+     "meaning": "game",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "孩子们喜欢玩游戏。",
+       "en": "The children like playing games."
+      },
+      {
+       "zh": "A：你喜欢玩什么游戏？B：我喜欢玩手机游戏。",
+       "en": "A: What games do you like to play? B: I like mobile games."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-8",
+     "num": 8,
+     "hanzi": "酒",
+     "pinyin": "jiǔ",
+     "meaning": "alcoholic drink",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他不喜欢喝酒。",
+       "en": "He doesn't like drinking alcohol."
+      },
+      {
+       "zh": "A：你喝酒吗？B：不喝，我喝茶就行。",
+       "en": "A: Do you drink? B: No, tea is fine for me."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-9",
+     "num": 9,
+     "hanzi": "猪",
+     "pinyin": "zhū",
+     "meaning": "pig",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这只小猪很可爱。",
+       "en": "This little pig is very cute."
+      },
+      {
+       "zh": "A：你属什么？B：我属猪。",
+       "en": "A: What's your Chinese zodiac sign? B: I'm the Year of the Pig."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-10",
+     "num": 10,
+     "hanzi": "好运",
+     "pinyin": "hǎoyùn",
+     "meaning": "good luck",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "祝你考试好运！",
+       "en": "Good luck on your exam!"
+      },
+      {
+       "zh": "新的一年，祝你好运！",
+       "en": "Good luck to you in the new year!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-11",
+     "num": 11,
+     "hanzi": "礼物",
+     "pinyin": "lǐwù",
+     "meaning": "gift",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是送给你的礼物。",
+       "en": "This is a present for you."
+      },
+      {
+       "zh": "A：你给妈妈买了什么礼物？B：一条围巾。",
+       "en": "A: What gift did you buy your mom? B: A scarf."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-12",
+     "num": 12,
+     "hanzi": "春节",
+     "pinyin": "Chūnjié",
+     "meaning": "Spring Festival",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "春节是中国的重要节日。",
+       "en": "Spring Festival is an important Chinese holiday."
+      },
+      {
+       "zh": "A：春节你打算去哪儿？B：去中国朋友家过年。",
+       "en": "A: Where are you going for Spring Festival? B: To a Chinese friend's home for the New Year."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-13",
+     "num": 13,
+     "hanzi": "迎接",
+     "pinyin": "yíngjiē",
+     "meaning": "greet",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们去机场迎接朋友。",
+       "en": "We're going to the airport to welcome a friend."
+      },
+      {
+       "zh": "大家准备好迎接新年了吗？",
+       "en": "Is everyone ready to welcome the new year?"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-14",
+     "num": 14,
+     "hanzi": "打扫",
+     "pinyin": "dǎsǎo",
+     "meaning": "sweep; clean",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "周末我要打扫房间。",
+       "en": "I need to clean my room this weekend."
+      },
+      {
+       "zh": "A：教室谁打扫？B：我们轮流打扫。",
+       "en": "A: Who cleans the classroom? B: We take turns."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-15",
+     "num": 15,
+     "hanzi": "传统",
+     "pinyin": "chuántǒng",
+     "meaning": "traditional",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这是一个传统节日。",
+       "en": "This is a traditional festival."
+      },
+      {
+       "zh": "A：中国的传统食物有哪些？B：比如饺子和月饼。",
+       "en": "A: What are some traditional Chinese foods? B: Dumplings and mooncakes, for example."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-16",
+     "num": 16,
+     "hanzi": "寺庙",
+     "pinyin": "sìmiào",
+     "meaning": "temple",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这座寺庙已经很老了。",
+       "en": "This temple is very old."
+      },
+      {
+       "zh": "A：春节的时候，很多人去寺庙吗？B：对，人特别多。",
+       "en": "A: Do a lot of people go to temples during Spring Festival? B: Yes, it's really crowded."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-17",
+     "num": 17,
+     "hanzi": "祈祷",
+     "pinyin": "qídǎo",
+     "meaning": "pray",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们为家人健康祈祷。",
+       "en": "We pray for our family's health."
+      },
+      {
+       "zh": "她每天睡觉以前都要祈祷。",
+       "en": "She prays every night before she goes to bed."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-18",
+     "num": 18,
+     "hanzi": "装饰",
+     "pinyin": "zhuāngshì",
+     "meaning": "decorate",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他们在装饰房间。",
+       "en": "They are decorating the room."
+      },
+      {
+       "zh": "A：我们用什么装饰教室？B：用红灯笼吧。",
+       "en": "A: What should we decorate the classroom with? B: Let's use red lanterns."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-19",
+     "num": 19,
+     "hanzi": "倒数",
+     "pinyin": "dàoshǔ",
+     "meaning": "countdown",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "大家一起倒数十秒。",
+       "en": "Everyone counts down ten seconds together."
+      },
+      {
+       "zh": "A：还有多久到十二点？B：快了，准备倒数吧！",
+       "en": "A: How long until midnight? B: Almost there. Get ready for the countdown!"
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-20",
+     "num": 20,
+     "hanzi": "亲吻",
+     "pinyin": "qīnwěn",
+     "meaning": "kiss",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "妈妈亲吻了孩子。",
+       "en": "The mother kissed her child."
+      },
+      {
+       "zh": "在一些国家，朋友见面时会亲吻对方的脸。",
+       "en": "In some countries, friends kiss each other on the cheek when they meet."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-21",
+     "num": 21,
+     "hanzi": "许愿",
+     "pinyin": "xǔyuàn",
+     "meaning": "make a wish",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "生日时你可以许个愿。",
+       "en": "You can make a wish on your birthday."
+      },
+      {
+       "zh": "A：吹蜡烛以前先许愿吧！B：好，我想想。",
+       "en": "A: Make a wish before you blow out the candles! B: Okay, let me think."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-22",
+     "num": 22,
+     "hanzi": "愿望",
+     "pinyin": "yuànwàng",
+     "meaning": "desire; wish",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我的愿望是去中国旅行。",
+       "en": "My wish is to travel to China."
+      },
+      {
+       "zh": "A：你新年的愿望是什么？B：通过汉语考试。",
+       "en": "A: What's your New Year's wish? B: To pass my Chinese exam."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l15-23",
+     "num": 23,
+     "hanzi": "点着",
+     "pinyin": "diǎnzháo",
+     "meaning": "ignite; light (a fire)",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "小心，别把纸点着了。",
+       "en": "Be careful not to set the paper on fire."
+      },
+      {
+       "zh": "A：蜡烛点着了吗？B：点着了，快来许愿吧。",
+       "en": "A: Are the candles lit? B: Yes, come make a wish."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 16,
+   "title": "你有什么打算？",
+   "titleEn": "What Are Your Plans?",
+   "words": [
+    {
+     "id": "kouyu-1-l16-1",
+     "num": 1,
+     "hanzi": "结束",
+     "pinyin": "jiéshù",
+     "meaning": "end; finish",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "汉语课马上结束了。",
+       "en": "Chinese class is almost over."
+      },
+      {
+       "zh": "A：比赛什么时候结束？B：大概晚上九点。",
+       "en": "A: When does the match end? B: Around nine tonight."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-2",
+     "num": 2,
+     "hanzi": "打算",
+     "pinyin": "dǎsuàn",
+     "meaning": "plan",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你暑假有什么打算？",
+       "en": "What are your plans for the summer vacation?"
+      },
+      {
+       "zh": "我打算毕业以后留在中国工作。",
+       "en": "I plan to stay and work in China after I graduate."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-3",
+     "num": 3,
+     "hanzi": "申请",
+     "pinyin": "shēnqǐng",
+     "meaning": "apply for",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我准备申请大学。",
+       "en": "I am preparing to apply to university."
+      },
+      {
+       "zh": "A：奖学金怎么申请？B：先在网上填表。",
+       "en": "A: How do I apply for the scholarship? B: Fill out the form online first."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-4",
+     "num": 4,
+     "hanzi": "专业",
+     "pinyin": "zhuānyè",
+     "meaning": "major; specialty",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "你的大学专业是什么？",
+       "en": "What is your major at university?"
+      },
+      {
+       "zh": "他的专业是国际贸易。",
+       "en": "His major is international trade."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-5",
+     "num": 5,
+     "hanzi": "继续",
+     "pinyin": "jìxù",
+     "meaning": "continue",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想继续学习中文。",
+       "en": "I want to continue studying Chinese."
+      },
+      {
+       "zh": "休息十分钟，我们继续上课。",
+       "en": "Let's take a ten-minute break, then continue class."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-6",
+     "num": 6,
+     "hanzi": "毕业",
+     "pinyin": "bìyè",
+     "meaning": "graduate",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我明年从大学毕业。",
+       "en": "I will graduate from university next year."
+      },
+      {
+       "zh": "A：你什么时候毕业？B：还有一年。",
+       "en": "A: When do you graduate? B: In one more year."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-7",
+     "num": 7,
+     "hanzi": "了解",
+     "pinyin": "liǎojiě",
+     "meaning": "understand; learn about",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想多了解中国文化。",
+       "en": "I want to learn more about Chinese culture."
+      },
+      {
+       "zh": "A：你了解这个城市吗？B：不太了解，我刚来。",
+       "en": "A: Do you know this city well? B: Not really. I just got here."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-8",
+     "num": 8,
+     "hanzi": "文化",
+     "pinyin": "wénhuà",
+     "meaning": "culture",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "中国文化很有意思。",
+       "en": "Chinese culture is very interesting."
+      },
+      {
+       "zh": "A：你对哪个国家的文化感兴趣？B：日本文化。",
+       "en": "A: Which country's culture are you interested in? B: Japanese culture."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-9",
+     "num": 9,
+     "hanzi": "参加",
+     "pinyin": "cānjiā",
+     "meaning": "participate in",
+     "pos": "v",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我们明天参加考试。",
+       "en": "We are taking an exam tomorrow."
+      },
+      {
+       "zh": "A：你参加了学校的足球队吗？B：参加了。",
+       "en": "A: Did you join the school soccer team? B: Yes, I did."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-10",
+     "num": 10,
+     "hanzi": "水平",
+     "pinyin": "shuǐpíng",
+     "meaning": "level; standard",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他的汉语水平很高。",
+       "en": "His Chinese proficiency is very high."
+      },
+      {
+       "zh": "A：你的汉语是什么水平？B：初级，刚学半年。",
+       "en": "A: What's your Chinese level? B: Beginner. I've only studied for half a year."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-11",
+     "num": 11,
+     "hanzi": "本科",
+     "pinyin": "běnkē",
+     "meaning": "undergraduate course",
+     "pos": "n",
+     "type": "core",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我打算读大学本科。",
+       "en": "I plan to pursue an undergraduate degree."
+      },
+      {
+       "zh": "A：你是本科生吗？B：不是，我是研究生。",
+       "en": "A: Are you an undergraduate? B: No, I'm a graduate student."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-12",
+     "num": 12,
+     "hanzi": "决定",
+     "pinyin": "juédìng",
+     "meaning": "decide",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我决定明年去中国。",
+       "en": "I have decided to go to China next year."
+      },
+      {
+       "zh": "A：你决定了吗？B：还没有，我再想想。",
+       "en": "A: Have you decided? B: Not yet. Let me think about it some more."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-13",
+     "num": 13,
+     "hanzi": "导游",
+     "pinyin": "dǎoyóu",
+     "meaning": "tour guide",
+     "pos": "n",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "她以后想当导游。",
+       "en": "She wants to become a tour guide."
+      },
+      {
+       "zh": "这次旅行，导游给我们介绍了很多历史。",
+       "en": "On this trip, the tour guide told us a lot about the history."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-14",
+     "num": 14,
+     "hanzi": "和……有关",
+     "pinyin": "hé……yǒuguān",
+     "meaning": "be related to",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "这个问题和学习有关。",
+       "en": "This issue is related to studying."
+      },
+      {
+       "zh": "A：你的工作和中文有关吗？B：有关，我是翻译。",
+       "en": "A: Is your job related to Chinese? B: Yes, I'm a translator."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-15",
+     "num": 15,
+     "hanzi": "提高",
+     "pinyin": "tígāo",
+     "meaning": "improve",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我想提高口语水平。",
+       "en": "I want to improve my speaking ability."
+      },
+      {
+       "zh": "A：怎么提高听力？B：多听中文歌，多看中国电影。",
+       "en": "A: How can I improve my listening? B: Listen to Chinese songs and watch Chinese movies a lot."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-16",
+     "num": 16,
+     "hanzi": "结婚",
+     "pinyin": "jiéhūn",
+     "meaning": "get married",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "他们计划明年结婚。",
+       "en": "They plan to get married next year."
+      },
+      {
+       "zh": "A：你哥哥结婚了吗？B：结了，有两个孩子。",
+       "en": "A: Is your brother married? B: Yes, he has two kids."
+      }
+     ]
+    },
+    {
+     "id": "kouyu-1-l16-17",
+     "num": 17,
+     "hanzi": "练习",
+     "pinyin": "liànxí",
+     "meaning": "practice",
+     "pos": "v",
+     "type": "supplement",
+     "note": null,
+     "examples": [
+      {
+       "zh": "我每天练习说汉语。",
+       "en": "I practice speaking Chinese every day."
+      },
+      {
+       "zh": "老师让我们做第三页的练习。",
+       "en": "The teacher asked us to do the exercises on page three."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

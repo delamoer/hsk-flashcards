@@ -81,7 +81,7 @@ const bandBg = computed(() => {
     ? `linear-gradient(180deg, rgba(250,244,233,.74), rgba(241,231,212,.92)), url(${img})`
     : "none";
 });
-const WM = { hsk: watermark.pinyin, newhsk3: watermark.words, huihua360: watermark.books, survival: watermark.words };
+const WM = { hsk: watermark.pinyin, newhsk3: watermark.words, huihua360: watermark.books, survival: watermark.words, kouyu: watermark.pinyin };
 const wmBg = computed(() => ({ backgroundImage: `url(${WM[props.series] || watermark.books})` }));
 
 // 卡片网格区衬一层极淡山水（纸色覆盖压到 ~10% 可见），填补空旷中段

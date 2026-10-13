@@ -2341,7 +2341,7 @@
      "hanzi": "虾",
      "pinyin": "xiā",
      "meaning": "shrimp",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -4958,7 +4958,7 @@
      "hanzi": "卧铺",
      "pinyin": "wòpù",
      "meaning": "sleeper berth",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -7161,7 +7161,7 @@
      "hanzi": "拉肚子",
      "pinyin": "lā dùzi",
      "meaning": "have diarrhea",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -8596,7 +8596,7 @@
      "hanzi": "牛仔裤",
      "pinyin": "niúzǎikù",
      "meaning": "jeans",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -8971,7 +8971,7 @@
      "hanzi": "微信",
      "pinyin": "Wēixìn",
      "meaning": "WeChat",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -9603,7 +9603,7 @@
      "hanzi": "退",
      "pinyin": "tuì",
      "meaning": "return; refund",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -10699,7 +10699,7 @@
      "hanzi": "填",
      "pinyin": "tián",
      "meaning": "fill in",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -13516,7 +13516,7 @@
      "hanzi": "成都",
      "pinyin": "Chéngdū",
      "meaning": "Chengdu",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": "教材专名",
      "examples": [
@@ -13741,7 +13741,7 @@
      "hanzi": "法国",
      "pinyin": "Fǎguó",
      "meaning": "France",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": "教材专名",
      "examples": [
@@ -15219,7 +15219,7 @@
      "hanzi": "春节",
      "pinyin": "Chūnjié",
      "meaning": "Spring Festival",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [

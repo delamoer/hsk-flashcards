@@ -76,7 +76,7 @@ function hexA(hex, a) {
   const r = parseInt(h.slice(0, 2), 16), g = parseInt(h.slice(2, 4), 16), b = parseInt(h.slice(4, 6), 16);
   return `rgba(${r},${g},${b},${a})`;
 }
-const WM = { hsk: watermark.books, newhsk3: watermark.words, huihua360: watermark.pinyin, survival: watermark.books };
+const WM = { hsk: watermark.books, newhsk3: watermark.words, huihua360: watermark.pinyin, survival: watermark.books, kouyu: watermark.words };
 const wmBg = computed(() => ({ backgroundImage: `url(${WM[props.series] || watermark.books})` }));
 const coverBg = computed(() => {
   const img = bookCover[props.series];
@@ -94,6 +94,7 @@ const BOOK_META = {
   newhsk3: { top: "NEW HSK 3.0", abbr: "新", cn: "新标准", en: "New Standards" },
   huihua360: { top: "CONVERSATION 360", abbr: "卷", cn: "会话三六〇", en: "Conversation 360" },
   survival: { top: "SURVIVAL CHINESE", abbr: "生", cn: "生存汉语", en: "Survival Chinese" },
+  kouyu: { top: "SPOKEN CHINESE", abbr: "口", cn: "新时代汉语口语", en: "Spoken Chinese" },
 };
 
 const books = computed(() => {
@@ -114,7 +115,7 @@ const books = computed(() => {
       label: `${m.abbr}.${u.id}`,
       top: m.top,
       lvlSmall: s.levelWord,
-      lvl: String(u.id),
+      lvl: u.lvl || String(u.id),
       seriesCn: m.cn,
       seriesEn: m.en,
       percent,
@@ -218,6 +219,7 @@ const books = computed(() => {
 .book.c-violet { background-color: #463060; }
 .book.c-jade { background-color: #1b5245; }
 .book.c-amber { background-color: #7d5216; }
+.book.c-indigo { background-color: #243a57; }
 /* 顶部/底部加深，级号与书脊更立体 */
 .book::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(0,0,0,.16), transparent 26%, transparent 62%, rgba(0,0,0,.28)); }
 .book .enter { position: absolute; bottom: 12px; right: 14px; z-index: 3; opacity: 0; transform: translateX(-4px); transition: .25s; font-family: var(--caps); font-size: 11px; letter-spacing: 2px; }

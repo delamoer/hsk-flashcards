@@ -7763,7 +7763,7 @@
      "hanzi": "网页",
      "pinyin": "wǎngyè",
      "meaning": "webpage",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -7943,7 +7943,7 @@
      "hanzi": "口语",
      "pinyin": "kǒuyǔ",
      "meaning": "spoken language",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -9057,7 +9057,7 @@
      "hanzi": "区",
      "pinyin": "qū",
      "meaning": "area; district",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -9417,7 +9417,7 @@
      "hanzi": "烤",
      "pinyin": "kǎo",
      "meaning": "to roast; bake",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -9597,7 +9597,7 @@
      "hanzi": "美食",
      "pinyin": "měishí",
      "meaning": "delicious food",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -10631,7 +10631,7 @@
      "hanzi": "期中",
      "pinyin": "qīzhōng",
      "meaning": "midterm",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -10711,7 +10711,7 @@
      "hanzi": "实习",
      "pinyin": "shíxí",
      "meaning": "to intern; internship",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": "教材标注：本级超纲词",
      "examples": [
@@ -12425,7 +12425,7 @@
      "hanzi": "受伤",
      "pinyin": "shòushāng",
      "meaning": "to be injured",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -12705,7 +12705,7 @@
      "hanzi": "队",
      "pinyin": "duì",
      "meaning": "team",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -13312,7 +13312,7 @@
      "hanzi": "二维码",
      "pinyin": "èrwéimǎ",
      "meaning": "QR code",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": "教材标注：本级超纲词",
      "examples": [
@@ -14079,7 +14079,7 @@
      "hanzi": "奖",
      "pinyin": "jiǎng",
      "meaning": "award; prize",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -14746,7 +14746,7 @@
      "hanzi": "大巴",
      "pinyin": "dàbā",
      "meaning": "coach; bus",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [

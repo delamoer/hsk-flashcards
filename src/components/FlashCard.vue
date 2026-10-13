@@ -25,10 +25,10 @@
         <div class="examples">
           <div v-for="(ex, i) in shownExamples" :key="i" class="ex">
             <div class="z">
-              <button class="mini" @click.stop="say(ex.zh)" title="朗读 Play">🔊</button>
-              <span>{{ ex.zh }}</span>
+              <button class="mini" @click.stop="say(speechOf(ex.zh))" title="朗读 Play">🔊</button>
+              <span><span v-for="(t, ti) in turns(ex.zh)" :key="ti" class="turn">{{ t }}</span></span>
             </div>
-            <div v-if="ex.en" class="e">{{ ex.en }}</div>
+            <div v-if="ex.en" class="e"><span v-for="(t, ti) in turns(ex.en)" :key="ti" class="turn">{{ t }}</span></div>
           </div>
         </div>
         <div v-if="word.collocations && word.collocations.length" class="collocs">
@@ -107,6 +107,17 @@ const pos = computed(() => posLabel(props.word.pos));
 
 function say(text) {
   speak(text, { rate: settings.ttsRate });
+}
+
+// Some examples are two-line exchanges ("A：…B：…", 新时代汉语口语): one line per turn
+// on screen, and the A/B labels are dropped for speech. gen_audio.py strips them the
+// same way, so the pre-generated MP3 is keyed by the label-free text.
+const TURN = /(?=\b[AB][：:]\s*)/;
+function turns(s) {
+  return s.split(TURN).map((t) => t.trim()).filter(Boolean);
+}
+function speechOf(zh) {
+  return zh.replace(/[AB]：/g, "");
 }
 </script>
 
@@ -347,6 +358,9 @@ function say(text) {
   font-size: 12px;
   color: var(--muted);
   margin-top: 2px;
+}
+.ex .turn {
+  display: block;
 }
 .ex .mini {
   color: var(--accent);
