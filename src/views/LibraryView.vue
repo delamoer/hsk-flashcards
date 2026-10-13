@@ -63,6 +63,14 @@
               <span v-for="k in initials" :key="k">{{ k }}</span>
             </div>
           </div>
+          <!-- 四声示范：妈麻马骂 + 五度调型 -->
+          <div class="py-tones">
+            <div v-for="t in tones" :key="t.n" class="tone" :style="{ '--tc': `var(--tone${t.n})` }">
+              <svg viewBox="0 0 32 24" class="contour" aria-hidden="true"><polyline :points="t.pts" /></svg>
+              <b class="ts">{{ t.syl }}<small>{{ t.hz }}</small></b>
+              <span class="tl">{{ t.cn }}<i>{{ t.en }}</i></span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -88,14 +96,18 @@
               </div>
             </div>
           </div>
-          <div class="mw-review">
-            <div class="rv-head">今日复习 <span>Review</span><em>5 / 10</em></div>
-            <div class="rv-card">
-              <div class="rv-zh">学习</div>
-              <div class="rv-py">xué xí</div>
-              <div class="rv-en">to study</div>
-              <span class="rv-btn">认识了 ✓</span>
+          <!-- 今日复习：一叠实物闪卡（与教材书架同为「物件」，带落地投影） -->
+          <div class="rva">
+            <div class="rva-stack">
+              <div class="rva-card back2"></div>
+              <div class="rva-card back1"></div>
+              <div class="rva-card front">
+                <span class="rva-seal">复习<b>5/10</b></span>
+                <div class="rva-zh">学习</div>
+                <div class="rva-hint">点击翻面 · Tap to flip</div>
+              </div>
             </div>
+            <div class="rva-cap">今日复习 <i>Today's review</i></div>
           </div>
         </div>
       </section>
@@ -125,13 +137,13 @@ const seriesList = courseRegistry;
 
 // 整块面板嵌入 band 山水：左浓右淡横向 scrim（护文字）+ 顶底轻纱，图在最底。
 function bandPanel(img) {
+  // 与 TextbookCarousel 的 .bgl .tint 同一套遮罩：左侧护字、右侧让山水透出，各板块观感一致
   return {
     backgroundImage:
-      `linear-gradient(90deg, rgba(249,243,232,.93) 0%, rgba(249,243,232,.78) 34%, rgba(249,243,232,.5) 72%, rgba(249,243,232,.4) 100%),` +
-      `linear-gradient(180deg, rgba(249,243,232,.28), rgba(243,234,216,.5)),` +
+      `linear-gradient(90deg, rgba(249,243,232,.96) 0%, rgba(249,243,232,.9) 22%, rgba(249,243,232,.55) 50%, rgba(249,243,232,.38) 100%),` +
       `url(${img})`,
-    backgroundSize: "cover, cover, cover",
-    backgroundPosition: "center, center, center",
+    backgroundSize: "cover, cover",
+    backgroundPosition: "center, center",
     backgroundRepeat: "no-repeat",
   };
 }
@@ -139,10 +151,19 @@ function bandPanel(img) {
 const initials = ["b", "p", "m", "f", "d", "t", "n", "l", "g", "k", "h", "j", "q", "x", "zh", "ch", "sh", "r", "z", "c", "s", "y", "w"];
 const sampleWords = [
   { zh: "你好", py: "nǐ hǎo", en: "hello" },
-  { zh: "学习", py: "xué xí", en: "to study" },
-  { zh: "中国", py: "zhōng guó", en: "China" },
-  { zh: "朋友", py: "péng you", en: "friend" },
-  { zh: "文化", py: "wén huà", en: "culture" },
+  { zh: "学习", py: "xuéxí", en: "to study" },
+  { zh: "中国", py: "Zhōngguó", en: "China" },
+  { zh: "朋友", py: "péngyou", en: "friend" },
+  { zh: "喜欢", py: "xǐhuan", en: "to like" },
+  { zh: "文化", py: "wénhuà", en: "culture" },
+  { zh: "谢谢", py: "xièxie", en: "thank you" },
+];
+// 四声示范（五度标记法：1 低 … 5 高，映射到 24px 高的小图）
+const tones = [
+  { n: 1, syl: "mā", hz: "妈", cn: "一声", en: "High", pts: "3,4 29,4" },
+  { n: 2, syl: "má", hz: "麻", cn: "二声", en: "Rising", pts: "3,13 29,4" },
+  { n: 3, syl: "mǎ", hz: "马", cn: "三声", en: "Dipping", pts: "3,11 14,20 29,7" },
+  { n: 4, syl: "mà", hz: "骂", cn: "四声", en: "Falling", pts: "3,4 29,20" },
 ];
 
 function bg(img) {
@@ -192,7 +213,9 @@ function bg(img) {
 .sec > *:not(.sec-bg):not(.sec-motif) { position: relative; z-index: 1; }
 /* 整块面板嵌入的 band 山水（scrim 已在内联渐变里，护住文字） */
 .sec-bg { position: absolute; inset: 0; z-index: 0; background-size: contain; background-position: right center; background-repeat: no-repeat; opacity: .08; mix-blend-mode: multiply; pointer-events: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 72%); mask-image: linear-gradient(90deg, transparent, #000 72%); }
-.sec-bg.is-band { opacity: 1; background-size: cover; background-position: center; mix-blend-mode: normal; -webkit-mask-image: none; mask-image: none; }
+.sec-bg.is-band { opacity: 1; background-size: cover; background-position: center; mix-blend-mode: normal; -webkit-mask-image: none; mask-image: none; inset: -3%; animation: band-drift 24s ease-in-out infinite alternate; }
+@keyframes band-drift { from { transform: scale(1.02); } to { transform: scale(1.08) translateX(-1.2%); } }
+@media (prefers-reduced-motion: reduce) { .sec-bg.is-band { animation: none; } }
 /* 浮于面板的母题（云 / 梅枝 / 仙鹤），填补右侧留白 */
 .sec-motif { position: absolute; z-index: 1; mix-blend-mode: multiply; pointer-events: none; filter: drop-shadow(0 5px 10px rgba(45,30,10,.16)); }
 .sec-motif.cranes { top: 16px; right: 22px; width: 150px; opacity: .6; }
@@ -214,41 +237,65 @@ function bg(img) {
 /* 01 教材 —— 书封横向滚动 + 右列纵向滚动 */
 
 /* 02/03 预览（无边框，坐落卡面上） */
-.preview { align-self: center; padding: 26px 24px; }
-.py-tabs { display: flex; gap: 20px; border-bottom: 1px solid var(--line-soft); padding-bottom: 10px; margin-bottom: 14px; }
+.preview { align-self: center; padding: 28px 24px;
+  /* 半透明宣纸：隐约透出背后山水，投影与教材书架的书一致 */
+  /* 不用带边框的卡片（白框与山水割裂）：内容直接写在画面上，背后只衬一团无边的纸色晕光 */
+  --halo: radial-gradient(closest-side, rgba(249,243,232,.92), rgba(249,243,232,.7) 55%, rgba(249,243,232,0));
+  --tile: rgba(243,234,217,.72); }
+.py-tabs { display: flex; gap: 20px; border-bottom: 1px solid var(--line-soft); padding-bottom: 10px; margin-bottom: 16px; }
 .py-tabs b { font-family: var(--serif-cn); font-size: 14px; font-weight: 600; color: var(--muted); }
 .py-tabs b.on { color: var(--cinnabar-dk); position: relative; }
 .py-tabs b.on::after { content: ""; position: absolute; left: 0; right: 0; bottom: -11px; height: 2px; background: var(--cinnabar); }
-.py-body { display: grid; grid-template-columns: 122px 1fr; gap: 16px; align-items: center; }
-.py-big { text-align: center; background: var(--paper); border: 1px solid var(--line-soft); border-radius: 10px; padding: 14px 8px; }
-.py-big .syl { font-family: var(--serif-cn); font-size: 52px; font-weight: 700; color: var(--cinnabar-dk); line-height: 1; }
+.py-body { display: grid; grid-template-columns: 138px 1fr; gap: 18px; align-items: stretch; }
+.py-big { position: relative; text-align: center; padding: 16px 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.py-big::before { content: ""; position: absolute; inset: -18% -22%; z-index: -1; background: var(--halo); pointer-events: none; }
+.py-big .syl { font-family: var(--serif-cn); font-size: 64px; font-weight: 700; color: var(--cinnabar-dk); line-height: 1; }
 .py-big .sound { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(145deg, var(--cinnabar), var(--cinnabar-dk)); color: #fbeecf; font-size: 13px; margin: 8px 0 6px; }
 .py-big .lbl { font-size: 11px; color: var(--muted); font-family: var(--han); }
 .py-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
-.py-grid span { display: grid; place-items: center; height: 32px; border-radius: 6px; background: var(--paper); border: 1px solid var(--line-soft); font-family: var(--ui); font-weight: 700; font-size: 13px; color: var(--ink-soft, #4a3d2a); }
+.py-grid span { display: grid; place-items: center; height: 38px; border-radius: 6px; background: var(--tile); box-shadow: inset 0 -1px 0 rgba(138,124,92,.22), 0 3px 8px -5px rgba(40,25,5,.22); font-family: var(--ui); font-weight: 700; font-size: 14.5px; color: var(--ink-soft, #4a3d2a); }
 
 .mw-preview { display: grid; grid-template-columns: 1.5fr 1fr; gap: 16px; }
-.mw-notebook { background: var(--paper); border: 1px solid var(--line-soft); border-left: 3px solid var(--cinnabar); border-radius: 8px; padding: 13px 15px; }
-.nb-head, .rv-head { display: flex; align-items: baseline; gap: 8px; font-family: var(--serif-cn); font-weight: 700; font-size: 15px; color: var(--ink); margin-bottom: 8px; }
-.nb-head span, .rv-head span { font-family: var(--serif-en); font-style: italic; font-size: 11px; color: var(--muted); font-weight: 400; }
+.mw-notebook { position: relative; padding: 13px 15px; }
+.mw-notebook::before { content: ""; position: absolute; inset: -10% -8%; z-index: -1; background: radial-gradient(ellipse closest-side, rgba(249,243,232,.9), rgba(249,243,232,.72) 62%, rgba(249,243,232,0)); pointer-events: none; }
+.nb-head { display: flex; align-items: baseline; gap: 8px; font-family: var(--serif-cn); font-weight: 700; font-size: 15px; color: var(--ink); margin-bottom: 8px; }
+.nb-head span { font-family: var(--serif-en); font-style: italic; font-size: 11px; color: var(--muted); font-weight: 400; }
 .nb-head .more { margin-left: auto; font-style: normal; font-size: 11px; color: var(--gold-deep); font-family: var(--caps); letter-spacing: 1px; transition: .2s; }
 .nb-head .more:hover { color: var(--cinnabar-dk); }
-.rv-head em { margin-left: auto; font-style: normal; font-size: 11px; color: var(--gold-deep); font-family: var(--caps); letter-spacing: 1px; }
-.nb-row { display: grid; grid-template-columns: 16px 50px 70px 1fr; align-items: center; gap: 9px; padding: 6px 0; border-bottom: 1px dashed var(--line-soft); }
+.nb-row { display: grid; grid-template-columns: 16px 50px 80px 1fr; align-items: center; gap: 9px; padding: 6px 0; border-bottom: 1px dashed var(--line-soft); }
 .nb-row:last-child { border-bottom: none; }
 .nb-row .star { color: var(--star); font-size: 11px; }
 .nb-row .zh { font-family: var(--serif-cn); font-weight: 700; font-size: 15px; color: var(--ink); }
 .nb-row .py { font-size: 12px; color: var(--gold-deep); font-weight: 600; }
 .nb-row .en { font-size: 12px; color: var(--muted); }
-.mw-review { background: var(--paper); border: 1px solid var(--line-soft); border-radius: 10px; padding: 13px 15px; display: flex; flex-direction: column; }
-.rv-card { text-align: center; padding: 6px 0 4px; margin-top: auto; }
-.rv-zh { font-family: var(--serif-cn); font-weight: 900; font-size: 30px; color: var(--ink); letter-spacing: 2px; }
-.rv-py { font-size: 13px; color: var(--gold-deep); font-weight: 700; margin-top: 4px; }
-.rv-en { font-size: 12px; color: var(--muted); }
-.rv-btn { display: inline-block; margin-top: 10px; background: linear-gradient(145deg, var(--cinnabar), var(--cinnabar-dk)); color: #fbeecf; font-family: var(--serif-cn); font-size: 12px; padding: 5px 16px; border-radius: 99px; }
+/* ── 今日复习：实物闪卡叠（像书架上的书一样是「物件」，有落地投影） */
+.rva { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.rva-stack { position: relative; width: 168px; height: 212px; margin-top: 4px; }
+.rva-stack::after { content: ""; position: absolute; left: 4%; right: 4%; bottom: -16px; height: 22px; border-radius: 50%; background: radial-gradient(closest-side, rgba(60,40,15,.32), transparent); z-index: -1; }
+.rva-card { position: absolute; inset: 0; border-radius: 8px; background: linear-gradient(160deg, #fdf9f0, #f1e6cf); box-shadow: inset 0 0 0 1px rgba(138,124,92,.28), 0 10px 20px -10px rgba(40,25,5,.45); }
+.rva-card.back2 { transform: rotate(-9deg) translate(-10px, 4px); background: linear-gradient(160deg, #efe3c8, #e3d3b2); }
+.rva-card.back1 { transform: rotate(5deg) translate(8px, 2px); background: linear-gradient(160deg, #f5ecd9, #e9dcc0); }
+.rva-card.front { transform: rotate(-1.5deg); display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform .35s; }
+.rva-card.front::before { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(176,141,87,.45); border-radius: 4px; pointer-events: none; }
+.rva:hover .rva-card.front { transform: rotate(0) translateY(-4px); }
+.rva-zh { font-family: var(--serif-cn); font-weight: 900; font-size: 50px; color: var(--ink); letter-spacing: 3px; }
+.rva-hint { margin-top: 14px; font-family: var(--han); font-size: 11px; color: var(--muted); }
+.rva-seal { position: absolute; top: 14px; right: 14px; display: flex; flex-direction: column; align-items: center; padding: 3px 5px; border-radius: 3px; background: linear-gradient(145deg, var(--cinnabar), var(--cinnabar-dk)); color: #fbeecf; font-family: var(--serif-cn); font-size: 10px; line-height: 1.25; transform: rotate(4deg); box-shadow: 0 2px 4px rgba(139,42,31,.3); }
+.rva-seal b { font-family: var(--caps); font-size: 10px; letter-spacing: .5px; }
+.rva-cap { margin-top: 26px; font-family: var(--serif-cn); font-weight: 700; font-size: 14px; color: var(--ink); }
+.rva-cap i { font-family: var(--serif-en); font-weight: 400; font-size: 12px; color: var(--muted); margin-left: 4px; }
+
+/* 四声示范 */
+.py-tones { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 14px; }
+.tone { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 8px; align-items: center; padding: 8px 10px; border-radius: 6px; background: var(--tile); border-top: 2px solid var(--tc); box-shadow: 0 3px 8px -5px rgba(40,25,5,.22); }
+.tone .contour { grid-row: span 2; width: 30px; height: 24px; fill: none; stroke: var(--tc); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.tone .ts { font-family: var(--serif-cn); font-size: 19px; font-weight: 700; color: var(--tc); line-height: 1.1; }
+.tone .ts small { font-size: 13px; font-weight: 500; color: var(--ink-soft, #4a3d2a); margin-left: 5px; }
+.tone .tl { font-family: var(--han); font-size: 11px; color: var(--muted); white-space: nowrap; }
+.tone .tl i { font-family: var(--serif-en); margin-left: 3px; }
 
 /* 02/03 面板已整块嵌入 band；预览留右侧余白让山水透出 */
-.s-media .preview { max-width: 588px; }
+.s-media .preview { max-width: 640px; width: 100%; }
 
 /* 远山地平线 + 前景山石 */
 .foot-scene { position: relative; margin: 40px -32px -10px; }
@@ -275,5 +322,5 @@ function bg(img) {
   .preview { padding: 6px 24px 24px; max-width: none; }
   .mw-preview { grid-template-columns: 1fr; }
 }
-@media (max-width: 560px) { .py-body { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .py-body { grid-template-columns: 1fr; } .py-tones { grid-template-columns: repeat(2, 1fr); } }
 </style>

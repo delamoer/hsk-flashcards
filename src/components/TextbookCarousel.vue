@@ -289,8 +289,8 @@ onBeforeUnmount(() => {
 @keyframes tc-ink { from { --tc-r: 0%; } to { --tc-r: 130%; } }
 
 /* ── 左栏 ── */
-.side { position: relative; z-index: 2; align-self: center; padding: 30px 18px 30px 30px; }
-.info { margin-top: 18px; }
+.side { position: relative; z-index: 2; align-self: center; padding: 22px 18px 22px 30px; }
+.info { margin-top: 14px; }
 .info .zh { font-family: var(--brush); font-size: 30px; line-height: 1.2; color: var(--sc); clip-path: inset(0 100% 0 0); animation: tc-brush .9s .1s cubic-bezier(.6,.05,.2,1) forwards; }
 .info .en { font-family: var(--serif-en); font-style: italic; font-size: 14px; color: var(--muted); }
 .info .d { font-family: var(--serif-cn); font-size: 13.5px; line-height: 1.6; color: var(--ink-soft, #4a3d2a); margin-top: 6px; }
