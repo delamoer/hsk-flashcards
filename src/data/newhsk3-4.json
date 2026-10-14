@@ -7643,7 +7643,7 @@
      "hanzi": "家长",
      "pinyin": "jiāzhǎng",
      "meaning": "parent; guardian",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -9617,7 +9617,7 @@
      "hanzi": "年夜饭",
      "pinyin": "niányèfàn",
      "meaning": "New Year's Eve dinner",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": "教材标注：本级超纲词",
      "examples": [
@@ -10164,7 +10164,7 @@
      "hanzi": "促销",
      "pinyin": "cùxiāo",
      "meaning": "sales promotion",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": "教材标注：本级超纲词",
      "examples": [
@@ -11251,7 +11251,7 @@
      "hanzi": "课堂",
      "pinyin": "kètáng",
      "meaning": "classroom; class",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -13879,7 +13879,7 @@
      "hanzi": "度假",
      "pinyin": "dùjià",
      "meaning": "to take a vacation",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -13979,7 +13979,7 @@
      "hanzi": "功课",
      "pinyin": "gōngkè",
      "meaning": "schoolwork; lessons",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -14139,7 +14139,7 @@
      "hanzi": "排",
      "pinyin": "pái",
      "meaning": "to arrange; row",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -14926,7 +14926,7 @@
      "hanzi": "红包",
      "pinyin": "hóngbāo",
      "meaning": "red envelope",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -15166,7 +15166,7 @@
      "hanzi": "泼",
      "pinyin": "pō",
      "meaning": "to splash; pour",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": "教材标注：本级超纲词",
      "examples": [
@@ -15286,7 +15286,7 @@
      "hanzi": "细",
      "pinyin": "xì",
      "meaning": "thin; fine",
-     "pos": null,
+     "pos": "a",
      "type": null,
      "note": null,
      "examples": [

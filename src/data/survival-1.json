@@ -1834,7 +1834,7 @@
      "hanzi": "豆腐",
      "pinyin": "dòufu",
      "meaning": "tofu",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -1909,7 +1909,7 @@
      "hanzi": "过敏",
      "pinyin": "guòmǐn",
      "meaning": "be allergic to; allergy",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -5615,7 +5615,7 @@
      "hanzi": "托运",
      "pinyin": "tuōyùn",
      "meaning": "check/consign baggage",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -9985,7 +9985,7 @@
      "hanzi": "电器",
      "pinyin": "diànqì",
      "meaning": "household appliance",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -10874,7 +10874,7 @@
      "hanzi": "兑换",
      "pinyin": "duìhuàn",
      "meaning": "exchange (currency)",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -10949,7 +10949,7 @@
      "hanzi": "汇率",
      "pinyin": "huìlǜ",
      "meaning": "exchange rate",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -15294,7 +15294,7 @@
      "hanzi": "端午节",
      "pinyin": "Duānwǔ Jié",
      "meaning": "Dragon Boat Festival",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -15669,7 +15669,7 @@
      "hanzi": "压岁钱",
      "pinyin": "yāsuìqián",
      "meaning": "lucky money given at Spring Festival",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [

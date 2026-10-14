@@ -69,7 +69,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 - **Data is generated, not hand-written.** Source of truth = the xlsx files in `sources/`, named
   **`{系列}_{册}_{类型}.xlsx`** so a series' branches sort together and a missing branch is obvious at a
   glance. 系列/册: `HSK{1..6}` · `新HSK3.0_第{一,二,三}册` + `新HSK3.0_第四册{上,下}`（教材第四册分上下两本，站内合为一册）·
-  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `汉语拼音`. 类型 (exactly six): `词汇闪卡表` ·
+  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `新时代汉语口语_中级{上,下}`（unit 3/4）· `汉语拼音`. 类型 (exactly six): `词汇闪卡表` ·
   `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6）· `语法主表` · `语法零基础版` · `聊天问题`. **Keep this convention when adding a book** —
   the grammar/discussion converters map filename → (series, unit) by regex and **silently skip** a name
   they don't recognize. **Several books may map to ONE unit** (新HSK3.0 第四册上 = 课次1–10, 第四册下 =
@@ -92,8 +92,8 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   hand in Oct 2026 (the source's were pronoun-swapped copies of 例句1) and many are two-line exchanges
   `A：…B：…`: FlashCard renders one line per turn (`turns()`) and speaks them with the A/B labels stripped
   (`speechOf()`); `gen_audio.py`'s `example_speech()` strips them the same way so the manifest key matches.
-  A unit can set `lvl` in `courses.js` to override the book-cover numeral (kouyu shows 上/下).
-- **词性 (part of speech) is hand-curated, not in the xlsx.** `scripts/pos.tsv` (`hanzi<TAB>code`) is
+  A unit can set `lvl` in `courses.js` to override the book-cover numeral (kouyu shows 上/下), and
+  `levelWord` to override the series' small label above it (kouyu 3/4 = 中级 vs the series' 初级).- **词性 (part of speech) is hand-curated, not in the xlsx.** `scripts/pos.tsv` (`hanzi<TAB>code`) is
   the source of truth — ~4700 words tagged by hand (codes: `n v mv a adv pron num mw prep conj part
   intj idiom`; bilingual labels in `src/data/pos.js`). `convert.py` reads it and sets each word's `pos`
   (None when untagged — the card shows nothing rather than a wrong guess). `scripts/gen_pos_draft.py`

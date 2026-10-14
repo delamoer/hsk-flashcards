@@ -174,6 +174,8 @@ export const COURSE_REGISTRY = [
     units: [
       { id: 1, label: "初级上", lvl: "上", available: true },
       { id: 2, label: "初级下", lvl: "下", available: true },
+      { id: 3, label: "中级上", lvl: "上", levelWord: "中级", available: true },
+      { id: 4, label: "中级下", lvl: "下", levelWord: "中级", available: true },
     ],
   },
 ];

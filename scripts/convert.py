@@ -187,6 +187,14 @@ SOURCES = [
                 "hanzi": 3, "pinyin": 4, "meaning": 5,
                 "type": 10, "note": None, "ex": [(6, 7), (8, 9)]},
     },
+    # 中级上/下 — 16 + 15 lessons, same layout as 初级.
+    *({
+        "series": "kouyu", "unit": unit,
+        "file": f"sources/新时代汉语口语_{book}_词汇闪卡表.xlsx", "sheet": "新时代汉语口语词汇表",
+        "col": {"lesson": 1, "lesson_key": None, "title": 2,
+                "hanzi": 3, "pinyin": 4, "meaning": 5,
+                "type": 10, "note": None, "ex": [(6, 7), (8, 9)]},
+    } for unit, book in ((3, "中级上"), (4, "中级下"))),
 ]
 
 # English lesson titles: {series: {unit: {lesson_num: "title"}}}
@@ -471,6 +479,25 @@ TITLES_EN = {
             11: "I'll Pick the Stars for You", 12: "I'm Taking the High-Speed Train to Yangzhou",
             13: "Come Visit My Hometown", 14: "Qingqing's Family Courtyard House",
             15: "Do You Know Jianzhen?", 16: "I'm Doing an Internship Over the Break",
+        },
+        3: {
+            1: "Different Habits", 2: "I Don't Eat This", 3: "You Ordered Too Much",
+            4: "There's a Story Behind the Name", 5: "Slow Down, My Friend",
+            6: "I Read E-books", 7: "The Earth Is a Village", 8: "What Should We Give for a Wedding?",
+            9: "A Happy Union for a Hundred Years", 10: "Give Up Your Seat or Not?",
+            11: "Crosstalk Is So Much Fun!", 12: "Thank You, Mom and Dad, for Teaching Me…",
+            13: "Turn Off the AC, Open the Window", 14: "Good Quality or Low Price?",
+            15: "Why Do We Eat Zongzi at the Dragon Boat Festival?", 16: "Going on Vacation",
+        },
+        4: {
+            1: "You Can Learn Chinese This Way", 2: "What Colors Symbolize",
+            3: "Happiness Comes with a Splash", 4: "So Many Rules for Chopsticks",
+            5: "Courtyard Houses Today", 6: "Who Cooks at Home?", 7: "Online Shopping and Life",
+            8: "Mobile Payment Is So Convenient!", 9: "Mom's Retired Life",
+            10: "An Internship Isn't Just Running Errands", 11: "My Indecisiveness Strikes Again",
+            12: "Spring Festival Isn't as Lively as It Used to Be",
+            13: "How Should Kids Get Pocket Money?", 14: "I Want to Move Out",
+            15: "Read Ten Thousand Books, Travel Ten Thousand Miles",
         },
     },
 }

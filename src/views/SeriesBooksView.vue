@@ -114,7 +114,7 @@ const books = computed(() => {
       id: u.id,
       label: `${m.abbr}.${u.id}`,
       top: m.top,
-      lvlSmall: s.levelWord,
+      lvlSmall: u.levelWord || s.levelWord,
       lvl: u.lvl || String(u.id),
       seriesCn: m.cn,
       seriesEn: m.en,
