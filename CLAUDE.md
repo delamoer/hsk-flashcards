@@ -185,25 +185,29 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   wordmap where a cloze answer is a flashcard word. One text = one 会话 (对话); a 课次 has ~2–4 会话 → ~2–4 「课文 N」
   in the picker. 课次 1–8 == our lesson num, matching the flashcard units. Coverage: huihua360-1..4, all 8 lessons each.
 - **语法 (Grammar) data is generated too.** Sources = the eleven `sources/*_语法主表.xlsx` (HSK1–6 +
-  新HSK3.0 第一/二/三册 + 第四册上/下) **plus five `sources/*_语法零基础版.xlsx`** (HSK1/2 + 新HSK3.0 第一/二/三册).
+  新HSK3.0 第一/二/三册 + 第四册上/下) **plus nine `sources/*_语法零基础版.xlsx`** (HSK1/2 + 新HSK3.0 第一/二/三册 + 标准汉语会话360句1–4).
+  会话360 has ONLY a 零基础版 (no 主表); its 基本结构 English sits in its own column 「Basic Structure (English)」
+  (`col_index` → `structureEn`) instead of a newline-packed cell, and its examples carry NO pinyin — those
+  197 lines live in `grammar_example_pinyin.tsv` like the hsk-3+ ones. Its 例句 were audited in Oct 2026
+  (4.6.1 如果…就… had been a word-for-word copy of 3.4.2 要是…就…, now rewritten).
   The 零基础 files are an enriched rewrite of the SAME point sets (counts match exactly), adding pinyin to
   every example and an English gloss to 基本结构 — both packed into one cell separated by a **newline**,
   split by `split_bilingual()` into `examples[].py` and `structureEn`. Version choice is made per BOOK
   (filename minus the 类型 suffix), not per unit, so 第四册上 getting a 零基础版 later won't knock out 第四册下.
-  hsk-3/4/5/6 and newhsk3-4 have no 零基础版, so those two fields come from **hand-authored TSVs** instead:
-  `scripts/grammar_structure_en.tsv` (431 结构英文) and `scripts/grammar_example_pinyin.tsv` (1289 例句拼音),
+  hsk-3/4/5/6 and newhsk3-4 have no 零基础版 (and huihua360's has no example pinyin), so those two fields come from **hand-authored TSVs** instead:
+  `scripts/grammar_structure_en.tsv` (431 结构英文) and `scripts/grammar_example_pinyin.tsv` (1486 例句拼音),
   both 中文<TAB>译文, loaded by `load_zh_en_tsv()` and used **only as a fallback** — a 零基础版's own values
-  always win. Every point now has structureEn and every example has pinyin (675 points / 2025 examples).
+  always win. Every point now has structureEn and every example has pinyin (744 points / 2232 examples).
   Same rule as 课文: do NOT bulk-generate this pinyin with pypinyin (per-character, no sandhi, no capitals,
   wrong readings like 谁 shuí / 参加 shēnjiā / 行不通 háng). It was written by hand and then cross-checked
-  syllable-by-syllable against pypinyin, reviewing every disagreement (440 for hsk-3/4/5 + newhsk3-4, 157 for hsk-6) — the script for that lives
+  syllable-by-syllable against pypinyin, reviewing every disagreement (440 for hsk-3/4/5 + newhsk3-4, 157 for hsk-6, ~100 for huihua360 — all neutral tone / sandhi / erhua / 得děi) — the script for that lives
   nowhere, but the check is: normalise both to a letters-only string and diff. `scripts/convert_grammar.py` reads each file's first sheet (「语法总表」/「语法语言点总表」,
   one row per grammar point keyed by 课次 = our lesson `num`), grouping points by lesson into
   `src/data/grammar/{series}-{unit}.json` (+ `grammar/meta.json`), lazy-loaded via `src/data/grammar.js`
   (own `import.meta.glob("./grammar/*-*.json")`, dash pattern excludes meta). Run:
   `uv run --with openpyxl python3 scripts/convert_grammar.py`. Each point: `{ id, name, pinyin, type,
   tier?(HSK4), explainEn, structure, structureEn?, examples:[{zh,en,py?}], exercises:[{q,a}], note, source }`.
-  Coverage: hsk-1..6 + newhsk3-1..4 (675 points); other series/units
+  Coverage: hsk-1..6 + newhsk3-1..4 + huihua360-1..4 (744 points); other series/units
   gracefully show placeholders. Two bilingual
   fields are hand-authored inside `convert_grammar.py` and merged at build time: `noteEn` (English for each
   中文 备注, from `scripts/grammar_note_en.tsv`) and `typeEn` (English for each 语法类型, from the in-script

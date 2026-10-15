@@ -120,6 +120,12 @@ TYPE_EN = {
     "状态形容词": "Vivid adjective", "目的连词": "Purpose conjunction", "结构": "Structure",
     "让步/列举结构": "Concessive / Listing", "词汇/语体": "Vocabulary / Register",
     "连接语": "Linking phrase",
+    # 会话360
+    "时间顺序": "Time order", "名词性短语": "Noun-like phrase", "副词性结构": "Adverbial structure",
+    "并列动作": "Simultaneous actions", "日期表达": "Dates", "钱数表达": "Money amounts",
+    "语气助词": "Modal particle", "时间语序": "Time word order", "名词句": "Noun-predicate sentence",
+    "在字句": "在 sentence", "将来/变化表达": "Future / Change", "疑问表达": "Question expression",
+    "伴随动作": "Accompanying action", "进行时表达": "Progressive", "动态助词": "Aspect particle",
 }
 
 # 练习指令前缀 中→英 (so beginners can understand the task). Keyed by the text before "：".
@@ -148,6 +154,9 @@ Q_INSTR_EN = {
     "用“究竟”加强问句": "Strengthen the question with 究竟", "用“表扬”说": "Say it with 表扬",
     "用“说不定”表达": "Express with 说不定", "用“难道”改成反问": "Turn into a 难道 rhetorical question",
     "用这个格式表达": "Express with this pattern",
+    "把时间词放到正确位置": "Put the time word in the right place", "用句末“了”表达": "Express with sentence-final 了",
+    "用“正在……呢”改写": "Rewrite with 正在…呢", "用“快要……了”表达": "Express with 快要…了",
+    "用“难道”改写": "Rewrite with 难道",
 }
 
 
@@ -160,6 +169,9 @@ def parse_target(path):
     m = re.match(r"新HSK3\.0_第([一二三四五六])册[上下]?_语法", base)
     if m:
         return ("newhsk3", CN_VOL[m.group(1)])
+    m = re.match(r"标准汉语会话360句(\d)_语法", base)
+    if m:
+        return ("huihua360", int(m.group(1)))
     return None
 
 
@@ -182,7 +194,9 @@ def col_index(header):
         "type": find("语法类型"),
         "tier": find("层级标记"),
         "explainEn": find("Very Simple English Explanation"),
-        "structure": find("基本结构（中文 + English）", "基本结构"),
+        "structure": find("基本结构（中文 + English）", "基本结构", "基本结构（中文）"),
+        # 会话360 的零基础版把结构英文单独放一列，而不是和中文塞在同一格。
+        "structureEn": find("Basic Structure (English)"),
         "ex_zh": [find(f"例句{k}（中文 + 拼音）", f"例句{k}（中文）") for k in (1, 2, 3)],
         "ex_en": [find(f"例句{k}（英文）") for k in (1, 2, 3)],
         "q": [find(f"练习{k}") for k in (1, 2, 3)],
@@ -270,6 +284,8 @@ def convert_file(path):
             "note": s(r[c["note"]]) if c["note"] is not None else "",
             "source": s(r[c["source"]]) if c["source"] is not None else "",
         }
+        if not structure_en and c["structureEn"] is not None:
+            structure_en = s(r[c["structureEn"]])
         if not structure_en and structure:
             structure_en = STRUCT_EN.get(structure, "")
         if structure_en:
