@@ -182,7 +182,7 @@
 <script setup>
 import { ref, computed } from "vue";
 import pinyinData from "@/data/pinyin.json";
-import { playPinyin, speak } from "@/utils/tts";
+import { playPinyin, speak, stop as stopAudio } from "@/utils/tts";
 import { toneOf } from "@/utils/pinyinTones";
 import { useSettings } from "@/composables/useSettings";
 import { pageHeroBg, motifCloud } from "@/assets/img.js";
@@ -233,6 +233,7 @@ function boldHint(s) {
 }
 function play(stem) {
   if (!stem) return;
+  if (playing.value === stem) return stopAudio(); // tap again to stop
   playing.value = stem;
   playPinyin(stem, settings.ttsRate || 1).catch(() => {}).finally(() => { if (playing.value === stem) playing.value = null; });
 }

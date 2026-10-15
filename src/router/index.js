@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
+import { stop as stopAudio } from "@/utils/tts";
 import { useAuth } from "@/composables/useAuth";
 
 // Hash history — works on static hosting (GitHub Pages) without server rewrites.
@@ -106,6 +107,9 @@ const router = createRouter({
     return { top: 0 };
   },
 });
+
+// Leaving a page silences whatever it was playing.
+router.afterEach(() => stopAudio());
 
 // Login wall: when Supabase is configured, every route requires auth except /login.
 // Waits for the initial session restore so a refresh doesn't bounce a logged-in user.

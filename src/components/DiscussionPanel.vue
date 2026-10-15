@@ -25,7 +25,7 @@
             <li class="q" v-for="(q, qi) in t.questions" :key="qi">
               <div class="qrow">
                 <span class="zh">{{ q.zh }}</span>
-                <button class="play" @click="say(q.zh)" title="朗读 Play">🔊</button>
+                <button class="play" @click="say(q.zh)" :title="nowPlaying === q.zh ? '停止 Stop' : '朗读 Play'">{{ nowPlaying === q.zh ? '⏹' : '🔊' }}</button>
               </div>
               <div class="py" v-if="showPy && q.py" v-html="pyHtml(q.py)"></div>
             </li>
@@ -52,7 +52,7 @@ import { ref, watch } from "vue";
 import { getDiscussionLesson } from "@/data/discussion";
 import { colorPinyin } from "@/utils/pinyinTones";
 import { useSettings } from "@/composables/useSettings";
-import { speak } from "@/utils/tts";
+import { speak, nowPlaying } from "@/utils/tts";
 
 const props = defineProps({
   series: { type: String, required: true },

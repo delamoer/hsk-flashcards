@@ -6,6 +6,13 @@
 // Audio is NOT bundled in the build; it lives in a public Supabase Storage bucket
 // (`audio`). Manifest is loaded once on first use. Words without a pre-generated
 // file fall through to speechSynthesis silently.
+//
+// Only ONE sound plays at a time: every new play stops the previous one, tapping the
+// 🔊 of what's playing stops it (`speak` toggles), Esc stops it, and the router /
+// lesson tabs call `stop()` on navigation. `nowPlaying` holds the text (or pinyin
+// stem) being played so buttons can swap 🔊 → ⏹.
+
+import { ref } from "vue";
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const STORAGE_BASE = SUPABASE_URL
@@ -39,8 +46,39 @@ function urlFor(text) {
   return file ? `${STORAGE_BASE}${file}` : null;
 }
 
-function playUrl(url, rate = 1) {
+// ── Single shared player ──────────────────────────────────────────────────
+
+export const nowPlaying = ref(null);
+let current = null; // { audio, done } for the MP3 in flight
+let token = 0; // bumped on every stop; stale callbacks compare against it
+
+export function stop() {
+  token++;
+  if (current) {
+    current.audio.pause();
+    current.done(); // settle the caller's promise (PinyinView chains on it)
+    current = null;
+  }
+  if (typeof window !== "undefined" && window.speechSynthesis) window.speechSynthesis.cancel();
+  nowPlaying.value = null;
+}
+
+if (typeof window !== "undefined") {
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && nowPlaying.value !== null) stop();
+  });
+}
+
+function finish(my) {
+  if (my !== token) return;
+  current = null;
+  nowPlaying.value = null;
+}
+
+// Plays on behalf of the run started at `my`; a stop() in between makes it a no-op.
+function playUrl(url, rate, my) {
   return new Promise((resolve, reject) => {
+    if (my !== token) return resolve();
     const audio = new Audio(url);
     // Speed up / slow down the pre-generated MP3 while keeping pitch natural
     // (preservesPitch is on by default in modern browsers; set it explicitly
@@ -49,9 +87,19 @@ function playUrl(url, rate = 1) {
     audio.preservesPitch = true;
     audio.mozPreservesPitch = true;
     audio.webkitPreservesPitch = true;
-    audio.onended = resolve;
-    audio.onerror = reject;
-    audio.play().catch(reject);
+    current = { audio, done: resolve };
+    audio.onended = () => {
+      finish(my);
+      resolve();
+    };
+    audio.onerror = (e) => {
+      if (my === token) current = null;
+      reject(e);
+    };
+    audio.play().catch((e) => {
+      if (my === token) current = null;
+      reject(e);
+    });
   });
 }
 
@@ -90,7 +138,13 @@ export function pinyinUrl(stem) {
 export function playPinyin(stem, rate = 1) {
   const url = pinyinUrl(stem);
   if (!url) return Promise.reject(new Error("no pinyin audio configured"));
-  return playUrl(url, rate);
+  stop();
+  const my = token;
+  nowPlaying.value = stem;
+  return playUrl(url, rate, my).catch((e) => {
+    finish(my);
+    throw e;
+  });
 }
 
 // ── speechSynthesis fallback ──────────────────────────────────────────────
@@ -114,18 +168,20 @@ if (typeof window !== "undefined" && window.speechSynthesis) {
   };
 }
 
-function speakFallback(text, rate) {
-  if (!text || !("speechSynthesis" in window)) return;
+function speakFallback(text, rate, my) {
+  if (my !== token) return;
+  if (!text || !("speechSynthesis" in window)) return finish(my);
   try {
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "zh-CN";
     u.rate = rate;
     const v = pickVoice();
     if (v) u.voice = v;
-    window.speechSynthesis.cancel();
+    u.onend = u.onerror = () => finish(my);
     window.speechSynthesis.speak(u);
   } catch {
     /* TTS is a nice-to-have */
+    finish(my);
   }
 }
 
@@ -135,14 +191,19 @@ export function isTTSAvailable() {
   return typeof window !== "undefined" && "speechSynthesis" in window;
 }
 
+// Tapping the 🔊 of the text that's already playing stops it instead of restarting.
 export function speak(text, { rate = 0.85 } = {}) {
   if (!text) return;
+  if (nowPlaying.value === text) return stop();
+  stop();
+  const my = token;
+  nowPlaying.value = text; // show ⏹ right away, even while the manifest loads
   loadManifest().then(() => {
     const url = urlFor(text);
     if (url) {
-      playUrl(url, rate).catch(() => speakFallback(text, rate));
+      playUrl(url, rate, my).catch(() => speakFallback(text, rate, my));
     } else {
-      speakFallback(text, rate);
+      speakFallback(text, rate, my);
     }
   });
 }

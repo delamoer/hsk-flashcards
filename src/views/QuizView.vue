@@ -29,7 +29,7 @@
         <div class="qtype">{{ q.type === "audio" ? "听音选字 · Listen & choose" : "英文选汉字 · Choose the character" }}</div>
 
         <template v-if="q.type === 'audio'">
-          <button class="playbig" @click="say(q.answer.hanzi)">🔊</button>
+          <button class="playbig" @click="say(q.answer.hanzi)" :title="nowPlaying === q.answer.hanzi ? '停止 Stop' : '朗读 Play'">{{ nowPlaying === q.answer.hanzi ? '⏹' : '🔊' }}</button>
           <div class="qsub">点 🔊 再听 · Tap to replay</div>
         </template>
         <template v-else>
@@ -77,7 +77,7 @@ import { getUnit } from "@/data";
 import { getSeries } from "@/data/courses.js";
 import { useProgress } from "@/composables/useProgress";
 import { useSettings } from "@/composables/useSettings";
-import { speak } from "@/utils/tts";
+import { speak, stop as stopAudio, nowPlaying } from "@/utils/tts";
 
 const props = defineProps({
   series: { type: String, required: true },
@@ -138,6 +138,7 @@ watch(
   { immediate: true }
 );
 const index = ref(0);
+watch(index, () => stopAudio());
 const answered = ref(false);
 const picked = ref(null);
 const correctCount = ref(0);

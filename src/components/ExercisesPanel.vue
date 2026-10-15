@@ -95,7 +95,7 @@
             <template v-if="s.speaker">
               <span class="gs-name">{{ s.speaker }}</span><span class="gs-say">说：</span>
             </template>
-            <button class="glisten" @click="say(s.text)" title="听正确读法 · listen for a hint">🔊 <span>听一听<small>LISTEN · hint</small></span></button>
+            <button class="glisten" @click="say(s.text)" title="听正确读法 · listen for a hint">{{ nowPlaying === s.text ? '⏹' : '🔊' }} <span>听一听<small>LISTEN · hint</small></span></button>
           </div>
 
           <div class="slot" :class="{ empty: !gState[si]?.placed.length, solved: gState[si]?.checked && gCorrect(si), bad: gState[si]?.checked && !gCorrect(si) }">
@@ -181,7 +181,7 @@ import { ref, reactive, computed, watch } from "vue";
 import { getTextUnit } from "@/data/texts";
 import { getGrammarLesson } from "@/data/grammar";
 import { colorPinyin } from "@/utils/pinyinTones";
-import { speak } from "@/utils/tts";
+import { speak, stop as stopAudio, nowPlaying } from "@/utils/tts";
 import { useSettings } from "@/composables/useSettings";
 
 const props = defineProps({
@@ -196,6 +196,7 @@ const texts = ref([]);
 const loading = ref(true);
 const ti = ref(0);
 const mode = ref("vocab"); // 'vocab' 生词挖空 · 'grammar' 连词成句 · 'gp' 语法练习
+watch([ti, mode], () => stopAudio());
 
 // ── GRAMMAR POINTS (语法练习) — independent of 课文; no typing, reveal + self-check ──
 const gpLesson = ref(null);

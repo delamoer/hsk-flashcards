@@ -48,6 +48,7 @@
 
 <script setup>
 import { ref, computed, watch } from "vue";
+import { stop as stopAudio } from "@/utils/tts";
 import ReadPanel from "@/components/ReadPanel.vue";
 import FlashcardsPanel from "@/components/FlashcardsPanel.vue";
 import ExercisesPanel from "@/components/ExercisesPanel.vue";
@@ -90,6 +91,7 @@ const paneWash = computed(() => {
 const lesson = ref(null);
 const loading = ref(true);
 const tab = ref("read");
+watch(tab, () => stopAudio());
 
 const tabs = [
   { key: "read", cn: "课文", en: "Read" },

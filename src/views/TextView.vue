@@ -68,7 +68,7 @@
           <div class="speech">
             <div class="zh">
               {{ d.speech }}
-              <button class="spk" @click="say(d.speech)" title="朗读">🔊</button>
+              <button class="spk" @click="say(d.speech)" :title="nowPlaying === d.speech ? '停止 Stop' : '朗读'">{{ nowPlaying === d.speech ? '⏹' : '🔊' }}</button>
             </div>
             <div v-if="showPy && d.py" class="py-line" v-html="pyHtml(d.py)"></div>
             <div v-if="showEn && d.en" class="tr-line">{{ d.en }}</div>
@@ -178,7 +178,7 @@
               <span class="gs-say">说：</span>
             </template>
             <button class="glisten" @click="say(s.text)" title="听正确读法 · listen for a hint">
-              🔊 <span>听一听<small>LISTEN · hint</small></span>
+              {{ nowPlaying === s.text ? '⏹' : '🔊' }} <span>听一听<small>LISTEN · hint</small></span>
             </button>
           </div>
 
@@ -249,7 +249,7 @@ import { ref, computed, watch } from "vue";
 import { getTextUnit } from "@/data/texts";
 import { getSeries } from "@/data/courses.js";
 import { colorPinyin } from "@/utils/pinyinTones";
-import { speak } from "@/utils/tts";
+import { speak, nowPlaying } from "@/utils/tts";
 import { useSettings } from "@/composables/useSettings";
 
 const props = defineProps({

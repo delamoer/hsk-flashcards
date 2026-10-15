@@ -20,7 +20,7 @@
               <div v-if="state[ti].py && l.py" class="py" v-html="pyHtml(l.py)"></div>
               <div v-if="state[ti].en && l.en" class="en">{{ l.en }}</div>
             </div>
-            <button class="play" @click="say(l.zh)" title="朗读 Play">🔊</button>
+            <button class="play" @click="say(l.zh)" :title="nowPlaying === l.zh ? '停止 Stop' : '朗读 Play'">{{ nowPlaying === l.zh ? '⏹' : '🔊' }}</button>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
 import { ref, reactive, watch } from "vue";
 import { getTextUnit } from "@/data/texts";
 import { colorPinyin } from "@/utils/pinyinTones";
-import { speak } from "@/utils/tts";
+import { speak, nowPlaying } from "@/utils/tts";
 import { useSettings } from "@/composables/useSettings";
 
 const props = defineProps({

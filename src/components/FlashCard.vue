@@ -5,7 +5,7 @@
       <div class="fc-face fc-front">
         <div class="toprow">
           <span class="lvl">{{ tag || `HSK ${level}` }}</span>
-          <button class="iconbtn" @click.stop="say(word.hanzi)" title="朗读 Play">🔊</button>
+          <button class="iconbtn" @click.stop="say(word.hanzi)" :title="nowPlaying === word.hanzi ? '停止 Stop' : '朗读 Play'">{{ nowPlaying === word.hanzi ? '⏹' : '🔊' }}</button>
         </div>
         <div class="char">{{ word.hanzi }}</div>
         <div class="peek" :class="{ show: peeking }" v-html="pinyinHtml"></div>
@@ -17,7 +17,7 @@
         <span v-if="pos" class="pos-tag"><b>{{ pos.zh }}</b><i>{{ pos.en }}</i></span>
         <div class="brow">
           <span class="bh">{{ word.hanzi }}</span>
-          <button class="iconbtn small" @click.stop="say(word.hanzi)" title="朗读 Play">🔊</button>
+          <button class="iconbtn small" @click.stop="say(word.hanzi)" :title="nowPlaying === word.hanzi ? '停止 Stop' : '朗读 Play'">{{ nowPlaying === word.hanzi ? '⏹' : '🔊' }}</button>
         </div>
         <div class="py" v-html="pinyinHtml"></div>
         <div class="mean">{{ word.meaning }}</div>
@@ -25,7 +25,7 @@
         <div class="examples">
           <div v-for="(ex, i) in shownExamples" :key="i" class="ex">
             <div class="z">
-              <button class="mini" @click.stop="say(speechOf(ex.zh))" title="朗读 Play">🔊</button>
+              <button class="mini" @click.stop="say(speechOf(ex.zh))" :title="nowPlaying === speechOf(ex.zh) ? '停止 Stop' : '朗读 Play'">{{ nowPlaying === speechOf(ex.zh) ? '⏹' : '🔊' }}</button>
               <span><span v-for="(t, ti) in turns(ex.zh)" :key="ti" class="turn">{{ t }}</span></span>
             </div>
             <div v-if="ex.en" class="e"><span v-for="(t, ti) in turns(ex.en)" :key="ti" class="turn">{{ t }}</span></div>
@@ -68,7 +68,7 @@
 import { ref, computed, watch } from "vue";
 import { colorPinyin } from "@/utils/pinyinTones";
 import { posLabel } from "@/data/pos";
-import { speak } from "@/utils/tts";
+import { speak, stop as stopAudio, nowPlaying } from "@/utils/tts";
 import { useProgress } from "@/composables/useProgress";
 import { useSettings } from "@/composables/useSettings";
 
@@ -92,6 +92,7 @@ watch(
   () => {
     flipped.value = false;
     peeking.value = false;
+    stopAudio();
   }
 );
 
