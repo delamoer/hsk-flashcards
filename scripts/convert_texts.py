@@ -30,6 +30,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "src" / "data" / "texts"
 DATA = ROOT / "src" / "data"
 SEG_FILE = ROOT / "scripts" / "grammar_segments.tsv"
+MERGE_FILE = ROOT / "scripts" / "merge_words.txt"
 GLOSS_FILE = ROOT / "scripts" / "text_gloss.tsv"
 WORD_GLOSS_FILE = ROOT / "scripts" / "word_gloss.tsv"
 MAX_WORD = 6  # longest word to try in max-match segmentation
@@ -67,7 +68,8 @@ COLS = {
     "note": ("本课语法点", "本课语言点"),
 }
 
-PUNCT = set("，。！？、；：""''（）()《》…—,.!?;: 　\t\n")
+# 中文弯引号要写全角“”‘’——这里曾误写成半角 "" ''（两段字符串被隐式拼接，弯引号根本不在集合里），结果引号被做成了连词成句的方块。
+PUNCT = set("，。！？、；：“”‘’「」『』\"'（）()《》…—·～,.!?;: 　\t\n")
 
 VOCAB_BLANK = re.compile(r"[（(]\s*(\d+)\s*[）)]_*")
 UNDERSCORES = re.compile(r"_+")
@@ -138,7 +140,7 @@ def load_word_map() -> dict:
 # narrative lines that exceed MAX_SENT_TOKENS and are dropped before tiling, so excluding
 # them costs nothing today. Before adding a word here, check it against t["sentences"] —
 # the tiled items — not just the raw 课文, and re-check when a book is added.
-LEX_EXCLUDE = {"不便", "从中"}
+LEX_EXCLUDE = {"不便", "从中", "有机"}  # 有机：中级词表的 organic，课文里只出现在「有机会」中
 
 
 def load_lexicon(segmap: dict) -> set:
@@ -178,8 +180,11 @@ def segment_sentence(text: str, lex: set) -> list:
             continue
         matched = None
         for L in range(min(MAX_WORD, n - i), 1, -1):
-            if text[i:i + L] in lex:
-                matched = text[i:i + L]
+            cand = text[i:i + L]
+            # a lexicon entry carrying punctuation (会话360 answer 「不行，不行」) would
+            # become a tile with a comma in it — never match across punctuation
+            if cand in lex and not any(c in PUNCT for c in cand):
+                matched = cand
                 break
         if matched:
             toks.append(matched)
@@ -315,6 +320,46 @@ def strip_punct(tokens):
     return [t for t in tokens if t and t not in PUNCT]
 
 
+def load_merge_words() -> set:
+    """Hand-vetted 补充合并表 (scripts/merge_words.txt): real words / names the lexicon
+    lacks, so max-match leaves them as single characters (规|模, 周|瑜)."""
+    if not MERGE_FILE.exists():
+        return set()
+    return {w.strip() for w in MERGE_FILE.read_text(encoding="utf-8").splitlines()
+            if w.strip() and not w.startswith("#")}
+
+
+MERGE_WORDS = load_merge_words()
+MERGE_MAX = max((len(w) for w in MERGE_WORDS), default=0)
+
+
+def merge_tiles(tokens):
+    """Post-segmentation clean-up. It only JOINS whole tiles, never splits one, so it
+    can't create a tile that straddles a word boundary:
+      · adjacent tiles that spell a MERGE_WORDS entry become one (规|模 → 规模);
+      · a lone 儿 is erhua — glued onto the tile before it (没事|儿 → 没事儿);
+      · consecutive digit tiles form one number (2|0|12 → 2012)."""
+    # MERGE_WORDS first, so 儿时 (和|儿|时) is claimed before the erhua rule sees a lone 儿.
+    merged, i = [], 0
+    while i < len(tokens):
+        for k in range(min(len(tokens) - i, MERGE_MAX), 1, -1):
+            w = "".join(tokens[i:i + k])
+            if w in MERGE_WORDS:
+                merged.append(w)
+                i += k
+                break
+        else:
+            merged.append(tokens[i])
+            i += 1
+    out = []
+    for t in merged:
+        if out and (t == "儿" or (t.isdigit() and out[-1].isdigit())):
+            out[-1] += t
+        else:
+            out.append(t)
+    return out
+
+
 def parse_grammar(cloze: str, ans: str, segmap: dict):
     """One blank spanning a clause → before/after text + answer + word tiles."""
     if not ans:
@@ -366,8 +411,8 @@ def build_sentences(original: str, segmap: dict, lex: set, answers=None, prose=F
             continue
         subs = [speech] if speech in segmap else split_sentences(speech)
         for sub in subs:
-            toks = segmap.get(sub) or segment_sentence(sub, lex)
-            toks = strip_punct(toks)
+            # a hand-vetted segmap entry is final; machine segmentation gets merge_tiles
+            toks = strip_punct(segmap[sub]) if sub in segmap else merge_tiles(strip_punct(segment_sentence(sub, lex)))
             if len(toks) < 2 or len(toks) > MAX_SENT_TOKENS:
                 continue
             item = {"speaker": speaker, "text": sub, "tokens": toks}

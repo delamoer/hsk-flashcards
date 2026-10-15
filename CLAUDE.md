@@ -162,7 +162,17 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   output), minus `LEX_EXCLUDE` — a short hand-kept set of real flashcard words that only ever appear
   inside a longer phrase in our texts, where greedy left-to-right matching would eat the wrong prefix
   (不便宜 → 不便|宜). Adding a book can introduce such a word; check the 连词成句 diff of OTHER units
-  after a conversion and list the offender there once you've confirmed it never occurs standalone. 课文 audio (读原文 dialogue lines + every 连词成句 `sentences[].text`) is generated via
+  after a conversion and list the offender there once you've confirmed it never occurs standalone. After max-match,
+  `merge_tiles()` post-processes machine-segmented sentences (hand `grammar_segments.tsv` rows are final and
+  skip it): adjacent tiles that spell an entry of the hand-vetted **`scripts/merge_words.txt`** become one
+  (规|模 → 规模, 周|瑜 → 周瑜 — real words / names the lexicon lacks), then a lone 儿 joins the tile before it
+  and digit runs join. It only JOINS whole tiles, so it can't create a tile straddling a word boundary.
+  Grammar collocations (V+结果补语, 动宾, 数量, 不X) are deliberately NOT in that list — split tiles are the
+  practice. `PUNCT` must hold the FULL-WIDTH quotes “”‘’ (it once had ASCII ones, so quotes became tiles).
+  The Oct 2026 audit method (re-run after adding a book): segment-compare every `sentences[].tokens` against
+  jieba (reference only) — a tile that partially overlaps a jieba word is a crossing error (有时|间, 要不|要,
+  每 个人) → fix per sentence in grammar_segments.tsv; runs of single-char tiles that form a CC-CEDICT word
+  are merge_words.txt candidates — review each against its sentence before adding (的|话, 好|在 are traps). 课文 audio (读原文 dialogue lines + every 连词成句 `sentences[].text`) is generated via
   `gen_audio.py --texts` (`collect_text_lines`) and uploaded to the same Storage `audio` bucket; split
   sub-sentences without a pre-generated MP3 fall back to browser TTS until audio is regenerated.
 - **会话360 课文 come from a DIFFERENT converter** (`scripts/convert_360.py`, not `convert_texts.py`). Source =
