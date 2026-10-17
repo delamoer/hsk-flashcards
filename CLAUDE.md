@@ -77,6 +77,13 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   so a second file for the same unit extends it instead of silently overwriting it. `scripts/convert.py` normalizes the 词汇闪卡表 files into `src/data/{series}-{unit}.json`.
   **Never edit `src/data/*.json` by hand** — edit the xlsx (and English titles in `convert.py`'s
   `TITLES_EN`), then run `npm run convert`.
+  **Word order = textbook order.** Some 词汇闪卡表 list words alphabetically by pinyin (all of 新HSK3.0 第一册 /
+  HSK5, most of HSK4 / 新HSK3.0 第四册 — machine-sorted, 汉语/汉字 even land last because of the capital H).
+  Units in `convert.py`'s `REORDER_BY_TEXT` get their words re-sorted by first appearance in the lesson's
+  课文 (`src/data/texts/{key}.json`, so regenerate texts first if they changed); a short word inside a longer
+  lesson word (证 in 签证) is skipped, `屋(子)` matches 屋子/屋, words absent from the text stay at the end.
+  **Ids are assigned before sorting** — progress is keyed by id, so never renumber ids when reordering.
+  When adding a book, check its word order against the text and add the unit to the set if it's alphabetical.
 - **Course data is lazy-loaded, one chunk per unit.** `src/data/index.js` uses
   `import.meta.glob("./*-*.json")` so each `{series}-{unit}.json` is a separate chunk fetched on
   demand (kept out of the main bundle). Because of this, the data accessors are **async**:

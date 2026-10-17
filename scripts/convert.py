@@ -614,6 +614,61 @@ def convert(src):
     return data, total
 
 
+# Units whose 词汇闪卡表 lists words alphabetically by pinyin instead of in textbook
+# order (all of 新HSK3.0 第一册 / HSK5, most of HSK4 / 新HSK3.0 第四册). Their words are
+# re-sorted by first appearance in the lesson's 课文 (src/data/texts/, so run
+# convert_texts.py first if the texts changed). Ids are assigned BEFORE sorting, so
+# stored progress (keyed by id) survives; `num` becomes the new display position.
+REORDER_BY_TEXT = {"hsk-4", "hsk-5", "newhsk3-1", "newhsk3-4"}
+TEXTS_DIR = ROOT / "src" / "data" / "texts"
+
+
+def first_pos(word, text, longer):
+    """First index of `word` in `text` that isn't inside an occurrence of a longer
+    lesson word (证 inside 签证), falling back to the raw first hit; None if absent."""
+    covered = set()
+    for lw in longer:
+        i = text.find(lw)
+        while i >= 0:
+            covered.update(range(i, i + len(lw)))
+            i = text.find(lw, i + 1)
+    i = text.find(word)
+    raw = i if i >= 0 else None
+    while i >= 0:
+        if not covered.issuperset(range(i, i + len(word))):
+            return i
+        i = text.find(word, i + 1)
+    return raw
+
+
+def reorder_by_text(key, data):
+    path = TEXTS_DIR / f"{key}.json"
+    if not path.exists():
+        return
+    texts = {l["num"]: "\n".join(t.get("original") or "" for t in l["texts"])
+             for l in json.loads(path.read_text(encoding="utf-8"))["lessons"]}
+    for lesson in data["lessons"]:
+        text = texts.get(lesson["num"])
+        if not text:
+            continue
+        words = lesson["words"]
+        hanzi = [w["hanzi"] for w in words]
+
+        def pos_of(h):
+            # 屋(子) / (躲)藏 / 勺（子）: try with and without the optional part
+            forms = {h, re.sub(r"[()（）]", "", h), re.sub(r"[(（][^)）]*[)）]", "", h)} - {""}
+            hits = [first_pos(f, text, [o for o in hanzi if len(o) > len(f) and f in o]) for f in forms]
+            hits = [p for p in hits if p is not None]
+            return min(hits) if hits else None
+
+        pos = [pos_of(h) for h in hanzi]
+        # found words by position; words absent from the text keep their order, at the end
+        order = sorted(range(len(words)), key=lambda i: (pos[i] is None, pos[i] if pos[i] is not None else i, i))
+        lesson["words"] = [words[i] for i in order]
+        for n, w in enumerate(lesson["words"], 1):
+            w["num"] = n
+
+
 # Per-unit word-id prefix (e.g. "h1-", "newhsk3-1-"), used by the frontend to
 # tally progress without loading the full word list. Ids look like "{prefix}l{n}-{i}".
 def unit_id_prefix(data):
@@ -645,6 +700,8 @@ def main():
     for key, u in units.items():
         data, total, src = u["data"], u["total"], u["src"]
         data["lessons"].sort(key=lambda l: l["num"])
+        if key in REORDER_BY_TEXT:
+            reorder_by_text(key, data)
         path = OUT / f"{key}.json"
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         meta[key] = {
