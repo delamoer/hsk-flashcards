@@ -23,7 +23,7 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
    per-lesson progress badge (已掌握/学过 X%) from `useProgress`.
 4. **课内 hub** (`/course/:series/:unit/lesson/:lesson`, `LessonHubView.vue`) — one lesson, six tabs:
    课文 Read (`ReadPanel`) · 生词表·闪卡 (`FlashcardsPanel`, 网格/专注双模式, reuses `FlashCard.vue`) ·
-   词汇详解 (placeholder) · 语法 (`GrammarNotesPanel`) · 练习 (`ExercisesPanel` = 生词挖空 + 连词成句 + 语法) ·
+   词汇详解 (`VocabPanel`, 常见搭配 list) · 语法 (`GrammarNotesPanel`) · 练习 (`ExercisesPanel` = 生词挖空 + 连词成句 + 语法) ·
    话题讨论 (`DiscussionPanel`). 课文/生词挖空/连词成句 pull from the 课文 data (`getTextUnit`); the 语法 tab and the
    练习 tab's 语法 mode pull from the grammar data (`getGrammarLesson`, see below) — the latter is independent of
    课文, so 练习 shows up even for lessons with no text (e.g. hsk-4/5), defaulting to 语法 mode there. 话题讨论 is
@@ -69,8 +69,10 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 - **Data is generated, not hand-written.** Source of truth = the xlsx files in `sources/`, named
   **`{系列}_{册}_{类型}.xlsx`** so a series' branches sort together and a missing branch is obvious at a
   glance. 系列/册: `HSK{1..6}` · `新HSK3.0_第{一,二,三}册` + `新HSK3.0_第四册{上,下}`（教材第四册分上下两本，站内合为一册）·
-  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `新时代汉语口语_中级{上,下}`（unit 3/4）· `汉语拼音`. 类型 (exactly six): `词汇闪卡表` ·
-  `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6）· `语法主表` · `语法零基础版` · `聊天问题`. **Keep this convention when adding a book** —
+  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `新时代汉语口语_中级{上,下}`（unit 3/4）· `汉语拼音`. 类型 (exactly seven): `词汇闪卡表` ·
+  `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6）· `语法主表` · `语法零基础版` · `聊天问题` ·
+  `常见搭配`（新HSK3.0 第一/二/三册；same layout as the 闪卡表 + 搭配 in col 11 — `convert.py`'s `COLLOC_SOURCES`
+  matches it onto the 闪卡表 words by (课次, 汉字, 拼音), so ids/order stay the 闪卡表's; unmatched rows are warned）. **Keep this convention when adding a book** —
   the grammar/discussion converters map filename → (series, unit) by regex and **silently skip** a name
   they don't recognize. **Several books may map to ONE unit** (新HSK3.0 第四册上 = 课次1–10, 第四册下 =
   11–20): all four converters group sources by (series, unit) and merge their lessons before writing,
@@ -90,10 +92,12 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   `getUnit` / `getLesson` / `allWords` / `everyWord()` / `searchAll()` all return Promises — views
   `await` them into a ref (with a small `loading` state). `matchWord()` stays sync/pure.
   Word shape: `{ id, num, hanzi, pinyin, meaning, pos, type("core"|"supplement"|null), note, examples:[{zh,en}] }`.
-  Some courses add optional fields: **`collocations:[…]`** (常见搭配, 3 per word) — currently only the
-  生存汉语 (`survival`) series carries it (from its xlsx col "最常见词语搭配"); FlashCard shows it as a
-  compact row on the card back (`.collocs`), hidden for words without it. Add a per-course extra column via
-  `col.colloc` in `convert.py`'s SOURCES.
+  Some courses add optional fields: **`collocations:[…]`** (常见搭配, 3 per word) — 生存汉语 (`survival`,
+  its own 闪卡表 col "最常见词语搭配", via `col.colloc` in `convert.py`'s SOURCES) and 新HSK3.0 第一/二/三册
+  (separate `*_常见搭配.xlsx`, via `COLLOC_SOURCES`). Shown ONLY in the 词汇详解 tab (`VocabPanel`: one
+  row per word — 词头 left, the 3 collocations side by side as tappable chips (tap = play, no 🔊 icons), the
+  head word marked 朱红 inside each). 备注 is NOT shown there — in these units it's mostly editorial
+  (「教材词语表另见：第8课」「教材标*专名」); the card back deliberately doesn't show collocations (kept clean). Lessons whose words have none show a "本课暂无常见搭配" placeholder.
   **新时代汉语口语 (`kouyu`)**: its 备注 column is editorial ("上册·课文词语表｜PDF第13页｜…") — read only as
   the core/supplement type (课文词语/拓展词语, `classify_type`), never shown as a note. Its 例句2 was rewritten by
   hand in Oct 2026 (the source's were pronoun-swapped copies of 例句1) and many are two-line exchanges
@@ -294,7 +298,8 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
     falling back to browser `speechSynthesis` when missing. `scripts/gen_audio.py` + `upload_audio.py`.
     **Whenever you add content with a 🔊, add a collector and regenerate** — the scopes are
     `--all` (words + examples), `--texts` (课文 lines + every 连词成句 sentence; globs `texts/*-*.json`,
-    so a new 课文 unit needs no code change) and `--discussion` (话题讨论 questions). Generating only
+    so a new 课文 unit needs no code change), `--discussion` (话题讨论 questions) and `--collocations`
+    (词汇详解 搭配; any unit whose words carry `collocations`). Generating only
     writes to the gitignored `audio-src/`; the site keeps falling back to robot TTS until
     `upload_audio.py` pushes the new MP3s + manifest to Storage (idempotent, skips existing).
   - *Pinyin*: **real human recordings** (hugolpz/audio-cmn, CC-BY-SA — credit shown in PinyinView footer)

@@ -25,6 +25,11 @@
        "zh": "老师，你好！",
        "en": "Hello, teacher!"
       }
+     ],
+     "collocations": [
+      "你好老师",
+      "你好朋友",
+      "你好请问"
      ]
     },
     {
@@ -45,6 +50,11 @@
        "zh": "老师在上课。",
        "en": "The teacher is teaching."
       }
+     ],
+     "collocations": [
+      "中文老师",
+      "学校老师",
+      "老师好"
      ]
     },
     {
@@ -65,6 +75,11 @@
        "zh": "大家都来了。",
        "en": "Everyone is here."
       }
+     ],
+     "collocations": [
+      "大家好",
+      "大家一起",
+      "大家都知道"
      ]
     },
     {
@@ -85,6 +100,11 @@
        "zh": "那个不太好。",
        "en": "That one is not very good."
       }
+     ],
+     "collocations": [
+      "很好",
+      "好朋友",
+      "好吃"
      ]
     },
     {
@@ -105,6 +125,11 @@
        "zh": "谢谢您。",
        "en": "Thank you. (polite)"
       }
+     ],
+     "collocations": [
+      "您好",
+      "请您坐",
+      "谢谢您"
      ]
     },
     {
@@ -125,6 +150,11 @@
        "zh": "学生在学校学习。",
        "en": "Students study at school."
       }
+     ],
+     "collocations": [
+      "中国学生",
+      "大学生",
+      "学生们"
      ]
     },
     {
@@ -145,6 +175,11 @@
        "zh": "他们在学校。",
        "en": "They are at school."
       }
+     ],
+     "collocations": [
+      "我们",
+      "你们",
+      "他们"
      ]
     },
     {
@@ -165,6 +200,11 @@
        "zh": "谢谢老师。",
        "en": "Thank you, teacher."
       }
+     ],
+     "collocations": [
+      "谢谢你",
+      "非常谢谢",
+      "谢谢老师"
      ]
     },
     {
@@ -185,6 +225,11 @@
        "zh": "不客气，请坐。",
        "en": "You're welcome. Please sit."
       }
+     ],
+     "collocations": [
+      "不用客气",
+      "别客气",
+      "真的不客气"
      ]
     },
     {
@@ -205,6 +250,11 @@
        "zh": "同学们好！",
        "en": "Hello, students!"
       }
+     ],
+     "collocations": [
+      "同学们",
+      "新同学",
+      "我的同学"
      ]
     },
     {
@@ -225,6 +275,11 @@
        "zh": "明天见，再见！",
        "en": "See you tomorrow. Goodbye!"
       }
+     ],
+     "collocations": [
+      "老师再见",
+      "明天再见",
+      "下次再见"
      ]
     },
     {
@@ -245,6 +300,11 @@
        "zh": "你们都是学生吗？",
        "en": "Are you all students?"
       }
+     ],
+     "collocations": [
+      "你们好",
+      "你们两个",
+      "你们都是"
      ]
     }
    ]
@@ -272,6 +332,11 @@
        "zh": "请问，学校在哪儿？",
        "en": "Excuse me, where is the school?"
       }
+     ],
+     "collocations": [
+      "请问一下",
+      "请问老师",
+      "请问你"
      ]
     },
     {
@@ -292,6 +357,11 @@
        "zh": "我认识你。",
        "en": "I know you."
       }
+     ],
+     "collocations": [
+      "你好",
+      "你们",
+      "你的"
      ]
     },
     {
@@ -312,6 +382,11 @@
        "zh": "他叫什么名字？",
        "en": "What's his name?"
       }
+     ],
+     "collocations": [
+      "我叫",
+      "叫什么",
+      "叫他来"
      ]
     },
     {
@@ -332,6 +407,11 @@
        "zh": "你想吃什么？",
        "en": "What do you want to eat?"
       }
+     ],
+     "collocations": [
+      "什么名字",
+      "吃什么",
+      "做什么"
      ]
     },
     {
@@ -352,6 +432,11 @@
        "zh": "名字怎么写？",
        "en": "How do you write the name?"
       }
+     ],
+     "collocations": [
+      "中文名字",
+      "你的名字",
+      "叫什么名字"
      ]
     },
     {
@@ -372,6 +457,11 @@
        "zh": "我很好。",
        "en": "I am fine."
       }
+     ],
+     "collocations": [
+      "我们",
+      "我的",
+      "我想"
      ]
     },
     {
@@ -392,6 +482,11 @@
        "zh": "他不在家。",
        "en": "He is not at home."
       }
+     ],
+     "collocations": [
+      "不好",
+      "不是",
+      "不想"
      ]
     },
     {
@@ -412,6 +507,11 @@
        "zh": "他是老师。",
        "en": "He is a teacher."
       }
+     ],
+     "collocations": [
+      "我是",
+      "不是",
+      "是吗"
      ]
     },
     {
@@ -432,6 +532,11 @@
        "zh": "对不起，我不知道。",
        "en": "Sorry, I don't know."
       }
+     ],
+     "collocations": [
+      "真对不起",
+      "说对不起",
+      "对不起老师"
      ]
     },
     {
@@ -452,6 +557,11 @@
        "zh": "没关系，我不忙。",
        "en": "It's okay. I'm not busy."
       }
+     ],
+     "collocations": [
+      "真的没关系",
+      "说没关系",
+      "没关系的"
      ]
     },
     {
@@ -472,6 +582,11 @@
        "zh": "她很漂亮。",
        "en": "She is very beautiful."
       }
+     ],
+     "collocations": [
+      "很好",
+      "很忙",
+      "很高兴"
      ]
     },
     {
@@ -492,6 +607,11 @@
        "zh": "她也很高兴。",
        "en": "She is happy too."
       }
+     ],
+     "collocations": [
+      "很高兴",
+      "真高兴",
+      "高兴地说"
      ]
     },
     {
@@ -512,6 +632,11 @@
        "zh": "很高兴认识你。",
        "en": "Nice to meet you."
       }
+     ],
+     "collocations": [
+      "认识你",
+      "认识朋友",
+      "不认识"
      ]
     },
     {
@@ -532,6 +657,11 @@
        "zh": "她也是学生。",
        "en": "She is also a student."
       }
+     ],
+     "collocations": [
+      "我也去",
+      "也很好",
+      "也可以"
      ]
     },
     {
@@ -552,6 +682,11 @@
        "zh": "没事，谢谢。",
        "en": "It's okay, thanks."
       }
+     ],
+     "collocations": [
+      "我没事",
+      "没什么事",
+      "有事没事"
      ]
     }
    ]
@@ -579,6 +714,11 @@
        "zh": "我想去中国。",
        "en": "I want to go to China."
       }
+     ],
+     "collocations": [
+      "中国人",
+      "中国学生",
+      "中国菜"
      ]
     },
     {
@@ -599,6 +739,11 @@
        "zh": "他是中国人。",
        "en": "He is Chinese."
       }
+     ],
+     "collocations": [
+      "中国人",
+      "好人",
+      "一个人"
      ]
     },
     {
@@ -619,6 +764,11 @@
        "zh": "中国很大。",
        "en": "China is big."
       }
+     ],
+     "collocations": [
+      "中国",
+      "外国",
+      "哪个国家"
      ]
     },
     {
@@ -639,6 +789,11 @@
        "zh": "她是我的老师。",
        "en": "She is my teacher."
       }
+     ],
+     "collocations": [
+      "我的书",
+      "好看的衣服",
+      "学校的老师"
      ]
     },
     {
@@ -659,6 +814,11 @@
        "zh": "他会说中文。",
        "en": "He can speak Chinese."
       }
+     ],
+     "collocations": [
+      "学中文",
+      "说中文",
+      "中文老师"
      ]
     },
     {
@@ -679,6 +839,11 @@
        "zh": "这是什么？",
        "en": "What is this?"
       }
+     ],
+     "collocations": [
+      "这个",
+      "这边",
+      "这些"
      ]
     },
     {
@@ -699,6 +864,11 @@
        "zh": "你找谁？",
        "en": "Who are you looking for?"
       }
+     ],
+     "collocations": [
+      "是谁",
+      "找谁",
+      "谁的"
      ]
     },
     {
@@ -719,6 +889,11 @@
        "zh": "我女朋友是大学生。",
        "en": "My girlfriend is a university student."
       }
+     ],
+     "collocations": [
+      "我的女朋友",
+      "找女朋友",
+      "女朋友很好"
      ]
     },
     {
@@ -739,6 +914,11 @@
        "zh": "你喜欢哪本书？",
        "en": "Which book do you like?"
       }
+     ],
+     "collocations": [
+      "哪一个",
+      "哪本书",
+      "哪天"
      ]
     },
     {
@@ -759,6 +939,11 @@
        "zh": "我认识她。",
        "en": "I know her."
       }
+     ],
+     "collocations": [
+      "她们",
+      "她的",
+      "她是"
      ]
     },
     {
@@ -779,6 +964,11 @@
        "zh": "喂，请问你是谁？",
        "en": "Hello, may I ask who this is?"
       }
+     ],
+     "collocations": [
+      "喂你好",
+      "喂请问",
+      "打电话说喂"
      ]
     },
     {
@@ -799,6 +989,11 @@
        "zh": "我姐姐在大学学习。",
        "en": "My older sister studies at university."
       }
+     ],
+     "collocations": [
+      "我的姐姐",
+      "姐姐好",
+      "姐姐工作"
      ]
     },
     {
@@ -819,6 +1014,11 @@
        "zh": "他今天不工作。",
        "en": "He is not working today."
       }
+     ],
+     "collocations": [
+      "工作很忙",
+      "找工作",
+      "工作时间"
      ]
     },
     {
@@ -839,6 +1039,11 @@
        "zh": "我还想吃。",
        "en": "I still want to eat."
       }
+     ],
+     "collocations": [
+      "还好",
+      "还可以",
+      "还想"
      ]
     },
     {
@@ -859,6 +1064,11 @@
        "zh": "他现在不忙。",
        "en": "He is not busy now."
       }
+     ],
+     "collocations": [
+      "很忙",
+      "工作忙",
+      "忙不忙"
      ]
     },
     {
@@ -879,6 +1089,11 @@
        "zh": "你是学生吗？",
        "en": "Are you a student?"
       }
+     ],
+     "collocations": [
+      "是吗",
+      "好吗",
+      "可以吗"
      ]
     },
     {
@@ -899,6 +1114,11 @@
        "zh": "对，这个很好。",
        "en": "Yes, this is good."
       }
+     ],
+     "collocations": [
+      "说得对",
+      "对我好",
+      "对他说"
      ]
     },
     {
@@ -919,6 +1139,11 @@
        "zh": "她太忙了。",
        "en": "She is too busy."
       }
+     ],
+     "collocations": [
+      "太好了",
+      "太贵了",
+      "太忙了"
      ]
     },
     {
@@ -939,6 +1164,11 @@
        "zh": "我们都是学生。",
        "en": "We are all students."
       }
+     ],
+     "collocations": [
+      "我们一起",
+      "我们都是",
+      "我们的"
      ]
     },
     {
@@ -959,6 +1189,11 @@
        "zh": "他想去中国。",
        "en": "He wants to go to China."
       }
+     ],
+     "collocations": [
+      "想去",
+      "想吃",
+      "想知道"
      ]
     }
    ]
@@ -986,6 +1221,11 @@
        "zh": "我要一杯茶。",
        "en": "I want a cup of tea."
       }
+     ],
+     "collocations": [
+      "一个",
+      "一天",
+      "一点儿"
      ]
     },
     {
@@ -1006,6 +1246,11 @@
        "zh": "学校有很多学生。",
        "en": "There are many students at the school."
       }
+     ],
+     "collocations": [
+      "有时间",
+      "有一个",
+      "还有"
      ]
     },
     {
@@ -1026,6 +1271,11 @@
        "zh": "你家有多少人？",
        "en": "How many people are in your family?"
       }
+     ],
+     "collocations": [
+      "多少钱",
+      "多少人",
+      "多少岁"
      ]
     },
     {
@@ -1046,6 +1296,11 @@
        "zh": "我有两个孩子。",
        "en": "I have two children."
       }
+     ],
+     "collocations": [
+      "一个人",
+      "两个孩子",
+      "这个"
      ]
     },
     {
@@ -1066,6 +1321,11 @@
        "zh": "现在两点。",
        "en": "It is two o'clock now."
       }
+     ],
+     "collocations": [
+      "二月",
+      "二号",
+      "二十"
      ]
     },
     {
@@ -1086,6 +1346,11 @@
        "zh": "这个十元。",
        "en": "This is ten yuan."
       }
+     ],
+     "collocations": [
+      "十个人",
+      "十点",
+      "十岁"
      ]
     },
     {
@@ -1106,6 +1371,11 @@
        "zh": "我要两杯茶。",
        "en": "I want two cups of tea."
       }
+     ],
+     "collocations": [
+      "两个人",
+      "两本书",
+      "两点"
      ]
     },
     {
@@ -1126,6 +1396,11 @@
        "zh": "我哥哥在公司工作。",
        "en": "My older brother works at a company."
       }
+     ],
+     "collocations": [
+      "我的哥哥",
+      "哥哥姐姐",
+      "哥哥工作"
      ]
     },
     {
@@ -1146,6 +1421,11 @@
        "zh": "他在做什么呢？",
        "en": "What is he doing?"
       }
+     ],
+     "collocations": [
+      "你呢",
+      "他呢",
+      "现在呢"
      ]
     },
     {
@@ -1166,6 +1446,11 @@
        "zh": "这里没有人。",
        "en": "There is nobody here."
       }
+     ],
+     "collocations": [
+      "没有钱",
+      "没有时间",
+      "还没有"
      ]
     },
     {
@@ -1186,6 +1471,11 @@
        "zh": "我现在回家。",
        "en": "I am going home now."
       }
+     ],
+     "collocations": [
+      "我家",
+      "回家",
+      "家里"
      ]
     },
     {
@@ -1206,6 +1496,11 @@
        "zh": "现在几点？",
        "en": "What time is it now?"
       }
+     ],
+     "collocations": [
+      "几个人",
+      "几点",
+      "几岁"
      ]
     },
     {
@@ -1226,6 +1521,11 @@
        "zh": "他家有五口人。",
        "en": "There are five people in his family."
       }
+     ],
+     "collocations": [
+      "三口人",
+      "一家三口",
+      "几口人"
      ]
     },
     {
@@ -1246,6 +1546,11 @@
        "zh": "现在四点。",
        "en": "It is four o'clock now."
       }
+     ],
+     "collocations": [
+      "四个人",
+      "四点",
+      "四月"
      ]
     },
     {
@@ -1266,6 +1571,11 @@
        "zh": "我爸爸在公司工作。",
        "en": "My dad works at a company."
       }
+     ],
+     "collocations": [
+      "我爸爸",
+      "爸爸妈妈",
+      "爸爸工作"
      ]
     },
     {
@@ -1286,6 +1596,11 @@
        "zh": "妈妈在做饭。",
        "en": "Mom is cooking."
       }
+     ],
+     "collocations": [
+      "我妈妈",
+      "爸爸妈妈",
+      "妈妈做饭"
      ]
     },
     {
@@ -1306,6 +1621,11 @@
        "zh": "我妹妹是学生。",
        "en": "My younger sister is a student."
       }
+     ],
+     "collocations": [
+      "我的妹妹",
+      "妹妹上学",
+      "妹妹很好"
      ]
     },
     {
@@ -1326,6 +1646,11 @@
        "zh": "我和朋友去商店。",
        "en": "I go to the store with a friend."
       }
+     ],
+     "collocations": [
+      "我和你",
+      "吃饭和喝茶",
+      "爸爸和妈妈"
      ]
     },
     {
@@ -1346,6 +1671,11 @@
        "zh": "我有一个儿子。",
        "en": "I have a son."
       }
+     ],
+     "collocations": [
+      "我的儿子",
+      "一个儿子",
+      "儿子上学"
      ]
     },
     {
@@ -1366,6 +1696,11 @@
        "zh": "孩子在学校。",
        "en": "The child is at school."
       }
+     ],
+     "collocations": [
+      "小孩子",
+      "两个孩子",
+      "我的孩子"
      ]
     },
     {
@@ -1386,6 +1721,11 @@
        "zh": "我有一个女儿。",
        "en": "I have a daughter."
       }
+     ],
+     "collocations": [
+      "我的女儿",
+      "一个女儿",
+      "女儿上学"
      ]
     },
     {
@@ -1406,6 +1746,11 @@
        "zh": "孩子五岁。",
        "en": "The child is five years old."
       }
+     ],
+     "collocations": [
+      "几岁",
+      "十岁",
+      "二十岁"
      ]
     },
     {
@@ -1426,6 +1771,11 @@
        "zh": "我认识他。",
        "en": "I know him."
       }
+     ],
+     "collocations": [
+      "他们",
+      "他的",
+      "他是"
      ]
     },
     {
@@ -1446,6 +1796,11 @@
        "zh": "今年我在中国。",
        "en": "I am in China this year."
       }
+     ],
+     "collocations": [
+      "今年很忙",
+      "今年上学",
+      "今年几岁"
      ]
     },
     {
@@ -1466,6 +1821,11 @@
        "zh": "我有五本书。",
        "en": "I have five books."
       }
+     ],
+     "collocations": [
+      "五个人",
+      "五点",
+      "五月"
      ]
     },
     {
@@ -1486,6 +1846,11 @@
        "zh": "你多大？",
        "en": "How old are you?"
       }
+     ],
+     "collocations": [
+      "很多",
+      "多少钱",
+      "多一点儿"
      ]
     },
     {
@@ -1506,6 +1871,11 @@
        "zh": "那个不太大。",
        "en": "That one is not very big."
       }
+     ],
+     "collocations": [
+      "很大",
+      "大学",
+      "大房间"
      ]
     },
     {
@@ -1526,6 +1896,11 @@
        "zh": "我有八本书。",
        "en": "I have eight books."
       }
+     ],
+     "collocations": [
+      "八个人",
+      "八点",
+      "八岁"
      ]
     },
     {
@@ -1546,6 +1921,11 @@
        "zh": "这个一百元。",
        "en": "This is one hundred yuan."
       }
+     ],
+     "collocations": [
+      "一百",
+      "两百",
+      "几百"
      ]
     },
     {
@@ -1566,6 +1946,11 @@
        "zh": "我有九本书。",
        "en": "I have nine books."
       }
+     ],
+     "collocations": [
+      "九个人",
+      "九点",
+      "九月"
      ]
     },
     {
@@ -1586,6 +1971,11 @@
        "zh": "我的手机号有两个零。",
        "en": "My cell phone number has two zeros."
       }
+     ],
+     "collocations": [
+      "零点",
+      "二零二六年",
+      "零下"
      ]
     },
     {
@@ -1606,6 +1996,11 @@
        "zh": "现在六点。",
        "en": "It is six o'clock now."
       }
+     ],
+     "collocations": [
+      "六个人",
+      "六点",
+      "六月"
      ]
     },
     {
@@ -1626,6 +2021,11 @@
        "zh": "现在七点。",
        "en": "It is seven o'clock now."
       }
+     ],
+     "collocations": [
+      "七个人",
+      "七点",
+      "七月"
      ]
     },
     {
@@ -1646,6 +2046,11 @@
        "zh": "这个一千元。",
        "en": "This is one thousand yuan."
       }
+     ],
+     "collocations": [
+      "一千",
+      "两千",
+      "几千"
      ]
     },
     {
@@ -1666,6 +2071,11 @@
        "zh": "现在三点。",
        "en": "It is three o'clock now."
       }
+     ],
+     "collocations": [
+      "三个人",
+      "三点",
+      "三月"
      ]
     }
    ]
@@ -1693,6 +2103,11 @@
        "zh": "今天天气很好。",
        "en": "The weather is nice today."
       }
+     ],
+     "collocations": [
+      "今天上午",
+      "今天晚上",
+      "今天很忙"
      ]
     },
     {
@@ -1713,6 +2128,11 @@
        "zh": "我的手机号是多少？",
        "en": "What's my cell phone number?"
       }
+     ],
+     "collocations": [
+      "几号",
+      "手机号",
+      "一号"
      ]
     },
     {
@@ -1733,6 +2153,11 @@
        "zh": "下个月我回家。",
        "en": "I will go home next month."
       }
+     ],
+     "collocations": [
+      "这个月",
+      "下个月",
+      "几月"
      ]
     },
     {
@@ -1753,6 +2178,11 @@
        "zh": "这个星期我很忙。",
        "en": "I am busy this week."
       }
+     ],
+     "collocations": [
+      "这个星期",
+      "下个星期",
+      "星期几"
      ]
     },
     {
@@ -1773,6 +2203,11 @@
        "zh": "星期日我休息。",
        "en": "I rest on Sunday."
       }
+     ],
+     "collocations": [
+      "星期日上午",
+      "这个星期日",
+      "星期日休息"
      ]
     },
     {
@@ -1793,6 +2228,11 @@
        "zh": "星期日我休息。",
        "en": "I rest on Sunday."
       }
+     ],
+     "collocations": [
+      "星期日",
+      "一日",
+      "生日"
      ]
     },
     {
@@ -1813,6 +2253,11 @@
        "zh": "我想休息一下。",
        "en": "I want to rest for a while."
       }
+     ],
+     "collocations": [
+      "好好休息",
+      "休息一下",
+      "休息时间"
      ]
     },
     {
@@ -1833,6 +2278,11 @@
        "zh": "她会唱歌。",
        "en": "She can sing."
       }
+     ],
+     "collocations": [
+      "会说中文",
+      "会开车",
+      "不会"
      ]
     },
     {
@@ -1853,6 +2303,11 @@
        "zh": "妈妈在做饭。",
        "en": "Mom is cooking."
       }
+     ],
+     "collocations": [
+      "会做饭",
+      "妈妈做饭",
+      "在家做饭"
      ]
     },
     {
@@ -1873,6 +2328,11 @@
        "zh": "他在做什么？",
        "en": "What is he doing?"
       }
+     ],
+     "collocations": [
+      "做什么",
+      "做饭",
+      "做工作"
      ]
     },
     {
@@ -1893,6 +2353,11 @@
        "zh": "这个面条儿很好吃。",
        "en": "This noodles is delicious."
       }
+     ],
+     "collocations": [
+      "吃面条儿",
+      "一碗面条儿",
+      "牛肉面条儿"
      ]
     },
     {
@@ -1913,6 +2378,11 @@
        "zh": "这个饺子很好吃。",
        "en": "This dumpling is delicious."
       }
+     ],
+     "collocations": [
+      "吃饺子",
+      "包饺子",
+      "一盘饺子"
      ]
     },
     {
@@ -1933,6 +2403,11 @@
        "zh": "这里有一些书。",
        "en": "There are some books here."
       }
+     ],
+     "collocations": [
+      "一些人",
+      "一些东西",
+      "买一些"
      ]
     },
     {
@@ -1953,6 +2428,11 @@
        "zh": "这个菜很好吃。",
        "en": "This dish is delicious."
       }
+     ],
+     "collocations": [
+      "中国菜",
+      "吃菜",
+      "买菜"
      ]
     },
     {
@@ -1973,6 +2453,11 @@
        "zh": "星期天我们去玩。",
        "en": "We go out to play on Sunday."
       }
+     ],
+     "collocations": [
+      "星期天上午",
+      "这个星期天",
+      "星期天休息"
      ]
     },
     {
@@ -1993,6 +2478,11 @@
        "zh": "她下午五点下班。",
        "en": "She finishes work at five in the afternoon."
       }
+     ],
+     "collocations": [
+      "下班以后",
+      "几点下班",
+      "下班回家"
      ]
     },
     {
@@ -2013,6 +2503,11 @@
        "zh": "那个不太新。",
        "en": "That one is not very new."
       }
+     ],
+     "collocations": [
+      "新朋友",
+      "新衣服",
+      "新手机"
      ]
     },
     {
@@ -2033,6 +2528,11 @@
        "zh": "电脑在桌子上。",
        "en": "The computer is on the table."
       }
+     ],
+     "collocations": [
+      "用电脑",
+      "买电脑",
+      "电脑很好"
      ]
     },
     {
@@ -2053,6 +2553,11 @@
        "zh": "你真漂亮。",
        "en": "You are really beautiful."
       }
+     ],
+     "collocations": [
+      "真好",
+      "真漂亮",
+      "真忙"
      ]
     },
     {
@@ -2073,6 +2578,11 @@
        "zh": "那个不太好看。",
        "en": "That one is not very good-looking."
       }
+     ],
+     "collocations": [
+      "很好看",
+      "真好看",
+      "衣服好看"
      ]
     },
     {
@@ -2093,6 +2603,11 @@
        "zh": "他喜欢看电影。",
        "en": "He likes watching movies."
       }
+     ],
+     "collocations": [
+      "很喜欢",
+      "喜欢吃",
+      "喜欢看"
      ]
     },
     {
@@ -2113,6 +2628,11 @@
        "zh": "我喜欢它。",
        "en": "I like it."
       }
+     ],
+     "collocations": [
+      "它们",
+      "它的",
+      "它是"
      ]
     }
    ]
@@ -2140,6 +2660,11 @@
        "zh": "手机在桌子上。",
        "en": "The cell phone is on the table."
       }
+     ],
+     "collocations": [
+      "手机号码",
+      "买手机",
+      "看手机"
      ]
     },
     {
@@ -2160,6 +2685,11 @@
        "zh": "明天见。",
        "en": "See you tomorrow."
       }
+     ],
+     "collocations": [
+      "明天上午",
+      "明天见",
+      "明天去"
      ]
     },
     {
@@ -2180,6 +2710,11 @@
        "zh": "我们去商店。",
        "en": "We go to the store."
       }
+     ],
+     "collocations": [
+      "去学校",
+      "去上班",
+      "想去"
      ]
     },
     {
@@ -2200,6 +2735,11 @@
        "zh": "你在哪儿？",
        "en": "Where are you?"
       }
+     ],
+     "collocations": [
+      "去哪儿",
+      "在哪儿",
+      "从哪儿来"
      ]
     },
     {
@@ -2220,6 +2760,11 @@
        "zh": "超市在那边。",
        "en": "The supermarket is over there."
       }
+     ],
+     "collocations": [
+      "去超市",
+      "超市里",
+      "在超市买"
      ]
     },
     {
@@ -2240,6 +2785,11 @@
        "zh": "她买了新衣服。",
        "en": "She bought new clothes."
       }
+     ],
+     "collocations": [
+      "买东西",
+      "买衣服",
+      "想买"
      ]
     },
     {
@@ -2260,6 +2810,11 @@
        "zh": "东西在桌子上。",
        "en": "The thing is on the table."
       }
+     ],
+     "collocations": [
+      "买东西",
+      "吃东西",
+      "什么东西"
      ]
     },
     {
@@ -2280,6 +2835,11 @@
        "zh": "这里有些书。",
        "en": "There are some books here."
       }
+     ],
+     "collocations": [
+      "这些",
+      "那些",
+      "一些"
      ]
     },
     {
@@ -2300,6 +2860,11 @@
        "zh": "请给我一杯牛奶。",
        "en": "Please give me a cup of milk."
       }
+     ],
+     "collocations": [
+      "喝牛奶",
+      "买牛奶",
+      "一杯牛奶"
      ]
     },
     {
@@ -2320,6 +2885,11 @@
        "zh": "我喜欢吃饺子。",
        "en": "I like eating dumplings."
       }
+     ],
+     "collocations": [
+      "吃饭",
+      "吃水果",
+      "吃什么"
      ]
     },
     {
@@ -2340,6 +2910,11 @@
        "zh": "晚饭很好吃。",
        "en": "Dinner is delicious."
       }
+     ],
+     "collocations": [
+      "吃晚饭",
+      "做晚饭",
+      "晚饭以后"
      ]
     },
     {
@@ -2360,6 +2935,11 @@
        "zh": "我去那边。",
        "en": "I'm going over there."
       }
+     ],
+     "collocations": [
+      "去那边",
+      "那边的人",
+      "在那边"
      ]
     },
     {
@@ -2380,6 +2960,11 @@
        "zh": "这个包子很好吃。",
        "en": "This steamed stuffed bun is delicious."
       }
+     ],
+     "collocations": [
+      "吃包子",
+      "买包子",
+      "两个包子"
      ]
     },
     {
@@ -2400,6 +2985,11 @@
        "zh": "这个菜非常好吃。",
        "en": "This dish is very delicious."
       }
+     ],
+     "collocations": [
+      "非常好",
+      "非常喜欢",
+      "非常高兴"
      ]
     },
     {
@@ -2420,6 +3010,11 @@
        "zh": "那个不太好吃。",
        "en": "That one is not very delicious."
       }
+     ],
+     "collocations": [
+      "很好吃",
+      "真好吃",
+      "这个好吃"
      ]
     },
     {
@@ -2440,6 +3035,11 @@
        "zh": "这个米饭很好吃。",
        "en": "This cooked rice is delicious."
       }
+     ],
+     "collocations": [
+      "吃米饭",
+      "一碗米饭",
+      "米饭和菜"
      ]
     },
     {
@@ -2460,6 +3060,11 @@
        "zh": "这个怎么做？",
        "en": "How do you do this?"
       }
+     ],
+     "collocations": [
+      "怎么去",
+      "怎么说",
+      "怎么办"
      ]
     },
     {
@@ -2480,6 +3085,11 @@
        "zh": "请坐。",
        "en": "Please sit."
       }
+     ],
+     "collocations": [
+      "坐下",
+      "坐车",
+      "坐出租车"
      ]
     },
     {
@@ -2500,6 +3110,11 @@
        "zh": "出租车在这儿。",
        "en": "The taxi is here."
       }
+     ],
+     "collocations": [
+      "坐出租车",
+      "出租车司机",
+      "一辆出租车"
      ]
     },
     {
@@ -2520,6 +3135,11 @@
        "zh": "电话在桌子上。",
        "en": "The telephone is on the table."
       }
+     ],
+     "collocations": [
+      "打电话",
+      "电话号码",
+      "手机电话"
      ]
     }
    ]
@@ -2547,6 +3167,11 @@
        "zh": "我现在在家。",
        "en": "I am at home now."
       }
+     ],
+     "collocations": [
+      "现在几点",
+      "现在去",
+      "现在正在"
      ]
     },
     {
@@ -2567,6 +3192,11 @@
        "zh": "我们九点上课。",
        "en": "We have class at nine."
       }
+     ],
+     "collocations": [
+      "几点",
+      "八点",
+      "一点儿"
      ]
     },
     {
@@ -2587,6 +3217,11 @@
        "zh": "我早上七点起床。",
        "en": "I get up at seven in the morning."
       }
+     ],
+     "collocations": [
+      "今天早上",
+      "早上八点",
+      "早上好"
      ]
     },
     {
@@ -2607,6 +3242,11 @@
        "zh": "我们上午十点见。",
        "en": "We meet at ten in the morning."
       }
+     ],
+     "collocations": [
+      "今天上午",
+      "上午九点",
+      "上午上课"
      ]
     },
     {
@@ -2627,6 +3267,11 @@
        "zh": "五分后见。",
        "en": "See you in five minutes."
       }
+     ],
+     "collocations": [
+      "八点十分",
+      "九十分",
+      "一百分"
      ]
     },
     {
@@ -2647,6 +3292,11 @@
        "zh": "这是第一课。",
        "en": "This is Lesson One."
       }
+     ],
+     "collocations": [
+      "上课",
+      "下课",
+      "中文课"
      ]
     },
     {
@@ -2667,6 +3317,11 @@
        "zh": "下午三点见。",
        "en": "See you at three in the afternoon."
       }
+     ],
+     "collocations": [
+      "今天下午",
+      "下午三点",
+      "下午上课"
      ]
     },
     {
@@ -2687,6 +3342,11 @@
        "zh": "我去见朋友。",
        "en": "I am going to see a friend."
       }
+     ],
+     "collocations": [
+      "再见",
+      "明天见",
+      "见朋友"
      ]
     },
     {
@@ -2707,6 +3367,11 @@
        "zh": "你坐这儿吧。",
        "en": "Sit here."
       }
+     ],
+     "collocations": [
+      "走吧",
+      "吃吧",
+      "好吧"
      ]
     },
     {
@@ -2727,6 +3392,11 @@
        "zh": "电影院在那边。",
        "en": "The cinema is over there."
       }
+     ],
+     "collocations": [
+      "去电影院",
+      "电影院里",
+      "在电影院看电影"
      ]
     },
     {
@@ -2747,6 +3417,11 @@
        "zh": "他看电影。",
        "en": "He watches a movie."
       }
+     ],
+     "collocations": [
+      "看书",
+      "看电影",
+      "看电视"
      ]
     },
     {
@@ -2767,6 +3442,11 @@
        "zh": "这个电影很好看。",
        "en": "This movie is good."
       }
+     ],
+     "collocations": [
+      "看电影",
+      "好看的电影",
+      "一部电影"
      ]
     },
     {
@@ -2787,6 +3467,11 @@
        "zh": "什么事？",
        "en": "What's the matter?"
       }
+     ],
+     "collocations": [
+      "有事",
+      "没事",
+      "什么事"
      ]
     },
     {
@@ -2807,6 +3492,11 @@
        "zh": "现在上课。",
        "en": "Class starts now."
       }
+     ],
+     "collocations": [
+      "去上课",
+      "正在上课",
+      "上课时间"
      ]
     },
     {
@@ -2827,6 +3517,11 @@
        "zh": "我吃了一半。",
        "en": "I ate half of it."
       }
+     ],
+     "collocations": [
+      "一半",
+      "半小时",
+      "六点半"
      ]
     },
     {
@@ -2847,6 +3542,11 @@
        "zh": "下课后我回家。",
        "en": "I go home after class."
       }
+     ],
+     "collocations": [
+      "下课以后",
+      "几点下课",
+      "下课回家"
      ]
     },
     {
@@ -2867,6 +3567,11 @@
        "zh": "他在看电视。",
        "en": "He is watching TV."
       }
+     ],
+     "collocations": [
+      "在家",
+      "在学校",
+      "正在"
      ]
     },
     {
@@ -2887,6 +3592,11 @@
        "zh": "书在桌子上。",
        "en": "The book is on the table."
       }
+     ],
+     "collocations": [
+      "家里",
+      "学校里",
+      "房间里"
      ]
     },
     {
@@ -2907,6 +3617,11 @@
        "zh": "我晚上六点半下班。",
        "en": "I finish work at 6:30 in the evening."
       }
+     ],
+     "collocations": [
+      "今天晚上",
+      "晚上六点",
+      "晚上回家"
      ]
     },
     {
@@ -2927,6 +3642,11 @@
        "zh": "医院在那边。",
        "en": "The hospital is over there."
       }
+     ],
+     "collocations": [
+      "去医院",
+      "在医院",
+      "医院里"
      ]
     },
     {
@@ -2947,6 +3667,11 @@
        "zh": "她今天不上班。",
        "en": "She is not working today."
       }
+     ],
+     "collocations": [
+      "去上班",
+      "几点上班",
+      "上班时间"
      ]
     },
     {
@@ -2967,6 +3692,11 @@
        "zh": "店在那边。",
        "en": "The shop is over there."
       }
+     ],
+     "collocations": [
+      "商店",
+      "书店",
+      "饭店"
      ]
     },
     {
@@ -2987,6 +3717,11 @@
        "zh": "我休息十分钟。",
        "en": "I rest for ten minutes."
       }
+     ],
+     "collocations": [
+      "十分钟",
+      "几分钟",
+      "等五分钟"
      ]
     },
     {
@@ -3007,6 +3742,11 @@
        "zh": "下班后我休息。",
        "en": "I rest after work."
       }
+     ],
+     "collocations": [
+      "以后",
+      "下班后",
+      "三天后"
      ]
     }
    ]
@@ -3034,6 +3774,11 @@
        "zh": "这个房间很大。",
        "en": "This room is big."
       }
+     ],
+     "collocations": [
+      "我的房间",
+      "房间里",
+      "大房间"
      ]
     },
     {
@@ -3054,6 +3799,11 @@
        "zh": "外边很冷。",
        "en": "It is cold outside."
       }
+     ],
+     "collocations": [
+      "国外",
+      "门外",
+      "外边"
      ]
     },
     {
@@ -3074,6 +3824,11 @@
        "zh": "这里有两只狗。",
        "en": "There are two dogs here."
       }
+     ],
+     "collocations": [
+      "一只猫",
+      "一只狗",
+      "两只"
      ]
     },
     {
@@ -3094,6 +3849,11 @@
        "zh": "我有一个小杯子。",
        "en": "I have a small cup."
       }
+     ],
+     "collocations": [
+      "很小",
+      "小朋友",
+      "小房间"
      ]
     },
     {
@@ -3114,6 +3874,11 @@
        "zh": "这只猫很小。",
        "en": "This cat is small."
       }
+     ],
+     "collocations": [
+      "一只猫",
+      "小猫",
+      "养猫"
      ]
     },
     {
@@ -3134,6 +3899,11 @@
        "zh": "我没去。",
        "en": "I didn't go."
       }
+     ],
+     "collocations": [
+      "没去",
+      "没吃",
+      "没看见"
      ]
     },
     {
@@ -3154,6 +3924,11 @@
        "zh": "你看见他了吗？",
        "en": "Did you see him?"
       }
+     ],
+     "collocations": [
+      "看见他",
+      "没看见",
+      "能看见"
      ]
     },
     {
@@ -3174,6 +3949,11 @@
        "zh": "这个桌子很大。",
        "en": "This table is big."
       }
+     ],
+     "collocations": [
+      "桌子上",
+      "一张桌子",
+      "桌子下面"
      ]
     },
     {
@@ -3194,6 +3974,11 @@
        "zh": "下课后我回家。",
        "en": "I go home after class."
       }
+     ],
+     "collocations": [
+      "下边",
+      "坐下",
+      "下班"
      ]
     },
     {
@@ -3214,6 +3999,11 @@
        "zh": "那个不太漂亮。",
        "en": "That one is not very beautiful."
       }
+     ],
+     "collocations": [
+      "很漂亮",
+      "真漂亮",
+      "漂亮衣服"
      ]
     },
     {
@@ -3234,6 +4024,11 @@
        "zh": "学校在前边。",
        "en": "The school is ahead."
       }
+     ],
+     "collocations": [
+      "去学校",
+      "在学校",
+      "学校老师"
      ]
     },
     {
@@ -3254,6 +4049,11 @@
        "zh": "书店在学校外边。",
        "en": "The bookstore is outside the school."
       }
+     ],
+     "collocations": [
+      "去书店",
+      "书店里",
+      "在书店买书"
      ]
     },
     {
@@ -3274,6 +4074,11 @@
        "zh": "上课前我看书。",
        "en": "I read before class."
       }
+     ],
+     "collocations": [
+      "前边",
+      "前一天",
+      "以前"
      ]
     },
     {
@@ -3294,6 +4099,11 @@
        "zh": "他今天不能来。",
        "en": "He cannot come today."
       }
+     ],
+     "collocations": [
+      "能去",
+      "能看见",
+      "不能"
      ]
     },
     {
@@ -3314,6 +4124,11 @@
        "zh": "他到家了。",
        "en": "He got home."
       }
+     ],
+     "collocations": [
+      "到学校",
+      "到家",
+      "几点到"
      ]
     },
     {
@@ -3334,6 +4149,11 @@
        "zh": "午饭我吃米饭。",
        "en": "I eat rice for lunch."
       }
+     ],
+     "collocations": [
+      "吃午饭",
+      "做午饭",
+      "午饭以后"
      ]
     },
     {
@@ -3354,6 +4174,11 @@
        "zh": "饭很好吃。",
        "en": "The meal is delicious."
       }
+     ],
+     "collocations": [
+      "吃饭",
+      "做饭",
+      "晚饭"
      ]
     },
     {
@@ -3374,6 +4199,11 @@
        "zh": "医生在医院工作。",
        "en": "The doctor works at a hospital."
       }
+     ],
+     "collocations": [
+      "看医生",
+      "去找医生",
+      "医院医生"
      ]
     }
    ]
@@ -3401,6 +4231,11 @@
        "zh": "他在我前边。",
        "en": "He is in front of me."
       }
+     ],
+     "collocations": [
+      "在前边",
+      "前边的人",
+      "往前边走"
      ]
     },
     {
@@ -3421,6 +4256,11 @@
        "zh": "他在那边。",
        "en": "He is over there."
       }
+     ],
+     "collocations": [
+      "这边",
+      "那边",
+      "旁边"
      ]
     },
     {
@@ -3441,6 +4281,11 @@
        "zh": "他上车了。",
        "en": "He got in the car."
       }
+     ],
+     "collocations": [
+      "上边",
+      "桌子上",
+      "上学"
      ]
     },
     {
@@ -3461,6 +4306,11 @@
        "zh": "那个很便宜。",
        "en": "That one is cheap."
       }
+     ],
+     "collocations": [
+      "那个人",
+      "那个学生",
+      "那个东西"
      ]
     },
     {
@@ -3481,6 +4331,11 @@
        "zh": "外边很冷。",
        "en": "It is cold outside."
       }
+     ],
+     "collocations": [
+      "在外边",
+      "外边的人",
+      "去外边"
      ]
     },
     {
@@ -3501,6 +4356,11 @@
        "zh": "椅子在桌子上。",
        "en": "The chair is on the table."
       }
+     ],
+     "collocations": [
+      "坐椅子",
+      "一把椅子",
+      "椅子上"
      ]
     },
     {
@@ -3521,6 +4381,11 @@
        "zh": "我有两本书。",
        "en": "I have two books."
       }
+     ],
+     "collocations": [
+      "一本书",
+      "两本书",
+      "哪本"
      ]
     },
     {
@@ -3541,6 +4406,11 @@
        "zh": "书在桌子上。",
        "en": "The book is on the table."
       }
+     ],
+     "collocations": [
+      "看书",
+      "买书",
+      "一本书"
      ]
     },
     {
@@ -3561,6 +4431,11 @@
        "zh": "那我们去吧。",
        "en": "Then let's go."
       }
+     ],
+     "collocations": [
+      "那个",
+      "那些",
+      "那边"
      ]
     },
     {
@@ -3581,6 +4456,11 @@
        "zh": "这是第二课。",
        "en": "This is Lesson Two."
       }
+     ],
+     "collocations": [
+      "第一",
+      "第二",
+      "第几个"
      ]
     },
     {
@@ -3601,6 +4481,11 @@
        "zh": "他也学习中文。",
        "en": "He also studies Chinese."
       }
+     ],
+     "collocations": [
+      "学习中文",
+      "学习时间",
+      "好好学习"
      ]
     },
     {
@@ -3621,6 +4506,11 @@
        "zh": "白天这里人很多。",
        "en": "There are many people here during the day."
       }
+     ],
+     "collocations": [
+      "白天上班",
+      "今天白天",
+      "白天很热"
      ]
     },
     {
@@ -3641,6 +4531,11 @@
        "zh": "他在学校读书。",
        "en": "He studies at school."
       }
+     ],
+     "collocations": [
+      "喜欢读书",
+      "在家读书",
+      "读书时间"
      ]
     },
     {
@@ -3661,6 +4556,11 @@
        "zh": "我和朋友去商店。",
        "en": "I go to the store with a friend."
       }
+     ],
+     "collocations": [
+      "好朋友",
+      "新朋友",
+      "我的朋友"
      ]
     },
     {
@@ -3681,6 +4581,11 @@
        "zh": "她喜欢唱歌。",
        "en": "She likes singing."
       }
+     ],
+     "collocations": [
+      "唱歌",
+      "会唱",
+      "唱中文歌"
      ]
     },
     {
@@ -3701,6 +4606,11 @@
        "zh": "歌很好听。",
        "en": "The song sounds nice."
       }
+     ],
+     "collocations": [
+      "唱歌",
+      "听歌",
+      "一首歌"
      ]
     },
     {
@@ -3721,6 +4631,11 @@
        "zh": "那个不太好听。",
        "en": "That one is not very pleasant to hear."
       }
+     ],
+     "collocations": [
+      "很好听",
+      "真好听",
+      "歌很好听"
      ]
     },
     {
@@ -3741,6 +4656,11 @@
        "zh": "电视在桌子上。",
        "en": "The television is on the table."
       }
+     ],
+     "collocations": [
+      "看电视",
+      "电视节目",
+      "开电视"
      ]
     },
     {
@@ -3761,6 +4681,11 @@
        "zh": "这只狗很小。",
        "en": "This dog is small."
       }
+     ],
+     "collocations": [
+      "一只狗",
+      "小狗",
+      "养狗"
      ]
     },
     {
@@ -3781,6 +4706,11 @@
        "zh": "星期天我们去玩。",
        "en": "We go out to play on Sunday."
       }
+     ],
+     "collocations": [
+      "出去玩",
+      "一起玩",
+      "玩得高兴"
      ]
     }
    ]
@@ -3808,6 +4738,11 @@
        "zh": "杯子在桌子上。",
        "en": "The cup is on the table."
       }
+     ],
+     "collocations": [
+      "一个杯子",
+      "杯子里",
+      "买杯子"
      ]
     },
     {
@@ -3828,6 +4763,11 @@
        "zh": "商店在这边。",
        "en": "The store is on this side."
       }
+     ],
+     "collocations": [
+      "来这边",
+      "在这边",
+      "这边的人"
      ]
     },
     {
@@ -3848,6 +4788,11 @@
        "zh": "水果有点儿少。",
        "en": "There is a little too little fruit."
       }
+     ],
+     "collocations": [
+      "很少",
+      "少一点儿",
+      "人很少"
      ]
     },
     {
@@ -3868,6 +4813,11 @@
        "zh": "这个多少钱？",
        "en": "How much is this?"
       }
+     ],
+     "collocations": [
+      "多少钱",
+      "有钱",
+      "花钱"
      ]
     },
     {
@@ -3888,6 +4838,11 @@
        "zh": "我喜欢这些。",
        "en": "I like these."
       }
+     ],
+     "collocations": [
+      "这些人",
+      "这些书",
+      "这些东西"
      ]
     },
     {
@@ -3908,6 +4863,11 @@
        "zh": "一块钱。",
        "en": "One yuan."
       }
+     ],
+     "collocations": [
+      "十块钱",
+      "一块钱",
+      "两块"
      ]
     },
     {
@@ -3928,6 +4888,11 @@
        "zh": "我喜欢那些。",
        "en": "I like those."
       }
+     ],
+     "collocations": [
+      "那些人",
+      "那些书",
+      "那些东西"
      ]
     },
     {
@@ -3948,6 +4913,11 @@
        "zh": "这儿有一个商店。",
        "en": "There is a store here."
       }
+     ],
+     "collocations": [
+      "在这儿",
+      "来这儿",
+      "这儿有"
      ]
     },
     {
@@ -3968,6 +4938,11 @@
        "zh": "这个水果很好吃。",
        "en": "This fruit is delicious."
       }
+     ],
+     "collocations": [
+      "吃水果",
+      "买水果",
+      "一些水果"
      ]
     },
     {
@@ -3988,6 +4963,11 @@
        "zh": "这个苹果很好吃。",
        "en": "This apple is delicious."
       }
+     ],
+     "collocations": [
+      "吃苹果",
+      "买苹果",
+      "一个苹果"
      ]
     },
     {
@@ -4008,6 +4988,11 @@
        "zh": "那个不太便宜。",
        "en": "That one is not very cheap."
       }
+     ],
+     "collocations": [
+      "很便宜",
+      "真便宜",
+      "便宜一点儿"
      ]
     },
     {
@@ -4028,6 +5013,11 @@
        "zh": "商店在这边。",
        "en": "The store is on this side."
       }
+     ],
+     "collocations": [
+      "去商店",
+      "商店里",
+      "在商店买东西"
      ]
     },
     {
@@ -4048,6 +5038,11 @@
        "zh": "衣服在桌子上。",
        "en": "The clothes is on the table."
       }
+     ],
+     "collocations": [
+      "买衣服",
+      "穿衣服",
+      "新衣服"
      ]
     },
     {
@@ -4068,6 +5063,11 @@
        "zh": "这件衣服很好看。",
        "en": "This piece of clothing looks nice."
       }
+     ],
+     "collocations": [
+      "一件衣服",
+      "两件事",
+      "哪件"
      ]
     },
     {
@@ -4088,6 +5088,11 @@
        "zh": "一百元。",
        "en": "One hundred yuan."
       }
+     ],
+     "collocations": [
+      "十元",
+      "二十元",
+      "多少元"
      ]
     },
     {
@@ -4108,6 +5113,11 @@
        "zh": "你觉得怎么样？",
        "en": "What do you think?"
       }
+     ],
+     "collocations": [
+      "怎么样了",
+      "这个怎么样",
+      "你觉得怎么样"
      ]
     },
     {
@@ -4128,6 +5138,11 @@
        "zh": "那个不太贵。",
        "en": "That one is not very expensive."
       }
+     ],
+     "collocations": [
+      "太贵了",
+      "很贵",
+      "贵不贵"
      ]
     },
     {
@@ -4148,6 +5163,11 @@
        "zh": "她也穿新衣服。",
        "en": "She also wears new clothes."
       }
+     ],
+     "collocations": [
+      "穿衣服",
+      "穿新衣服",
+      "穿什么"
      ]
     },
     {
@@ -4168,6 +5188,11 @@
        "zh": "这是女学生。",
        "en": "This is a female student."
       }
+     ],
+     "collocations": [
+      "女朋友",
+      "女学生",
+      "女老师"
      ]
     },
     {
@@ -4188,6 +5213,11 @@
        "zh": "这是男学生。",
        "en": "This is a male student."
       }
+     ],
+     "collocations": [
+      "男朋友",
+      "男学生",
+      "男老师"
      ]
     },
     {
@@ -4208,6 +5238,11 @@
        "zh": "那儿人很多。",
        "en": "There are many people there."
       }
+     ],
+     "collocations": [
+      "在那儿",
+      "去那儿",
+      "那儿有"
      ]
     }
    ]
@@ -4235,6 +5270,11 @@
        "zh": "下课的时候我回家。",
        "en": "I go home when class ends."
       }
+     ],
+     "collocations": [
+      "什么时候",
+      "吃饭的时候",
+      "上课的时候"
      ]
     },
     {
@@ -4255,6 +5295,11 @@
        "zh": "饭店在那边。",
        "en": "The restaurant is over there."
       }
+     ],
+     "collocations": [
+      "去饭店",
+      "饭店里",
+      "在饭店吃饭"
      ]
     },
     {
@@ -4275,6 +5320,11 @@
        "zh": "你知道吗？",
        "en": "Do you know?"
       }
+     ],
+     "collocations": [
+      "知道了",
+      "不知道",
+      "想知道"
      ]
     },
     {
@@ -4295,6 +5345,11 @@
        "zh": "他正在学习。",
        "en": "He is studying."
       }
+     ],
+     "collocations": [
+      "正在吃饭",
+      "正在上课",
+      "正在看书"
      ]
     },
     {
@@ -4315,6 +5370,11 @@
        "zh": "你找谁？",
        "en": "Who are you looking for?"
       }
+     ],
+     "collocations": [
+      "找朋友",
+      "找老师",
+      "找工作"
      ]
     },
     {
@@ -4335,6 +5395,11 @@
        "zh": "我爸爸开车上班。",
        "en": "My dad drives to work."
       }
+     ],
+     "collocations": [
+      "会开车",
+      "开车去",
+      "自己开车"
      ]
     },
     {
@@ -4355,6 +5420,11 @@
        "zh": "车在这儿。",
        "en": "The vehicle is here."
       }
+     ],
+     "collocations": [
+      "坐车",
+      "开车",
+      "一辆车"
      ]
     },
     {
@@ -4375,6 +5445,11 @@
        "zh": "他在读书。",
        "en": "He is reading."
       }
+     ],
+     "collocations": [
+      "读书",
+      "读中文",
+      "读这个字"
      ]
     },
     {
@@ -4395,6 +5470,11 @@
        "zh": "这个大学很大。",
        "en": "This university is big."
       }
+     ],
+     "collocations": [
+      "上大学",
+      "在大学",
+      "大学老师"
      ]
     },
     {
@@ -4415,6 +5495,11 @@
        "zh": "大学生在上课。",
        "en": "The university students are in class."
       }
+     ],
+     "collocations": [
+      "一个大学生",
+      "中国大学生",
+      "大学生们"
      ]
     },
     {
@@ -4435,6 +5520,11 @@
        "zh": "他学汉语。",
        "en": "He studies Chinese."
       }
+     ],
+     "collocations": [
+      "学中文",
+      "学开车",
+      "想学"
      ]
     },
     {
@@ -4455,6 +5545,11 @@
        "zh": "我弟弟是学生。",
        "en": "My younger brother is a student."
       }
+     ],
+     "collocations": [
+      "我的弟弟",
+      "弟弟上学",
+      "弟弟很好"
      ]
     },
     {
@@ -4475,6 +5570,11 @@
        "zh": "他几点起床？",
        "en": "What time does he get up?"
       }
+     ],
+     "collocations": [
+      "早上起床",
+      "几点起床",
+      "起床以后"
      ]
     },
     {
@@ -4495,6 +5595,11 @@
        "zh": "他正在睡觉。",
        "en": "He is sleeping."
       }
+     ],
+     "collocations": [
+      "去睡觉",
+      "早点睡觉",
+      "睡觉时间"
      ]
     },
     {
@@ -4515,6 +5620,11 @@
        "zh": "我晚上睡。",
        "en": "I sleep at night."
       }
+     ],
+     "collocations": [
+      "睡得好",
+      "想睡",
+      "睡一下"
      ]
     },
     {
@@ -4535,6 +5645,11 @@
        "zh": "那里有一个商店。",
        "en": "There is a store there."
       }
+     ],
+     "collocations": [
+      "在那里",
+      "去那里",
+      "那里有"
      ]
     },
     {
@@ -4555,6 +5670,11 @@
        "zh": "学校在哪里？",
        "en": "Where is the school?"
       }
+     ],
+     "collocations": [
+      "在哪里",
+      "去哪里",
+      "从哪里来"
      ]
     },
     {
@@ -4575,6 +5695,11 @@
        "zh": "昨天下雨了。",
        "en": "It rained yesterday."
       }
+     ],
+     "collocations": [
+      "昨天上午",
+      "昨天晚上",
+      "昨天去"
      ]
     },
     {
@@ -4595,6 +5720,11 @@
        "zh": "你可以问他。",
        "en": "You can ask him."
       }
+     ],
+     "collocations": [
+      "问老师",
+      "问问题",
+      "想问"
      ]
     },
     {
@@ -4615,6 +5745,11 @@
        "zh": "请再说一下。",
        "en": "Please say it again."
       }
+     ],
+     "collocations": [
+      "说中文",
+      "说什么",
+      "跟他说"
      ]
     },
     {
@@ -4635,6 +5770,11 @@
        "zh": "你要什么？",
        "en": "What do you want?"
       }
+     ],
+     "collocations": [
+      "要去",
+      "要吃",
+      "不要"
      ]
     },
     {
@@ -4655,6 +5795,11 @@
        "zh": "这个小朋友五岁。",
        "en": "This child is five years old."
       }
+     ],
+     "collocations": [
+      "小朋友们",
+      "一个小朋友",
+      "和小朋友玩"
      ]
     }
    ]
@@ -4682,6 +5827,11 @@
        "zh": "我喜欢雪。",
        "en": "I like snow."
       }
+     ],
+     "collocations": [
+      "下雪",
+      "大雪",
+      "看雪"
      ]
     },
     {
@@ -4702,6 +5852,11 @@
        "zh": "我在这里住三天。",
        "en": "I will stay here for three days."
       }
+     ],
+     "collocations": [
+      "今天",
+      "明天",
+      "天气"
      ]
     },
     {
@@ -4722,6 +5877,11 @@
        "zh": "天气有点儿冷。",
        "en": "The weather is a little cold."
       }
+     ],
+     "collocations": [
+      "天气很好",
+      "今天天气",
+      "天气怎么样"
      ]
     },
     {
@@ -4742,6 +5902,11 @@
        "zh": "这里很漂亮。",
        "en": "It is beautiful here."
       }
+     ],
+     "collocations": [
+      "在这里",
+      "来这里",
+      "这里有"
      ]
     },
     {
@@ -4762,6 +5927,11 @@
        "zh": "昨天下雨了。",
        "en": "It rained yesterday."
       }
+     ],
+     "collocations": [
+      "今天下雨",
+      "开始下雨",
+      "下雨了"
      ]
     },
     {
@@ -4782,6 +5952,11 @@
        "zh": "下雨了。",
        "en": "It started raining."
       }
+     ],
+     "collocations": [
+      "吃了",
+      "下雨了",
+      "太好了"
      ]
     },
     {
@@ -4802,6 +5977,11 @@
        "zh": "我不喜欢雨。",
        "en": "I don't like rain."
       }
+     ],
+     "collocations": [
+      "下雨",
+      "大雨",
+      "雨天"
      ]
     },
     {
@@ -4822,6 +6002,11 @@
        "zh": "我有点儿忙。",
        "en": "I am a little busy."
       }
+     ],
+     "collocations": [
+      "有点儿累",
+      "有点儿冷",
+      "有点儿贵"
      ]
     },
     {
@@ -4842,6 +6027,11 @@
        "zh": "你觉得怎么样？",
        "en": "What do you think?"
       }
+     ],
+     "collocations": [
+      "我觉得",
+      "觉得很好",
+      "你觉得呢"
      ]
     },
     {
@@ -4862,6 +6052,11 @@
        "zh": "外边有点儿冷。",
        "en": "It is a little cold outside."
       }
+     ],
+     "collocations": [
+      "很冷",
+      "有点儿冷",
+      "天气冷"
      ]
     },
     {
@@ -4882,6 +6077,11 @@
        "zh": "他明天来。",
        "en": "He will come tomorrow."
       }
+     ],
+     "collocations": [
+      "来中国",
+      "来学校",
+      "请进来"
      ]
     },
     {
@@ -4902,6 +6102,11 @@
        "zh": "公司在那边。",
        "en": "The company is over there."
       }
+     ],
+     "collocations": [
+      "去公司",
+      "在公司",
+      "公司工作"
      ]
     },
     {
@@ -4922,6 +6127,11 @@
        "zh": "生病了要休息。",
        "en": "You should rest when you're sick."
       }
+     ],
+     "collocations": [
+      "生病了",
+      "容易生病",
+      "生病以后"
      ]
     },
     {
@@ -4942,6 +6152,11 @@
        "zh": "他今天去看病。",
        "en": "He is going to see a doctor today."
       }
+     ],
+     "collocations": [
+      "去看病",
+      "在医院看病",
+      "找医生看病"
      ]
     },
     {
@@ -4962,6 +6177,11 @@
        "zh": "我今天有点儿病。",
        "en": "I feel a little ill today."
       }
+     ],
+     "collocations": [
+      "生病",
+      "有病",
+      "看病"
      ]
     },
     {
@@ -4982,6 +6202,11 @@
        "zh": "今天有点儿冷。",
        "en": "It is a little cold today."
       }
+     ],
+     "collocations": [
+      "一点儿水",
+      "吃一点儿",
+      "便宜一点儿"
      ]
     },
     {
@@ -5002,6 +6227,11 @@
        "zh": "他明天回家。",
        "en": "He will go home tomorrow."
       }
+     ],
+     "collocations": [
+      "回家",
+      "回来",
+      "回学校"
      ]
     },
     {
@@ -5022,6 +6252,11 @@
        "zh": "请再说一下。",
        "en": "Please say it again."
       }
+     ],
+     "collocations": [
+      "再见",
+      "再来",
+      "再说"
      ]
     },
     {
@@ -5042,6 +6277,11 @@
        "zh": "我喜欢喝茶。",
        "en": "I like drinking tea."
       }
+     ],
+     "collocations": [
+      "喝水",
+      "喝茶",
+      "喝牛奶"
      ]
     },
     {
@@ -5062,6 +6302,11 @@
        "zh": "水太热了。",
        "en": "The water is too hot."
       }
+     ],
+     "collocations": [
+      "很热",
+      "有点儿热",
+      "天气热"
      ]
     },
     {
@@ -5082,6 +6327,11 @@
        "zh": "请给我一杯水。",
        "en": "Please give me a cup of water."
       }
+     ],
+     "collocations": [
+      "喝水",
+      "一杯水",
+      "热水"
      ]
     }
    ]
@@ -5109,6 +6359,11 @@
        "zh": "可以，请坐。",
        "en": "Yes, you may. Please sit."
       }
+     ],
+     "collocations": [
+      "可以去",
+      "可以吗",
+      "不可以"
      ]
     },
     {
@@ -5129,6 +6384,11 @@
        "zh": "这是什么问题？",
        "en": "What question is this?"
       }
+     ],
+     "collocations": [
+      "问问题",
+      "有问题",
+      "没问题"
      ]
     },
     {
@@ -5149,6 +6409,11 @@
        "zh": "这里卖衣服。",
        "en": "Clothes are sold here."
       }
+     ],
+     "collocations": [
+      "卖东西",
+      "卖水果",
+      "这里卖"
      ]
     },
     {
@@ -5169,6 +6434,11 @@
        "zh": "他正在打电话。",
        "en": "He is making a phone call."
       }
+     ],
+     "collocations": [
+      "给他打电话",
+      "打电话问",
+      "正在打电话"
      ]
     },
     {
@@ -5189,6 +6459,11 @@
        "zh": "我想休息一下。",
        "en": "I want to rest for a while."
       }
+     ],
+     "collocations": [
+      "看一下",
+      "等一下",
+      "问一下"
      ]
     },
     {
@@ -5209,6 +6484,11 @@
        "zh": "女士，请坐。",
        "en": "Ma'am, please sit."
       }
+     ],
+     "collocations": [
+      "这位女士",
+      "女士你好",
+      "王女士"
      ]
     },
     {
@@ -5229,6 +6509,11 @@
        "zh": "请喝茶。",
        "en": "Please have some tea."
       }
+     ],
+     "collocations": [
+      "请坐",
+      "请进",
+      "请问"
      ]
     },
     {
@@ -5249,6 +6534,11 @@
        "zh": "我给妈妈打电话。",
        "en": "I call my mom."
       }
+     ],
+     "collocations": [
+      "给你",
+      "给朋友",
+      "给我打电话"
      ]
     },
     {
@@ -5269,6 +6559,11 @@
        "zh": "我喝了一杯水。",
        "en": "I drank a cup of water."
       }
+     ],
+     "collocations": [
+      "一杯水",
+      "一杯茶",
+      "两杯"
      ]
     },
     {
@@ -5289,6 +6584,11 @@
        "zh": "早饭我吃面包。",
        "en": "I eat bread for breakfast."
       }
+     ],
+     "collocations": [
+      "吃早饭",
+      "做早饭",
+      "早饭以后"
      ]
     },
     {
@@ -5309,6 +6609,11 @@
        "zh": "这个很好吃。",
        "en": "This is delicious."
       }
+     ],
+     "collocations": [
+      "这个人",
+      "这个东西",
+      "这个怎么样"
      ]
     },
     {
@@ -5329,6 +6634,11 @@
        "zh": "这个面包很好吃。",
        "en": "This bread is delicious."
       }
+     ],
+     "collocations": [
+      "吃面包",
+      "买面包",
+      "一块面包"
      ]
     },
     {
@@ -5349,6 +6659,11 @@
        "zh": "这个鸡蛋很好吃。",
        "en": "This egg is delicious."
       }
+     ],
+     "collocations": [
+      "吃鸡蛋",
+      "买鸡蛋",
+      "一个鸡蛋"
      ]
     },
     {
@@ -5369,6 +6684,11 @@
        "zh": "先生，请坐。",
        "en": "Sir, please sit."
       }
+     ],
+     "collocations": [
+      "王先生",
+      "这位先生",
+      "先生你好"
      ]
     },
     {
@@ -5389,6 +6709,11 @@
        "zh": "一半学生在这儿。",
        "en": "Half of the students are here."
       }
+     ],
+     "collocations": [
+      "一半时间",
+      "吃一半",
+      "一半的人"
      ]
     },
     {
@@ -5409,6 +6734,11 @@
        "zh": "请给我一杯茶。",
        "en": "Please give me a cup of tea."
       }
+     ],
+     "collocations": [
+      "喝茶",
+      "一杯茶",
+      "买茶"
      ]
     }
    ]
@@ -5436,6 +6766,11 @@
        "zh": "火车在这儿。",
        "en": "The train is here."
       }
+     ],
+     "collocations": [
+      "坐火车",
+      "火车站",
+      "一列火车"
      ]
     },
     {
@@ -5456,6 +6791,11 @@
        "zh": "中午我们见。",
        "en": "We meet at noon."
       }
+     ],
+     "collocations": [
+      "今天中午",
+      "中午十二点",
+      "中午吃饭"
      ]
     },
     {
@@ -5476,6 +6816,11 @@
        "zh": "请开一下。",
        "en": "Please open it."
       }
+     ],
+     "collocations": [
+      "开门",
+      "开车",
+      "打开"
      ]
     },
     {
@@ -5496,6 +6841,11 @@
        "zh": "这个有些贵。",
        "en": "This is somewhat expensive."
       }
+     ],
+     "collocations": [
+      "有些人",
+      "有些东西",
+      "有些贵"
      ]
     },
     {
@@ -5516,6 +6866,11 @@
        "zh": "她会说汉语。",
        "en": "She can speak Chinese."
       }
+     ],
+     "collocations": [
+      "学汉语",
+      "说汉语",
+      "汉语老师"
      ]
     },
     {
@@ -5536,6 +6891,11 @@
        "zh": "他在写字。",
        "en": "He is writing."
       }
+     ],
+     "collocations": [
+      "写字",
+      "写名字",
+      "写中文"
      ]
     },
     {
@@ -5556,6 +6916,11 @@
        "zh": "这个汉字很好看。",
        "en": "This Chinese character looks nice."
       }
+     ],
+     "collocations": [
+      "写汉字",
+      "学汉字",
+      "这个汉字"
      ]
     },
     {
@@ -5576,6 +6941,11 @@
        "zh": "他们都在家。",
        "en": "They are all at home."
       }
+     ],
+     "collocations": [
+      "大家都",
+      "我们都",
+      "都可以"
      ]
     },
     {
@@ -5596,6 +6966,11 @@
        "zh": "请听老师说。",
        "en": "Please listen to the teacher."
       }
+     ],
+     "collocations": [
+      "听音乐",
+      "听老师说",
+      "听不懂"
      ]
     },
     {
@@ -5616,6 +6991,11 @@
        "zh": "不要买这个。",
        "en": "Don't buy this."
       }
+     ],
+     "collocations": [
+      "不要说",
+      "不要去",
+      "不要客气"
      ]
     },
     {
@@ -5636,6 +7016,11 @@
        "zh": "请不要说话。",
        "en": "Please don't talk."
       }
+     ],
+     "collocations": [
+      "跟他说话",
+      "说话声音",
+      "不要说话"
      ]
     },
     {
@@ -5656,6 +7041,11 @@
        "zh": "哪些是你的？",
        "en": "Which ones are yours?"
       }
+     ],
+     "collocations": [
+      "哪些人",
+      "哪些书",
+      "有哪些"
      ]
     },
     {
@@ -5676,6 +7066,11 @@
        "zh": "我会写这个字。",
        "en": "I can write this character."
       }
+     ],
+     "collocations": [
+      "写字",
+      "这个字",
+      "汉字"
      ]
     },
     {
@@ -5696,6 +7091,11 @@
        "zh": "明年见。",
        "en": "See you next year."
       }
+     ],
+     "collocations": [
+      "明年去",
+      "明年上学",
+      "明年见"
      ]
     },
     {
@@ -5716,6 +7116,11 @@
        "zh": "中学在前边。",
        "en": "The middle school is ahead."
       }
+     ],
+     "collocations": [
+      "上中学",
+      "中学老师",
+      "中学学生"
      ]
     },
     {
@@ -5736,6 +7141,11 @@
        "zh": "小学在那边。",
        "en": "The primary school is over there."
       }
+     ],
+     "collocations": [
+      "上小学",
+      "小学老师",
+      "小学学生"
      ]
     },
     {
@@ -5756,6 +7166,11 @@
        "zh": "中学生在上课。",
        "en": "The middle school students are in class."
       }
+     ],
+     "collocations": [
+      "一个中学生",
+      "中学生们",
+      "中国中学生"
      ]
     },
     {
@@ -5776,6 +7191,11 @@
        "zh": "小学生在学校学习。",
        "en": "Primary school students study at school."
       }
+     ],
+     "collocations": [
+      "一个小学生",
+      "小学生们",
+      "中国小学生"
      ]
     },
     {
@@ -5796,6 +7216,11 @@
        "zh": "他明天上学。",
        "en": "He goes to school tomorrow."
       }
+     ],
+     "collocations": [
+      "去上学",
+      "开始上学",
+      "上学时间"
      ]
     },
     {
@@ -5816,6 +7241,11 @@
        "zh": "我认识他们。",
        "en": "I know them."
       }
+     ],
+     "collocations": [
+      "他们都",
+      "他们的",
+      "他们是"
      ]
     },
     {
@@ -5836,6 +7266,11 @@
        "zh": "现在太晚了。",
        "en": "It's too late now."
       }
+     ],
+     "collocations": [
+      "太晚了",
+      "晚一点儿",
+      "来得晚"
      ]
     },
     {
@@ -5856,6 +7291,11 @@
        "zh": "我喜欢它们。",
        "en": "I like them."
       }
+     ],
+     "collocations": [
+      "它们都",
+      "它们的",
+      "看看它们"
      ]
     },
     {
@@ -5876,6 +7316,11 @@
        "zh": "我认识她们。",
        "en": "I know them."
       }
+     ],
+     "collocations": [
+      "她们都",
+      "她们的",
+      "她们是"
      ]
     },
     {
@@ -5896,6 +7341,11 @@
        "zh": "你听见了吗？",
        "en": "Did you hear it?"
       }
+     ],
+     "collocations": [
+      "听见声音",
+      "没听见",
+      "能听见"
      ]
     },
     {
@@ -5916,6 +7366,11 @@
        "zh": "有的很贵，有的便宜。",
        "en": "Some are expensive, and some are cheap."
       }
+     ],
+     "collocations": [
+      "有的人",
+      "有的书",
+      "有的很好"
      ]
     }
    ]
@@ -5943,6 +7398,11 @@
        "zh": "我也爱你。",
        "en": "I love you too."
       }
+     ],
+     "collocations": [
+      "爱你",
+      "爱学习",
+      "爱吃"
      ]
     },
     {
@@ -5963,6 +7423,11 @@
        "zh": "哪个是你的？",
        "en": "Which one is yours?"
       }
+     ],
+     "collocations": [
+      "哪个人",
+      "哪个学校",
+      "你要哪个"
      ]
     },
     {
@@ -5983,6 +7448,11 @@
        "zh": "去年我很忙。",
        "en": "I was very busy last year."
       }
+     ],
+     "collocations": [
+      "去年去了",
+      "去年上学",
+      "去年这个时候"
      ]
     },
     {
@@ -6003,6 +7473,11 @@
        "zh": "我男朋友在大学学习。",
        "en": "My boyfriend studies at university."
       }
+     ],
+     "collocations": [
+      "我的男朋友",
+      "找男朋友",
+      "男朋友很好"
      ]
     },
     {
@@ -6023,6 +7498,11 @@
        "zh": "我住了两年。",
        "en": "I lived there for two years."
       }
+     ],
+     "collocations": [
+      "今年",
+      "明年",
+      "去年"
      ]
     },
     {
@@ -6043,6 +7523,11 @@
        "zh": "那个也很好玩儿。",
        "en": "That one is fun too."
       }
+     ],
+     "collocations": [
+      "很好玩儿",
+      "真好玩儿",
+      "这里好玩儿"
      ]
     },
     {
@@ -6063,6 +7548,11 @@
        "zh": "飞机在这儿。",
        "en": "The airplane is here."
       }
+     ],
+     "collocations": [
+      "坐飞机",
+      "飞机票",
+      "一架飞机"
      ]
     },
     {
@@ -6083,6 +7573,11 @@
        "zh": "还有一个小时。",
        "en": "There is one hour left."
       }
+     ],
+     "collocations": [
+      "一个小时",
+      "两个小时",
+      "半小时"
      ]
     },
     {
@@ -6103,6 +7598,11 @@
        "zh": "家人都在这儿。",
        "en": "My family is all here."
       }
+     ],
+     "collocations": [
+      "我的家人",
+      "和家人一起",
+      "家人都好"
      ]
     },
     {
@@ -6123,6 +7623,11 @@
        "zh": "你有时间吗？",
        "en": "Do you have time?"
       }
+     ],
+     "collocations": [
+      "有时间",
+      "没时间",
+      "工作时间"
      ]
     },
     {
@@ -6143,6 +7648,11 @@
        "zh": "他住这里。",
        "en": "He lives here."
       }
+     ],
+     "collocations": [
+      "住在北京",
+      "住这里",
+      "住酒店"
      ]
     },
     {
@@ -6163,6 +7673,11 @@
        "zh": "早！",
        "en": "Morning!"
       }
+     ],
+     "collocations": [
+      "早上",
+      "早点儿",
+      "来得早"
      ]
     }
    ]

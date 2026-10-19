@@ -28,6 +28,7 @@
     <div class="tabpane" :style="paneWash">
       <ReadPanel v-if="tab === 'read'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
       <FlashcardsPanel v-else-if="tab === 'cards'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
+      <VocabPanel v-else-if="tab === 'vocab'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
       <ExercisesPanel v-else-if="tab === 'exercises'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
       <GrammarNotesPanel v-else-if="tab === 'grammar'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
       <DiscussionPanel v-else-if="tab === 'discussion'" :series="seriesId" :unit="unitId" :lesson="lesson.num" />
@@ -51,6 +52,7 @@ import { ref, computed, watch } from "vue";
 import { stop as stopAudio } from "@/utils/tts";
 import ReadPanel from "@/components/ReadPanel.vue";
 import FlashcardsPanel from "@/components/FlashcardsPanel.vue";
+import VocabPanel from "@/components/VocabPanel.vue";
 import ExercisesPanel from "@/components/ExercisesPanel.vue";
 import GrammarNotesPanel from "@/components/GrammarNotesPanel.vue";
 import DiscussionPanel from "@/components/DiscussionPanel.vue";

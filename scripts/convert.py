@@ -614,6 +614,40 @@ def convert(src):
     return data, total
 
 
+# 常见搭配 for units whose 词汇闪卡表 has no colloc column: a separate
+# `{系列}_{册}_常见搭配.xlsx` (same layout as the 闪卡表, 搭配 in col 11) is matched
+# onto the existing words by (课次, 汉字, 拼音) — word ids/order stay the 闪卡表's.
+COLLOC_SOURCES = {
+    "newhsk3-1": "sources/新HSK3.0_第一册_常见搭配.xlsx",
+    "newhsk3-2": "sources/新HSK3.0_第二册_常见搭配.xlsx",
+    "newhsk3-3": "sources/新HSK3.0_第三册_常见搭配.xlsx",
+}
+
+
+def merge_collocations(key, data):
+    ws = openpyxl.load_workbook(ROOT / COLLOC_SOURCES[key], read_only=True).worksheets[0]
+    found = {}
+    for r in list(ws.iter_rows(values_only=True))[1:]:
+        if not isinstance(r[1], int):
+            continue
+        raw = clean(r[11])
+        found[(r[1], clean(r[3]), clean(r[4]))] = (
+            [c.strip() for c in re.split(r"[；;、]", raw) if c.strip()] if raw else [])
+    hit, miss = 0, []
+    for lesson in data["lessons"]:
+        for w in lesson["words"]:
+            c = found.pop((lesson["num"], w["hanzi"], w["pinyin"]), None)
+            if c is None:
+                miss.append(f"L{lesson['num']} {w['hanzi']}")
+                continue
+            w["collocations"] = c
+            hit += 1
+    if miss or found:
+        print(f"  ⚠ {key} 常见搭配: {len(miss)} words unmatched {miss[:8]}, "
+              f"{len(found)} rows unused {[k[1] for k in list(found)[:8]]}")
+    return hit
+
+
 # Units whose 词汇闪卡表 lists words alphabetically by pinyin instead of in textbook
 # order (all of 新HSK3.0 第一册 / HSK5, most of HSK4 / 新HSK3.0 第四册). Their words are
 # re-sorted by first appearance in the lesson's 课文 (src/data/texts/, so run
@@ -702,7 +736,9 @@ def main():
         data["lessons"].sort(key=lambda l: l["num"])
         if key in REORDER_BY_TEXT:
             reorder_by_text(key, data)
-        path = OUT / f"{key}.json"
+        if key in COLLOC_SOURCES:
+            merge_collocations(key, data)
+        path =OUT / f"{key}.json"
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         meta[key] = {
             "lessonCount": len(data["lessons"]),

@@ -52,7 +52,8 @@ async def synthesize(text: str, path: Path, retries: int = 3):
     for attempt in range(retries):
         try:
             comm = edge_tts.Communicate(text, VOICE)
-            await comm.save(str(path))
+            # edge-tts has no timeout of its own — a stalled websocket hung a whole run once
+            await asyncio.wait_for(comm.save(str(path)), timeout=60)
             return
         except Exception as e:
             if attempt < retries - 1:
@@ -148,6 +149,21 @@ def collect_discussion() -> list[str]:
     return texts
 
 
+def collect_collocations() -> list[str]:
+    """词汇详解 常见搭配 — VocabPanel plays each collocation when it's tapped."""
+    seen: set[str] = set()
+    texts: list[str] = []
+    for f in sorted(DATA_DIR.glob("*-*.json")):
+        data = json.loads(f.read_text(encoding="utf-8"))
+        for lesson in data.get("lessons", []):
+            for word in lesson.get("words", []):
+                for t in word.get("collocations") or []:
+                    if t not in seen:
+                        seen.add(t)
+                        texts.append(t)
+    return texts
+
+
 def collect_all_texts() -> list[str]:
     seen: set[str] = set()
     texts: list[str] = []
@@ -217,6 +233,7 @@ async def main():
     parser.add_argument("--all", action="store_true", help="Generate for entire corpus")
     parser.add_argument("--texts", action="store_true", help="Generate for 课文 dialogue lines")
     parser.add_argument("--discussion", action="store_true", help="Generate for 话题讨论 questions")
+    parser.add_argument("--collocations", action="store_true", help="Generate for 词汇详解 常见搭配")
     parser.add_argument("--concurrency", type=int, default=8, help="Concurrent TTS requests")
     args = parser.parse_args()
 
@@ -224,7 +241,10 @@ async def main():
     manifest = load_manifest()
     already = len(manifest)
 
-    if args.discussion:
+    if args.collocations:
+        texts = collect_collocations()
+        label = "词汇详解 collocations"
+    elif args.discussion:
         texts = collect_discussion()
         label = "话题讨论 questions"
     elif args.texts:
