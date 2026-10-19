@@ -1,0 +1,74 @@
+{
+  "songs": [
+    {
+      "id": "s5Xl5MXboas", "zh": "兰亭序", "py": "Lántíng Xù", "en": "Preface to the Orchid Pavilion",
+      "artist": "周杰伦", "artistEn": "Jay Chou",
+      "note": "Named after Wang Xizhi's “Preface to the Orchid Pavilion” (353 AD), called “the finest running script under heaven” — the most celebrated work in the history of Chinese calligraphy. The song tells a love story in brush and ink.",
+      "noteZh": "歌名来自东晋王羲之的《兰亭集序》，被称为「天下第一行书」。",
+      "words": [{ "zh": "书法", "py": "shūfǎ", "en": "calligraphy" }, { "zh": "墨", "py": "mò", "en": "ink" }, { "zh": "兰亭", "py": "Lántíng", "en": "Orchid Pavilion" }]
+    },
+    {
+      "id": "aaM7qG2ycjk", "zh": "发如雪", "py": "Fà Rú Xuě", "en": "Hair White as Snow",
+      "artist": "周杰伦", "artistEn": "Jay Chou",
+      "note": "A love that waits across lifetimes — until the singer's hair turns as white as snow. The lyrics are full of classical images: moonlight, frost, an old lantern.",
+      "noteZh": "等一个人，等到头发像雪一样白。",
+      "words": [{ "zh": "雪", "py": "xuě", "en": "snow" }, { "zh": "白发", "py": "báifà", "en": "white hair" }, { "zh": "月光", "py": "yuèguāng", "en": "moonlight" }]
+    },
+    {
+      "id": "L6joGUdc6y4", "zh": "红尘客栈", "py": "Hóngchén Kèzhàn", "en": "The Inn of the Mortal World",
+      "artist": "周杰伦", "artistEn": "Jay Chou",
+      "note": "红尘 “red dust” is a Buddhist word for the busy everyday world; 客栈 is the roadside inn where heroes meet in martial-arts (wuxia) stories.",
+      "noteZh": "「红尘」指人世间，「客栈」是武侠故事里的旅店。",
+      "words": [{ "zh": "红尘", "py": "hóngchén", "en": "the mortal world" }, { "zh": "客栈", "py": "kèzhàn", "en": "inn" }, { "zh": "武侠", "py": "wǔxiá", "en": "martial-arts fiction" }]
+    },
+    {
+      "id": "PdjbRvvJAzg", "zh": "菊花台", "py": "Júhuā Tái", "en": "Chrysanthemum Terrace",
+      "artist": "周杰伦", "artistEn": "Jay Chou",
+      "note": "Theme song of Zhang Yimou's film Curse of the Golden Flower (满城尽带黄金甲); it won Best Original Film Song at the 2007 Hong Kong Film Awards. In Chinese poetry the chrysanthemum belongs to autumn and quiet sorrow.",
+      "noteZh": "张艺谋电影《满城尽带黄金甲》的主题曲，获香港电影金像奖最佳原创电影歌曲。",
+      "words": [{ "zh": "菊花", "py": "júhuā", "en": "chrysanthemum" }, { "zh": "秋天", "py": "qiūtiān", "en": "autumn" }, { "zh": "电影", "py": "diànyǐng", "en": "film" }]
+    },
+    {
+      "id": "re2GblxOuHQ", "zh": "花田错", "py": "Huātián Cuò", "en": "Mistake in the Flower Field",
+      "artist": "王力宏", "artistEn": "Wang Leehom",
+      "note": "From the album Heroes of Earth (盖世英雄, 2005), where Wang Leehom mixes R&B with Peking-opera singing. 花田错 is also the name of a classic Peking opera comedy.",
+      "noteZh": "把京剧唱腔和 R&B 混在一起；《花田错》也是一出京剧的名字。",
+      "words": [{ "zh": "京剧", "py": "jīngjù", "en": "Peking opera" }, { "zh": "花田", "py": "huātián", "en": "flower field" }, { "zh": "错", "py": "cuò", "en": "mistake" }]
+    },
+    {
+      "id": "GggTls8KznY", "zh": "三国恋", "py": "Sānguó Liàn", "en": "Three Kingdoms Love",
+      "artist": "Tank", "artistEn": "Tank",
+      "note": "Set in the Three Kingdoms period (220–280 AD), the age of heroes made famous by the novel Romance of the Three Kingdoms.",
+      "noteZh": "背景是三国时代——《三国演义》里的英雄年代。",
+      "words": [{ "zh": "三国", "py": "Sānguó", "en": "Three Kingdoms" }, { "zh": "英雄", "py": "yīngxióng", "en": "hero" }, { "zh": "恋", "py": "liàn", "en": "love" }]
+    },
+    {
+      "id": "UxV0M3wE5Y4", "zh": "千年泪", "py": "Qiānnián Lèi", "en": "Thousand Years of Tears",
+      "artist": "Tank", "artistEn": "Tank",
+      "note": "From the 2006 fantasy TV drama The Little Fairy (天外飞仙), based on the folk tale of a fairy who falls in love with a mortal. A love that keeps waiting for a thousand years.",
+      "noteZh": "电视剧《天外飞仙》的歌曲，故事来自民间传说「天仙配」。",
+      "words": [{ "zh": "千年", "py": "qiānnián", "en": "a thousand years" }, { "zh": "眼泪", "py": "yǎnlèi", "en": "tears" }, { "zh": "仙女", "py": "xiānnǚ", "en": "fairy" }]
+    },
+    {
+      "id": "nEKJGhoGH3Y", "zh": "牡丹江", "py": "Mǔdānjiāng", "en": "Peony River",
+      "artist": "南拳妈妈", "artistEn": "Nan Quan Mama",
+      "note": "牡丹, the peony, has long been called the “king of flowers” in China. 牡丹江 is also a real river and city in Heilongjiang, in China's far north-east.",
+      "noteZh": "牡丹被称为「花中之王」；牡丹江也是黑龙江的一条江、一座城。",
+      "words": [{ "zh": "牡丹", "py": "mǔdān", "en": "peony" }, { "zh": "江", "py": "jiāng", "en": "river" }, { "zh": "花", "py": "huā", "en": "flower" }]
+    },
+    {
+      "id": "wHmBpg_oq7I", "zh": "三生三世", "py": "Sānshēng Sānshì", "en": "Three Lives, Three Worlds",
+      "artist": "张杰", "artistEn": "Jason Zhang",
+      "note": "Opening theme of the hit 2017 drama Eternal Love (三生三世十里桃花). 三生 — past, present and future lives — comes from Buddhist thought.",
+      "noteZh": "电视剧《三生三世十里桃花》的片头曲。",
+      "words": [{ "zh": "三生三世", "py": "sānshēng sānshì", "en": "three lifetimes" }, { "zh": "桃花", "py": "táohuā", "en": "peach blossom" }, { "zh": "永远", "py": "yǒngyuǎn", "en": "forever" }]
+    },
+    {
+      "id": "KAcWySxJWps", "zh": "苏公堤", "py": "Sū Gōng Dī", "en": "Su Causeway",
+      "artist": "杨一歌", "artistEn": "Yang Yige",
+      "note": "The Su Causeway crosses West Lake in Hangzhou. It was built by the poet Su Shi (Su Dongpo) when he governed the city. The lyrics walk past lake sights like 花港观鱼 and Leifeng Pagoda.",
+      "noteZh": "杭州西湖上的苏堤，由诗人苏轼主持修建。",
+      "words": [{ "zh": "西湖", "py": "Xīhú", "en": "West Lake" }, { "zh": "诗人", "py": "shīrén", "en": "poet" }, { "zh": "堤", "py": "dī", "en": "causeway" }]
+    }
+  ]
+}

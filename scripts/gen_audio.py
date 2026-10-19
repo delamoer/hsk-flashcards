@@ -164,6 +164,19 @@ def collect_collocations() -> list[str]:
     return texts
 
 
+def collect_music() -> list[str]:
+    """中国风 Music — MusicView plays each 「歌里的词」 word when it's tapped."""
+    data = json.loads((DATA_DIR / "music.json").read_text(encoding="utf-8"))
+    seen: set[str] = set()
+    texts: list[str] = []
+    for song in data["songs"]:
+        for w in song.get("words") or []:
+            if w["zh"] not in seen:
+                seen.add(w["zh"])
+                texts.append(w["zh"])
+    return texts
+
+
 def collect_all_texts() -> list[str]:
     seen: set[str] = set()
     texts: list[str] = []
@@ -234,6 +247,7 @@ async def main():
     parser.add_argument("--texts", action="store_true", help="Generate for 课文 dialogue lines")
     parser.add_argument("--discussion", action="store_true", help="Generate for 话题讨论 questions")
     parser.add_argument("--collocations", action="store_true", help="Generate for 词汇详解 常见搭配")
+    parser.add_argument("--music", action="store_true", help="Generate for 中国风 Music song words")
     parser.add_argument("--concurrency", type=int, default=8, help="Concurrent TTS requests")
     args = parser.parse_args()
 
@@ -241,7 +255,10 @@ async def main():
     manifest = load_manifest()
     already = len(manifest)
 
-    if args.collocations:
+    if args.music:
+        texts = collect_music()
+        label = "中国风 Music words"
+    elif args.collocations:
         texts = collect_collocations()
         label = "词汇详解 collocations"
     elif args.discussion:

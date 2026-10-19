@@ -25,6 +25,7 @@ const routes = [
   { path: "/account", name: "account", component: () => import("@/views/AccountView.vue") },
   { path: "/my-words", name: "mywords", component: () => import("@/views/MyWordsView.vue") },
   { path: "/pinyin", name: "pinyin", component: () => import("@/views/PinyinView.vue") },
+  { path: "/music", name: "music", component: () => import("@/views/MusicView.vue") },
   { path: "/admin", name: "admin", component: () => import("@/views/AdminView.vue") },
 
   // ── 课文 Texts ──────────────────────────────────────────────────────────
@@ -103,7 +104,9 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-  scrollBehavior() {
+  scrollBehavior(to, from) {
+    // Switching songs only changes ?song= — keep the scroll position.
+    if (to.name === "music" && from.name === "music") return false;
     return { top: 0 };
   },
 });

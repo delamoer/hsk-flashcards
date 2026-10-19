@@ -30,7 +30,7 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
    independent too (`getDiscussionLesson`), so it also works for text-less units. Each tab
    gracefully shows a "本课暂无…" placeholder when its data is missing.
 
-Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **拼音 Pinyin** (`/pinyin`) · **我的词 My words** (`/my-words`),
+Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **拼音 Pinyin** (`/pinyin`) · **中国风 Music** (`/music`) · **我的词 My words** (`/my-words`),
 朱红印章 logo. 课文 is no longer a top-level nav item — it lives inside each lesson hub; the legacy
 `/texts/...` routes still exist (`TextsHomeView`/`TextsUnitView`/`TextView`) but aren't linked from nav.
 **我的词** doubles as global search (范围切换: 我的词 / 所有课程).
@@ -255,11 +255,25 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   surfaced behind an off-by-default 拼音 pill in `DiscussionPanel`, matching the ReadPanel convention.
   Header rows sit on sheet row 4 (title + blurb + blank above), and some sheets trail 说明/URL rows —
   `header_row()` finds the header and non-integer 课次 rows are skipped.
+- **中国风 Music** (`/music`, `MusicView.vue`) — 10 Chinese-style pop songs as **embedded YouTube MVs**
+  (`youtube-nocookie.com`, official artist/label channels only). We host NO audio/video: the songs are
+  commercially copyrighted (a public repo/site must not serve them — and a DMCA on GitHub would take the
+  whole site down), and embedding costs our Supabase/GitHub bandwidth nothing. Don't hide the player to
+  make it "audio only" — YouTube's API policy forbids separating audio from video. Data =
+  **`src/data/music.json`, hand-owned** (the one `src/data` JSON that is NOT generated — edit it directly):
+  per song YouTube `id`, 中/拼音/English title, artist, bilingual `note`/`noteZh` (fact-checked against
+  Wikipedia, Oct 2026), and 3 「歌里的词」 `words` that play via `speak()` — run `gen_audio.py --music`
+  after editing them. Full lyrics are copyrighted too: quote single words/lines only, never whole lyrics.
+  Layout: sticky 曲目册 left + 卷轴播放台 right (竖排题签 + 印章), collapsing to a chip strip on mobile;
+  `?song=N` (1-based) deep-links a song, picking one autoplays it (never on first load). When adding a
+  song, check the video allows embedding (`youtube.com/oembed?url=…` returns 200) and prefer the artist's
+  verified channel; the 牡丹江 MV is on its label's channel (阿尔发音乐), 苏公堤 has no official upload
+  (a verified lyric channel is used).
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
   works on GitHub Pages without server rewrites. Course flow (four levels): `/` (LibraryView) →
   `/course/:series` (SeriesBooksView) → `/course/:series/:unit` (LessonListView) →
   `/course/:series/:unit/lesson/:lesson` (LessonHubView), plus `.../quiz` `.../print`. Also `/pinyin`,
-  `/my-words`, `/search`, `/login`, `/account`, `/admin`, the legacy 课文 flow `/texts[/:series/:unit[/:lesson/:n]]`
+  `/music`, `/my-words`, `/search`, `/login`, `/account`, `/admin`, the legacy 课文 flow `/texts[/:series/:unit[/:lesson/:n]]`
   (kept working, not in nav), and legacy `/hsk/:level/...` redirects. All routes are behind a login wall
   when Supabase is configured. **App-shell theming** (`App.vue`) still applies `seriesTheme(route.params.series)`
   per-series accent on top of the global classical base. **Dead code from the pre-redesign flow**
@@ -298,8 +312,8 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
     falling back to browser `speechSynthesis` when missing. `scripts/gen_audio.py` + `upload_audio.py`.
     **Whenever you add content with a 🔊, add a collector and regenerate** — the scopes are
     `--all` (words + examples), `--texts` (课文 lines + every 连词成句 sentence; globs `texts/*-*.json`,
-    so a new 课文 unit needs no code change), `--discussion` (话题讨论 questions) and `--collocations`
-    (词汇详解 搭配; any unit whose words carry `collocations`). Generating only
+    so a new 课文 unit needs no code change), `--discussion` (话题讨论 questions), `--collocations`
+    (词汇详解 搭配; any unit whose words carry `collocations`) and `--music` (中国风 「歌里的词」). Generating only
     writes to the gitignored `audio-src/`; the site keeps falling back to robot TTS until
     `upload_audio.py` pushes the new MP3s + manifest to Storage (idempotent, skips existing).
   - *Pinyin*: **real human recordings** (hugolpz/audio-cmn, CC-BY-SA — credit shown in PinyinView footer)
