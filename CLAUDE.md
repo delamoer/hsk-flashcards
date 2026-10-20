@@ -255,20 +255,33 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   surfaced behind an off-by-default 拼音 pill in `DiscussionPanel`, matching the ReadPanel convention.
   Header rows sit on sheet row 4 (title + blurb + blank above), and some sheets trail 说明/URL rows —
   `header_row()` finds the header and non-integer 课次 rows are skipped.
-- **中国风 Music** (`/music`, `MusicView.vue`) — 10 Chinese-style pop songs as **embedded YouTube MVs**
+- **中国风 Music** (`/music`, `MusicView.vue`) — 28 Chinese-style pop songs as **embedded YouTube MVs**
   (`youtube-nocookie.com`, official artist/label channels only). We host NO audio/video: the songs are
   commercially copyrighted (a public repo/site must not serve them — and a DMCA on GitHub would take the
   whole site down), and embedding costs our Supabase/GitHub bandwidth nothing. Don't hide the player to
   make it "audio only" — YouTube's API policy forbids separating audio from video. Data =
   **`src/data/music.json`, hand-owned** (the one `src/data` JSON that is NOT generated — edit it directly):
-  per song YouTube `id`, 中/拼音/English title, artist, bilingual `note`/`noteZh` (fact-checked against
+  `groups` (周杰伦 12 / 更多歌手 16) → `songs`, numbered straight through (`cn()` → 一…二十八; ?song= indexes
+  that flat order, so inserting a song shifts later numbers). Per song YouTube `id`, optional `live`
+  (shows a 现场版 tag — 大鱼/半壶纱 have no official studio upload), 中/拼音/English title, artist, bilingual `note`/`noteZh` (fact-checked against
   Wikipedia, Oct 2026), and 3 「歌里的词」 `words` that play via `speak()` — run `gen_audio.py --music`
   after editing them. Full lyrics are copyrighted too: quote single words/lines only, never whole lyrics.
   Layout: sticky 曲目册 left + 卷轴播放台 right (竖排题签 + 印章), collapsing to a chip strip on mobile;
-  `?song=N` (1-based) deep-links a song, picking one autoplays it (never on first load). When adding a
+  `?song=N` (1-based) deep-links a song, picking one autoplays it (never on first load). The player is
+  a poster (MV cover + 朱红 play seal) until pressed, then ONE YouTube IFrame Player API player is reused
+  (`loadVideoById`); its ENDED event drives the play modes 播完停止 (default — the teacher talks after
+  each song) / 顺序播放 / 单曲循环 / 随机播放 (unheard-first), remembered in localStorage
+  `hsk-music-mode-v1`. If `iframe_api` fails to load (8 s timeout) it falls back to a plain embed with
+  no mode button. When adding a
   song, check the video allows embedding (`youtube.com/oembed?url=…` returns 200) and prefer the artist's
   verified channel; the 牡丹江 MV is on its label's channel (阿尔发音乐), 苏公堤 has no official upload
-  (a verified lyric channel is used).
+  (a verified lyric channel is used). Rejected for lack of an official upload: 银临《牵丝戏》.
+  **Deliberate exceptions (the user's call — a nice MV beats an official-but-dull upload):** 卷珠帘 (#28,
+  appended last so 1–27 keep their numbers) uses an ink-wash animation upload (`34UrxssTJs4`); 大鱼 uses the film-animation MV from a personal channel
+  (LucasMusic, `Rk_KPf934aA`) because the official MV was never posted by the studio/artist — if it gets
+  taken down, fall back to ZhouShen Official's live `MKprukYXPiQ` (+ `"live": true`). 三生三世 is 苏运莹's
+  live cover from her verified channel (a static show-cover image, not an MV); 张杰's original is
+  `wHmBpg_oq7I` (太合音乐).
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
   works on GitHub Pages without server rewrites. Course flow (four levels): `/` (LibraryView) →
   `/course/:series` (SeriesBooksView) → `/course/:series/:unit` (LessonListView) →

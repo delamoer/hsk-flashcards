@@ -169,7 +169,7 @@ def collect_music() -> list[str]:
     data = json.loads((DATA_DIR / "music.json").read_text(encoding="utf-8"))
     seen: set[str] = set()
     texts: list[str] = []
-    for song in data["songs"]:
+    for song in (s for g in data["groups"] for s in g["songs"]):
         for w in song.get("words") or []:
             if w["zh"] not in seen:
                 seen.add(w["zh"])
