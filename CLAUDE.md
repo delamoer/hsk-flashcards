@@ -255,13 +255,13 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   surfaced behind an off-by-default 拼音 pill in `DiscussionPanel`, matching the ReadPanel convention.
   Header rows sit on sheet row 4 (title + blurb + blank above), and some sheets trail 说明/URL rows —
   `header_row()` finds the header and non-integer 课次 rows are skipped.
-- **中国风 Music** (`/music`, `MusicView.vue`) — 28 Chinese-style pop songs as **embedded YouTube MVs**
+- **中国风 Music** (`/music`, `MusicView.vue`) — 43 Chinese-style pop songs as **embedded YouTube MVs**
   (`youtube-nocookie.com`, official artist/label channels only). We host NO audio/video: the songs are
   commercially copyrighted (a public repo/site must not serve them — and a DMCA on GitHub would take the
   whole site down), and embedding costs our Supabase/GitHub bandwidth nothing. Don't hide the player to
   make it "audio only" — YouTube's API policy forbids separating audio from video. Data =
   **`src/data/music.json`, hand-owned** (the one `src/data` JSON that is NOT generated — edit it directly):
-  `groups` (周杰伦 12 / 更多歌手 16) → `songs`, numbered straight through (`cn()` → 一…二十八; ?song= indexes
+  `groups` (周杰伦 12 / 更多歌手 16 / 仙侠·武侠影视 15) → `songs`, numbered straight through (`cn()` → 一…四十三; ?song= indexes
   that flat order, so inserting a song shifts later numbers). Per song YouTube `id`, optional `live`
   (shows a 现场版 tag — 大鱼/半壶纱 have no official studio upload), 中/拼音/English title, artist, bilingual `note`/`noteZh` (fact-checked against
   Wikipedia, Oct 2026), and 3 「歌里的词」 `words` that play via `speak()` — run `gen_audio.py --music`
@@ -276,8 +276,15 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   song, check the video allows embedding (`youtube.com/oembed?url=…` returns 200) and prefer the artist's
   verified channel; the 牡丹江 MV is on its label's channel (阿尔发音乐), 苏公堤 has no official upload
   (a verified lyric channel is used). Rejected for lack of an official upload: 银临《牵丝戏》.
-  **Deliberate exceptions (the user's call — a nice MV beats an official-but-dull upload):** 卷珠帘 (#28,
-  appended last so 1–27 keep their numbers) uses an ink-wash animation upload (`34UrxssTJs4`); 大鱼 uses the film-animation MV from a personal channel
+  **Deliberate exceptions (the user's call — a nice MV beats an official-but-dull upload):** 卷珠帘 (#28) uses an ink-wash animation upload (`34UrxssTJs4`);
+  the **仙侠·武侠影视** group (#29–43: wuxia/xianxia TV, film and animation songs — 仙剑一/三, 神雕
+  1995/2006, 倚天 1994, 新流星蝴蝶剑 1993, 笑傲江湖 1990, 秦时明月 animation) deliberately uses **drama/film-clip MVs** (the user wants
+  the footage; 沧海一声笑 = the 黄霑·徐克·罗大佑 trio version over varied film footage — a pinyin-subbed upload was rejected because it's one static frame). Mandarin
+  only: 神话·情话 is the Cantonese HK theme, so its Mandarin twin 天下有情人 is used; 归去来 (胡兵) was that series' mainland theme. Not every song here is
+  中国风 in the strict sense (爱似流星, 六月的雨 are drama ballads) — the user picked them by name — official only where the label's MV IS drama footage (华研's
+  逍遥叹/六月的雨); the rest are fan cuts. Swap-ins if one is taken down: 杀破狼 → 华研 `8EOikv7M-hg`, 一直很安静 →
+  华研 `OC6k-fm09CQ` (both show the singers, not the drama). New songs/groups are appended last so earlier
+  ?song= numbers stay put; 大鱼 uses the film-animation MV from a personal channel
   (LucasMusic, `Rk_KPf934aA`) because the official MV was never posted by the studio/artist — if it gets
   taken down, fall back to ZhouShen Official's live `MKprukYXPiQ` (+ `"live": true`). 三生三世 is 苏运莹's
   live cover from her verified channel (a static show-cover image, not an MV); 张杰's original is

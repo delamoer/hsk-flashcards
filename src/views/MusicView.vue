@@ -288,7 +288,8 @@ const embedUrl = computed(() =>
 .top { display: grid; grid-template-columns: 86px 1fr; gap: 22px; }
 .label { writing-mode: vertical-rl; display: flex; align-items: center; gap: 16px; padding: 6px 0; border-right: 1px solid var(--hairline); }
 .label h2 { font-family: var(--brush); font-weight: 400; font-size: 50px; line-height: 1; letter-spacing: 8px; color: var(--sumi); }
-.label .who { font-family: var(--serif-cn); font-size: 14px; letter-spacing: 4px; color: var(--muted); }
+/* upright: a Latin name like "JS" stands letter-by-letter in the vertical label instead of lying sideways */
+.label .who { font-family: var(--serif-cn); font-size: 14px; letter-spacing: 4px; color: var(--muted); text-orientation: upright; }
 .label .seal { writing-mode: horizontal-tb; min-width: 34px; height: 34px; padding: 0 4px; white-space: nowrap; border-radius: 4px; background: var(--cinnabar); color: #fbe9d6; font-family: var(--serif-cn); font-size: 12px; font-weight: 700; line-height: 1.05; display: grid; place-items: center; text-align: center; transform: rotate(-3deg); }
 .heart { min-width: 0; }
 /* 装裱: a silk mat + thin gold rule around the video, like a painting mounted in the scroll */

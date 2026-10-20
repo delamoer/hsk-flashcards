@@ -767,6 +767,416 @@
           ]
         }
       ]
+    },
+    {
+      "zh": "仙侠·武侠影视", "en": "Wuxia & fantasy on screen",
+      "songs": [
+        {
+          "id": "TmIk61_Msgg",
+          "zh": "杀破狼",
+          "py": "Shā Pò Láng",
+          "en": "Sha Po Lang (Three Fateful Stars)",
+          "artist": "JS",
+          "artistEn": "JS (Justin & Sophia)",
+          "note": "The theme song of the 2005 TV drama Chinese Paladin (仙剑奇侠传, starring Hu Ge and Liu Yifei), based on a classic martial-arts fantasy video game; this MV is cut from the drama. JS are a brother-and-sister duo from Taiwan. The title names three stars of Chinese astrology — 七杀 Seven Killings, 破军 Army-Breaker and 贪狼 Greedy Wolf.",
+          "noteZh": "2005 年电视剧《仙剑奇侠传》（胡歌、刘亦菲主演）的主题曲，由台湾兄妹组合 JS 创作演唱；这支 MV 剪自剧中画面。",
+          "words": [
+            {
+              "zh": "狼",
+              "py": "láng",
+              "en": "wolf"
+            },
+            {
+              "zh": "剑",
+              "py": "jiàn",
+              "en": "sword"
+            },
+            {
+              "zh": "电视剧",
+              "py": "diànshìjù",
+              "en": "TV drama (series)"
+            }
+          ]
+        },
+        {
+          "id": "O9Fm-nuRhng",
+          "zh": "逍遥叹",
+          "py": "Xiāoyáo Tàn",
+          "en": "Lament of the Carefree",
+          "artist": "胡歌",
+          "artistEn": "Hu Ge",
+          "note": "Hu Ge played the hero Li Xiaoyao (李逍遥) in Chinese Paladin (仙剑奇侠传, 2005) and sang this song for the drama himself — the title borrows his character's name. 逍遥 means free and unfettered, a Daoist ideal of drifting through life without ties.",
+          "noteZh": "胡歌在《仙剑奇侠传》里演主角李逍遥，这首插曲也由他亲自演唱，歌名就取自角色的名字。",
+          "words": [
+            {
+              "zh": "逍遥",
+              "py": "xiāoyáo",
+              "en": "free and unfettered"
+            },
+            {
+              "zh": "叹",
+              "py": "tàn",
+              "en": "to sigh; a lament"
+            },
+            {
+              "zh": "主角",
+              "py": "zhǔjué",
+              "en": "lead role, main character"
+            }
+          ]
+        },
+        {
+          "id": "8_NnnN2m2U8",
+          "zh": "六月的雨",
+          "py": "Liùyuè de Yǔ",
+          "en": "June Rain",
+          "artist": "胡歌",
+          "artistEn": "Hu Ge",
+          "note": "A second song Hu Ge sang for Chinese Paladin (仙剑奇侠传, 2005); the MV is cut from the drama, with Liu Yifei as Zhao Ling'er (赵灵儿). June is the rainy season across southern China.",
+          "noteZh": "胡歌为《仙剑奇侠传》唱的另一首插曲，MV 剪自剧中李逍遥和赵灵儿的画面。",
+          "words": [
+            {
+              "zh": "六月",
+              "py": "liùyuè",
+              "en": "June"
+            },
+            {
+              "zh": "雨",
+              "py": "yǔ",
+              "en": "rain"
+            },
+            {
+              "zh": "演员",
+              "py": "yǎnyuán",
+              "en": "actor, actress"
+            }
+          ]
+        },
+        {
+          "id": "XmHdKU94KwA",
+          "zh": "一直很安静",
+          "py": "Yìzhí Hěn Ānjìng",
+          "en": "Always Quiet",
+          "artist": "阿桑",
+          "artistEn": "A-Sang",
+          "note": "An insert song of Chinese Paladin (仙剑奇侠传, 2005), sung from the side of the one left out of a love triangle. A-Sang, a Taiwanese singer loved for her husky, healing voice, died of breast cancer in 2009 at just 34.",
+          "noteZh": "《仙剑奇侠传》插曲。那句「明明是三个人的电影，我却始终不能有姓名」唱出了三角恋里被冷落的一方。阿桑 2009 年因乳癌病逝，年仅 34 岁。",
+          "words": [
+            {
+              "zh": "一直",
+              "py": "yìzhí",
+              "en": "always, all along"
+            },
+            {
+              "zh": "安静",
+              "py": "ānjìng",
+              "en": "quiet"
+            },
+            {
+              "zh": "电影",
+              "py": "diànyǐng",
+              "en": "film, movie"
+            }
+          ]
+        },
+        {
+          "id": "FZFcHm9QI6o",
+          "zh": "生生世世爱",
+          "py": "Shēngshēng Shìshì Ài",
+          "en": "Love Through Every Lifetime",
+          "artist": "吴雨霏",
+          "artistEn": "Kary Ng",
+          "note": "The opening theme of Chinese Paladin 3 (仙剑奇侠传三, 2009), starring Hu Ge, Yang Mi, Wallace Huo, Liu Shishi and Tiffany Tang. Its story is a tangle of past lives and this life — hence a love that lasts 生生世世, life after life. Kary Ng is a Hong Kong singer.",
+          "noteZh": "《仙剑奇侠传三》片头曲，香港歌手吴雨霏演唱。剧情讲的正是前世今生的爱恨纠葛。",
+          "words": [
+            {
+              "zh": "生生世世",
+              "py": "shēngshēng shìshì",
+              "en": "life after life, forever"
+            },
+            {
+              "zh": "前世",
+              "py": "qiánshì",
+              "en": "a previous life"
+            },
+            {
+              "zh": "今生",
+              "py": "jīnshēng",
+              "en": "this life"
+            }
+          ]
+        },
+        {
+          "id": "sZ3DXd8v4iU",
+          "zh": "偏爱",
+          "py": "Piān'ài",
+          "en": "Partiality",
+          "artist": "张芸京",
+          "artistEn": "Jing Chang",
+          "note": "An insert song of Chinese Paladin 3 (2009) that became Taiwanese singer Jing Chang's best-known song. 偏爱 is loving one person more than reason says you should.",
+          "noteZh": "《仙剑奇侠传三》插曲，台湾歌手张芸京的代表作。",
+          "words": [
+            {
+              "zh": "偏爱",
+              "py": "piān'ài",
+              "en": "to favour, love one above all"
+            },
+            {
+              "zh": "插曲",
+              "py": "chāqǔ",
+              "en": "a song featured in a film or drama"
+            },
+            {
+              "zh": "喜欢",
+              "py": "xǐhuan",
+              "en": "to like"
+            }
+          ]
+        },
+        {
+          "id": "tFdHLvTqHIA",
+          "zh": "忘记时间",
+          "py": "Wàngjì Shíjiān",
+          "en": "Forgetting Time",
+          "artist": "胡歌",
+          "artistEn": "Hu Ge",
+          "note": "The ending theme of Chinese Paladin 3 (2009), sung by Hu Ge, who played its hero Jing Tian (景天) — four years after his breakout in the first Chinese Paladin.",
+          "noteZh": "《仙剑奇侠传三》片尾曲，由剧中饰演景天的胡歌演唱。",
+          "words": [
+            {
+              "zh": "忘记",
+              "py": "wàngjì",
+              "en": "to forget"
+            },
+            {
+              "zh": "时间",
+              "py": "shíjiān",
+              "en": "time"
+            },
+            {
+              "zh": "片尾曲",
+              "py": "piànwěiqǔ",
+              "en": "ending theme song"
+            }
+          ]
+        },
+        {
+          "id": "tj3uHq_O8Gc",
+          "zh": "天下无双",
+          "py": "Tiānxià Wúshuāng",
+          "en": "Unrivaled Under Heaven",
+          "artist": "张靓颖",
+          "artistEn": "Jane Zhang",
+          "note": "The opening theme of the 2006 TV series The Return of the Condor Heroes (神雕侠侣), from Jin Yong's martial-arts novel — Huang Xiaoming as Yang Guo and Liu Yifei as Xiaolongnü (小龙女). 天下 'all under heaven' is the old Chinese word for the whole world.",
+          "noteZh": "2006 年电视剧《神雕侠侣》（黄晓明、刘亦菲主演）的片头曲，改编自金庸武侠小说。",
+          "words": [
+            {
+              "zh": "天下",
+              "py": "tiānxià",
+              "en": "the whole world (lit. all under heaven)"
+            },
+            {
+              "zh": "无双",
+              "py": "wúshuāng",
+              "en": "second to none"
+            },
+            {
+              "zh": "武侠",
+              "py": "wǔxiá",
+              "en": "martial-arts heroes (a genre)"
+            }
+          ]
+        },
+        {
+          "id": "X5lZX3sf7IY",
+          "zh": "刀剑如梦",
+          "py": "Dāo Jiàn Rú Mèng",
+          "en": "A Life of Fighting Is but a Dream",
+          "artist": "周华健",
+          "artistEn": "Wakin Chau",
+          "note": "The theme of the 1994 Taiwanese TV series Heaven Sword and Dragon Sabre (倚天屠龙记), from Jin Yong's novel, starring Ma Jingtao, Cecilia Yip and Kathy Chow; this MV is cut from Kathy Chow's scenes as Zhou Zhiruo (周芷若). Jin Yong (金庸) is the best-loved martial-arts novelist in Chinese.",
+          "noteZh": "1994 年台视版《倚天屠龙记》（马景涛、叶童、周海媚主演）的主题曲；这支 MV 剪自周海媚饰演周芷若的片段。",
+          "words": [
+            {
+              "zh": "刀",
+              "py": "dāo",
+              "en": "knife, sabre"
+            },
+            {
+              "zh": "梦",
+              "py": "mèng",
+              "en": "dream"
+            },
+            {
+              "zh": "金庸",
+              "py": "Jīn Yōng",
+              "en": "Jin Yong, martial-arts novelist"
+            }
+          ]
+        },
+        {
+          "id": "TMBe2ulmNIA",
+          "zh": "江湖笑",
+          "py": "Jiānghú Xiào",
+          "en": "Laughter in the Jianghu",
+          "artist": "周华健 等",
+          "artistEn": "Wakin Chau & others",
+          "note": "The ending theme of the 2006 Return of the Condor Heroes, sung together by Wakin Chau, the producer Zhang Jizhong and the actors Hu Jun and Huang Xiaoming. 江湖 (lit. rivers and lakes) is the wandering world of swordsmen outside the law — the setting of every wuxia story.",
+          "noteZh": "2006 年《神雕侠侣》片尾曲，由周华健与制片人张纪中、演员胡军、黄晓明等合唱。",
+          "words": [
+            {
+              "zh": "江湖",
+              "py": "jiānghú",
+              "en": "the martial world of wandering swordsmen"
+            },
+            {
+              "zh": "笑",
+              "py": "xiào",
+              "en": "to laugh"
+            },
+            {
+              "zh": "恩怨",
+              "py": "ēnyuàn",
+              "en": "debts of kindness and old grudges"
+            }
+          ]
+        },
+        {
+          "id": "D3L8Uli8k-Q",
+          "zh": "天下有情人",
+          "py": "Tiānxià Yǒuqíngrén",
+          "en": "Lovers Everywhere",
+          "artist": "周华健 · 齐豫",
+          "artistEn": "Wakin Chau & Chyi Yu",
+          "note": "The Mandarin version of 神话·情话, the theme of the 1995 Hong Kong TV series The Condor Heroes (神雕侠侣) — the Hong Kong broadcast used the Cantonese version. This MV is cut from that series, with Louis Koo as Yang Guo and Carman Lee as Xiaolongnü.",
+          "noteZh": "1995 年 TVB 版《神雕侠侣》主题曲《神话·情话》的国语版（港版播的是粤语版）；MV 剪自古天乐、李若彤主演的原剧。",
+          "words": [
+            {
+              "zh": "有情人",
+              "py": "yǒuqíngrén",
+              "en": "lovers"
+            },
+            {
+              "zh": "红尘",
+              "py": "hóngchén",
+              "en": "the mortal world (lit. red dust)"
+            },
+            {
+              "zh": "痴心",
+              "py": "chīxīn",
+              "en": "infatuated, devoted"
+            }
+          ]
+        },
+        {
+          "id": "vCokwAf4EI8",
+          "zh": "爱似流星",
+          "py": "Ài Sì Liúxīng",
+          "en": "Love Like a Shooting Star",
+          "artist": "杨紫琼",
+          "artistEn": "Michelle Yeoh",
+          "note": "The closing song of the 1993 Hong Kong film Butterfly & Sword (新流星蝴蝶剑), from Gu Long's wuxia novel, starring Tony Leung, Michelle Yeoh, Joey Wong and Donnie Yen — sung by Michelle Yeoh herself, words and music by Li Zongsheng. The MV is cut from the film.",
+          "noteZh": "1993 年港片《新流星蝴蝶剑》片尾曲，由主演杨紫琼亲自演唱，李宗盛词曲；MV 剪自电影画面。",
+          "words": [
+            {
+              "zh": "流星",
+              "py": "liúxīng",
+              "en": "shooting star, meteor"
+            },
+            {
+              "zh": "蝴蝶",
+              "py": "húdié",
+              "en": "butterfly"
+            },
+            {
+              "zh": "苦",
+              "py": "kǔ",
+              "en": "bitter; suffering"
+            }
+          ]
+        },
+        {
+          "id": "3ebGqqXIG9Y",
+          "zh": "沧海一声笑",
+          "py": "Cānghǎi Yì Shēng Xiào",
+          "en": "A Laugh Over the Vast Sea",
+          "artist": "黄霑 · 徐克 · 罗大佑",
+          "artistEn": "James Wong, Tsui Hark & Lo Ta-yu",
+          "note": "From the 1990 Hong Kong film Swordsman (笑傲江湖). James Wong (黄霑) built the melody on the five-note Chinese scale 宫商角徵羽 run backwards, which is why it sounds so ancient; this version is sung by Wong with the film's producer Tsui Hark and singer Lo Ta-yu, over scenes from the film.",
+          "noteZh": "1990 年港片《笑傲江湖》主题曲。黄霑把五声音阶「宫商角徵羽」倒过来写成旋律；这一版由黄霑、徐克、罗大佑合唱，配电影画面。",
+          "words": [
+            {
+              "zh": "沧海",
+              "py": "cānghǎi",
+              "en": "the vast blue sea"
+            },
+            {
+              "zh": "笑傲",
+              "py": "xiào'ào",
+              "en": "to laugh proudly at (the world)"
+            },
+            {
+              "zh": "五声音阶",
+              "py": "wǔshēng yīnjiē",
+              "en": "the five-note (pentatonic) scale"
+            }
+          ]
+        },
+        {
+          "id": "_3P9T43BpIk",
+          "zh": "归去来",
+          "py": "Guī Qù Lái",
+          "en": "Going Home",
+          "artist": "胡兵 · 希莉娜依",
+          "artistEn": "Hu Bing & Shirley",
+          "note": "The theme song of the 1995 Hong Kong series The Condor Heroes (神雕侠侣) as broadcast in mainland China, composed by Xiao Ke; the MV is cut from the series, with Louis Koo and Carman Lee. The title echoes Tao Yuanming's famous poem 归去来兮辞 (c. 405 AD), about quitting office to go home to the fields.",
+          "noteZh": "1995 年 TVB 版《神雕侠侣》大陆播出版的主题曲，小柯作曲；MV 剪自古天乐、李若彤主演的原剧。歌名呼应陶渊明的《归去来兮辞》。",
+          "words": [
+            {
+              "zh": "归去",
+              "py": "guīqù",
+              "en": "to go back home"
+            },
+            {
+              "zh": "余晖",
+              "py": "yúhuī",
+              "en": "the last glow of sunset"
+            },
+            {
+              "zh": "自由自在",
+              "py": "zìyóu zìzài",
+              "en": "free and easy"
+            }
+          ]
+        },
+        {
+          "id": "89UENiV_t0M",
+          "zh": "月光",
+          "py": "Yuèguāng",
+          "en": "Moonlight",
+          "artist": "胡彦斌",
+          "artistEn": "Hu Yanbin",
+          "note": "The theme song of The Legend of Qin (秦时明月, 2007), mainland China's first 3D wuxia animation, set as the Qin dynasty unites China (221 BC); Hu Yanbin composed it himself. The MV is cut from the animation.",
+          "noteZh": "动画《秦时明月》主题曲，胡彦斌作曲并演唱；MV 剪自动画画面。《秦时明月》是中国大陆首部三维武侠动画。",
+          "words": [
+            {
+              "zh": "明月",
+              "py": "míngyuè",
+              "en": "the bright moon"
+            },
+            {
+              "zh": "秦朝",
+              "py": "Qíncháo",
+              "en": "the Qin dynasty (221–207 BC)"
+            },
+            {
+              "zh": "动画",
+              "py": "dònghuà",
+              "en": "animation, cartoon"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
