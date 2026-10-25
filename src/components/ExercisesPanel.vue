@@ -129,38 +129,77 @@
       </div>
 
       <!-- ③ 语法练习 -->
-      <div v-else-if="mode === 'gp' && gpGroups.length" class="gp">
+      <div v-else-if="mode === 'gp' && gpItems.length" class="gp" ref="gpEl">
         <div class="ghead">
-          <div class="lede">看题目，想一想，再点「看答案」核对并自评。 · Read, think, then reveal and self-check — no typing.</div>
+          <div class="lede" v-if="gpHasChoice">点选答案，马上看对错和解析；翻译题想好后再看答案。 · Tap an answer to check it at once; for translations, think first, then reveal.</div>
+          <div class="lede" v-else>看题目，想一想，再点「看答案」核对并自评。 · Read, think, then reveal and self-check — no typing.</div>
           <div class="gprogress">
-            <span class="gcount">会了 {{ gpDone }} / {{ gpItems.length }}</span>
+            <span class="gcount">完成 {{ gpDone }} / {{ gpItems.length }}<template v-if="gpHasChoice"> · 答对 {{ gpRight }}</template></span>
             <div class="gbar"><i :style="{ width: (gpItems.length ? gpDone / gpItems.length : 0) * 100 + '%' }"></i></div>
           </div>
         </div>
-        <template v-for="(grp, gi) in gpGroups" :key="gi">
-          <div class="gp-point"><span class="gp-name">{{ grp.name }}</span><span class="gp-type" v-if="grp.type">{{ grp.type }}<i v-if="grp.typeEn"> · {{ grp.typeEn }}</i></span></div>
-          <div class="gp-q" v-for="it in grp.items" :key="it.key" :class="{ got: gpGot.has(it.key), review: gpReview.has(it.key) }">
+        <div class="gp-views" v-if="gpHasChoice">
+          <button :class="{ on: gpView === 'mix' }" @click="gpView = 'mix'">综合练习<i>Mixed</i></button>
+          <button :class="{ on: gpView === 'point' }" @click="gpView = 'point'">分项练习<i>By point</i></button>
+          <span class="gp-views-tip" v-if="gpView === 'mix'">打乱顺序、不显示考点，自己判断用哪个语法 · shuffled, grammar point hidden</span>
+        </div>
+        <template v-for="row in gpRows" :key="row.key">
+          <div v-if="row.head" class="gp-point"><span class="gp-name">{{ row.head.name }}</span><span class="gp-type" v-if="row.head.type">{{ row.head.type }}<i v-if="row.head.typeEn"> · {{ row.head.typeEn }}</i></span></div>
+          <div v-else-if="row.it.kind === 'choice'" class="gp-q" :class="{ got: gpPicked(row.it) && gpOk(row.it), miss: gpPicked(row.it) && !gpOk(row.it) }">
             <div class="qt">
-              <b>{{ it.n }}.</b>
-              <template v-if="it.instrEn">
-                <span class="q-instr">{{ it.instr }}<i>{{ it.instrEn }}</i></span>
-                <span class="q-body">{{ it.body }}</span>
-              </template>
-              <template v-else>{{ it.q }}</template>
+              <b>{{ row.n }}.</b>
+              <span class="q-instr">{{ row.it.instr }}<i>{{ row.it.instrEn }}</i></span>
+              <span class="q-body">
+                <template v-for="(part, i) in row.it.body.split('___')" :key="i">
+                  <span v-if="i" class="q-blank" :class="{ filled: gpPicked(row.it) }">{{ gpPicked(row.it) ? row.it.options[row.it.answer] : "" }}</span>{{ part }}
+                </template>
+              </span>
             </div>
-            <div v-if="!gpShown.has(it.key)" class="gp-reveal">
-              <button class="btn btn-ghost sm" @click="revealGP(it.key)">看答案<small>SHOW ANSWER</small></button>
+            <div v-if="row.it.stemEn" class="q-en">{{ row.it.stemEn }}</div>
+            <div class="opts" :class="{ short: row.it.options.every((o) => o.length <= 6) }">
+              <button
+                v-for="(oi, k) in gpState[row.it.key]?.order || []"
+                :key="oi"
+                class="opt"
+                :class="gpOptClass(row.it, oi)"
+                :disabled="gpPicked(row.it)"
+                @click="pickGP(row.it, oi)"
+              ><span class="ol">{{ "ABCD"[k] }}</span>{{ row.it.options[oi] }}</button>
+            </div>
+            <div v-if="gpPicked(row.it)" class="gp-explain">
+              <span class="verdict" :class="{ ok: gpOk(row.it) }">{{ gpOk(row.it) ? "✓ 答对了 · Correct" : "✗ 再想想 · Not quite" }}</span>
+              <span v-if="gpView === 'mix'" class="kp">考点 · {{ row.it.point }}</span>
+              <p v-if="row.it.explain">{{ row.it.explain }}</p>
+              <p v-if="row.it.explainEn" class="en">{{ row.it.explainEn }}</p>
+            </div>
+          </div>
+          <div v-else class="gp-q" :class="{ got: gpGot.has(row.it.key), review: gpReview.has(row.it.key) }">
+            <div class="qt">
+              <b>{{ row.n }}.</b>
+              <template v-if="row.it.instrEn">
+                <span class="q-instr">{{ row.it.instr }}<i>{{ row.it.instrEn }}</i></span>
+                <span class="q-body">{{ row.it.body }}</span>
+              </template>
+              <template v-else>{{ row.it.q }}</template>
+            </div>
+            <div v-if="!gpShown.has(row.it.key)" class="gp-reveal">
+              <button class="btn btn-ghost sm" @click="revealGP(row.it.key)">看答案<small>SHOW ANSWER</small></button>
             </div>
             <template v-else>
-              <div class="gp-ans"><span class="a-lab">答案 Answer</span><span class="a-txt">{{ it.a }}</span></div>
+              <div class="gp-ans"><span class="a-lab">答案 Answer</span><span class="a-txt">{{ row.it.a }}</span><span v-if="gpView === 'mix' && gpHasChoice" class="kp">考点 · {{ row.it.point }}</span></div>
               <div class="gp-self">
                 <span class="self-q">做对了吗？ · Did you get it?</span>
-                <button class="self ok" :class="{ on: gpGot.has(it.key) }" @click="markGot(it.key)">✓ 会了<small>GOT IT</small></button>
-                <button class="self no" :class="{ on: gpReview.has(it.key) }" @click="markReview(it.key)">↻ 再练<small>REVIEW</small></button>
+                <button class="self ok" :class="{ on: gpGot.has(row.it.key) }" @click="markGot(row.it.key)">✓ 会了<small>GOT IT</small></button>
+                <button class="self no" :class="{ on: gpReview.has(row.it.key) }" @click="markReview(row.it.key)">↻ 再练<small>REVIEW</small></button>
               </div>
             </template>
           </div>
         </template>
+        <div class="gp-end" v-if="gpHasChoice && gpChoiceLeft === 0">
+          <span>选择题答对 {{ gpRight }} / {{ gpChoiceTotal }}<small> · {{ gpRight }} of {{ gpChoiceTotal }} correct</small></span>
+          <button v-if="gpWrongKeys.length" class="btn btn-primary" @click="retryWrong">重练错题 {{ gpWrongKeys.length }}<small>RETRY MISTAKES</small></button>
+          <button class="btn btn-ghost" @click="resetGP(true)">全部重来<small>START OVER</small></button>
+        </div>
       </div>
 
       <div v-else class="placeholder"><div class="diamond">◇ ◇ ◇</div><p>本篇暂无该练习 · Not available for this text.</p></div>
@@ -198,23 +237,80 @@ const ti = ref(0);
 const mode = ref("vocab"); // 'vocab' 生词挖空 · 'grammar' 连词成句 · 'gp' 语法练习
 watch([ti, mode], () => stopAudio());
 
-// ── GRAMMAR POINTS (语法练习) — independent of 课文; no typing, reveal + self-check ──
+// ── GRAMMAR POINTS (语法练习) — independent of 课文; no typing ──
+// Two item kinds: `kind:"choice"` (进阶练习 — tap an option, checked at once, explanation shown) and the
+// book's plain {q,a} items (翻译 etc. — reveal + self-check). A lesson with choice items defaults to the
+// 综合 view: everything shuffled and the grammar-point heading hidden, because the heading gives away a
+// 辨析 answer; 分项 groups by point as before.
 const gpLesson = ref(null);
+const gpEl = ref(null);
 const gpShown = reactive(new Set()); // answer revealed
 const gpGot = reactive(new Set()); // self-marked 会了
 const gpReview = reactive(new Set()); // self-marked 再练
+const gpState = reactive({}); // choice key → { order: shuffled option indexes, picked: option index | -1 }
+const gpView = ref("mix"); // 'mix' 综合 · 'point' 分项
+const gpMix = ref([]); // item keys in 综合 order
 const hasGP = computed(() => !!(gpLesson.value && gpLesson.value.points && gpLesson.value.points.some((p) => p.exercises && p.exercises.length)));
 const gpGroups = computed(() => {
   const groups = [];
-  let n = 0;
   (gpLesson.value?.points || []).forEach((p, pi) => {
-    const items = (p.exercises || []).filter((e) => e.q).map((ex, ei) => ({ key: pi + "-" + ei, q: ex.q, a: ex.a, instr: ex.instr || "", instrEn: ex.instrEn || "", body: ex.body || "", n: ++n }));
+    const items = (p.exercises || []).filter((e) => e.q).map((ex, ei) => ({ ...ex, key: pi + "-" + ei, point: p.name, instr: ex.instr || "", instrEn: ex.instrEn || "", body: ex.body || "" }));
     if (items.length) groups.push({ name: p.name, type: p.type, typeEn: p.typeEn || "", items });
   });
   return groups;
 });
 const gpItems = computed(() => gpGroups.value.flatMap((g) => g.items));
-const gpDone = computed(() => gpItems.value.filter((it) => gpGot.has(it.key)).length);
+const gpHasChoice = computed(() => gpItems.value.some((it) => it.kind === "choice"));
+const gpRows = computed(() => {
+  const rows = [];
+  let n = 0;
+  if (gpHasChoice.value && gpView.value === "mix") {
+    const byKey = Object.fromEntries(gpItems.value.map((it) => [it.key, it]));
+    gpMix.value.forEach((k) => byKey[k] && rows.push({ key: k, it: byKey[k], n: ++n }));
+  } else {
+    gpGroups.value.forEach((g, gi) => {
+      rows.push({ key: "h" + gi, head: g });
+      g.items.forEach((it) => rows.push({ key: it.key, it, n: ++n }));
+    });
+  }
+  return rows;
+});
+const gpPicked = (it) => (gpState[it.key]?.picked ?? -1) >= 0;
+const gpOk = (it) => gpState[it.key]?.picked === it.answer;
+const gpChoice = computed(() => gpItems.value.filter((it) => it.kind === "choice"));
+const gpChoiceTotal = computed(() => gpChoice.value.length);
+const gpChoiceLeft = computed(() => gpChoice.value.filter((it) => !gpPicked(it)).length);
+const gpRight = computed(() => gpChoice.value.filter(gpOk).length);
+const gpWrongKeys = computed(() => gpChoice.value.filter((it) => gpPicked(it) && !gpOk(it)).map((it) => it.key));
+const gpDone = computed(() => gpItems.value.filter((it) => (it.kind === "choice" ? gpPicked(it) : gpGot.has(it.key))).length);
+function gpOptClass(it, oi) {
+  if (!gpPicked(it)) return "";
+  if (oi === it.answer) return "right";
+  return gpState[it.key].picked === oi ? "wrong" : "dim";
+}
+function pickGP(it, oi) {
+  const st = gpState[it.key];
+  if (st && st.picked < 0) st.picked = oi;
+}
+function freshChoice(it) { return { order: shuffle(it.options.map((_, i) => i)), picked: -1 }; }
+// 综合 order: choice items shuffled first, then the (harder) translations, also shuffled.
+function resetGP(scroll) {
+  for (const k of Object.keys(gpState)) delete gpState[k];
+  gpChoice.value.forEach((it) => (gpState[it.key] = freshChoice(it)));
+  gpShown.clear();
+  gpGot.clear();
+  gpReview.clear();
+  gpMix.value = [...shuffle(gpChoice.value.map((it) => it.key)), ...shuffle(gpItems.value.filter((it) => it.kind !== "choice").map((it) => it.key))];
+  if (scroll) gpEl.value?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+// Mistakes come back with re-shuffled options, moved to the front of the 综合 order.
+function retryWrong() {
+  const wrong = gpWrongKeys.value;
+  const byKey = Object.fromEntries(gpChoice.value.map((it) => [it.key, it]));
+  wrong.forEach((k) => (gpState[k] = freshChoice(byKey[k])));
+  gpMix.value = [...shuffle(wrong), ...gpMix.value.filter((k) => !wrong.includes(k))];
+  gpEl.value?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 function revealGP(key) { gpShown.add(key); }
 function markGot(key) { gpGot.add(key); gpReview.delete(key); }
 function markReview(key) { gpReview.add(key); gpGot.delete(key); }
@@ -224,13 +320,11 @@ watch(
   async ([s, u, l]) => {
     loading.value = true;
     ti.value = 0;
-    gpShown.clear();
-    gpGot.clear();
-    gpReview.clear();
     const [ds, gl] = await Promise.all([getTextUnit(s, u), getGrammarLesson(s, u, l)]);
     const ld = ds?.lessons.find((x) => x.num === Number(l));
     texts.value = ld?.texts || [];
     gpLesson.value = gl && gl.points && gl.points.length ? gl : null;
+    resetGP(false);
     fixMode();
     loading.value = false;
   },
@@ -595,6 +689,42 @@ watch(
 .self.ok:hover, .self.ok.on { background: var(--jade); border-color: var(--jade); color: #f4fbf6; }
 .self.no { color: #8a641f; }
 .self.no:hover, .self.no.on { background: var(--gold); border-color: var(--gold-deep); color: #fff8ea; }
+/* 进阶练习: tap-to-answer */
+.gp-views { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: -6px 0 18px; }
+.gp-views button { display: inline-flex; flex-direction: column; align-items: center; line-height: 1.1; font-family: var(--serif-cn); font-weight: 700; font-size: 13px; color: var(--muted); background: var(--paper); border: 1.5px solid var(--line); border-radius: var(--r-pill); padding: 6px 16px; }
+.gp-views button i { font-style: normal; font-family: var(--caps); font-size: 8px; letter-spacing: 1px; text-transform: uppercase; opacity: .8; }
+.gp-views button.on { background: var(--gold); border-color: var(--gold-deep); color: #fff8ea; }
+.gp-views-tip { font-size: 12px; font-weight: 600; color: var(--muted-soft); margin-left: 6px; }
+.gp-q.miss { border-color: color-mix(in srgb, var(--error) 40%, transparent); }
+.q-blank { display: inline-block; min-width: 64px; margin: 0 4px; padding: 0 6px; border-bottom: 2px dashed var(--cinnabar); text-align: center; line-height: 1.3; }
+.q-blank.filled { border-bottom-style: solid; border-color: var(--jade); color: #15803d; font-weight: 700; }
+.q-en { margin: 4px 0 0 30px; font-family: var(--serif-en); font-style: italic; font-size: 14px; color: var(--muted); }
+.opts { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 12px; }
+.opts.short { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.opt { display: flex; align-items: center; gap: 10px; text-align: left; font-family: var(--serif-cn); font-size: 16px; line-height: 1.5; color: var(--ink); background: var(--paper); border: 1.5px solid var(--line); border-radius: var(--r-sm, 10px); padding: 9px 14px; transition: .12s; }
+.opt:not(:disabled):hover { border-color: var(--gold); transform: translateY(-1px); }
+.opt .ol { flex: none; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--paper-3); color: var(--gold-deep); font-family: var(--caps); font-size: 11px; font-weight: 800; }
+.opt.right { border-color: var(--jade); background: var(--success-soft); color: #15803d; font-weight: 700; }
+.opt.right .ol { background: var(--jade); color: #fff; }
+.opt.wrong { border-color: var(--error); background: #f6dcd6; color: var(--error); }
+.opt.wrong .ol { background: var(--error); color: #fff; }
+.opt.dim { opacity: .55; }
+.opt:disabled { cursor: default; }
+.gp-explain { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--line-soft); font-size: 14px; line-height: 1.65; color: var(--ink-soft, #4a3d2a); }
+.gp-explain .verdict { font-family: var(--serif-cn); font-weight: 800; color: var(--error); margin-right: 10px; }
+.gp-explain .verdict.ok { color: #15803d; }
+.gp-explain p { margin-top: 4px; font-family: var(--serif-cn); }
+.gp-explain p.en { font-family: var(--ui); font-size: 13px; color: var(--muted); }
+.kp { font-family: var(--serif-cn); font-size: 12px; font-weight: 700; color: var(--accent-active); background: var(--accent-soft); border-radius: var(--r-pill); padding: 2px 10px; }
+.gp-end { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 22px; padding: 16px 18px; border: 1px solid var(--line); border-radius: var(--r-md, 16px); background: var(--paper-2); }
+.gp-end > span { font-family: var(--serif-cn); font-weight: 800; font-size: 15px; color: var(--cinnabar-dk); margin-right: auto; }
+.gp-end small { font-family: var(--ui); font-weight: 600; font-size: 12px; color: var(--muted); }
+@media (max-width: 720px) {
+  .opts.short { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ghead { flex-direction: column; gap: 10px; }
+  .gprogress { width: 100%; }
+  .gp-views-tip { margin-left: 0; }
+}
 
 .placeholder { text-align: center; padding: 70px 20px; color: var(--muted); }
 .placeholder .diamond { color: var(--gold); letter-spacing: 6px; margin-bottom: 14px; }

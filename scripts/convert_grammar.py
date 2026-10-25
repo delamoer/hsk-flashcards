@@ -219,6 +219,45 @@ def s(v):
     return str(v).strip() if v is not None else ""
 
 
+# 「进阶练习」sheet (optional, same workbook): harder tap-to-answer items written for the site in Oct 2026,
+# because the book's own 练习 were too easy (the blank was the heading word, distractors like 了/吗, answers
+# copied from the examples). When a point has rows here, they REPLACE its non-translation 练习; its 翻译 is
+# kept unless a 翻译 row here replaces it. Columns are found by header text.
+ADV_SHEET = "进阶练习"
+# Beginner books: their students found even the level-matched choice items too hard to read, so their grammar
+# practice is English→Chinese translation ONLY (the 进阶练习 sheet holds each point's complete translation list).
+TRANSLATE_ONLY = {("hsk", 1), ("hsk", 2), ("newhsk3", 1), ("newhsk3", 2), ("huihua360", 1), ("huihua360", 2)}
+ADV_INSTR_EN = {"辨析": "Pick the right one", "完成": "Complete the sentence", "找错": "Find the wrong sentence"}
+
+
+def load_advanced(wb):
+    """→ {语法编号: [exercise, …]} in sheet order."""
+    if ADV_SHEET not in wb.sheetnames:
+        return {}
+    rows = list(wb[ADV_SHEET].iter_rows(values_only=True))
+    h = {s(v): i for i, v in enumerate(rows[0]) if v}
+    out = {}
+    for r in rows[1:]:
+        pid, kind, body = (s(r[h[k]]) for k in ("语法编号", "题型", "题干"))
+        if not pid or not kind:
+            continue
+        ans = s(r[h["答案"]])
+        if kind == "翻译":
+            ex = {"q": f"翻译：{body}", "a": ans, "instr": "翻译", "instrEn": "Translate", "body": body}
+        else:
+            opts = [s(r[h[f"选项{k}"]]) for k in "ABCD"]
+            assert kind in ADV_INSTR_EN and all(opts) and ans in "ABCD" and len(ans) == 1, (pid, kind, body)
+            ex = {"kind": "choice", "q": body, "instr": kind, "instrEn": ADV_INSTR_EN[kind], "body": body,
+                  "options": opts, "answer": "ABCD".index(ans),
+                  "explain": s(r[h["解析（中文）"]]), "explainEn": s(r[h["解析（英文）"]])}
+            # 入门册 (T1/T2) give the stem's English so a beginner can follow the sentence
+            stem_en = s(r[h["题干（英文）"]]) if "题干（英文）" in h else ""
+            if stem_en:
+                ex["stemEn"] = stem_en
+        out.setdefault(pid, []).append(ex)
+    return out
+
+
 def split_bilingual(v):
     """「零基础拼音英文版」把两种写法塞进一个单元格，用换行分隔：
        基本结构 → 中文结构 ⏎ English gloss；例句 → 中文 ⏎ 拼音。
@@ -241,6 +280,7 @@ def convert_file(path):
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
     ws = wb.worksheets[0]  # 语法总表 is always sheet 1
     rows = list(ws.iter_rows(values_only=True))
+    advanced = load_advanced(wb)
     wb.close()
     c = col_index(rows[0])
 
@@ -281,6 +321,13 @@ def convert_file(path):
                     ex["instrEn"] = Q_INSTR_EN[m.group(1)]
                     ex["body"] = m.group(2).strip()
                 exercises.append(ex)
+        adv = advanced.get(s(r[c["id"]]) if c["id"] is not None else "")
+        if adv:
+            new_tr = [e for e in adv if e.get("instr") == "翻译"]
+            old_tr = [e for e in exercises if e.get("instr") == "翻译"]
+            exercises = [e for e in adv if e.get("kind") == "choice"] + (new_tr or old_tr)
+        if target in TRANSLATE_ONLY:
+            exercises = [e for e in exercises if e.get("instr") == "翻译"]
 
         structure, structure_en = (
             split_bilingual(r[c["structure"]]) if c["structure"] is not None else ("", "")

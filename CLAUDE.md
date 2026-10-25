@@ -254,6 +254,28 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   走遍中国 第四册 (`走遍中国_第四册_语法零基础版.xlsx`, 48 points) is keyed by 「单元」 (aliased to 课次), keeps its
   example pinyin in 「例句k（拼音）」 columns and note English in 「教学备注（英文）」 (both read straight from the xlsx),
   and its exercises are all 英译汉 — an English prompt + Chinese 参考答案, tagged `instr: 翻译`.
+  **进阶练习 (harder tap-to-answer items)**: students found the books' own 练习 too easy (~600 填空 blanks were the
+  heading word itself, 46% of answers copied the examples, distractors like 了/吗). A grammar workbook may carry an
+  optional sheet 「进阶练习」 (语法编号 · 题型 辨析/完成/找错/翻译 · 题干 · 选项A–D · 答案 · 解析（中文/英文）; `load_advanced`).
+  When a point has rows there they REPLACE its non-translation 练习; its 翻译 is kept unless a 翻译 row replaces it.
+  Choice items become `{kind:"choice", options, answer, explain, explainEn}`; `ExercisesPanel` then shows tap-to-answer
+  cards (instant check + bilingual explanation, options shuffled per session, 重练错题), defaulting to 综合练习 (all
+  shuffled, grammar-point heading HIDDEN — it gives a 辨析 answer away) with 分项练习 as the grouped view. Units without
+  the sheet keep the old reveal + self-check UI. **All 15 grammar units have it** (Oct 2026: 2376 choice items = 3 per
+  point, + ~560 replacement translations; written by agents, then a correctness + "too easy" review — no distractor may
+  be eliminable without knowing the point — and a final uniqueness check). The sheet lives in the workbook the converter
+  actually reads (零基础版 where one exists, else 主表; 第四册上/下 each hold their own points). **Difficulty is
+  level-matched**, not uniform: T1 (HSK1 / 新一册 / 360-1) ≤12-char sentences from the book's own vocab, T2 (HSK2 /
+  新二册 / 360-2·3) ≤16, T3 (HSK3 / 新三册 / 360-4) ≤20, T4 (HSK4 / 新四册 / 走遍中国) ≤25, HSK5/6 formal near-synonyms.
+  T1/T2 辨析/完成 rows carry an optional 「题干（英文）」 column (`stemEn`, shown under the stem) so beginners can follow
+  the sentence. Contested rules (的/地/得 spelling, colloquial variants) were deliberately avoided as the sole key.
+  **Exception — the six beginner books (HSK1/2, 新HSK3.0 第一/二册, 会话360 1/2) are translation-ONLY** (`TRANSLATE_ONLY` in
+  `convert_grammar.py`): the teacher found even level-matched choice items too hard for them. Their 「进阶练习」 sheet holds
+  each point's COMPLETE 英译汉 list (2–3 per point, covering every point, brief English hints like "(use 两)"), no choice
+  rows; the converter drops every non-translation exercise for these units. After a student found a wrong key, all 1743
+  remaining choice items got a blind solve (answer hidden) + an adversarial "refute the key" pass; 15 items were fixed.
+  When editing items by script, assert the OLD cell text before replacing — a fix script once overwrote the correct
+  option instead of a distractor.
   Coverage: hsk-1..6 + newhsk3-1..4 + huihua360-1..4 + zoubian-4 (792 points); other series/units
   gracefully show placeholders. Two bilingual
   fields are hand-authored inside `convert_grammar.py` and merged at build time: `noteEn` (English for each
