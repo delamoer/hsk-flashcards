@@ -15,7 +15,7 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
    cover / band image falls back to a series-color cover / wash; >7 series swaps the dots for a 「03 / 12」 counter).
    All home sections share one height (`--sec-h` on `.sec`, sized for the shelf) — raise it rather than squeezing
    the shelf. Pick a course series (书函卡): 标准HSK / 新HSK3.0 /
-   会话360 / 生存汉语 / 新时代汉语口语. (A series may set `single:true` to jump straight to its lessons, skipping 选册;
+   会话360 / 生存汉语 / 新时代汉语口语 / 走遍中国. (A series may set `single:true` to jump straight to its lessons, skipping 选册;
    currently none do — 生存汉语 is now a normal multi-book series with one book so far.)
 2. **选册/级 Books** (`/course/:series`, `SeriesBooksView.vue`) — series-specific 门面 hero + book/level
    covers (its units). Per-series accent color from `courses.js`.
@@ -69,10 +69,12 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 - **Data is generated, not hand-written.** Source of truth = the xlsx files in `sources/`, named
   **`{系列}_{册}_{类型}.xlsx`** so a series' branches sort together and a missing branch is obvious at a
   glance. 系列/册: `HSK{1..6}` · `新HSK3.0_第{一,二,三}册` + `新HSK3.0_第四册{上,下}`（教材第四册分上下两本，站内合为一册）·
-  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `新时代汉语口语_中级{上,下}`（unit 3/4）· `汉语拼音`. 类型 (exactly seven): `词汇闪卡表` ·
-  `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6）· `语法主表` · `语法零基础版` · `聊天问题` ·
-  `常见搭配`（新HSK3.0 第一/二/三册；same layout as the 闪卡表 + 搭配 in col 11 — `convert.py`'s `COLLOC_SOURCES`
-  matches it onto the 闪卡表 words by (课次, 汉字, 拼音), so ids/order stay the 闪卡表's; unmatched rows are warned）. **Keep this convention when adding a book** —
+  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `新时代汉语口语_中级{上,下}`（unit 3/4）· `走遍中国_第四册`（series `zoubian`, unit = 册号）· `汉语拼音`. 类型 (exactly seven): `词汇闪卡表` ·
+  `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6、走遍中国）· `语法主表` · `语法零基础版` · `聊天问题` ·
+  `常见搭配`（新HSK3.0 第一/二/三册 + HSK5；same layout as the 闪卡表 + 搭配 in col 11 — `convert.py`'s `COLLOC_SOURCES`
+  matches it onto the 闪卡表 words by (课次, 汉字, 拼音), so ids stay the 闪卡表's; unmatched rows are warned.
+  `HSK5_常见搭配.xlsx` is also hand-sorted in textbook order, so it's in `ORDER_BY_COLLOC`: its row order
+  becomes the display order — the old 闪卡表 is kept only so word ids don't move）. **Keep this convention when adding a book** —
   the grammar/discussion converters map filename → (series, unit) by regex and **silently skip** a name
   they don't recognize. **Several books may map to ONE unit** (新HSK3.0 第四册上 = 课次1–10, 第四册下 =
   11–20): all four converters group sources by (series, unit) and merge their lessons before writing,
@@ -104,7 +106,15 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   `A：…B：…`: FlashCard renders one line per turn (`turns()`) and speaks them with the A/B labels stripped
   (`speechOf()`); `gen_audio.py`'s `example_speech()` strips them the same way so the manifest key matches.
   A unit can set `lvl` in `courses.js` to override the book-cover numeral (kouyu shows 上/下), and
-  `levelWord` to override the series' small label above it (kouyu 3/4 = 中级 vs the series' 初级).- **词性 (part of speech) is hand-curated, not in the xlsx.** `scripts/pos.tsv` (`hanzi<TAB>code`) is
+  `levelWord` to override the series' small label above it (kouyu 3/4 = 中级 vs the series' 初级).
+  **走遍中国 (`zoubian`, Discover China; only 第四册 so far, 12 单元 = 12 lessons)**: the three source files came
+  from OCR of the book and were repaired by hand/AI in Oct 2026 — every change is logged IN the workbooks
+  (词表「词汇闪卡」sheet 校对备注 column; 课文 and 语法 each have a 「网站校对记录」 sheet), so check there before
+  "fixing" something. The 词表 (`闪卡导入版` sheet) has no 课名 column (titles in `TITLES_ZH`/`TITLES_EN`),
+  its 3 collocations sit in their own columns (`col.colloc` may be a LIST of column indexes), and its two
+  例句 columns were written for the site (the book has none). 12 OCR fragment/duplicate rows were deleted
+  (627 → 615 words). Row-level ⚠ notes mark entries worth checking against the printed book.
+- **词性 (part of speech) is hand-curated, not in the xlsx.** `scripts/pos.tsv` (`hanzi<TAB>code`) is
   the source of truth — ~4700 words tagged by hand (codes: `n v mv a adv pron num mw prep conj part
   intj idiom`; bilingual labels in `src/data/pos.js`). `convert.py` reads it and sets each word's `pos`
   (None when untagged — the card shows nothing rather than a wrong guess). `scripts/gen_pos_draft.py`
@@ -186,6 +196,14 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   are merge_words.txt candidates — review each against its sentence before adding (的|话, 好|在 are traps). 课文 audio (读原文 dialogue lines + every 连词成句 `sentences[].text`) is generated via
   `gen_audio.py --texts` (`collect_text_lines`) and uploaded to the same Storage `audio` bucket; split
   sub-sentences without a pre-generated MP3 fall back to browser TTS until audio is regenerated.
+- **走遍中国 课文** (`convert_texts.py`'s `DC_SOURCES` → `convert_dc`): `走遍中国_第四册_课文原文.xlsx`, sheet
+  「课文主表」 (one row per text) + 「逐段明细」 (one row per paragraph, keyed by text_id). Each 单元 = one lesson with
+  the Lesson 1 listening dialogue (speaker lines) + 1–3 Lesson 2 readings (letters, notices, postcards — `prose`).
+  No cloze, so 读原文 + 连词成句 only. **Unlike every other book its 拼音/英文 are NOT in `text_gloss.tsv`**: they are
+  the 「拼音」「英文」 columns of 逐段明细 (speech only, speaker stripped) — edit them there. The 12 dialogues were
+  proofread against the book; the 21 readings were OCR wrecks rebuilt from context (no PDF to compare) — gaps are
+  shown as 「……」 and every guess is listed in the 「网站校对记录」 sheet. Speaker names join the lexicon for this
+  book so 永民/史蒂夫 tile whole.
 - **会话360 课文 come from a DIFFERENT converter** (`scripts/convert_360.py`, not `convert_texts.py`). Source =
   the four `sources/标准汉语会话360句{1,2,3,4}_课文挖空练习.xlsx` → `src/data/texts/huihua360-{1,2,3,4}.json`
   (+ merged into `texts/meta.json`, HSK/newhsk3 entries kept), so `huihua360` gets the same 读原文 (`ReadPanel`)
@@ -228,7 +246,10 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   (own `import.meta.glob("./grammar/*-*.json")`, dash pattern excludes meta). Run:
   `uv run --with openpyxl python3 scripts/convert_grammar.py`. Each point: `{ id, name, pinyin, type,
   tier?(HSK4), explainEn, structure, structureEn?, examples:[{zh,en,py?}], exercises:[{q,a}], note, source }`.
-  Coverage: hsk-1..6 + newhsk3-1..4 + huihua360-1..4 (744 points); other series/units
+  走遍中国 第四册 (`走遍中国_第四册_语法零基础版.xlsx`, 48 points) is keyed by 「单元」 (aliased to 课次), keeps its
+  example pinyin in 「例句k（拼音）」 columns and note English in 「教学备注（英文）」 (both read straight from the xlsx),
+  and its exercises are all 英译汉 — an English prompt + Chinese 参考答案, tagged `instr: 翻译`.
+  Coverage: hsk-1..6 + newhsk3-1..4 + huihua360-1..4 + zoubian-4 (792 points); other series/units
   gracefully show placeholders. Two bilingual
   fields are hand-authored inside `convert_grammar.py` and merged at build time: `noteEn` (English for each
   中文 备注, from `scripts/grammar_note_en.tsv`) and `typeEn` (English for each 语法类型, from the in-script

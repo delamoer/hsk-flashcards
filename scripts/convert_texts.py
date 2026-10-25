@@ -7,6 +7,7 @@ Run with uv (openpyxl provided on the fly):
 Sources: sources/HSK{1,2,3,4}_课文挖空练习.xlsx + sources/新HSK3.0_第{一,二,三}册_课文挖空练习.xlsx
          + sources/新HSK3.0_第四册{上,下}_课文挖空练习.xlsx (two books, one unit — merged)
          + sources/HSK{5,6}_课文原文.xlsx (essays, no cloze — 读原文 + 连词成句 only)
+         + sources/走遍中国_第四册_课文原文.xlsx (dialogue + readings per 单元, gloss in the xlsx)
   新版 → series "newhsk3", 旧版 → series "hsk" (same taxonomy as the flashcard courses).
 
 Output (kept in a subfolder so the flashcard glob `./*-*.json` never picks it up):
@@ -56,6 +57,13 @@ SOURCES = [
 PROSE_SOURCES = [
     ("HSK5_课文原文.xlsx", "hsk", 5),
     ("HSK6_课文原文.xlsx", "hsk", 6),
+]
+
+# 走遍中国：每单元 1 篇听力对话（有说话人）+ 1–3 篇阅读/实用文（书信、通知、明信片…，
+# 按 prose 处理）。原文按段落存在「逐段明细」表里（一行一段，按 text_id 归篇），没有挖空。
+# 阅读文本原是 OCR，已凭语境人工修正（未对照原书逐字复核）。
+DC_SOURCES = [
+    ("走遍中国_第四册_课文原文.xlsx", "zoubian", 4),
 ]
 
 SHEET = "教师答案版"
@@ -141,6 +149,8 @@ def load_word_map() -> dict:
 # them costs nothing today. Before adding a word here, check it against t["sentences"] —
 # the tiled items — not just the raw 课文, and re-check when a book is added.
 LEX_EXCLUDE = {"不便", "从中", "有机"}  # 有机：中级词表的 organic，课文里只出现在「有机会」中
+# 走遍中国4 的词：别的课文里只以「商量好|在」「爱|上中文课」「最|爱看」出现
+LEX_EXCLUDE |= {"好在", "爱上", "最爱"}
 
 
 def load_lexicon(segmap: dict) -> set:
@@ -531,6 +541,51 @@ def convert_prose(fname, series, unit, segmap, lex, gloss):
     return {"series": series, "unit": unit, "lessons": lessons}, len(lessons), len(lessons)
 
 
+def convert_dc(fname, series, unit, segmap, lex, gloss):
+    """走遍中国 book: 「课文主表」 = one row per text (unit, lesson, material_type, title),
+    「逐段明细」 = one row per paragraph, keyed by text_id. A unit's texts are its
+    Lesson 1 dialogue followed by its Lesson 2 readings, in sheet order."""
+    wb = openpyxl.load_workbook(ROOT / "sources" / fname, read_only=True, data_only=True)
+
+    def table(name):
+        rows = list(wb[name].iter_rows(values_only=True))
+        header = [clean(h) or "" for h in rows[0]]
+        return [dict(zip(header, r)) for r in rows[1:] if r and r[0]]
+
+    # 拼音/英文 live in the 逐段明细 sheet itself (speech only, speaker stripped) — this
+    # book's gloss is NOT in text_gloss.tsv. A blank cell falls back to the TSV.
+    paras = {}
+    for p in table("逐段明细"):
+        zh = clean(p["paragraph_text"])
+        if zh:
+            paras.setdefault(p["text_id"], []).append((zh, clean(p.get("拼音")), clean(p.get("英文"))))
+    # speaker names (永民, 史蒂夫…) join the lexicon so they tile whole, as in convert_360
+    names = {m.group(1) for ps in paras.values() for zh, _, _ in ps if (m := SPEAKER_RE.match(zh))}
+    lex = lex | {n for n in names if len(n) >= 2}
+    lessons = {}
+    for t in table("课文主表"):
+        ln = int(t["unit"])
+        L = lessons.setdefault(ln, {"num": ln, "name": clean(t["unit_title"]) or "", "texts": []})
+        prose = t["material_type"] != "听力对话"
+        ps = paras.get(t["text_id"], [])
+        original = "\n".join(zh for zh, _, _ in ps)
+        lines = build_lines(original, gloss, prose=prose)
+        for line, (_, py, en) in zip(lines, ps):  # build_lines keeps one line per paragraph
+            line["py"], line["en"] = py or line["py"], en or line["en"]
+        L["texts"].append({
+            "n": len(L["texts"]) + 1,
+            "title": clean(t["text_title"]) or f"课文{len(L['texts']) + 1}",
+            "original": original,
+            "lines": lines,
+            "vocab": None,
+            "grammar": None,
+            "sentences": build_sentences(original, segmap, lex, prose=prose),
+            "note": "",
+        })
+    n_texts = sum(len(L["texts"]) for L in lessons.values())
+    return {"series": series, "unit": unit, "lessons": [lessons[n] for n in sorted(lessons)]}, len(lessons), n_texts
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     segmap = load_segments()
@@ -545,6 +600,7 @@ def main():
     units = {}
     jobs = [(f, s, u, lambda f, s, u: convert(f, s, u, segmap, lex, gloss, wordmap)) for f, s, u in SOURCES]
     jobs += [(f, s, u, lambda f, s, u: convert_prose(f, s, u, segmap, lex, gloss)) for f, s, u in PROSE_SOURCES]
+    jobs += [(f, s, u, lambda f, s, u: convert_dc(f, s, u, segmap, lex, gloss)) for f, s, u in DC_SOURCES]
     for fname, series, unit, run in jobs:
         data, n_lessons, n_texts = run(fname, series, unit)
         key = f"{series}-{unit}"

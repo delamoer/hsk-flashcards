@@ -95,6 +95,7 @@ const BOOK_META = {
   huihua360: { top: "CONVERSATION 360", abbr: "卷", cn: "会话三六〇", en: "Conversation 360" },
   survival: { top: "SURVIVAL CHINESE", abbr: "生", cn: "生存汉语", en: "Survival Chinese" },
   kouyu: { top: "SPOKEN CHINESE", abbr: "口", cn: "新时代汉语口语", en: "Spoken Chinese" },
+  zoubian: { top: "DISCOVER", abbr: "走", cn: "走遍中国", en: "Discover China" },
 };
 
 const books = computed(() => {
@@ -220,6 +221,7 @@ const books = computed(() => {
 .book.c-jade { background-color: #1b5245; }
 .book.c-amber { background-color: #7d5216; }
 .book.c-indigo { background-color: #243a57; }
+.book.c-olive { background-color: #434d1c; }
 /* 顶部/底部加深，级号与书脊更立体 */
 .book::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(0,0,0,.16), transparent 26%, transparent 62%, rgba(0,0,0,.28)); }
 .book .enter { position: absolute; bottom: 12px; right: 14px; z-index: 3; opacity: 0; transform: translateX(-4px); transition: .25s; font-family: var(--caps); font-size: 11px; letter-spacing: 2px; }

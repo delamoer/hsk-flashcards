@@ -195,6 +195,17 @@ SOURCES = [
                 "hanzi": 3, "pinyin": 4, "meaning": 5,
                 "type": 10, "note": None, "ex": [(6, 7), (8, 9)]},
     } for unit, book in ((3, "中级上"), (4, "中级下"))),
+    {
+        # 走遍中国 (Discover China) 第四册 — 12 单元 = 12 lessons, no title column (TITLES_ZH).
+        # 3 collocations in their own columns (4/6/8, each followed by its English);
+        # 例句 cols 11–14 were written for the site (the book's list has none).
+        "series": "zoubian", "unit": 4,
+        "file": "sources/走遍中国_第四册_词汇闪卡表.xlsx", "sheet": "闪卡导入版",
+        "col": {"lesson": 0, "lesson_key": None, "title": None,
+                "hanzi": 1, "pinyin": 2, "meaning": 3,
+                "type": None, "note": None, "colloc": [4, 6, 8],
+                "ex": [(11, 12), (13, 14)]},
+    },
 ]
 
 # English lesson titles: {series: {unit: {lesson_num: "title"}}}
@@ -458,6 +469,15 @@ TITLES_EN = {
             39: "Chinese Zodiac (12 Animals)",
         },
     },
+    "zoubian": {
+        4: {
+            1: "You Can Do It!", 2: "How Did It Go?", 3: "Travel Without a Worry!",
+            4: "Welcome, Everyone!", 5: "I'll Do My Best!", 6: "You Really Know How to Do Business!",
+            7: "I'm So Sorry This Time!", 8: "Yunnan Is a Wonderful Place!", 9: "I'd Love To!",
+            10: "Isn't That Excuse a Bit Far-fetched?", 11: "It Feels So Good to Be Home!",
+            12: "No Pain, No Gain.",
+        },
+    },
     "kouyu": {
         1: {
             1: "Are You an International Student Too?", 2: "What Should I Do?",
@@ -505,6 +525,15 @@ TITLES_EN = {
 # Chinese title overrides — used when the xlsx contains placeholder text.
 # Structure mirrors TITLES_EN: {series: {unit: {lesson_num: "title"}}}
 TITLES_ZH = {
+    # 走遍中国 词表只有「单元」列，没有课名列
+    "zoubian": {
+        4: {
+            1: "你一定行！", 2: "你感觉怎么样？", 3: "让您的旅行没有后顾之忧！",
+            4: "欢迎大家的到来！", 5: "我一定尽力而为！", 6: "你们真会做生意！",
+            7: "这次真是对不起你了！", 8: "云南真是个好地方！", 9: "求之不得！",
+            10: "这个理由是不是太牵强了！", 11: "回家的感觉真好！", 12: "有付出，才有收获。",
+        },
+    },
     "huihua360": {
         2: {
             1: "请问，您想喝点儿什么？",
@@ -579,7 +608,8 @@ def convert(src):
         if ln not in lessons:
             lessons[ln] = {
                 "num": ln,
-                "title": TITLES_ZH.get(series, {}).get(unit, {}).get(ln) or clean(r[col["title"]]),
+                "title": TITLES_ZH.get(series, {}).get(unit, {}).get(ln)
+                         or (clean(r[col["title"]]) if col["title"] is not None else None),
                 "titleEn": TITLES_EN.get(series, {}).get(unit, {}).get(ln, ""),
                 "words": [],
             }
@@ -604,7 +634,9 @@ def convert(src):
         }
         # 常见搭配 (collocations) — only some courses carry this column
         colloc_i = col.get("colloc")
-        if colloc_i is not None:
+        if isinstance(colloc_i, list):  # one collocation per column (走遍中国)
+            word["collocations"] = [c for c in (clean(r[i]) for i in colloc_i) if c]
+        elif colloc_i is not None:
             raw = clean(r[colloc_i])
             word["collocations"] = [c.strip() for c in re.split(r"[；;、]", raw) if c.strip()] if raw else []
         lessons[ln]["words"].append(word)
@@ -621,7 +653,11 @@ COLLOC_SOURCES = {
     "newhsk3-1": "sources/新HSK3.0_第一册_常见搭配.xlsx",
     "newhsk3-2": "sources/新HSK3.0_第二册_常见搭配.xlsx",
     "newhsk3-3": "sources/新HSK3.0_第三册_常见搭配.xlsx",
+    "hsk-5": "sources/HSK5_常见搭配.xlsx",
 }
+# Units whose 常见搭配 file is also hand-sorted in textbook order: its row order
+# becomes the display order (instead of REORDER_BY_TEXT's guess). Ids stay the 闪卡表's.
+ORDER_BY_COLLOC = {"hsk-5"}
 
 
 def merge_collocations(key, data):
@@ -633,6 +669,12 @@ def merge_collocations(key, data):
         raw = clean(r[11])
         found[(r[1], clean(r[3]), clean(r[4]))] = (
             [c.strip() for c in re.split(r"[；;、]", raw) if c.strip()] if raw else [])
+    if key in ORDER_BY_COLLOC:
+        rank = {k: i for i, k in enumerate(found)}
+        for lesson in data["lessons"]:
+            lesson["words"].sort(key=lambda w: rank.get((lesson["num"], w["hanzi"], w["pinyin"]), len(rank)))
+            for n, w in enumerate(lesson["words"], 1):
+                w["num"] = n
     hit, miss = 0, []
     for lesson in data["lessons"]:
         for w in lesson["words"]:
@@ -653,7 +695,7 @@ def merge_collocations(key, data):
 # re-sorted by first appearance in the lesson's 课文 (src/data/texts/, so run
 # convert_texts.py first if the texts changed). Ids are assigned BEFORE sorting, so
 # stored progress (keyed by id) survives; `num` becomes the new display position.
-REORDER_BY_TEXT = {"hsk-4", "hsk-5", "newhsk3-1", "newhsk3-4"}
+REORDER_BY_TEXT = {"hsk-4", "newhsk3-1", "newhsk3-4", "zoubian-4"}  # hsk-5: ORDER_BY_COLLOC
 TEXTS_DIR = ROOT / "src" / "data" / "texts"
 
 

@@ -10,12 +10,14 @@ import bandNewhsk3 from "./img/hero/band-newhsk3.webp";
 import bandHuihua360 from "./img/hero/band-huihua360.webp";
 import bandSurvival from "./img/hero/band-survival.webp";
 import bandKouyu from "./img/hero/band-kouyu.webp";
+import bandZoubian from "./img/hero/band-zoubian.webp";
 
 import coverHsk from "./img/books/cover-hsk.webp";
 import coverNewhsk3 from "./img/books/cover-newhsk3.webp";
 import coverHuihua360 from "./img/books/cover-huihua360.webp";
 import coverSurvival from "./img/books/cover-survival.webp";
 import coverKouyu from "./img/books/cover-kouyu.webp";
+import coverZoubian from "./img/books/cover-zoubian.webp";
 
 import photoBamboo from "./img/photos/bamboo.webp";
 import photoPlumDesk from "./img/photos/plum-desk.webp";
@@ -52,6 +54,7 @@ export const seriesBand = {
   huihua360: bandHuihua360,
   survival: bandSurvival,
   kouyu: bandKouyu,
+  zoubian: bandZoubian,
 };
 
 // per-series 书封 (home 教材 section covers)
@@ -61,6 +64,7 @@ export const bookCover = {
   huihua360: coverHuihua360,
   survival: coverSurvival,
   kouyu: coverKouyu,
+  zoubian: coverZoubian,
 };
 
 // 仙鹤立轴 —— 板块隐约水印

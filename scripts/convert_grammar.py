@@ -172,6 +172,9 @@ def parse_target(path):
     m = re.match(r"标准汉语会话360句(\d)_语法", base)
     if m:
         return ("huihua360", int(m.group(1)))
+    m = re.match(r"走遍中国_第([一二三四五六])册_语法", base)
+    if m:
+        return ("zoubian", CN_VOL[m.group(1)])
     return None
 
 
@@ -187,8 +190,9 @@ def col_index(header):
 
     return {
         "id": find("语法编号"),
-        "num": find("课次"),
-        "lesson": find("课文"),
+        # 走遍中国按「单元」编排（单元 = 我们的 lesson num）
+        "num": find("课次", "单元"),
+        "lesson": find("课文", "单元主题"),
         "name": find("语法名", "语法名/语言点"),
         "pinyin": find("拼音"),
         "type": find("语法类型"),
@@ -199,8 +203,13 @@ def col_index(header):
         "structureEn": find("Basic Structure (English)"),
         "ex_zh": [find(f"例句{k}（中文 + 拼音）", f"例句{k}（中文）") for k in (1, 2, 3)],
         "ex_en": [find(f"例句{k}（英文）") for k in (1, 2, 3)],
-        "q": [find(f"练习{k}") for k in (1, 2, 3)],
-        "a": [find(f"答案{k}") for k in (1, 2, 3)],
+        # 走遍中国：例句拼音单独一列（不像零基础版塞在中文格里换行）
+        "ex_py": [find(f"例句{k}（拼音）") for k in (1, 2, 3)],
+        "noteEn": find("教学备注（英文）"),
+        "q": [find(f"练习{k}", f"英译汉练习{k}（英文）") for k in (1, 2, 3)],
+        "a": [find(f"答案{k}", f"参考答案{k}（中文）") for k in (1, 2, 3)],
+        # 走遍中国的练习列整列都是英译汉，题干是一句英文，没有「翻译：」前缀
+        "q_translate": find("英译汉练习1（英文）") is not None,
         "note": find("备注", "教学备注"),
         "source": find("来源"),
     }
@@ -245,11 +254,13 @@ def convert_file(path):
             continue
 
         examples = []
-        for zi, ei in zip(c["ex_zh"], c["ex_en"]):
+        for zi, ei, pi in zip(c["ex_zh"], c["ex_en"], c["ex_py"]):
             zh, py = split_bilingual(r[zi]) if zi is not None else ("", "")
             en = s(r[ei]) if ei is not None else ""
             if zh:
                 ex = {"zh": zh, "en": en}
+                if not py and pi is not None:
+                    py = s(r[pi])
                 if not py:
                     py = EX_PY.get(zh, "")
                 if py:
@@ -263,7 +274,9 @@ def convert_file(path):
             if q:
                 ex = {"q": q, "a": a}
                 m = re.match(r"^([^：:]{1,10})[：:]\s*(.*)$", q, re.S)
-                if m and Q_INSTR_EN.get(m.group(1)):
+                if c["q_translate"]:
+                    ex.update(instr="翻译", instrEn="Translate into Chinese", body=q)
+                elif m and Q_INSTR_EN.get(m.group(1)):
                     ex["instr"] = m.group(1)
                     ex["instrEn"] = Q_INSTR_EN[m.group(1)]
                     ex["body"] = m.group(2).strip()
@@ -290,8 +303,9 @@ def convert_file(path):
             structure_en = STRUCT_EN.get(structure, "")
         if structure_en:
             point["structureEn"] = structure_en
-        if point["note"] and NOTE_EN.get(point["note"]):
-            point["noteEn"] = NOTE_EN[point["note"]]
+        note_en = s(r[c["noteEn"]]) if c["noteEn"] is not None else ""
+        if point["note"] and (note_en or NOTE_EN.get(point["note"])):
+            point["noteEn"] = note_en or NOTE_EN[point["note"]]
         if point["type"] and TYPE_EN.get(point["type"]):
             point["typeEn"] = TYPE_EN[point["type"]]
         tier = s(r[c["tier"]]) if c["tier"] is not None else ""

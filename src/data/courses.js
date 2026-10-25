@@ -178,6 +178,38 @@ export const COURSE_REGISTRY = [
       { id: 4, label: "中级下", lvl: "下", levelWord: "中级", available: true },
     ],
   },
+  {
+    id: "zoubian",
+    name: "走遍中国",
+    nameEn: "Discover China",
+    gradA: "#6b7a32",
+    gradB: "#434d1c",
+    theme: {
+      "--primary": "#6b7a32",
+      "--primary-active": "#5d6a2a",
+      "--primary-strong": "#434d1c",
+      "--primary-soft": "#e7ead2",
+      "--grad-a": "#6b7a32",
+      "--grad-b": "#434d1c",
+      "--sh-hover": "0 10px 28px rgba(107, 122, 50, 0.2)",
+      "--sh-front": "0 8px 24px rgba(107, 122, 50, 0.3)",
+    },
+    seal: { cn: "走", en: "DC" },
+    seriesColor: "#6b7a32",
+    colorClass: "c-olive",
+    kicker: "Discover China · Study, Work & Travel",
+    heroTitle: "走遍中国",
+    heroSub: "求职 · 实习 · 旅行 · 在中国生活",
+    heroEn: "Study, work and travel your way across China",
+    desc: "求职·实习·旅行·在中国生活",
+    descEn: "Study, work and travel across China",
+    volUnit: "Books",
+    levelWord: "Book",
+    // 目前只有第四册；第一至三册有了资料再加
+    units: [
+      { id: 4, label: "第四册", available: true },
+    ],
+  },
 ];
 
 export function getSeries(seriesId) {

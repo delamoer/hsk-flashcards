@@ -9578,7 +9578,7 @@
      "hanzi": "费用",
      "pinyin": "fèiyòng",
      "meaning": "fee; expense",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -10849,7 +10849,7 @@
      "hanzi": "人民币",
      "pinyin": "rénmínbì",
      "meaning": "renminbi; Chinese yuan",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [

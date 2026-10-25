@@ -8630,7 +8630,7 @@
      "hanzi": "卫生",
      "pinyin": "wèishēng",
      "meaning": "hygiene; sanitary",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -10024,7 +10024,7 @@
      "hanzi": "各位",
      "pinyin": "gèwèi",
      "meaning": "everyone; ladies and gentlemen",
-     "pos": null,
+     "pos": "pron",
      "type": null,
      "note": null,
      "examples": [
@@ -10424,7 +10424,7 @@
      "hanzi": "加上",
      "pinyin": "jiāshàng",
      "meaning": "to add; plus",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -12138,7 +12138,7 @@
      "hanzi": "赶上",
      "pinyin": "gǎnshàng",
      "meaning": "to catch up with; make it",
-     "pos": null,
+     "pos": "v",
      "type": null,
      "note": null,
      "examples": [
@@ -13152,7 +13152,7 @@
      "hanzi": "费用",
      "pinyin": "fèiyòng",
      "meaning": "cost; fee",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [
@@ -13212,7 +13212,7 @@
      "hanzi": "差点儿",
      "pinyin": "chàdiǎnr",
      "meaning": "almost; nearly",
-     "pos": null,
+     "pos": "adv",
      "type": null,
      "note": null,
      "examples": [
@@ -14706,7 +14706,7 @@
      "hanzi": "动车",
      "pinyin": "dòngchē",
      "meaning": "high-speed train",
-     "pos": null,
+     "pos": "n",
      "type": null,
      "note": null,
      "examples": [

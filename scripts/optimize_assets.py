@@ -31,12 +31,14 @@ JOBS = [
     ("hero", "band-huihua360", "shanshui-bamboo-square", 1920, False),
     ("hero", "band-survival", "shanshui-hero-plum-sun", 1920, False),
     ("hero", "band-kouyu", "shanshui-watercolor-small", 1920, False),
+    ("hero", "band-zoubian", "crane-pair-fly-sun", 1920, False),
     # 书封（竖构图小景，按系列意象）
     ("books", "cover-hsk", "cover-pavilion-chrysanth", 900, False),
     ("books", "cover-newhsk3", "cover-orchid", 900, False),
     ("books", "cover-huihua360", "cover-bamboo-moongate", 900, False),
     ("books", "cover-survival", "cover-plum-clouds", 900, False),
     ("books", "cover-kouyu", "crane-pair-reeds-river", 900, False),
+    ("books", "cover-zoubian", "crane-flock-sun-pine", 900, False),  # 群鹤越山 = 走遍
     # 实景照（首页缩略列，2x 余量）
     ("photos", "bamboo", "photo-bamboo-rain", 820, False),
     ("photos", "plum-desk", "photo-plum-desk", 820, False),

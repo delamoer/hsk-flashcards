@@ -7,7 +7,7 @@
           <span class="lvl">{{ tag || `HSK ${level}` }}</span>
           <button class="iconbtn" @click.stop="say(word.hanzi)" :title="nowPlaying === word.hanzi ? '停止 Stop' : '朗读 Play'">{{ nowPlaying === word.hanzi ? '⏹' : '🔊' }}</button>
         </div>
-        <div class="char">{{ word.hanzi }}</div>
+        <div class="char" :style="{ '--fit': charFit }">{{ word.hanzi }}</div>
         <div class="peek" :class="{ show: peeking }" v-html="pinyinHtml"></div>
         <button class="hint" @click.stop="peeking = !peeking">👁 拼音 Peek</button>
       </div>
@@ -101,6 +101,12 @@ const pinyinHtml = computed(() =>
   settings.toneColors ? colorPinyin(props.word.pinyin) : props.word.pinyin
 );
 const pos = computed(() => posLabel(props.word.pos));
+// Front 汉字 shrinks with length so long words (圣索菲亚教堂, 不过……罢了) stay inside the card:
+// ≤2 full size · 3 one line · 4 two-by-two · 5–6 two rows of three · 7+ smaller still.
+const charFit = computed(() => {
+  const n = [...(props.word.hanzi || "")].length;
+  return n <= 2 ? 1 : n === 3 ? 0.86 : n === 4 ? 0.8 : n <= 6 ? 0.62 : 0.5;
+});
 
 function say(text) {
   speak(text, { rate: settings.ttsRate });
@@ -214,14 +220,16 @@ function speechOf(zh) {
 .char {
   font-family: var(--serif-cn);
   font-weight: 700;
-  font-size: 72px;
-  line-height: 1;
+  font-size: calc(72px * var(--fit, 1));
+  line-height: 1.05;
   letter-spacing: 4px;
+  text-align: center;
+  text-wrap: balance;
   color: var(--ink);
   text-shadow: 1px 1px 0 var(--gold-lt);
 }
 .fc.focus .char {
-  font-size: 128px;
+  font-size: calc(128px * var(--fit, 1));
 }
 .peek {
   margin-top: 12px;
@@ -426,7 +434,7 @@ function speechOf(zh) {
 
 @media (max-width: 480px) {
   .char {
-    font-size: 56px;
+    font-size: calc(56px * var(--fit, 1));
   }
 }
 </style>
