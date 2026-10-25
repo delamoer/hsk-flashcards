@@ -66,6 +66,12 @@ DC_SOURCES = [
     ("走遍中国_第四册_课文原文.xlsx", "zoubian", 4),
 ]
 
+# 生存汉语一本通：每课一段情境对话，按说话轮次存在「对话逐句」表（一行一轮：课号/课名/说话人/中文发言/拼音/英文），
+# 没有挖空 → 读原文 + 连词成句。第1–3课是拼音知识课，没有对话。
+TURN_SOURCES = [
+    ("生存汉语一本通_课文原文.xlsx", "survival", 1),
+]
+
 SHEET = "教师答案版"
 # Teacher-sheet columns, located by header text (the HSK4 file carries an extra 「册」
 # column, so fixed indices would silently read the wrong fields).
@@ -586,6 +592,38 @@ def convert_dc(fname, series, unit, segmap, lex, gloss):
     return {"series": series, "unit": unit, "lessons": [lessons[n] for n in sorted(lessons)]}, len(lessons), n_texts
 
 
+def convert_turns(fname, series, unit, segmap, lex, gloss):
+    """「对话逐句」book (生存汉语): one row per speaking turn, grouped by 课号 into ONE text
+    per lesson. 拼音/英文 come from the sheet's own columns (TSV fallback)."""
+    wb = openpyxl.load_workbook(ROOT / "sources" / fname, read_only=True, data_only=True)
+    rows = list(wb["对话逐句"].iter_rows(values_only=True))
+    header = [clean(h) or "" for h in rows[0]]
+    turns = [dict(zip(header, r)) for r in rows[1:] if r and r[0]]
+    names = {clean(t["说话人"]) for t in turns if clean(t["说话人"])}
+    lex = lex | {n for n in names if len(n) >= 2}  # 杨无瑕/服务员 tile whole
+    lessons = {}
+    for t in turns:
+        zh = clean(t["中文发言"])
+        if not zh:
+            continue
+        ln = int(t["课号"])
+        L = lessons.setdefault(ln, {"num": ln, "name": clean(t["课名"]) or "", "turns": []})
+        L["turns"].append((clean(t["说话人"]), zh, clean(t.get("拼音")), clean(t.get("英文"))))
+    out = []
+    for ln in sorted(lessons):
+        L = lessons[ln]
+        original = "\n".join(f"{who}：{zh}" if who else zh for who, zh, _, _ in L["turns"])
+        lines = build_lines(original, gloss)
+        for line, (_, _, py, en) in zip(lines, L["turns"]):
+            line["py"], line["en"] = py or line["py"], en or line["en"]
+        out.append({"num": ln, "name": L["name"], "texts": [{
+            "n": 1, "title": "情境对话", "original": original, "lines": lines,
+            "vocab": None, "grammar": None,
+            "sentences": build_sentences(original, segmap, lex), "note": "",
+        }]})
+    return {"series": series, "unit": unit, "lessons": out}, len(out), len(out)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     segmap = load_segments()
@@ -601,6 +639,7 @@ def main():
     jobs = [(f, s, u, lambda f, s, u: convert(f, s, u, segmap, lex, gloss, wordmap)) for f, s, u in SOURCES]
     jobs += [(f, s, u, lambda f, s, u: convert_prose(f, s, u, segmap, lex, gloss)) for f, s, u in PROSE_SOURCES]
     jobs += [(f, s, u, lambda f, s, u: convert_dc(f, s, u, segmap, lex, gloss)) for f, s, u in DC_SOURCES]
+    jobs += [(f, s, u, lambda f, s, u: convert_turns(f, s, u, segmap, lex, gloss)) for f, s, u in TURN_SOURCES]
     for fname, series, unit, run in jobs:
         data, n_lessons, n_texts = run(fname, series, unit)
         key = f"{series}-{unit}"

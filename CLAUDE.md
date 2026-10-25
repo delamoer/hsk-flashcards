@@ -70,7 +70,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   **`{系列}_{册}_{类型}.xlsx`** so a series' branches sort together and a missing branch is obvious at a
   glance. 系列/册: `HSK{1..6}` · `新HSK3.0_第{一,二,三}册` + `新HSK3.0_第四册{上,下}`（教材第四册分上下两本，站内合为一册）·
   `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `新时代汉语口语_中级{上,下}`（unit 3/4）· `走遍中国_第四册`（series `zoubian`, unit = 册号）· `汉语拼音`. 类型 (exactly seven): `词汇闪卡表` ·
-  `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6、走遍中国）· `语法主表` · `语法零基础版` · `聊天问题` ·
+  `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6、走遍中国、生存汉语）· `语法主表` · `语法零基础版` · `聊天问题` ·
   `常见搭配`（新HSK3.0 第一/二/三册 + HSK5；same layout as the 闪卡表 + 搭配 in col 11 — `convert.py`'s `COLLOC_SOURCES`
   matches it onto the 闪卡表 words by (课次, 汉字, 拼音), so ids stay the 闪卡表's; unmatched rows are warned.
   `HSK5_常见搭配.xlsx` is also hand-sorted in textbook order, so it's in `ORDER_BY_COLLOC`: its row order
@@ -204,6 +204,11 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   proofread against the book; the 21 readings were OCR wrecks rebuilt from context (no PDF to compare) — gaps are
   shown as 「……」 and every guess is listed in the 「网站校对记录」 sheet. Speaker names join the lexicon for this
   book so 永民/史蒂夫 tile whole.
+- **生存汉语 课文** (`TURN_SOURCES` → `convert_turns`): `生存汉语一本通_课文原文.xlsx`, sheet 「对话逐句」 = one row
+  per speaking turn (课号/课名/说话人/中文发言 + 「拼音」「英文」 columns — the gloss lives there, not in text_gloss.tsv).
+  课号 4–39 = the flashcard lesson nums (1–3 are pinyin lessons with no dialogue); one 「情境对话」 text per lesson.
+  Speakers were checked against the book; the wording was proofread from context only (Oct 2026, 108 fixes, ⚠ ones
+  in the 「网站校对记录」 sheet) — the book's own 「最终验收」 is still 待终校, so check there before trusting a line.
 - **会话360 课文 come from a DIFFERENT converter** (`scripts/convert_360.py`, not `convert_texts.py`). Source =
   the four `sources/标准汉语会话360句{1,2,3,4}_课文挖空练习.xlsx` → `src/data/texts/huihua360-{1,2,3,4}.json`
   (+ merged into `texts/meta.json`, HSK/newhsk3 entries kept), so `huihua360` gets the same 读原文 (`ReadPanel`)
