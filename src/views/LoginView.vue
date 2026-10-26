@@ -66,6 +66,10 @@
           没有账号？请联系老师开通<br />
           <span>No account? Ask your teacher to create one.</span>
         </p>
+        <p class="rights">
+          © 2026 学中文 Learn Chinese · 保留所有权利 All rights reserved<br />
+          未经许可禁止复制、转载 · No copying or redistribution without permission
+        </p>
       </form>
     </div>
   </div>
@@ -434,6 +438,7 @@ function translateError(msg) {
   line-height: 1.6;
 }
 .hint span { font-family: var(--serif-en); font-style: italic; font-size: 12px; font-weight: 500; color: var(--muted); }
+.rights { margin-top: 18px; text-align: center; font-size: 11px; line-height: 1.6; color: var(--muted); opacity: .85; }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; }

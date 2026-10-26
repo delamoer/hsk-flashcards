@@ -123,6 +123,11 @@
         <div class="foot-brand"><span class="fmark">学</span> 学中文 <i>Learn Chinese</i></div>
         <div class="foot-tag">中文连接你我与更广阔的世界 · Chinese bridges hearts and opens new horizons</div>
         <div class="foot-links"><span>关于我们</span><span>使用帮助</span><span>联系我们</span></div>
+        <div class="foot-rights">
+          © 2026 学中文 Learn Chinese · 保留所有权利 All rights reserved<br />
+          本站原创内容（练习题、翻译、注音、讲解、设计与代码）未经书面许可禁止复制、转载或用于其他网站及商业用途；课文、词表等教材内容版权归原出版社所有，本站仅供本班学生学习使用。<br />
+          <i>Original content of this site may not be copied or redistributed without written permission. Textbook materials remain the property of their publishers and are used here for our students' study only.</i>
+        </div>
       </footer>
     </div>
   </div>
@@ -311,6 +316,8 @@ function bg(img) {
 .foot-tag { font-family: var(--serif-en); font-style: italic; font-size: 13px; color: var(--muted); margin: 8px 0 12px; }
 .foot-links { display: flex; gap: 22px; justify-content: center; font-size: 13px; color: var(--muted); }
 .foot-links span { transition: .2s; }
+.foot-rights { max-width: 760px; margin: 16px auto 0; padding: 0 18px; font-size: 11.5px; line-height: 1.7; color: var(--muted); }
+.foot-rights i { font-style: normal; font-size: 11px; opacity: .85; }
 .foot-links span:hover { color: var(--cinnabar-dk); }
 
 /* ── responsive ─────────────────────── */
