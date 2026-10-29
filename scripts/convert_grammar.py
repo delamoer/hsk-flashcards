@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""语法主表 → src/data/grammar/{series}-{unit}.json (+ grammar/meta.json).
+"""语法主表 → src/data/grammar/{series}-{unit}.json (+ grammar/meta.json, grammar/index.json).
 
 Source of truth: the nine `sources/*_语法主表.xlsx` files. Each file's first
 sheet ("语法总表" / "语法语言点总表") holds one row per grammar point, keyed by 课次
@@ -398,6 +398,7 @@ def main():
         files.setdefault(target, []).append(f)
 
     meta = {}
+    index = []  # 语法汇总页的轻量索引（只含列表/搜索要用的字段，完整卡片仍按册懒加载）
     total_pts = 0
     for target in sorted(files):
         key, data, m = None, None, None
@@ -419,11 +420,24 @@ def main():
             json.dump(data, fh, ensure_ascii=False, separators=(",", ":"))
         meta[key] = m
         total_pts += m["pointCount"]
+        for l in data["lessons"]:
+            for i, p in enumerate(l["points"]):
+                index.append({
+                    "b": key, "l": l["num"], "lt": l.get("title", ""), "i": i,
+                    "name": p.get("name", ""), "py": p.get("pinyin", ""),
+                    "type": p.get("type", ""), "typeEn": p.get("typeEn", ""),
+                    "st": p.get("structure", ""), "stEn": p.get("structureEn", ""),
+                    "en": p.get("explainEn", ""),
+                    "eg": "|".join(e["zh"] for e in p["examples"] if e.get("zh")),
+                })
         tag = f"  例句拼音 {n_py}" if n_py else "  （主表，无例句拼音）"
         print(f"  ✓ {key}: {m['lessonCount']} 课, {m['pointCount']} 语法点{tag}")
     with open(os.path.join(OUT_DIR, "meta.json"), "w", encoding="utf-8") as fh:
         json.dump(meta, fh, ensure_ascii=False, indent=0)
-    print(f"共 {len(meta)} 册, {total_pts} 语法点 → {OUT_DIR}")
+    # index.json 无短横线，不会被 grammar.js 的 "./grammar/*-*.json" 当成一册
+    with open(os.path.join(OUT_DIR, "index.json"), "w", encoding="utf-8") as fh:
+        json.dump(index, fh, ensure_ascii=False, separators=(",", ":"))
+    print(f"共 {len(meta)} 册, {total_pts} 语法点 → {OUT_DIR}（+ index.json 汇总索引）")
 
 
 if __name__ == "__main__":

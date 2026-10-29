@@ -49,6 +49,7 @@
 
 <script setup>
 import { ref, computed, watch } from "vue";
+import { useRoute } from "vue-router";
 import { stop as stopAudio } from "@/utils/tts";
 import ReadPanel from "@/components/ReadPanel.vue";
 import FlashcardsPanel from "@/components/FlashcardsPanel.vue";
@@ -60,6 +61,7 @@ import { getLesson } from "@/data";
 import { getSeries } from "@/data/courses.js";
 import { seriesBand, motifMountainFar, motifPavilion } from "@/assets/img.js";
 
+const route = useRoute();
 const props = defineProps({
   series: { type: String, required: true },
   unit: { type: [Number, String], required: true },
@@ -109,7 +111,8 @@ watch(
   () => [props.series, props.unit, props.lesson],
   async ([s, u, l]) => {
     loading.value = true;
-    tab.value = "read";
+    // ?tab=grammar etc. deep-links a tab (used by 语法汇总's 「去这一课学习」).
+    tab.value = tabs.some((t) => t.key === route.query.tab) ? route.query.tab : "read";
     lesson.value = await getLesson(s, u, l);
     loading.value = false;
   },

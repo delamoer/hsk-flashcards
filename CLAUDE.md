@@ -30,7 +30,7 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
    independent too (`getDiscussionLesson`), so it also works for text-less units. Each tab
    gracefully shows a "本课暂无…" placeholder when its data is missing.
 
-Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **拼音 Pinyin** (`/pinyin`) · **中国风 Music** (`/music`) · **我的词 My words** (`/my-words`),
+Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **拼音 Pinyin** (`/pinyin`) · **语法 Grammar** (`/grammar`) · **中国风 Music** (`/music`) · **我的词 My words** (`/my-words`),
 朱红印章 logo. 课文 is no longer a top-level nav item — it lives inside each lesson hub; the legacy
 `/texts/...` routes still exist (`TextsHomeView`/`TextsUnitView`/`TextView`) but aren't linked from nav.
 **我的词** doubles as global search (范围切换: 我的词 / 所有课程).
@@ -288,6 +288,18 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   type well, so there's no input. Each exercise's Chinese instruction prefix (填空/翻译/排序…) is shown bilingually
   via `instr`/`instrEn`/`body` (split in `convert_grammar.py` using the in-script `Q_INSTR_EN` map, 58 prefixes;
   the ~4% unmapped/compound instructions fall back to the raw Chinese question).
+- **语法汇总 Grammar index** (`/grammar`, `GrammarIndexView.vue`) — every grammar point of every book in one place:
+  教材/册/课/类型 filters + fuzzy search (中文 · 拼音 with or without tones · English; 省略号 is a wildcard so 越来越
+  finds 越…越…; optional 「也搜例句」). No query → grouped by 书·课 in book order; with a query → one list ranked by
+  `rank()` (name starts with the term first). Filters are mirrored in `?q=&s=&b=&l=&t=&eg=` so 返回 from a lesson lands
+  on the same view. Desktop (>1000px): list on the left flowing with the page (deliberately NO inner scroll box) + a
+  sticky 展台 on the right showing the selected card (↑↓ / 上一条·下一条); narrow screens tap a row to expand it in place.
+  「全部展开」 needs a book picked. **The card is `GrammarCard.vue`, shared with the lesson hub's 语法 tab** (only the
+  「出自…去这一课学习」 footer slot and the `large` size are index-only) — change the card there, both follow. The
+  list/search runs on `src/data/grammar/index.json` (~110 KB gz, list fields only, dynamic-imported by
+  `src/utils/grammarSearch.js`), **written by `convert_grammar.py` in the same run** — adding a book's grammar needs no
+  extra step; full point data is lazy-loaded per book when a card opens. 「去这一课学习」 links
+  `…/lesson/:n?tab=grammar` (`LessonHubView` honors `?tab=`). No audio on grammar examples (taught in class).
 - **话题讨论 (Discussion) data is generated too.** Source = the fourteen `sources/*_聊天问题.xlsx`
   (HSK1–5 + 新HSK3.0 第一/二/三册 + 第四册上/下 + 标准汉语会话360句1–4). `scripts/convert_discussion.py` → `src/data/discussion/{series}-{unit}.json`
   (+ `discussion/meta.json`), lazy-loaded via `src/data/discussion.js` (same glob/meta shape as grammar).

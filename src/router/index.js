@@ -25,6 +25,7 @@ const routes = [
   { path: "/account", name: "account", component: () => import("@/views/AccountView.vue") },
   { path: "/my-words", name: "mywords", component: () => import("@/views/MyWordsView.vue") },
   { path: "/pinyin", name: "pinyin", component: () => import("@/views/PinyinView.vue") },
+  { path: "/grammar", name: "grammar", component: () => import("@/views/GrammarIndexView.vue") },
   { path: "/music", name: "music", component: () => import("@/views/MusicView.vue") },
   { path: "/admin", name: "admin", component: () => import("@/views/AdminView.vue") },
 
@@ -107,6 +108,8 @@ const router = createRouter({
   scrollBehavior(to, from) {
     // Switching songs only changes ?song= — keep the scroll position.
     if (to.name === "music" && from.name === "music") return false;
+    // 语法汇总 mirrors its filters into ?q=… — typing must not jump to the top.
+    if (to.name === "grammar" && from.name === "grammar") return false;
     return { top: 0 };
   },
 });
