@@ -13,8 +13,11 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
 1. **课程总览 Library** (`/`, `LibraryView.vue`) — its 「01 教材」 section is `TextbookCarousel.vue`: a 3D coverflow
    shelf + ink-wash background swap, driven entirely by `courseRegistry` (no per-course code; a series without a
    cover / band image falls back to a series-color cover / wash; >7 series swaps the dots for a 「03 / 12」 counter).
-   All home sections share one height (`--sec-h` on `.sec`, sized for the shelf) — raise it rather than squeezing
-   the shelf. Pick a course series (书函卡): 标准HSK / 新HSK3.0 /
+   The 01 panel's height is `--sec-h` on `.sec` (sized for the shelf) — raise it rather than squeezing the shelf.
+   Below it, 02 拼音 · 03 语法 · 04 中国风 · 05 我的词 are a 2×2 grid of `.card`s (one column ≤920px), all in the same
+   grammar: a dashed notebook list on the left + a tilted paper object on the right (田字格 马 / 语法签 把 / 老照片 MV
+   cover / 复习卡 学习). Only each card's bottom link navigates (中国风's song rows also deep-link `?song=N`); the
+   grammar list is display-only. Mind adjacent characters on the paper objects — 妈 next to 比 read as a slur. Pick a course series (书函卡): 标准HSK / 新HSK3.0 /
    会话360 / 生存汉语 / 新时代汉语口语 / 走遍中国. (A series may set `single:true` to jump straight to its lessons, skipping 选册;
    currently none do — 生存汉语 is now a normal multi-book series with one book so far.)
 2. **选册/级 Books** (`/course/:series`, `SeriesBooksView.vue`) — series-specific 门面 hero + book/level
