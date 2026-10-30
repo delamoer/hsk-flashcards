@@ -1,0 +1,1 @@
+import{L as r,w as a}from"./index-Dl-no-1C.js";const s="hsk-flashcards-settings-v1",e={toneColors:!1,ttsRate:.85};function o(){try{return{...e,...JSON.parse(localStorage.getItem(s))||{}}}catch{return{...e}}}const t=r(o());a(t,()=>{try{localStorage.setItem(s,JSON.stringify(t))}catch{}},{deep:!0});function c(){return{settings:t}}export{c as u};
