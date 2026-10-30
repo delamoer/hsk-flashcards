@@ -177,6 +177,20 @@ def collect_music() -> list[str]:
     return texts
 
 
+def collect_reading() -> list[str]:
+    """课外阅读 — ReadingView plays each paragraph (speaker label stripped) and each 生词 when tapped."""
+    seen: set[str] = set()
+    texts: list[str] = []
+    for f in sorted((DATA_DIR / "reading").glob("*-*.json")):
+        data = json.loads(f.read_text(encoding="utf-8"))
+        for lesson in data["lessons"]:
+            for t in [p["zh"] for p in lesson["paras"]] + [w["w"] for w in lesson["vocab"]]:
+                if t and t not in seen:
+                    seen.add(t)
+                    texts.append(t)
+    return texts
+
+
 def collect_all_texts() -> list[str]:
     seen: set[str] = set()
     texts: list[str] = []
@@ -248,6 +262,7 @@ async def main():
     parser.add_argument("--discussion", action="store_true", help="Generate for 话题讨论 questions")
     parser.add_argument("--collocations", action="store_true", help="Generate for 词汇详解 常见搭配")
     parser.add_argument("--music", action="store_true", help="Generate for 中国风 Music song words")
+    parser.add_argument("--reading", action="store_true", help="Generate for 课外阅读 paragraphs + words")
     parser.add_argument("--concurrency", type=int, default=8, help="Concurrent TTS requests")
     args = parser.parse_args()
 
@@ -255,7 +270,10 @@ async def main():
     manifest = load_manifest()
     already = len(manifest)
 
-    if args.music:
+    if args.reading:
+        texts = collect_reading()
+        label = "课外阅读 paragraphs + words"
+    elif args.music:
         texts = collect_music()
         label = "中国风 Music words"
     elif args.collocations:

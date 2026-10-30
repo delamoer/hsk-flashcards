@@ -14,7 +14,8 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
    shelf + ink-wash background swap, driven entirely by `courseRegistry` (no per-course code; a series without a
    cover / band image falls back to a series-color cover / wash; >7 series swaps the dots for a 「03 / 12」 counter).
    The 01 panel's height is `--sec-h` on `.sec` (sized for the shelf) — raise it rather than squeezing the shelf.
-   Below it, 02 拼音 · 03 语法 · 04 中国风 · 05 我的词 are a 2×2 grid of `.card`s (one column ≤920px), all in the same
+   Under it, **02 课外阅读** is one full-width row (title · book cover · the first 6 stories in two columns), driven by
+   `src/data/reading/meta.json` (first book). Below that, 03 拼音 · 04 语法 · 05 中国风 · 06 我的词 are a 2×2 grid of `.card`s (one column ≤920px), all in the same
    grammar: a dashed notebook list on the left + a tilted paper object on the right (田字格 马 / 语法签 把 / 老照片 MV
    cover / 复习卡 学习). Only each card's bottom link navigates (中国风's song rows also deep-link `?song=N`); the
    grammar list is display-only. Mind adjacent characters on the paper objects — 妈 next to 比 read as a slur. Pick a course series (书函卡): 标准HSK / 新HSK3.0 /
@@ -33,7 +34,7 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
    independent too (`getDiscussionLesson`), so it also works for text-less units. Each tab
    gracefully shows a "本课暂无…" placeholder when its data is missing.
 
-Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **拼音 Pinyin** (`/pinyin`) · **语法 Grammar** (`/grammar`) · **中国风 Music** (`/music`) · **我的词 My words** (`/my-words`),
+Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **阅读 Reading** (`/reading`) · **拼音 Pinyin** (`/pinyin`) · **语法 Grammar** (`/grammar`) · **中国风 Music** (`/music`) · **我的词 My words** (`/my-words`),
 朱红印章 logo. 课文 is no longer a top-level nav item — it lives inside each lesson hub; the legacy
 `/texts/...` routes still exist (`TextsHomeView`/`TextsUnitView`/`TextView`) but aren't linked from nav.
 **我的词** doubles as global search (范围切换: 我的词 / 所有课程).
@@ -58,6 +59,7 @@ uv run --with openpyxl --with pypinyin python3 scripts/convert_360.py   # xlsx �
 #   entries); convert_360.py merges them back. Always run 360 after texts, never texts alone.
 uv run --with openpyxl python3 scripts/convert_grammar.py          # xlsx → src/data/grammar/*.json
 uv run --with openpyxl --with pypinyin python3 scripts/convert_discussion.py  # xlsx → src/data/discussion/*.json (话题讨论)
+uv run --with openpyxl python3 scripts/convert_reading.py          # xlsx → src/data/reading/*.json (课外阅读)
 
 # Pinyin section (not npm scripts — run via uv directly):
 uv run --with openpyxl python3 scripts/convert_pinyin.py            # xlsx → src/data/pinyin.json
@@ -72,8 +74,9 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 - **Data is generated, not hand-written.** Source of truth = the xlsx files in `sources/`, named
   **`{系列}_{册}_{类型}.xlsx`** so a series' branches sort together and a missing branch is obvious at a
   glance. 系列/册: `HSK{1..6}` · `新HSK3.0_第{一,二,三}册` + `新HSK3.0_第四册{上,下}`（教材第四册分上下两本，站内合为一册）·
-  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `新时代汉语口语_中级{上,下}`（unit 3/4）· `走遍中国_第四册`（series `zoubian`, unit = 册号）· `汉语拼音`. 类型 (exactly seven): `词汇闪卡表` ·
+  `标准汉语会话360句{1..4}` · `生存汉语一本通` · `新时代汉语口语_初级{上,下}`（series `kouyu`，unit 1/2，今后的课文/语法/聊天问题照此命名）· `新时代汉语口语_中级{上,下}`（unit 3/4）· `走遍中国_第四册`（series `zoubian`, unit = 册号）· `中文天天读_2B`（课外阅读读物, not a course）· `汉语拼音`. 类型 (exactly eight): `词汇闪卡表` ·
   `课文挖空练习` · `课文原文`（只有正文、没有挖空，HSK5/6、走遍中国、生存汉语）· `语法主表` · `语法零基础版` · `聊天问题` ·
+  `分级读物`（a whole graded reader in one workbook — 课外阅读, see below） ·
   `常见搭配`（新HSK3.0 第一/二/三册 + HSK5；same layout as the 闪卡表 + 搭配 in col 11 — `convert.py`'s `COLLOC_SOURCES`
   matches it onto the 闪卡表 words by (课次, 汉字, 拼音), so ids stay the 闪卡表's; unmatched rows are warned.
   `HSK5_常见搭配.xlsx` is also hand-sorted in textbook order, so it's in `ORDER_BY_COLLOC`: its row order
@@ -318,6 +321,22 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   surfaced behind an off-by-default 拼音 pill in `DiscussionPanel`, matching the ReadPanel convention.
   Header rows sit on sheet row 4 (title + blurb + blank above), and some sheets trail 说明/URL rows —
   `header_row()` finds the header and non-integer 课次 rows are skipped.
+- **课外阅读 Reading** (`/reading` shelf → `/reading/:book/:n`, `ReadingShelfView` / `ReadingView`) — graded readers,
+  independent of the courses. Source = `sources/{丛书}_{级别}_分级读物.xlsx`, one workbook per book (so far only
+  `中文天天读_2B_分级读物.xlsx` = 外研社《自行车王国》, 25 stories); `scripts/convert_reading.py` maps filename → book via
+  its `BOOKS` list (key = URL slug) and writes `src/data/reading/{key}.json` (lazy, one chunk per book, via
+  `src/data/reading.js`) + `reading/meta.json` (titles/counts only — the shelf and the home row never load a book).
+  Sheets: 课文汇总 (+ 导读英文) · 段落对照 (汉字/拼音/英文 per paragraph) · 生词 · 语言点 · 想一想 · 练习 (判断正误 +
+  选择正确答案 with 选项A–D) · 小知识 · 说明 · 网站校对记录. The book was OCR'd from a scanned PDF: its **pinyin is the
+  book's own** (never regenerate it); the OCR fixes made in Oct 2026 are listed in 网站校对记录. The book has NO paragraph
+  English and its 选择题 had only stem + answer letter — the 英文/导读英文 columns and the 选项A–D were written for the
+  site (correct option kept at the book's answer letter). A paragraph opening 「老板：」 is a dialogue turn (shown in a
+  speaker column); a label containing 说/问/是/天 is narration (「盲人说：」「第一天：」). Page layout (the user's pick
+  among mockups): 线装书页 with a double 版框 + sticky right 夹签 (生词 / 语言点); 拼音 · 生词 highlight · 英文 toggles
+  (生词 on, the others off); tapping a highlighted word lights its 夹签 entry (narrow screens: a popover); 🔊 per
+  paragraph and per 生词 (`gen_audio.py --reading`). 练习 / 想一想 / 小知识 sit under the text; reaching them marks the
+  story 已读 (`useReading`, localStorage `hsk-reading-read-v1`, not synced) → stamp on the shelf.
+  To add a book: name the xlsx by the convention, add a `BOOKS` record, run the converter + `gen_audio.py --reading`.
 - **中国风 Music** (`/music`, `MusicView.vue`) — 43 Chinese-style pop songs as **embedded YouTube MVs**
   (`youtube-nocookie.com`, official artist/label channels only). We host NO audio/video: the songs are
   commercially copyrighted (a public repo/site must not serve them — and a DMCA on GitHub would take the
@@ -355,7 +374,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
   works on GitHub Pages without server rewrites. Course flow (four levels): `/` (LibraryView) →
   `/course/:series` (SeriesBooksView) → `/course/:series/:unit` (LessonListView) →
-  `/course/:series/:unit/lesson/:lesson` (LessonHubView), plus `.../quiz` `.../print`. Also `/pinyin`,
+  `/course/:series/:unit/lesson/:lesson` (LessonHubView), plus `.../quiz` `.../print`. Also `/pinyin`, `/reading[/:book/:n]`,
   `/music`, `/my-words`, `/search`, `/login`, `/account`, `/admin`, the legacy 课文 flow `/texts[/:series/:unit[/:lesson/:n]]`
   (kept working, not in nav), and legacy `/hsk/:level/...` redirects. All routes are behind a login wall
   when Supabase is configured. **App-shell theming** (`App.vue`) still applies `seriesTheme(route.params.series)`
@@ -396,7 +415,8 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
     **Whenever you add content with a 🔊, add a collector and regenerate** — the scopes are
     `--all` (words + examples), `--texts` (课文 lines + every 连词成句 sentence; globs `texts/*-*.json`,
     so a new 课文 unit needs no code change), `--discussion` (话题讨论 questions), `--collocations`
-    (词汇详解 搭配; any unit whose words carry `collocations`) and `--music` (中国风 「歌里的词」). Generating only
+    (词汇详解 搭配; any unit whose words carry `collocations`), `--music` (中国风 「歌里的词」) and `--reading`
+    (课外阅读 paragraphs + 生词; globs `reading/*-*.json`). Generating only
     writes to the gitignored `audio-src/`; the site keeps falling back to robot TTS until
     `upload_audio.py` pushes the new MP3s + manifest to Storage (idempotent, skips existing).
   - *Pinyin*: **real human recordings** (hugolpz/audio-cmn, CC-BY-SA — credit shown in PinyinView footer)

@@ -25,6 +25,13 @@ const routes = [
   { path: "/account", name: "account", component: () => import("@/views/AccountView.vue") },
   { path: "/my-words", name: "mywords", component: () => import("@/views/MyWordsView.vue") },
   { path: "/pinyin", name: "pinyin", component: () => import("@/views/PinyinView.vue") },
+  { path: "/reading", name: "reading", component: () => import("@/views/ReadingShelfView.vue") },
+  {
+    path: "/reading/:book/:n",
+    name: "reading-lesson",
+    component: () => import("@/views/ReadingView.vue"),
+    props: (route) => ({ book: route.params.book, n: Number(route.params.n) }),
+  },
   { path: "/grammar", name: "grammar", component: () => import("@/views/GrammarIndexView.vue") },
   { path: "/music", name: "music", component: () => import("@/views/MusicView.vue") },
   { path: "/admin", name: "admin", component: () => import("@/views/AdminView.vue") },

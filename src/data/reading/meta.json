@@ -1,0 +1,188 @@
+{
+ "tiantiandu-2b": {
+  "title": "自行车王国",
+  "titleEn": "Bicycle Kingdom",
+  "series": "中文天天读",
+  "seriesEn": "Reading China",
+  "level": "2B",
+  "chars": 5509,
+  "vocab": 203,
+  "lessons": [
+   {
+    "n": 1,
+    "title": "盲人的灯笼",
+    "en": "The Blindman's Lantern",
+    "chars": 130,
+    "vocab": 7
+   },
+   {
+    "n": 2,
+    "title": "汉语的发音有点儿难",
+    "en": "Pronouncing Chinese Is a Little Difficult",
+    "chars": 208,
+    "vocab": 9
+   },
+   {
+    "n": 3,
+    "title": "好",
+    "en": "Good",
+    "chars": 211,
+    "vocab": 5
+   },
+   {
+    "n": 4,
+    "title": "穷和尚和富和尚",
+    "en": "Poor Monk, Rich Monk",
+    "chars": 160,
+    "vocab": 8
+   },
+   {
+    "n": 5,
+    "title": "砍价",
+    "en": "Bargaining",
+    "chars": 208,
+    "vocab": 9
+   },
+   {
+    "n": 6,
+    "title": "自行车王国",
+    "en": "Bicycle Kingdom",
+    "chars": 193,
+    "vocab": 11
+   },
+   {
+    "n": 7,
+    "title": "看风景还是拍照片？",
+    "en": "Sight-seeing or Photographing?",
+    "chars": 265,
+    "vocab": 7
+   },
+   {
+    "n": 8,
+    "title": "喝醉了",
+    "en": "Drunk Talk",
+    "chars": 178,
+    "vocab": 8
+   },
+   {
+    "n": 9,
+    "title": "磨斧子",
+    "en": "Whet the Axe",
+    "chars": 201,
+    "vocab": 10
+   },
+   {
+    "n": 10,
+    "title": "北京的出租车",
+    "en": "Taxis in Beijing",
+    "chars": 208,
+    "vocab": 8
+   },
+   {
+    "n": 11,
+    "title": "中国人越来越“贵”？",
+    "en": "Rich or Expensive?",
+    "chars": 220,
+    "vocab": 7
+   },
+   {
+    "n": 12,
+    "title": "黑猩猩戒烟",
+    "en": "The Chimpanzee Quitted Smoking",
+    "chars": 219,
+    "vocab": 10
+   },
+   {
+    "n": 13,
+    "title": "一对好朋友：量词和名词",
+    "en": "Close Companions: Measure Words and Nouns",
+    "chars": 228,
+    "vocab": 8
+   },
+   {
+    "n": 14,
+    "title": "十块钱的自行车",
+    "en": "A Ten-Yuan Bike",
+    "chars": 257,
+    "vocab": 7
+   },
+   {
+    "n": 15,
+    "title": "聪明的男孩儿",
+    "en": "A Clever Boy",
+    "chars": 240,
+    "vocab": 8
+   },
+   {
+    "n": 16,
+    "title": "哪里哪里",
+    "en": "Where Where",
+    "chars": 229,
+    "vocab": 9
+   },
+   {
+    "n": 17,
+    "title": "三个小板凳",
+    "en": "Three Little Stools",
+    "chars": 213,
+    "vocab": 10
+   },
+   {
+    "n": 18,
+    "title": "东方小巨人——姚明",
+    "en": "Yao Ming, a New Asian Star",
+    "chars": 300,
+    "vocab": 11
+   },
+   {
+    "n": 19,
+    "title": "马的眼睛怎么了？",
+    "en": "What Is the Matter with the Horse's Eyes?",
+    "chars": 164,
+    "vocab": 7
+   },
+   {
+    "n": 20,
+    "title": "有趣的心理测试",
+    "en": "An Interesting Psychological Test",
+    "chars": 278,
+    "vocab": 9
+   },
+   {
+    "n": 21,
+    "title": "半夜电话",
+    "en": "A Midnight Call",
+    "chars": 160,
+    "vocab": 6
+   },
+   {
+    "n": 22,
+    "title": "恋爱日记",
+    "en": "A Diary of Her Love",
+    "chars": 280,
+    "vocab": 8
+   },
+   {
+    "n": 23,
+    "title": "伤心的故事",
+    "en": "A Sad Story",
+    "chars": 248,
+    "vocab": 8
+   },
+   {
+    "n": 24,
+    "title": "最好的消息",
+    "en": "The Best News",
+    "chars": 285,
+    "vocab": 8
+   },
+   {
+    "n": 25,
+    "title": "钱越多就越快乐吗？",
+    "en": "More Money, More Happiness?",
+    "chars": 226,
+    "vocab": 6
+   }
+  ]
+ }
+}

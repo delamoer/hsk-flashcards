@@ -7,6 +7,7 @@
 
     <nav v-if="showNav" class="mainnav">
       <router-link to="/courses" class="navlink" :class="{ on: isCourses }">选书 <i>Books</i></router-link>
+      <router-link to="/reading" class="navlink" :class="{ on: route.name === 'reading' || route.name === 'reading-lesson' }">阅读 <i>Reading</i></router-link>
       <router-link to="/pinyin" class="navlink" :class="{ on: route.name === 'pinyin' }">拼音 <i>Pinyin</i></router-link>
       <router-link to="/grammar" class="navlink" :class="{ on: route.name === 'grammar' }">语法 <i>Grammar</i></router-link>
       <router-link to="/music" class="navlink" :class="{ on: route.name === 'music' }">中国风 <i>Music</i></router-link>
