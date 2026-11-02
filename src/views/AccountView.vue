@@ -47,6 +47,16 @@
       </div>
     </div>
 
+    <!-- 学习记录告知（学生端无感记录，老师在 /admin 可见） -->
+    <div class="lognote">
+      <span class="ln-seal">记</span>
+      <div>
+        <p v-if="isAdmin" class="adm">学生看到的提示 · What students see</p>
+        <p>老师可以看到你最近 90 天的学习记录——每天学了多久、学了哪些课，方便了解你的进度、更好地帮你。这些记录只有老师能看到。</p>
+        <p class="en">Your teacher can see your study log for the last 90 days — how long you study each day and which lessons — to follow your progress and help you better. Only your teacher can see it.</p>
+      </div>
+    </div>
+
     <!-- 3 + 4 · 偏好设置 / 账号安全 -->
     <div class="cols">
       <div class="panel">
@@ -354,6 +364,46 @@ async function doSignOut() {
   letter-spacing: 1.5px;
   color: var(--ink);
   margin: 0 4px 12px;
+}
+
+/* 学习记录告知 */
+.lognote {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin: -10px 4px 26px;
+  padding: 14px 18px;
+  border: 1px dashed var(--line);
+  border-radius: var(--r-lg);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--body);
+}
+.lognote .ln-seal {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  margin-top: 2px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--cinnabar);
+  border-radius: 5px;
+  font-family: var(--serif-cn);
+  font-weight: 900;
+  font-size: 14px;
+  color: var(--cinnabar);
+}
+.lognote .adm {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--gold-deep);
+}
+.lognote .en {
+  margin-top: 2px;
+  font-family: var(--serif-en);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--muted);
 }
 
 /* dashboard */

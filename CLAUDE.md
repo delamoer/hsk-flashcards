@@ -345,7 +345,10 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   (生词 on, the others off); tapping a highlighted word lights its 夹签 entry (narrow screens: a popover); 🔊 per
   paragraph and per 生词 (`gen_audio.py --reading`). 练习 / 想一想 / 小知识 sit under the text. **已读 is manual**: a
   「读完了 ✓」 button at the end of the text (with 撤销) — the user rejected scroll-based detection (short stories got
-  marked on open). `useReading`, localStorage `hsk-reading-read-v1`, not synced → shelf %, 目录 stamps, 继续读.
+  marked on open). `useReading` → shelf %, 目录 stamps, 继续读. Logged in it syncs to the `reading` jsonb column of the
+  Supabase `progress` row (`{book:{n: ISO time}}`, upserted alone so it never touches the flashcard `data`; SQL in
+  `supabase/sql/`); anonymous / failed saves fall back to localStorage `hsk-reading-read-v1`, merged up on next load.
+  `/admin` reads it for each student's 课外阅读 list.
   To add a book: name the xlsx by the convention, add a `BOOKS` record (+ a cover image job), run the converter +
   `gen_audio.py --reading`.
 - **中国风 Music** (`/music`, `MusicView.vue`) — 43 Chinese-style pop songs as **embedded YouTube MVs**
@@ -391,6 +394,17 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   when Supabase is configured. **App-shell theming** (`App.vue`) still applies `seriesTheme(route.params.series)`
   per-series accent on top of the global classical base. **Dead code from the pre-redesign flow**
   (`HomeView.vue`, `LessonView.vue`, `LessonCard.vue`, `CourseUnitCard.vue`) is unused/unrouted — safe to delete.
+- **学习足迹 + /admin** (`useActivity.js`, `AdminView.vue`; SQL in `supabase/sql/2026-11-03_activity.sql`): logged-in
+  students are tracked silently (the 我的账户 page tells them, gently — wording is the user's call). One `activity` row per
+  student per LOCAL day: `minutes` + `counts` jsonb `{"m:{ctx}": minutes, "c:{ctx}": clicks}`, ctx = `{kind}|{ref}`
+  (`flash|hsk-1/3`, `read|tiantiandu-1a/4`, `music|`…). The place comes from the route (`contextOfRoute`) and, in a
+  lesson, from LessonHubView's tab (`setActivityContext`) — no per-component hooks, so new pages need no wiring. A minute
+  counts when the tab is visible and there was input in the last 2 min; tallies flush every minute + on hide via the
+  `log_activity` RPC (security definer: clamps input, upserts the day, deletes the student's rows older than 90 days).
+  RLS: students read their own rows, `is_admin()` reads all; no direct writes. `/admin` = 签到总表 (students × last 14
+  days, minutes per cell, 近 7 天, 需要提醒 = no minutes/progress save in 7 days) + a per-student detail (90-day heatmap,
+  daily log by place, reading, flashcards) + 管理 ▾ / detail-header buttons for rename / reset password / delete; 新建学生
+  is a modal. Admins are excluded from the board. When adding a kind, add it to `KINDS` in AdminView.
 - **State** lives in composables backed by localStorage:
   - `useProgress` → per-word `{ s: "new"|"known"|"review", star }` (key `hsk-flashcards-progress-v1`)
   - `useSettings` → `{ toneColors, ttsRate }` (key `hsk-flashcards-settings-v1`)

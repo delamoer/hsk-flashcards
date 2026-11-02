@@ -59,6 +59,7 @@ import GrammarNotesPanel from "@/components/GrammarNotesPanel.vue";
 import DiscussionPanel from "@/components/DiscussionPanel.vue";
 import { getLesson } from "@/data";
 import { getSeries } from "@/data/courses.js";
+import { setActivityContext, lessonContext } from "@/composables/useActivity";
 import { seriesBand, motifMountainFar, motifPavilion } from "@/assets/img.js";
 
 const route = useRoute();
@@ -106,6 +107,12 @@ const tabs = [
   { key: "discussion", cn: "话题讨论", en: "Discussion", note: "围绕本课主题的开放讨论与口语拓展。" },
 ];
 const activeTab = computed(() => tabs.find((t) => t.key === tab.value) || tabs[0]);
+// 学习足迹：记到「这一课的这个页签」上
+watch(
+  () => [tab.value, props.series, props.unit, props.lesson],
+  ([t, s, u, l]) => setActivityContext(lessonContext(t, s, u, l)),
+  { immediate: true }
+);
 
 watch(
   () => [props.series, props.unit, props.lesson],

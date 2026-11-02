@@ -124,19 +124,18 @@ function translateError(msg) {
   min-height: 100vh;
 }
 
-/* ── LEFT — brand hero (朱红函套) ── */
+/* ── LEFT — brand hero（卷轴留白：山水上清下淡，渐隐成宣纸色，文字用墨色） ── */
 .hero {
   position: relative;
   overflow: hidden;
   padding: 44px 48px;
-  color: #fbeecf;
+  color: #2b2218;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background:
-    radial-gradient(120% 90% at 82% 6%, rgba(255, 236, 200, 0.12), transparent 48%),
-    linear-gradient(150deg, rgba(64, 50, 36, 0.82) 0%, rgba(44, 34, 24, 0.62) 46%, rgba(28, 22, 16, 0.74) 100%),
-    url("../assets/img/hero/hero-main.webp") center / cover no-repeat;
+    linear-gradient(180deg, rgba(246, 240, 228, 0.25) 0%, rgba(246, 240, 228, 0.05) 30%, rgba(246, 240, 228, 0.2) 55%, rgba(245, 239, 227, 0.94) 84%, #f5efe3 100%),
+    url("../assets/img/hero/hero-main.webp") center 35% / cover no-repeat;
 }
 /* 宣纸纹理 */
 .hero::before {
@@ -154,7 +153,7 @@ function translateError(msg) {
   position: absolute;
   inset: 18px;
   z-index: 2;
-  border: 1px solid rgba(232, 184, 75, 0.55);
+  border: 1px solid rgba(160, 120, 50, 0.55);
   border-radius: 6px;
   pointer-events: none;
 }
@@ -162,7 +161,7 @@ function translateError(msg) {
   content: "";
   position: absolute;
   inset: 5px;
-  border: 1px solid rgba(232, 184, 75, 0.28);
+  border: 1px solid rgba(160, 120, 50, 0.3);
   border-radius: 4px;
 }
 .brushmark {
@@ -172,7 +171,7 @@ function translateError(msg) {
   font-weight: 900;
   font-size: 460px;
   line-height: 1;
-  color: rgba(255, 236, 200, 0.08);
+  color: rgba(60, 40, 20, 0.06);
   bottom: -120px;
   right: -30px;
   user-select: none;
@@ -182,8 +181,13 @@ function translateError(msg) {
   position: relative;
   z-index: 3;
   display: inline-flex;
+  align-self: flex-start;
   align-items: center;
   gap: 12px;
+  padding: 8px 14px 8px 8px;
+  border-radius: 8px;
+  background: rgba(250, 245, 234, 0.72);
+  backdrop-filter: blur(3px);
 }
 .logo .seal {
   width: 40px;
@@ -212,7 +216,7 @@ function translateError(msg) {
   font-weight: 500;
   font-size: 10px;
   letter-spacing: 3px;
-  color: rgba(251, 238, 207, 0.7);
+  color: rgba(60, 45, 30, 0.7);
   text-transform: uppercase;
 }
 
@@ -242,7 +246,7 @@ function translateError(msg) {
   background: linear-gradient(160deg, #fbf7ee, #efe4d0);
   color: var(--ink);
   border: 1px solid var(--line);
-  box-shadow: 0 24px 60px rgba(45, 30, 10, 0.4);
+  box-shadow: 0 22px 50px rgba(80, 55, 25, 0.28);
   padding: 22px 22px 20px;
 }
 .fc.back2 { transform: rotate(9deg) translate(42px, 16px) scale(0.9); opacity: 0.5; }
