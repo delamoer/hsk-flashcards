@@ -1,7 +1,9 @@
 <template>
   <!-- 首页「01 教材」：3D 书架翻页 + 水墨晕染背景（design-demos/carousel-d-hybrid.html）。
        课程完全由 courseRegistry 驱动：加一套课程只需 courses.js 一条；没有书封 / 横幅图时
-       分别用系列色线装封面 / 系列色水墨兜底，课程多于 DOT_MAX 套时圆点换成「03 / 12」计数。 -->
+       分别用系列色线装封面 / 系列色水墨兜底，课程多于 DOT_MAX 套时圆点换成「03 / 12」计数。
+       「02 课外阅读」复用同一组件：条目可自带 cover / band / stats / link，
+       按钮文字由 cta / all props 传入。 -->
   <div class="tc" :style="{ '--sc': cur.seriesColor }">
     <div
       v-for="l in layers"
@@ -19,11 +21,14 @@
     <div class="side">
       <slot name="head" />
       <div class="info" :key="cur.id">
-        <div class="zh">{{ cur.heroTitle }}</div>
+        <div class="zh" :class="{ long: cur.heroTitle.length > 6 }">{{ cur.heroTitle }}</div>
         <div class="en">{{ cur.nameEn }}</div>
         <div class="d">{{ cur.desc }}</div>
         <div class="stats">
-          <template v-if="stats.words">
+          <template v-if="cur.stats">
+            <div v-for="x in cur.stats" :key="x.l">{{ x.v.toLocaleString() }}<small>{{ x.l }}</small></div>
+          </template>
+          <template v-else-if="stats.words">
             <div>{{ stats.units }}<small>册 Books</small></div>
             <div>{{ stats.lessons }}<small>课 Lessons</small></div>
             <div>{{ stats.words.toLocaleString() }}<small>词 Words</small></div>
@@ -32,8 +37,8 @@
         </div>
       </div>
       <div class="ctas">
-        <router-link class="cta" :to="linkOf(cur)">进入教材 Open <span class="ar">→</span></router-link>
-        <router-link class="all" to="/courses">全部教材 All Courses <span class="ar">›</span></router-link>
+        <router-link class="cta" :to="linkOf(cur)">{{ cta }} <span class="ar">→</span></router-link>
+        <router-link class="all" :to="all.to">{{ all.text }} <span class="ar">›</span></router-link>
       </div>
     </div>
 
@@ -42,7 +47,7 @@
       class="stage"
       tabindex="0"
       aria-roledescription="carousel"
-      :aria-label="`教材 Textbooks — ${cur.heroTitle}`"
+      :aria-label="`${label} — ${cur.heroTitle}`"
       @mouseenter="hover = true"
       @mouseleave="hover = false"
       @focusin="hover = true"
@@ -68,10 +73,10 @@
             <div :class="r === 2 ? 'refl' : 'wrap'">
               <div
                 class="face"
-                :class="{ plain: !bookCover[s.id] }"
-                :style="{ '--sc': s.seriesColor, backgroundImage: bookCover[s.id] ? `url(${bookCover[s.id]})` : null }"
+                :class="{ plain: !coverOf(s) }"
+                :style="{ '--sc': s.seriesColor, backgroundImage: coverOf(s) ? `url(${coverOf(s)})` : null }"
               >
-                <div v-if="!bookCover[s.id]" class="ptitle">{{ s.heroTitle.replace(/\s/g, "") }}</div>
+                <div v-if="!coverOf(s)" class="ptitle" :class="{ long: s.heroTitle.length > 6 }">{{ s.heroTitle.replace(/[\s，,]/g, "") }}</div>
                 <div class="band">
                   <span class="seal">{{ s.seal.cn }}</span>
                   <span class="bt"><b>{{ s.heroTitle }}</b><i>{{ s.nameEn }}</i></span>
@@ -111,8 +116,14 @@ import { useRouter } from "vue-router";
 import { bookCover, seriesBand } from "@/assets/img.js";
 
 const props = defineProps({
-  list: { type: Array, required: true }, // courseRegistry entries
+  list: { type: Array, required: true }, // courseRegistry entries (or reading books shaped like them)
+  cta: { type: String, default: "进入教材 Open" },
+  all: { type: Object, default: () => ({ text: "全部教材 All Courses", to: "/courses" }) },
+  label: { type: String, default: "教材 Textbooks" },
 });
+// an entry may bring its own art; courses fall back to the per-series registry
+const coverOf = (s) => (s.cover !== undefined ? s.cover : bookCover[s.id]);
+const bandOf = (s) => (s.band !== undefined ? s.band : seriesBand[s.id]) || null;
 
 const DUR = 4500; // ms per book
 const DOT_MAX = 7; // more courses than this → numeric counter instead of dots
@@ -139,6 +150,7 @@ const stats = computed(() => {
 });
 
 function linkOf(s) {
+  if (s.link) return s.link;
   return s.single ? `/course/${s.id}/${s.units[0].id}` : `/course/${s.id}`;
 }
 
@@ -170,7 +182,7 @@ function bookStyle(i) {
 let layerSeq = 0;
 const layers = ref([]);
 function pushLayer(s, animate) {
-  const layer = { key: ++layerSeq, band: seriesBand[s.id] || null, color: s.seriesColor, enter: animate && !reduceMotion };
+  const layer = { key: ++layerSeq, band: bandOf(s), color: s.seriesColor, enter: animate && !reduceMotion };
   const shown = layers.value.filter((l) => !l.enter).slice(-1);
   layers.value = layer.enter ? [...shown, layer] : [layer];
 }
@@ -292,6 +304,7 @@ onBeforeUnmount(() => {
 .side { position: relative; z-index: 2; align-self: center; padding: 22px 18px 22px 30px; }
 .info { margin-top: 14px; }
 .info .zh { font-family: var(--brush); font-size: 30px; line-height: 1.2; color: var(--sc); clip-path: inset(0 100% 0 0); animation: tc-brush .9s .1s cubic-bezier(.6,.05,.2,1) forwards; }
+.info .zh.long { font-size: 24px; }
 .info .en { font-family: var(--serif-en); font-style: italic; font-size: 14px; color: var(--muted); }
 .info .d { font-family: var(--serif-cn); font-size: 13.5px; line-height: 1.6; color: var(--ink-soft, #4a3d2a); margin-top: 6px; }
 .stats { display: flex; gap: 18px; margin-top: 12px; }
@@ -322,7 +335,9 @@ onBeforeUnmount(() => {
 .face::after { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.35) 48%, transparent 60%); transform: translateX(-120%); transition: transform 1.2s; }
 .book.active .wrap .face::after { transform: translateX(120%); }
 .face.plain { background: linear-gradient(160deg, color-mix(in srgb, var(--sc) 70%, #f2e6cf), var(--sc)); }
-.face.plain .ptitle { position: absolute; right: 22px; top: 24px; padding: 12px 7px; background: #f6ecd8; border: 1px solid rgba(0,0,0,.15); writing-mode: vertical-rl; font-family: var(--brush); font-size: 22px; color: var(--ink); letter-spacing: 4px; }
+.face.plain .ptitle { position: absolute; right: 22px; top: 24px; padding: 12px 7px; background: #f6ecd8; border: 1px solid rgba(0,0,0,.15); writing-mode: vertical-rl; text-orientation: upright; font-family: var(--brush); font-size: 22px; color: var(--ink); letter-spacing: 4px; }
+.face.plain .ptitle.long { font-size: 17px; letter-spacing: 1px; }
+.face.plain .ptitle::after { content: ""; position: absolute; inset: 3px; border: 1px solid color-mix(in srgb, var(--sc) 45%, transparent); pointer-events: none; }
 .band { position: absolute; left: 0; right: 0; bottom: 0; padding: 11px 12px 12px; color: #fbeecf; display: flex; gap: 9px; align-items: center; background: linear-gradient(180deg, transparent, var(--sc) 30%); }
 .seal { width: 27px; height: 27px; flex: none; border: 1.5px solid rgba(251,238,207,.8); border-radius: 4px; display: grid; place-items: center; font-family: var(--serif-cn); font-weight: 700; font-size: 15px; }
 .bt { min-width: 0; line-height: 1.2; }

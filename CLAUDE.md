@@ -14,8 +14,8 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
    shelf + ink-wash background swap, driven entirely by `courseRegistry` (no per-course code; a series without a
    cover / band image falls back to a series-color cover / wash; >7 series swaps the dots for a 「03 / 12」 counter).
    The 01 panel's height is `--sec-h` on `.sec` (sized for the shelf) — raise it rather than squeezing the shelf.
-   Under it, **02 课外阅读** is one full-width row (title · book cover · the first 6 stories in two columns), driven by
-   `src/data/reading/meta.json` (first book). Below that, 03 拼音 · 04 语法 · 05 中国风 · 06 我的词 are a 2×2 grid of `.card`s (one column ≤920px), all in the same
+   Under it, **02 课外阅读** reuses the same `TextbookCarousel` (props `cta` / `all` / `label`; each entry may carry its own
+   `cover` / `band` / `stats` / `link`), one entry per graded reader from `src/data/reading/meta.json`. Below that, 03 拼音 · 04 语法 · 05 中国风 · 06 我的词 are a 2×2 grid of `.card`s (one column ≤920px), all in the same
    grammar: a dashed notebook list on the left + a tilted paper object on the right (田字格 马 / 语法签 把 / 老照片 MV
    cover / 复习卡 学习). Only each card's bottom link navigates (中国风's song rows also deep-link `?song=N`); the
    grammar list is display-only. Mind adjacent characters on the paper objects — 妈 next to 比 read as a slur. Pick a course series (书函卡): 标准HSK / 新HSK3.0 /
@@ -321,22 +321,33 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   surfaced behind an off-by-default 拼音 pill in `DiscussionPanel`, matching the ReadPanel convention.
   Header rows sit on sheet row 4 (title + blurb + blank above), and some sheets trail 说明/URL rows —
   `header_row()` finds the header and non-integer 课次 rows are skipped.
-- **课外阅读 Reading** (`/reading` shelf → `/reading/:book/:n`, `ReadingShelfView` / `ReadingView`) — graded readers,
-  independent of the courses. Source = `sources/{丛书}_{级别}_分级读物.xlsx`, one workbook per book (so far only
-  `中文天天读_2B_分级读物.xlsx` = 外研社《自行车王国》, 25 stories); `scripts/convert_reading.py` maps filename → book via
-  its `BOOKS` list (key = URL slug) and writes `src/data/reading/{key}.json` (lazy, one chunk per book, via
-  `src/data/reading.js`) + `reading/meta.json` (titles/counts only — the shelf and the home row never load a book).
-  Sheets: 课文汇总 (+ 导读英文) · 段落对照 (汉字/拼音/英文 per paragraph) · 生词 · 语言点 · 想一想 · 练习 (判断正误 +
-  选择正确答案 with 选项A–D) · 小知识 · 说明 · 网站校对记录. The book was OCR'd from a scanned PDF: its **pinyin is the
-  book's own** (never regenerate it); the OCR fixes made in Oct 2026 are listed in 网站校对记录. The book has NO paragraph
-  English and its 选择题 had only stem + answer letter — the 英文/导读英文 columns and the 选项A–D were written for the
-  site (correct option kept at the book's answer letter). A paragraph opening 「老板：」 is a dialogue turn (shown in a
-  speaker column); a label containing 说/问/是/天 is narration (「盲人说：」「第一天：」). Page layout (the user's pick
-  among mockups): 线装书页 with a double 版框 + sticky right 夹签 (生词 / 语言点); 拼音 · 生词 highlight · 英文 toggles
+- **课外阅读 Reading** — graded readers, independent of the courses, in three levels like the courses:
+  `/reading` 全部读物 (`ReadingShelfView`, books only, grouped by 丛书) → `/reading/:book` 单本目录 (`ReadingBookView`:
+  cover · 继续读 · 线装目录) → `/reading/:book/:n` 阅读页 (`ReadingView`). Book covers (`ReadingCover.vue`, used on the
+  shelf + 目录) copy the course 选册 cover: a crane ink painting (`readingCover` in `img.js`, from `assets/` via
+  `optimize_assets.py`) under a series-color gradient + stitch dots + double frame + 级别签 + big 册号.
+  Source = `sources/{丛书}_{级别}_分级读物.xlsx`, one workbook per book — so far 外研社《中文天天读》 1A 爱上中国 · 1B 小马过河 ·
+  2A 奇妙的中文 · 2B 自行车王国 · 3A 8月8日，我们结婚 · 3B 好一朵茉莉花 (150 stories). `scripts/convert_reading.py` maps
+  filename → book via its `BOOKS` list (`_book(level, …, color, band)`, key `tiantiandu-{level}`) and writes
+  `src/data/reading/{key}.json` (lazy, one chunk per book, via `src/data/reading.js`) + `reading/meta.json` (titles/
+  counts/color/band only — the shelf and the home carousel never load a book).
+  Sheets: 课文汇总 (+ 导读英文) · 段落对照 (汉字/拼音/英文 per paragraph, optional 说话人 + 版式 columns) · 生词 · 语言点 ·
+  想一想 · 练习 (判断正误 + 选择正确答案 with 选项A–D, 2–4 options) · 小知识 · 说明 · 网站校对记录 · 待核对. Missing sheets
+  are fine — **1A/2A/3A are text only** (no 生词/练习; the page drops the 夹签 column and the toggles that have no data).
+  All six were OCR'd from scanned PDFs. **Only 2B's pinyin is the book's own** (never regenerate it); the other five
+  books' pinyin and every book's English were written for the site (conventions as for 课文: word-grouped, sandhi,
+  capitals). OCR fixes are in each workbook's 网站校对记录; uncertain spots are in 待核对 and awaiting a check against the
+  paper book (Nov 2026) — their paragraphs were deliberately left WITHOUT generated audio until confirmed. 1B/3B's
+  练习 were reworked for the site (split options, matching/table items dropped, full 语言点 + bilingual 小知识).
+  说话人 column → dialogue speaker column (else 2B's regex: 「老板：」 = turn, a label with 说/问/是/天 = narration);
+  版式 标题/诗/署名/书信/表格 → `fmt` h/poem/sign/salute/table (centered / right-aligned / unindented layouts).
+  Page layout: 线装书页 with a double 版框 + sticky right 夹签 (生词 / 语言点); 拼音 · 生词 highlight · 英文 toggles
   (生词 on, the others off); tapping a highlighted word lights its 夹签 entry (narrow screens: a popover); 🔊 per
-  paragraph and per 生词 (`gen_audio.py --reading`). 练习 / 想一想 / 小知识 sit under the text; reaching them marks the
-  story 已读 (`useReading`, localStorage `hsk-reading-read-v1`, not synced) → stamp on the shelf.
-  To add a book: name the xlsx by the convention, add a `BOOKS` record, run the converter + `gen_audio.py --reading`.
+  paragraph and per 生词 (`gen_audio.py --reading`). 练习 / 想一想 / 小知识 sit under the text. **已读 is manual**: a
+  「读完了 ✓」 button at the end of the text (with 撤销) — the user rejected scroll-based detection (short stories got
+  marked on open). `useReading`, localStorage `hsk-reading-read-v1`, not synced → shelf %, 目录 stamps, 继续读.
+  To add a book: name the xlsx by the convention, add a `BOOKS` record (+ a cover image job), run the converter +
+  `gen_audio.py --reading`.
 - **中国风 Music** (`/music`, `MusicView.vue`) — 43 Chinese-style pop songs as **embedded YouTube MVs**
   (`youtube-nocookie.com`, official artist/label channels only). We host NO audio/video: the songs are
   commercially copyrighted (a public repo/site must not serve them — and a DMCA on GitHub would take the
@@ -374,7 +385,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
   works on GitHub Pages without server rewrites. Course flow (four levels): `/` (LibraryView) →
   `/course/:series` (SeriesBooksView) → `/course/:series/:unit` (LessonListView) →
-  `/course/:series/:unit/lesson/:lesson` (LessonHubView), plus `.../quiz` `.../print`. Also `/pinyin`, `/reading[/:book/:n]`,
+  `/course/:series/:unit/lesson/:lesson` (LessonHubView), plus `.../quiz` `.../print`. Also `/pinyin`, `/reading[/:book[/:n]]`,
   `/music`, `/my-words`, `/search`, `/login`, `/account`, `/admin`, the legacy 课文 flow `/texts[/:series/:unit[/:lesson/:n]]`
   (kept working, not in nav), and legacy `/hsk/:level/...` redirects. All routes are behind a login wall
   when Supabase is configured. **App-shell theming** (`App.vue`) still applies `seriesTheme(route.params.series)`

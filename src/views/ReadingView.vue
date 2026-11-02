@@ -1,15 +1,15 @@
 <template>
   <div class="rv">
     <div v-if="loading" class="state">加载中… <i>Loading…</i></div>
-    <div v-else-if="!L" class="state">没有这篇文章 <i>Story not found</i> · <router-link to="/reading">回书架 Back to shelf</router-link></div>
+    <div v-else-if="!L" class="state">没有这篇文章 <i>Story not found</i> · <router-link :to="`/reading/${book}`">回目录 Back to contents</router-link></div>
 
     <template v-else>
-      <div class="spread">
+      <div class="spread" :class="{ solo: !hasNotes }">
         <!-- 正文：线装书页（双线版框） -->
         <article class="page">
           <header class="pg-head">
             <div class="crumb">
-              <router-link to="/reading">课外阅读 Reading</router-link><span class="dot">·</span><span>{{ data.series }} {{ data.level }}</span><span class="dot">·</span><span>第{{ cn(L.n) }}篇</span>
+              <router-link to="/reading">课外阅读 Reading</router-link><span class="dot">·</span><router-link :to="`/reading/${book}`">{{ data.series }} {{ data.level }} · {{ data.title }}</router-link><span class="dot">·</span><span>第{{ cn(L.n) }}篇</span>
             </div>
             <h1>{{ L.title }}</h1>
             <div class="sub"><span class="py">{{ L.py }}</span><span class="en">{{ L.en }}</span></div>
@@ -27,14 +27,14 @@
           <div class="tools">
             <span class="t-meta">{{ L.chars }} 字 · {{ L.paras.length }} 段</span>
             <div class="tgs">
-              <button v-for="t in TOGGLES" :key="t.k" class="tg" :class="{ on: show[t.k] }" @click="show[t.k] = !show[t.k]">
+              <button v-for="t in toggles" :key="t.k" class="tg" :class="{ on: show[t.k] }" @click="show[t.k] = !show[t.k]">
                 <span class="box"></span>{{ t.cn }}<i>{{ t.en }}</i>
               </button>
             </div>
           </div>
 
           <div class="paras" :class="{ dlg: hasTalk }" @click="onWord">
-            <div v-for="(p, i) in L.paras" :key="i" class="para" :class="{ playing: nowPlaying === p.zh }">
+            <div v-for="(p, i) in L.paras" :key="i" class="para" :class="[p.fmt && 'f-' + p.fmt, { playing: nowPlaying === p.zh }]">
               <span class="pn">{{ cn(i + 1) }}</span>
               <span v-if="hasTalk" class="who">{{ p.name || "" }}</span>
               <div class="body">
@@ -48,6 +48,14 @@
               </button>
             </div>
           </div>
+          <!-- 已读：学生自己点，滚动不算 -->
+          <div class="done">
+            <button v-if="!read" class="done-btn" @click="markRead(book, n)">读完了 ✓ <i>Mark as read</i></button>
+            <template v-else>
+              <span class="done-stamp">已读</span>
+              <button class="undo" @click="unmarkRead(book, n)">撤销 <i>Undo</i></button>
+            </template>
+          </div>
           <!-- 窄屏右栏落到正文下面，点生词改用浮层 -->
           <div v-if="pop" class="pop" :style="{ left: pop.x + 'px', top: pop.y + 'px' }">
             <b>{{ pop.w.w }}</b><span class="ppy">{{ pop.w.py }}</span><span class="pen">{{ pop.w.en }}</span>
@@ -55,8 +63,8 @@
         </article>
 
         <!-- 右侧夹签：生词 + 语言点 -->
-        <aside class="notes">
-          <section class="nt">
+        <aside v-if="hasNotes" class="notes">
+          <section v-if="L.vocab.length" class="nt">
             <h4><b>生词</b><i>New words</i><span class="ct">{{ L.vocab.length }}</span></h4>
             <ul class="wl">
               <li v-for="w in L.vocab" :key="w.w" :class="{ hot: hot === w.w }" @mouseenter="hot = w.w" @mouseleave="hot = ''" @click="say(w.w)">
@@ -78,7 +86,7 @@
         </aside>
       </div>
 
-      <section ref="afterEl" class="after">
+      <section class="after" :class="{ solo: !hasNotes }">
         <div v-if="L.tf.length || L.mc.length" class="blk">
           <h3><span class="dm">◆</span>练习<i>Exercises</i></h3>
           <template v-if="L.tf.length">
@@ -124,7 +132,7 @@
         <div class="pager">
           <router-link v-if="prev" :to="`/reading/${book}/${prev.n}`"><i>上一篇 Previous</i>← {{ prev.title }}</router-link><span v-else></span>
           <router-link v-if="next" class="nx" :to="`/reading/${book}/${next.n}`"><i>下一篇 Next</i>{{ next.title }} →</router-link>
-          <router-link v-else class="nx" to="/reading"><i>读完了 All done</i>回书架 →</router-link>
+          <router-link v-else class="nx" :to="`/reading/${book}`"><i>读完了 All done</i>回目录 Contents →</router-link>
         </div>
       </section>
     </template>
@@ -132,7 +140,7 @@
 </template>
 
 <script setup>
-import { computed, reactive, ref, watch, onBeforeUnmount, nextTick } from "vue";
+import { computed, reactive, ref, watch } from "vue";
 import { loadReadingBook } from "@/data/reading";
 import { useReading } from "@/composables/useReading";
 import { useSettings } from "@/composables/useSettings";
@@ -142,17 +150,25 @@ import { speak, nowPlaying, preload } from "@/utils/tts";
 const props = defineProps({ book: { type: String, required: true }, n: { type: Number, required: true } });
 
 const { settings } = useSettings();
-const { markRead } = useReading();
+const { isRead, markRead, unmarkRead } = useReading();
 const data = ref(null);
 const loading = ref(true);
 const L = computed(() => data.value?.lessons.find((l) => l.n === props.n) || null);
 const prev = computed(() => data.value?.lessons.find((l) => l.n === props.n - 1));
 const next = computed(() => data.value?.lessons.find((l) => l.n === props.n + 1));
+const read = computed(() => isRead(props.book, props.n));
 const hasTalk = computed(() => !!L.value?.paras.some((p) => p.name));
 
 // 拼音 / 英文 off by default (like 课文); 生词 highlighting on
 const show = reactive({ py: false, vw: true, en: false });
 const TOGGLES = [{ k: "py", cn: "拼音", en: "Pinyin" }, { k: "vw", cn: "生词", en: "Words" }, { k: "en", cn: "英文", en: "English" }];
+// a toggle only shows when this story has that layer (1A/2A/3A have no 生词)
+const toggles = computed(() => {
+  const l = L.value;
+  const has = { py: l.paras.some((p) => p.py), vw: l.vocab.length > 0, en: l.paras.some((p) => p.en) };
+  return TOGGLES.filter((t) => has[t.k]);
+});
+const hasNotes = computed(() => !!(L.value?.vocab.length || L.value?.points.length));
 
 const hot = ref("");
 const pop = ref(null);
@@ -178,7 +194,6 @@ watch(
     resetAns();
     if (L.value) {
       preload(L.value.paras.map((p) => p.zh));
-      nextTick(observeEnd);
     }
   },
   { immediate: true }
@@ -245,22 +260,6 @@ function mcState(i, j) {
   if (j === L.value.mc[i].answer) return "right";
   return a === j ? "wrong" : "dim";
 }
-
-// 读到练习区就算「已读」
-const afterEl = ref(null);
-let io = null;
-function observeEnd() {
-  io?.disconnect();
-  if (!afterEl.value) return;
-  io = new IntersectionObserver((es) => {
-    if (es.some((e) => e.isIntersecting)) {
-      markRead(props.book, props.n);
-      io.disconnect();
-    }
-  });
-  io.observe(afterEl.value);
-}
-onBeforeUnmount(() => io?.disconnect());
 </script>
 
 <style scoped>
@@ -270,6 +269,7 @@ onBeforeUnmount(() => io?.disconnect());
 .state a { color: var(--cinnabar-dk); }
 
 .spread { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 36px; align-items: start; }
+.spread.solo { grid-template-columns: minmax(0, 1fr); max-width: 860px; margin: 0 auto; }
 
 /* ── 书页：双线版框 + 纸底，书页底下垫两层纸边 ── */
 .page { position: relative; padding: 46px 54px 40px; background: linear-gradient(rgba(252,248,240,.92), rgba(247,240,226,.92)), url("../assets/img/motif/cloud.webp") right 20px bottom 16px / 220px auto no-repeat, #faf5ea; border: 1px solid var(--border-strong); border-radius: 4px; box-shadow: 0 1px 0 #efe4cf, 0 3px 0 #e6d8bd, 0 18px 34px -22px rgba(45,30,10,.45); }
@@ -309,6 +309,13 @@ onBeforeUnmount(() => io?.disconnect());
 .who { font-family: var(--serif-cn); font-weight: 700; font-size: 15px; color: var(--cinnabar-dk); text-align: right; padding-top: .45em; white-space: nowrap; }
 .zh { font-family: var(--serif-cn); font-size: 21px; line-height: 2; letter-spacing: .5px; color: var(--ink); text-align: justify; }
 .paras:not(.dlg) .zh { text-indent: 2em; }
+/* 版式: headings / poem lines centered, letter signatures right, salutations + table rows unindented */
+.para.f-h .zh, .para.f-poem .zh, .para.f-sign .zh, .para.f-salute .zh, .para.f-table .zh { text-indent: 0; }
+.para.f-h .body, .para.f-poem .body { text-align: center; }
+.para.f-h .zh, .para.f-poem .zh { text-align: center; }
+.para.f-h .zh { font-weight: 700; letter-spacing: 3px; }
+.para.f-sign .body, .para.f-sign .zh { text-align: right; }
+.para.f-h, .para.f-poem, .para.f-sign { padding: 1px 0; }
 .body .py { font-family: var(--ui); font-size: 15px; font-weight: 600; line-height: 1.65; color: var(--gold-deep); margin: 2px 0 4px; }
 .body .en { font-family: var(--serif-en); font-size: 17px; line-height: 1.5; color: var(--muted); margin: 2px 0 4px; }
 .play { width: 30px; height: 30px; margin-top: .4em; border-radius: 50%; display: grid; place-items: center; border: 1px solid transparent; background: none; color: var(--gold-lt); transition: .15s; }
@@ -354,6 +361,7 @@ onBeforeUnmount(() => io?.disconnect());
 
 /* ── 正文下：练习 · 想一想 · 小知识 ── */
 .after { max-width: calc(100% - 336px); }
+.after.solo { max-width: 860px; margin: 0 auto; }
 .blk { margin-top: 44px; }
 .blk h3 { display: flex; align-items: baseline; gap: 10px; font-family: var(--serif-cn); font-size: 21px; font-weight: 700; color: var(--ink); padding-bottom: 10px; margin-bottom: 16px; border-bottom: 1px solid var(--line); }
 .blk h3 .dm { color: var(--cinnabar); font-size: 11px; }
@@ -399,6 +407,14 @@ onBeforeUnmount(() => io?.disconnect());
 .tip-h i { font-family: var(--serif-en); font-style: italic; font-size: 16px; color: var(--muted); }
 .tip p { font-family: var(--serif-cn); font-size: 16px; line-height: 1.9; color: var(--body); margin-top: 6px; max-width: 46em; }
 .tip p.en { font-family: var(--serif-en); font-style: italic; font-size: 16px; line-height: 1.55; color: var(--muted); }
+.done { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 30px; padding-top: 22px; border-top: 1px dashed var(--line); }
+.done-btn { padding: 10px 26px; border: 1.5px solid var(--cinnabar); border-radius: 7px; background: transparent; color: var(--cinnabar-dk); font-family: var(--serif-cn); font-size: 16px; letter-spacing: 1px; cursor: pointer; transition: .2s; }
+.done-btn i { font-family: var(--serif-en); font-size: 13px; margin-left: 4px; opacity: .8; }
+.done-btn:hover { background: linear-gradient(145deg, var(--cinnabar), var(--cinnabar-dk)); color: #fbeecf; }
+.done-stamp { display: inline-block; padding: 2px 10px; border: 2px solid var(--cinnabar); border-radius: 5px; font-family: var(--serif-cn); font-size: 20px; font-weight: 900; letter-spacing: 4px; color: var(--cinnabar); transform: rotate(-6deg); opacity: .85; }
+.undo { border: 0; background: none; color: var(--muted); font-family: var(--han); font-size: 12.5px; cursor: pointer; border-bottom: 1px dotted var(--muted-soft); }
+.undo i { font-style: normal; margin-left: 2px; }
+.undo:hover { color: var(--cinnabar-dk); }
 .pager { display: flex; justify-content: space-between; gap: 20px; margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); }
 .pager a { display: flex; flex-direction: column; gap: 2px; font-family: var(--serif-cn); font-size: 17px; color: var(--ink); }
 .pager a i { font-family: var(--han); font-style: normal; font-size: 11.5px; color: var(--muted-soft); }

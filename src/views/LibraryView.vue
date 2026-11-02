@@ -41,32 +41,14 @@
         </TextbookCarousel>
       </section>
 
-      <!-- ── 02 课外阅读：一整行（左标题 · 中书封 · 右篇目两列），书目来自 reading/meta.json -->
-      <section v-if="rbook" class="sec s-read">
-        <div class="sec-bg is-band" :style="bandPanel(seriesBand.survival)" aria-hidden="true"></div>
-        <div class="rd-side">
-          <div class="num">02</div>
-          <div class="sec-title">课外阅读<span class="en">READING</span></div>
-          <p class="rd-desc">读小故事，看中国<i>Short graded stories — read China</i></p>
-          <router-link class="rd-cta" to="/reading">开始阅读 Read <span class="ar">→</span></router-link>
-        </div>
-        <router-link class="rd-book" :to="`/reading/${rbook.key}/1`">
-          <div class="rd-cover">
-            <div class="c-series">{{ rbook.series }} · {{ rbook.seriesEn }}</div>
-            <div class="c-title">{{ rbook.title }}</div>
-            <div class="c-en">{{ rbook.titleEn }}</div>
-            <div class="c-lv">{{ rbook.level }}</div>
-          </div>
-          <div class="c-meta"><b>{{ rbook.lessons.length }}</b> 篇 stories · <b>{{ rbook.chars }}</b> 字 · <b>{{ rbook.vocab }}</b> 生词</div>
-        </router-link>
-        <div class="rd-list">
-          <router-link v-for="l in rbook.lessons.slice(0, 6)" :key="l.n" class="rd-item" :to="`/reading/${rbook.key}/${l.n}`">
-            <span class="no">{{ String(l.n).padStart(2, "0") }}</span>
-            <b>{{ l.title }}</b><i>{{ l.en }}</i>
-            <span class="ch">{{ l.chars }} 字</span>
-          </router-link>
-          <router-link class="rd-more" to="/reading">还有 {{ rbook.lessons.length - 6 }} 篇 · {{ rbook.lessons.length - 6 }} more →</router-link>
-        </div>
+      <!-- ── 02 课外阅读：与「01 教材」同一个书架轮播，一册一本（书目来自 reading/meta.json） -->
+      <section v-if="readingList.length" class="sec s-books">
+        <TextbookCarousel :list="readingList" cta="开始阅读 Read" :all="{ text: '全部读物 All Readers', to: '/reading' }" label="课外阅读 Reading">
+          <template #head>
+            <div class="num">02</div>
+            <div class="sec-title">课外阅读<span class="en">READING</span></div>
+          </template>
+        </TextbookCarousel>
       </section>
 
       <!-- ── 03–06 拼音 · 语法 · 中国风 · 我的词：2×2 卡片（左列表 + 右纸卡实物，与「01 教材」书架同为物件） -->
@@ -170,13 +152,34 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
 import { courseRegistry } from "@/data";
 import TextbookCarousel from "@/components/TextbookCarousel.vue";
 import { readingBooks } from "@/data/reading";
-import { heroMain, seriesBand, motifPlum, motifPlum2, motifCloud, motifCranes, motifSeals, motifMountainFar, motifBoat, motifRock, motifBamboo, motifSwallows } from "@/assets/img.js";
+import { useReading } from "@/composables/useReading";
+import { heroMain, seriesBand, readingCover, motifPlum, motifPlum2, motifCloud, motifCranes, motifSeals, motifMountainFar, motifBoat, motifRock, motifBamboo, motifSwallows } from "@/assets/img.js";
 
 const seriesList = courseRegistry;
-const rbook = readingBooks[0];
+// 课外阅读的每一册当作轮播里的一本：封面 = 该册的仙鹤立轴，背景 = 山水长卷 + 系列色晕染
+const { readCount } = useReading();
+const readingList = computed(() =>
+  readingBooks.map((b) => ({
+    id: b.key,
+    heroTitle: b.title,
+    nameEn: b.titleEn,
+    desc: `${b.series} ${b.level} · ${b.band}${b.exercises ? " · 生词 · 练习" : " · 课文"}`,
+    seriesColor: b.color,
+    seal: { cn: b.level },
+    cover: readingCover[b.key] || null,
+    band: heroMain, // 同一幅山水长卷，色晕随每册的系列色变
+    stats: [
+      { v: b.lessons.length, l: "篇 Stories" },
+      { v: b.chars, l: "字 Characters" },
+      { v: readCount(b.key), l: "已读 Read" },
+    ],
+    link: `/reading/${b.key}`,
+  }))
+);
 
 // 整块面板嵌入 band 山水：左浓右淡横向 scrim（护文字）+ 顶底轻纱，图在最底。
 function bandPanel(img) {
@@ -274,30 +277,6 @@ function bg(img) {
 .sec-title .en { display: block; font-family: var(--caps); font-size: 12px; letter-spacing: 4px; color: var(--gold-deep); font-weight: 500; margin-top: 3px; }
 
 /* ── 02 课外阅读：一整行 ─────────────── */
-.sec.s-read { min-height: 300px; grid-template-columns: 220px 220px minmax(0, 1fr); gap: 28px; align-items: center; padding: 26px 32px; }
-.s-read .sec-bg.is-band { opacity: .85; }
-.rd-desc { font-family: var(--serif-cn); font-size: 14px; margin: 12px 0 16px; color: var(--ink-soft, #4a3d2a); }
-.rd-desc i { display: block; font-family: var(--serif-en); font-size: 12.5px; color: var(--muted); }
-.rd-cta { display: inline-block; background: linear-gradient(145deg, var(--cinnabar), var(--cinnabar-dk)); color: #fbeecf; font-family: var(--serif-cn); font-size: 14px; padding: 9px 18px; border-radius: 7px; box-shadow: 0 6px 14px -8px rgba(122,43,33,.7); }
-.rd-cta .ar { display: inline-block; transition: transform .2s; }
-.rd-cta:hover .ar { transform: translateX(3px); }
-.rd-book { text-align: center; }
-.rd-cover { position: relative; width: 160px; height: 218px; margin: 0 auto; border-radius: 4px 10px 10px 4px; padding: 18px 15px; background: linear-gradient(rgba(240,230,205,.22), rgba(240,230,205,.22)), url("../assets/img/motif/bamboo.webp") right -20px bottom -10px / 140px auto no-repeat, linear-gradient(160deg, #2f5d50, #1e3d35); color: #f3e6c8; box-shadow: inset 6px 0 0 rgba(0,0,0,.18), 0 18px 28px -14px rgba(20,20,10,.6); transform: rotate(-2deg); text-align: left; transition: transform .3s; }
-.rd-book:hover .rd-cover { transform: rotate(0deg) translateY(-3px); }
-.rd-cover .c-series { font-family: var(--caps); font-size: 10px; letter-spacing: 1px; opacity: .8; }
-.rd-cover .c-title { font-family: var(--brush); font-size: 28px; writing-mode: vertical-rl; position: absolute; right: 18px; top: 30px; letter-spacing: 4px; line-height: 1; }
-.rd-cover .c-en { position: absolute; left: 15px; bottom: 42px; font-family: var(--serif-en); font-style: italic; font-size: 13px; }
-.rd-cover .c-lv { position: absolute; left: 15px; bottom: 14px; padding: 2px 8px; border-radius: 3px; background: var(--cinnabar); font-family: var(--caps); font-weight: 700; font-size: 12px; }
-.rd-book .c-meta { margin-top: 18px; font-size: 12.5px; color: var(--muted); }
-.rd-book .c-meta b { font-family: var(--ui); font-size: 14px; color: var(--ink); }
-.rd-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 26px; padding: 12px 18px; border-radius: 12px; background: rgba(250,245,235,.72); }
-.rd-item { display: grid; grid-template-columns: 26px 1fr auto; column-gap: 8px; padding: 9px 2px; border-bottom: 1px dashed var(--line-soft); }
-.rd-item .no { grid-row: span 2; font-family: var(--caps); font-size: 15px; color: var(--gold); font-weight: 700; }
-.rd-item b { font-family: var(--serif-cn); font-size: 15px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.rd-item i { grid-column: 2; font-family: var(--serif-en); font-size: 12.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.rd-item .ch { grid-row: 1; grid-column: 3; font-size: 11.5px; color: var(--muted-soft); }
-.rd-item:hover b { color: var(--cinnabar-dk); }
-.rd-more { grid-column: 1 / -1; padding-top: 10px; font-family: var(--serif-cn); font-size: 13px; color: var(--cinnabar-dk); }
 
 /* ── 03–06 卡片 ─────────────────────── */
 .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 26px 0; }
@@ -397,7 +376,5 @@ a.nb-row:hover .zh { color: var(--cinnabar-dk); }
   .hero h1 { font-size: 38px; }
   .brk { display: inline; }
   .cards { grid-template-columns: 1fr; }
-  .sec.s-read { grid-template-columns: 1fr; padding: 22px; }
-  .rd-list { grid-template-columns: 1fr; }
 }
 </style>

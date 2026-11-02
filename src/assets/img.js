@@ -18,6 +18,12 @@ import coverHuihua360 from "./img/books/cover-huihua360.webp";
 import coverSurvival from "./img/books/cover-survival.webp";
 import coverKouyu from "./img/books/cover-kouyu.webp";
 import coverZoubian from "./img/books/cover-zoubian.webp";
+import reading1a from "./img/books/reading-1a.webp";
+import reading1b from "./img/books/reading-1b.webp";
+import reading2a from "./img/books/reading-2a.webp";
+import reading2b from "./img/books/reading-2b.webp";
+import reading3a from "./img/books/reading-3a.webp";
+import reading3b from "./img/books/reading-3b.webp";
 
 import photoBamboo from "./img/photos/bamboo.webp";
 import photoPlumDesk from "./img/photos/plum-desk.webp";
@@ -65,6 +71,16 @@ export const bookCover = {
   survival: coverSurvival,
   kouyu: coverKouyu,
   zoubian: coverZoubian,
+};
+
+// 课外阅读书封（一册一幅），key = reading/meta.json 的书 key
+export const readingCover = {
+  "tiantiandu-1a": reading1a,
+  "tiantiandu-1b": reading1b,
+  "tiantiandu-2a": reading2a,
+  "tiantiandu-2b": reading2b,
+  "tiantiandu-3a": reading3a,
+  "tiantiandu-3b": reading3b,
 };
 
 // 仙鹤立轴 —— 板块隐约水印

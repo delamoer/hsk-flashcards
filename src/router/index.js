@@ -26,6 +26,7 @@ const routes = [
   { path: "/my-words", name: "mywords", component: () => import("@/views/MyWordsView.vue") },
   { path: "/pinyin", name: "pinyin", component: () => import("@/views/PinyinView.vue") },
   { path: "/reading", name: "reading", component: () => import("@/views/ReadingShelfView.vue") },
+  { path: "/reading/:book", name: "reading-book", component: () => import("@/views/ReadingBookView.vue"), props: true },
   {
     path: "/reading/:book/:n",
     name: "reading-lesson",

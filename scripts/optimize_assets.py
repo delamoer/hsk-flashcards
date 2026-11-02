@@ -39,6 +39,13 @@ JOBS = [
     ("books", "cover-survival", "cover-plum-clouds", 900, False),
     ("books", "cover-kouyu", "crane-pair-reeds-river", 900, False),
     ("books", "cover-zoubian", "crane-flock-sun-pine", 900, False),  # 群鹤越山 = 走遍
+    # 课外阅读《中文天天读》六册：一套仙鹤立轴，每册一幅
+    ("books", "reading-1a", "crane-pair-reeds-sun", 900, False),
+    ("books", "reading-1b", "crane-dancing-sun", 900, False),
+    ("books", "reading-2a", "crane-bamboo-calligraphy", 900, False),
+    ("books", "reading-2b", "crane-moon-mountain", 900, False),
+    ("books", "reading-3a", "crane-plum-calligraphy", 900, False),
+    ("books", "reading-3b", "crane-pine-mountain", 900, False),
     # 实景照（首页缩略列，2x 余量）
     ("photos", "bamboo", "photo-bamboo-rain", 820, False),
     ("photos", "plum-desk", "photo-plum-desk", 820, False),
