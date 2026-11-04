@@ -5,7 +5,7 @@
       <div class="frame"></div>
       <div class="brushmark">学</div>
 
-      <div class="logo"><span class="seal">學</span><span class="wm">学中文<b>Learn Chinese</b></span></div>
+      <router-link to="/" class="logo" title="返回首页 Home"><span class="seal">學</span><span class="wm">学中文<b>Learn Chinese</b></span></router-link>
 
       <div class="deck">
         <div class="halo"></div>
@@ -65,6 +65,7 @@
         <p class="hint">
           没有账号？请联系老师开通<br />
           <span>No account? Ask your teacher to create one.</span>
+          <router-link class="meet" :to="{ path: '/', hash: '#book' }">还不是学生？认识老师 · Meet the teacher →</router-link>
         </p>
         <p class="rights">
           © 2026 学中文 Learn Chinese · 保留所有权利 All rights reserved<br />
@@ -441,6 +442,8 @@ function translateError(msg) {
   color: var(--ink-soft, #4a3d2a);
   line-height: 1.6;
 }
+.hint .meet { display: inline-block; margin-top: 10px; font-family: var(--ui); font-size: 13px; font-weight: 700; color: var(--cinnabar-dk); border-bottom: 1px solid rgba(122,43,33,.3); padding-bottom: 1px; }
+.hint .meet:hover { border-bottom-color: var(--cinnabar-dk); }
 .hint span { font-family: var(--serif-en); font-style: italic; font-size: 12px; font-weight: 500; color: var(--muted); }
 .rights { margin-top: 18px; text-align: center; font-size: 11px; line-height: 1.6; color: var(--muted); opacity: .85; }
 

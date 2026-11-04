@@ -93,7 +93,8 @@
               <GrammarCard v-if="full[p.k]" :point="full[p.k]" :query="q">
                 <div class="gofrom">
                   <span>出自 {{ fullLabel(p) }} · 第{{ p.l }}课《{{ p.lt }}》</span>
-                  <router-link :to="lessonLink(p)">去这一课学习 →</router-link>
+                  <router-link v-if="member" :to="lessonLink(p)">去这一课学习 →</router-link>
+                  <router-link v-else :to="{ path: '/', hash: '#book' }" class="ask">这一课对学生开放 · Ask the teacher →</router-link>
                 </div>
               </GrammarCard>
               <div v-else class="cardload">加载中… · Loading…</div>
@@ -114,7 +115,8 @@
         <GrammarCard v-if="full[sel.k]" :point="full[sel.k]" :query="q" large class="stagecard">
           <div class="gofrom">
             <span>出自 {{ fullLabel(sel) }} · 第{{ sel.l }}课《{{ sel.lt }}》</span>
-            <router-link :to="lessonLink(sel)">去这一课学习 →</router-link>
+            <router-link v-if="member" :to="lessonLink(sel)">去这一课学习 →</router-link>
+            <router-link v-else :to="{ path: '/', hash: '#book' }" class="ask">这一课对学生开放 · Ask the teacher →</router-link>
           </div>
         </GrammarCard>
         <div v-else class="cardload">加载中… · Loading…</div>
@@ -131,6 +133,7 @@ import { loadGrammarIndex, matches, rank, highlight } from "@/utils/grammarSearc
 import { loadGrammarUnit } from "@/data/grammar";
 import { COURSE_REGISTRY } from "@/data/courses";
 import { pageHeroBg, motifPine } from "@/assets/img.js";
+import { useAuth } from "@/composables/useAuth";
 
 const route = useRoute();
 const router = useRouter();
@@ -160,6 +163,10 @@ function tagOf(p) {
   const book = sid === "hsk" ? `HSK${uid}` : sid in TAG ? `${TAG[sid]}${sid === "newhsk3" ? CN[uid] : uid}` : bookName(sid, uid);
   return `${book} · L${p.l}`;
 }
+// Lessons are for students — visitors get a pointer to the teacher instead.
+const { isConfigured, isLoggedIn } = useAuth();
+const member = computed(() => !isConfigured || isLoggedIn.value);
+
 function lessonLink(p) {
   const [sid, uid] = splitKey(p.b);
   return { path: `/course/${sid}/${uid}/lesson/${p.l}`, query: { tab: "grammar" } };
@@ -410,6 +417,7 @@ onUnmounted(() => document.removeEventListener("keydown", onKey));
 .gofrom { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line-soft); font-size: 12.5px; color: var(--muted); }
 .gofrom a { font-family: var(--serif-cn); font-weight: 700; color: var(--cinnabar-dk); white-space: nowrap; }
 .gofrom a:hover { text-decoration: underline; }
+.gofrom a.ask { font-family: var(--ui); font-weight: 700; }
 
 .empty { text-align: center; padding: 70px 20px; color: var(--muted); }
 .empty .d { color: var(--gold); letter-spacing: 6px; margin-bottom: 12px; }

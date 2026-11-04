@@ -5,13 +5,13 @@
       <span class="wordmark"><b class="wm-zh">学中文</b><i class="wm-en">Learn Chinese</i></span>
     </router-link>
 
-    <nav v-if="showNav" class="mainnav">
-      <router-link to="/courses" class="navlink" :class="{ on: isCourses }">选书 <i>Books</i></router-link>
-      <router-link to="/reading" class="navlink" :class="{ on: ['reading', 'reading-book', 'reading-lesson'].includes(route.name) }">阅读 <i>Reading</i></router-link>
+    <nav class="mainnav">
+      <router-link v-if="member" to="/courses" class="navlink" :class="{ on: isCourses }">选书 <i>Books</i></router-link>
+      <router-link v-if="member" to="/reading" class="navlink" :class="{ on: ['reading', 'reading-book', 'reading-lesson'].includes(route.name) }">阅读 <i>Reading</i></router-link>
       <router-link to="/pinyin" class="navlink" :class="{ on: route.name === 'pinyin' }">拼音 <i>Pinyin</i></router-link>
       <router-link to="/grammar" class="navlink" :class="{ on: route.name === 'grammar' }">语法 <i>Grammar</i></router-link>
       <router-link to="/music" class="navlink" :class="{ on: route.name === 'music' }">中国风 <i>Music</i></router-link>
-      <router-link to="/my-words" class="navlink" :class="{ on: route.name === 'mywords' }">我的词 <i>My words</i></router-link>
+      <router-link v-if="member" to="/my-words" class="navlink" :class="{ on: route.name === 'mywords' }">我的词 <i>My words</i></router-link>
     </nav>
 
     <div v-if="isConfigured" class="account">
@@ -85,10 +85,13 @@ async function handleSignOut() {
   await signOut();
   router.push("/login");
 }
-const hideChrome = computed(() => route.name === "print" || route.name === "login");
+// Signed-in (or no auth backend) → the full app. Visitors only see the public tools.
+const member = computed(() => !isConfigured || isLoggedIn.value);
+// The landing page ("/" for visitors) draws its own top bar over the landscape.
+const hideChrome = computed(
+  () => route.name === "print" || route.name === "login" || (route.name === "home" && !member.value)
+);
 
-// Top-level section nav (desktop-primary). Shown once the user is in the app.
-const showNav = computed(() => !isConfigured || isLoggedIn.value);
 const COURSE_ROUTES = new Set(["courses", "series", "lessons", "lesson", "quiz", "search", "texts", "texts-unit", "text"]);
 const isCourses = computed(() => COURSE_ROUTES.has(route.name));
 

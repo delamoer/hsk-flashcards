@@ -42,6 +42,8 @@ import motifCloud from "./img/motif/cloud.webp";
 import motifBoat from "./img/motif/boat.webp";
 import motifRock from "./img/motif/rock.webp";
 
+import paperTexture from "./img/texture/paper.webp";
+
 import wmBooks from "./img/watermark/wm-books.webp";
 import wmPinyin from "./img/watermark/wm-pinyin.webp";
 import wmWords from "./img/watermark/wm-words.webp";
@@ -51,6 +53,7 @@ export {
   photoBamboo, photoPlumDesk, photoDesk,
   motifPlum, motifPlum2, motifCranes, motifSwallows, motifPavilion, motifSeals,
   motifPine, motifBamboo, motifMountainFar, motifCloud, motifBoat, motifRock,
+  paperTexture, // 皮纸纹理 (also tiled on body via main.css) — e.g. the landing's blank 「你的教材」 book
 };
 
 // per-series 山水横幅 (inner-page hero backgrounds)

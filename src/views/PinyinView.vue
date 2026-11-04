@@ -174,6 +174,10 @@
 
         <button v-if="quiz.answered" class="qnext" @click="nextQuestion">下一题 Next ›</button>
         <p v-else class="qhint">点上面听真人发音，再选声调 · Tap to hear, then pick the tone</p>
+        <!-- visitors who keep going get one quiet pointer to the teacher -->
+        <router-link v-if="!member && quiz.total >= 5" class="qteacher" :to="{ path: '/', hash: '#book' }" @click="closeQuiz">
+          想让老师听听你的声调？ · Want a teacher to check your tones? →
+        </router-link>
       </div>
     </div>
   </div>
@@ -186,6 +190,7 @@ import { playPinyin, speak, stop as stopAudio } from "@/utils/tts";
 import { toneOf } from "@/utils/pinyinTones";
 import { useSettings } from "@/composables/useSettings";
 import { pageHeroBg, motifCloud } from "@/assets/img.js";
+import { useAuth } from "@/composables/useAuth";
 
 const { settings } = useSettings();
 const data = pinyinData;
@@ -241,6 +246,8 @@ function speakWord(hanzi) { speak(hanzi, { rate: settings.ttsRate || 1 }); }
 function selectCell(syl) { selectedCell.value = syllMap.value[syl] || null; }
 
 // ── Tone Quiz ──
+const { isConfigured, isLoggedIn } = useAuth();
+const member = computed(() => !isConfigured || isLoggedIn.value);
 const toneName = { 1: "1st 一声", 2: "2nd 二声", 3: "3rd 三声", 4: "4th 四声" };
 const quiz = ref({ on: false, item: null, tone: 0, answered: false, picked: 0, right: 0, total: 0 });
 // Only quiz on syllables that actually have distinct human recordings for all tones.
@@ -414,6 +421,8 @@ function optClass(t) {
 .qfeed.show { opacity: 1; }
 .qfeed .ok { color: var(--success); }
 .qfeed .no { color: var(--error); }
+.qteacher { display: block; margin-top: 12px; text-align: center; font-size: 13px; font-weight: 700; color: var(--primary-strong); }
+.qteacher:hover { text-decoration: underline; }
 .qnext { width: 100%; margin-top: 14px; padding: 13px; border-radius: var(--r-pill); background: var(--card); color: var(--primary-strong); font-weight: 900; font-size: 15px; box-shadow: var(--sh-card); }
 .qhint { text-align: center; color: rgba(255, 255, 255, 0.85); font-size: 12px; margin-top: 14px; font-weight: 600; }
 

@@ -18,7 +18,7 @@ const lessonProps = (route) => ({
 });
 
 const routes = [
-  { path: "/", name: "home", component: () => import("@/views/LibraryView.vue") },
+  { path: "/", name: "home", component: () => import("@/views/HomeGate.vue") },
   { path: "/courses", name: "courses", component: () => import("@/views/CoursesView.vue") },
   { path: "/search", name: "search", component: () => import("@/views/SearchView.vue") },
   { path: "/login", name: "login", component: () => import("@/views/LoginView.vue") },
@@ -118,6 +118,10 @@ const router = createRouter({
     if (to.name === "music" && from.name === "music") return false;
     // 语法汇总 mirrors its filters into ?q=… — typing must not jump to the top.
     if (to.name === "grammar" && from.name === "grammar") return false;
+    // In-page anchors (landing page "#book" etc.) — wait for the lazy view to render.
+    if (to.hash) {
+      return new Promise((resolve) => setTimeout(() => resolve({ el: to.hash, top: 72, behavior: "smooth" }), 350));
+    }
     return { top: 0 };
   },
 });
@@ -125,13 +129,18 @@ const router = createRouter({
 // Leaving a page silences whatever it was playing.
 router.afterEach(() => stopAudio());
 
-// Login wall: when Supabase is configured, every route requires auth except /login.
+// Pages anyone can open without an account: the landing page ("/" for signed-out
+// visitors, see HomeGate.vue) and the free tools. Everything else needs a login.
+// Grammar exercises live only inside lessons, so the public grammar index exposes none.
+const PUBLIC_ROUTES = new Set(["login", "home", "pinyin", "grammar", "music"]);
+
+// Login wall: when Supabase is configured, every route except PUBLIC_ROUTES requires auth.
 // Waits for the initial session restore so a refresh doesn't bounce a logged-in user.
 router.beforeEach(async (to) => {
   const { isConfigured, isLoggedIn, isAdmin, ready } = useAuth();
   if (!isConfigured) return true; // no auth backend → don't gate (app stays usable)
   await ready;
-  if (!isLoggedIn.value && to.name !== "login") {
+  if (!isLoggedIn.value && !PUBLIC_ROUTES.has(to.name)) {
     return { name: "login", query: { redirect: to.fullPath } };
   }
   if (isLoggedIn.value && to.name === "login") {
