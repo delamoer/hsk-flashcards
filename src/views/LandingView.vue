@@ -44,23 +44,42 @@
           </p>
         </div>
         <figure class="leaf">
-          <div class="leaf-frame" :class="{ live: !!videoEmbed }">
-            <iframe
-              v-if="videoEmbed?.kind === 'youtube'"
-              :src="videoEmbed.src"
-              title="Teacher intro video"
-              loading="lazy"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-              allowfullscreen
-            ></iframe>
-            <video v-else-if="videoEmbed?.kind === 'file'" :src="videoEmbed.src" controls preload="metadata"></video>
+          <div class="leaf-frame" :class="{ live: videoOn, poster: videoEmbed && !videoOn }">
+            <!-- poster first: the player (and its third-party host) loads only when pressed, so a blocked
+                 host never shows a broken frame on arrival -->
+            <template v-if="videoOn">
+              <iframe
+                v-if="videoEmbed.kind === 'youtube' || videoEmbed.kind === 'vimeo'"
+                :src="videoEmbed.src"
+                title="Teacher intro video"
+                allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+              ></iframe>
+              <video v-else :src="videoEmbed.src" :poster="videoEmbed.poster" controls autoplay playsinline></video>
+            </template>
+            <button
+              v-else-if="videoEmbed"
+              type="button"
+              class="poster-btn"
+              :class="{ photo: videoEmbed.poster }"
+              :style="{ backgroundImage: `url(${videoEmbed.poster || photoPlumDesk})` }"
+              aria-label="Play the teacher’s intro video"
+              @click="videoOn = true"
+            >
+              <span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z" fill="#f8ead9" /></svg></span>
+              <b>Meet the teacher</b>
+              <small>老师介绍视频 · {{ TEACHER.video.length || "intro" }}</small>
+            </button>
             <div v-else>
               <div class="play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z" fill="#f8ead9" /></svg></div>
               <b>Teacher intro video</b>
               <small>老师介绍视频（待补）</small>
             </div>
           </div>
-          <figcaption class="leaf-cap"><span>Meet the teacher</span><span>YouTube</span></figcaption>
+          <figcaption class="leaf-cap">
+            <span>Teacher intro{{ TEACHER.video?.length ? ` · ${TEACHER.video.length}` : "" }}</span>
+            <a v-if="videoEmbed?.page" :href="videoEmbed.page" target="_blank" rel="noopener">Not playing? Watch on {{ videoEmbed.host }} ↗</a>
+            <span v-else>{{ videoEmbed?.host || "" }}</span>
+          </figcaption>
         </figure>
       </div>
     </section>
@@ -414,8 +433,8 @@
             <div class="gate">
               <div class="gate-mark" aria-hidden="true">约</div>
               <h3><span class="zh">在 Preply 上约课</span>Book a trial on Preply</h3>
-              <p>Pay and schedule safely through Preply. <span class="proof">★ 5.0 · 945 lessons</span></p>
-              <a class="btn btn-primary" :href="TEACHER.preplyUrl" target="_blank" rel="noopener">Book a trial lesson →</a>
+              <p>Pay and schedule safely through Preply. <span class="proof">★ 5.0 · 1,000+ lessons</span></p>
+              <a class="btn btn-primary" :href="TEACHER.preplyShare" target="_blank" rel="noopener">Book a trial lesson →</a>
               <small class="url">{{ preplyShort }}</small>
             </div>
             <div id="contact" class="gate">
@@ -426,11 +445,12 @@
                 <li v-for="ch in CONTACTS" :key="ch.key">
                   <b>{{ ch.label }}</b>
                   <button v-if="TEACHER.contact[ch.key]" type="button" class="c-btn" @click="ch.open">
-                    {{ ch.key === "wechat" ? (copied ? "Copied 已复制" : ch.action) : ch.action }}
+                    {{ copied === ch.key ? "Copied 已复制" : ch.action }}
                   </button>
                   <span v-else class="c-off">to be added · 待补</span>
                 </li>
               </ul>
+              <p v-if="copied" class="c-hint" role="status">{{ COPY_HINT[copied] }}</p>
               <button type="button" class="btn btn-ink" :disabled="!primaryContact" @click="primaryContact?.open()">
                 {{ primaryContact ? "Send a message →" : "Send a message · 待补" }}
               </button>
@@ -482,32 +502,40 @@ const TEACHER = {
     { text: "I’m currently studying for the HSK 5, and she supplements the material with conversation and checks my homework in a timely manner…", who: "Jill" },
     { text: "She’s a great tutor — friendly, encouraging, and easy to learn from. Her positive energy creates a comfortable environment.", who: "Rakan" },
   ],
-  photo: null, // imported image or URL; null → placeholder frame
-  // Intro video: { youtube: "VIDEO_ID" } or { file: "https://…/intro.mp4" }; null → placeholder
-  video: null,
+  photo: teacherPhoto, // sources/老师照片3.jpg (same look as the intro video), cropped to the 3:4 frame
+  // Intro video: { file, poster } (self-hosted, preferred) / { vimeo: "ID" } / { youtube: "ID" }; null → placeholder.
+  // Self-hosted so it plays where Vimeo is blocked (mainland China). Same clip as her Preply intro
+  // (vimeo.com/1122436853) — the phone original is HEVC, re-encoded to H.264 so every browser can play it.
+  video: { file: introVideo, poster: introPoster, length: "1 min" },
   // Preply numbers; value null → "—"
   // Numbers from her Preply profile (update now and then). value null → "—".
   stats: [
     { label: "Preply rating · 18 reviews", value: "5.0" },
-    { label: "lessons taught", value: "945" },
+    { label: "lessons taught", value: "1,000+" },
     { label: "of Chinese tutors on Preply", value: "Top 15%" },
   ],
   statsSource: "From her Preply profile · Nov 2026 · students stay for 29+ lessons on average",
-  preplyUrl: "https://preply.com/en/tutor/6953432",
+  preplyUrl: "https://preply.com/en/tutor/6953432", // shown as text under the button
+  // Her profile's "Share profile → Copy link" — Preply's own short link, which redirects to the same profile page
+  // with Preply's tutor-share tracking. Linked as-is so the redirect can count the click too.
+  preplyShare: "https://preply.in/YIHUI7EN30094143102?ts=17938484",
   // Never rendered as text: links are built only when a button is clicked.
   contact: {
-    whatsapp: null, // digits with country code, e.g. "441234567890"
-    email: null, // "name@example.com"
-    wechat: null, // WeChat ID — the button copies it to the clipboard
+    // She doesn't use WhatsApp — email + WeChat only. Shown as buttons, never as plain text.
+    email: "valerielq987@gmail.com",
+    wechat: "lq636688", // WeChat ID — the button copies it to the clipboard
   },
 };
 // ═══════════════════════════════════════════════════════════════════════════
 
 import { computed, onBeforeUnmount, onMounted, reactive, ref } from "vue";
 import {
-  heroMain, photoBamboo, photoDesk, motifPavilion, motifCranes, motifCloud,
+  heroMain, photoBamboo, photoDesk, photoPlumDesk, motifPavilion, motifCranes, motifCloud,
   paperTexture, bookCover, readingCover,
 } from "@/assets/img.js";
+import introVideo from "@/assets/teacher/teacher-intro.mp4";
+import introPoster from "@/assets/teacher/teacher-intro-poster.webp";
+import teacherPhoto from "@/assets/teacher/teacher-photo.webp";
 import { courseRegistry } from "@/data";
 import { readingBooks } from "@/data/reading.js";
 import { getGrammarLesson } from "@/data/grammar.js";
@@ -687,32 +715,43 @@ function pickTone(i) {
 }
 
 // ── teacher video + contact ─────────────────────────────────────────────────
+const videoOn = ref(false);
 const videoEmbed = computed(() => {
   const v = TEACHER.video;
-  if (v?.youtube) return { kind: "youtube", src: `https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.youtube)}?rel=0` };
-  if (v?.file) return { kind: "file", src: v.file };
+  // dnt=1: no Vimeo tracking cookies; title/byline/portrait=0 keeps the uploader's account name off the player
+  if (v?.vimeo) return { kind: "vimeo", host: "Vimeo", src: `https://player.vimeo.com/video/${encodeURIComponent(v.vimeo)}?autoplay=1&dnt=1&title=0&byline=0&portrait=0&color=a33f2e`, page: `https://vimeo.com/${encodeURIComponent(v.vimeo)}` };
+  if (v?.youtube) return { kind: "youtube", host: "YouTube", src: `https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.youtube)}?rel=0&autoplay=1`, page: `https://www.youtube.com/watch?v=${encodeURIComponent(v.youtube)}` };
+  if (v?.file) return { kind: "file", host: "", src: v.file, poster: v.poster };
   return null;
 });
 const preplyShort = TEACHER.preplyUrl.replace(/^https?:\/\/(www\.)?/, "");
-const copied = ref(false);
+// which contact was just copied ("email" | "wechat" | null) — drives the button label + hint
+const copied = ref(null);
+let copiedTimer = 0;
+async function copyContact(key, label) {
+  try {
+    await navigator.clipboard.writeText(TEACHER.contact[key]);
+    copied.value = key;
+    clearTimeout(copiedTimer);
+    copiedTimer = setTimeout(() => (copied.value = null), 8000);
+  } catch { window.prompt(label, TEACHER.contact[key]); } // clipboard blocked: let them copy it by hand
+}
+const COPY_HINT = {
+  // mailto: does nothing when no mail app is set up (common for webmail users), so the address is copied too
+  email: "No mail app opened? The address is copied — paste it into Gmail, Outlook or any email.",
+  wechat: "Now open WeChat → Add Contacts and paste the ID.",
+};
 const CONTACTS = [
   {
-    key: "whatsapp", label: "WhatsApp", action: "Chat on WhatsApp",
-    open: () => window.open(`https://wa.me/${String(TEACHER.contact.whatsapp).replace(/\D/g, "")}`, "_blank", "noopener"),
-  },
-  {
     key: "email", label: "Email", action: "Write an email",
-    open: () => { window.location.href = `mailto:${TEACHER.contact.email}`; },
+    open: () => {
+      copyContact("email", "Email · 邮箱");
+      window.location.href = `mailto:${TEACHER.contact.email}`;
+    },
   },
   {
     key: "wechat", label: "WeChat", action: "Copy WeChat ID",
-    open: async () => {
-      try {
-        await navigator.clipboard.writeText(TEACHER.contact.wechat);
-        copied.value = true;
-        setTimeout(() => (copied.value = false), 2000);
-      } catch { /* clipboard blocked */ }
-    },
+    open: () => copyContact("wechat", "WeChat ID · 微信号"),
   },
 ];
 const primaryContact = CONTACTS.find((c) => c.key !== "wechat" && TEACHER.contact[c.key]) || null;
@@ -880,6 +919,23 @@ button { font: inherit; color: inherit; }
   border: 1px dashed var(--border-strong); display: grid; place-items: center; text-align: center;
 }
 .leaf-frame.live { border-style: solid; background: #000; }
+.leaf-frame.poster { border-style: solid; }
+.poster-btn {
+  position: absolute; inset: 0; border: 0; cursor: pointer; display: grid; place-content: center; text-align: center;
+  background-size: cover; background-position: center 38%;
+}
+.poster-btn::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(245, 239, 230, .55), rgba(245, 239, 230, .82)); }
+.poster-btn > * { position: relative; }
+/* a real video frame as the poster: no paper wash over her face — the seal + label sit on the plain wall, left */
+.poster-btn.photo { place-content: end start; padding: 0 0 22px 26px; text-align: left; background-position: center; }
+.poster-btn.photo::before { background: linear-gradient(90deg, rgba(26, 18, 8, .38), rgba(26, 18, 8, 0) 45%); }
+.poster-btn.photo .play { margin: 0 0 10px; width: 62px; height: 62px; }
+.poster-btn.photo b { color: #fbf7ee; text-shadow: 0 1px 6px rgba(26, 18, 8, .5); }
+.poster-btn.photo small { color: #f1e4c8; text-shadow: 0 1px 6px rgba(26, 18, 8, .5); }
+.poster-btn .play { transition: transform .2s; }
+.poster-btn:hover .play { transform: rotate(-4deg) scale(1.06); }
+.leaf-cap a { color: var(--primary-strong); font-weight: 700; text-decoration: none; }
+.leaf-cap a:hover { text-decoration: underline; }
 .leaf-frame iframe, .leaf-frame video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .play {
   width: 74px; height: 74px; border-radius: 12px; background: linear-gradient(160deg, #a8442f, #7a2b21);
@@ -1264,6 +1320,7 @@ button { font: inherit; color: inherit; }
 .gate li { display: flex; gap: 12px; font-size: 14px; color: var(--sumi); align-items: baseline; }
 .gate li b { width: 78px; flex: none; font-weight: 700; }
 .c-off { color: var(--muted); }
+.c-hint { margin: 0 0 14px; font-size: 13px; line-height: 1.5; color: var(--jade); }
 .c-btn { font: 700 13.5px/1 var(--ui); color: var(--primary-strong); background: var(--primary-soft); border: 1px solid rgba(122, 43, 33, .25); border-radius: var(--r-pill); padding: 5px 11px; cursor: pointer; }
 .c-btn:hover { border-color: var(--primary-strong); }
 .gate .btn { margin-top: 18px; padding: 13px 18px; font-size: 15px; }
@@ -1362,6 +1419,14 @@ button { font: inherit; color: inherit; }
   .tile-t { font-size: 21px; }
   .lyric blockquote { font-size: 19px; }
   .chip { flex: 1 1 100%; }
+  /* three stats always on one row: equal columns, smaller numbers */
+  .stats { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; }
+  .stat { padding: 0 14px; }
+  .stat b { font-size: 25px; }
+  .stat span { font-size: 12px; line-height: 1.35; }
+  .poster-btn.photo { padding: 0 0 14px 16px; }
+  .poster-btn.photo .play { width: 46px; height: 46px; margin-bottom: 6px; }
+  .poster-btn.photo .play svg { width: 20px; height: 20px; }
   .chips { flex-wrap: wrap; }
   .py-sheet { grid-template-columns: 92px 1fr; gap: 12px; padding: 20px 16px 14px; width: 100%; }
   .tzg { width: 92px; height: 92px; }
