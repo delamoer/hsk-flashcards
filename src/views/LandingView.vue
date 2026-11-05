@@ -545,9 +545,6 @@ import { posLabel } from "@/data/pos.js";
 import { colorPinyin } from "@/utils/pinyinTones.js";
 import { speak, playPinyin, nowPlaying } from "@/utils/tts.js";
 
-const TITLE = "学中文 Learn Chinese — free pinyin chart, grammar index and songs, with a real teacher";
-const DESCRIPTION =
-  "Lesson-by-lesson Chinese courses with a full-time teacher, plus free tools: a grammar index you can search in English, Chinese songs with their MVs, and a pinyin chart with native-speaker recordings.";
 
 // ── scrolling (hash routing owns the URL hash, so no href="#…") ──────────────
 function go(id) {
@@ -780,24 +777,11 @@ function drawPath() {
 }
 
 let ro = null;
-let prevTitle = "";
-let metaEl = null;
-let prevDesc = null;
 function relayout() {
   updateShelf();
   drawPath();
 }
 onMounted(() => {
-  prevTitle = document.title;
-  document.title = TITLE;
-  metaEl = document.querySelector('meta[name="description"]');
-  if (!metaEl) {
-    metaEl = document.createElement("meta");
-    metaEl.name = "description";
-    document.head.appendChild(metaEl);
-  } else prevDesc = metaEl.content;
-  metaEl.content = DESCRIPTION;
-
   loadGrammarSample();
   relayout();
   ro = new ResizeObserver(relayout);
@@ -807,11 +791,6 @@ onMounted(() => {
 });
 onBeforeUnmount(() => {
   ro?.disconnect();
-  document.title = prevTitle;
-  if (metaEl) {
-    if (prevDesc === null) metaEl.remove();
-    else metaEl.content = prevDesc;
-  }
 });
 </script>
 

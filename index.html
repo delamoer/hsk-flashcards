@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>学中文 · Learn Chinese</title>
+    <script>
+      // The public pages are also served prerendered at real paths (/pinyin/ …): scripts/prerender.py fills
+      // <div class="prerendered"> with the signed-out page, for search engines. Runs before the app's modules.
+      (function () {
+        var m = document.querySelector('meta[name="prerender-route"]');
+        if (!m) return;
+        // The app routes by hash, so /pinyin/ without one starts on its own route (?q=… moves into the hash).
+        // Must happen here: creating the router (on import) would already set an empty hash to "#/".
+        // (The router then shows it as /#/pinyin — the copies carry <base href="../">, see src/router.)
+        if (!location.hash && m.content !== "/") {
+          history.replaceState(null, "", location.pathname + "#" + m.content + location.search);
+        }
+        // Hide the copy when it isn't what the app will show — a signed-in student, or a hash route to
+        // another page — so it never flashes before the app mounts.
+        var hashPath = location.hash.replace(/^#/, "").split(/[?#]/)[0];
+        var signedIn = false;
+        try {
+          for (var i = 0; i < localStorage.length; i++) if (/^sb-.*-auth-token$/.test(localStorage.key(i))) signedIn = true;
+        } catch (e) {}
+        if (signedIn || (hashPath && hashPath !== m.content)) document.documentElement.className += " hide-prerendered";
+      })();
+    </script>
+    <style>
+      .hide-prerendered .prerendered { display: none; }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

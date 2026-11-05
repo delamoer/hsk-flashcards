@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "convert": "uv run --with openpyxl python3 scripts/convert.py",
-    "deploy": "npm run build && gh-pages -d dist"
+    "prerender": "uv run -q --with playwright python -I scripts/prerender.py",
+    "deploy": "npm run build && npm run prerender && gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",

@@ -50,7 +50,8 @@ Live: https://delamoer.github.io/hsk-flashcards/ · Repo: `delamoer/hsk-flashcar
 npm run dev        # dev server (localhost:5173)
 npm run build      # production build → dist/
 npm run convert    # regenerate word data src/data/hsk*.json etc. from xlsx (uv + openpyxl)
-npm run deploy     # build + publish dist to gh-pages branch
+npm run prerender  # after build: static copies of the public pages for search engines (see "SEO" below)
+npm run deploy     # build + prerender + publish dist to gh-pages branch
 
 # Texts + Grammar (not npm scripts — run via uv directly):
 uv run --with openpyxl python3 scripts/convert_texts.py            # xlsx → src/data/texts/*.json (hsk/newhsk3)
@@ -459,6 +460,25 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   (generated MP3s that live in Storage, incl. `audio-src/pinyin/`) and **`design-demos/`** (throwaway HTML mockups).
 - **`prototype/index.html`** is the original single-file hi-fi prototype (design reference / artifact),
   NOT production code. The Vue app is the real thing.
+
+## SEO (public pages)
+
+Google ignores everything after "#", so with hash routing the whole site is one URL. The four public
+pages therefore also exist as **prerendered static copies at real paths**, written by
+`scripts/prerender.py` after `vite build` (headless Chromium, signed out): `dist/index.html` (landing),
+`dist/{pinyin,grammar,music}/index.html` + `dist/sitemap.xml`. Titles / descriptions / canonical URLs
+live in `src/seo.js` (`SEO_PAGES`, applied by `router.afterEach` — the script just captures them); the
+grammar copy clicks 「Show more」 until all 792 points are in it. At runtime the copy sits in
+`<div id="app"><div class="prerendered">` and the app replaces it on mount. Subfolder copies carry
+`<base href="../">` so relative URLs resolve from the site root and vue-router (hash mode honours the
+path before "#" only when a `<base>` exists; `siteBase()` in the router) keeps its URLs at `/#/…` — the
+address bar shows `/#/pinyin` once the app starts; the inline script in
+`index.html` (runs before any module — the router sets an empty hash to `#/` on import) turns `/pinyin/`
+into `/pinyin/#/pinyin` (carrying `?q=`/`?song=` into the hash) and hides the copy for signed-in students
+(`sb-*-auth-token` in localStorage) or other hash routes, so it never flashes. **Course pages stay
+hash-only and login-walled — students' `#/…` bookmarks are untouched.** Adding a public page = an entry in
+`SEO_PAGES` + `PAGES` in the script (+ the route name in `PUBLIC_ROUTES`). `robots.txt` can't work on a
+project site (it must sit at the domain root); submit the sitemap in Google Search Console instead.
 
 ## Deploy
 

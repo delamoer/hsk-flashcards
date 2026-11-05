@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import { stop as stopAudio } from "@/utils/tts";
 import { useAuth } from "@/composables/useAuth";
+import { applySeo } from "@/seo";
 
 // Hash history — works on static hosting (GitHub Pages) without server rewrites.
 // Canonical route pattern: /course/:series/:unit/lesson/:lesson
@@ -110,8 +111,17 @@ const routes = [
   { path: "/:pathMatch(.*)*", redirect: "/" },
 ];
 
+// On a prerendered public page (/pinyin/ …, see scripts/prerender.py and index.html) the hash URLs are
+// rooted at the site root, not at that page's folder — otherwise leaving it gives /pinyin/#/grammar.
+// (vue-router only uses this path when the page has a <base> tag, which the prerendered copies carry.)
+function siteBase() {
+  const page = document.querySelector('meta[name="prerender-route"]')?.content;
+  if (!page || page === "/") return undefined; // default: the current path
+  return location.pathname.replace(new RegExp(`${page.slice(1)}/(?:index\\.html)?$`), "");
+}
+
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(siteBase()),
   routes,
   scrollBehavior(to, from) {
     // Switching songs only changes ?song= — keep the scroll position.
@@ -150,6 +160,13 @@ router.beforeEach(async (to) => {
     return { path: "/" }; // non-admins can't reach the admin console
   }
   return true;
+});
+
+// Title / description / canonical for the public pages (see src/seo.js). After the login
+// guard, so isLoggedIn is settled: "/" is the landing page only for signed-out visitors.
+router.afterEach((to) => {
+  const { isConfigured, isLoggedIn } = useAuth();
+  applySeo(to.name, to.name !== "home" || (isConfigured && !isLoggedIn.value));
 });
 
 export default router;
