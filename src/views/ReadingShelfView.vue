@@ -1,6 +1,6 @@
 <template>
-  <!-- 全部读物：只放书（按丛书分组），点书进单本目录页 /reading/:book 再选文章 -->
   <div class="rs">
+    <!-- 全部读物：只放书（按丛书分组），点书进单本目录页 /reading/:book 再选文章 -->
     <header class="phead" :style="pageHeroBg()">
       <img class="hero-motif" :src="motifPine" alt="" aria-hidden="true" />
       <div class="kicker">Graded Reading · 课外阅读</div>

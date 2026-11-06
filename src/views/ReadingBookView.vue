@@ -1,6 +1,6 @@
 <template>
-  <!-- 单本目录：书头（封面 · 信息 · 继续读）+ 线装目录，点一篇进阅读页 -->
   <div class="rb">
+    <!-- 单本目录：书头（封面 · 信息 · 继续读）+ 线装目录，点一篇进阅读页 -->
     <div v-if="!B" class="state">没有这本书 <i>Book not found</i> · <router-link to="/reading">全部读物 All readers</router-link></div>
     <template v-else>
       <div class="crumb">

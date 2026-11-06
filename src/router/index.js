@@ -136,6 +136,19 @@ const router = createRouter({
   },
 });
 
+// Each page is its own lazy chunk. After a deploy the old chunk names are gone, so a tab still running the
+// previous build fails to load the next page (also on a flaky connection) — the click did nothing until a
+// manual refresh. Load the target URL fresh instead, once (a sessionStorage stamp prevents a reload loop).
+router.onError((err, to) => {
+  if (!/dynamically imported module|Importing a module script failed|Failed to fetch|error loading dynamically/i.test(err?.message || "")) return;
+  const key = "hsk-chunk-reload";
+  const last = Number(sessionStorage.getItem(key) || 0);
+  if (Date.now() - last < 10000) return; // just reloaded for this — don't loop
+  sessionStorage.setItem(key, String(Date.now()));
+  location.assign(router.resolve(to.fullPath).href);
+  location.reload();
+});
+
 // Leaving a page silences whatever it was playing.
 router.afterEach(() => stopAudio());
 
