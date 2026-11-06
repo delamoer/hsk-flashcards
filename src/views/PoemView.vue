@@ -55,6 +55,16 @@
           <button class="play-all" :class="{ on: nowPlaying === allText }" @click="speakSequence(allText, poem.lines.map((l) => l.zh), { recited: true })">
             <span class="ic">{{ nowPlaying === allText ? "⏹" : "▶" }}</span>朗读全诗 <small>{{ nowPlaying === allText ? "Stop" : "Read aloud" }}</small>
           </button>
+          <!-- 诗词新唱：整首被谱成歌的，在引首挂一张 MV 海报，点了去中国风 -->
+          <div v-for="f in sungFull" :key="f.n" class="lk-sung">
+            <h3>这首诗被谱成了歌<span>Sung as a song</span></h3>
+            <router-link class="lk-mnt" :to="{ name: 'music', query: { song: f.n } }" :aria-label="`${f.song.zh} — ${f.song.artistEn}`">
+              <span class="im"><img :src="`https://i.ytimg.com/vi/${f.song.id}/hqdefault.jpg`" alt="" loading="lazy" /><span class="pl"></span></span>
+            </router-link>
+            <div class="who">{{ f.song.artist }}《{{ f.song.zh }}》<small>{{ f.song.artistEn }}</small></div>
+            <p>{{ f.song.note }}</p>
+            <router-link class="go" :to="{ name: 'music', query: { song: f.n } }">到中国风去听 <small>Listen in Music →</small></router-link>
+          </div>
         </div></aside>
         <div class="geshui"></div>
 
@@ -69,7 +79,7 @@
             </div>
             <p class="tip">点 <u>虚线字</u> 看读音和意思 · Tap a dotted word for its sound and meaning</p>
 
-            <div class="stanzas" @click="onLinesClick" @keydown.enter="onLinesClick">
+            <div class="stanzas" :class="{ 'lk-notes': sungLines.size }" @click="onLinesClick" @keydown.enter="onLinesClick">
               <div v-for="(st, si) in stanzas" :key="si" class="stanza">
                 <div v-if="stanzas.length > 1" class="st-label">{{ stanzaLabel(si)[0] }}<small>{{ stanzaLabel(si)[1] }}</small></div>
                 <div v-for="ln in st" :key="ln.i" class="ln" :class="{ playing: nowPlaying === ln.zh || (nowPlaying === allText && nowIndex === ln.i) }">
@@ -83,6 +93,15 @@
                     <div class="zh" v-html="lineHTML[ln.i]"></div>
                     <p class="tr lit"><b>直译<small>Literal</small></b>{{ ln.lit }}</p>
                     <p class="tr free"><b>意译<small>Meaning</small></b>{{ ln.en }}</p>
+                  </div>
+                  <!-- 朱批：流行歌里引用 / 化用了这一句 -->
+                  <div v-if="sungLines.get(ln.i)" class="lk-pzs">
+                    <router-link v-for="q in sungLines.get(ln.i)" :key="q.n" class="lk-pz" :to="{ name: 'music', query: { song: q.n } }">
+                      <span class="k">歌 · {{ REL[q.link.rel].zh }}<i>{{ REL[q.link.rel].en }}</i></span>
+                      <span class="y">「{{ q.link.lyric }}」</span>
+                      <span class="s">《{{ q.song.zh }}》{{ q.song.artist }} <small>{{ q.song.artistEn }}</small></span>
+                      <span class="go">去听 Listen →</span>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -186,6 +205,7 @@
 import { ref, reactive, computed, watch, onMounted, onBeforeUnmount, nextTick } from "vue";
 import { loadPoemsMeta, loadPoem } from "@/data/poems";
 import { applyPoemSeo } from "@/seo";
+import { REL, songsOfPoem } from "@/utils/songPoems";
 import { speak, speakSequence, nowPlaying, nowIndex, preload } from "@/utils/tts";
 import { toneOf } from "@/utils/pinyinTones";
 import { useSettings } from "@/composables/useSettings";
@@ -210,14 +230,16 @@ const CN = "一二三四五六七八九十";
 /* ---------- data ---------- */
 const meta = ref(null);
 const poem = ref(null);
+const songs = ref([]); // 中国风 songs linked to this poem (music.json → utils/songPoems)
 const ready = ref(false);
 
 async function load() {
   ready.value = false;
   closePop();
-  const [m, p] = await Promise.all([loadPoemsMeta(), loadPoem(props.slug)]);
+  const [m, p, s] = await Promise.all([loadPoemsMeta(), loadPoem(props.slug), songsOfPoem(props.slug)]);
   meta.value = m;
   poem.value = p;
+  songs.value = s;
   ready.value = true;
   applyPoemSeo(p);
   if (p) preload(p.lines.map((l) => l.zh));
@@ -235,6 +257,23 @@ const prev = computed(() => (idx.value > 0 ? order.value[idx.value - 1] : null))
 const next = computed(() => (idx.value >= 0 ? order.value[idx.value + 1] || null : null));
 const backTo = computed(() => ({ name: "poems", query: { at: poem.value?.dynasty } }));
 const hxBg = computed(() => ({ 宋: seriesBand.survival, 元: seriesBand.zoubian }[poem.value?.dynasty] || heroMain));
+// 诗词新唱 (the whole poem sung) vs. pop songs quoting / adapting one line: line index → [{n, song, link}]
+const sungFull = computed(() => songs.value.filter((s) => s.link.rel === "full"));
+const sungLines = computed(() => {
+  const m = new Map();
+  for (const s of songs.value) if (s.link.rel !== "full") m.set(s.link.line, [...(m.get(s.link.line) || []), s]);
+  return m;
+});
+// the characters a song echoes, per line (first occurrence of each word, over Chinese characters)
+const echoAt = computed(() => {
+  const res = {};
+  for (const [li, qs] of sungLines.value) {
+    const han = [...(poem.value?.lines[li]?.zh || "")].filter((c) => /\p{Script=Han}/u.test(c)).join("");
+    const set = (res[li] = new Set());
+    for (const q of qs) for (const w of q.link.hl) { const at = han.indexOf(w); if (at >= 0) for (let j = 0; j < w.length; j++) set.add(at + j); }
+  }
+  return res;
+});
 const allText = computed(() => (poem.value ? poem.value.lines.map((l) => l.zh).join("") : ""));
 // 字词 are recorded in this poem's voice under their own manifest key (gen_audio.py --poems)
 const wordKey = (w) => `poem-${poem.value?.voice || "m"}|${w}`;
@@ -328,7 +367,7 @@ const lineHTML = computed(() => {
       const m = marks[h];
       if (m && m.start != null) out += `<span class="w" role="button" tabindex="0" data-w="${m.start}">`;
       const py = syl[h] || "";
-      const hl = hlChars.value.includes(c) ? " img-hl" : "";
+      const hl = (hlChars.value.includes(c) ? " img-hl" : "") + (echoAt.value[li]?.has(h) ? " echo" : "");
       const rt = withPy ? `<rt${tone ? ` class="t${toneOf(py)}"` : ""}>${esc(py)}</rt>` : "";
       out += `<ruby class="ch${hl}">${esc(c)}${rt}</ruby>`;
       if (m && m.end) out += "</span>";
@@ -516,6 +555,35 @@ dl.meta .lv3 i { color: #f3dccb; }
 .poem.lit.free .tr b { display: inline-block; }
 .poem.py .tr { margin-top: 6px; }
 
+/* 朱批：歌里引用 / 化用了这一句（定稿 A，样稿 design-demos/poetry/link/A-poem.html） */
+.lk-notes .ln { grid-template-columns: 56px minmax(0, 1fr) 206px; }
+.lk-pzs { grid-column: 3; grid-row: 1; align-self: center; display: flex; flex-direction: column; gap: 8px; margin-left: 6px; }
+.lk-pz { display: block; padding: 8px 10px 9px 12px; border-left: 1.5px solid var(--cinnabar); border-radius: 0 8px 8px 0; text-align: left; transition: background 0.15s; }
+.lk-pz:hover { background: rgba(243, 225, 208, 0.7); }
+.lk-pz .k { display: flex; align-items: center; gap: 6px; font: 700 12px var(--serif-cn); color: var(--cinnabar-dk); letter-spacing: 1px; }
+.lk-pz .k i { font: 700 10.5px var(--ui); font-style: normal; letter-spacing: 0.6px; text-transform: uppercase; color: var(--muted); }
+.lk-pz .y { display: block; margin: 4px 0 3px; font: 600 16px/1.35 var(--serif-cn); color: var(--cinnabar); }
+.lk-pz .s { display: block; font: 500 13px/1.4 var(--han); color: var(--body); }
+.lk-pz .s small { font: 600 12px var(--ui); color: var(--muted); }
+.lk-pz .go { display: block; margin-top: 3px; font: 700 12px var(--ui); color: var(--cinnabar-dk); }
+.zh :deep(.ch.echo) { color: var(--cinnabar); background: linear-gradient(transparent 82%, rgba(163, 63, 46, 0.28) 82%); }
+/* 引首：这首诗被谱成了歌 */
+.lk-sung { margin-top: 6px; padding-top: 16px; border-top: 1px dashed var(--border-strong); }
+.lk-sung h3 { display: flex; align-items: baseline; gap: 8px; font: 700 16px var(--serif-cn); color: var(--ink); letter-spacing: 1px; }
+.lk-sung h3 span { font: 600 15px var(--caps); color: var(--gold-deep); letter-spacing: 0; }
+.lk-mnt { position: relative; display: block; margin: 10px 0 8px; padding: 6px; background: var(--paper-2); border: 1px solid var(--border-strong); border-radius: 3px; box-shadow: inset 0 0 0 3px var(--paper-2), inset 0 0 0 4px var(--gold-lt); }
+.lk-mnt .im { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--sumi); }
+.lk-mnt img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.28) saturate(0.85) brightness(0.96); transition: filter 0.25s; }
+.lk-mnt:hover img { filter: none; }
+.lk-mnt .pl { position: absolute; left: 50%; top: 50%; width: 50px; height: 50px; border-radius: 7px; transform: translate(-50%, -50%) rotate(-4deg); background: var(--cinnabar); display: grid; place-items: center;
+  box-shadow: inset 0 0 0 2px rgba(251, 233, 214, 0.55), inset 0 0 0 3px var(--cinnabar), 0 6px 16px rgba(42, 36, 26, 0.35); }
+.lk-mnt .pl::before { content: ""; margin-left: 4px; border-left: 15px solid #fbe9d6; border-top: 9px solid transparent; border-bottom: 9px solid transparent; }
+.lk-sung .who { font: 600 17px var(--serif-cn); color: var(--ink); }
+.lk-sung .who small { margin-left: 6px; font: 600 13px var(--ui); color: var(--muted); }
+.lk-sung p { margin-top: 4px; font: 400 13.5px/1.55 var(--ui); color: var(--body); }
+.lk-sung .go { display: inline-block; margin-top: 8px; font: 700 13px var(--han); color: var(--cinnabar-dk); border-bottom: 1px solid rgba(163, 63, 46, 0.4); }
+.lk-sung .go small { font: 600 12px var(--ui); color: var(--muted); }
+
 /* 卷边钤印 */
 .bian { flex: none; width: 112px; position: relative; border-left: 1px dashed var(--line); padding: 28px 0 20px; }
 .bian-in { position: sticky; top: calc(var(--appbar-h, 69px) + 24px); display: flex; flex-direction: column; align-items: center; gap: 18px; }
@@ -637,7 +705,9 @@ dl.meta .lv3 i { color: #f3dccb; }
   .sw::before { left: 8px; }
   .st-label { position: static; writing-mode: horizontal-tb; justify-content: center; margin-bottom: 4px; font-size: 14px; }
   .stanza + .stanza .st-label { top: auto; }
-  .ln { grid-template-columns: 34px minmax(0, 1fr); padding: 10px 0 12px; }
+  .ln, .lk-notes .ln { grid-template-columns: 34px minmax(0, 1fr); padding: 10px 0 12px; }
+  .lk-pzs { grid-column: 2; grid-row: auto; align-items: center; margin: 10px 0 0; }
+  .lk-pz { max-width: 300px; }
   .gut { gap: 5px; padding-top: 6px; }
   .poem.py .gut { padding-top: 22px; }
   .lp { width: 28px; height: 28px; opacity: 0.9; }

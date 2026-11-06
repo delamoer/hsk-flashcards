@@ -163,6 +163,17 @@
               "py": "Lántíng",
               "en": "Orchid Pavilion"
             }
+          ],
+          "poems": [
+            {
+              "slug": "chang-hen-ge",
+              "line": 2,
+              "hl": [
+                "回眸一笑"
+              ],
+              "lyric": "回眸一笑你婉约",
+              "rel": "adapt"
+            }
           ]
         },
         {
@@ -189,6 +200,26 @@
               "zh": "冷",
               "py": "lěng",
               "en": "cold"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "chun-wang",
+              "line": 1,
+              "hl": [
+                "草木深"
+              ],
+              "lyric": "旧故里草木深",
+              "rel": "adapt"
+            },
+            {
+              "slug": "qing-ming",
+              "line": 0,
+              "hl": [
+                "雨纷纷"
+              ],
+              "lyric": "雨纷纷",
+              "rel": "adapt"
             }
           ]
         },
@@ -217,6 +248,26 @@
               "py": "wǔxiá",
               "en": "martial-arts fiction"
             }
+          ],
+          "poems": [
+            {
+              "slug": "ji-gu",
+              "line": 7,
+              "hl": [
+                "执子之手"
+              ],
+              "lyric": "执子之手逍遥",
+              "rel": "quote"
+            },
+            {
+              "slug": "yin-jiu",
+              "line": 2,
+              "hl": [
+                "东篱下"
+              ],
+              "lyric": "东篱下 闲云野鹤",
+              "rel": "quote"
+            }
           ]
         },
         {
@@ -244,6 +295,17 @@
               "py": "jiānghú",
               "en": "the world of martial heroes"
             }
+          ],
+          "poems": [
+            {
+              "slug": "qing-yu-an",
+              "line": 5,
+              "hl": [
+                "蓦然回首"
+              ],
+              "lyric": "蓦然回首 你在渡船口",
+              "rel": "adapt"
+            }
           ]
         },
         {
@@ -270,6 +332,26 @@
               "zh": "等",
               "py": "děng",
               "en": "to wait"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "xiang-si",
+              "line": 0,
+              "hl": [
+                "红豆"
+              ],
+              "lyric": "相思寄红豆",
+              "rel": "adapt"
+            },
+            {
+              "slug": "tian-jing-sha-qiu-si",
+              "line": 2,
+              "hl": [
+                "瘦马"
+              ],
+              "lyric": "我马儿有些瘦",
+              "rel": "adapt"
             }
           ]
         },
@@ -465,6 +547,17 @@
               "py": "jīngjù",
               "en": "Peking opera"
             }
+          ],
+          "poems": [
+            {
+              "slug": "gai-xia-ge",
+              "line": 0,
+              "hl": [
+                "力拔山"
+              ],
+              "lyric": "力拔山河天",
+              "rel": "adapt"
+            }
           ]
         },
         {
@@ -601,6 +694,45 @@
               "py": "xīn",
               "en": "heart"
             }
+          ],
+          "poems": [
+            {
+              "slug": "jiang-cheng-zi",
+              "line": 1,
+              "hl": [
+                "不思量自难忘"
+              ],
+              "lyric": "不思量 自难相忘",
+              "rel": "quote"
+            },
+            {
+              "slug": "jian-jia",
+              "line": 1,
+              "hl": [
+                "在水一方"
+              ],
+              "lyric": "背影成双 在水一方",
+              "rel": "quote"
+            },
+            {
+              "slug": "tao-yao",
+              "line": 0,
+              "hl": [
+                "夭夭",
+                "灼灼"
+              ],
+              "lyric": "灼灼桃花凉",
+              "rel": "adapt"
+            },
+            {
+              "slug": "ji-hai-za-shi",
+              "line": 3,
+              "hl": [
+                "化作春泥"
+              ],
+              "lyric": "化作春泥呵护着我",
+              "rel": "adapt"
+            }
           ]
         },
         {
@@ -708,6 +840,17 @@
               "zh": "海棠",
               "py": "hǎitáng",
               "en": "begonia, crabapple blossom"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "ji-gu",
+              "line": 7,
+              "hl": [
+                "执子之手"
+              ],
+              "lyric": "执子手吹散",
+              "rel": "adapt"
             }
           ]
         },
@@ -853,7 +996,7 @@
           ]
         },
         {
-          "id": "XmHdKU94KwA",
+          "id": "OC6k-fm09CQ",
           "zh": "一直很安静",
           "py": "Yìzhí Hěn Ānjìng",
           "en": "Always Quiet",
@@ -1120,6 +1263,17 @@
               "py": "wǔshēng yīnjiē",
               "en": "the five-note (pentatonic) scale"
             }
+          ],
+          "poems": [
+            {
+              "slug": "nian-nu-jiao",
+              "line": 0,
+              "hl": [
+                "浪淘尽"
+              ],
+              "lyric": "涛浪淘尽红尘俗世",
+              "rel": "adapt"
+            }
           ]
         },
         {
@@ -1173,6 +1327,723 @@
               "zh": "动画",
               "py": "dònghuà",
               "en": "animation, cartoon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zh": "诗词新唱", "en": "Poems in song", "seal": "诗",
+      "songs": [
+        {
+          "id": "lN1ku7TQNzk",
+          "zh": "蒹葭",
+          "py": "Jiānjiā",
+          "en": "Reeds",
+          "artist": "雷佳",
+          "artistEn": "Lei Jia",
+          "live": true,
+          "note": "All three stanzas of this 2,500-year-old song from the Book of Songs (诗经), sung by folk singer Lei Jia on CCTV's Classics Sung Anew (经典咏流传), a show that sets classical poems to new music.",
+          "noteZh": "民歌歌唱家雷佳在央视《经典咏流传》演唱，唱的是《诗经·蒹葭》原文。",
+          "words": [
+            {
+              "zh": "蒹葭",
+              "py": "jiānjiā",
+              "en": "reeds"
+            },
+            {
+              "zh": "白露",
+              "py": "báilù",
+              "en": "white dew"
+            },
+            {
+              "zh": "伊人",
+              "py": "yīrén",
+              "en": "that person — the one I long for"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "jian-jia",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "9d2HY6xPCYw",
+          "zh": "在水一方",
+          "py": "Zài Shuǐ Yì Fāng",
+          "en": "Across the Water",
+          "artist": "邓丽君",
+          "artistEn": "Teresa Teng",
+          "note": "蒹葭 retold in modern Chinese: “green grass so lush, white mist so wide — there is a fair one, across the water.” The novelist Qiong Yao (琼瑶) wrote the words for her story of the same name, and Teresa Teng's recording made it a classic.",
+          "noteZh": "琼瑶作词，把《诗经·蒹葭》改写成了白话：「绿草苍苍，白雾茫茫，有位佳人，在水一方」。",
+          "words": [
+            {
+              "zh": "佳人",
+              "py": "jiārén",
+              "en": "a fair lady"
+            },
+            {
+              "zh": "茫茫",
+              "py": "mángmáng",
+              "en": "vast and hazy"
+            },
+            {
+              "zh": "逆流而上",
+              "py": "nìliú ér shàng",
+              "en": "go upstream, against the current"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "jian-jia",
+              "line": 1,
+              "hl": [
+                "在水一方"
+              ],
+              "lyric": "有位佳人 在水一方",
+              "rel": "adapt"
+            }
+          ]
+        },
+        {
+          "id": "suOtLOlTC8w",
+          "zh": "观沧海",
+          "py": "Guān Cānghǎi",
+          "en": "Viewing the Sea",
+          "artist": "吉克隽逸",
+          "artistEn": "Jike Junyi",
+          "live": true,
+          "note": "Cao Cao wrote this around 207 AD, looking out over the sea after a victorious campaign in the north. Jike Junyi, a singer of the Yi people, performs it on Classics Sung Anew (经典咏流传).",
+          "noteZh": "曹操北征归来、东临碣石时所作；彝族歌手吉克隽逸在《经典咏流传》演唱。",
+          "words": [
+            {
+              "zh": "沧海",
+              "py": "cānghǎi",
+              "en": "the vast sea"
+            },
+            {
+              "zh": "日月",
+              "py": "rìyuè",
+              "en": "the sun and the moon"
+            },
+            {
+              "zh": "星汉",
+              "py": "xīnghàn",
+              "en": "the Milky Way"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "guan-cang-hai",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "zqCWu7cdXxU",
+          "zh": "短歌行",
+          "py": "Duǎn Gē Xíng",
+          "en": "A Short Song",
+          "artist": "吴彤",
+          "artistEn": "Wu Tong",
+          "live": true,
+          "note": "Cao Cao's famous drinking song — life is short, so gather good people while you can. Wu Tong, a sheng (mouth organ) player from Yo-Yo Ma's Silk Road Ensemble, sings part of it to sheng and piano on Classics Sung Anew (经典咏流传).",
+          "noteZh": "曹操的名篇；笙演奏家吴彤（马友友丝路乐团成员）在《经典咏流传》用笙和钢琴演唱，唱的是节选。",
+          "words": [
+            {
+              "zh": "对酒当歌",
+              "py": "duìjiǔ dānggē",
+              "en": "sing over wine"
+            },
+            {
+              "zh": "人生",
+              "py": "rénshēng",
+              "en": "life"
+            },
+            {
+              "zh": "杜康",
+              "py": "Dù Kāng",
+              "en": "wine (named after its legendary inventor)"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "duan-ge-xing",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "QGSf3UNJtLE",
+          "zh": "敕勒歌",
+          "py": "Chìlè Gē",
+          "en": "Song of the Chile",
+          "artist": "谭维维",
+          "artistEn": "Tan Weiwei",
+          "live": true,
+          "note": "A folk song of the northern grasslands from the 5th–6th century: the sky is a great yurt, and when the wind bends the grass, cattle and sheep appear. Rock singer Tan Weiwei sings it on a CCTV folk-song show.",
+          "noteZh": "北朝民歌《敕勒歌》；谭维维在央视民歌节目中演唱。",
+          "words": [
+            {
+              "zh": "草原",
+              "py": "cǎoyuán",
+              "en": "grassland"
+            },
+            {
+              "zh": "牛羊",
+              "py": "niúyáng",
+              "en": "cattle and sheep"
+            },
+            {
+              "zh": "苍苍",
+              "py": "cāngcāng",
+              "en": "deep blue and endless"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "chi-le-ge",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "3Fc8Tyz2ntI",
+          "zh": "登鹳雀楼",
+          "py": "Dēng Guànquè Lóu",
+          "en": "On Stork Tower",
+          "artist": "维也纳莫扎特童声合唱团",
+          "artistEn": "Mozart Boys Choir Vienna",
+          "live": true,
+          "note": "Wang Zhihuan's four lines — climb one more floor to see a thousand li further — are among the first poems Chinese children learn. Here a boys' choir from Vienna sings them in Chinese on Classics Sung Anew (经典咏流传).",
+          "noteZh": "王之涣《登鹳雀楼》；维也纳莫扎特童声合唱团在《经典咏流传》用中文演唱。",
+          "words": [
+            {
+              "zh": "白日",
+              "py": "báirì",
+              "en": "the sun"
+            },
+            {
+              "zh": "黄河",
+              "py": "Huáng Hé",
+              "en": "the Yellow River"
+            },
+            {
+              "zh": "更上一层楼",
+              "py": "gèng shàng yì céng lóu",
+              "en": "go up one more floor — aim higher"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "deng-guan-que-lou",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "tf7CH_cM30A",
+          "zh": "静夜思",
+          "py": "Jìng Yè Sī",
+          "en": "Quiet Night Thoughts",
+          "artist": "雷佳",
+          "artistEn": "Lei Jia",
+          "live": true,
+          "note": "Li Bai's moonlit homesickness, the best-known poem in Chinese. Lei Jia sings it on Classics Sung Anew (经典咏流传), with a few new lines woven around the original four.",
+          "noteZh": "李白《静夜思》；雷佳在《经典咏流传》演唱，原诗之外加了一些新写的句子。",
+          "words": [
+            {
+              "zh": "明月",
+              "py": "míngyuè",
+              "en": "the bright moon"
+            },
+            {
+              "zh": "故乡",
+              "py": "gùxiāng",
+              "en": "hometown"
+            },
+            {
+              "zh": "举头",
+              "py": "jǔtóu",
+              "en": "raise one's head"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "jing-ye-si",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "4goR7JqsQrY",
+          "zh": "将进酒",
+          "py": "Qiāng Jìn Jiǔ",
+          "en": "Bring in the Wine",
+          "artist": "凤凰传奇",
+          "artistEn": "Phoenix Legend",
+          "live": true,
+          "note": "Li Bai's wildest drinking poem — “heaven made my talent, so it must be of use” — belted out by the pop duo Phoenix Legend on Classics Sung Anew (经典咏流传).",
+          "noteZh": "李白《将进酒》；凤凰传奇在《经典咏流传》演唱。「将」读 qiāng，是「请」的意思。",
+          "words": [
+            {
+              "zh": "将进酒",
+              "py": "qiāng jìn jiǔ",
+              "en": "please, drink up"
+            },
+            {
+              "zh": "天生我材",
+              "py": "tiānshēng wǒ cái",
+              "en": "the talent heaven gave me"
+            },
+            {
+              "zh": "千金",
+              "py": "qiānjīn",
+              "en": "a fortune"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "qiang-jin-jiu",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "PYHiWFCNjWg",
+          "zh": "春夜喜雨",
+          "py": "Chūnyè Xǐ Yǔ",
+          "en": "Welcome Rain on a Spring Night",
+          "artist": "张靓颖",
+          "artistEn": "Jane Zhang",
+          "live": true,
+          "note": "Du Fu's spring rain that “slips in with the wind at night, softly soaking everything”. Jane Zhang — from Chengdu, where Du Fu wrote it — sings it on Classics Sung Anew (经典咏流传).",
+          "noteZh": "杜甫在成都写的《春夜喜雨》；成都姑娘张靓颖在《经典咏流传》演唱。",
+          "words": [
+            {
+              "zh": "好雨",
+              "py": "hǎo yǔ",
+              "en": "good rain"
+            },
+            {
+              "zh": "春夜",
+              "py": "chūnyè",
+              "en": "spring night"
+            },
+            {
+              "zh": "润物",
+              "py": "rùn wù",
+              "en": "moisten all things"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "chun-ye-xi-yu",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "xOqdJp9wyTw",
+          "zh": "游子吟",
+          "py": "Yóuzǐ Yín",
+          "en": "Song of the Wanderer",
+          "artist": "鲍比达",
+          "artistEn": "Chris Babida",
+          "live": true,
+          "note": "Meng Jiao's poem about a mother stitching her son's coat before he leaves home. Hong Kong composer Chris Babida performs it on Classics Sung Anew (经典咏流传).",
+          "noteZh": "孟郊写母爱的《游子吟》；香港作曲家鲍比达在《经典咏流传》演唱。",
+          "words": [
+            {
+              "zh": "慈母",
+              "py": "címǔ",
+              "en": "loving mother"
+            },
+            {
+              "zh": "游子",
+              "py": "yóuzǐ",
+              "en": "a son far from home"
+            },
+            {
+              "zh": "春晖",
+              "py": "chūnhuī",
+              "en": "spring sunshine — a mother's love"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "you-zi-yin",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "G6NmIiZtt_k",
+          "zh": "独上西楼",
+          "py": "Dú Shàng Xī Lóu",
+          "en": "Alone Up the West Tower",
+          "artist": "邓丽君",
+          "artistEn": "Teresa Teng",
+          "note": "From Teresa Teng's 1983 album 淡淡幽情 (Light Exquisite Feelings), which set classical ci poems to new melodies. The lyric is 相见欢 by Li Yu, the last ruler of Southern Tang, written after he lost his kingdom. The MV comes from the album's TV special.",
+          "noteZh": "邓丽君 1983 年专辑《淡淡幽情》，歌词是南唐后主李煜的《相见欢》；MV 出自专辑配套的电视特辑。",
+          "words": [
+            {
+              "zh": "西楼",
+              "py": "xī lóu",
+              "en": "the west tower"
+            },
+            {
+              "zh": "寂寞",
+              "py": "jìmò",
+              "en": "lonely"
+            },
+            {
+              "zh": "离愁",
+              "py": "líchóu",
+              "en": "the sorrow of parting"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "xiang-jian-huan",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "l25mcmK2NuQ",
+          "zh": "几多愁",
+          "py": "Jǐ Duō Chóu",
+          "en": "How Much Sorrow",
+          "artist": "邓丽君",
+          "artistEn": "Teresa Teng",
+          "note": "Also from 淡淡幽情: Li Yu's 虞美人, which ends “my sorrow is a whole river of spring water flowing east.” The footage is from the same 1983 TV special.",
+          "noteZh": "也出自《淡淡幽情》，歌词是李煜《虞美人》；视频是同一套电视特辑的画面（网友上传）。",
+          "words": [
+            {
+              "zh": "春花秋月",
+              "py": "chūnhuā qiūyuè",
+              "en": "spring flowers and the autumn moon"
+            },
+            {
+              "zh": "愁",
+              "py": "chóu",
+              "en": "sorrow"
+            },
+            {
+              "zh": "一江春水",
+              "py": "yì jiāng chūnshuǐ",
+              "en": "a river of spring water"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "yu-mei-ren",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "cuTs5COqzZs",
+          "zh": "人约黄昏后",
+          "py": "Rén Yuē Huánghūn Hòu",
+          "en": "We Meet After Dusk",
+          "artist": "邓丽君",
+          "artistEn": "Teresa Teng",
+          "note": "From 淡淡幽情: the Lantern Festival poem 生查子·元夕 — last year we met by the lanterns, this year you are gone. It is usually credited to Ouyang Xiu, though some say Zhu Shuzhen wrote it. Footage from the 1983 TV special.",
+          "noteZh": "出自《淡淡幽情》，歌词是《生查子·元夕》，一般认为是欧阳修所作，也有人认为是朱淑真。视频是电视特辑的画面（网友上传）。",
+          "words": [
+            {
+              "zh": "黄昏",
+              "py": "huánghūn",
+              "en": "dusk"
+            },
+            {
+              "zh": "元夜",
+              "py": "yuányè",
+              "en": "the night of the Lantern Festival"
+            },
+            {
+              "zh": "泪",
+              "py": "lèi",
+              "en": "tears"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "sheng-zha-zi",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "wA0H7Zvb0u4",
+          "zh": "但愿人长久",
+          "py": "Dàn Yuàn Rén Chángjiǔ",
+          "en": "May We Last Forever",
+          "artist": "邓丽君",
+          "artistEn": "Teresa Teng",
+          "note": "The best-loved song of 淡淡幽情: Su Shi's Mid-Autumn poem 水调歌头, sung from first line to last. Its final line is still the greeting families send each other at the Mid-Autumn Festival; Faye Wong's later cover made it famous all over again.",
+          "noteZh": "《淡淡幽情》里最有名的一首，整首唱的是苏轼《水调歌头》；后来王菲的翻唱也家喻户晓。",
+          "words": [
+            {
+              "zh": "明月",
+              "py": "míngyuè",
+              "en": "the bright moon"
+            },
+            {
+              "zh": "长久",
+              "py": "chángjiǔ",
+              "en": "long-lasting"
+            },
+            {
+              "zh": "千里",
+              "py": "qiānlǐ",
+              "en": "a thousand li — far apart"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "shui-diao-ge-tou",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "oKC5zpyFoRo",
+          "zh": "月满西楼",
+          "py": "Yuè Mǎn Xī Lóu",
+          "en": "Moonlight Fills the West Tower",
+          "artist": "安雯",
+          "artistEn": "An Wen",
+          "note": "Li Qingzhao's 一剪梅, a wife missing her husband far away — “just as it leaves my brow, it rises in my heart.” An Wen's version turned the poem into a popular song; this is her original MV.",
+          "noteZh": "李清照《一剪梅》；安雯演唱，视频是她本人出镜的原版 MV（网友上传）。",
+          "words": [
+            {
+              "zh": "相思",
+              "py": "xiāngsī",
+              "en": "longing for someone"
+            },
+            {
+              "zh": "眉头",
+              "py": "méitóu",
+              "en": "brow"
+            },
+            {
+              "zh": "心头",
+              "py": "xīntóu",
+              "en": "heart"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "yi-jian-mei",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "vWXIA9qgYFw",
+          "zh": "青玉案·元夕",
+          "py": "Qīng Yù Àn · Yuánxī",
+          "en": "Green Jade Cup: Lantern Festival",
+          "artist": "陈彼得",
+          "artistEn": "Peter Chen",
+          "live": true,
+          "note": "Xin Qiji's Lantern Festival ci — searching the crowd a thousand times, then “suddenly I turn, and there she is, where the lamplight is dim.” Veteran singer-songwriter Peter Chen sings it on Classics Sung Anew (经典咏流传).",
+          "noteZh": "辛弃疾《青玉案·元夕》；老歌手陈彼得在《经典咏流传》演唱。",
+          "words": [
+            {
+              "zh": "灯火",
+              "py": "dēnghuǒ",
+              "en": "lamplight"
+            },
+            {
+              "zh": "蓦然回首",
+              "py": "mòrán huíshǒu",
+              "en": "suddenly look back"
+            },
+            {
+              "zh": "元夕",
+              "py": "yuánxī",
+              "en": "the night of the Lantern Festival"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "qing-yu-an",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "I09ck-6DHt8",
+          "zh": "滚滚长江东逝水",
+          "py": "Gǔngǔn Cháng Jiāng Dōng Shì Shuǐ",
+          "en": "The Rolling Yangtze Flows East",
+          "artist": "杨洪基",
+          "artistEn": "Yang Hongji",
+          "live": true,
+          "note": "The theme song of the 1994 TV series Romance of the Three Kingdoms. Its lyric is 临江仙 by the Ming poet Yang Shen, the poem the novel opens with. Here Yang Hongji sings it live at a CCTV gala.",
+          "noteZh": "1994 年电视剧《三国演义》主题曲，歌词是明代杨慎的《临江仙》（小说的开篇词）；这是杨洪基在央视晚会上的现场演唱。",
+          "words": [
+            {
+              "zh": "长江",
+              "py": "Cháng Jiāng",
+              "en": "the Yangtze River"
+            },
+            {
+              "zh": "英雄",
+              "py": "yīngxióng",
+              "en": "hero"
+            },
+            {
+              "zh": "浪花",
+              "py": "lànghuā",
+              "en": "the spray of waves"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "lin-jiang-xian",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "VZBla-goPRk",
+          "zh": "明日歌",
+          "py": "Míngrì Gē",
+          "en": "Song of Tomorrow",
+          "artist": "王俊凯",
+          "artistEn": "Karry Wang",
+          "live": true,
+          "note": "A Ming-dynasty warning against putting things off — “tomorrow and tomorrow, how many tomorrows there are!” Karry Wang of the boy band TFBOYS sings it on Classics Sung Anew (经典咏流传).",
+          "noteZh": "明代钱福的《明日歌》；TFBOYS 的王俊凯在《经典咏流传》演唱。",
+          "words": [
+            {
+              "zh": "明日",
+              "py": "míngrì",
+              "en": "tomorrow"
+            },
+            {
+              "zh": "蹉跎",
+              "py": "cuōtuó",
+              "en": "let time slip away"
+            },
+            {
+              "zh": "万事",
+              "py": "wànshì",
+              "en": "everything"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "ming-ri-ge",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "xMzsP5-7-Fc",
+          "zh": "苔",
+          "py": "Tái",
+          "en": "Moss",
+          "artist": "梁俊",
+          "artistEn": "Liang Jun",
+          "live": true,
+          "note": "Yuan Mei's 20-character poem: moss grows where the sun never reaches, its flowers tiny as grains of rice, yet it blooms like the peony. Village teacher Liang Jun taught it to children in the mountains of Guizhou and sang it with one of them on Classics Sung Anew (经典咏流传). The video includes the interview.",
+          "noteZh": "清代袁枚的《苔》；乡村支教老师梁俊和贵州山里的孩子在《经典咏流传》一起演唱（视频含访谈）。",
+          "words": [
+            {
+              "zh": "苔",
+              "py": "tái",
+              "en": "moss"
+            },
+            {
+              "zh": "牡丹",
+              "py": "mǔdān",
+              "en": "peony"
+            },
+            {
+              "zh": "青春",
+              "py": "qīngchūn",
+              "en": "youth; springtime"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "tai",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "zvC4SJuVBcE",
+          "zh": "声律启蒙",
+          "py": "Shēnglǜ Qǐméng",
+          "en": "Primer of Rhymes",
+          "artist": "赵照、马艺芮",
+          "artistEn": "Zhao Zhao & Ma Yirui",
+          "live": true,
+          "note": "A Qing-dynasty primer that taught children to pair words — “cloud pairs with rain, snow with wind.” Singer-songwriter Zhao Zhao and young singer Ma Yirui sing the opening on Classics Sung Anew (经典咏流传).",
+          "noteZh": "清代车万育的蒙学读物《声律启蒙》；赵照和马艺芮在《经典咏流传》演唱（节选）。",
+          "words": [
+            {
+              "zh": "对",
+              "py": "duì",
+              "en": "to pair with"
+            },
+            {
+              "zh": "杨柳",
+              "py": "yángliǔ",
+              "en": "willow"
+            },
+            {
+              "zh": "烟雨",
+              "py": "yānyǔ",
+              "en": "misty rain"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "sheng-lv-qi-meng",
+              "rel": "full"
+            }
+          ]
+        },
+        {
+          "id": "8RwoNqHvWv8",
+          "zh": "葬花吟",
+          "py": "Zàng Huā Yín",
+          "en": "Burying the Flowers",
+          "artist": "陈力",
+          "artistEn": "Chen Li",
+          "note": "Lin Daiyu's lament from Dream of the Red Chamber: she buries fallen petals and sees her own fate in them. Wang Liping set it to music and Chen Li sang it for the 1987 TV series; the footage is from the series.",
+          "noteZh": "《红楼梦》里林黛玉的《葬花吟》，王立平作曲、陈力演唱，1987 年电视剧插曲；视频是剧集画面（网友上传），歌词是原诗的节选。",
+          "words": [
+            {
+              "zh": "葬花",
+              "py": "zàng huā",
+              "en": "bury fallen flowers"
+            },
+            {
+              "zh": "花谢",
+              "py": "huā xiè",
+              "en": "flowers wither"
+            },
+            {
+              "zh": "红颜",
+              "py": "hóngyán",
+              "en": "a young beauty"
+            }
+          ],
+          "poems": [
+            {
+              "slug": "zang-hua-yin",
+              "rel": "full"
             }
           ]
         }

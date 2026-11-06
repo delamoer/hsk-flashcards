@@ -13,7 +13,7 @@
       <nav ref="listRef" class="list" aria-label="曲目 Songs">
         <h3>曲目 · {{ songs.length }} songs</h3>
         <template v-for="g in groups" :key="g.zh">
-          <h4 class="grp">{{ g.zh }} <i>{{ g.en }}</i></h4>
+          <h4 class="grp"><span v-if="g.seal" class="gseal">{{ g.seal }}</span>{{ g.zh }} <i>{{ g.en }}</i></h4>
           <button
             v-for="(s, j) in g.songs" :key="s.id"
             class="trk" :class="{ on: g.from + j === cur }" @click="pick(g.from + j)"
@@ -94,11 +94,38 @@
             </div>
           </div>
         </div>
+
+        <!-- 出自古诗词（朱批表）：歌词 ↔ 引/化 ↔ 诗句 ↔ 诗题，点一行去诗页；诗词新唱的歌整首就是原诗 -->
+        <section v-if="links.length" class="lk">
+          <h4><b>出自古诗词</b> {{ isFull ? "From a classical poem" : `From classical poems · ${links.length}` }}</h4>
+          <template v-if="isFull">
+            <p class="lead">这首歌的歌词就是古诗词原文 · The lyrics are the classical poem itself</p>
+            <router-link v-for="l in links" :key="l.slug" class="lk-full" :to="{ name: 'poem', params: { slug: l.slug } }">
+              <div class="txt"><p v-for="(ln, i) in l.poem.lines" :key="i">{{ ln.zh }}</p></div>
+              <div class="p">
+                《{{ shortTitle(l.poem.title) }}》<small>{{ shortAuthor(l.poem.author) }} · {{ l.poem.dynasty }} {{ dynEn[l.poem.dynasty] }}</small>
+                <small>拼音 · 逐字释义 · 英文翻译</small><i>读这首诗 Read the poem →</i>
+              </div>
+            </router-link>
+          </template>
+          <template v-else>
+            <p class="lead">朱字是歌词，右边是它借来的诗句 · Red: the lyric. Right: the line of poetry it borrows · 引 = quoted · 化 = adapted</p>
+            <router-link v-for="l in links" :key="l.slug + l.line" class="lk-row" :to="{ name: 'poem', params: { slug: l.slug } }">
+              <div class="y">「{{ l.lyric }}」<small>歌词 Lyric</small></div>
+              <span class="ar">{{ REL[l.rel].seal }}</span>
+              <div class="l">
+                <template v-for="(s, k) in markLine(l.poem.lines[l.line].zh, l.hl)" :key="k"><em v-if="s.on">{{ s.t }}</em><template v-else>{{ s.t }}</template></template>
+                <small>{{ l.poem.lines[l.line].en }}</small>
+              </div>
+              <div class="p">《{{ shortTitle(l.poem.title) }}》<small>{{ shortAuthor(l.poem.author) }} · {{ l.poem.dynasty }} {{ dynEn[l.poem.dynasty] }}</small><i>{{ REL[l.rel].zh }} · {{ REL[l.rel].en }} →</i></div>
+            </router-link>
+          </template>
+        </section>
       </article>
     </div>
 
     <p class="credit">
-      视频由 YouTube 官方及唱片公司频道提供，版权归原作者所有 · Videos are embedded from the artists' and labels' official YouTube channels.
+      视频来自 YouTube，版权归原作者所有 · Videos are embedded from YouTube; all rights belong to their owners.
     </p>
   </div>
 </template>
@@ -108,6 +135,8 @@ import { ref, computed, watch, onMounted, onBeforeUnmount, nextTick } from "vue"
 import { useRoute, useRouter } from "vue-router";
 import data from "@/data/music.json";
 import { speak, stop as stopAudio, nowPlaying } from "@/utils/tts";
+import { loadPoemsMeta, loadPoem } from "@/data/poems";
+import { REL, markLine, shortTitle, shortAuthor } from "@/utils/songPoems";
 
 // Songs are grouped (周杰伦 / 更多歌手) but numbered straight through; `from` is each
 // group's offset into the flat list, which is what ?song= indexes.
@@ -136,6 +165,20 @@ const playing = ref(false);
 const song = computed(() => songs[cur.value]);
 
 watch(() => route.query.song, () => { cur.value = fromQuery(); });
+
+// 出自古诗词: a song's `poems` links ({slug, line, hl, lyric, rel}) — the poems themselves are lazy
+// chunks, fetched for the current song only.
+const links = ref([]);
+const dynEn = ref({});
+const isFull = computed(() => links.value[0]?.rel === "full");
+watch(song, async (s) => {
+  const want = s.poems || [];
+  if (!want.length) { links.value = []; return; }
+  const [meta, ...poems] = await Promise.all([loadPoemsMeta(), ...want.map((l) => loadPoem(l.slug))]);
+  if (song.value !== s) return; // moved on while loading
+  dynEn.value = Object.fromEntries(meta.dynasties.map((d) => [d.key, d.en]));
+  links.value = want.map((l, i) => ({ ...l, poem: poems[i] })).filter((l) => l.poem);
+}, { immediate: true });
 
 // The 曲目册 scrolls inside itself (vertically on desktop, as a horizontal strip on
 // mobile) — the current song should be in view: on a shared ?song= link and when a play
@@ -338,6 +381,27 @@ const embedUrl = computed(() =>
 .word span { font-size: 12.5px; font-weight: 700; color: var(--primary-strong); }
 .word em { font-style: normal; font-size: 12.5px; color: var(--muted); }
 
+.gseal { flex: none; width: 18px; height: 18px; border-radius: 3px; background: var(--cinnabar); color: #fbe9d6; display: grid; place-items: center; font: 700 11px var(--serif-cn); transform: rotate(-4deg); }
+
+/* 出自古诗词 · 朱批表 */
+.lk { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--hairline); }
+.lk h4 { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; font-family: var(--ui); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-deep); }
+.lk h4 b { font: 700 15px var(--serif-cn); letter-spacing: 1px; text-transform: none; color: var(--ink); }
+.lk .lead { margin-bottom: 8px; font-size: 13px; color: var(--muted); }
+.lk-row { display: grid; grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1.3fr) 190px; align-items: center; gap: 12px; padding: 10px 6px; border-bottom: 1px dotted var(--line); border-radius: 6px; color: inherit; text-decoration: none; }
+.lk-row:hover, .lk-full:hover { background: var(--soft); }
+.lk-row .y { font: 600 18px/1.35 var(--serif-cn); color: var(--cinnabar); }
+.lk-row .y small { display: block; font: 700 11px var(--ui); letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); }
+.lk-row .ar { width: 26px; height: 26px; border-radius: 4px; box-shadow: inset 0 0 0 1.5px var(--cinnabar); color: var(--cinnabar); display: grid; place-items: center; font: 700 12px var(--serif-cn); transform: rotate(-3deg); }
+.lk-row .l { font: 500 17px/1.4 var(--serif-cn); color: var(--sumi); }
+.lk-row .l em { font-style: normal; color: var(--cinnabar-dk); background: linear-gradient(transparent 80%, rgba(163, 63, 46, 0.25) 80%); }
+.lk-row .l small { display: block; font: 400 12.5px/1.4 var(--ui); color: var(--muted); }
+.lk .p { text-align: right; font: 700 15px var(--serif-cn); color: var(--ink); }
+.lk .p small { display: block; font: 600 12px var(--ui); color: var(--muted); }
+.lk .p i { font: 700 12px var(--ui); font-style: normal; white-space: nowrap; color: var(--cinnabar-dk); }
+.lk-full { display: grid; grid-template-columns: minmax(0, 1fr) 210px; align-items: center; gap: 16px; padding: 10px 6px; border-bottom: 1px dotted var(--line); border-radius: 6px; color: inherit; text-decoration: none; }
+.lk-full .txt p { font: 500 16px/1.75 var(--serif-cn); color: var(--sumi); }
+
 .credit { margin-top: 22px; text-align: center; font-size: 12px; color: var(--muted); }
 
 @media (max-width: 860px) {
@@ -361,5 +425,9 @@ const embedUrl = computed(() =>
   .label .who { letter-spacing: 1px; }
   .label .seal { margin-left: auto; }
   .colophon { grid-template-columns: 1fr; gap: 18px; }
+  .lk-row, .lk-full { grid-template-columns: 1fr; gap: 4px; padding: 12px 4px; }
+  .lk-row .ar { display: none; }
+  .lk .p { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; text-align: left; }
+  .lk .p small { display: inline; }
 }
 </style>
