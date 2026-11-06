@@ -11,6 +11,7 @@
       <router-link to="/pinyin" class="navlink" :class="{ on: route.name === 'pinyin' }">拼音 <i>Pinyin</i></router-link>
       <router-link to="/grammar" class="navlink" :class="{ on: route.name === 'grammar' }">语法 <i>Grammar</i></router-link>
       <router-link to="/music" class="navlink" :class="{ on: route.name === 'music' }">中国风 <i>Music</i></router-link>
+      <router-link to="/poems" class="navlink" :class="{ on: route.name === 'poems' || route.name === 'poem' }">古诗词 <i>Poems</i></router-link>
       <router-link v-if="member" to="/my-words" class="navlink" :class="{ on: route.name === 'mywords' }">我的词 <i>My words</i></router-link>
     </nav>
 

@@ -128,6 +128,31 @@
           </div>
           <router-link class="card-cta" to="/my-words">进入我的词 Open <span class="ar">→</span></router-link>
         </section>
+        <!-- 07 古诗词：横跨两列的长条——一截小手卷，七个时代各一枚诗签（同 /poems 的长卷） -->
+        <section class="card c-po">
+          <div class="sec-bg is-band" :style="bandPanel(heroMain)" aria-hidden="true"></div>
+          <div class="po-row">
+            <div class="po-intro">
+              <div class="card-head">
+                <div class="num">07</div>
+                <div><div class="card-title">古诗词<span class="en">POEMS</span></div>
+                <p class="card-desc">从《诗经》到清代<i>From the Book of Songs to the Qing</i></p></div>
+              </div>
+              <p class="po-note">每首都有拼音、逐字释义和英文翻译<i>Pinyin, word meanings and English for every poem</i></p>
+              <router-link class="card-cta" to="/poems">展开长卷 Unroll <span class="ar">→</span></router-link>
+            </div>
+            <HandscrollFrame class="po-scroll" :bg="heroMain">
+              <div class="po-roll">
+                <template v-for="p in scrollPicks" :key="p.slug">
+                  <span class="po-gs" aria-hidden="true"><i>{{ p.era }}</i><b>{{ p.era[0] }}</b></span>
+                  <router-link class="po-qian" :to="{ name: 'poem', params: { slug: p.slug } }">
+                    <b>{{ p.title }}</b><em>{{ p.author }}</em>
+                  </router-link>
+                </template>
+              </div>
+            </HandscrollFrame>
+          </div>
+        </section>
       </div>
 
       <!-- ── 远山地平线 + 前景山石 ─────────────────────── -->
@@ -157,6 +182,7 @@ import { courseRegistry } from "@/data";
 import TextbookCarousel from "@/components/TextbookCarousel.vue";
 import { readingBooks } from "@/data/reading";
 import { useReading } from "@/composables/useReading";
+import HandscrollFrame from "@/components/HandscrollFrame.vue";
 import { heroMain, seriesBand, readingCover, motifPlum, motifPlum2, motifCloud, motifCranes, motifSeals, motifMountainFar, motifBoat, motifRock, motifBamboo, motifSwallows } from "@/assets/img.js";
 
 const seriesList = courseRegistry;
@@ -207,6 +233,16 @@ const grammarSamples = [
   { name: "“把”字句", st: "把 + 宾语 + 动词 + 结果" },
   { name: "动态助词“了”", st: "动词 + 了" },
   { name: "“是……的”强调句", st: "是 + 强调部分 + 的" },
+];
+// 古诗词长条：七个时代各挑一首最有名、最短的（slug = src/data/poems 的网址名）
+const scrollPicks = [
+  { era: "先秦", title: "关雎", author: "诗经", slug: "guan-ju" },
+  { era: "汉", title: "江南", author: "汉乐府", slug: "jiang-nan" },
+  { era: "魏晋", title: "七步诗", author: "曹植", slug: "qi-bu-shi" },
+  { era: "唐", title: "静夜思", author: "李白", slug: "jing-ye-si" },
+  { era: "宋", title: "水调歌头", author: "苏轼", slug: "shui-diao-ge-tou" },
+  { era: "元", title: "天净沙", author: "马致远", slug: "tian-jing-sha-qiu-si" },
+  { era: "明清", title: "竹石", author: "郑燮", slug: "zhu-shi" },
 ];
 // 中国风：n = MusicView 的 ?song= 序号（music.json 里的平铺顺序，1 起）
 const songs = [
@@ -343,6 +379,31 @@ a.nb-row:hover .zh { color: var(--cinnabar-dk); }
 .mu-obj:hover .ph img { filter: sepia(.15) saturate(.9); }
 .mu-obj .play { position: absolute; top: 44px; left: 50%; transform: translateX(-50%) rotate(-4deg); width: 30px; height: 30px; border-radius: 5px; display: grid; place-items: center; background: linear-gradient(145deg, var(--seal-a), var(--seal-b)); color: #fbe7d4; font-size: 11px; box-shadow: inset 0 0 0 1.5px rgba(251,231,212,.5), 0 3px 8px rgba(0,0,0,.3); }
 .mu-obj .ph-cap { font-family: var(--brush); font-size: 18px; color: var(--sumi); margin-top: 6px; }
+
+/* 07 古诗词：横跨两列，左介绍 + 右一截小手卷（两根卷轴夹着七枚竖排诗签） */
+.c-po { grid-column: 1 / -1; min-height: 0; }
+.po-row { display: grid; grid-template-columns: minmax(220px, 270px) 1fr; gap: 24px; align-items: center; }
+.po-intro { display: flex; flex-direction: column; gap: 14px; }
+.po-note { font-family: var(--serif-cn); font-size: 14px; color: var(--body); line-height: 1.6; }
+.po-note i { display: block; font-family: var(--serif-en); color: var(--muted); font-size: 13px; }
+/* 小手卷：外框是 HandscrollFrame（同 /poems 长卷的轴头 + 绫边）；里面「隔水（朝代 + 印）| 诗签」交替 */
+.po-scroll { min-width: 0; }
+.po-roll { display: flex; align-items: stretch; height: 100%; overflow-x: auto; scrollbar-width: none; }
+.po-roll::-webkit-scrollbar { display: none; }
+.po-gs { flex: none; width: 26px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+  background: repeating-linear-gradient(0deg, rgba(138,124,92,.08) 0 2px, transparent 2px 6px), rgba(239,230,214,.9);
+  border-left: 1px solid var(--border-strong); border-right: 1px solid var(--border-strong); }
+.po-gs i { writing-mode: vertical-rl; font: 500 12px/1.3 var(--serif-cn); font-style: normal; color: var(--gold-deep); letter-spacing: 3px; }
+.po-gs b { width: 20px; height: 20px; border-radius: 3px; display: grid; place-items: center; background: var(--cinnabar); color: #f8e6d6; font: 700 13px var(--serif-cn); box-shadow: inset 0 0 0 1.5px rgba(248,230,214,.45); transform: rotate(-3deg); }
+.po-qian { flex: 1 0 58px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; margin: 12px 6px; padding: 8px 4px 7px;
+  background: rgba(251,247,238,.96); border: 1px solid var(--line); border-radius: 3px;
+  box-shadow: inset 0 0 0 3px var(--card), inset 0 0 0 4px var(--line-soft), 0 2px 8px rgba(45,30,10,.08); transition: transform .18s, box-shadow .18s; }
+.po-qian:hover { transform: translateY(-4px); box-shadow: inset 0 0 0 3px var(--card), inset 0 0 0 4px var(--line), var(--sh-card); }
+.po-qian b { writing-mode: vertical-rl; min-height: 104px; padding: 7px 4px; font: 700 17px/1 var(--serif-cn); letter-spacing: 3px; color: var(--ink); background: #fbf3e6; box-shadow: inset 0 0 0 1px rgba(163,63,46,.55); }
+.po-qian em { font: 500 12px var(--serif-cn); font-style: normal; color: var(--body); }
+@media (max-width: 920px) {
+  .po-row { grid-template-columns: 1fr; gap: 16px; }
+}
 
 @media (max-width: 560px) {
   .cw-row { grid-template-columns: 1fr 96px; gap: 12px; }

@@ -36,6 +36,8 @@ const routes = [
   },
   { path: "/grammar", name: "grammar", component: () => import("@/views/GrammarIndexView.vue") },
   { path: "/music", name: "music", component: () => import("@/views/MusicView.vue") },
+  { path: "/poems", name: "poems", component: () => import("@/views/PoemsView.vue") },
+  { path: "/poems/:slug", name: "poem", component: () => import("@/views/PoemView.vue"), props: true },
   { path: "/admin", name: "admin", component: () => import("@/views/AdminView.vue") },
 
   // ── 课文 Texts ──────────────────────────────────────────────────────────
@@ -128,6 +130,8 @@ const router = createRouter({
     if (to.name === "music" && from.name === "music") return false;
     // 语法汇总 mirrors its filters into ?q=… — typing must not jump to the top.
     if (to.name === "grammar" && from.name === "grammar") return false;
+    // 古诗词 mirrors its view / filters into ?view=&q=… — same.
+    if (to.name === "poems" && from.name === "poems") return false;
     // In-page anchors (landing page "#book" etc.) — wait for the lazy view to render.
     if (to.hash) {
       return new Promise((resolve) => setTimeout(() => resolve({ el: to.hash, top: 72, behavior: "smooth" }), 350));
@@ -155,7 +159,7 @@ router.afterEach(() => stopAudio());
 // Pages anyone can open without an account: the landing page ("/" for signed-out
 // visitors, see HomeGate.vue) and the free tools. Everything else needs a login.
 // Grammar exercises live only inside lessons, so the public grammar index exposes none.
-const PUBLIC_ROUTES = new Set(["login", "home", "pinyin", "grammar", "music"]);
+const PUBLIC_ROUTES = new Set(["login", "home", "pinyin", "grammar", "music", "poems", "poem"]);
 
 // Login wall: when Supabase is configured, every route except PUBLIC_ROUTES requires auth.
 // Waits for the initial session restore so a refresh doesn't bounce a logged-in user.

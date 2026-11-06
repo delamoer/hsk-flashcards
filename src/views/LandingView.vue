@@ -20,8 +20,8 @@
           </h1>
           <p class="sub">
             Lesson-by-lesson courses with a full-time Chinese teacher — plus free tools anyone can use: a grammar
-            index you can search in English, Chinese songs with their MVs, and a pinyin chart with
-            native-speaker recordings.
+            index you can search in English, Chinese songs with their MVs, classical poems with pinyin and
+            English, and a pinyin chart with native-speaker recordings.
           </p>
           <div class="hero-cta">
             <button type="button" class="btn btn-primary" @click="go('start-where')">
@@ -39,8 +39,8 @@
         <div class="colophon">
           <div class="zh-line">一页一页，都是给学生备的课。</div>
           <p>
-            Everything here began as class material for her own students. The pinyin chart, grammar index and
-            songs are free for anyone; the full courses are part of her lessons.
+            Everything here began as class material for her own students. The pinyin chart, grammar index,
+            songs and poems are free for anyone; the full courses are part of her lessons.
           </p>
         </div>
         <figure class="leaf">
@@ -234,7 +234,7 @@
 
         <div class="free-head">
           <span class="zh-k">免费开放 · 不用注册</span>
-          <h2>Three tools you can use right now — free, no sign-up</h2>
+          <h2>Four tools you can use right now — free, no sign-up</h2>
         </div>
 
         <!-- stop 二: grammar -->
@@ -388,6 +388,55 @@
             <router-link class="link go" to="/pinyin">Open the pinyin chart →</router-link>
           </div>
         </section>
+
+        <!-- stop 五: classical poems — a short handscroll with 静夜思 on it -->
+        <section class="stop l">
+          <div class="art art-po">
+            <figure class="hs" aria-label="静夜思 by Li Bai, written top to bottom, right to left">
+              <HandscrollFrame :bg="heroMain">
+                <div class="hs-paper">
+                  <span class="hs-seal" aria-hidden="true">月</span>
+                  <p v-for="l in poem.lines" :key="l.zh" class="hs-col">{{ l.zh }}</p>
+                  <p class="hs-title">静夜思 · 李白</p>
+                </div>
+              </HandscrollFrame>
+            </figure>
+            <div class="milestone" style="left: 10px; top: -18px"><i></i>五 · 卷中读诗</div>
+          </div>
+          <div class="tool">
+            <h3><span class="zh">古诗词</span><span class="en">Classical poems</span></h3>
+            <div class="facts">{{ poemCount }} poems · from the Book of Songs to the Qing</div>
+            <p>
+              Li Bai, Du Fu, Su Shi, Li Qingzhao — on one handscroll, oldest to newest. Every line has pinyin and
+              an English translation; tap a word for its meaning, and learn what the moon, the willow or the wild
+              goose means in a Chinese poem.
+            </p>
+            <div class="slip po-slip">
+              <div class="po-top">
+                <span class="po-t">{{ poem.title }}<small>{{ poem.titlePy }} · {{ poem.authorEn }}</small></span>
+                <span class="po-tg">
+                  <button type="button" :class="{ on: poShow.py }" @click="poShow.py = !poShow.py">拼音 Pinyin</button>
+                  <button type="button" :class="{ on: poShow.en }" @click="poShow.en = !poShow.en">English</button>
+                </span>
+              </div>
+              <button
+                v-for="l in poem.lines"
+                :key="l.zh"
+                type="button"
+                class="po-line"
+                :class="{ on: nowPlaying === l.zh }"
+                @click="speak(l.zh)"
+              >
+                <span v-if="poShow.py" class="po-py">{{ l.py }}</span>
+                <span class="po-zh">{{ l.zh }}<i class="ting" aria-hidden="true">听</i></span>
+                <span v-if="poShow.en" class="po-en">{{ l.en }}</span>
+              </button>
+              <div class="po-img"><b>月</b> {{ poemMoon }}</div>
+            </div>
+            <router-link class="link go" :to="{ name: 'poem', params: { slug: poem.slug } }">Read it with notes →</router-link>
+            <router-link class="link go po-all" to="/poems">Unroll all {{ poemCount }} poems →</router-link>
+          </div>
+        </section>
       </div>
     </main>
 
@@ -529,6 +578,7 @@ const TEACHER = {
 // ═══════════════════════════════════════════════════════════════════════════
 
 import { computed, onBeforeUnmount, onMounted, reactive, ref } from "vue";
+import HandscrollFrame from "@/components/HandscrollFrame.vue";
 import {
   heroMain, photoBamboo, photoDesk, photoPlumDesk, motifPavilion, motifCranes, motifCloud,
   paperTexture, bookCover, readingCover,
@@ -541,10 +591,18 @@ import { readingBooks } from "@/data/reading.js";
 import { getGrammarLesson } from "@/data/grammar.js";
 import grammarMeta from "@/data/grammar/meta.json";
 import music from "@/data/music.json";
+import poemsMeta from "@/data/poems/meta.json";
+import jingYeSi from "@/data/poems/p/jing-ye-si.json";
 import { posLabel } from "@/data/pos.js";
 import { colorPinyin } from "@/utils/pinyinTones.js";
 import { speak, playPinyin, nowPlaying } from "@/utils/tts.js";
 
+
+// ── poems: 静夜思, the one every Chinese person knows ──────────────────────
+const poem = jingYeSi;
+const poemCount = poemsMeta.poems.length;
+const poemMoon = jingYeSi.imagery.find((m) => m.name === "月")?.en || "";
+const poShow = reactive({ py: true, en: true });
 
 // ── scrolling (hash routing owns the URL hash, so no href="#…") ──────────────
 function go(id) {
@@ -1115,6 +1173,31 @@ button { font: inherit; color: inherit; }
 .facts { margin-top: 12px; font: 700 13.5px/1.4 var(--ui); color: var(--gold-deep); letter-spacing: .06em; text-transform: uppercase; }
 .tool > p { margin-top: 12px; font-size: 16.5px; max-width: 560px; }
 .tool > p b { color: var(--ink); }
+/* stop 五: a short handscroll (two rods, the poem in columns right to left) + a tap-to-hear 静夜思 */
+.art-po { display: flex; align-items: center; justify-content: center; }
+.hs { margin: 0; height: 290px; transform: rotate(-2deg); }
+.hs > * { height: 100%; }
+.hs-paper { position: relative; display: flex; flex-direction: row-reverse; gap: 14px; height: 100%; padding: 20px 26px 20px 52px; }
+.hs-col { writing-mode: vertical-rl; font: 600 26px/1 var(--serif-cn); letter-spacing: 8px; color: var(--ink); }
+.hs-title { writing-mode: vertical-rl; align-self: flex-end; font: 400 13px/1 var(--serif-cn); letter-spacing: 4px; color: var(--muted); margin-right: 6px; }
+.hs-seal { position: absolute; left: 12px; top: 14px; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 4px; background: linear-gradient(145deg, var(--cinnabar), var(--cinnabar-dk)); color: #fbeecf; font: 700 17px/1 var(--serif-cn); transform: rotate(-6deg); }
+.po-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.po-t { font: 700 20px/1.2 var(--serif-cn); color: var(--ink); }
+.po-t small { font: 600 13px var(--ui); color: var(--muted); margin-left: 10px; }
+.po-tg { display: flex; gap: 6px; }
+.po-tg button { font: 600 12.5px var(--ui); color: var(--muted); border: 1px solid var(--line); border-radius: var(--r-pill); padding: 3px 10px; background: transparent; cursor: pointer; }
+.po-tg button.on { color: var(--primary-strong); border-color: var(--primary); background: var(--primary-soft); }
+.po-line { display: flex; flex-direction: column; align-items: flex-start; width: 100%; text-align: left; padding: 6px 8px; margin: 0 -8px; border: 0; border-radius: 8px; background: transparent; cursor: pointer; }
+.po-line:hover, .po-line.on { background: var(--soft); }
+.po-py { font: 600 13px var(--ui); color: var(--gold-deep); letter-spacing: .02em; }
+.po-zh { font: 600 21px/1.4 var(--serif-cn); color: var(--ink); letter-spacing: .08em; }
+.po-zh .ting { font-style: normal; font-size: 11px; color: var(--primary); margin-left: 8px; opacity: 0; transition: opacity .2s; }
+.po-line:hover .ting, .po-line.on .ting { opacity: 1; }
+.po-en { font: 400 14.5px/1.45 var(--ui); color: var(--body); }
+.po-img { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 14px; color: var(--body); }
+.po-img b { display: inline-grid; place-items: center; width: 24px; height: 24px; margin-right: 6px; border-radius: 4px; background: var(--primary); color: #fbeecf; font: 700 14px/1 var(--serif-cn); }
+.po-all { margin-left: 22px; }
+
 .slip { margin-top: 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-md); padding: 16px 20px; box-shadow: var(--sh); max-width: 600px; position: relative; }
 .go { margin-top: 20px; display: inline-block; }
 

@@ -11,9 +11,9 @@ const DEFAULT_TITLE = "学中文 · Learn Chinese";
 export const SEO_PAGES = {
   home: {
     path: "",
-    title: "学中文 Learn Chinese — free pinyin chart, grammar index and songs, with a real teacher",
+    title: "学中文 Learn Chinese — free pinyin chart, grammar, songs and poems, with a real teacher",
     description:
-      "Lesson-by-lesson Chinese courses with a full-time teacher, plus free tools: a grammar index you can search in English, Chinese songs with their MVs, and a pinyin chart with native-speaker recordings.",
+      "Lesson-by-lesson Chinese courses with a full-time teacher, plus free tools: a grammar index you can search in English, Chinese songs with their MVs, classical poems with pinyin and English, and a pinyin chart with native-speaker recordings.",
   },
   pinyin: {
     path: "pinyin/",
@@ -33,7 +33,27 @@ export const SEO_PAGES = {
     description:
       "43 中国风 Chinese-style pop songs, from Jay Chou’s “Blue and White Porcelain” to classic kung fu and fantasy drama themes — each with its MV, an English note and key words you can tap to hear. Free, no sign-up.",
   },
+  poems: {
+    path: "poems/",
+    title: "Classical Chinese poems with pinyin and English translation — from the Book of Songs to the Qing · 学中文 Learn Chinese",
+    description:
+      "92 classical Chinese poems on one handscroll, from the Book of Songs to the Qing dynasty — Li Bai, Du Fu, Su Shi, Li Qingzhao and more. Each poem has pinyin, a line-by-line English translation, word meanings and its imagery explained. Free, no sign-up.",
+  },
 };
+
+// One page per poem (/poems/:slug) — set by PoemView once the poem has loaded.
+const DYNASTY_EN = { 先秦: "Pre-Qin", 汉: "Han", 魏晋南北朝: "Six Dynasties", 唐: "Tang", 宋: "Song", 元: "Yuan", 明清: "Ming–Qing" };
+export function poemSeo(p) {
+  const by = p.authorEn ? ` by ${p.authorEn}` : "";
+  return {
+    path: `poems/${p.slug}/`,
+    // short enough that Google shows it whole; the English title goes into the description
+    title: `${p.title} ${p.titlePy}${p.authorEn ? ` — ${p.authorEn}` : ""}: pinyin & English translation`,
+    description:
+      `${p.title} (${p.titleEn})${by}, ${DYNASTY_EN[p.dynasty] || p.dynasty} dynasty: the Chinese text with pinyin, ` +
+      `a line-by-line English translation, word meanings and the poem’s imagery explained. ${p.intro || ""}`.trim(),
+  };
+}
 
 function setTag(selector, create, attr, value) {
   let el = document.head.querySelector(selector);
@@ -48,7 +68,14 @@ const meta = (key, name) => () => Object.assign(document.createElement("meta"), 
 
 // `isPublicView` is false for "/" when signed in (that's the library, not the landing page).
 export function applySeo(routeName, isPublicView = true) {
-  const page = isPublicView ? SEO_PAGES[routeName] : null;
+  setPage(isPublicView ? SEO_PAGES[routeName] : null);
+}
+
+export function applyPoemSeo(poem) {
+  setPage(poem ? poemSeo(poem) : null);
+}
+
+function setPage(page) {
   document.title = page?.title || DEFAULT_TITLE;
   const url = page ? SITE + page.path : null;
   setTag('meta[name="description"]', meta("name", "description"), "content", page?.description);

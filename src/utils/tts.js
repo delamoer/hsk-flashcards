@@ -192,16 +192,20 @@ export function isTTSAvailable() {
 }
 
 // Tapping the 🔊 of the text that's already playing stops it instead of restarting.
-export function speak(text, { rate = 0.85 } = {}) {
+// Options: `key` looks the MP3 up under another manifest key (古诗词 words are recorded per poem voice as
+// "poem-m|故乡", apart from the shared 故乡 clip) — it falls back to `text`'s clip, then to the browser
+// voice reading `text`. `recited`: the MP3 was already made slow (古诗词) — play it at its own speed.
+export function speak(text, { rate = 0.85, key = null, recited = false } = {}) {
   if (!text) return;
-  if (nowPlaying.value === text) return stop();
+  const id = key || text; // what nowPlaying reports, so a button can tell it's the one playing
+  if (nowPlaying.value === id) return stop();
   stop();
   const my = token;
-  nowPlaying.value = text; // show ⏹ right away, even while the manifest loads
+  nowPlaying.value = id; // show ⏹ right away, even while the manifest loads
   loadManifest().then(() => {
-    const url = urlFor(text);
+    const url = (key && urlFor(key)) || urlFor(text);
     if (url) {
-      playUrl(url, rate, my).catch(() => speakFallback(text, rate, my));
+      playUrl(url, recited ? 1 : rate, my).catch(() => speakFallback(text, rate, my));
     } else {
       speakFallback(text, rate, my);
     }

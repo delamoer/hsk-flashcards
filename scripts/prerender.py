@@ -11,6 +11,8 @@ signed-out visitor and saves what it renders as static HTML at a real path:
     dist/pinyin/index.html   pinyin chart      → SITE + "pinyin/"
     dist/grammar/index.html  grammar index     → SITE + "grammar/"
     dist/music/index.html    中国风 songs       → SITE + "music/"
+    dist/poems/index.html    古诗词 handscroll  → SITE + "poems/"
+    dist/poems/{slug}/index.html  one per poem → SITE + "poems/{slug}/"  (list from src/data/poems/meta.json)
 
 plus dist/sitemap.xml. The copy is plain HTML inside <div id="app"><div class="prerendered">;
 the normal app boots on top and replaces it on mount (index.html's inline script turns /pinyin/
@@ -25,6 +27,7 @@ import datetime
 import functools
 import html
 import http.server
+import json
 import re
 import sys
 import threading
@@ -35,6 +38,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
 SEO_JS = ROOT / "src" / "seo.js"
+POEMS_META = ROOT / "src" / "data" / "poems" / "meta.json"
 
 # (route, output dir under dist, element that means "the page has rendered", button to click
 #  until it's gone — the grammar index pages its list, and all 792 names belong in the copy)
@@ -43,9 +47,13 @@ PAGES = [
     ("/pinyin", "pinyin", ".fgroup", None),
     ("/grammar", "grammar", ".grp", ".btn.more"),
     ("/music", "music", ".trk", None),
+    ("/poems", "poems", ".poems-ready", None),
 ]
+# every poem gets its own page (PoemView sets its title/description via applyPoemSeo)
+PAGES += [(f"/poems/{p['slug']}", f"poems/{p['slug']}", ".poem-ready", None)
+          for p in json.loads(POEMS_META.read_text(encoding="utf-8"))["poems"]]
 # public routes that have a static copy — their #/… links in the copy become real paths
-STATIC_ROUTES = {"/pinyin": "pinyin/", "/grammar": "grammar/", "/music": "music/", "/": ""}
+STATIC_ROUTES = {route: outdir + "/" if outdir else "" for route, outdir, _, _ in PAGES}
 
 HEAD_TAGS = 'meta[name="description"], link[rel="canonical"], meta[property^="og:"]'
 
@@ -111,7 +119,7 @@ def build_page(template, data, route, depth, origin):
         if path in STATIC_ROUTES and not rest.startswith("#"):  # index.html carries ?… over into the hash
             return f'href="{up}{STATIC_ROUTES[path]}{rest}"'
         return whole
-    body = re.sub(r'href="#(/[a-z]*)([?#][^"]*)?"', lambda m: relink(m.group(1), m.group(2) or "", m.group(0)), body)
+    body = re.sub(r'href="#(/[a-z0-9/-]*)([?#][^"]*)?"', lambda m: relink(m.group(1), m.group(2) or "", m.group(0)), body)
 
     out = template
     out = re.sub(r"<title>.*?</title>", f"<title>{html.escape(data['title'])}</title>", out, count=1, flags=re.S)
@@ -157,11 +165,13 @@ def main():
     httpd.shutdown()
 
     for outdir, (route, data) in rendered.items():
-        depth = 1 if outdir else 0
+        depth = outdir.count("/") + 1 if outdir else 0
         target = DIST / outdir / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(build_page(template, data, route, depth, origin), encoding="utf-8")
-        print(f"  {target.relative_to(ROOT)}  {target.stat().st_size // 1024} KB  {data['title'][:60]}")
+        if not outdir.startswith("poems/"):  # 92 poem pages — don't list each one
+            print(f"  {target.relative_to(ROOT)}  {target.stat().st_size // 1024} KB  {data['title'][:60]}")
+    print(f"  dist/poems/*/index.html  {sum(o.startswith('poems/') for o in rendered)} poem pages")
 
     today = datetime.date.today().isoformat()
     urls = "".join(

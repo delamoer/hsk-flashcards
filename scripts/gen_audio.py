@@ -30,6 +30,13 @@ MANIFEST_FILE = AUDIO_DIR / "manifest.json"
 
 # zh-CN-XiaoxiaoNeural: warm, natural female voice — best overall for Mandarin learners
 VOICE = "zh-CN-XiaoxiaoNeural"
+# 古诗词 lines are recited, not read: slower and lower (picked by ear, Nov 2026). Poem 字词 keep VOICE.
+POEM_VOICES = {
+    "m": ("zh-CN-YunjianNeural", "-25%", "-12Hz"),  # 男中音、诗歌朗诵感
+    "f": ("zh-CN-XiaoxiaoNeural", "-25%", "-8Hz"),  # 李清照 and poems in a woman's voice
+}
+# which non-default voice each such clip was made with; a changed voice regenerates the clip
+VOICES_FILE = AUDIO_DIR / "voices.json"
 
 
 def text_hash(text: str) -> str:
@@ -48,10 +55,11 @@ def save_manifest(manifest: dict):
     )
 
 
-async def synthesize(text: str, path: Path, retries: int = 3):
+async def synthesize(text: str, path: Path, retries: int = 3, voice: tuple | None = None):
+    name, rate, pitch = voice or (VOICE, "+0%", "+0Hz")
     for attempt in range(retries):
         try:
-            comm = edge_tts.Communicate(text, VOICE)
+            comm = edge_tts.Communicate(text, name, rate=rate, pitch=pitch)
             # edge-tts has no timeout of its own — a stalled websocket hung a whole run once
             await asyncio.wait_for(comm.save(str(path)), timeout=60)
             return
@@ -191,6 +199,31 @@ def collect_reading() -> list[str]:
     return texts
 
 
+def collect_poems() -> list:
+    """古诗词 — PoemView plays each line, the whole poem (lines joined) and each tapped 字词.
+    A line whose 朗读用字 swaps a homophone in (好逑 → 郝逑, so the voice gets the classical reading right)
+    is synthesized from that text but keyed by the line as displayed. Lines and whole poems are recited in
+    the poem's POEM_VOICES voice (作品.朗读声音). 字词 too, but keyed "poem-m|故乡" — the plain 故乡 clip is
+    shared with the flashcards and stays in the default voice (PoemView asks for the prefixed key first)."""
+    seen: set[str] = set()
+    items: list = []
+
+    def add(key: str, speech: str, voice: tuple | None = None):
+        if key and key not in seen:
+            seen.add(key)
+            items.append((key, speech, voice))
+
+    for f in sorted((DATA_DIR / "poems" / "p").glob("*.json")):
+        poem = json.loads(f.read_text(encoding="utf-8"))
+        voice = POEM_VOICES[poem.get("voice", "m")]
+        for line in poem["lines"]:
+            add(line["zh"], line.get("tts") or line["zh"], voice)
+        add("".join(l["zh"] for l in poem["lines"]), "".join(l.get("tts") or l["zh"] for l in poem["lines"]), voice)
+        for w in poem["words"]:
+            add(f"poem-{poem.get('voice', 'm')}|{w['w']}", w["w"], voice)
+    return items
+
+
 def collect_all_texts() -> list[str]:
     seen: set[str] = set()
     texts: list[str] = []
@@ -207,12 +240,20 @@ def collect_all_texts() -> list[str]:
     return texts
 
 
-async def generate(texts: list[str], manifest: dict, concurrency: int = 8) -> int:
+async def generate(texts: list, manifest: dict, concurrency: int = 8) -> int:
     # Filter to work that isn't done yet; repair manifest for orphaned files.
-    pending: list[tuple[str, str, Path]] = []
-    for text in texts:
+    # An item is the text itself, or (key, speech, voice) when the voice should read something else /
+    # in another voice. voices.json remembers non-default voices so a changed one is regenerated.
+    voices = json.loads(VOICES_FILE.read_text(encoding="utf-8")) if VOICES_FILE.exists() else {}
+    pending: list[tuple[str, str, Path, str, tuple | None]] = []
+    for item in texts:
+        text, speech, voice = item if isinstance(item, tuple) else (item, item, None)
         filename = text_hash(text) + ".mp3"
         output = AUDIO_DIR / filename
+        want = "|".join(voice) if voice else None
+        if voice and voices.get(text) != want and (text in manifest or output.exists()):
+            output.unlink(missing_ok=True)  # made in another voice → redo
+            manifest.pop(text, None)
         # A failed synthesis leaves a 0-byte file behind (edge-tts opens it before
         # connecting); never count that as done, or it ships as silent audio.
         if output.exists() and output.stat().st_size == 0:
@@ -222,18 +263,18 @@ async def generate(texts: list[str], manifest: dict, concurrency: int = 8) -> in
             if text not in manifest:
                 manifest[text] = filename  # repair manifest for orphaned files
             continue
-        pending.append((text, filename, output))
+        pending.append((text, filename, output, speech, voice))
 
     total = len(pending)
     done = 0
     sem = asyncio.Semaphore(concurrency)
     lock = asyncio.Lock()
 
-    async def worker(text: str, filename: str, output: Path):
+    async def worker(text: str, filename: str, output: Path, speech: str, voice: tuple | None):
         nonlocal done
         async with sem:
             try:
-                await synthesize(text, output)
+                await synthesize(speech, output, voice=voice)
             except Exception as e:
                 output.unlink(missing_ok=True)  # don't leave a partial file to be mistaken for done
                 async with lock:
@@ -243,12 +284,18 @@ async def generate(texts: list[str], manifest: dict, concurrency: int = 8) -> in
         # threaded, but await points can interleave — keep writes atomic).
         async with lock:
             manifest[text] = filename
+            if voice:
+                voices[text] = "|".join(voice)
+            else:
+                voices.pop(text, None)
             done += 1
             print(f"  ✔ [{done}/{total}] {text}  →  {filename}")
             if done % 50 == 0:
                 save_manifest(manifest)
+                VOICES_FILE.write_text(json.dumps(voices, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    await asyncio.gather(*(worker(t, f, o) for t, f, o in pending))
+    await asyncio.gather(*(worker(*p) for p in pending))
+    VOICES_FILE.write_text(json.dumps(voices, ensure_ascii=False, indent=1), encoding="utf-8")
     return total
 
 
@@ -263,6 +310,7 @@ async def main():
     parser.add_argument("--collocations", action="store_true", help="Generate for 词汇详解 常见搭配")
     parser.add_argument("--music", action="store_true", help="Generate for 中国风 Music song words")
     parser.add_argument("--reading", action="store_true", help="Generate for 课外阅读 paragraphs + words")
+    parser.add_argument("--poems", action="store_true", help="Generate for 古诗词 lines, whole poems + words")
     parser.add_argument("--concurrency", type=int, default=8, help="Concurrent TTS requests")
     args = parser.parse_args()
 
@@ -270,7 +318,10 @@ async def main():
     manifest = load_manifest()
     already = len(manifest)
 
-    if args.reading:
+    if args.poems:
+        texts = collect_poems()
+        label = "古诗词 lines, poems + words"
+    elif args.reading:
         texts = collect_reading()
         label = "课外阅读 paragraphs + words"
     elif args.music:
@@ -292,7 +343,8 @@ async def main():
         texts = collect_texts(args.series, args.unit, args.lesson)
         label = f"{args.series}-{args.unit}" + (f" lesson {args.lesson}" if args.lesson else "")
 
-    print(f"Scope: {label} — {len(texts)} unique texts ({len(texts) - sum(t in manifest for t in texts)} new), concurrency={args.concurrency}")
+    keys = [t[0] if isinstance(t, tuple) else t for t in texts]  # (key, speech, voice) or a plain text
+    print(f"Scope: {label} — {len(keys)} unique texts ({len(keys) - sum(k in manifest for k in keys)} new), concurrency={args.concurrency}")
     new_count = await generate(texts, manifest, args.concurrency)
     save_manifest(manifest)
     print(f"\nDone: {new_count} generated, {already} already existed, {len(manifest)} total in manifest")

@@ -34,7 +34,7 @@ the whole app's tokens/fonts/paper texture live in `src/styles/main.css`).
    independent too (`getDiscussionLesson`), so it also works for text-less units. Each tab
    gracefully shows a "本课暂无…" placeholder when its data is missing.
 
-Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **阅读 Reading** (`/reading`) · **拼音 Pinyin** (`/pinyin`) · **语法 Grammar** (`/grammar`) · **中国风 Music** (`/music`) · **我的词 My words** (`/my-words`),
+Top nav (`AppHeader.vue`): **选书 Books** (`/`) · **阅读 Reading** (`/reading`) · **拼音 Pinyin** (`/pinyin`) · **语法 Grammar** (`/grammar`) · **中国风 Music** (`/music`) · **古诗词 Poems** (`/poems`) · **我的词 My words** (`/my-words`),
 朱红印章 logo. 课文 is no longer a top-level nav item — it lives inside each lesson hub; the legacy
 `/texts/...` routes still exist (`TextsHomeView`/`TextsUnitView`/`TextView`) but aren't linked from nav.
 **我的词** doubles as global search (范围切换: 我的词 / 所有课程).
@@ -61,6 +61,7 @@ uv run --with openpyxl --with pypinyin python3 scripts/convert_360.py   # xlsx �
 uv run --with openpyxl python3 scripts/convert_grammar.py          # xlsx → src/data/grammar/*.json
 uv run --with openpyxl --with pypinyin python3 scripts/convert_discussion.py  # xlsx → src/data/discussion/*.json (话题讨论)
 uv run --with openpyxl python3 scripts/convert_reading.py          # xlsx → src/data/reading/*.json (课外阅读)
+uv run --with openpyxl python3 scripts/convert_poems.py            # xlsx → src/data/poems/ (古诗词)
 
 # Pinyin section (not npm scripts — run via uv directly):
 uv run --with openpyxl python3 scripts/convert_pinyin.py            # xlsx → src/data/pinyin.json
@@ -386,6 +387,33 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   taken down, fall back to ZhouShen Official's live `MKprukYXPiQ` (+ `"live": true`). 三生三世 is 苏运莹's
   live cover from her verified channel (a static show-cover image, not an MV); 张杰's original is
   `wHmBpg_oq7I` (太合音乐).
+- **古诗词 Poems** (`/poems` → `PoemsView.vue`, `/poems/:slug` → `PoemView.vue`; public, design origin
+  `design-demos/poetry/A2-*.html`, chosen Nov 2026 from three mockups) — 92 classical poems, 先秦《诗经》to 明清,
+  shown as a **handscroll** (手卷): on desktop the seven eras unroll left→right (wheel/drag/← → keys/edge
+  buttons, a proportional minimap; a search or level filter drops to a flat grid), on phones a vertical
+  scroll with each era folded to its first few poems. Theme and imagery views sit beside it. Each poem page:
+  ruby pinyin / rhythm / literal / free translation toggles (default: text + free translation), tap-a-word
+  glosses, imagery seals linking to the imagery view, Chinese + English analysis.
+  **Data = `sources/古诗词_作品总表.xlsx`, everything written for the site** (Nov 2026, by agents; teacher review
+  pending — rows carry 状态 待审/已审 and 老师意见). Sheets: 作品 · 逐句 (段 = 章/阕, 节奏 with `/`, per-character
+  pinyin) · 字词 · 作品意象 · 意象 (dictionary) · 朝代 (the scroll's eras, in order) · 主题 · 说明 · 候选清单 (not read).
+  `scripts/convert_poems.py` validates (syllables = characters, themes/imagery exist, unique slugs) and writes
+  `src/data/poems/meta.json` (list fields, statically small) + `poems/p/{slug}.json` (one lazy chunk per poem,
+  via `src/data/poems.js`). Adding a poem or an era = rows in the workbook + rerun; no code change.
+  Conventions: **only up to the Qing** (modern poets are in copyright); texts follow today's 统编 textbooks
+  (variants in 版本说明; the originals were checked against zh.wikisource); **poem pinyin is per character,
+  lowercase, no tone sandhi** (the poetry convention — unlike 课文's word-grouped TSV); both English layers
+  are our own (published translations — Xu Yuanchong, Waley… — are copyrighted). Disputed readings carry
+  【请老师确认】 in 读音注意 (stripped from the student page) — the teacher decides. 读音注意 is student-facing:
+  keep TTS notes out of it. **朗读用字** feeds the voice a homophone where edge-tts would misread a classical
+  reading (好逑 → 郝逑); `gen_audio.py --poems` synthesizes from it but keys the MP3 by the displayed line, so
+  every such clip must be listened to before upload. **Voices** (作品.朗读声音 男/女, picked by ear Nov 2026): lines,
+  whole poems and 字词 are recited by 云健 (男, rate −25%, pitch −12Hz) or 晓晓 (女: 李清照, poems in a woman's voice
+  like 葬花吟/上邪; −25%, −8Hz) — `POEM_VOICES` in gen_audio.py; `audio-src/voices.json` records which voice made
+  each such clip, so changing a poem's voice regenerates it. 字词 clips are keyed `poem-m|故乡` (PoemView passes
+  `key` to `speak`) so the shared 故乡 flashcard clip keeps the default voice; poem MP3s play with `recited: true`
+  (no extra 0.85× slow-down — they're already slow). A poem's 网址名 is its URL and its prerendered page —
+  never rename one.
 - **Routing** (`src/router/index.js`): hash history (`createWebHashHistory`) so the static build
   works on GitHub Pages without server rewrites. Course flow (four levels): `/` (LibraryView) →
   `/course/:series` (SeriesBooksView) → `/course/:series/:unit` (LessonListView) →
@@ -441,8 +469,9 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
     **Whenever you add content with a 🔊, add a collector and regenerate** — the scopes are
     `--all` (words + examples), `--texts` (课文 lines + every 连词成句 sentence; globs `texts/*-*.json`,
     so a new 课文 unit needs no code change), `--discussion` (话题讨论 questions), `--collocations`
-    (词汇详解 搭配; any unit whose words carry `collocations`), `--music` (中国风 「歌里的词」) and `--reading`
-    (课外阅读 paragraphs + 生词; globs `reading/*-*.json`). Generating only
+    (词汇详解 搭配; any unit whose words carry `collocations`), `--music` (中国风 「歌里的词」), `--reading`
+    (课外阅读 paragraphs + 生词; globs `reading/*-*.json`) and `--poems` (古诗词 lines, whole poems — lines
+    joined — and 字词; speaks the 朗读用字 text, keyed by the displayed one). Generating only
     writes to the gitignored `audio-src/`; the site keeps falling back to robot TTS until
     `upload_audio.py` pushes the new MP3s + manifest to Storage (idempotent, skips existing).
   - *Pinyin*: **real human recordings** (hugolpz/audio-cmn, CC-BY-SA — credit shown in PinyinView footer)
@@ -463,10 +492,12 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
 
 ## SEO (public pages)
 
-Google ignores everything after "#", so with hash routing the whole site is one URL. The four public
+Google ignores everything after "#", so with hash routing the whole site is one URL. The public
 pages therefore also exist as **prerendered static copies at real paths**, written by
 `scripts/prerender.py` after `vite build` (headless Chromium, signed out): `dist/index.html` (landing),
-`dist/{pinyin,grammar,music}/index.html` + `dist/sitemap.xml`. Titles / descriptions / canonical URLs
+`dist/{pinyin,grammar,music,poems}/index.html`, **one `dist/poems/{slug}/index.html` per poem** (list read
+from `src/data/poems/meta.json`; title/description from `poemSeo()` in `src/seo.js`, set by PoemView via
+`applyPoemSeo`) + `dist/sitemap.xml`. Titles / descriptions / canonical URLs
 live in `src/seo.js` (`SEO_PAGES`, applied by `router.afterEach` — the script just captures them); the
 grammar copy clicks 「Show more」 until all 792 points are in it. At runtime the copy sits in
 `<div id="app"><div class="prerendered">` and the app replaces it on mount. Subfolder copies carry
@@ -479,6 +510,9 @@ into `/pinyin/#/pinyin` (carrying `?q=`/`?song=` into the hash) and hides the co
 hash-only and login-walled — students' `#/…` bookmarks are untouched.** Adding a public page = an entry in
 `SEO_PAGES` + `PAGES` in the script (+ the route name in `PUBLIC_ROUTES`). `robots.txt` can't work on a
 project site (it must sit at the domain root); submit the sitemap in Google Search Console instead.
+Search Console is set up (Nov 2026, URL-prefix property `https://delamoer.github.io/hsk-flashcards/`, owned by
+the teacher's Google account; sitemap submitted). **`public/google4719dac73b1a2a97.html` is its ownership
+proof — never delete it** (Vite copies `public/` to the site root; removing it un-verifies the property).
 
 ## Deploy
 
