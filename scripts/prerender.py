@@ -84,7 +84,10 @@ async def capture(browser, origin, route, ready, more):
     errors = []
     page.on("pageerror", lambda e: errors.append(str(e)))
     await page.goto(f"{origin}/#{route}", wait_until="networkidle")
-    await page.wait_for_selector(ready, state="attached", timeout=20000)  # may sit in a hidden tab
+    try:
+        await page.wait_for_selector(ready, state="attached", timeout=20000)  # may sit in a hidden tab
+    except Exception:
+        sys.exit(f"{route}: {ready} never appeared (page errors: {errors})")
     await page.evaluate("document.fonts.ready")
     # lazy data (grammar index, carousels) settles; a poem page is complete once .poem-ready is on
     await page.wait_for_timeout(300 if route.startswith("/poems/") else 1500)
