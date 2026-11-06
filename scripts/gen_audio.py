@@ -200,7 +200,7 @@ def collect_reading() -> list[str]:
 
 
 def collect_poems() -> list:
-    """古诗词 — PoemView plays each line, the whole poem (lines joined) and each tapped 字词.
+    """古诗词 — PoemView plays each line (「朗读全诗」 plays them in turn, lighting up each) and each tapped 字词.
     A line whose 朗读用字 swaps a homophone in (好逑 → 郝逑, so the voice gets the classical reading right)
     is synthesized from that text but keyed by the line as displayed. Lines and whole poems are recited in
     the poem's POEM_VOICES voice (作品.朗读声音). 字词 too, but keyed "poem-m|故乡" — the plain 故乡 clip is
@@ -218,7 +218,6 @@ def collect_poems() -> list:
         voice = POEM_VOICES[poem.get("voice", "m")]
         for line in poem["lines"]:
             add(line["zh"], line.get("tts") or line["zh"], voice)
-        add("".join(l["zh"] for l in poem["lines"]), "".join(l.get("tts") or l["zh"] for l in poem["lines"]), voice)
         for w in poem["words"]:
             add(f"poem-{poem.get('voice', 'm')}|{w['w']}", w["w"], voice)
     return items
@@ -310,7 +309,7 @@ async def main():
     parser.add_argument("--collocations", action="store_true", help="Generate for 词汇详解 常见搭配")
     parser.add_argument("--music", action="store_true", help="Generate for 中国风 Music song words")
     parser.add_argument("--reading", action="store_true", help="Generate for 课外阅读 paragraphs + words")
-    parser.add_argument("--poems", action="store_true", help="Generate for 古诗词 lines, whole poems + words")
+    parser.add_argument("--poems", action="store_true", help="Generate for 古诗词 lines + words")
     parser.add_argument("--concurrency", type=int, default=8, help="Concurrent TTS requests")
     args = parser.parse_args()
 
@@ -320,7 +319,7 @@ async def main():
 
     if args.poems:
         texts = collect_poems()
-        label = "古诗词 lines, poems + words"
+        label = "古诗词 lines + words"
     elif args.reading:
         texts = collect_reading()
         label = "课外阅读 paragraphs + words"

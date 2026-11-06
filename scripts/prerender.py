@@ -33,7 +33,9 @@ import sys
 import threading
 from pathlib import Path
 
-from playwright.sync_api import sync_playwright
+import asyncio
+
+from playwright.async_api import async_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
@@ -76,19 +78,20 @@ def serve(directory):
     return httpd
 
 
-def capture(browser, origin, route, ready, more):
-    ctx = browser.new_context(viewport={"width": 1440, "height": 900})  # fresh = signed out
-    page = ctx.new_page()
+async def capture(browser, origin, route, ready, more):
+    ctx = await browser.new_context(viewport={"width": 1440, "height": 900})  # fresh = signed out
+    page = await ctx.new_page()
     errors = []
     page.on("pageerror", lambda e: errors.append(str(e)))
-    page.goto(f"{origin}/#{route}", wait_until="networkidle")
-    page.wait_for_selector(ready, state="attached", timeout=20000)  # may sit in a hidden tab
-    page.evaluate("document.fonts.ready")
-    page.wait_for_timeout(1500)  # lazy data (grammar index, carousels) settles
-    while more and page.locator(more).count():
-        page.locator(more).first.click()
-        page.wait_for_timeout(150)
-    data = page.evaluate(
+    await page.goto(f"{origin}/#{route}", wait_until="networkidle")
+    await page.wait_for_selector(ready, state="attached", timeout=20000)  # may sit in a hidden tab
+    await page.evaluate("document.fonts.ready")
+    # lazy data (grammar index, carousels) settles; a poem page is complete once .poem-ready is on
+    await page.wait_for_timeout(300 if route.startswith("/poems/") else 1500)
+    while more and await page.locator(more).count():
+        await page.locator(more).first.click()
+        await page.wait_for_timeout(150)
+    data = await page.evaluate(
         """(sel) => ({
             app: document.querySelector('#app').innerHTML,
             title: document.title,
@@ -97,12 +100,30 @@ def capture(browser, origin, route, ready, more):
         })""",
         HEAD_TAGS,
     )
-    ctx.close()
+    await ctx.close()
     if errors:
         sys.exit(f"{route}: page errors while prerendering: {errors}")
     if not data["head"]:
         sys.exit(f"{route}: no SEO tags set — is it in src/seo.js?")
     return data
+
+
+# ~100 pages one at a time took 7 minutes; a few tabs at once keep a deploy to a minute or two
+PARALLEL = 6
+
+
+async def capture_all(origin):
+    async with async_playwright() as p:
+        browser = await p.chromium.launch()
+        sem = asyncio.Semaphore(PARALLEL)
+
+        async def one(route, outdir, ready, more):
+            async with sem:
+                return outdir, (route, await capture(browser, origin, route, ready, more))
+
+        results = await asyncio.gather(*(one(*pg) for pg in PAGES))
+        await browser.close()
+    return dict(results)
 
 
 def build_page(template, data, route, depth, origin):
@@ -156,12 +177,7 @@ def main():
     site = site_url()
     httpd = serve(DIST)
     origin = f"http://127.0.0.1:{httpd.server_address[1]}"
-    rendered = {}
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        for route, outdir, ready, more in PAGES:
-            rendered[outdir] = (route, capture(browser, origin, route, ready, more))
-        browser.close()
+    rendered = asyncio.run(capture_all(origin))
     httpd.shutdown()
 
     for outdir, (route, data) in rendered.items():

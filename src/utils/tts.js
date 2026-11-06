@@ -49,6 +49,8 @@ function urlFor(text) {
 // ── Single shared player ──────────────────────────────────────────────────
 
 export const nowPlaying = ref(null);
+// index of the item playing inside speakSequence (-1 otherwise) — lets a page light up the current line
+export const nowIndex = ref(-1);
 let current = null; // { audio, done } for the MP3 in flight
 let token = 0; // bumped on every stop; stale callbacks compare against it
 
@@ -61,6 +63,7 @@ export function stop() {
   }
   if (typeof window !== "undefined" && window.speechSynthesis) window.speechSynthesis.cancel();
   nowPlaying.value = null;
+  nowIndex.value = -1;
 }
 
 if (typeof window !== "undefined") {
@@ -73,10 +76,11 @@ function finish(my) {
   if (my !== token) return;
   current = null;
   nowPlaying.value = null;
+  nowIndex.value = -1;
 }
 
 // Plays on behalf of the run started at `my`; a stop() in between makes it a no-op.
-function playUrl(url, rate, my) {
+function playUrl(url, rate, my, last = true) {
   return new Promise((resolve, reject) => {
     if (my !== token) return resolve();
     const audio = new Audio(url);
@@ -89,7 +93,8 @@ function playUrl(url, rate, my) {
     audio.webkitPreservesPitch = true;
     current = { audio, done: resolve };
     audio.onended = () => {
-      finish(my);
+      if (last) finish(my); // inside speakSequence only the last clip ends the run
+      else if (my === token) current = null;
       resolve();
     };
     audio.onerror = (e) => {
@@ -166,6 +171,50 @@ if (typeof window !== "undefined" && window.speechSynthesis) {
     cachedVoice = null;
     pickVoice();
   };
+}
+
+// Plays several clips one after another under one id (古诗词「朗读全诗」= each line's own clip, so the page
+// can light up the line being read via nowIndex; a short gap between lines). Tapping again stops it.
+export function speakSequence(id, texts, { rate = 0.85, recited = false, gap = 450 } = {}) {
+  if (!texts?.length) return;
+  if (nowPlaying.value === id) return stop();
+  stop();
+  const my = token;
+  nowPlaying.value = id;
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+  loadManifest().then(async () => {
+    for (let i = 0; i < texts.length; i++) {
+      if (my !== token) return;
+      nowIndex.value = i;
+      const url = urlFor(texts[i]);
+      try {
+        if (!url) throw new Error("no clip");
+        await playUrl(url, recited ? 1 : rate, my, false);
+      } catch {
+        await sayOnce(texts[i], rate, my);
+      }
+      if (i < texts.length - 1) await wait(gap);
+    }
+    finish(my);
+  });
+}
+
+// browser voice for one text, resolving when it ends (speakSequence's fallback)
+function sayOnce(text, rate, my) {
+  return new Promise((resolve) => {
+    if (my !== token || !("speechSynthesis" in window)) return resolve();
+    try {
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = "zh-CN";
+      u.rate = rate;
+      const v = pickVoice();
+      if (v) u.voice = v;
+      u.onend = u.onerror = () => resolve();
+      window.speechSynthesis.speak(u);
+    } catch {
+      resolve();
+    }
+  });
 }
 
 function speakFallback(text, rate, my) {

@@ -407,8 +407,9 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   【请老师确认】 in 读音注意 (stripped from the student page) — the teacher decides. 读音注意 is student-facing:
   keep TTS notes out of it. **朗读用字** feeds the voice a homophone where edge-tts would misread a classical
   reading (好逑 → 郝逑); `gen_audio.py --poems` synthesizes from it but keys the MP3 by the displayed line, so
-  every such clip must be listened to before upload. **Voices** (作品.朗读声音 男/女, picked by ear Nov 2026): lines,
-  whole poems and 字词 are recited by 云健 (男, rate −25%, pitch −12Hz) or 晓晓 (女: 李清照, poems in a woman's voice
+  every such clip must be listened to before upload. 「朗读全诗」 plays each line's clip in turn (`speakSequence` in tts.js, ~0.45 s apart) so the line
+  being read lights up — there is no whole-poem clip. **Voices** (作品.朗读声音 男/女, picked by ear Nov 2026): lines
+  and 字词 are recited by 云健 (男, rate −25%, pitch −12Hz) or 晓晓 (女: 李清照, poems in a woman's voice
   like 葬花吟/上邪; −25%, −8Hz) — `POEM_VOICES` in gen_audio.py; `audio-src/voices.json` records which voice made
   each such clip, so changing a poem's voice regenerates it. 字词 clips are keyed `poem-m|故乡` (PoemView passes
   `key` to `speak`) so the shared 故乡 flashcard clip keeps the default voice; poem MP3s play with `recited: true`
@@ -470,8 +471,8 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
     `--all` (words + examples), `--texts` (课文 lines + every 连词成句 sentence; globs `texts/*-*.json`,
     so a new 课文 unit needs no code change), `--discussion` (话题讨论 questions), `--collocations`
     (词汇详解 搭配; any unit whose words carry `collocations`), `--music` (中国风 「歌里的词」), `--reading`
-    (课外阅读 paragraphs + 生词; globs `reading/*-*.json`) and `--poems` (古诗词 lines, whole poems — lines
-    joined — and 字词; speaks the 朗读用字 text, keyed by the displayed one). Generating only
+    (课外阅读 paragraphs + 生词; globs `reading/*-*.json`) and `--poems` (古诗词 lines and 字词; speaks
+    the 朗读用字 text, keyed by the displayed one). Generating only
     writes to the gitignored `audio-src/`; the site keeps falling back to robot TTS until
     `upload_audio.py` pushes the new MP3s + manifest to Storage (idempotent, skips existing).
   - *Pinyin*: **real human recordings** (hugolpz/audio-cmn, CC-BY-SA — credit shown in PinyinView footer)

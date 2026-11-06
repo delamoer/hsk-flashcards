@@ -52,7 +52,7 @@
             <dd><span v-for="t in poem.themes" :key="t" class="chip">{{ t }} <i>{{ themeEn[t] }}</i></span></dd>
           </dl>
           <div class="daodu"><h2>导读<span>About this poem</span></h2><p>{{ poem.intro }}</p></div>
-          <button class="play-all" :class="{ on: nowPlaying === allText }" @click="speak(allText, { recited: true })">
+          <button class="play-all" :class="{ on: nowPlaying === allText }" @click="speakSequence(allText, poem.lines.map((l) => l.zh), { recited: true })">
             <span class="ic">{{ nowPlaying === allText ? "⏹" : "▶" }}</span>朗读全诗 <small>{{ nowPlaying === allText ? "Stop" : "Read aloud" }}</small>
           </button>
         </div></aside>
@@ -72,7 +72,7 @@
             <div class="stanzas" @click="onLinesClick" @keydown.enter="onLinesClick">
               <div v-for="(st, si) in stanzas" :key="si" class="stanza">
                 <div v-if="stanzas.length > 1" class="st-label">{{ stanzaLabel(si)[0] }}<small>{{ stanzaLabel(si)[1] }}</small></div>
-                <div v-for="ln in st" :key="ln.i" class="ln" :class="{ playing: nowPlaying === ln.zh }">
+                <div v-for="ln in st" :key="ln.i" class="ln" :class="{ playing: nowPlaying === ln.zh || (nowPlaying === allText && nowIndex === ln.i) }">
                   <div class="gut">
                     <span class="no">{{ String(ln.i + 1).padStart(2, "0") }}</span>
                     <button class="lp" :title="'朗读这一行 Play line'" :aria-label="`Play line ${ln.i + 1}`" @click.stop="speak(ln.zh, { recited: true })">
@@ -186,7 +186,7 @@
 import { ref, reactive, computed, watch, onMounted, onBeforeUnmount, nextTick } from "vue";
 import { loadPoemsMeta, loadPoem } from "@/data/poems";
 import { applyPoemSeo } from "@/seo";
-import { speak, nowPlaying, preload } from "@/utils/tts";
+import { speak, speakSequence, nowPlaying, nowIndex, preload } from "@/utils/tts";
 import { toneOf } from "@/utils/pinyinTones";
 import { useSettings } from "@/composables/useSettings";
 import { useAuth } from "@/composables/useAuth";
