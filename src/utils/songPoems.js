@@ -1,11 +1,13 @@
 // 中国风 ↔ 古诗词 links. They live in the hand-owned music.json, on each song:
-//   poems: [{ slug, line, hl:[…], lyric, rel }]   rel = quote (引用原句) | adapt (化用) | full (诗词新唱: the lyric IS the poem)
-// `line` is the index into the poem's lines and `hl` the characters of that line the lyric echoes.
+//   poems: [{ slug, line, hl:[…], lyric, rel }]   rel = quote (引用原句) | adapt (化用) | mood (意境相通) | full (诗词新唱: the lyric IS the poem)
+// `line` is the index into the poem's lines and `hl` the characters of that line the lyric echoes (mood: usually none —
+// the song shares the line's mood or subject, not its words, so it is drawn lighter: dashed seal, no underline).
 // MusicView reads them per song; PoemView reads them backwards through songsOfPoem().
 
 export const REL = {
   quote: { seal: "引", zh: "引用原句", en: "Quoted" },
   adapt: { seal: "化", zh: "化用", en: "Adapted" },
+  mood: { seal: "意", zh: "意境相通", en: "Kindred mood" },
   full: { seal: "唱", zh: "整首谱曲", en: "Sung in full" },
 };
 

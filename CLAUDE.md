@@ -353,7 +353,7 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   `/admin` reads it for each student's 课外阅读 list.
   To add a book: name the xlsx by the convention, add a `BOOKS` record (+ a cover image job), run the converter +
   `gen_audio.py --reading`.
-- **中国风 Music** (`/music`, `MusicView.vue`) — 64 songs (43 Chinese-style pop + 21 诗词新唱) as **embedded YouTube MVs**
+- **中国风 Music** (`/music`, `MusicView.vue`) — 141 songs (43 Chinese-style pop + 78 诗词新唱 + 20 诗中有歌) as **embedded YouTube MVs**
   (`youtube-nocookie.com`, official artist/label channels only). We host NO audio/video: the songs are
   commercially copyrighted (a public repo/site must not serve them — and a DMCA on GitHub would take the
   whole site down), and embedding costs our Supabase/GitHub bandwidth nothing. Don't hide the player to
@@ -387,20 +387,27 @@ SUPABASE_URL=… SUPABASE_SERVICE_KEY=sb_secret_… \
   taken down, fall back to ZhouShen Official's live `MKprukYXPiQ` (+ `"live": true`). 三生三世 is 苏运莹's
   live cover from her verified channel (a static show-cover image, not an MV); 张杰's original is
   `wHmBpg_oq7I` (太合音乐).
-  **诗词新唱 Poems in song** (group #4, songs #44–64, `"seal": "诗"` puts a small 诗 seal on the group heading): songs whose
+  **诗词新唱 Poems in song** (group #4, songs #44–121, `"seal": "诗"` puts a small 诗 seal on the group heading): songs whose
   lyric IS a classical poem in our library, ordered by the poem's age — 邓丽君《淡淡幽情》(1983) and CCTV《经典咏流传》stage
   performances (`live: true`), plus fan uploads where no official one has footage (几多愁 / 人约黄昏后 = the 1983 TV special,
   月满西楼 = 安雯's original MV, 葬花吟 = 1987 drama footage, 在水一方 = 邓丽君's official Topic track, a still cover — every footage upload was blocked) — the user's call; 在水一方 (琼瑶) is the one
   exception that is a modern retelling (rel adapt), placed right after 蒹葭; research + backups in Nov 2026 notes
   (/tmp/poetlink/*.md, may be gone). The CCTV versions' lyrics weren't checked line by line against the poem.
-  **Song ↔ poem links**: a song may carry `poems: [{slug, line, hl:[…], lyric, rel}]` — `rel` quote (引用原句) / adapt (化用)
+  Nov 2026 second round (agents + embed-tested): 57 more full-poem songs (more 淡淡幽情 tracks, 87 版红楼梦, 清平调, 夜宴·越人歌,
+  ~45 CCTV《经典咏流传》stage performances) were added and the whole group re-sorted by poem age (`YEAR` map in the merge
+  script — this renumbered #44+); group #5 **诗中有歌 Poems in pop songs** (`"seal": "引"`, by song year) holds hit songs that
+  quote / adapt / echo a poem (涛声依旧, 新鸳鸯蝴蝶梦, 知否知否, 芒种, 当, 寂寞沙洲冷, 千百度, 虞兮叹…). Deliberately left out: 霍尊 and
+  王力宏 versions (2021 controversies), static-cover uploads of little-known songs, CCTV clips under ~5k views. `cn()` handles 100+.
+  **Song ↔ poem links**: a song may carry `poems: [{slug, line, hl:[…], lyric, rel}]` — `rel` quote (引用原句) / adapt (化用) / mood (意境相通 — drawn lighter: dashed gold seal, no underline;
+  e.g. 精忠报国 ↔ 满江红)
   point at one line of the poem (`line` = index, `hl` = the echoed characters, `lyric` ≤ 12 chars); `full` = the 诗词新唱 song
   sings the whole poem. MusicView shows them under the colophon as a 朱批 table (「出自古诗词」); PoemView reads them backwards
   (`songsOfPoem` in `src/utils/songPoems.js`) as a margin note beside the echoed line (+ red-underlined characters) and, for
   `full`, an MV poster under 朗读全诗 (design A, `design-demos/poetry/link/`). Only verified links (lyric checked against the
   poem); loose thematic resemblances were deliberately left out. Linking a poem that isn't in the library yet = add the poem first.
 - **古诗词 Poems** (`/poems` → `PoemsView.vue`, `/poems/:slug` → `PoemView.vue`; public, design origin
-  `design-demos/poetry/A2-*.html`, chosen Nov 2026 from three mockups) — 92 classical poems, 先秦《诗经》to 明清,
+  `design-demos/poetry/A2-*.html`, chosen Nov 2026 from three mockups) — 501 classical poems (95 in the first round, +406 in a
+  second agent-written round, Nov 2026; 蜀道难 and 归去来兮辞 were skipped — the API's content filter kept cutting off agents writing them), 先秦《诗经》to 明清,
   shown as a **handscroll** (手卷): on desktop the seven eras unroll left→right (wheel/drag/← → keys/edge
   buttons, a proportional minimap; a search or level filter drops to a flat grid), on phones a vertical
   scroll with each era folded to its first few poems. Theme and imagery views sit beside it. Each poem page:

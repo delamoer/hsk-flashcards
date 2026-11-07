@@ -109,10 +109,10 @@
             </router-link>
           </template>
           <template v-else>
-            <p class="lead">朱字是歌词，右边是它借来的诗句 · Red: the lyric. Right: the line of poetry it borrows · 引 = quoted · 化 = adapted</p>
+            <p class="lead">朱字是歌词，右边是它借来的诗句 · Red: the lyric. Right: the line of poetry it borrows · 引 = quoted · 化 = adapted{{ links.some((l) => l.rel === "mood") ? " · 意 = kindred mood" : "" }}</p>
             <router-link v-for="l in links" :key="l.slug + l.line" class="lk-row" :to="{ name: 'poem', params: { slug: l.slug } }">
               <div class="y">「{{ l.lyric }}」<small>歌词 Lyric</small></div>
-              <span class="ar">{{ REL[l.rel].seal }}</span>
+              <span class="ar" :class="l.rel">{{ REL[l.rel].seal }}</span>
               <div class="l">
                 <template v-for="(s, k) in markLine(l.poem.lines[l.line].zh, l.hl)" :key="k"><em v-if="s.on">{{ s.t }}</em><template v-else>{{ s.t }}</template></template>
                 <small>{{ l.poem.lines[l.line].en }}</small>
@@ -147,6 +147,10 @@ const songs = groups.flatMap((g) => g.songs);
 const DIGITS = "〇一二三四五六七八九";
 // 1 → 一, 10 → 十, 12 → 十二, 27 → 二十七 (song numbers stay under 100)
 function cn(n) {
+  if (n >= 100) { // 一百 · 一百零五 · 一百一十 · 一百三十九
+    const h = Math.floor(n / 100), r = n % 100;
+    return DIGITS[h] + "百" + (r === 0 ? "" : r < 10 ? "零" + DIGITS[r] : (r < 20 ? "一" : "") + cn(r));
+  }
   const t = Math.floor(n / 10), u = n % 10;
   return (t > 1 ? DIGITS[t] : "") + (t ? "十" : "") + (u ? DIGITS[u] : "");
 }
@@ -393,6 +397,7 @@ const embedUrl = computed(() =>
 .lk-row .y { font: 600 18px/1.35 var(--serif-cn); color: var(--cinnabar); }
 .lk-row .y small { display: block; font: 700 11px var(--ui); letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); }
 .lk-row .ar { width: 26px; height: 26px; border-radius: 4px; box-shadow: inset 0 0 0 1.5px var(--cinnabar); color: var(--cinnabar); display: grid; place-items: center; font: 700 12px var(--serif-cn); transform: rotate(-3deg); }
+.lk-row .ar.mood { box-shadow: none; border: 1.5px dashed var(--gold-deep); color: var(--gold-deep); }
 .lk-row .l { font: 500 17px/1.4 var(--serif-cn); color: var(--sumi); }
 .lk-row .l em { font-style: normal; color: var(--cinnabar-dk); background: linear-gradient(transparent 80%, rgba(163, 63, 46, 0.25) 80%); }
 .lk-row .l small { display: block; font: 400 12.5px/1.4 var(--ui); color: var(--muted); }

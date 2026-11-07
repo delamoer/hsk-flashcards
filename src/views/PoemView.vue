@@ -96,7 +96,7 @@
                   </div>
                   <!-- 朱批：流行歌里引用 / 化用了这一句 -->
                   <div v-if="sungLines.get(ln.i)" class="lk-pzs">
-                    <router-link v-for="q in sungLines.get(ln.i)" :key="q.n" class="lk-pz" :to="{ name: 'music', query: { song: q.n } }">
+                    <router-link v-for="q in sungLines.get(ln.i)" :key="q.n" class="lk-pz" :class="q.link.rel" :to="{ name: 'music', query: { song: q.n } }">
                       <span class="k">歌 · {{ REL[q.link.rel].zh }}<i>{{ REL[q.link.rel].en }}</i></span>
                       <span class="y">「{{ q.link.lyric }}」</span>
                       <span class="s">《{{ q.song.zh }}》{{ q.song.artist }} <small>{{ q.song.artistEn }}</small></span>
@@ -270,7 +270,7 @@ const echoAt = computed(() => {
   for (const [li, qs] of sungLines.value) {
     const han = [...(poem.value?.lines[li]?.zh || "")].filter((c) => /\p{Script=Han}/u.test(c)).join("");
     const set = (res[li] = new Set());
-    for (const q of qs) for (const w of q.link.hl) { const at = han.indexOf(w); if (at >= 0) for (let j = 0; j < w.length; j++) set.add(at + j); }
+    for (const q of qs) for (const w of q.link.hl || []) { const at = han.indexOf(w); if (at >= 0) for (let j = 0; j < w.length; j++) set.add(at + j); }
   }
   return res;
 });
@@ -559,6 +559,9 @@ dl.meta .lv3 i { color: #f3dccb; }
 .lk-notes .ln { grid-template-columns: 56px minmax(0, 1fr) 206px; }
 .lk-pzs { grid-column: 3; grid-row: 1; align-self: center; display: flex; flex-direction: column; gap: 8px; margin-left: 6px; }
 .lk-pz { display: block; padding: 8px 10px 9px 12px; border-left: 1.5px solid var(--cinnabar); border-radius: 0 8px 8px 0; text-align: left; transition: background 0.15s; }
+.lk-pz.mood { border-left-style: dashed; border-left-color: var(--gold-deep); }
+.lk-pz.mood .k, .lk-pz.mood .go { color: var(--gold-deep); }
+.lk-pz.mood .y { color: var(--sumi); }
 .lk-pz:hover { background: rgba(243, 225, 208, 0.7); }
 .lk-pz .k { display: flex; align-items: center; gap: 6px; font: 700 12px var(--serif-cn); color: var(--cinnabar-dk); letter-spacing: 1px; }
 .lk-pz .k i { font: 700 10.5px var(--ui); font-style: normal; letter-spacing: 0.6px; text-transform: uppercase; color: var(--muted); }
