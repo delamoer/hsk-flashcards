@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="../../" />
+    <meta name="prerender-route" content="/grammar/hsk-6-17-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>固定格式“东A西B” (dōng A xī B) — Chinese grammar with examples · 学中文 Learn Chinese</title>
+    <script>
+      // The public pages are also served prerendered at real paths (/pinyin/ …): scripts/prerender.py fills
+      // <div class="prerendered"> with the signed-out page, for search engines. Runs before the app's modules.
+      (function () {
+        var m = document.querySelector('meta[name="prerender-route"]');
+        if (!m) return;
+        // The app routes by hash, so /pinyin/ without one starts on its own route (?q=… moves into the hash).
+        // Must happen here: creating the router (on import) would already set an empty hash to "#/".
+        // (The router then shows it as /#/pinyin — the copies carry <base href="../">, see src/router.)
+        if (!location.hash && m.content !== "/") {
+          history.replaceState(null, "", location.pathname + "#" + m.content + location.search);
+        }
+        // Hide the copy when it isn't what the app will show — a signed-in student, or a hash route to
+        // another page — so it never flashes before the app mounts.
+        var hashPath = location.hash.replace(/^#/, "").split(/[?#]/)[0];
+        var signedIn = false;
+        try {
+          for (var i = 0; i < localStorage.length; i++) if (/^sb-.*-auth-token$/.test(localStorage.key(i))) signedIn = true;
+        } catch (e) {}
+        if (signedIn || (hashPath && hashPath !== m.content)) document.documentElement.className += " hide-prerendered";
+      })();
+    </script>
+    <style>
+      .hide-prerendered .prerendered { display: none; }
+    </style>
+    <!-- fonts ship with the site (scripts/build_fonts.py): Google Fonts is unreachable from mainland China and
+         its blocking stylesheet left every full page load spinning -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <script type="module" crossorigin src="./assets/index-ByotVE8P.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DEM863PX.css">
+      <meta name="description" content="Use 东A西B to mean doing similar actions here and there in different directions. Structure: dōng + Verb A + xī + Verb B = A here, B there (all over the place). Taught in HSK 6. Examples with pinyin and English.">
+    <link rel="canonical" href="https://delamoer.github.io/hsk-flashcards/grammar/hsk-6-17-1/">
+    <link rel="stylesheet" href="./assets/GrammarCard-C2FSjiJO.css">
+    <link rel="stylesheet" href="./assets/GrammarPointView-CakNlTAz.css">
+  </head>
+  <body>
+    <div id="app"><div class="prerendered"><div class="app-shell"><header data-v-50bdca4e="" class="appbar"><a data-v-50bdca4e="" href="./" class="logo"><span data-v-50bdca4e="" class="mark">学</span><span data-v-50bdca4e="" class="wordmark"><b data-v-50bdca4e="" class="wm-zh">学中文</b><i data-v-50bdca4e="" class="wm-en">Learn Chinese</i></span></a><nav data-v-50bdca4e="" class="mainnav"><!----><!----><a data-v-50bdca4e="" href="./pinyin/" class="navlink">拼音 <i data-v-50bdca4e="">Pinyin</i></a><a data-v-50bdca4e="" href="./worksheet/" class="navlink">字帖 <i data-v-50bdca4e="">Worksheet</i></a><a data-v-50bdca4e="" href="./grammar/" class="navlink on">语法 <i data-v-50bdca4e="">Grammar</i></a><a data-v-50bdca4e="" href="./music/" class="navlink">中国风 <i data-v-50bdca4e="">Music</i></a><a data-v-50bdca4e="" href="./poems/" class="navlink">古诗词 <i data-v-50bdca4e="">Poems</i></a><!----><!----></nav><div data-v-50bdca4e="" class="account"><a data-v-50bdca4e="" href="#/login" class="acctbtn primary">登录 <i data-v-50bdca4e="">Sign in</i></a></div></header><main data-v-284da5bc="" class="gp"><nav data-v-284da5bc="" class="crumb"><a data-v-284da5bc="" href="./grammar/" class="">语法汇总 Grammar</a><span data-v-284da5bc="" class="sep">◇</span><span data-v-284da5bc="" class="cur">固定格式“东A西B”</span></nav><div data-v-c5681271="" data-v-284da5bc="" class="gcard large card"><div data-v-c5681271="" class="gc-head"><!----><span data-v-c5681271="" class="nm">固定格式“东A西B”</span><span data-v-c5681271="" class="chip type"><span data-v-c5681271="" class="c">固定格式</span><span data-v-c5681271="" class="e">Fixed pattern</span></span></div><div data-v-c5681271="" class="py">dōng A xī B</div><p data-v-c5681271="" class="explain">Use 东A西B to mean doing similar actions here and there in different directions.</p><div data-v-c5681271="" class="struct"><span data-v-c5681271="" class="lab">结构 Structure</span><span data-v-c5681271="" class="scode"><code data-v-c5681271="">东 + 动词A + 西 + 动词B</code><code data-v-c5681271="" class="en">dōng + Verb A + xī + Verb B = A here, B there (all over the place)</code></span></div><div data-v-c5681271="" class="egs"><div data-v-c5681271="" class="eg"><div data-v-c5681271="" class="z">他在房间里东找西找，还是没找到钥匙。</div><div data-v-c5681271="" class="p">Tā zài fángjiān li dōng zhǎo xī zhǎo, háishi méi zhǎodào yàoshi.</div><div data-v-c5681271="" class="e">He searched here and there in the room but still did not find the key.</div></div><div data-v-c5681271="" class="eg"><div data-v-c5681271="" class="z">孩子们东跑西跑，一刻也不停。</div><div data-v-c5681271="" class="p">Háizimen dōng pǎo xī pǎo, yíkè yě bù tíng.</div><div data-v-c5681271="" class="e">The children ran here and there without stopping.</div></div><div data-v-c5681271="" class="eg"><div data-v-c5681271="" class="z">她买东西时总爱东挑西选。</div><div data-v-c5681271="" class="p">Tā mǎi dōngxi shí zǒng ài dōng tiāo xī xuǎn.</div><div data-v-c5681271="" class="e">She always picks and chooses when shopping.</div></div></div><div data-v-c5681271="" class="gnote"><span data-v-c5681271="" class="zh">※ A、B通常意义相近，表达动作反复、方向不定。</span><span data-v-c5681271="" class="en">A and B are usually similar in meaning; shows repeated actions in no fixed direction.</span></div></div><section data-v-284da5bc="" class="from"><h2 data-v-284da5bc="">出自 <i data-v-284da5bc="">Taught in</i></h2><div data-v-284da5bc="" class="frow"><span data-v-284da5bc="" class="bk">标准HSK · HSK 6</span><span data-v-284da5bc="" class="ls">第 17 课《小动物眼中的慢世界》<i data-v-284da5bc="">HSK 6 · Lesson 17</i></span><a data-v-284da5bc="" href="#/#book" class="ask">这一课对学生开放 · Ask the teacher →</a></div></section><section data-v-284da5bc="" class="rel"><h2 data-v-284da5bc="">相关语法点 <i data-v-284da5bc="">Related grammar</i></h2><div data-v-284da5bc="" class="rlist"><a data-v-284da5bc="" href="./grammar/hsk-6-8-1/" class="ritem"><b data-v-284da5bc="">固定格式“对……而言”</b><span data-v-284da5bc="" class="py">duì ... ér yán</span><span data-v-284da5bc="" class="en">Use 对…而言 to mean “for… / from the point of view of…”. It is formal.</span></a><a data-v-284da5bc="" href="./grammar/hsk-6-9-2/" class="ritem"><b data-v-284da5bc="">固定格式“说A就A”</b><span data-v-284da5bc="" class="py">shuō A jiù A</span><span data-v-284da5bc="" class="en">Use 说A就A to show someone acts immediately once they decide or say it.</span></a><a data-v-284da5bc="" href="./grammar/hsk-6-11-2/" class="ritem"><b data-v-284da5bc="">固定格式“以……为……”</b><span data-v-284da5bc="" class="py">yǐ ... wéi ...</span><span data-v-284da5bc="" class="en">Use 以…为… to mean “take/use…as…”. It is formal.</span></a><a data-v-284da5bc="" href="./grammar/hsk-6-11-3/" class="ritem"><b data-v-284da5bc="">固定格式“该干吗干吗”</b><span data-v-284da5bc="" class="py">gāi gànmá gànmá</span><span data-v-284da5bc="" class="en">Use 该干吗干吗 to mean “just do whatever you normally should do”.</span></a><a data-v-284da5bc="" href="./grammar/hsk-6-25-2/" class="ritem"><b data-v-284da5bc="">固定格式“能A就A”</b><span data-v-284da5bc="" class="py">néng A jiù A</span><span data-v-284da5bc="" class="en">Use 能A就A to mean “do as much/as soon/as well as you can”.</span></a><a data-v-284da5bc="" href="./grammar/hsk-6-27-1/" class="ritem"><b data-v-284da5bc="">固定格式“左……右……”</b><span data-v-284da5bc="" class="py">zuǒ ... yòu ...</span><span data-v-284da5bc="" class="en">Use 左…右… with verbs to show repeated action in different directions or repeated attempts.</span></a><a data-v-284da5bc="" href="./grammar/hsk-6-40-1/" class="ritem"><b data-v-284da5bc="">固定格式“（把）……放在眼里”</b><span data-v-284da5bc="" class="py">(bǎ) ... fàng zài yǎnlǐ</span><span data-v-284da5bc="" class="en">Use （把）…放在眼里 to mean “take…seriously / consider…important”, often in the negative.</span></a><a data-v-284da5bc="" href="./grammar/newhsk3-2-2-1/" class="ritem"><b data-v-284da5bc="">固定格式“还是……吧”</b><span data-v-284da5bc="" class="py">háishi ... ba</span><span data-v-284da5bc="" class="en">Use 还是…吧 to say “it would be better to…” or “let’s…instead”.</span></a></div></section><p data-v-284da5bc="" class="back"><a data-v-284da5bc="" href="./grammar/" class="">← 所有语法点 All 763 grammar points</a></p><div data-v-284da5bc="" class="grammar-point-ready"></div></main></div></div></div>
+  </body>
+</html>

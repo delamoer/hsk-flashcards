@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="../../" />
+    <meta name="prerender-route" content="/grammar/hsk-4-4-2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>“原来”和“本来” (yuánlái / běnlái) — Chinese grammar with examples · 学中文 Learn Chinese</title>
+    <script>
+      // The public pages are also served prerendered at real paths (/pinyin/ …): scripts/prerender.py fills
+      // <div class="prerendered"> with the signed-out page, for search engines. Runs before the app's modules.
+      (function () {
+        var m = document.querySelector('meta[name="prerender-route"]');
+        if (!m) return;
+        // The app routes by hash, so /pinyin/ without one starts on its own route (?q=… moves into the hash).
+        // Must happen here: creating the router (on import) would already set an empty hash to "#/".
+        // (The router then shows it as /#/pinyin — the copies carry <base href="../">, see src/router.)
+        if (!location.hash && m.content !== "/") {
+          history.replaceState(null, "", location.pathname + "#" + m.content + location.search);
+        }
+        // Hide the copy when it isn't what the app will show — a signed-in student, or a hash route to
+        // another page — so it never flashes before the app mounts.
+        var hashPath = location.hash.replace(/^#/, "").split(/[?#]/)[0];
+        var signedIn = false;
+        try {
+          for (var i = 0; i < localStorage.length; i++) if (/^sb-.*-auth-token$/.test(localStorage.key(i))) signedIn = true;
+        } catch (e) {}
+        if (signedIn || (hashPath && hashPath !== m.content)) document.documentElement.className += " hide-prerendered";
+      })();
+    </script>
+    <style>
+      .hide-prerendered .prerendered { display: none; }
+    </style>
+    <!-- fonts ship with the site (scripts/build_fonts.py): Google Fonts is unreachable from mainland China and
+         its blocking stylesheet left every full page load spinning -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <script type="module" crossorigin src="./assets/index-ByotVE8P.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DEM863PX.css">
+      <meta name="description" content="原来 often shows a newly discovered fact. 本来 shows the original situation or plan. Structure: yuánlái + new discovery; běnlái + original plan/state = so it turns out … vs originally. Taught in HSK 4. Examples with pinyin and English.">
+    <link rel="canonical" href="https://delamoer.github.io/hsk-flashcards/grammar/hsk-4-4-2/">
+    <link rel="stylesheet" href="./assets/GrammarCard-C2FSjiJO.css">
+    <link rel="stylesheet" href="./assets/GrammarPointView-CakNlTAz.css">
+  </head>
+  <body>
+    <div id="app"><div class="prerendered"><div class="app-shell"><header data-v-50bdca4e="" class="appbar"><a data-v-50bdca4e="" href="./" class="logo"><span data-v-50bdca4e="" class="mark">学</span><span data-v-50bdca4e="" class="wordmark"><b data-v-50bdca4e="" class="wm-zh">学中文</b><i data-v-50bdca4e="" class="wm-en">Learn Chinese</i></span></a><nav data-v-50bdca4e="" class="mainnav"><!----><!----><a data-v-50bdca4e="" href="./pinyin/" class="navlink">拼音 <i data-v-50bdca4e="">Pinyin</i></a><a data-v-50bdca4e="" href="./worksheet/" class="navlink">字帖 <i data-v-50bdca4e="">Worksheet</i></a><a data-v-50bdca4e="" href="./grammar/" class="navlink on">语法 <i data-v-50bdca4e="">Grammar</i></a><a data-v-50bdca4e="" href="./music/" class="navlink">中国风 <i data-v-50bdca4e="">Music</i></a><a data-v-50bdca4e="" href="./poems/" class="navlink">古诗词 <i data-v-50bdca4e="">Poems</i></a><!----><!----></nav><div data-v-50bdca4e="" class="account"><a data-v-50bdca4e="" href="#/login" class="acctbtn primary">登录 <i data-v-50bdca4e="">Sign in</i></a></div></header><main data-v-284da5bc="" class="gp"><nav data-v-284da5bc="" class="crumb"><a data-v-284da5bc="" href="./grammar/" class="">语法汇总 Grammar</a><span data-v-284da5bc="" class="sep">◇</span><span data-v-284da5bc="" class="cur">“原来”和“本来”</span></nav><div data-v-c5681271="" data-v-284da5bc="" class="gcard large card"><div data-v-c5681271="" class="gc-head"><!----><span data-v-c5681271="" class="nm">“原来”和“本来”</span><span data-v-c5681271="" class="chip type"><span data-v-c5681271="" class="c">副词</span><span data-v-c5681271="" class="e">Adverb</span></span></div><div data-v-c5681271="" class="py">yuánlái / běnlái</div><p data-v-c5681271="" class="explain">原来 often shows a newly discovered fact. 本来 shows the original situation or plan.</p><div data-v-c5681271="" class="struct"><span data-v-c5681271="" class="lab">结构 Structure</span><span data-v-c5681271="" class="scode"><code data-v-c5681271="">原来 + 新发现；本来 + 原计划/原情况</code><code data-v-c5681271="" class="en">yuánlái + new discovery; běnlái + original plan/state = so it turns out … vs originally</code></span></div><div data-v-c5681271="" class="egs"><div data-v-c5681271="" class="eg"><div data-v-c5681271="" class="z">原来你也住在这里。</div><div data-v-c5681271="" class="p">Yuánlái nǐ yě zhù zài zhèlǐ.</div><div data-v-c5681271="" class="e">So you live here too.</div></div><div data-v-c5681271="" class="eg"><div data-v-c5681271="" class="z">我本来想坐地铁。</div><div data-v-c5681271="" class="p">Wǒ běnlái xiǎng zuò dìtiě.</div><div data-v-c5681271="" class="e">I originally planned to take the subway.</div></div><div data-v-c5681271="" class="eg"><div data-v-c5681271="" class="z">原来他就是新经理。</div><div data-v-c5681271="" class="p">Yuánlái tā jiùshì xīn jīnglǐ.</div><div data-v-c5681271="" class="e">So he is the new manager.</div></div></div><div data-v-c5681271="" class="gnote"><span data-v-c5681271="" class="zh">※ “原来”常有“现在才知道”的感觉；“本来”强调原先。</span><span data-v-c5681271="" class="en">原来 carries "I only just realized"; 本来 stresses the original state.</span></div></div><section data-v-284da5bc="" class="from"><h2 data-v-284da5bc="">出自 <i data-v-284da5bc="">Taught in</i></h2><div data-v-284da5bc="" class="frow"><span data-v-284da5bc="" class="bk">标准HSK · HSK 4</span><span data-v-284da5bc="" class="ls">第 4 课《不要太着急赚钱》<i data-v-284da5bc="">HSK 4 · Lesson 4</i></span><a data-v-284da5bc="" href="#/#book" class="ask">这一课对学生开放 · Ask the teacher →</a></div></section><section data-v-284da5bc="" class="rel"><h2 data-v-284da5bc="">相关语法点 <i data-v-284da5bc="">Related grammar</i></h2><div data-v-284da5bc="" class="rlist"><a data-v-284da5bc="" href="./grammar/hsk-4-3-2/" class="ritem"><b data-v-284da5bc="">副词“本来”</b><span data-v-284da5bc="" class="py">běnlái</span><span data-v-284da5bc="" class="en">Use 本来 for an original plan, situation, or fact: “originally”.</span></a><a data-v-284da5bc="" href="./grammar/hsk-5-33-2/" class="ritem"><b data-v-284da5bc="">“难怪 / 怪不得”表示“原来如此”</b><span data-v-284da5bc="" class="py">nánguài / guàibude</span><span data-v-284da5bc="" class="en">Use 难怪/怪不得 for “no wonder”.</span></a><a data-v-284da5bc="" href="./grammar/zoubian-4-8-3/" class="ritem"><b data-v-284da5bc="">原来/果然/竟然（语气副词）</b><span data-v-284da5bc="" class="py">yuánlái / guǒrán / jìngrán</span><span data-v-284da5bc="" class="en">原来 means 'so that's it / it turns out'; 果然 means 'as expected'; 竟然 means 'unexpectedly'.</span></a><a data-v-284da5bc="" href="./grammar/hsk-1-14-4/" class="ritem"><b data-v-284da5bc="">副词“都”表示全部</b><span data-v-284da5bc="" class="py">dōu</span><span data-v-284da5bc="" class="en">Use 都 before the verb/adjective to mean “all / both”.</span></a><a data-v-284da5bc="" href="./grammar/hsk-2-1-2/" class="ritem"><b data-v-284da5bc="">程度副词“最”</b><span data-v-284da5bc="" class="py">zuì</span><span data-v-284da5bc="" class="en">Use 最 before an adjective or verb to mean “the most / best”.</span></a><a data-v-284da5bc="" href="./grammar/hsk-2-3-3/" class="ritem"><b data-v-284da5bc="">副词“真”表示感叹</b><span data-v-284da5bc="" class="py">zhēn</span><span data-v-284da5bc="" class="en">Use 真 before an adjective to strongly say “really / so”.</span></a><a data-v-284da5bc="" href="./grammar/hsk-2-4-3/" class="ritem"><b data-v-284da5bc="">副词“已经”表示动作已发生</b><span data-v-284da5bc="" class="py">yǐjīng</span><span data-v-284da5bc="" class="en">Use 已经 to mean “already”. It often appears with 了.</span></a><a data-v-284da5bc="" href="./grammar/hsk-2-5-1/" class="ritem"><b data-v-284da5bc="">副词“就”表示很快、很早或紧接着</b><span data-v-284da5bc="" class="py">jiù</span><span data-v-284da5bc="" class="en">Use 就 to show something happens early, quickly, or right after something else.</span></a></div></section><p data-v-284da5bc="" class="back"><a data-v-284da5bc="" href="./grammar/" class="">← 所有语法点 All 763 grammar points</a></p><div data-v-284da5bc="" class="grammar-point-ready"></div></main></div></div></div>
+  </body>
+</html>
